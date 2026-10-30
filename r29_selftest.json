@@ -1,0 +1,40 @@
+{
+  "selftest": "PASS",
+  "fixture_directory": "/mnt/data/r29_fixture",
+  "H18_format": "PASS",
+  "CHARM_pair_count": "PASS",
+  "CHARM_HaloHalo_counterexample": "PASS",
+  "LOSF_no_negative_remaining": "PASS",
+  "LOSF_batch_monotonicity": "PASS",
+  "example_first_leaf": {
+    "leaf_id": 0,
+    "size": 6,
+    "core": 1,
+    "halo": 5,
+    "original_pairs": 15,
+    "pairs_skipped": 10,
+    "original_directed_top2": 12,
+    "retained_original_top2": 3,
+    "lost_original_top2": 9,
+    "new_directed_proposals": 7,
+    "vertices_with_2_reduced_neighbors": 1,
+    "retained_nearest_neighbor": 2
+  },
+  "example_losf_W1": {
+    "workers_in_flight_model": 1,
+    "peak_live_vertices": 7,
+    "peak_live_fraction": 0.875,
+    "ever_present_vertices": 8,
+    "peak_batch_start_index": 1,
+    "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS."
+  },
+  "example_losf_W4": {
+    "workers_in_flight_model": 4,
+    "peak_live_vertices": 8,
+    "peak_live_fraction": 1.0,
+    "ever_present_vertices": 8,
+    "peak_batch_start_index": 0,
+    "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS."
+  },
+  "IMPORTANT": "Synthetic fixture only; NOT a SIFT1M benchmark or evidence of real CHARM effectiveness."
+}

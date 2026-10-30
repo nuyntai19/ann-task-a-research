@@ -1,0 +1,96 @@
+checked 1/1 base anchors
+{
+  "audit": "R42_EXACT_BASE_TOP10_2HOP_RESCUE",
+  "status": "READ_ONLY_BASE_ANCHORS_NOT_SEARCH_RECALL",
+  "protocol": {
+    "n": 12,
+    "dim": 2,
+    "r41_source_count": 1,
+    "r41_source_ids_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "topk": 10,
+    "hops": 2,
+    "directed": true,
+    "monotonicity": "strict Float64 squared L2 distance to exact BASE target at intermediate vertex",
+    "candidate_pool": "R26a original fixed capacity rows",
+    "graph_sha256": "f824e744e54fd57443e8f400e8d20677bec62ae71eca44cc5d109524bca320e8",
+    "pool_sha256": "758c4be35202d68631fe57b954db20895eae6c6a093eda04d32bbc9f19ee4ffc"
+  },
+  "summary": {
+    "all": {
+      "sources": 1,
+      "gt_total": 10,
+      "direct": 2,
+      "reachable_within_2_hops": 4,
+      "monotone_to_base_target_within_2_hops": 4,
+      "pool_captured_but_pruned": {
+        "n": 2,
+        "reachable_2hop": 2,
+        "monotone_2hop": 2
+      },
+      "missing_before_pool": {
+        "n": 6,
+        "reachable_2hop": 0,
+        "monotone_2hop": 0
+      },
+      "graph_direct": {
+        "n": 2,
+        "reachable_2hop": 2,
+        "monotone_2hop": 2
+      },
+      "direct_fraction": 0.2,
+      "reachable_within_2_hops_fraction": 0.4,
+      "monotone_to_base_target_within_2_hops_fraction": 0.4
+    },
+    "full_outdegree": {
+      "sources": 0,
+      "gt_total": 0,
+      "direct": 0,
+      "reachable_within_2_hops": 0,
+      "monotone_to_base_target_within_2_hops": 0,
+      "pool_captured_but_pruned": {
+        "n": 0,
+        "reachable_2hop": 0,
+        "monotone_2hop": 0
+      },
+      "missing_before_pool": {
+        "n": 0,
+        "reachable_2hop": 0,
+        "monotone_2hop": 0
+      },
+      "graph_direct": {
+        "n": 0,
+        "reachable_2hop": 0,
+        "monotone_2hop": 0
+      },
+      "direct_fraction": null,
+      "reachable_within_2_hops_fraction": null,
+      "monotone_to_base_target_within_2_hops_fraction": null
+    },
+    "slack_outdegree": {
+      "sources": 1,
+      "gt_total": 10,
+      "direct": 2,
+      "reachable_within_2_hops": 4,
+      "monotone_to_base_target_within_2_hops": 4,
+      "pool_captured_but_pruned": {
+        "n": 2,
+        "reachable_2hop": 2,
+        "monotone_2hop": 2
+      },
+      "missing_before_pool": {
+        "n": 6,
+        "reachable_2hop": 0,
+        "monotone_2hop": 0
+      },
+      "graph_direct": {
+        "n": 2,
+        "reachable_2hop": 2,
+        "monotone_2hop": 2
+      },
+      "direct_fraction": 0.2,
+      "reachable_within_2_hops_fraction": 0.4,
+      "monotone_to_base_target_within_2_hops_fraction": 0.4
+    }
+  }
+}
+R42_SELFTEST_PASS: two-hop rescue, monotone base-target witness, R41 conservation, SHA guards

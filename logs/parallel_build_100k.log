@@ -1,0 +1,22 @@
+=== PARALLEL HNSW BUILD BENCHMARK ===
+Repeat=1 | Threads=1 | BUILD=41.539s
+Repeat=1 | Threads=2 | BUILD=20.666s
+Repeat=1 | Threads=4 | BUILD=11.723s
+Repeat=1 | Threads=8 | BUILD=10.314s
+Repeat=2 | Threads=8 | BUILD=10.330s
+Repeat=2 | Threads=4 | BUILD=11.262s
+Repeat=2 | Threads=2 | BUILD=20.113s
+Repeat=2 | Threads=1 | BUILD=39.891s
+Repeat=3 | Threads=1 | BUILD=39.707s
+Repeat=3 | Threads=2 | BUILD=21.258s
+Repeat=3 | Threads=4 | BUILD=12.361s
+Repeat=3 | Threads=8 | BUILD=10.658s
+
+=== SUMMARY ===
+Threads | Median BUILD | Speedup | Efficiency
+      1 |       39.891s |    1.00x |    100.0%
+      2 |       20.666s |    1.93x |     96.5%
+      4 |       11.723s |    3.40x |     85.1%
+      8 |       10.330s |    3.86x |     48.3%
+
+Saved: /home/tai/ann-task-a/results/parallel_build_100k.csv

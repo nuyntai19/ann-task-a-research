@@ -1,0 +1,61 @@
+Vary degree = 0
+Data: detected 1000000 points with dimension 128
+Parlay time: SketchHash construction time: 0.0939
+Size of SketchHash (bytes): 48006144
+Allocate = 0
+Set MSTDeg to: 2 fanout: 30
+Sizeof indexType = 4
+Fanout scheme: 10 3 
+Allocating: 648000000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 30 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 30
+total fanout: 30
+total fanout allowance: 30
+leader method: random
+Parlay time: first level assign time: 1.9990
+Parlay time: buckets time: 10.8975
+buckets size (bytes): 121348804
+Total buckets: 85529
+Total points: 29995085
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 37.0035
+Built cluster 0 of 1
+Leaf count: 85529
+# of comparisons during clustering: 2198131395
+Allocating graph, prune_degree = 32
+Average table size: 36
+Parlay time: Final prune time: 2.5831
+Average distance traversed: 34
+Writing graph to /home/tai/ann-task-a/results/pipnn_sift1m_8t_rep2.graph
+Writing graph with 1000000 points and max degree 32
+PiPNN graph built with 1000000 points and parameters Trees = 1
+Graph has average degree 22.76 and maximum degree 32
+Graph built in 50.7 seconds
+Parlay time: 51.5275
+	Command being timed: "env PARLAY_NUM_THREADS=8 /home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN -base_path /home/tai/ann-task-a/data/sift1m.fbin -graph_outfile /home/tai/ann-task-a/results/pipnn_sift1m_8t_rep2.graph -num_clusters 1 -fanout 30 -fanout_scheme 10,3 -cluster_size 1024 -mst_deg 2 -alpha 1.2 -prune 1 -prune_all 1 -prune_degree 32 -top_level_leaders 1000 -fraction_leaders 0.005 -hash_bits 12"
+	User time (seconds): 364.20
+	System time (seconds): 7.57
+	Percent of CPU this job got: 712%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:52.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2145972
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 349356
+	Voluntary context switches: 17145
+	Involuntary context switches: 46740
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 185632
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,52 @@
+Vary degree = 0
+Data: detected 1000000 points with dimension 128
+Parlay time: SketchHash construction time: 0.1047
+Size of SketchHash (bytes): 48006144
+Allocate = 0
+Set MSTDeg to: 2 fanout: 30
+Sizeof indexType = 4
+Fanout scheme: 10 3 
+Allocating: 648000000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 30 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 30
+total fanout: 30
+total fanout allowance: 30
+leader method: random
+Parlay time: first level assign time: 1.8083
+Parlay time: buckets time: 9.7037
+buckets size (bytes): 121348804
+Total buckets: 85529
+Total points: 29995085
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 37.0825
+Built cluster 0 of 1
+Leaf count: 85529
+# of comparisons during clustering: 2198131395
+Allocating graph, prune_degree = 32
+Average table size: 36
+Parlay time: Final prune time: 3.5348
+Average distance traversed: 34
+PiPNN graph built with 1000000 points and parameters Trees = 1
+Graph has average degree 22.8 and maximum degree 32
+Graph built in 50.53 seconds
+Parlay time: 50.5382
+
+ Performance counter stats for 'env PARLAY_NUM_THREADS=4 /home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN -base_path /home/tai/ann-task-a/data/sift1m.fbin -num_clusters 1 -fanout 30 -fanout_scheme 10,3 -cluster_size 1024 -mst_deg 2 -alpha 1.2 -prune 1 -prune_all 1 -prune_degree 32 -top_level_leaders 1000 -fraction_leaders 0.005 -hash_bits 12':
+
+         201814.83 msec task-clock:u                                                          
+      685758792539      cycles:u                                                              
+     1158735441683      instructions:u                                                        
+        2831740124      cache-misses:u                                                        
+                 0      context-switches:u                                                    
+                 0      cpu-migrations:u                                                      
+
+      51.090804242 seconds time elapsed
+
+     200.149118000 seconds user
+       1.731611000 seconds sys
+
+

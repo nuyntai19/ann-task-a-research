@@ -1,0 +1,11 @@
+=== ANN TASK A: HNSW SMOKE TEST ===
+N=10000, dim=128, queries=200
+BUILD: 0.499 giây
+Đang tính exact ground truth...
+ef= 20 | Recall@10=0.5065 | QPS=59043.9
+ef= 50 | Recall@10=0.7275 | QPS=22246.6
+ef=100 | Recall@10=0.8690 | QPS=11954.2
+ef=200 | Recall@10=0.9575 | QPS=8516.3
+Peak RSS: 113.6 MiB
+Đã lưu kết quả: /home/tai/ann-task-a/results/smoke_hnsw_10k.json
+=== HOÀN THÀNH ===

@@ -1,0 +1,28 @@
+Computing exact ground truth...
+
+Building with 1 threads...
+threads=1 ef=100 BUILD=39.620s Recall@10=0.5421 QPS=3189.0
+threads=1 ef=200 BUILD=39.620s Recall@10=0.6908 QPS=1676.6
+threads=1 ef=400 BUILD=39.620s Recall@10=0.8128 QPS=902.1
+threads=1 ef=800 BUILD=39.620s Recall@10=0.9009 QPS=507.3
+
+Building with 2 threads...
+threads=2 ef=100 BUILD=20.311s Recall@10=0.5492 QPS=2987.1
+threads=2 ef=200 BUILD=20.311s Recall@10=0.6917 QPS=1630.1
+threads=2 ef=400 BUILD=20.311s Recall@10=0.8133 QPS=879.4
+threads=2 ef=800 BUILD=20.311s Recall@10=0.9015 QPS=498.1
+
+Building with 4 threads...
+threads=4 ef=100 BUILD=11.806s Recall@10=0.5439 QPS=3188.5
+threads=4 ef=200 BUILD=11.806s Recall@10=0.6918 QPS=1674.0
+threads=4 ef=400 BUILD=11.806s Recall@10=0.8127 QPS=917.7
+threads=4 ef=800 BUILD=11.806s Recall@10=0.8992 QPS=511.6
+
+Building with 8 threads...
+threads=8 ef=100 BUILD=9.881s Recall@10=0.5454 QPS=3204.7
+threads=8 ef=200 BUILD=9.881s Recall@10=0.6932 QPS=1672.6
+threads=8 ef=400 BUILD=9.881s Recall@10=0.8127 QPS=913.8
+threads=8 ef=800 BUILD=9.881s Recall@10=0.8992 QPS=511.0
+
+Saved: /home/tai/ann-task-a/results/parallel_quality_100k.csv
+=== COMPLETED ===

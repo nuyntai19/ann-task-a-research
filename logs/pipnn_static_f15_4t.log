@@ -1,0 +1,83 @@
+Vary degree = 0
+Ground truth: detected 300 points with num results 100
+Data: detected 100000 points with dimension 128
+Data: detected 300 points with dimension 128
+Parlay time: SketchHash construction time: 0.0126
+Size of SketchHash (bytes): 4806144
+Allocate = 0
+Set MSTDeg to: 2 fanout: 15
+Sizeof indexType = 4
+Fanout scheme: 5 3 
+Allocating: 64800000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 15 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 15
+total fanout: 15
+total fanout allowance: 15
+leader method: random
+Parlay time: first level assign time: 0.1825
+Parlay time: buckets time: 0.2741
+buckets size (bytes): 4583332
+Total buckets: 2657
+Total points: 1135205
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 1.8691
+Built cluster 0 of 1
+Leaf count: 2657
+# of comparisons during clustering: 56502088
+Allocating graph, prune_degree = 32
+Average table size: 14
+Parlay time: Final prune time: 0.1008
+Average distance traversed: 14
+Writing graph to /home/tai/ann-task-a/results/pipnn_static_f15_4t.graph
+Writing graph with 100000 points and max degree 32
+PiPNN graph built with 100000 points and parameters Trees = 1
+Graph has average degree 10.81 and maximum degree 32
+Graph built in 2.268 seconds
+For 10@10 recall = 0.1973, QPS = 8.915e+04, Q = 10, cut = 1.35, visited limit = 10, degree limit: 32, average visited = 10, average cmps = 116
+For 10@10 recall = 0.238, QPS = 9.44e+04, Q = 11, cut = 1.35, visited limit = 11, degree limit: 32, average visited = 11, average cmps = 126
+For 10@10 recall = 0.312, QPS = 8.336e+04, Q = 13, cut = 1.35, visited limit = 13, degree limit: 32, average visited = 13, average cmps = 150
+For 10@10 recall = 0.4153, QPS = 7.034e+04, Q = 16, cut = 1.35, visited limit = 16, degree limit: 32, average visited = 16, average cmps = 181
+For 10@10 recall = 0.5017, QPS = 7.117e+04, Q = 19, cut = 1.35, visited limit = 19, degree limit: 32, average visited = 19, average cmps = 212
+For 10@10 recall = 0.6503, QPS = 5.65e+04, Q = 11, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 23, average cmps = 251
+For 10@10 recall = 0.71, QPS = 5.068e+04, Q = 30, cut = 1.35, visited limit = 30, degree limit: 32, average visited = 30, average cmps = 326
+For 10@10 recall = 0.7623, QPS = 4.721e+04, Q = 16, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 30, average cmps = 324
+For 10@10 recall = 0.8083, QPS = 4.27e+04, Q = 20, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 34, average cmps = 366
+For 10@10 recall = 0.852, QPS = 3.728e+04, Q = 24, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 39, average cmps = 415
+For 10@10 recall = 0.9057, QPS = 3.149e+04, Q = 34, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 49, average cmps = 517
+For 10@10 recall = 0.933, QPS = 2.64e+04, Q = 45, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 60, average cmps = 619
+For 10@10 recall = 0.9503, QPS = 2.343e+04, Q = 55, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 69, average cmps = 713
+For 10@10 recall = 0.97, QPS = 1.975e+04, Q = 70, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 86, average cmps = 850
+For 10@10 recall = 0.9867, QPS = 1.626e+04, Q = 100, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 117, average cmps = 1097
+For 10@10 recall = 0.991, QPS = 1.431e+04, Q = 120, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 135, average cmps = 1254
+For 10@10 recall = 0.995, QPS = 1.099e+04, Q = 160, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 166, average cmps = 1488
+For 10@10 recall = 0.9993, QPS = 6709, Q = 375, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 276, average cmps = 2246
+For 10@10 recall = 0.9997, QPS = 2010, Q = 1000, cut = 10, visited limit = 100000, degree limit: 32, average visited = 1112, average cmps = 6279
+
+Parlay time: 6.0870
+	Command being timed: "env PARLAY_NUM_THREADS=4 /home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN -base_path /home/tai/ann-task-a/data/sift100k.fbin -query_path /home/tai/ann-task-a/data/sift100k_queries_300.fbin -gt_path /home/tai/ann-task-a/data/sift100k_gt300.ibin -graph_outfile /home/tai/ann-task-a/results/pipnn_static_f15_4t.graph -num_clusters 1 -fanout 15 -fanout_scheme 5,3 -cluster_size 1024 -mst_deg 2 -alpha 1.2 -prune 1 -prune_all 1 -prune_degree 32 -top_level_leaders 1000 -fraction_leaders 0.005 -hash_bits 12 -k 10"
+	User time (seconds): 21.83
+	System time (seconds): 1.32
+	Percent of CPU this job got: 374%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 406628
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 85623
+	Voluntary context switches: 19246
+	Involuntary context switches: 1259
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 9224
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

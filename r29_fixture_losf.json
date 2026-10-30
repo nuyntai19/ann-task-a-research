@@ -1,0 +1,119 @@
+{
+  "audit": "LOSF-R0",
+  "status": "IDEALIZED_OFFLINE_SCHEDULING_ONLY",
+  "leaf_file": "/mnt/data/r29_fixture/toy.leaves.bin",
+  "n_leaves": 4,
+  "memberships": 20,
+  "baseline_full_reservoir_vertices": 8,
+  "scheduling_results": [
+    {
+      "workers_in_flight_model": 1,
+      "peak_live_vertices": 7,
+      "peak_live_fraction": 0.875,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 1,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "original"
+    },
+    {
+      "workers_in_flight_model": 2,
+      "peak_live_vertices": 7,
+      "peak_live_fraction": 0.875,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "original"
+    },
+    {
+      "workers_in_flight_model": 4,
+      "peak_live_vertices": 8,
+      "peak_live_fraction": 1.0,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "original"
+    },
+    {
+      "workers_in_flight_model": 1,
+      "peak_live_vertices": 7,
+      "peak_live_fraction": 0.875,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 1,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "reverse"
+    },
+    {
+      "workers_in_flight_model": 2,
+      "peak_live_vertices": 7,
+      "peak_live_fraction": 0.875,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "reverse"
+    },
+    {
+      "workers_in_flight_model": 4,
+      "peak_live_vertices": 8,
+      "peak_live_fraction": 1.0,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "reverse"
+    },
+    {
+      "workers_in_flight_model": 1,
+      "peak_live_vertices": 8,
+      "peak_live_fraction": 1.0,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 2,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "small-first"
+    },
+    {
+      "workers_in_flight_model": 2,
+      "peak_live_vertices": 8,
+      "peak_live_fraction": 1.0,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 2,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "small-first"
+    },
+    {
+      "workers_in_flight_model": 4,
+      "peak_live_vertices": 8,
+      "peak_live_fraction": 1.0,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "small-first"
+    },
+    {
+      "workers_in_flight_model": 1,
+      "peak_live_vertices": 7,
+      "peak_live_fraction": 0.875,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 1,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "large-first"
+    },
+    {
+      "workers_in_flight_model": 2,
+      "peak_live_vertices": 7,
+      "peak_live_fraction": 0.875,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "large-first"
+    },
+    {
+      "workers_in_flight_model": 4,
+      "peak_live_vertices": 8,
+      "peak_live_fraction": 1.0,
+      "ever_present_vertices": 8,
+      "peak_batch_start_index": 0,
+      "note": "Idealized whole-leaf batches; excludes active flush time, per-edge buffers, synchronization, metadata, and RSS.",
+      "order": "large-first"
+    }
+  ],
+  "warning": "Live-front is NOT measured peak RSS. Memory savings require real reservoir allocations, scheduler and finalization correctness."
+}

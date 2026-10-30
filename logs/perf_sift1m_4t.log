@@ -1,0 +1,19 @@
+BEGIN BUILD | threads=4
+END BUILD | threads=4 | seconds=84.8422
+
+ Performance counter stats for '/home/tai/ann-task-a/.venv/bin/python src/profile_sift1m_build.py --threads 4':
+
+        339,104.24 msec task-clock                                                            
+ 1,263,444,968,702      cycles                                                                
+   506,415,717,894      instructions                                                          
+    46,943,242,911      cache-references                                                      
+    19,995,332,224      cache-misses                                                          
+             9,774      context-switches                                                      
+               195      cpu-migrations                                                        
+
+      85.279990377 seconds time elapsed
+
+     335.604345000 seconds user
+       3.451242000 seconds sys
+
+

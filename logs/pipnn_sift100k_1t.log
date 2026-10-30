@@ -1,0 +1,123 @@
+Vary degree = 0
+Ground truth: detected 300 points with num results 100
+Data: detected 100000 points with dimension 128
+Data: detected 300 points with dimension 128
+Parlay time: SketchHash construction time: 0.0314
+Size of SketchHash (bytes): 4806144
+Allocate = 0
+Set MSTDeg to: 2 fanout: 30
+Sizeof indexType = 4
+Fanout scheme: 10 3 
+Allocating: 64800000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 30 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 30
+total fanout: 30
+total fanout allowance: 30
+leader method: random
+Parlay time: first level assign time: 0.6163
+Parlay time: buckets time: 1.4191
+buckets size (bytes): 11348616
+Total buckets: 7236
+Total points: 2808210
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 12.7939
+Built cluster 0 of 1
+Leaf count: 7236
+# of comparisons during clustering: 72717349
+Allocating graph, prune_degree = 32
+Average table size: 25
+Parlay time: Final prune time: 0.7727
+Average distance traversed: 24
+Writing graph to /home/tai/ann-task-a/results/pipnn_sift100k_1t.graph
+Writing graph with 100000 points and max degree 32
+PiPNN graph built with 100000 points and parameters Trees = 1
+Graph has average degree 16.43 and maximum degree 32
+Graph built in 15.04 seconds
+search: Q=10, k=10, limit=100000, dlimit=32, recall=0.7593, visited=20, comparisons=333, QPS=1.287e+04, ctime=233.4
+search: Q=11, k=10, limit=100000, dlimit=32, recall=0.7877, visited=21, comparisons=349, QPS=1.297e+04, ctime=220.9
+search: Q=12, k=10, limit=100000, dlimit=32, recall=0.8073, visited=22, comparisons=363, QPS=1.21e+04, ctime=227.6
+search: Q=13, k=10, limit=100000, dlimit=32, recall=0.8237, visited=23, comparisons=378, QPS=1.229e+04, ctime=215.3
+search: Q=14, k=10, limit=100000, dlimit=32, recall=0.835, visited=24, comparisons=391, QPS=1.26e+04, ctime=203
+search: Q=15, k=10, limit=100000, dlimit=32, recall=0.8457, visited=25, comparisons=405, QPS=1.248e+04, ctime=197.9
+search: Q=16, k=10, limit=100000, dlimit=32, recall=0.86, visited=26, comparisons=431, QPS=1.173e+04, ctime=197.8
+search: Q=17, k=10, limit=100000, dlimit=32, recall=0.869, visited=27, comparisons=444, QPS=1.173e+04, ctime=192
+search: Q=18, k=10, limit=100000, dlimit=32, recall=0.8743, visited=28, comparisons=456, QPS=1.031e+04, ctime=212.7
+search: Q=19, k=10, limit=100000, dlimit=32, recall=0.882, visited=29, comparisons=469, QPS=1.117e+04, ctime=190.8
+search: Q=20, k=10, limit=100000, dlimit=32, recall=0.8907, visited=30, comparisons=484, QPS=1.071e+04, ctime=192.9
+search: Q=22, k=10, limit=100000, dlimit=32, recall=0.9017, visited=32, comparisons=511, QPS=1.051e+04, ctime=186.2
+search: Q=24, k=10, limit=100000, dlimit=32, recall=0.917, visited=34, comparisons=547, QPS=9650, ctime=189.4
+search: Q=26, k=10, limit=100000, dlimit=32, recall=0.932, visited=36, comparisons=573, QPS=9519, ctime=183.3
+search: Q=28, k=10, limit=100000, dlimit=32, recall=0.9397, visited=38, comparisons=597, QPS=9069, ctime=184.7
+search: Q=30, k=10, limit=100000, dlimit=32, recall=0.945, visited=40, comparisons=622, QPS=8882, ctime=181
+search: Q=32, k=10, limit=100000, dlimit=32, recall=0.9493, visited=42, comparisons=656, QPS=8378, ctime=182
+search: Q=34, k=10, limit=100000, dlimit=32, recall=0.9523, visited=44, comparisons=681, QPS=8035, ctime=182.8
+search: Q=36, k=10, limit=100000, dlimit=32, recall=0.957, visited=46, comparisons=708, QPS=7734, ctime=182.6
+search: Q=38, k=10, limit=100000, dlimit=32, recall=0.9623, visited=48, comparisons=733, QPS=7427, ctime=183.7
+search: Q=40, k=10, limit=100000, dlimit=32, recall=0.9657, visited=50, comparisons=764, QPS=7255, ctime=180.4
+search: Q=45, k=10, limit=100000, dlimit=32, recall=0.9723, visited=55, comparisons=824, QPS=6578, ctime=184.5
+search: Q=50, k=10, limit=100000, dlimit=32, recall=0.9747, visited=59, comparisons=891, QPS=6282, ctime=178.7
+search: Q=55, k=10, limit=100000, dlimit=32, recall=0.9807, visited=64, comparisons=960, QPS=5922, ctime=175.9
+search: Q=60, k=10, limit=100000, dlimit=32, recall=0.9847, visited=69, comparisons=1029, QPS=5834, ctime=166.6
+search: Q=65, k=10, limit=100000, dlimit=32, recall=0.9887, visited=75, comparisons=1063, QPS=5609, ctime=167.7
+search: Q=70, k=10, limit=100000, dlimit=32, recall=0.9897, visited=79, comparisons=1122, QPS=5310, ctime=167.8
+search: Q=80, k=10, limit=100000, dlimit=32, recall=0.9927, visited=89, comparisons=1247, QPS=4894, ctime=163.8
+search: Q=90, k=10, limit=100000, dlimit=32, recall=0.9947, visited=98, comparisons=1363, QPS=4329, ctime=169.5
+search: Q=100, k=10, limit=100000, dlimit=32, recall=0.995, visited=108, comparisons=1432, QPS=4241, ctime=164.7
+search: Q=120, k=10, limit=100000, dlimit=32, recall=0.9973, visited=124, comparisons=1624, QPS=3687, ctime=167
+search: Q=140, k=10, limit=100000, dlimit=32, recall=0.9983, visited=140, comparisons=1760, QPS=3081, ctime=184.4
+search: Q=160, k=10, limit=100000, dlimit=32, recall=0.999, visited=154, comparisons=1914, QPS=3077, ctime=169.8
+search: Q=180, k=10, limit=100000, dlimit=32, recall=0.999, visited=167, comparisons=2060, QPS=2647, ctime=183.4
+search: Q=200, k=10, limit=100000, dlimit=32, recall=1, visited=181, comparisons=2150, QPS=2472, ctime=188.1
+search: Q=225, k=10, limit=100000, dlimit=32, recall=1, visited=195, comparisons=2291, QPS=2493, ctime=175.1
+search: Q=250, k=10, limit=100000, dlimit=32, recall=1, visited=208, comparisons=2417, QPS=2423, ctime=170.7
+search: Q=275, k=10, limit=100000, dlimit=32, recall=1, visited=220, comparisons=2497, QPS=2309, ctime=173.5
+search: Q=300, k=10, limit=100000, dlimit=32, recall=1, visited=230, comparisons=2591, QPS=2120, ctime=182
+search: Q=375, k=10, limit=100000, dlimit=32, recall=1, visited=258, comparisons=2807, QPS=1917, ctime=185.8
+search: Q=500, k=10, limit=100000, dlimit=32, recall=1, visited=291, comparisons=3084, QPS=1711, ctime=189.5
+search: Q=750, k=10, limit=100000, dlimit=32, recall=1, visited=325, comparisons=3334, QPS=1407, ctime=213.2
+search: Q=1000, k=10, limit=100000, dlimit=32, recall=1, visited=347, comparisons=3532, QPS=1301, ctime=217.6
+search: Q=10, k=10, limit=10, dlimit=32, recall=0.297, visited=10, comparisons=174, QPS=2.226e+04, ctime=258.2
+search: Q=11, k=10, limit=11, dlimit=32, recall=0.352, visited=11, comparisons=190, QPS=2.079e+04, ctime=253.2
+search: Q=12, k=10, limit=12, dlimit=32, recall=0.4023, visited=12, comparisons=207, QPS=1.944e+04, ctime=248.5
+search: Q=13, k=10, limit=13, dlimit=32, recall=0.4447, visited=13, comparisons=224, QPS=1.822e+04, ctime=245
+search: Q=14, k=10, limit=14, dlimit=32, recall=0.4837, visited=14, comparisons=241, QPS=1.727e+04, ctime=240.2
+search: Q=15, k=10, limit=15, dlimit=32, recall=0.5267, visited=15, comparisons=256, QPS=1.644e+04, ctime=237.6
+search: Q=16, k=10, limit=16, dlimit=32, recall=0.5677, visited=16, comparisons=272, QPS=1.575e+04, ctime=233.4
+search: Q=17, k=10, limit=17, dlimit=32, recall=0.61, visited=17, comparisons=288, QPS=1.515e+04, ctime=229.1
+search: Q=18, k=10, limit=18, dlimit=32, recall=0.651, visited=18, comparisons=303, QPS=1.461e+04, ctime=225.8
+search: Q=19, k=10, limit=19, dlimit=32, recall=0.684, visited=19, comparisons=319, QPS=1.406e+04, ctime=223
+search: Q=20, k=10, limit=20, dlimit=32, recall=0.7127, visited=20, comparisons=334, QPS=1.326e+04, ctime=225.7
+search: Q=21, k=10, limit=21, dlimit=32, recall=0.734, visited=21, comparisons=349, QPS=1.311e+04, ctime=218.6
+search: Q=22, k=10, limit=22, dlimit=32, recall=0.7523, visited=22, comparisons=364, QPS=1.309e+04, ctime=209.9
+search: Q=23, k=10, limit=23, dlimit=32, recall=0.7687, visited=23, comparisons=378, QPS=1.254e+04, ctime=211
+search: Q=24, k=10, limit=24, dlimit=32, recall=0.7887, visited=24, comparisons=392, QPS=1.168e+04, ctime=218.3
+search: Q=25, k=10, limit=25, dlimit=32, recall=0.803, visited=25, comparisons=407, QPS=1.168e+04, ctime=210.4
+search: Q=26, k=10, limit=26, dlimit=32, recall=0.8167, visited=26, comparisons=423, QPS=1.16e+04, ctime=203.8
+search: Q=28, k=10, limit=28, dlimit=32, recall=0.8423, visited=28, comparisons=452, QPS=1.083e+04, ctime=204.4
+search: Q=30, k=10, limit=30, dlimit=32, recall=0.8647, visited=30, comparisons=481, QPS=1.045e+04, ctime=199
+search: Q=35, k=10, limit=35, dlimit=32, recall=0.905, visited=35, comparisons=553, QPS=8730, ctime=207.1
+search: Q=1000, k=100, limit=100000, dlimit=32, recall=1, visited=1068, comparisons=7539, QPS=682.3, ctime=194.4
+For 10@10 recall = 0.297, QPS = 2.226e+04, Q = 10, cut = 1.35, visited limit = 10, degree limit: 32, average visited = 10, average cmps = 174
+For 10@10 recall = 0.352, QPS = 2.079e+04, Q = 11, cut = 1.35, visited limit = 11, degree limit: 32, average visited = 11, average cmps = 190
+For 10@10 recall = 0.4023, QPS = 1.944e+04, Q = 12, cut = 1.35, visited limit = 12, degree limit: 32, average visited = 12, average cmps = 207
+For 10@10 recall = 0.5267, QPS = 1.644e+04, Q = 15, cut = 1.35, visited limit = 15, degree limit: 32, average visited = 15, average cmps = 256
+For 10@10 recall = 0.61, QPS = 1.515e+04, Q = 17, cut = 1.35, visited limit = 17, degree limit: 32, average visited = 17, average cmps = 288
+For 10@10 recall = 0.7127, QPS = 1.326e+04, Q = 20, cut = 1.35, visited limit = 20, degree limit: 32, average visited = 20, average cmps = 334
+For 10@10 recall = 0.7523, QPS = 1.309e+04, Q = 22, cut = 1.35, visited limit = 22, degree limit: 32, average visited = 22, average cmps = 364
+For 10@10 recall = 0.835, QPS = 1.26e+04, Q = 14, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 24, average cmps = 391
+For 10@10 recall = 0.869, QPS = 1.173e+04, Q = 17, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 27, average cmps = 444
+For 10@10 recall = 0.9017, QPS = 1.051e+04, Q = 22, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 32, average cmps = 511
+For 10@10 recall = 0.932, QPS = 9519, Q = 26, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 36, average cmps = 573
+For 10@10 recall = 0.9523, QPS = 8035, Q = 34, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 44, average cmps = 681
+For 10@10 recall = 0.9723, QPS = 6578, Q = 45, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 55, average cmps = 824
+For 10@10 recall = 0.9807, QPS = 5922, Q = 55, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 64, average cmps = 960
+For 10@10 recall = 0.9927, QPS = 4894, Q = 80, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 89, average cmps = 1247
+For 10@10 recall = 0.995, QPS = 4241, Q = 100, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 108, average cmps = 1432
+For 10@10 recall = 0.999, QPS = 3077, Q = 160, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 154, average cmps = 1914
+For 10@10 recall = 1, QPS = 2493, Q = 225, cut = 1.35, visited limit = 100000, degree limit: 32, average visited = 195, average cmps = 2291
+
+Parlay time: 27.5138

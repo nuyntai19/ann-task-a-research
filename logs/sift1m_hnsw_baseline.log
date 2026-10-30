@@ -1,0 +1,13 @@
+=== SIFT1M HNSW BENCHMARK ===
+Loaded 1000000 vectors, dim=128
+Train load: 0.139s
+Building HNSW...
+BUILD: 85.880s
+Peak process RSS through BUILD: 1267.1 MiB
+Index size: 629.9 MiB
+ef=100 | Recall@10=0.9765 | QPS=3898.1
+ef=200 | Recall@10=0.9919 | QPS=2158.6
+ef=400 | Recall@10=0.9969 | QPS=1177.6
+ef=800 | Recall@10=0.9979 | QPS=643.9
+Results: /home/tai/ann-task-a/results/sift1m_hnsw_baseline.json
+=== COMPLETED ===

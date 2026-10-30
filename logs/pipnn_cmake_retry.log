@@ -1,0 +1,110 @@
+-- PARLAY VERSION 2.3.3
+-- ---------------------------- General configuration -----------------------------
+-- CMake Generator:                Unix Makefiles
+-- Compiler:                       GNU 13.3.0
+-- Build type:                     Release
+-- CMAKE_CXX_FLAGS:                 -march=native -ffast-math
+-- CMAKE_CXX_FLAGS_DEBUG:          -g
+-- CMAKE_CXX_FLAGS_RELEASE:        -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG -fno-omit-frame-pointer
+-- CMAKE_EXE_LINKER_FLAGS          
+-- CMAKE_INSTALL_PREFIX:           /usr/local
+-- -------------------------------- Library options ------------------------------
+-- Using Parlay scheduler. Switch with -DPARLAY_{CILKPLUS,OPENCILK,OPENMP,TBB}=On
+-- Elastic parallelism enabled. Disable with -DPARLAY_ELASTIC_PARALLELISM=Off
+-- ------------------------------- Static Analysis --------------------------------
+-- cppcheck:                     Disabled (enable with -DENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DENABLE_IWYU=On)
+-- ---------------------------------- Unit Tests ----------------------------------
+-- testing: Disabled (enable with -DPARLAY_TEST=On)
+-- ---------------------------------- Benchmarks ----------------------------------
+-- benchmarks: Disabled (enable with -DPARLAY_BENCHMARK=On)
+-- ----------------------------------- Examples -----------------------------------
+-- examples: Disabled (enable with -DPARLAY_EXAMPLES=On)
+-- example data: Off (add -DPARLAY_EXAMPLE_DATA=On to download)
+-- Performing Test COMPILER_SUPPORT_std=cpp03
+-- Performing Test COMPILER_SUPPORT_std=cpp03 - Success
+-- Standard libraries to link to explicitly: none
+-- Found unsuitable Qt version "" from NOTFOUND
+-- Found unsuitable Qt version "" from NOTFOUND
+-- Qt4 not found, so disabling the mandelbrot and opengl demos
+-- Could NOT find CHOLMOD (missing: CHOLMOD_INCLUDES CHOLMOD_LIBRARIES) 
+-- Could NOT find UMFPACK (missing: UMFPACK_INCLUDES UMFPACK_LIBRARIES) 
+-- Could NOT find KLU (missing: KLU_INCLUDES KLU_LIBRARIES) 
+-- Could NOT find SuperLU (missing: SUPERLU_INCLUDES SUPERLU_LIBRARIES SUPERLU_VERSION_OK) (Required is at least version "4.0")
+-- Checking for one of the modules 'hwloc'
+-- A version of Pastix has been found but pastix_nompi.h does not exist in the include directory. Because Eigen tests require a version without MPI, we disable the Pastix backend.
+-- 
+-- Configured Eigen 3.4.0
+-- 
+-- Available targets (use: make TARGET):
+-- ---------+--------------------------------------------------------------
+-- Target   |   Description
+-- ---------+--------------------------------------------------------------
+-- install  | Install Eigen. Headers will be installed to:
+--          |     <CMAKE_INSTALL_PREFIX>/<INCLUDE_INSTALL_DIR>
+--          |   Using the following values:
+--          |     CMAKE_INSTALL_PREFIX: /usr/local
+--          |     INCLUDE_INSTALL_DIR:  include/eigen3
+--          |   Change the install location of Eigen headers using:
+--          |     cmake . -DCMAKE_INSTALL_PREFIX=yourprefix
+--          |   Or:
+--          |     cmake . -DINCLUDE_INSTALL_DIR=yourdir
+-- doc      | Generate the API documentation, requires Doxygen & LaTeX
+-- blas     | Build BLAS library (not the same thing as Eigen)
+-- uninstall| Remove files installed by the install target
+-- ---------+--------------------------------------------------------------
+-- 
+CMake Deprecation Warning at build/_deps/highway-src/CMakeLists.txt:28 (cmake_policy):
+  The OLD behavior for policy CMP0111 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Failed to find LLVM FileCheck
+-- Google Benchmark version: v1.10.0-6-g1fa8ea1c, normalized to 1.10.0.6
+-- Could NOT find MKL (missing: MKL_LIBRARIES) 
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib/x86_64-linux-gnu/libopenblas.so  
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- Found LAPACK: /usr/lib/x86_64-linux-gnu/libopenblas.so;/usr/lib/x86_64-linux-gnu/libopenblas.so  
+-- Configured Target: neighbors-hcnng_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Skipping INT8_T with MIPS
+-- Configured Target: neighbors-hcnng_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Skipping UINT8_T with MIPS
+-- Configured Target: neighbors-hcnng_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-hcnng_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-hnsw_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Skipping INT8_T with MIPS
+-- Configured Target: neighbors-hnsw_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Skipping UINT8_T with MIPS
+-- Configured Target: neighbors-hnsw_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-hnsw_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-mirage_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Skipping INT8_T with MIPS
+-- Configured Target: neighbors-mirage_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Skipping UINT8_T with MIPS
+-- Configured Target: neighbors-mirage_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-mirage_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_INT8_T_MIPS with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_UINT8_T_MIPS with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-vamana_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-vamana_INT8_T_MIPS with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-vamana_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-vamana_UINT8_T_MIPS with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-vamana_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-vamana_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configuring done (5.9s)
+-- Generating done (1.0s)
+-- Build files have been written to: /home/tai/ann-task-a/src/PiPNN/build
