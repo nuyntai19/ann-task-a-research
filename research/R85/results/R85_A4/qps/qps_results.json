@@ -1,0 +1,4772 @@
+[
+  {
+    "repeat": 1,
+    "rep": 1,
+    "arm": "STOCK",
+    "tag": "t4_r1_STOCK",
+    "graph_sha256": "3687f62cedecde0f32ef0bca894af36a9911f091289fae5b38738e53e6a84dfe",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76344001,
+        "qps": 31550.02148438,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89617002,
+        "qps": 18672.60351562,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12527.07421875,
+        "avg_cmps": 1353.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99122,
+        "qps": 7363.47705078,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 4029.71826172,
+        "avg_cmps": 3665.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 1,
+    "arm": "D0",
+    "tag": "t4_r1_D0",
+    "graph_sha256": "ba4043468204b2417b00cc8604f58b83a16b5d5c74c4c320a57b7f85aafd3aa0",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76379001,
+        "qps": 30471.36132812,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89052999,
+        "qps": 19922.22460938,
+        "avg_cmps": 847.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96173,
+        "qps": 12899.44726562,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7122.39550781,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99858999,
+        "qps": 4042.28369141,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 1,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r1_C64_K1024_N2",
+    "graph_sha256": "21f30293cba26c22a36ece215149aabe7a03e85153f79680de19a107df9d96ca",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77209002,
+        "qps": 32476.07421875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349997,
+        "qps": 21932.90234375,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96217,
+        "qps": 13462.30175781,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99241,
+        "qps": 7072.02587891,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4319.33691406,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 1,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r1_C64_K512_N2",
+    "graph_sha256": "fe22bf9568d7da2bcd365d3baac9946c2d22c3d28736d5e72300274868378909",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77552998,
+        "qps": 32314.56445312,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89441001,
+        "qps": 19690.62109375,
+        "avg_cmps": 778.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96206999,
+        "qps": 13144.64550781,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99237001,
+        "qps": 7076.30908203,
+        "avg_cmps": 2162.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822998,
+        "qps": 4364.22802734,
+        "avg_cmps": 3319.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 1,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r1_C64_K1024_N1",
+    "graph_sha256": "38bfe1d0904952ce44ed6046c873af7428b48ef23d0f2501e4ae08c77d2c9a81",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85553998,
+        "qps": 24200.59375,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94230998,
+        "qps": 14997.45019531,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 9078.34863281,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 6878.86083984,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3616.22070312,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 1,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r1_C64_K512_N1",
+    "graph_sha256": "5efde4c8eabd04c4c81e830a1b35824ee0aa36b473ed35fec112a40ccef9124d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76199001,
+        "qps": 31507.17773438,
+        "avg_cmps": 525.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94466001,
+        "qps": 14572.5234375,
+        "avg_cmps": 1108.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96118999,
+        "qps": 12728.12011719,
+        "avg_cmps": 1306.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99049997,
+        "qps": 7151.02441406,
+        "avg_cmps": 2147.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99800998,
+        "qps": 4112.64013672,
+        "avg_cmps": 3368.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 2,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r2_C64_K1024_N2",
+    "graph_sha256": "762eb3df121af4ee7f15aba2b8c1d3b497c35e9d3c3739768d763fa3195e6b43",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77218002,
+        "qps": 34223.72265625,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89354002,
+        "qps": 18510.39453125,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13250.26367188,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238998,
+        "qps": 7119.38818359,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4246.81103516,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 2,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r2_C64_K512_N2",
+    "graph_sha256": "9e8e9781e542a629515e9fc2bb347cdf1503eca1f4a09213c8725246291d3562",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77564001,
+        "qps": 31011.88867188,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89450002,
+        "qps": 23681.1953125,
+        "avg_cmps": 779.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96202999,
+        "qps": 11594.66015625,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238002,
+        "qps": 7278.65087891,
+        "avg_cmps": 2163.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822003,
+        "qps": 4318.51855469,
+        "avg_cmps": 3320.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 2,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r2_C64_K1024_N1",
+    "graph_sha256": "b1b12fb84ec517f7e35837a4803f98f6277ceeaf503b60f8d8bd8026d5edb767",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85554999,
+        "qps": 25338.13867188,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94227999,
+        "qps": 14126.22851562,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 8660.04003906,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 6669.04541016,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3620.31567383,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 2,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r2_C64_K512_N1",
+    "graph_sha256": "7ea331d7bb4308eb3138582bd14ab0a7245642492220428a8ca3aa81e727ec9e",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76332003,
+        "qps": 31282.55273438,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94490999,
+        "qps": 15373.94824219,
+        "avg_cmps": 1106.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96142,
+        "qps": 12643.91992188,
+        "avg_cmps": 1304.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99056,
+        "qps": 7306.50683594,
+        "avg_cmps": 2144.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99817997,
+        "qps": 4097.6640625,
+        "avg_cmps": 3370.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 2,
+    "arm": "STOCK",
+    "tag": "t4_r2_STOCK",
+    "graph_sha256": "a27cc7df2663bba0f9f4db9f9768d085e20e0f8a1fc07f7c2dcd4b45b9e04599",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76466,
+        "qps": 29705.32226562,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89042997,
+        "qps": 20238.6953125,
+        "avg_cmps": 844.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96155,
+        "qps": 12586.42089844,
+        "avg_cmps": 1354.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.9914,
+        "qps": 7252.83642578,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 3997.33300781,
+        "avg_cmps": 3670.0,
+        "avg_visited": 157.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 2,
+    "arm": "D0",
+    "tag": "t4_r2_D0",
+    "graph_sha256": "85a73c614abd6f5af6548fc701db4b484246aa134ba853b2cd02573873786bde",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76380998,
+        "qps": 28919.87304688,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89055002,
+        "qps": 20776.67382812,
+        "avg_cmps": 846.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96168,
+        "qps": 12678.27246094,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7178.92578125,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99857998,
+        "qps": 4015.67553711,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 3,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r3_C64_K1024_N1",
+    "graph_sha256": "355e6c1a7ceb7de09870cb93d79640c3645bafd27d48e770373aba0dd2b5557d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85525,
+        "qps": 22639.54492188,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94261998,
+        "qps": 15022.59375,
+        "avg_cmps": 1079.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98328,
+        "qps": 8788.30371094,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99032998,
+        "qps": 7159.01611328,
+        "avg_cmps": 2156.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99860001,
+        "qps": 3721.10620117,
+        "avg_cmps": 3620.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 3,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r3_C64_K512_N1",
+    "graph_sha256": "3b5953c745c8c0696cf5f20243f1959cd9d3ddbe5a08ca7468beebf6dbc53804",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76255,
+        "qps": 31740.89453125,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94480997,
+        "qps": 14988.57128906,
+        "avg_cmps": 1107.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96151,
+        "qps": 12492.31738281,
+        "avg_cmps": 1305.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99037999,
+        "qps": 7118.44580078,
+        "avg_cmps": 2145.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861997,
+        "qps": 3598.80493164,
+        "avg_cmps": 3730.0,
+        "avg_visited": 205.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 3,
+    "arm": "STOCK",
+    "tag": "t4_r3_STOCK",
+    "graph_sha256": "24a22761d41abd0389c6c0f6832d36b6f06a7d83089daaa975da7da4c2cafa1d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76292002,
+        "qps": 29942.62890625,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89521998,
+        "qps": 19889.296875,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96170002,
+        "qps": 13291.66894531,
+        "avg_cmps": 1355.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99116999,
+        "qps": 7168.484375,
+        "avg_cmps": 2274.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99853998,
+        "qps": 4136.74072266,
+        "avg_cmps": 3671.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 3,
+    "arm": "D0",
+    "tag": "t4_r3_D0",
+    "graph_sha256": "3b46e0416d439cd1712e2e298b857d16bfd0b3ae131ff47d96ba3dab2417a390",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76435,
+        "qps": 32418.27148438,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89581001,
+        "qps": 15799.33496094,
+        "avg_cmps": 869.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 11145.04101562,
+        "avg_cmps": 1356.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99133998,
+        "qps": 7136.92285156,
+        "avg_cmps": 2277.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99862999,
+        "qps": 4022.83056641,
+        "avg_cmps": 3667.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 3,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r3_C64_K1024_N2",
+    "graph_sha256": "69c9890a9640efca59011e02893137b75d21205c4255ac6c0aae73ffc8c10fc1",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77222002,
+        "qps": 33249.65625,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349002,
+        "qps": 21373.046875,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210003,
+        "qps": 13732.88769531,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99239999,
+        "qps": 6968.91308594,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4124.52587891,
+        "avg_cmps": 3321.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "rep": 3,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r3_C64_K512_N2",
+    "graph_sha256": "545791eea1c38c97ad2f67c23e59c4941568a3bc07a01db74da159c5408fe4c8",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77463001,
+        "qps": 31326.06445312,
+        "avg_cmps": 538.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89372998,
+        "qps": 21663.12109375,
+        "avg_cmps": 776.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13241.10449219,
+        "avg_cmps": 1240.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99225998,
+        "qps": 7231.85058594,
+        "avg_cmps": 2158.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99809998,
+        "qps": 4312.38916016,
+        "avg_cmps": 3310.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 1,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r1_C64_K512_N1",
+    "graph_sha256": "5efde4c8eabd04c4c81e830a1b35824ee0aa36b473ed35fec112a40ccef9124d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76199001,
+        "qps": 35788.67578125,
+        "avg_cmps": 525.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94466001,
+        "qps": 13319.49902344,
+        "avg_cmps": 1108.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96118999,
+        "qps": 12527.859375,
+        "avg_cmps": 1306.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99049997,
+        "qps": 7178.5546875,
+        "avg_cmps": 2147.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99800998,
+        "qps": 4031.31201172,
+        "avg_cmps": 3368.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 2,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r2_C64_K1024_N2",
+    "graph_sha256": "762eb3df121af4ee7f15aba2b8c1d3b497c35e9d3c3739768d763fa3195e6b43",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77218002,
+        "qps": 33712.828125,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89354002,
+        "qps": 23102.265625,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 12239.31738281,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238998,
+        "qps": 7158.39599609,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4363.13525391,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 2,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r2_C64_K512_N2",
+    "graph_sha256": "9e8e9781e542a629515e9fc2bb347cdf1503eca1f4a09213c8725246291d3562",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77564001,
+        "qps": 31646.671875,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89450002,
+        "qps": 22251.64257812,
+        "avg_cmps": 779.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96202999,
+        "qps": 13177.83496094,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238002,
+        "qps": 7301.22021484,
+        "avg_cmps": 2163.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822003,
+        "qps": 4381.37011719,
+        "avg_cmps": 3320.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 2,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r2_C64_K1024_N1",
+    "graph_sha256": "b1b12fb84ec517f7e35837a4803f98f6277ceeaf503b60f8d8bd8026d5edb767",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85554999,
+        "qps": 23905.6015625,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94227999,
+        "qps": 16274.10839844,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 7964.32617188,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 6946.79833984,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3753.88916016,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 2,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r2_C64_K512_N1",
+    "graph_sha256": "7ea331d7bb4308eb3138582bd14ab0a7245642492220428a8ca3aa81e727ec9e",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76332003,
+        "qps": 33391.9921875,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94490999,
+        "qps": 13919.86132812,
+        "avg_cmps": 1106.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96142,
+        "qps": 12619.20410156,
+        "avg_cmps": 1304.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99056,
+        "qps": 6960.01269531,
+        "avg_cmps": 2144.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99817997,
+        "qps": 4079.47460938,
+        "avg_cmps": 3370.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 2,
+    "arm": "STOCK",
+    "tag": "t4_r2_STOCK",
+    "graph_sha256": "a27cc7df2663bba0f9f4db9f9768d085e20e0f8a1fc07f7c2dcd4b45b9e04599",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76466,
+        "qps": 30422.6015625,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89042997,
+        "qps": 20071.45507812,
+        "avg_cmps": 844.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96155,
+        "qps": 13004.52734375,
+        "avg_cmps": 1354.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.9914,
+        "qps": 7445.15673828,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 4073.87573242,
+        "avg_cmps": 3670.0,
+        "avg_visited": 157.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 2,
+    "arm": "D0",
+    "tag": "t4_r2_D0",
+    "graph_sha256": "85a73c614abd6f5af6548fc701db4b484246aa134ba853b2cd02573873786bde",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76380998,
+        "qps": 25179.84570312,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89055002,
+        "qps": 19523.31835938,
+        "avg_cmps": 846.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96168,
+        "qps": 12225.8203125,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7274.40966797,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99857998,
+        "qps": 4034.16308594,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 3,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r3_C64_K1024_N1",
+    "graph_sha256": "355e6c1a7ceb7de09870cb93d79640c3645bafd27d48e770373aba0dd2b5557d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85525,
+        "qps": 22404.84570312,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94261998,
+        "qps": 14730.55566406,
+        "avg_cmps": 1079.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98328,
+        "qps": 8893.86132812,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99032998,
+        "qps": 7438.64404297,
+        "avg_cmps": 2156.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99860001,
+        "qps": 3490.57568359,
+        "avg_cmps": 3620.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 3,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r3_C64_K512_N1",
+    "graph_sha256": "3b5953c745c8c0696cf5f20243f1959cd9d3ddbe5a08ca7468beebf6dbc53804",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76255,
+        "qps": 31451.68164062,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94480997,
+        "qps": 15159.09472656,
+        "avg_cmps": 1107.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96151,
+        "qps": 11381.484375,
+        "avg_cmps": 1305.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99037999,
+        "qps": 7344.796875,
+        "avg_cmps": 2145.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861997,
+        "qps": 3537.53149414,
+        "avg_cmps": 3730.0,
+        "avg_visited": 205.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 3,
+    "arm": "STOCK",
+    "tag": "t4_r3_STOCK",
+    "graph_sha256": "24a22761d41abd0389c6c0f6832d36b6f06a7d83089daaa975da7da4c2cafa1d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76292002,
+        "qps": 24755.90820312,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89521998,
+        "qps": 19103.21875,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96170002,
+        "qps": 12639.86035156,
+        "avg_cmps": 1355.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99116999,
+        "qps": 7165.62841797,
+        "avg_cmps": 2274.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99853998,
+        "qps": 4025.46191406,
+        "avg_cmps": 3671.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 3,
+    "arm": "D0",
+    "tag": "t4_r3_D0",
+    "graph_sha256": "3b46e0416d439cd1712e2e298b857d16bfd0b3ae131ff47d96ba3dab2417a390",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76435,
+        "qps": 31473.4609375,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89581001,
+        "qps": 20476.74023438,
+        "avg_cmps": 869.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12461.55566406,
+        "avg_cmps": 1356.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99133998,
+        "qps": 7241.41796875,
+        "avg_cmps": 2277.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99862999,
+        "qps": 4022.62182617,
+        "avg_cmps": 3667.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 3,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r3_C64_K1024_N2",
+    "graph_sha256": "69c9890a9640efca59011e02893137b75d21205c4255ac6c0aae73ffc8c10fc1",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77222002,
+        "qps": 33478.7421875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349002,
+        "qps": 21409.9296875,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210003,
+        "qps": 12528.81640625,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99239999,
+        "qps": 7056.44628906,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4317.35302734,
+        "avg_cmps": 3321.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 3,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r3_C64_K512_N2",
+    "graph_sha256": "545791eea1c38c97ad2f67c23e59c4941568a3bc07a01db74da159c5408fe4c8",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77463001,
+        "qps": 29359.95117188,
+        "avg_cmps": 538.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89372998,
+        "qps": 20748.78125,
+        "avg_cmps": 776.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13922.70996094,
+        "avg_cmps": 1240.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99225998,
+        "qps": 6763.703125,
+        "avg_cmps": 2158.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99809998,
+        "qps": 4316.62402344,
+        "avg_cmps": 3310.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 1,
+    "arm": "STOCK",
+    "tag": "t4_r1_STOCK",
+    "graph_sha256": "3687f62cedecde0f32ef0bca894af36a9911f091289fae5b38738e53e6a84dfe",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76344001,
+        "qps": 23918.58007812,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89617002,
+        "qps": 19581.54101562,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12587.76855469,
+        "avg_cmps": 1353.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99122,
+        "qps": 7102.34326172,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 4111.78613281,
+        "avg_cmps": 3665.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 1,
+    "arm": "D0",
+    "tag": "t4_r1_D0",
+    "graph_sha256": "ba4043468204b2417b00cc8604f58b83a16b5d5c74c4c320a57b7f85aafd3aa0",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76379001,
+        "qps": 29511.58398438,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89052999,
+        "qps": 20034.37890625,
+        "avg_cmps": 847.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96173,
+        "qps": 12322.95019531,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7237.97998047,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99858999,
+        "qps": 4022.82543945,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 1,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r1_C64_K1024_N2",
+    "graph_sha256": "21f30293cba26c22a36ece215149aabe7a03e85153f79680de19a107df9d96ca",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77209002,
+        "qps": 33482.10546875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349997,
+        "qps": 22436.71679688,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96217,
+        "qps": 14367.4453125,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99241,
+        "qps": 6799.81591797,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4252.97363281,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 1,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r1_C64_K512_N2",
+    "graph_sha256": "fe22bf9568d7da2bcd365d3baac9946c2d22c3d28736d5e72300274868378909",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77552998,
+        "qps": 31671.92773438,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89441001,
+        "qps": 24420.14257812,
+        "avg_cmps": 778.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96206999,
+        "qps": 13402.84863281,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99237001,
+        "qps": 7111.54101562,
+        "avg_cmps": 2162.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822998,
+        "qps": 4175.5625,
+        "avg_cmps": 3319.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "rep": 1,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r1_C64_K1024_N1",
+    "graph_sha256": "38bfe1d0904952ce44ed6046c873af7428b48ef23d0f2501e4ae08c77d2c9a81",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85553998,
+        "qps": 24097.43164062,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94230998,
+        "qps": 14304.16699219,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 8364.54003906,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 7026.07373047,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3695.86157227,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 2,
+    "arm": "STOCK",
+    "tag": "t4_r2_STOCK",
+    "graph_sha256": "a27cc7df2663bba0f9f4db9f9768d085e20e0f8a1fc07f7c2dcd4b45b9e04599",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76466,
+        "qps": 31486.93945312,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89042997,
+        "qps": 20553.3359375,
+        "avg_cmps": 844.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96155,
+        "qps": 11854.38085938,
+        "avg_cmps": 1354.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.9914,
+        "qps": 7200.03564453,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 3971.06054688,
+        "avg_cmps": 3670.0,
+        "avg_visited": 157.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 2,
+    "arm": "D0",
+    "tag": "t4_r2_D0",
+    "graph_sha256": "85a73c614abd6f5af6548fc701db4b484246aa134ba853b2cd02573873786bde",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76380998,
+        "qps": 30630.77929688,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89055002,
+        "qps": 20211.8203125,
+        "avg_cmps": 846.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96168,
+        "qps": 12558.90136719,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7420.14794922,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99857998,
+        "qps": 4004.6953125,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 3,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r3_C64_K1024_N1",
+    "graph_sha256": "355e6c1a7ceb7de09870cb93d79640c3645bafd27d48e770373aba0dd2b5557d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85525,
+        "qps": 25354.58398438,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94261998,
+        "qps": 13810.45605469,
+        "avg_cmps": 1079.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98328,
+        "qps": 8763.41210938,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99032998,
+        "qps": 7015.39257812,
+        "avg_cmps": 2156.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99860001,
+        "qps": 3654.86523438,
+        "avg_cmps": 3620.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 3,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r3_C64_K512_N1",
+    "graph_sha256": "3b5953c745c8c0696cf5f20243f1959cd9d3ddbe5a08ca7468beebf6dbc53804",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76255,
+        "qps": 31736.16015625,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94480997,
+        "qps": 15290.89355469,
+        "avg_cmps": 1107.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96151,
+        "qps": 12938.55175781,
+        "avg_cmps": 1305.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99037999,
+        "qps": 7316.04394531,
+        "avg_cmps": 2145.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861997,
+        "qps": 3555.10913086,
+        "avg_cmps": 3730.0,
+        "avg_visited": 205.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 3,
+    "arm": "STOCK",
+    "tag": "t4_r3_STOCK",
+    "graph_sha256": "24a22761d41abd0389c6c0f6832d36b6f06a7d83089daaa975da7da4c2cafa1d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76292002,
+        "qps": 30782.20703125,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89521998,
+        "qps": 19510.67382812,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96170002,
+        "qps": 13671.51171875,
+        "avg_cmps": 1355.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99116999,
+        "qps": 6571.23046875,
+        "avg_cmps": 2274.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99853998,
+        "qps": 4050.42285156,
+        "avg_cmps": 3671.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 3,
+    "arm": "D0",
+    "tag": "t4_r3_D0",
+    "graph_sha256": "3b46e0416d439cd1712e2e298b857d16bfd0b3ae131ff47d96ba3dab2417a390",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76435,
+        "qps": 23500.98828125,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89581001,
+        "qps": 18781.28125,
+        "avg_cmps": 869.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12633.6484375,
+        "avg_cmps": 1356.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99133998,
+        "qps": 6874.44433594,
+        "avg_cmps": 2277.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99862999,
+        "qps": 4085.20605469,
+        "avg_cmps": 3667.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 3,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r3_C64_K1024_N2",
+    "graph_sha256": "69c9890a9640efca59011e02893137b75d21205c4255ac6c0aae73ffc8c10fc1",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77222002,
+        "qps": 32407.66015625,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349002,
+        "qps": 21676.78710938,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210003,
+        "qps": 13452.01660156,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99239999,
+        "qps": 7376.65478516,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4220.24267578,
+        "avg_cmps": 3321.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 3,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r3_C64_K512_N2",
+    "graph_sha256": "545791eea1c38c97ad2f67c23e59c4941568a3bc07a01db74da159c5408fe4c8",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77463001,
+        "qps": 30336.125,
+        "avg_cmps": 538.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89372998,
+        "qps": 20434.8125,
+        "avg_cmps": 776.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13497.53515625,
+        "avg_cmps": 1240.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99225998,
+        "qps": 7106.87109375,
+        "avg_cmps": 2158.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99809998,
+        "qps": 4376.74121094,
+        "avg_cmps": 3310.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 1,
+    "arm": "STOCK",
+    "tag": "t4_r1_STOCK",
+    "graph_sha256": "3687f62cedecde0f32ef0bca894af36a9911f091289fae5b38738e53e6a84dfe",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76344001,
+        "qps": 28846.20898438,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89617002,
+        "qps": 21074.37109375,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 11538.94921875,
+        "avg_cmps": 1353.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99122,
+        "qps": 7036.81689453,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 3911.63769531,
+        "avg_cmps": 3665.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 1,
+    "arm": "D0",
+    "tag": "t4_r1_D0",
+    "graph_sha256": "ba4043468204b2417b00cc8604f58b83a16b5d5c74c4c320a57b7f85aafd3aa0",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76379001,
+        "qps": 31123.75390625,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89052999,
+        "qps": 19544.15234375,
+        "avg_cmps": 847.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96173,
+        "qps": 12320.50585938,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7662.27783203,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99858999,
+        "qps": 3837.23681641,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 1,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r1_C64_K1024_N2",
+    "graph_sha256": "21f30293cba26c22a36ece215149aabe7a03e85153f79680de19a107df9d96ca",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77209002,
+        "qps": 36075.296875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349997,
+        "qps": 17714.0390625,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96217,
+        "qps": 14206.38183594,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99241,
+        "qps": 6778.20849609,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4211.87402344,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 1,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r1_C64_K512_N2",
+    "graph_sha256": "fe22bf9568d7da2bcd365d3baac9946c2d22c3d28736d5e72300274868378909",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77552998,
+        "qps": 31409.89648438,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89441001,
+        "qps": 21839.68945312,
+        "avg_cmps": 778.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96206999,
+        "qps": 13021.52832031,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99237001,
+        "qps": 7228.28515625,
+        "avg_cmps": 2162.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822998,
+        "qps": 4378.76269531,
+        "avg_cmps": 3319.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 1,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r1_C64_K1024_N1",
+    "graph_sha256": "38bfe1d0904952ce44ed6046c873af7428b48ef23d0f2501e4ae08c77d2c9a81",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85553998,
+        "qps": 23061.56054688,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94230998,
+        "qps": 15169.97265625,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 9202.13769531,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 6304.83984375,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3788.28198242,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 1,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r1_C64_K512_N1",
+    "graph_sha256": "5efde4c8eabd04c4c81e830a1b35824ee0aa36b473ed35fec112a40ccef9124d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76199001,
+        "qps": 32820.56640625,
+        "avg_cmps": 525.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94466001,
+        "qps": 15036.98339844,
+        "avg_cmps": 1108.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96118999,
+        "qps": 12476.31054688,
+        "avg_cmps": 1306.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99049997,
+        "qps": 7087.22705078,
+        "avg_cmps": 2147.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99800998,
+        "qps": 4128.41308594,
+        "avg_cmps": 3368.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 2,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r2_C64_K1024_N2",
+    "graph_sha256": "762eb3df121af4ee7f15aba2b8c1d3b497c35e9d3c3739768d763fa3195e6b43",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77218002,
+        "qps": 32262.43359375,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89354002,
+        "qps": 22732.49023438,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13201.52929688,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238998,
+        "qps": 6904.22216797,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4377.64160156,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 2,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r2_C64_K512_N2",
+    "graph_sha256": "9e8e9781e542a629515e9fc2bb347cdf1503eca1f4a09213c8725246291d3562",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77564001,
+        "qps": 33219.5,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89450002,
+        "qps": 19072.46679688,
+        "avg_cmps": 779.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96202999,
+        "qps": 13604.20214844,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238002,
+        "qps": 7212.98828125,
+        "avg_cmps": 2163.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822003,
+        "qps": 4355.68164062,
+        "avg_cmps": 3320.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 2,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r2_C64_K1024_N1",
+    "graph_sha256": "b1b12fb84ec517f7e35837a4803f98f6277ceeaf503b60f8d8bd8026d5edb767",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85554999,
+        "qps": 22361.55859375,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94227999,
+        "qps": 15345.16699219,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 8602.18066406,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 7139.578125,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3650.50634766,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 3,
+    "rep": 2,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r2_C64_K512_N1",
+    "graph_sha256": "7ea331d7bb4308eb3138582bd14ab0a7245642492220428a8ca3aa81e727ec9e",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76332003,
+        "qps": 36834.85546875,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94490999,
+        "qps": 12741.515625,
+        "avg_cmps": 1106.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96142,
+        "qps": 12725.59277344,
+        "avg_cmps": 1304.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99056,
+        "qps": 7131.22314453,
+        "avg_cmps": 2144.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99817997,
+        "qps": 4101.55957031,
+        "avg_cmps": 3370.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 3,
+    "arm": "D0",
+    "tag": "t4_r3_D0",
+    "graph_sha256": "3b46e0416d439cd1712e2e298b857d16bfd0b3ae131ff47d96ba3dab2417a390",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76435,
+        "qps": 27630.56835938,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89581001,
+        "qps": 20847.53515625,
+        "avg_cmps": 869.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 11965.27148438,
+        "avg_cmps": 1356.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99133998,
+        "qps": 7287.19580078,
+        "avg_cmps": 2277.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99862999,
+        "qps": 4089.50952148,
+        "avg_cmps": 3667.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 3,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r3_C64_K1024_N2",
+    "graph_sha256": "69c9890a9640efca59011e02893137b75d21205c4255ac6c0aae73ffc8c10fc1",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77222002,
+        "qps": 33729.54296875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349002,
+        "qps": 21276.45898438,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210003,
+        "qps": 13682.8671875,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99239999,
+        "qps": 7058.53808594,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4309.93603516,
+        "avg_cmps": 3321.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 3,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r3_C64_K512_N2",
+    "graph_sha256": "545791eea1c38c97ad2f67c23e59c4941568a3bc07a01db74da159c5408fe4c8",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77463001,
+        "qps": 32975.875,
+        "avg_cmps": 538.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89372998,
+        "qps": 21190.07617188,
+        "avg_cmps": 776.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13432.04980469,
+        "avg_cmps": 1240.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99225998,
+        "qps": 7192.88378906,
+        "avg_cmps": 2158.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99809998,
+        "qps": 4316.91894531,
+        "avg_cmps": 3310.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 1,
+    "arm": "STOCK",
+    "tag": "t4_r1_STOCK",
+    "graph_sha256": "3687f62cedecde0f32ef0bca894af36a9911f091289fae5b38738e53e6a84dfe",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76344001,
+        "qps": 30615.02539062,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89617002,
+        "qps": 18915.3203125,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12783.13085938,
+        "avg_cmps": 1353.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99122,
+        "qps": 7380.0625,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 3835.8840332,
+        "avg_cmps": 3665.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 1,
+    "arm": "D0",
+    "tag": "t4_r1_D0",
+    "graph_sha256": "ba4043468204b2417b00cc8604f58b83a16b5d5c74c4c320a57b7f85aafd3aa0",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76379001,
+        "qps": 31166.921875,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89052999,
+        "qps": 20654.07421875,
+        "avg_cmps": 847.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96173,
+        "qps": 12683.64355469,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7345.77929688,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99858999,
+        "qps": 4011.11889648,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 1,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r1_C64_K1024_N2",
+    "graph_sha256": "21f30293cba26c22a36ece215149aabe7a03e85153f79680de19a107df9d96ca",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77209002,
+        "qps": 31875.76171875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349997,
+        "qps": 23055.7109375,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96217,
+        "qps": 13981.43847656,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99241,
+        "qps": 6416.17041016,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4249.99121094,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 1,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r1_C64_K512_N2",
+    "graph_sha256": "fe22bf9568d7da2bcd365d3baac9946c2d22c3d28736d5e72300274868378909",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77552998,
+        "qps": 31147.99023438,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89441001,
+        "qps": 20870.94335938,
+        "avg_cmps": 778.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96206999,
+        "qps": 13705.57714844,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99237001,
+        "qps": 7215.15283203,
+        "avg_cmps": 2162.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822998,
+        "qps": 4245.00439453,
+        "avg_cmps": 3319.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 1,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r1_C64_K1024_N1",
+    "graph_sha256": "38bfe1d0904952ce44ed6046c873af7428b48ef23d0f2501e4ae08c77d2c9a81",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85553998,
+        "qps": 23956.859375,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94230998,
+        "qps": 15428.05175781,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 8764.08007812,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 7112.58300781,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3718.63745117,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 1,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r1_C64_K512_N1",
+    "graph_sha256": "5efde4c8eabd04c4c81e830a1b35824ee0aa36b473ed35fec112a40ccef9124d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76199001,
+        "qps": 36236.0859375,
+        "avg_cmps": 525.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94466001,
+        "qps": 12092.5859375,
+        "avg_cmps": 1108.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96118999,
+        "qps": 12714.75195312,
+        "avg_cmps": 1306.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99049997,
+        "qps": 6594.95751953,
+        "avg_cmps": 2147.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99800998,
+        "qps": 4091.21948242,
+        "avg_cmps": 3368.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 2,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r2_C64_K1024_N2",
+    "graph_sha256": "762eb3df121af4ee7f15aba2b8c1d3b497c35e9d3c3739768d763fa3195e6b43",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77218002,
+        "qps": 34186.51171875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89354002,
+        "qps": 22154.47851562,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13542.35546875,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238998,
+        "qps": 7309.43359375,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4311.58251953,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 2,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r2_C64_K512_N2",
+    "graph_sha256": "9e8e9781e542a629515e9fc2bb347cdf1503eca1f4a09213c8725246291d3562",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77564001,
+        "qps": 32315.50390625,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89450002,
+        "qps": 20898.29296875,
+        "avg_cmps": 779.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96202999,
+        "qps": 13073.12597656,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238002,
+        "qps": 7054.01171875,
+        "avg_cmps": 2163.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822003,
+        "qps": 4313.80712891,
+        "avg_cmps": 3320.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 2,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r2_C64_K1024_N1",
+    "graph_sha256": "b1b12fb84ec517f7e35837a4803f98f6277ceeaf503b60f8d8bd8026d5edb767",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85554999,
+        "qps": 24212.13671875,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94227999,
+        "qps": 14840.60449219,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 9068.84667969,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 7090.85595703,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3676.38256836,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 2,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r2_C64_K512_N1",
+    "graph_sha256": "7ea331d7bb4308eb3138582bd14ab0a7245642492220428a8ca3aa81e727ec9e",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76332003,
+        "qps": 33100.41796875,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94490999,
+        "qps": 14687.45800781,
+        "avg_cmps": 1106.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96142,
+        "qps": 12839.16210938,
+        "avg_cmps": 1304.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99056,
+        "qps": 7077.95263672,
+        "avg_cmps": 2144.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99817997,
+        "qps": 4073.26635742,
+        "avg_cmps": 3370.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 2,
+    "arm": "STOCK",
+    "tag": "t4_r2_STOCK",
+    "graph_sha256": "a27cc7df2663bba0f9f4db9f9768d085e20e0f8a1fc07f7c2dcd4b45b9e04599",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76466,
+        "qps": 31193.36523438,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89042997,
+        "qps": 19599.7734375,
+        "avg_cmps": 844.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96155,
+        "qps": 12287.11035156,
+        "avg_cmps": 1354.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.9914,
+        "qps": 7330.66845703,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 4017.15966797,
+        "avg_cmps": 3670.0,
+        "avg_visited": 157.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 2,
+    "arm": "D0",
+    "tag": "t4_r2_D0",
+    "graph_sha256": "85a73c614abd6f5af6548fc701db4b484246aa134ba853b2cd02573873786bde",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76380998,
+        "qps": 30048.4375,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89055002,
+        "qps": 20730.80078125,
+        "avg_cmps": 846.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96168,
+        "qps": 12180.99511719,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7295.75537109,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99857998,
+        "qps": 4069.95117188,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 3,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r3_C64_K1024_N1",
+    "graph_sha256": "355e6c1a7ceb7de09870cb93d79640c3645bafd27d48e770373aba0dd2b5557d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85525,
+        "qps": 23660.91015625,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94261998,
+        "qps": 15268.24707031,
+        "avg_cmps": 1079.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98328,
+        "qps": 8741.02148438,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99032998,
+        "qps": 6919.20898438,
+        "avg_cmps": 2156.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99860001,
+        "qps": 3726.140625,
+        "avg_cmps": 3620.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 3,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r3_C64_K512_N1",
+    "graph_sha256": "3b5953c745c8c0696cf5f20243f1959cd9d3ddbe5a08ca7468beebf6dbc53804",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76255,
+        "qps": 32648.15820312,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94480997,
+        "qps": 15441.98925781,
+        "avg_cmps": 1107.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96151,
+        "qps": 11935.2109375,
+        "avg_cmps": 1305.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99037999,
+        "qps": 6826.70703125,
+        "avg_cmps": 2145.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861997,
+        "qps": 3638.23168945,
+        "avg_cmps": 3730.0,
+        "avg_visited": 205.0
+      }
+    ]
+  },
+  {
+    "repeat": 4,
+    "rep": 3,
+    "arm": "STOCK",
+    "tag": "t4_r3_STOCK",
+    "graph_sha256": "24a22761d41abd0389c6c0f6832d36b6f06a7d83089daaa975da7da4c2cafa1d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76292002,
+        "qps": 28584.74023438,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89521998,
+        "qps": 20013.2890625,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96170002,
+        "qps": 12212.05566406,
+        "avg_cmps": 1355.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99116999,
+        "qps": 7626.64794922,
+        "avg_cmps": 2274.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99853998,
+        "qps": 3893.32299805,
+        "avg_cmps": 3671.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 1,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r1_C64_K1024_N2",
+    "graph_sha256": "21f30293cba26c22a36ece215149aabe7a03e85153f79680de19a107df9d96ca",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77209002,
+        "qps": 33037.53515625,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349997,
+        "qps": 21482.0,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96217,
+        "qps": 13599.16992188,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99241,
+        "qps": 7082.72509766,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4287.421875,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 1,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r1_C64_K512_N2",
+    "graph_sha256": "fe22bf9568d7da2bcd365d3baac9946c2d22c3d28736d5e72300274868378909",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77552998,
+        "qps": 31836.28515625,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89441001,
+        "qps": 21923.09375,
+        "avg_cmps": 778.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96206999,
+        "qps": 13162.19042969,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99237001,
+        "qps": 7054.46484375,
+        "avg_cmps": 2162.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822998,
+        "qps": 4206.8671875,
+        "avg_cmps": 3319.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 1,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r1_C64_K1024_N1",
+    "graph_sha256": "38bfe1d0904952ce44ed6046c873af7428b48ef23d0f2501e4ae08c77d2c9a81",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85553998,
+        "qps": 24807.67773438,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94230998,
+        "qps": 13114.73730469,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 8699.01855469,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 6862.22167969,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3735.13549805,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 1,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r1_C64_K512_N1",
+    "graph_sha256": "5efde4c8eabd04c4c81e830a1b35824ee0aa36b473ed35fec112a40ccef9124d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76199001,
+        "qps": 32951.1015625,
+        "avg_cmps": 525.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94466001,
+        "qps": 15036.35058594,
+        "avg_cmps": 1108.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96118999,
+        "qps": 12903.47558594,
+        "avg_cmps": 1306.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99049997,
+        "qps": 7275.97070312,
+        "avg_cmps": 2147.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99800998,
+        "qps": 4174.40820312,
+        "avg_cmps": 3368.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 2,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r2_C64_K1024_N2",
+    "graph_sha256": "762eb3df121af4ee7f15aba2b8c1d3b497c35e9d3c3739768d763fa3195e6b43",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77218002,
+        "qps": 31336.6640625,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89354002,
+        "qps": 21830.29492188,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13619.1171875,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238998,
+        "qps": 7193.76367188,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4310.67382812,
+        "avg_cmps": 3322.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 2,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r2_C64_K512_N2",
+    "graph_sha256": "9e8e9781e542a629515e9fc2bb347cdf1503eca1f4a09213c8725246291d3562",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77564001,
+        "qps": 31950.41210938,
+        "avg_cmps": 541.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89450002,
+        "qps": 21506.71679688,
+        "avg_cmps": 779.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96202999,
+        "qps": 13707.66210938,
+        "avg_cmps": 1243.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99238002,
+        "qps": 7091.44921875,
+        "avg_cmps": 2163.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99822003,
+        "qps": 4332.97509766,
+        "avg_cmps": 3320.0,
+        "avg_visited": 172.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 2,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r2_C64_K1024_N1",
+    "graph_sha256": "b1b12fb84ec517f7e35837a4803f98f6277ceeaf503b60f8d8bd8026d5edb767",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85554999,
+        "qps": 21063.8515625,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94227999,
+        "qps": 15788.25976562,
+        "avg_cmps": 1078.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98320001,
+        "qps": 8597.39453125,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99045002,
+        "qps": 7137.83984375,
+        "avg_cmps": 2155.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861002,
+        "qps": 3724.97607422,
+        "avg_cmps": 3621.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 2,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r2_C64_K512_N1",
+    "graph_sha256": "7ea331d7bb4308eb3138582bd14ab0a7245642492220428a8ca3aa81e727ec9e",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 192
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76332003,
+        "qps": 35332.0703125,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94490999,
+        "qps": 12894.57324219,
+        "avg_cmps": 1106.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96142,
+        "qps": 12456.79003906,
+        "avg_cmps": 1304.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99056,
+        "qps": 7178.92578125,
+        "avg_cmps": 2144.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 192,
+        "recall": 0.99817997,
+        "qps": 4020.80688477,
+        "avg_cmps": 3370.0,
+        "avg_visited": 184.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 2,
+    "arm": "STOCK",
+    "tag": "t4_r2_STOCK",
+    "graph_sha256": "a27cc7df2663bba0f9f4db9f9768d085e20e0f8a1fc07f7c2dcd4b45b9e04599",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76466,
+        "qps": 31129.08398438,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89042997,
+        "qps": 20122.62695312,
+        "avg_cmps": 844.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96155,
+        "qps": 12845.28027344,
+        "avg_cmps": 1354.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.9914,
+        "qps": 6971.16748047,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 3962.84594727,
+        "avg_cmps": 3670.0,
+        "avg_visited": 157.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 2,
+    "arm": "D0",
+    "tag": "t4_r2_D0",
+    "graph_sha256": "85a73c614abd6f5af6548fc701db4b484246aa134ba853b2cd02573873786bde",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76380998,
+        "qps": 31421.83789062,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89055002,
+        "qps": 19274.32226562,
+        "avg_cmps": 846.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96168,
+        "qps": 12747.86621094,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 6852.58642578,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99857998,
+        "qps": 4050.05053711,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 3,
+    "arm": "C64_K1024_N1",
+    "tag": "t4_r3_C64_K1024_N1",
+    "graph_sha256": "355e6c1a7ceb7de09870cb93d79640c3645bafd27d48e770373aba0dd2b5557d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 20,
+      "0.89": 40,
+      "0.96": 80,
+      "0.99": 104,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 20,
+        "recall": 0.85525,
+        "qps": 24187.54101562,
+        "avg_cmps": 680.0,
+        "avg_visited": 30.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94261998,
+        "qps": 14510.06152344,
+        "avg_cmps": 1079.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.98328,
+        "qps": 8824.40429688,
+        "avg_cmps": 1793.0,
+        "avg_visited": 89.0
+      },
+      {
+        "beam": 104,
+        "recall": 0.99032998,
+        "qps": 6798.98388672,
+        "avg_cmps": 2156.0,
+        "avg_visited": 112.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99860001,
+        "qps": 3649.69091797,
+        "avg_cmps": 3620.0,
+        "avg_visited": 204.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 3,
+    "arm": "C64_K512_N1",
+    "tag": "t4_r3_C64_K512_N1",
+    "graph_sha256": "3b5953c745c8c0696cf5f20243f1959cd9d3ddbe5a08ca7468beebf6dbc53804",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 12,
+      "0.89": 40,
+      "0.96": 50,
+      "0.99": 100,
+      "0.998": 224
+    },
+    "rows": [
+      {
+        "beam": 12,
+        "recall": 0.76255,
+        "qps": 32083.67382812,
+        "avg_cmps": 524.0,
+        "avg_visited": 22.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.94480997,
+        "qps": 14113.31054688,
+        "avg_cmps": 1107.0,
+        "avg_visited": 50.0
+      },
+      {
+        "beam": 50,
+        "recall": 0.96151,
+        "qps": 12376.7890625,
+        "avg_cmps": 1305.0,
+        "avg_visited": 60.0
+      },
+      {
+        "beam": 100,
+        "recall": 0.99037999,
+        "qps": 7123.51708984,
+        "avg_cmps": 2145.0,
+        "avg_visited": 108.0
+      },
+      {
+        "beam": 224,
+        "recall": 0.99861997,
+        "qps": 3528.54907227,
+        "avg_cmps": 3730.0,
+        "avg_visited": 205.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 3,
+    "arm": "STOCK",
+    "tag": "t4_r3_STOCK",
+    "graph_sha256": "24a22761d41abd0389c6c0f6832d36b6f06a7d83089daaa975da7da4c2cafa1d",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76292002,
+        "qps": 31071.53320312,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89521998,
+        "qps": 18641.97070312,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96170002,
+        "qps": 12467.70898438,
+        "avg_cmps": 1355.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99116999,
+        "qps": 7195.06787109,
+        "avg_cmps": 2274.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99853998,
+        "qps": 3930.39257812,
+        "avg_cmps": 3671.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 3,
+    "arm": "D0",
+    "tag": "t4_r3_D0",
+    "graph_sha256": "3b46e0416d439cd1712e2e298b857d16bfd0b3ae131ff47d96ba3dab2417a390",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76435,
+        "qps": 30063.70507812,
+        "avg_cmps": 583.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89581001,
+        "qps": 19354.45117188,
+        "avg_cmps": 869.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12896.80273438,
+        "avg_cmps": 1356.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99133998,
+        "qps": 7184.79052734,
+        "avg_cmps": 2277.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99862999,
+        "qps": 4022.671875,
+        "avg_cmps": 3667.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 3,
+    "arm": "C64_K1024_N2",
+    "tag": "t4_r3_C64_K1024_N2",
+    "graph_sha256": "69c9890a9640efca59011e02893137b75d21205c4255ac6c0aae73ffc8c10fc1",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77222002,
+        "qps": 33361.35546875,
+        "avg_cmps": 527.0,
+        "avg_visited": 20.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89349002,
+        "qps": 21974.25390625,
+        "avg_cmps": 766.0,
+        "avg_visited": 31.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210003,
+        "qps": 12729.46386719,
+        "avg_cmps": 1232.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99239999,
+        "qps": 6946.16162109,
+        "avg_cmps": 2155.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99817002,
+        "qps": 4278.06787109,
+        "avg_cmps": 3321.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 3,
+    "arm": "C64_K512_N2",
+    "tag": "t4_r3_C64_K512_N2",
+    "graph_sha256": "545791eea1c38c97ad2f67c23e59c4941568a3bc07a01db74da159c5408fe4c8",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 11,
+      "0.89": 22,
+      "0.96": 44,
+      "0.99": 96,
+      "0.998": 176
+    },
+    "rows": [
+      {
+        "beam": 11,
+        "recall": 0.77463001,
+        "qps": 29551.35351562,
+        "avg_cmps": 538.0,
+        "avg_visited": 21.0
+      },
+      {
+        "beam": 22,
+        "recall": 0.89372998,
+        "qps": 20931.53710938,
+        "avg_cmps": 776.0,
+        "avg_visited": 32.0
+      },
+      {
+        "beam": 44,
+        "recall": 0.96210998,
+        "qps": 13632.68945312,
+        "avg_cmps": 1240.0,
+        "avg_visited": 53.0
+      },
+      {
+        "beam": 96,
+        "recall": 0.99225998,
+        "qps": 7239.14794922,
+        "avg_cmps": 2158.0,
+        "avg_visited": 104.0
+      },
+      {
+        "beam": 176,
+        "recall": 0.99809998,
+        "qps": 4317.92333984,
+        "avg_cmps": 3310.0,
+        "avg_visited": 171.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 1,
+    "arm": "STOCK",
+    "tag": "t4_r1_STOCK",
+    "graph_sha256": "3687f62cedecde0f32ef0bca894af36a9911f091289fae5b38738e53e6a84dfe",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 21,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76344001,
+        "qps": 30603.40625,
+        "avg_cmps": 582.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 21,
+        "recall": 0.89617002,
+        "qps": 21055.203125,
+        "avg_cmps": 868.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96174002,
+        "qps": 12368.859375,
+        "avg_cmps": 1353.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99122,
+        "qps": 7033.67480469,
+        "avg_cmps": 2273.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99849999,
+        "qps": 3926.22924805,
+        "avg_cmps": 3665.0,
+        "avg_visited": 156.0
+      }
+    ]
+  },
+  {
+    "repeat": 5,
+    "rep": 1,
+    "arm": "D0",
+    "tag": "t4_r1_D0",
+    "graph_sha256": "ba4043468204b2417b00cc8604f58b83a16b5d5c74c4c320a57b7f85aafd3aa0",
+    "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+    "qps_cpu": 0,
+    "target_beam": {
+      "0.76": 10,
+      "0.89": 20,
+      "0.96": 40,
+      "0.99": 80,
+      "0.998": 160
+    },
+    "rows": [
+      {
+        "beam": 10,
+        "recall": 0.76379001,
+        "qps": 31197.35351562,
+        "avg_cmps": 584.0,
+        "avg_visited": 19.0
+      },
+      {
+        "beam": 20,
+        "recall": 0.89052999,
+        "qps": 19713.13476562,
+        "avg_cmps": 847.0,
+        "avg_visited": 29.0
+      },
+      {
+        "beam": 40,
+        "recall": 0.96173,
+        "qps": 12468.71875,
+        "avg_cmps": 1357.0,
+        "avg_visited": 48.0
+      },
+      {
+        "beam": 80,
+        "recall": 0.99141997,
+        "qps": 7365.84765625,
+        "avg_cmps": 2278.0,
+        "avg_visited": 87.0
+      },
+      {
+        "beam": 160,
+        "recall": 0.99858999,
+        "qps": 3910.22436523,
+        "avg_cmps": 3668.0,
+        "avg_visited": 156.0
+      }
+    ]
+  }
+]
