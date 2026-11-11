@@ -1,0 +1,1176 @@
+[
+  {
+    "target": 0.76,
+    "arms": {
+      "C32_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          560.5669928447875,
+          562.3794523178224,
+          564.1919117908571
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 560.5669928447875,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 11.622995000000003,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 564.1919117908571,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 11.781001000000002,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A120": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ]
+      },
+      "C64_A120": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ]
+      },
+      "C48_A105": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          475.6841863438277,
+          475.8424316417577,
+          476.0006769396877
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 475.6841863438277,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 10.435998999999995,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 476.0006769396877,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 10.350996000000002,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C32": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          516.1285271250592,
+          516.1618875241395,
+          516.1952479232197
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 516.1952479232197,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 12.398999999999994,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 516.1285271250592,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 12.198001000000003,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          491.50532750030106,
+          492.0347749806717,
+          492.56422246104245
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 491.50532750030106,
+            "beams": [
+              11,
+              12
+            ],
+            "width_pp": 1.7770060000000032,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 492.56422246104245,
+            "beams": [
+              11,
+              12
+            ],
+            "width_pp": 1.8610000000000015,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          512.7481374570447,
+          513.5370436542761,
+          515.8197014238567
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 515.8197014238567,
+            "beams": [
+              10,
+              11
+            ],
+            "width_pp": 2.0079969999999947,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 513.5370436542761,
+            "beams": [
+              10,
+              11
+            ],
+            "width_pp": 1.9029980000000002,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 512.7481374570447,
+            "beams": [
+              10,
+              11
+            ],
+            "width_pp": 2.037,
+            "status": "INTERPOLATED"
+          }
+        ]
+      }
+    },
+    "ratios_to_control": {
+      "C32_A120": {
+        "baseline": "C32",
+        "ratio_med_cmps": 1.0895408318800395,
+        "coverage": "2/2"
+      },
+      "C48_A120": {
+        "baseline": "C48",
+        "ratio_med_cmps": null,
+        "coverage": "0/2"
+      },
+      "C64_A120": {
+        "baseline": "C64",
+        "ratio_med_cmps": null,
+        "coverage": "0/2"
+      },
+      "C48_A105": {
+        "baseline": "C48",
+        "ratio_med_cmps": 0.9670910590830697,
+        "coverage": "2/2"
+      }
+    }
+  },
+  {
+    "target": 0.89,
+    "arms": {
+      "C32_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          863.6712761631579,
+          867.5352611188209,
+          871.3992460744838
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 863.6712761631579,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 6.634998000000003,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 871.3992460744838,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 6.5720019999999995,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          765.4177108571547,
+          765.8608079938646,
+          766.3039051305744
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 765.4177108571547,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.5770019999999931,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 766.3039051305744,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.5659990000000059,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          806.3749941791916,
+          806.3795341027654,
+          806.3840740263392
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 806.3749941791916,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 8.053005000000002,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 806.3840740263392,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 8.046001000000002,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A105": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          733.4747826386161,
+          734.2243032920437,
+          734.9738239454713
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 734.9738239454713,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 6.094997999999996,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 733.4747826386161,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 6.045001999999999,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C32": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          806.3777534676316,
+          806.8354502467064,
+          807.2931470257811
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 806.3777534676316,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 1.043003000000009,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 807.2931470257811,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 1.0369949999999961,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          731.7058066809087,
+          732.288840104731,
+          732.8718735285534
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 731.7058066809087,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 5.435996999999992,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 732.8718735285534,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 5.353998999999998,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          755.1293262708914,
+          756.1995868085327,
+          756.544476235347
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 756.1995868085327,
+            "beams": [
+              21,
+              22
+            ],
+            "width_pp": 0.5609989999999954,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 755.1293262708914,
+            "beams": [
+              21,
+              22
+            ],
+            "width_pp": 0.6030019999999969,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 756.544476235347,
+            "beams": [
+              21,
+              22
+            ],
+            "width_pp": 0.6409939999999947,
+            "status": "INTERPOLATED"
+          }
+        ]
+      }
+    },
+    "ratios_to_control": {
+      "C32_A120": {
+        "baseline": "C32",
+        "ratio_med_cmps": 1.0752319582060434,
+        "coverage": "2/2"
+      },
+      "C48_A120": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.0458452540179803,
+        "coverage": "2/2"
+      },
+      "C64_A120": {
+        "baseline": "C64",
+        "ratio_med_cmps": 1.0663580728812778,
+        "coverage": "2/2"
+      },
+      "C48_A105": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.002643032477507,
+        "coverage": "2/2"
+      }
+    }
+  },
+  {
+    "target": 0.96,
+    "arms": {
+      "C32_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1475.2693148317067,
+          1475.607541101876,
+          1475.9457673720453
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1475.2693148317067,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 1.0020020000000018,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1475.9457673720453,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.997997000000006,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1235.1957876213887,
+          1237.499553482393,
+          1239.803319343397
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1235.1957876213887,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.5160030000000093,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1239.803319343397,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.5229949999999928,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1279.1050841140016,
+          1279.2638248325493,
+          1279.4225655510968
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1279.4225655510968,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 3.8150009999999956,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1279.1050841140016,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 3.8150009999999956,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A105": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1218.4957614455648,
+          1219.870801438783,
+          1221.2458414320013
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1218.4957614455648,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 2.8609989999999974,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1221.2458414320013,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 2.8410019999999925,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C32": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1412.4911101188038,
+          1416.5746689834523,
+          1420.658227848101
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1412.4911101188038,
+            "beams": [
+              96,
+              100
+            ],
+            "width_pp": 0.15900100000000306,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1420.658227848101,
+            "beams": [
+              96,
+              100
+            ],
+            "width_pp": 0.15800000000000258,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1206.294901646721,
+          1208.2171819218624,
+          1210.1394621970037
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1210.1394621970037,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 2.3580009999999985,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1206.294901646721,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 2.3200039999999977,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          1202.5014319727893,
+          1203.6074053367804,
+          1210.6721311475403
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1202.5014319727893,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.5879999999999996,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1203.6074053367804,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.600998999999991,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 1210.6721311475403,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.6099999999999994,
+            "status": "INTERPOLATED"
+          }
+        ]
+      }
+    },
+    "ratios_to_control": {
+      "C32_A120": {
+        "baseline": "C32",
+        "ratio_med_cmps": 1.0416729688953046,
+        "coverage": "2/2"
+      },
+      "C48_A120": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.0242360165032185,
+        "coverage": "2/2"
+      },
+      "C64_A120": {
+        "baseline": "C64",
+        "ratio_med_cmps": 1.0628580541797177,
+        "coverage": "2/2"
+      },
+      "C48_A105": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.0096453019302238,
+        "coverage": "2/2"
+      }
+    }
+  },
+  {
+    "target": 0.99,
+    "arms": {
+      "C32_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2931.2395935172785,
+          2938.1223871152806,
+          2945.0051807132827
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2945.0051807132827,
+            "beams": [
+              224,
+              256
+            ],
+            "width_pp": 0.1880050000000022,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2931.2395935172785,
+            "beams": [
+              224,
+              256
+            ],
+            "width_pp": 0.1789990000000019,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2103.5366714238417,
+          2103.5626235209593,
+          2103.5885756180764
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2103.5366714238417,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.40500200000000985,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2103.5885756180764,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.40100199999999475,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2157.21385651416,
+          2157.367673301746,
+          2157.521490089332
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2157.21385651416,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.3620019999999955,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2157.521490089332,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.3599989999999895,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A105": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2094.9512045773545,
+          2095.3575898663175,
+          2095.763975155281
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2094.9512045773545,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.50299800000001,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2095.763975155281,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.4830000000000001,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C32": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ]
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2026.2002776405259,
+          2042.4715931951687,
+          2058.7429087498112
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2026.2002776405259,
+            "beams": [
+              108,
+              112
+            ],
+            "width_pp": 0.08500200000000069,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2058.7429087498112,
+            "beams": [
+              112,
+              120
+            ],
+            "width_pp": 0.12899699999999736,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          2002.6200856611501,
+          2005.5221384275135,
+          2011.3539245796758
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2011.3539245796758,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.3789959999999981,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2002.6200856611501,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.3780010000000056,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 2005.5221384275135,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.39700200000000185,
+            "status": "INTERPOLATED"
+          }
+        ]
+      }
+    },
+    "ratios_to_control": {
+      "C32_A120": {
+        "baseline": "C32",
+        "ratio_med_cmps": null,
+        "coverage": "2/2"
+      },
+      "C48_A120": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.0299103451569782,
+        "coverage": "2/2"
+      },
+      "C64_A120": {
+        "baseline": "C64",
+        "ratio_med_cmps": 1.0757137166250836,
+        "coverage": "2/2"
+      },
+      "C48_A105": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.0258931369461133,
+        "coverage": "2/2"
+      }
+    }
+  },
+  {
+    "target": 0.998,
+    "arms": {
+      "C32_A120": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ]
+      },
+      "C48_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          3520.558793693112,
+          3555.0887092975136,
+          3589.6186249019147
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3520.558793693112,
+            "beams": [
+              192,
+              224
+            ],
+            "width_pp": 0.06900399999999474,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3589.6186249019147,
+            "beams": [
+              192,
+              224
+            ],
+            "width_pp": 0.06499899999999892,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64_A120": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          3431.133895427455,
+          3433.39049913173,
+          3435.6471028360047
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3431.133895427455,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.13900399999999813,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3435.6471028360047,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.1389980000000013,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C48_A105": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ]
+      },
+      "C32": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ]
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          3456.7419440419408,
+          3466.0415081204164,
+          3475.3410721988917
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3456.7419440419408,
+            "beams": [
+              224,
+              256
+            ],
+            "width_pp": 0.04900100000000407,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3475.3410721988917,
+            "beams": [
+              224,
+              256
+            ],
+            "width_pp": 0.0509980000000021,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          3222.249999999996,
+          3238.922045454548,
+          3266.3536658533785
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3266.3536658533785,
+            "beams": [
+              160,
+              176
+            ],
+            "width_pp": 0.05000199999999344,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3238.922045454548,
+            "beams": [
+              160,
+              176
+            ],
+            "width_pp": 0.043999999999999595,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 3222.249999999996,
+            "beams": [
+              160,
+              176
+            ],
+            "width_pp": 0.04799999999999249,
+            "status": "INTERPOLATED"
+          }
+        ]
+      }
+    },
+    "ratios_to_control": {
+      "C32_A120": {
+        "baseline": "C32",
+        "ratio_med_cmps": null,
+        "coverage": "0/2"
+      },
+      "C48_A120": {
+        "baseline": "C48",
+        "ratio_med_cmps": 1.0256913256717997,
+        "coverage": "2/2"
+      },
+      "C64_A120": {
+        "baseline": "C64",
+        "ratio_med_cmps": 1.0600411034745636,
+        "coverage": "2/2"
+      },
+      "C48_A105": {
+        "baseline": "C48",
+        "ratio_med_cmps": null,
+        "coverage": "0/2"
+      }
+    }
+  }
+]

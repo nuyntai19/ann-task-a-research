@@ -1,0 +1,107 @@
+[
+  {
+    "B64_beam": 10,
+    "B64_recall": 0.75230998,
+    "B64_cmps": 508.0,
+    "EDGE_R": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 11,
+      "recall": 0.77029997,
+      "avg_cmps": 521.0,
+      "comparisons_ratio_vs_B64": 1.0255905511811023,
+      "excess_recall_pp": 1.79899899999999
+    },
+    "EDGE_ALPHA": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 11,
+      "recall": 0.76745999,
+      "avg_cmps": 573.0,
+      "comparisons_ratio_vs_B64": 1.1279527559055118,
+      "excess_recall_pp": 1.5150009999999936
+    }
+  },
+  {
+    "B64_beam": 20,
+    "B64_recall": 0.88067001,
+    "B64_cmps": 728.0,
+    "EDGE_R": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 21,
+      "recall": 0.88669997,
+      "avg_cmps": 740.0,
+      "comparisons_ratio_vs_B64": 1.0164835164835164,
+      "excess_recall_pp": 0.6029960000000001
+    },
+    "EDGE_ALPHA": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 21,
+      "recall": 0.88687003,
+      "avg_cmps": 818.0,
+      "comparisons_ratio_vs_B64": 1.1236263736263736,
+      "excess_recall_pp": 0.6200019999999973
+    }
+  },
+  {
+    "B64_beam": 40,
+    "B64_recall": 0.95582998,
+    "B64_cmps": 1154.0,
+    "EDGE_R": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 44,
+      "recall": 0.96130002,
+      "avg_cmps": 1224.0,
+      "comparisons_ratio_vs_B64": 1.0606585788561524,
+      "excess_recall_pp": 0.5470040000000065
+    },
+    "EDGE_ALPHA": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 40,
+      "recall": 0.95594001,
+      "avg_cmps": 1271.0,
+      "comparisons_ratio_vs_B64": 1.1013864818024264,
+      "excess_recall_pp": 0.01100299999999832
+    }
+  },
+  {
+    "B64_beam": 80,
+    "B64_recall": 0.98853999,
+    "B64_cmps": 1918.0,
+    "EDGE_R": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 96,
+      "recall": 0.99208999,
+      "avg_cmps": 2141.0,
+      "comparisons_ratio_vs_B64": 1.116266944734098,
+      "excess_recall_pp": 0.3549999999999942
+    },
+    "EDGE_ALPHA": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 80,
+      "recall": 0.98965001,
+      "avg_cmps": 2130.0,
+      "comparisons_ratio_vs_B64": 1.110531803962461,
+      "excess_recall_pp": 0.11100199999999338
+    }
+  },
+  {
+    "B64_beam": 160,
+    "B64_recall": 0.99765003,
+    "B64_cmps": 3106.0,
+    "EDGE_R": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 176,
+      "recall": 0.99809998,
+      "avg_cmps": 3283.0,
+      "comparisons_ratio_vs_B64": 1.0569864777849325,
+      "excess_recall_pp": 0.04499500000000323
+    },
+    "EDGE_ALPHA": {
+      "status": "RECALL_AT_LEAST_TARGET",
+      "beam": 160,
+      "recall": 0.99811,
+      "avg_cmps": 3458.0,
+      "comparisons_ratio_vs_B64": 1.1133290405666452,
+      "excess_recall_pp": 0.045997000000008725
+    }
+  }
+]

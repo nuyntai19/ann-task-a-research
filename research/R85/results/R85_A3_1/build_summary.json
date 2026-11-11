@@ -1,0 +1,48 @@
+{
+  "new_arms": {
+    "C32": {
+      "n": 2,
+      "median_wall_s": 40.16,
+      "median_rss_kib": 1784840.0,
+      "median_arcs": 15168397.0,
+      "all_wall_s": [
+        40.28,
+        40.04
+      ],
+      "all_rss_kib": [
+        1783556,
+        1786124
+      ]
+    },
+    "C48": {
+      "n": 2,
+      "median_wall_s": 42.035,
+      "median_rss_kib": 1870078.0,
+      "median_arcs": 20651974.5,
+      "all_wall_s": [
+        41.16,
+        42.91
+      ],
+      "all_rss_kib": [
+        1865472,
+        1874684
+      ]
+    },
+    "C96": {
+      "n": 2,
+      "median_wall_s": 41.625,
+      "median_rss_kib": 2295244.0,
+      "median_arcs": 25809296.5,
+      "all_wall_s": [
+        41.62,
+        41.63
+      ],
+      "all_rss_kib": [
+        2301664,
+        2288824
+      ]
+    }
+  },
+  "reference_old_a1_build_run": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/runs_20261109-215545",
+  "warning": "Old and new BUILD timings are separate sessions, comparison is exploratory"
+}
