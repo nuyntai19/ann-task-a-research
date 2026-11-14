@@ -1,0 +1,89 @@
+--- H70/algorithms/PipNN/pipnn.h
++++ H83/algorithms/PipNN/pipnn.h
+@@ -71,16 +71,36 @@
+     fanout = std::min<int>(fanout, (int)num_leaders);
+ 
+     int granularity = 5000;
++    #if defined(R83_COMPACT_FANOUT)
++    // MAX_NUM_LEADERS is capped at 512 in the pinned source.
++    CHECK(leaders.size() <= 65535);
++    parlay::sequence<uint16_t> compact(ids.size() * fanout);
++#else
+     parlay::sequence<std::pair<uint32_t, uint32_t>> flat(ids.size() * fanout);
++#endif
+     parlay::internal::timer t;
+     t.start();
++    #if defined(R83_COMPACT_FANOUT)
++    assign_leaders(Points, ids, leaders, fanout, compact, granularity);
++#else
+     assign_leaders(Points, ids, leaders, fanout, flat, granularity);
++#endif
+     if (depth == 0) {
+       t.next("first level assign time");
+     }
+ 
++    #if defined(R83_COMPACT_FANOUT)
++    // Reconstruct the original (leader-index, point-ID) stream without an 8B pair array.
++    // The compact buffer is kept alive throughout group_by_index.
++    auto reconstructed = parlay::delayed_tabulate(compact.size(), [&](size_t k) {
++      return std::make_pair(static_cast<uint32_t>(compact[k]), ids[k / fanout]);
++    });
++    parlay::sequence<Bucket> clusters =
++        parlay::group_by_index(reconstructed, leaders.size());
++#else
+     parlay::sequence<Bucket> clusters =
+         parlay::group_by_index(flat, leaders.size());
++#endif
+     leaders.clear();
+ 
+     // Filter out empty clusters produced by group_by_index.
+--- H70/algorithms/PipNN/pipnn_utils.h
++++ H83/algorithms/PipNN/pipnn_utils.h
+@@ -328,12 +328,12 @@
+ }
+ 
+ 
+-template <class PR, class Bucket>
++template <class PR, class Bucket, class R83Output>
+ void assign_leaders(PR& Points,
+                     const Bucket& ids,
+                     const Bucket& leaders,
+                     size_t fanout,
+-                    parlay::sequence<std::pair<uint32_t,uint32_t>>& flat,
++                    R83Output& flat,
+                     int granularity) {
+   using coord_type = typename PR::Point::T;
+   const size_t N   = ids.size();
+@@ -414,7 +414,12 @@
+       for (size_t fn = 0; fn < fanout; ++fn) {
+         double d = cd[fn];
+         pairs[fn] = unpackDouble(d);
++        #if defined(R83_COMPACT_FANOUT)
++        // Same selected leader and slot order; source ID is reconstructed during grouping.
++        flat[(start + ti)*fanout + fn] = static_cast<uint16_t>(pairs[fn].second);
++#else
+         flat[(start + ti)*fanout + fn] = std::make_pair(pairs[fn].second, ids[start + ti]);
++#endif
+       }
+     }
+ 
+--- H70/algorithms/PipNN/CMakeLists.txt
++++ H83/algorithms/PipNN/CMakeLists.txt
+@@ -2,6 +2,7 @@
+ option(R71_USE_H17 "Enable H17 packed top2 for MST_DEG==2" OFF)
+ # R70_COMPILE_TIME_RESERVOIR_SELECTION (research-only isolated worktree)
+ option(R70_USE_TIER "R70 Two-Tier physical reservoir; logical C unchanged" OFF)
++option(R83_COMPACT_FANOUT "R83 Compact 16-bit assignment buffer; test only" OFF)
+ #add_executable(${TARGET_NAME} ../bench/neighborsTime.C)
+ #target_link_libraries(${TARGET_NAME} PRIVATE parlay ParlayANN Eigen3::Eigen)
+ #target_include_directories(${TARGET_NAME} PRIVATE ../bench)
+@@ -42,6 +43,9 @@
+         if(R70_USE_TIER)
+             target_compile_definitions(${TARGET_NAME} PRIVATE R70_TWO_TIER=1)
+         endif()
++        if(R83_COMPACT_FANOUT)
++            target_compile_definitions(${TARGET_NAME} PRIVATE R83_COMPACT_FANOUT=1)
++        endif()
+ 
+         message(STATUS "Configured Target: ${TARGET_NAME} with Definitions: ${DATATYPE_DEFINE}, ${DISTANCETYPE_DEFINE}")
+     endforeach()

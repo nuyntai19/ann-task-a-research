@@ -1,0 +1,17 @@
+--- /home/tai/ann-task-a/experiments/H70/h17-audit/baseline_pipnn.h	2026-11-04 21:24:47.583269908 +0700
++++ /home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/PiPNN-top2/algorithms/PipNN/pipnn.h	2026-10-23 15:23:08.568033037 +0700
+@@ -440,6 +440,14 @@
+        // Note we can still have some small clusters due to how sampling works.
+      });
+     t.next("build leaf time");
++    const double h17_to_s = 1e-9;
++    std::cout << "H17_LEAF_PROFILE matrix_sum_s=" << h17_matrix_ns.load() * h17_to_s
++              << " selection_sum_s=" << h17_selection_ns.load() * h17_to_s
++              << " merge_sum_s=" << h17_merge_ns.load() * h17_to_s
++              << " leaves=" << h17_leaf_calls.load()
++              << " pair_count=" << h17_pair_count.load()
++              << " directed_candidates=" << h17_directed_candidates.load()
++              << std::endl;
+   }
+ 
+   void multiple_clustertrees(GraphH &G, PR &Points, long cluster_size,
