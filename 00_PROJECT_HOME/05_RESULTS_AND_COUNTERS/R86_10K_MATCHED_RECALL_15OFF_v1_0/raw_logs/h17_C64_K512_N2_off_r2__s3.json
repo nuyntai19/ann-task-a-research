@@ -1,0 +1,108 @@
+{
+  "arm": "A3",
+  "run_id": "h17_C64_K512_N2_off_r2",
+  "graph_sha256": "13c117fcecdb02b9b55f53280da3621ee68cc6f9dea5095e71e54bb247e0f731",
+  "build_rep": 2,
+  "search_rep": 3,
+  "cpu": 0,
+  "rows": [
+    {
+      "beam": 40,
+      "recall_at10": 0.97931999,
+      "qps": 25970.51953125,
+      "avg_cmps": 847,
+      "avg_visited": 47
+    },
+    {
+      "beam": 48,
+      "recall_at10": 0.98623002,
+      "qps": 22647.84960938,
+      "avg_cmps": 969,
+      "avg_visited": 55
+    },
+    {
+      "beam": 56,
+      "recall_at10": 0.99043,
+      "qps": 20079.75585938,
+      "avg_cmps": 1092,
+      "avg_visited": 63
+    },
+    {
+      "beam": 64,
+      "recall_at10": 0.99308997,
+      "qps": 18004.87890625,
+      "avg_cmps": 1213,
+      "avg_visited": 70
+    },
+    {
+      "beam": 72,
+      "recall_at10": 0.99510998,
+      "qps": 16318.77734375,
+      "avg_cmps": 1276,
+      "avg_visited": 78
+    },
+    {
+      "beam": 80,
+      "recall_at10": 0.99636,
+      "qps": 14952.98046875,
+      "avg_cmps": 1383,
+      "avg_visited": 86
+    },
+    {
+      "beam": 96,
+      "recall_at10": 0.99787003,
+      "qps": 12825.15039062,
+      "avg_cmps": 1536,
+      "avg_visited": 101
+    },
+    {
+      "beam": 112,
+      "recall_at10": 0.99871999,
+      "qps": 11279.3359375,
+      "avg_cmps": 1714,
+      "avg_visited": 114
+    },
+    {
+      "beam": 128,
+      "recall_at10": 0.99927998,
+      "qps": 10005.96386719,
+      "avg_cmps": 1890,
+      "avg_visited": 127
+    },
+    {
+      "beam": 144,
+      "recall_at10": 0.99953002,
+      "qps": 9135.90820312,
+      "avg_cmps": 1983,
+      "avg_visited": 140
+    },
+    {
+      "beam": 160,
+      "recall_at10": 0.99966002,
+      "qps": 8379.45507812,
+      "avg_cmps": 2116,
+      "avg_visited": 151
+    },
+    {
+      "beam": 192,
+      "recall_at10": 0.99976999,
+      "qps": 7316.63232422,
+      "avg_cmps": 2303,
+      "avg_visited": 171
+    },
+    {
+      "beam": 224,
+      "recall_at10": 0.99980998,
+      "qps": 6571.93017578,
+      "avg_cmps": 2490,
+      "avg_visited": 188
+    },
+    {
+      "beam": 256,
+      "recall_at10": 0.99989003,
+      "qps": 6048.10693359,
+      "avg_cmps": 2650,
+      "avg_visited": 202
+    }
+  ]
+}

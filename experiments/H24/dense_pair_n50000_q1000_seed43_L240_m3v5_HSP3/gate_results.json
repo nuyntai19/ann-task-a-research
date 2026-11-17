@@ -1,0 +1,137 @@
+{
+  "status": "MEASURED_DENSE_PAIR_ONLY",
+  "runs_found": 1,
+  "runs_expected": 1,
+  "speedup_goal": 1.15,
+  "gate_tlow_over_thigh": 0.869565,
+  "runs": [
+    {
+      "seed": 43,
+      "arms": {
+        "low": {
+          "L": 240,
+          "m": 3,
+          "C": 200,
+          "n": 50000,
+          "leader_s": 0.56,
+          "candidate_s": 0.72,
+          "ending_spine_s": 0.81,
+          "build_s": 2.09,
+          "graph": {
+            "candidate_edges": 10000000,
+            "directed_edges": 1036993,
+            "csr_memory_MB": 5.0
+          },
+          "query_hub": [
+            {
+              "ef": 60,
+              "recall10": 0.9878,
+              "dist_per_query": 1104.0,
+              "qps": 8284.0
+            },
+            {
+              "ef": 100,
+              "recall10": 0.9959,
+              "dist_per_query": 1541.0,
+              "qps": 5982.0
+            },
+            {
+              "ef": 140,
+              "recall10": 0.999,
+              "dist_per_query": 1922.0,
+              "qps": 4797.0
+            },
+            {
+              "ef": 200,
+              "recall10": 0.9998,
+              "dist_per_query": 2427.0,
+              "qps": 3609.0
+            }
+          ],
+          "limitations": [
+            "Stage timings have 0.01s display rounding",
+            "CLI wall time includes query evaluation; do not use it as BUILD",
+            "CSR memory in log excludes vectors, other index state, peak BUILD RSS"
+          ],
+          "log": "/home/tai/ann-task-a/experiments/H24/dense_pair_n50000_q1000_seed43_L240_m3v5_HSP3/dense_low_m3_seed43.log"
+        },
+        "high": {
+          "L": 240,
+          "m": 5,
+          "C": 200,
+          "n": 50000,
+          "leader_s": 0.56,
+          "candidate_s": 1.43,
+          "ending_spine_s": 0.67,
+          "build_s": 2.66,
+          "graph": {
+            "candidate_edges": 10000000,
+            "directed_edges": 1090288,
+            "csr_memory_MB": 5.0
+          },
+          "query_hub": [
+            {
+              "ef": 60,
+              "recall10": 0.993,
+              "dist_per_query": 1154.0,
+              "qps": 8386.0
+            },
+            {
+              "ef": 100,
+              "recall10": 0.998,
+              "dist_per_query": 1613.0,
+              "qps": 5742.0
+            },
+            {
+              "ef": 140,
+              "recall10": 0.9994,
+              "dist_per_query": 2014.0,
+              "qps": 4485.0
+            }
+          ],
+          "limitations": [
+            "Stage timings have 0.01s display rounding",
+            "CLI wall time includes query evaluation; do not use it as BUILD",
+            "CSR memory in log excludes vectors, other index state, peak BUILD RSS"
+          ],
+          "log": "/home/tai/ann-task-a/experiments/H24/dense_pair_n50000_q1000_seed43_L240_m3v5_HSP3/dense_high_m5_seed43.log"
+        }
+      },
+      "gate": {
+        "status": "POSITIVE_TIME_ALLOWANCE_ONLY",
+        "low_div_high": 0.78571,
+        "additional_seconds_max": 0.223,
+        "stage_only_no_actual_rescue": true,
+        "recall_at_same_ef": [
+          {
+            "ef": 60,
+            "low_recall10": 0.9878,
+            "high_recall10": 0.993,
+            "delta_recall10": 0.0052,
+            "low_qps": 8284.0,
+            "high_qps": 8386.0
+          },
+          {
+            "ef": 100,
+            "low_recall10": 0.9959,
+            "high_recall10": 0.998,
+            "delta_recall10": 0.0021,
+            "low_qps": 5982.0,
+            "high_qps": 5742.0
+          },
+          {
+            "ef": 140,
+            "low_recall10": 0.999,
+            "high_recall10": 0.9994,
+            "delta_recall10": 0.0004,
+            "low_qps": 4797.0,
+            "high_qps": 4485.0
+          }
+        ]
+      }
+    }
+  ],
+  "decision_note": "A single seed is preliminary; three paired seeds and stable quality evidence required for robust decision.",
+  "median_tlow_over_thigh": 0.78571,
+  "median_allowance_seconds": 0.223
+}

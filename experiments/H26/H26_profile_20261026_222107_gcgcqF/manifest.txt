@@ -1,0 +1,8 @@
+H26_PROFILE_RUN 2026-10-26T22:21:07+07:00
+source=/home/tai/ann-task-a/experiments/H26/PiPNN-H26-src
+source_git=443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+binary_sha256=df77b6dfd715b5056689588fbf3114e01f284852826cc029c2a49f78c10f6c75  /home/tai/ann-task-a/experiments/H26/PiPNN-H26-src/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN
+base=/home/tai/ann-task-a/data/sift1m.fbin
+base_sha256=8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e  /home/tai/ann-task-a/data/sift1m.fbin
+cpuset=0,2,4,6 threads=4 rounds=2 modes=stock top2
+Validation H26_CHECK_TOP2 disabled during timed profiling; optional separate check.

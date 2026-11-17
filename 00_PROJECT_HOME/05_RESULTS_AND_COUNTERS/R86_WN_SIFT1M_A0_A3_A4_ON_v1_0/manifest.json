@@ -1,0 +1,102 @@
+{
+  "arms": {
+    "A0": {
+      "C": 160,
+      "K": 1024,
+      "N": 2,
+      "kind": "stock_on"
+    },
+    "A3": {
+      "C": 64,
+      "K": 512,
+      "N": 2,
+      "kind": "h17_on"
+    },
+    "A4": {
+      "C": 64,
+      "K": 512,
+      "N": 1,
+      "kind": "h17_on"
+    }
+  },
+  "base_source_sha": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+  "binary_paths": {
+    "h17_on": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_h17_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "stock_on": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_stock_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+  },
+  "binary_sha256": {
+    "h17_on": "ef707479be221cb7a3c6257298d22f614678878f0a7bfc724dc8b28fabdd21c4",
+    "stock_on": "396ef852992428cd3f935bcb33eeeeacc1bae565fbc4a441c1fa9d19720122ff"
+  },
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "flag_spec": [
+    [
+      "-top_level_leaders",
+      "100"
+    ],
+    [
+      "-fanout_scheme",
+      "10,3,1"
+    ],
+    [
+      "-mst_deg",
+      "2"
+    ],
+    [
+      "-prune",
+      "1"
+    ],
+    [
+      "-prune_all",
+      "1"
+    ],
+    [
+      "-prune_degree",
+      "64"
+    ],
+    [
+      "-hash_bits",
+      "12"
+    ],
+    [
+      "-alpha",
+      "1.1"
+    ],
+    [
+      "-k",
+      "0"
+    ]
+  ],
+  "gate_note": "Separate scaling experiment; does not supersede historical 1M G1 HOLD",
+  "input_sha256": {
+    "10000": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+    "100000": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "1000000": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+    "30000": "2c46914ad6d60f0be5496d9e6d9544e32b835d64f63184a4fe2bfd17aecaf9c5",
+    "300000": "e546700a4b7354e247b1707610433abccb9a9cba9310fa0e48d7f4276d7fab73"
+  },
+  "inputs": {
+    "10000": "/home/tai/ann-task-a/experiments/R86/scaling_wn_sift1m_prefixes_v1_0/sift1m_prefix_10000.fbin",
+    "100000": "/home/tai/ann-task-a/data/sift100k.fbin",
+    "1000000": "/home/tai/ann-task-a/data/sift1m.fbin",
+    "30000": "/home/tai/ann-task-a/experiments/R86/scaling_wn_sift1m_prefixes_v1_0/sift1m_prefix_30000.fbin",
+    "300000": "/home/tai/ann-task-a/experiments/R86/scaling_wn_sift1m_prefixes_v1_0/sift1m_prefix_300000.fbin"
+  },
+  "on_source_header": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/algorithms/PipNN/r86_counters.hpp",
+  "purpose": "SIFT1M prefix W(n) ON logical work, not build OFF time",
+  "script_version": "R86_WN_SIFT1M_A0_A3_A4_ON_v1_0",
+  "sizes": [
+    10000,
+    30000,
+    100000,
+    300000,
+    1000000
+  ],
+  "source_note": "G1 OFF original CLI reconstructed; R86 100K protocol C/K/N confirmed; ON instrumentation captured with env vars",
+  "threads": 4
+}

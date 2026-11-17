@@ -1,0 +1,57 @@
+# Datasets & heavy binary/graph artifacts
+data/
+indexes/
+exports/*.tar
+exports/*.tar.gz
+*.graph
+*.fbin
+*.u8bin
+*.ibin
+*.npy
+*.npz
+*.i32
+*.hdf5
+*.data
+*.u32le
+*.u64le
+*.f32le
+*.rawu32
+*.rawi32
+
+# Keep tiny r29 test fixture binaries
+*.bin
+!r29_fixture/*.bin
+
+# Compiled / build / cache / virtualenvs
+.venv/
+.venv*/
+__pycache__/
+*.pyc
+*.pyo
+CMakeFiles/
+_deps/
+build/
+build_*/
+build-*/
+cmake-build*/
+R23_build/
+*.gch
+*.o
+*.a
+*.so
+*.d
+*.make
+*.internal
+*.marks
+
+# Heavy trace & log dumps
+*.trace
+*.stderr
+*.stdout
+*.out
+pass1.tsv
+pass2.tsv
+query.csv
+steps.csv
+leaf.sizes.jsonl
+experiments/**/*.log

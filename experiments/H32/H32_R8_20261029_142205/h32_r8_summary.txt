@@ -1,0 +1,33 @@
+H32-R8 LOCAL READ-ONLY AUDIT (NO BUILD / NO SEARCH / NO GRAPH MUTATION)
+ROOT=/home/tai/ann-task-a
+OVERALL=PASS_LOCAL_AUDIT
+CHECKS:
+  INVENTORY              PASS                    original H31-R0 inventory found
+  GRAPH_VAMANA           PASS                    pinned SHA, byte length, degree sum, header and inventory match
+  GRAPH_STOCK            PASS                    pinned SHA, byte length, degree sum, header and inventory match
+  GRAPH_TOP2             PASS                    pinned SHA, byte length, degree sum, header and inventory match
+  DATA_BASE              PASS_HEADER_SIZE_ONLY   n=1000000,d=128,bytes=512000008; NO exact GT correctness claim
+  DATA_QUERIES           PASS_HEADER_SIZE_ONLY   n=10000,d=128,bytes=5120008; NO exact GT correctness claim
+  DATA_GT                PASS_HEADER_SIZE_ONLY   n=10000,d=100,bytes=8000008; NO exact GT correctness claim
+  GT_SAMPLE              PASS_SAMPLE_ONLY        100 spaced rows; not exact GT validation
+  SEARCH_BINARY          PASS                    actual_sha256=ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8, expected=ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8
+  PARLAYANN_HEAD         PASS                    actual=a48c6a34e5f959190992aa531cc18454cfcc3dd3, expected=a48c6a34e5f959190992aa531cc18454cfcc3dd3
+  SESSION_R2_INITIAL     PASS                    9 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search
+    {'VAMANA_Q100': 2426.57, 'STOCK_Q100': 2438.54, 'TOP2_Q100': 2445.2, 'TOP2_Q120': 1934.15, 'STOCK_Q120': 2093.59, 'VAMANA_Q120': 2111.17, 'VAMANA_Q160': 1671.84, 'STOCK_Q160': 1662.64, 'TOP2_Q160': 1655.05}
+  SESSION_R2B_1          PASS                    3 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search
+    {'VAMANA_Q120': 2086.2, 'STOCK_Q120': 2076.61, 'TOP2_Q120': 2189.66}
+  SESSION_R2B_2          PASS                    3 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search
+    {'STOCK_Q120': 2185.38, 'TOP2_Q120': 2185.01, 'VAMANA_Q120': 2185.31}
+  SESSION_R2B_3          PASS                    3 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search
+    {'TOP2_Q120': 2186.04, 'VAMANA_Q120': 2167.98, 'STOCK_Q120': 2182.54}
+SCIENTIFIC GATES:
+  Q01_existing_graph_provenance=PASS
+  Q01_equal_graph_budget=BLOCKED_KNOWN_DIFFERENT_BYTES
+  Q01_equal_recall_pareto=NOT_DETERMINED
+  Q02_intraquery_binary=NOT_VERIFIED_INTERQUERY_ONLY_CURRENT_PARLAYANN
+  H17_engineering_build_speedup=HISTORIC_RESULT_NOT_REMEASURED
+  H33_new_algorithm=NOT_AUTHORIZED_OR_EVALUATED
+NO NEW BUILD, NO SEARCH, NO GRAPH MODIFICATION.
+NO EQUAL-BUDGET CLAIM, NO INTRA-QUERY-PARALLEL CLAIM, NO NOVELTY CLAIM.
+NEXT: share h32_r8_summary.txt and h32_r8_report.json; avoid uploading original large datasets/graphs.
+H32R8_DONE=/home/tai/ann-task-a/experiments/H32/H32_R8_20261029_142205

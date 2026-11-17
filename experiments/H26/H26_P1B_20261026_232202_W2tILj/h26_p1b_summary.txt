@@ -1,0 +1,18 @@
+H26-P1b — SIZE-STRATIFIED EIGEN rankUpdate DIAGNOSTIC
+RUNS=2 | LEAVES_PER_RUN=85529 | ROWS_PER_RUN=29995085
+MEDIAN_TOTAL_RANK_WORKER_S=45.175 (sum of per-bin medians)
+Worker elapsed sums only. Pair-dimension counts are FLOP PROXIES, not measured floating-point operations.
+
+LEAF SIZE        LEAVES    LEAF %      RANK s    RANK %   PAIR-DIM %     US/LEAF
+2-63                  1     0.00%       0.000     0.00%        0.00%       22.12
+64-127             6489     7.59%       0.332     0.74%        0.59%       51.18
+128-255           32157    37.60%       3.788     8.38%        7.94%      117.78
+256-383           17665    20.65%       5.429    12.02%       12.14%      307.31
+384-511           11204    13.10%       6.675    14.78%       15.13%      595.75
+512-767           12149    14.20%      14.668    32.47%       32.72%     1207.31
+768-1023           5849     6.84%      14.237    31.52%       31.38%     2434.09
+1024-1535            15     0.02%       0.047     0.10%        0.11%     3146.38
+1536+                 0     0.00%       0.000     0.00%        0.00%        0.00
+
+CONCLUSION RULE: find dominant size bins first; do not infer memory vs compute bound from this timing alone.
+NOT performance/quality/novelty evidence. P1b adds histogram atomics AFTER timed regions and does not write graphs.

@@ -1,0 +1,20 @@
+{
+  "arm": "A2",
+  "beam": 384,
+  "diagnostic_binary_sha256": "a98b8748b92787e6ccbf52556a8eef2c24bff4580c6275c9fa464dd82af4d3a4",
+  "diagnostic_row": {
+    "avg_cmps": 11431,
+    "avg_visited": 380,
+    "beam": 384,
+    "qps": 1659.24243164,
+    "recall": 0.976762
+  },
+  "graph_sha256": "aa791b42e992c7d1fe712ccf783387bffcb2a894e891fa97dd01ca50739a52ff",
+  "kind": "G12_B1_CROSS_BEAM",
+  "note": "Fixed-beam 100K query diagnostic work & recall, NO formal QPS claim, NOT per-query trace.",
+  "rep": 3,
+  "search_stderr_sha256": "4869ae02b23d1af76610c630b5b221ae0cdeaa77b82fa59bc4392d123083308f",
+  "search_stdout_sha256": "e88c836916af4c395607c25b89b789a85fed4bac2c6ba58ee89c5c85cd859772",
+  "source_G11_summary_sha256": "5772f4472a3d4a18ad0478ce88baacb3aa994d1d898a0b56a84486af1e7983f7",
+  "status": "G12_B1_NATIVE_CROSS_BEAM_PASS"
+}

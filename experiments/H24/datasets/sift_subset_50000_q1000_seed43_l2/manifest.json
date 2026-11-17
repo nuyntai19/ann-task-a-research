@@ -1,0 +1,20 @@
+{
+  "protocol": "H24 SMALL REAL DATA SUBSET",
+  "n": 50000,
+  "d": 128,
+  "nq": 1000,
+  "metric": "l2",
+  "seed": 43,
+  "base_source": "/home/tai/ann-task-a/data/sift1m.fbin",
+  "query_source": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+  "random_base_subset": true,
+  "query_selection": "first nquery external benchmark queries",
+  "groundtruth": "Recomputed exhaustive top-10 against sampled base; original full-SIFT gold not reused",
+  "groundtruth_seconds": 4.252,
+  "files": {
+    "X.npy": "9b03d187706f4d506fe69efc8a9d054d7b323a20ea05f698fb13b24c263753cb",
+    "Q.npy": "1c6321fd72f0cb818dc3bbb7f4dfc7b80055c0670cc717a2619c621c435fe8ef",
+    "gold.npy": "3b7b8a98ca34faab1060178302ce7405ac10c83433f1eef0595eaea35e604028",
+    "base_source_ids.npy": "5aa9f70e970200785a0e8d8a1b426befd234a6b7315c02db9ba5551468f78801"
+  }
+}

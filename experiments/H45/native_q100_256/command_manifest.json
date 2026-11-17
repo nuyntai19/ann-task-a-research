@@ -1,0 +1,16 @@
+{
+  "graph": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.graph",
+  "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+  "base": "data/sift1m.fbin",
+  "queries": "data/sift1m_queries.fbin",
+  "gt": "data/sift1m_gt.ibin",
+  "baseline_binary": "/home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors",
+  "baseline_binary_sha256": "ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8",
+  "traced_binary": "/home/tai/ann-task-a/experiments/H45/ParlayANN-native-trace/algorithms/vamana/neighbors",
+  "traced_binary_sha256": "c259dedcdaa7707fdaea5cf385466b4d64770affb3f8466d355620ba2ca0dce3",
+  "cpu": 0,
+  "limit": 256,
+  "affinity_before": "danh s\u00e1ch quan h\u1ec7 b\u1ed9 x\u1eed l\u00fd hi\u1ec7n t\u1ea1i c\u1ee7a PID 530616: 0-7",
+  "selected_query_ids_sha256": "b1074bcd62c377d2c4e0ebbf9adc04253ed6a56ac3cee9f942e0560a3eeac72b",
+  "seed": 20261104
+}

@@ -1,0 +1,51 @@
+{
+  "correctness": "PASS_EXACT_PACKED_DOUBLE_KEYS",
+  "verification": "12 leaf sizes * 8 scenarios * 160 cases",
+  "hardware": "taskset single core CPU 0",
+  "performance": {
+    "64": {
+      "n": 64,
+      "median_original_ms": 1.41983,
+      "median_top2_ms": 0.54261,
+      "median_of_paired_speedups": 2.61668,
+      "ratio_of_medians": 2.61668
+    },
+    "128": {
+      "n": 128,
+      "median_original_ms": 2.51461,
+      "median_top2_ms": 0.86486,
+      "median_of_paired_speedups": 2.90249,
+      "ratio_of_medians": 2.90753
+    },
+    "256": {
+      "n": 256,
+      "median_original_ms": 4.14312,
+      "median_top2_ms": 1.49484,
+      "median_of_paired_speedups": 2.77681,
+      "ratio_of_medians": 2.77162
+    },
+    "352": {
+      "n": 352,
+      "median_original_ms": 5.49345,
+      "median_top2_ms": 2.02187,
+      "median_of_paired_speedups": 2.61624,
+      "ratio_of_medians": 2.71702
+    },
+    "512": {
+      "n": 512,
+      "median_original_ms": 7.17889,
+      "median_top2_ms": 2.91145,
+      "median_of_paired_speedups": 2.6177,
+      "ratio_of_medians": 2.46574
+    },
+    "1024": {
+      "n": 1024,
+      "median_original_ms": 12.36791,
+      "median_top2_ms": 5.06399,
+      "median_of_paired_speedups": 2.47568,
+      "ratio_of_medians": 2.44232
+    }
+  },
+  "verdict": "PASS_MICRO_ONLY",
+  "caution": "Not a published novelty claim. No whole-graph build, graph quality or 4-thread scaling measured."
+}

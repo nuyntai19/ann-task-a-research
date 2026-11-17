@@ -1,0 +1,14 @@
+{
+  "audit": "R45_NATIVE_QUERY_TRACE_SOURCE_COPY",
+  "pinned_commit": "a48c6a34e5f959190992aa531cc18454cfcc3dd3",
+  "original_source": "/home/tai/ann-task-a/src/ParlayANN",
+  "copy": "/home/tai/ann-task-a/experiments/H45/ParlayANN-native-trace",
+  "header_original_sha256": {
+    "algorithms/utils/beamSearch.h": "b2bad5bdb9cece714bcbafea690358b6e7b149998ccccb9ac6edc19c7aca67b6",
+    "algorithms/utils/check_nn_recall.h": "cad9afdc7723901a68478b13499d54817ad4c2b3317d719de264f58cb81efae8"
+  },
+  "header_patched_sha256": {
+    "algorithms/utils/beamSearch.h": "fb1c819f3c712ccc8d99e7108496c584e85a134df466221d9eb1428ca3b929b5",
+    "algorithms/utils/check_nn_recall.h": "b8b7c725dc39fd001df262da4370d7aa10042cca980586289fcc6f1681ada316"
+  }
+}

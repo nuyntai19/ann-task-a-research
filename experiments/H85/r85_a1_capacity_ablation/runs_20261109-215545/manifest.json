@@ -1,0 +1,112 @@
+{
+  "pinned_previous_runner_sha256": "1e76bef61f16a15516d88c6249a3e07e5f47f0f54b1be31c00ac8942382f2d59",
+  "h17_binary": {
+    "h17_path": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/build_h17_flat/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "h17_sha256": "8757b9be9fa3ae1f90febe082001fa60ba22c71ba6b6cdd899e013f6c0bcd500",
+    "d0_path": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_d0/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "d0_sha256": "5e4620d45c0d43c091038c3edac2b863983310b4e40a970943a307db87950d9b",
+    "h17_feature_flags": {
+      "H17": "ON",
+      "TwoTier": "OFF",
+      "matched_to_D0": true
+    },
+    "source_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+    "source_sha256": {
+      "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+      "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+    },
+    "origin": "R85-A1 H17 flat C160/C64; compare to R85-0f D0 on same PC"
+  },
+  "r85_0_preflight": {
+    "source_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+    "source_hashes": {
+      "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+      "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+    },
+    "binaries": {
+      "A": "e07853b3e1832e2d9a95d6ed8ed6660bf34bc719dffcfd78789f6f672c6a05a5",
+      "D0": "5e4620d45c0d43c091038c3edac2b863983310b4e40a970943a307db87950d9b"
+    },
+    "datasets": {
+      "base": {
+        "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+        "rows": 1000000,
+        "cols": 128,
+        "bytes": 512000008,
+        "sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+      },
+      "query": {
+        "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "rows": 10000,
+        "cols": 128,
+        "bytes": 5120008,
+        "sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+      },
+      "gt": {
+        "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+        "rows": 10000,
+        "cols": 100,
+        "bytes": 8000008,
+        "sha256": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13"
+      }
+    },
+    "cpu_sets": {
+      "4": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "6": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ]
+    },
+    "free_disk_gib": 72.17,
+    "available_memory_kib": 21233740
+  },
+  "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+  "hypothesis": "Does fixed flat-C64 dominate H17+TwoTier-C160 under matched quality?",
+  "protocol": {
+    "dataset": "SIFT1M, float32 Euclidean",
+    "threads": 4,
+    "physical_cores": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "reps": 3,
+    "arms": [
+      "B160",
+      "B64",
+      "D0"
+    ],
+    "order": [
+      [
+        "B160",
+        "B64",
+        "D0"
+      ],
+      [
+        "B64",
+        "D0",
+        "B160"
+      ],
+      [
+        "D0",
+        "B160",
+        "B64"
+      ]
+    ],
+    "only_changed_dimension_B160_vs_B64": "-table_size",
+    "quality": "heldout 10k query, beam 10/20/40/80/160",
+    "no_search_during_build": true
+  },
+  "started_at_utc": "2026-11-09T14:55:45.740894+00:00",
+  "run_dir": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/runs_20261109-215545"
+}

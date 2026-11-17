@@ -1,0 +1,1788 @@
+{
+  "audit": "R41_BASE_ANCHOR_EXACT_KNN_POOL_VS_GRAPH",
+  "status": "READ_ONLY_BASE_ANCHORS_NOT_QUERY_RECALL",
+  "protocol": {
+    "source_count": 32,
+    "seed": 20261103,
+    "source_ids_sha256": "d437fae6de60774dba3599170c1944fac7dd3372f4d073d586d0eef7a633b5c6",
+    "source_file": null,
+    "n": 1000000,
+    "dim": 128,
+    "chunk": 16384,
+    "k_list": [
+      10,
+      32
+    ],
+    "distance": "squared_L2_float64_over_original_fbin_values_tie_global_id",
+    "full_scan_per_anchor": true
+  },
+  "provenance": {
+    "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+    "pool_sha256": "7e22a4ca2b71bd560560f7e4aa2a1f2dcad46b8f25ae48ca8ea014c17086f9e8",
+    "graph_path": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.graph",
+    "pool_path": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.candidates.i32",
+    "fbin_path": "data/sift1m.fbin",
+    "fbin_length": 512000008
+  },
+  "summary": {
+    "uniform_sample_all": {
+      "n": 32,
+      "mean_outdegree": 23.0,
+      "mean_pool_count": 35.1875,
+      "graph_outside_pool_positions": 0,
+      "k10": {
+        "pool_hit": 278,
+        "graph_hit": 207,
+        "captured_but_pruned": 71,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 42,
+        "graph_missing": 113,
+        "top1_in_pool": 32,
+        "top1_in_graph": 31,
+        "gt_total": 320,
+        "pool_coverage": 0.86875,
+        "graph_coverage": 0.646875,
+        "pool_to_graph_coverage_loss_pp": 22.1875,
+        "bootstrap_source_CI_95_graph_coverage": [
+          0.5875,
+          0.70625
+        ],
+        "bootstrap_source_CI_95_pool_coverage": [
+          0.828125,
+          0.90625
+        ]
+      },
+      "k32": {
+        "pool_hit": 545,
+        "graph_hit": 367,
+        "captured_but_pruned": 178,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 479,
+        "graph_missing": 657,
+        "top1_in_pool": 32,
+        "top1_in_graph": 31,
+        "gt_total": 1024,
+        "pool_coverage": 0.5322266,
+        "graph_coverage": 0.3583984,
+        "pool_to_graph_coverage_loss_pp": 17.3828,
+        "bootstrap_source_CI_95_graph_coverage": [
+          0.3291016,
+          0.3876953
+        ],
+        "bootstrap_source_CI_95_pool_coverage": [
+          0.5019531,
+          0.5605713
+        ]
+      }
+    },
+    "sample_outdegree_full": {
+      "n": 7,
+      "mean_outdegree": 32.0,
+      "mean_pool_count": 50.857142857142854,
+      "graph_outside_pool_positions": 0,
+      "k10": {
+        "pool_hit": 64,
+        "graph_hit": 50,
+        "captured_but_pruned": 14,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 6,
+        "graph_missing": 20,
+        "top1_in_pool": 7,
+        "top1_in_graph": 7,
+        "gt_total": 70,
+        "pool_coverage": 0.9142857,
+        "graph_coverage": 0.7142857,
+        "pool_to_graph_coverage_loss_pp": 20.0,
+        "bootstrap_source_CI_95_graph_coverage": [
+          0.6142857,
+          0.8
+        ],
+        "bootstrap_source_CI_95_pool_coverage": [
+          0.8714286,
+          0.9571429
+        ]
+      },
+      "k32": {
+        "pool_hit": 129,
+        "graph_hit": 90,
+        "captured_but_pruned": 39,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 95,
+        "graph_missing": 134,
+        "top1_in_pool": 7,
+        "top1_in_graph": 7,
+        "gt_total": 224,
+        "pool_coverage": 0.5758929,
+        "graph_coverage": 0.4017857,
+        "pool_to_graph_coverage_loss_pp": 17.4107,
+        "bootstrap_source_CI_95_graph_coverage": [
+          0.375,
+          0.4285714
+        ],
+        "bootstrap_source_CI_95_pool_coverage": [
+          0.5491071,
+          0.6026786
+        ]
+      }
+    },
+    "sample_outdegree_slack": {
+      "n": 25,
+      "mean_outdegree": 20.48,
+      "mean_pool_count": 30.8,
+      "graph_outside_pool_positions": 0,
+      "k10": {
+        "pool_hit": 214,
+        "graph_hit": 157,
+        "captured_but_pruned": 57,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 36,
+        "graph_missing": 93,
+        "top1_in_pool": 25,
+        "top1_in_graph": 24,
+        "gt_total": 250,
+        "pool_coverage": 0.856,
+        "graph_coverage": 0.628,
+        "pool_to_graph_coverage_loss_pp": 22.8,
+        "bootstrap_source_CI_95_graph_coverage": [
+          0.56,
+          0.6921
+        ],
+        "bootstrap_source_CI_95_pool_coverage": [
+          0.808,
+          0.904
+        ]
+      },
+      "k32": {
+        "pool_hit": 416,
+        "graph_hit": 277,
+        "captured_but_pruned": 139,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 384,
+        "graph_missing": 523,
+        "top1_in_pool": 25,
+        "top1_in_graph": 24,
+        "gt_total": 800,
+        "pool_coverage": 0.52,
+        "graph_coverage": 0.34625,
+        "pool_to_graph_coverage_loss_pp": 17.375,
+        "bootstrap_source_CI_95_graph_coverage": [
+          0.30875,
+          0.37875
+        ],
+        "bootstrap_source_CI_95_pool_coverage": [
+          0.4825,
+          0.5562812
+        ]
+      }
+    }
+  },
+  "sample_sources": [
+    {
+      "u": 12582,
+      "outdegree": 26,
+      "pool_count": 31,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        11768,
+        11468,
+        218254,
+        90622,
+        243211,
+        501980,
+        627347,
+        626440,
+        771278,
+        534275
+      ],
+      "knn10_dist2": [
+        8853.0,
+        27447.0,
+        52706.0,
+        55159.0,
+        57869.0,
+        57921.0,
+        58137.0,
+        58725.0,
+        59662.0,
+        59677.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 8,
+        "captured_but_pruned": 0,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 16,
+        "graph_hit": 14,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 16,
+        "graph_missing": 18,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 69874,
+      "outdegree": 25,
+      "pool_count": 36,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        86757,
+        88248,
+        82310,
+        472474,
+        83187,
+        495596,
+        89634,
+        956464,
+        70345,
+        516770
+      ],
+      "knn10_dist2": [
+        47201.0,
+        50018.0,
+        50949.0,
+        52027.0,
+        52191.0,
+        53292.0,
+        54692.0,
+        56803.0,
+        56970.0,
+        57293.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 21,
+        "graph_hit": 15,
+        "captured_but_pruned": 6,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 11,
+        "graph_missing": 17,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 91267,
+      "outdegree": 32,
+      "pool_count": 67,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        86569,
+        88437,
+        20908,
+        501584,
+        633816,
+        500765,
+        174716,
+        331387,
+        416183,
+        409864
+      ],
+      "knn10_dist2": [
+        20257.0,
+        24553.0,
+        24765.0,
+        25721.0,
+        26038.0,
+        27786.0,
+        28160.0,
+        28403.0,
+        29335.0,
+        29401.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 8,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 20,
+        "graph_hit": 14,
+        "captured_but_pruned": 6,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 12,
+        "graph_missing": 18,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 133644,
+      "outdegree": 32,
+      "pool_count": 47,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        566347,
+        602603,
+        488524,
+        768399,
+        526788,
+        720877,
+        503301,
+        25952,
+        721632,
+        844532
+      ],
+      "knn10_dist2": [
+        11893.0,
+        23835.0,
+        24355.0,
+        24858.0,
+        25327.0,
+        27188.0,
+        27476.0,
+        27955.0,
+        28063.0,
+        28133.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 19,
+        "graph_hit": 14,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 13,
+        "graph_missing": 18,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 146880,
+      "outdegree": 11,
+      "pool_count": 22,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        147000,
+        147295,
+        841340,
+        147451,
+        638158,
+        393346,
+        112300,
+        705533,
+        117020,
+        706963
+      ],
+      "knn10_dist2": [
+        16396.0,
+        29316.0,
+        73436.0,
+        76278.0,
+        79659.0,
+        84014.0,
+        85221.0,
+        85488.0,
+        85600.0,
+        87748.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 4,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 6,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 13,
+        "graph_hit": 7,
+        "captured_but_pruned": 6,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 19,
+        "graph_missing": 25,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 157289,
+      "outdegree": 22,
+      "pool_count": 31,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        839205,
+        155560,
+        627472,
+        456682,
+        595369,
+        98554,
+        595938,
+        246369,
+        229347,
+        634195
+      ],
+      "knn10_dist2": [
+        28354.0,
+        33221.0,
+        39162.0,
+        39336.0,
+        40549.0,
+        41488.0,
+        42053.0,
+        43775.0,
+        45653.0,
+        46395.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 14,
+        "graph_hit": 11,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 18,
+        "graph_missing": 21,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 190634,
+      "outdegree": 15,
+      "pool_count": 28,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        313390,
+        319405,
+        990532,
+        190584,
+        572062,
+        178772,
+        314276,
+        719654,
+        758673,
+        220789
+      ],
+      "knn10_dist2": [
+        59563.0,
+        59632.0,
+        62618.0,
+        65037.0,
+        66366.0,
+        66785.0,
+        66828.0,
+        67653.0,
+        69019.0,
+        70009.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 4,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 6,
+        "top1_in_pool": 1,
+        "top1_in_graph": 0
+      },
+      "k32": {
+        "pool_hit": 14,
+        "graph_hit": 6,
+        "captured_but_pruned": 8,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 18,
+        "graph_missing": 26,
+        "top1_in_pool": 1,
+        "top1_in_graph": 0
+      }
+    },
+    {
+      "u": 195127,
+      "outdegree": 26,
+      "pool_count": 36,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        273943,
+        197250,
+        276066,
+        195685,
+        274501,
+        195098,
+        273914,
+        516493,
+        16025,
+        208298
+      ],
+      "knn10_dist2": [
+        0.0,
+        25046.0,
+        25046.0,
+        30997.0,
+        30997.0,
+        42933.0,
+        42933.0,
+        52030.0,
+        56119.0,
+        56233.0
+      ],
+      "k10": {
+        "pool_hit": 5,
+        "graph_hit": 3,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 5,
+        "graph_missing": 7,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 12,
+        "graph_hit": 8,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 20,
+        "graph_missing": 24,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 242451,
+      "outdegree": 21,
+      "pool_count": 39,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        242492,
+        242461,
+        541771,
+        70014,
+        189825,
+        892035,
+        170957,
+        513670,
+        225218,
+        698331
+      ],
+      "knn10_dist2": [
+        38405.0,
+        45715.0,
+        48849.0,
+        49914.0,
+        50219.0,
+        50289.0,
+        50661.0,
+        50963.0,
+        52227.0,
+        53550.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 8,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 18,
+        "graph_hit": 11,
+        "captured_but_pruned": 7,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 14,
+        "graph_missing": 21,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 293131,
+      "outdegree": 32,
+      "pool_count": 44,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        509903,
+        859344,
+        516113,
+        825538,
+        481089,
+        774080,
+        156989,
+        529729,
+        773706,
+        556079
+      ],
+      "knn10_dist2": [
+        32374.0,
+        35228.0,
+        37897.0,
+        37913.0,
+        37995.0,
+        38098.0,
+        38257.0,
+        38662.0,
+        39003.0,
+        39094.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 6,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 4,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 17,
+        "graph_hit": 11,
+        "captured_but_pruned": 6,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 15,
+        "graph_missing": 21,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 298860,
+      "outdegree": 24,
+      "pool_count": 34,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        281404,
+        279831,
+        419564,
+        316035,
+        280059,
+        350800,
+        315968,
+        155825,
+        336823,
+        317848
+      ],
+      "knn10_dist2": [
+        5380.0,
+        21444.0,
+        21914.0,
+        22186.0,
+        22885.0,
+        23146.0,
+        23159.0,
+        23205.0,
+        24910.0,
+        24955.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 5,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 15,
+        "graph_hit": 10,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 17,
+        "graph_missing": 22,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 368394,
+      "outdegree": 27,
+      "pool_count": 43,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        366379,
+        757873,
+        662815,
+        282645,
+        353362,
+        587971,
+        354393,
+        247838,
+        280040,
+        338172
+      ],
+      "knn10_dist2": [
+        34969.0,
+        41374.0,
+        43562.0,
+        44054.0,
+        44153.0,
+        44377.0,
+        44928.0,
+        45248.0,
+        46055.0,
+        46778.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 21,
+        "graph_hit": 17,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 11,
+        "graph_missing": 15,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 378604,
+      "outdegree": 27,
+      "pool_count": 34,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        965245,
+        569514,
+        655481,
+        654917,
+        378594,
+        42199,
+        569498,
+        654321,
+        479512,
+        376811
+      ],
+      "knn10_dist2": [
+        4291.0,
+        5019.0,
+        5194.0,
+        5646.0,
+        5863.0,
+        5963.0,
+        6032.0,
+        6539.0,
+        6750.0,
+        6919.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 6,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 4,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 14,
+        "graph_hit": 10,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 18,
+        "graph_missing": 22,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 392771,
+      "outdegree": 32,
+      "pool_count": 54,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        393092,
+        931894,
+        564314,
+        957286,
+        9901,
+        885795,
+        932412,
+        622397,
+        182652,
+        239063
+      ],
+      "knn10_dist2": [
+        40011.0,
+        41698.0,
+        46412.0,
+        48440.0,
+        49265.0,
+        50069.0,
+        50553.0,
+        51047.0,
+        51131.0,
+        51187.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 7,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 3,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 18,
+        "graph_hit": 12,
+        "captured_but_pruned": 6,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 14,
+        "graph_missing": 20,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 404097,
+      "outdegree": 19,
+      "pool_count": 24,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        404191,
+        400240,
+        400254,
+        400337,
+        404574,
+        404383,
+        413767,
+        399552,
+        938708,
+        29781
+      ],
+      "knn10_dist2": [
+        1309.0,
+        7321.0,
+        17997.0,
+        18607.0,
+        21085.0,
+        42758.0,
+        49949.0,
+        51422.0,
+        52575.0,
+        53388.0
+      ],
+      "k10": {
+        "pool_hit": 7,
+        "graph_hit": 6,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 3,
+        "graph_missing": 4,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 13,
+        "graph_hit": 10,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 19,
+        "graph_missing": 22,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 420422,
+      "outdegree": 19,
+      "pool_count": 26,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        420215,
+        420170,
+        488894,
+        793932,
+        111904,
+        759698,
+        489922,
+        581572,
+        197539,
+        276355
+      ],
+      "knn10_dist2": [
+        1211.0,
+        27039.0,
+        49208.0,
+        49230.0,
+        50182.0,
+        51324.0,
+        53290.0,
+        53567.0,
+        53751.0,
+        53751.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 6,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 4,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 15,
+        "graph_hit": 13,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 17,
+        "graph_missing": 19,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 441598,
+      "outdegree": 21,
+      "pool_count": 30,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        441792,
+        352412,
+        616229,
+        530281,
+        60837,
+        458092,
+        861119,
+        529884,
+        713557,
+        533214
+      ],
+      "knn10_dist2": [
+        1347.0,
+        54170.0,
+        54503.0,
+        56098.0,
+        56178.0,
+        56681.0,
+        57832.0,
+        59513.0,
+        59534.0,
+        59717.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 9,
+        "captured_but_pruned": 0,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 1,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 18,
+        "graph_hit": 13,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 14,
+        "graph_missing": 19,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 442632,
+      "outdegree": 16,
+      "pool_count": 27,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        443100,
+        442416,
+        442802,
+        823954,
+        718397,
+        660833,
+        660164,
+        443264,
+        790824,
+        718410
+      ],
+      "knn10_dist2": [
+        5197.0,
+        6735.0,
+        8237.0,
+        13552.0,
+        15967.0,
+        16491.0,
+        16662.0,
+        18328.0,
+        19101.0,
+        19658.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 7,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 3,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 14,
+        "graph_hit": 9,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 18,
+        "graph_missing": 23,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 459706,
+      "outdegree": 32,
+      "pool_count": 48,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        459487,
+        209247,
+        897731,
+        896976,
+        753970,
+        779103,
+        925765,
+        754653,
+        680026,
+        753833
+      ],
+      "knn10_dist2": [
+        12769.0,
+        45063.0,
+        46274.0,
+        49602.0,
+        51008.0,
+        52002.0,
+        52402.0,
+        52567.0,
+        53109.0,
+        53274.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 5,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 20,
+        "graph_hit": 13,
+        "captured_but_pruned": 7,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 12,
+        "graph_missing": 19,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 575600,
+      "outdegree": 16,
+      "pool_count": 25,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        574856,
+        574574,
+        575062,
+        576544,
+        504998,
+        785005,
+        490209,
+        168607,
+        933758,
+        499540
+      ],
+      "knn10_dist2": [
+        1955.0,
+        9436.0,
+        17449.0,
+        35677.0,
+        39723.0,
+        42222.0,
+        42375.0,
+        43496.0,
+        43736.0,
+        44375.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 5,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 5,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 17,
+        "graph_hit": 9,
+        "captured_but_pruned": 8,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 15,
+        "graph_missing": 23,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 657359,
+      "outdegree": 27,
+      "pool_count": 37,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        755252,
+        335124,
+        975127,
+        371463,
+        177906,
+        137833,
+        395152,
+        882641,
+        311803,
+        553179
+      ],
+      "knn10_dist2": [
+        63930.0,
+        85270.0,
+        85981.0,
+        86319.0,
+        86652.0,
+        90526.0,
+        91250.0,
+        92115.0,
+        95536.0,
+        96234.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 21,
+        "graph_hit": 15,
+        "captured_but_pruned": 6,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 11,
+        "graph_missing": 17,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 672708,
+      "outdegree": 11,
+      "pool_count": 22,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        673062,
+        673101,
+        672580,
+        672887,
+        673215,
+        673150,
+        673017,
+        672849,
+        672799,
+        672783
+      ],
+      "knn10_dist2": [
+        12142.0,
+        12426.0,
+        12873.0,
+        13010.0,
+        14042.0,
+        14807.0,
+        16580.0,
+        16689.0,
+        16700.0,
+        17057.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 6,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 4,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 16,
+        "graph_hit": 7,
+        "captured_but_pruned": 9,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 16,
+        "graph_missing": 25,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 739961,
+      "outdegree": 26,
+      "pool_count": 32,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        609908,
+        742068,
+        952151,
+        454365,
+        735808,
+        976175,
+        284947,
+        991752,
+        992295,
+        757201
+      ],
+      "knn10_dist2": [
+        35256.0,
+        45396.0,
+        48921.0,
+        49135.0,
+        50215.0,
+        50809.0,
+        51598.0,
+        53221.0,
+        53505.0,
+        53780.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 9,
+        "captured_but_pruned": 0,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 1,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 15,
+        "graph_hit": 14,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 17,
+        "graph_missing": 18,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 759058,
+      "outdegree": 16,
+      "pool_count": 28,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        758349,
+        758907,
+        759065,
+        759273,
+        760382,
+        758233,
+        759022,
+        759776,
+        835097,
+        833822
+      ],
+      "knn10_dist2": [
+        10423.0,
+        16837.0,
+        16854.0,
+        19259.0,
+        32254.0,
+        33899.0,
+        43279.0,
+        43967.0,
+        46490.0,
+        46892.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 5,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 5,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 20,
+        "graph_hit": 10,
+        "captured_but_pruned": 10,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 12,
+        "graph_missing": 22,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 800894,
+      "outdegree": 12,
+      "pool_count": 29,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        800583,
+        189271,
+        189371,
+        992698,
+        878912,
+        917708,
+        887602,
+        32697,
+        189085,
+        887547
+      ],
+      "knn10_dist2": [
+        26988.0,
+        42548.0,
+        42889.0,
+        57894.0,
+        61858.0,
+        62655.0,
+        62856.0,
+        62891.0,
+        64715.0,
+        66116.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 5,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 20,
+        "graph_hit": 8,
+        "captured_but_pruned": 12,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 12,
+        "graph_missing": 24,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 849247,
+      "outdegree": 32,
+      "pool_count": 49,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        858066,
+        859290,
+        849280,
+        216006,
+        215813,
+        560911,
+        563376,
+        858543,
+        925276,
+        997139
+      ],
+      "knn10_dist2": [
+        7749.0,
+        18010.0,
+        19862.0,
+        33386.0,
+        35167.0,
+        37826.0,
+        39603.0,
+        39847.0,
+        40289.0,
+        42581.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 7,
+        "captured_but_pruned": 2,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 3,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 18,
+        "graph_hit": 14,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 14,
+        "graph_missing": 18,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 863489,
+      "outdegree": 20,
+      "pool_count": 30,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        872066,
+        862924,
+        863316,
+        864611,
+        873089,
+        865326,
+        920565,
+        920114,
+        211637,
+        919738
+      ],
+      "knn10_dist2": [
+        2456.0,
+        22116.0,
+        23639.0,
+        23798.0,
+        25190.0,
+        34836.0,
+        34938.0,
+        35064.0,
+        38102.0,
+        38236.0
+      ],
+      "k10": {
+        "pool_hit": 7,
+        "graph_hit": 3,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 3,
+        "graph_missing": 7,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 14,
+        "graph_hit": 9,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 18,
+        "graph_missing": 23,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 866316,
+      "outdegree": 17,
+      "pool_count": 21,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        639695,
+        829985,
+        153303,
+        75224,
+        8360,
+        829826,
+        88715,
+        951793,
+        480053,
+        123861
+      ],
+      "knn10_dist2": [
+        35618.0,
+        35664.0,
+        36686.0,
+        37844.0,
+        38361.0,
+        42117.0,
+        42118.0,
+        42504.0,
+        43067.0,
+        43555.0
+      ],
+      "k10": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 2,
+        "graph_missing": 5,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 17,
+        "graph_hit": 13,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 15,
+        "graph_missing": 19,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 901198,
+      "outdegree": 21,
+      "pool_count": 34,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        362658,
+        174984,
+        748441,
+        65658,
+        724242,
+        278664,
+        242240,
+        187627,
+        431687,
+        428246
+      ],
+      "knn10_dist2": [
+        30656.0,
+        32848.0,
+        34183.0,
+        34193.0,
+        34277.0,
+        36526.0,
+        36973.0,
+        37956.0,
+        38032.0,
+        38692.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 7,
+        "captured_but_pruned": 3,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 3,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 19,
+        "graph_hit": 14,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 13,
+        "graph_missing": 18,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 935728,
+      "outdegree": 19,
+      "pool_count": 29,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        937720,
+        935105,
+        720657,
+        721297,
+        133690,
+        950133,
+        415542,
+        70149,
+        127898,
+        213740
+      ],
+      "knn10_dist2": [
+        3227.0,
+        27654.0,
+        43598.0,
+        45904.0,
+        49152.0,
+        51798.0,
+        51831.0,
+        52756.0,
+        53471.0,
+        54561.0
+      ],
+      "k10": {
+        "pool_hit": 9,
+        "graph_hit": 8,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 1,
+        "graph_missing": 2,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 16,
+        "graph_hit": 11,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 16,
+        "graph_missing": 21,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 962572,
+      "outdegree": 32,
+      "pool_count": 47,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        971475,
+        602694,
+        801337,
+        153835,
+        745045,
+        619026,
+        288642,
+        228395,
+        818847,
+        113104
+      ],
+      "knn10_dist2": [
+        8220.0,
+        18568.0,
+        22767.0,
+        24887.0,
+        26444.0,
+        27162.0,
+        27269.0,
+        27793.0,
+        28205.0,
+        28211.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 9,
+        "captured_but_pruned": 1,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 1,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 17,
+        "graph_hit": 12,
+        "captured_but_pruned": 5,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 15,
+        "graph_missing": 20,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    },
+    {
+      "u": 968382,
+      "outdegree": 28,
+      "pool_count": 42,
+      "graph_outside_pool": 0,
+      "knn10_ids": [
+        442575,
+        886389,
+        386256,
+        864539,
+        44390,
+        787687,
+        383526,
+        787757,
+        428224,
+        423885
+      ],
+      "knn10_dist2": [
+        29671.0,
+        40357.0,
+        40576.0,
+        43345.0,
+        43390.0,
+        43801.0,
+        43920.0,
+        44405.0,
+        45473.0,
+        45585.0
+      ],
+      "k10": {
+        "pool_hit": 10,
+        "graph_hit": 6,
+        "captured_but_pruned": 4,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 0,
+        "graph_missing": 4,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      },
+      "k32": {
+        "pool_hit": 23,
+        "graph_hit": 13,
+        "captured_but_pruned": 10,
+        "graph_recovered_outside_pool": 0,
+        "lost_before_pool": 9,
+        "graph_missing": 19,
+        "top1_in_pool": 1,
+        "top1_in_graph": 1
+      }
+    }
+  ],
+  "limitations": [
+    "Exact base-point ground truth is not heldout ANN query Recall@10.",
+    "Only sampled outgoing graph edges and sampled pool rows are evaluated.",
+    "A graph kNN miss is not necessarily a search failure; diverse long edges can be helpful.",
+    "No BUILD wall/RSS, final graph modification, PiPNN II replication, or algorithmic novelty proven.",
+    "Bootstrap is over sampled anchors conditional on this dataset, not over independent datasets."
+  ]
+}

@@ -1,0 +1,22 @@
+R85_A1C_DYNAMIC_BEAMS count=14
+Data: detected 100000 points with dimension 128
+Data: detected 10000 points with dimension 128
+Ground truth: detected 10000 points with num results 100
+Graph: detected 100000 points with max degree 64
+Total edges read from file: 1827164
+R72_RECALL_INPUT_PASS graph_nodes=100000 queries=10000 gt_k=100
+R72_RECALL_ROW beam=40 recall=0.97702003 qps=25873.75585938 avg_cmps=850 avg_visited=48
+R72_RECALL_ROW beam=48 recall=0.98431998 qps=22577.13476562 avg_cmps=974 avg_visited=55
+R72_RECALL_ROW beam=56 recall=0.98909003 qps=19889.69140625 avg_cmps=1097 avg_visited=63
+R72_RECALL_ROW beam=64 recall=0.99207997 qps=17842.00976562 avg_cmps=1219 avg_visited=70
+R72_RECALL_ROW beam=72 recall=0.99431998 qps=16116.78906250 avg_cmps=1283 avg_visited=78
+R72_RECALL_ROW beam=80 recall=0.99550998 qps=14811.21679688 avg_cmps=1390 avg_visited=85
+R72_RECALL_ROW beam=96 recall=0.99756002 qps=12720.62304688 avg_cmps=1542 avg_visited=100
+R72_RECALL_ROW beam=112 recall=0.99844003 qps=11213.02441406 avg_cmps=1721 avg_visited=113
+R72_RECALL_ROW beam=128 recall=0.99897999 qps=9952.23925781 avg_cmps=1898 avg_visited=126
+R72_RECALL_ROW beam=144 recall=0.99939001 qps=9042.52343750 avg_cmps=1993 avg_visited=139
+R72_RECALL_ROW beam=160 recall=0.99953002 qps=8349.24511719 avg_cmps=2129 avg_visited=149
+R72_RECALL_ROW beam=192 recall=0.99971998 qps=7314.44921875 avg_cmps=2315 avg_visited=170
+R72_RECALL_ROW beam=224 recall=0.99980003 qps=6554.93164062 avg_cmps=2504 avg_visited=186
+R72_RECALL_ROW beam=256 recall=0.99987000 qps=6033.76123047 avg_cmps=2665 avg_visited=200
+R72_RECALL_EVAL_PASS

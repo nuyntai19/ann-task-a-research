@@ -1,0 +1,17 @@
+H26-P3b FUSED PACK+TOP2 — CONTROLLED PILOT (NOT novelty)
+ROUNDS=3 | 4-thread SIFT1M | same instrumented binary, alternating order
+No graph output; graph/Recall/QPS correctness NOT established here.
+Distances, leaf counts, rows and directed proposals verified unchanged.
+
+METRIC                       TOP2 median    FUSED median      change   paired changes by round
+wall_s                            48.750          42.250     -13.33%   -8.65%, -14.70%, -8.90%
+build_leaf_time_s                 34.829          28.896     -17.03%   -11.55%, -18.64%, -12.82%
+buckets_time_s                     9.326           9.005      -3.44%   -2.68%, -5.84%, +2.29%
+Final_prune_time_s                 3.765           3.694      -1.87%   +2.44%, -2.00%, -1.87%
+dist_worker_s                     65.171          62.628      -3.90%   +1.83%, -6.59%, +0.98%
+select_worker_s                   59.055          38.469     -34.86%   -30.34%, -35.81%, -31.26%
+merge_worker_s                    14.340          14.018      -2.24%   +0.25%, -2.75%, +1.32%
+
+CAVEATS: only BUILD-process profile (no graph output), no 10k-query quality or topology equivalence yet.
+A streaming packed Top2 loop is a standard implementation optimization, not an ANN contribution.
+Cross-round noise, P0 source instrumentation and sampled preflight semantics limit conclusions.

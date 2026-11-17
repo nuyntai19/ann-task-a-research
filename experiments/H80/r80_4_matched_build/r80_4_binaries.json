@@ -1,0 +1,58 @@
+{
+  "source_sha256": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+    "algorithms/utils/graph.h": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+    "algorithms/utils/r70_two_tier_lshgraph.h": "ac0bece4804c7bc552b30db0df57ee92492033065cef62330ddb58a19d470af1",
+    "shadow_pipnn_h": "b837de4d91673825c25c5ba0cf0e03f2ce36e21bc60b712f7b444a4cecdd705f",
+    "neighbors_h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "bench_main": "66afcec9be5ad2e628db45c7032920ff9af5faa1c9a576f19ea45b37712047d4",
+    "r80_4_shadow_neighbors_h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "r80_4_shadow_pipnn_h": "b837de4d91673825c25c5ba0cf0e03f2ce36e21bc60b712f7b444a4cecdd705f",
+    "r80_4_shadow_pipnn_utils_h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+  },
+  "wrapper_sha256": "ab1776a35d9593d2bd3a3b6c35f39db297167f9d1fd687a46cddb42e563eec27",
+  "binary_sha256": {
+    "D0": "f16d2e0b7577800f199174edf1f47491aa1c284a30db373c99a63d97bdba50d9",
+    "E": "6396e1d3f076b6c95dc003c167457b27f275b3f98b259c081e88deb07dd1de5e"
+  },
+  "compilation": {
+    "D0": {
+      "source_root": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms",
+      "command": "/usr/bin/c++ -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms -DHWY_STATIC_DEFINE -DPARLAY_ELASTIC_PARALLELISM=true -DR70_TWO_TIER=1 -DR71_H17_TOP2=1 -DTOOLCHAIN_MISS_ASM_HWCAP_H -DUSE_DATATYPE_FLOAT_T -DUSE_DISTANCE_EUCLIDEAN -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/../bench -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/../../external/Parallel-KMeans/seeding -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/parlaylib-src/include -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/eigen-src -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/abseil-cpp-src -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/highway-src -march=native -ffast-math -O3 -DNDEBUG -std=gnu++17 -fPIE -Winvalid-pch -o /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/bin/D0.o -c /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/r80_4_wrapper.cc",
+      "link": "/usr/bin/c++ -march=native -ffast-math -O3 -DNDEBUG -fPIE -pie /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/bin/D0.o -o /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/bin/D0.bin ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_synchronization.a ../../_deps/highway-build/libhwy.a ../../_deps/highway-build/libhwy_contrib.a ../../_deps/abseil-cpp-build/absl/container/libabsl_raw_hash_set.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cord.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cordz_info.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cord_internal.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cordz_functions.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cordz_handle.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc_cord_state.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc32c.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc_internal.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc_cpu_detect.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_str_format_internal.a ../../_deps/abseil-cpp-build/absl/hash/libabsl_hash.a ../../_deps/abseil-cpp-build/absl/hash/libabsl_city.a ../../_deps/abseil-cpp-build/absl/hash/libabsl_low_level_hash.a ../../_deps/abseil-cpp-build/absl/container/libabsl_hashtablez_sampler.a ../../_deps/abseil-cpp-build/absl/profiling/libabsl_exponential_biased.a ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_synchronization.a ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_graphcycles_internal.a ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_kernel_timeout_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_stacktrace.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_symbolize.a ../../_deps/abseil-cpp-build/absl/base/libabsl_malloc_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_debugging_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_demangle_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_demangle_rust.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_decode_rust_punycode.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_utf8_for_code_point.a ../../_deps/abseil-cpp-build/absl/base/libabsl_tracing_internal.a ../../_deps/abseil-cpp-build/absl/time/libabsl_time.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_strings.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_strings_internal.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_string_view.a ../../_deps/abseil-cpp-build/absl/base/libabsl_throw_delegate.a ../../_deps/abseil-cpp-build/absl/time/libabsl_civil_time.a ../../_deps/abseil-cpp-build/absl/numeric/libabsl_int128.a ../../_deps/abseil-cpp-build/absl/time/libabsl_time_zone.a ../../_deps/abseil-cpp-build/absl/base/libabsl_base.a ../../_deps/abseil-cpp-build/absl/base/libabsl_raw_logging_internal.a ../../_deps/abseil-cpp-build/absl/base/libabsl_log_severity.a ../../_deps/abseil-cpp-build/absl/base/libabsl_spinlock_wait.a -lrt ../../_deps/highway-build/libhwy.a"
+    },
+    "E": {
+      "source_root": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/shadow_algorithms",
+      "command": "/usr/bin/c++ -I/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/shadow_algorithms -DHWY_STATIC_DEFINE -DPARLAY_ELASTIC_PARALLELISM=true -DR70_TWO_TIER=1 -DR71_H17_TOP2=1 -DTOOLCHAIN_MISS_ASM_HWCAP_H -DUSE_DATATYPE_FLOAT_T -DUSE_DISTANCE_EUCLIDEAN -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/../bench -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/../../external/Parallel-KMeans/seeding -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/parlaylib-src/include -I/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/eigen-src -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/abseil-cpp-src -I/home/tai/ann-task-a/experiments/H70/build-r70/_deps/highway-src -march=native -ffast-math -O3 -DNDEBUG -std=gnu++17 -fPIE -Winvalid-pch -o /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/bin/E.o -c /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/r80_4_wrapper.cc",
+      "link": "/usr/bin/c++ -march=native -ffast-math -O3 -DNDEBUG -fPIE -pie /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/bin/E.o -o /home/tai/ann-task-a/experiments/H80/r80_4_matched_build/bin/E.bin ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_synchronization.a ../../_deps/highway-build/libhwy.a ../../_deps/highway-build/libhwy_contrib.a ../../_deps/abseil-cpp-build/absl/container/libabsl_raw_hash_set.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cord.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cordz_info.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cord_internal.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cordz_functions.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_cordz_handle.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc_cord_state.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc32c.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc_internal.a ../../_deps/abseil-cpp-build/absl/crc/libabsl_crc_cpu_detect.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_str_format_internal.a ../../_deps/abseil-cpp-build/absl/hash/libabsl_hash.a ../../_deps/abseil-cpp-build/absl/hash/libabsl_city.a ../../_deps/abseil-cpp-build/absl/hash/libabsl_low_level_hash.a ../../_deps/abseil-cpp-build/absl/container/libabsl_hashtablez_sampler.a ../../_deps/abseil-cpp-build/absl/profiling/libabsl_exponential_biased.a ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_synchronization.a ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_graphcycles_internal.a ../../_deps/abseil-cpp-build/absl/synchronization/libabsl_kernel_timeout_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_stacktrace.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_symbolize.a ../../_deps/abseil-cpp-build/absl/base/libabsl_malloc_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_debugging_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_demangle_internal.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_demangle_rust.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_decode_rust_punycode.a ../../_deps/abseil-cpp-build/absl/debugging/libabsl_utf8_for_code_point.a ../../_deps/abseil-cpp-build/absl/base/libabsl_tracing_internal.a ../../_deps/abseil-cpp-build/absl/time/libabsl_time.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_strings.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_strings_internal.a ../../_deps/abseil-cpp-build/absl/strings/libabsl_string_view.a ../../_deps/abseil-cpp-build/absl/base/libabsl_throw_delegate.a ../../_deps/abseil-cpp-build/absl/time/libabsl_civil_time.a ../../_deps/abseil-cpp-build/absl/numeric/libabsl_int128.a ../../_deps/abseil-cpp-build/absl/time/libabsl_time_zone.a ../../_deps/abseil-cpp-build/absl/base/libabsl_base.a ../../_deps/abseil-cpp-build/absl/base/libabsl_raw_logging_internal.a ../../_deps/abseil-cpp-build/absl/base/libabsl_log_severity.a ../../_deps/abseil-cpp-build/absl/base/libabsl_spinlock_wait.a -lrt ../../_deps/highway-build/libhwy.a"
+    }
+  },
+  "flags": [
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune_degree",
+    "64",
+    "-table_size",
+    "160",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1"
+  ],
+  "build_macro_config": {
+    "R70_TWO_TIER": 1,
+    "R71_H17_TOP2": 1,
+    "USE_DATATYPE_FLOAT_T": 1,
+    "USE_DISTANCE_EUCLIDEAN": 1
+  },
+  "note": "D0 and E no-PCH paired reconstruction, not identical binary to historic D"
+}

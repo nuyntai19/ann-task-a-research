@@ -1,0 +1,12 @@
+{
+  "source": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/pipnn.h",
+  "source_sha256": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+  "upstream_instrumented_v1_sha256": "27cc00e808b5fae9326f1cb89be34e538364910187161cb3cc1e4437f6e877a0",
+  "instrumented_header_sha256": "b9eb57a956fcbabcc58a9705fe6fc8e986bda8a5f1a8bdf57bd0c32dab718387",
+  "patch_sha256": "038504295bf45ad8c7c3dfa273df184a65a7fa7f70a81211f18c7dc8d9713413",
+  "mode": "PATCH_GENERATION_ONLY_NO_COMPILE_NO_BUILD",
+  "guard": "C++17 if constexpr: reject HashSetGraph when snapshot enabled; compile snapshot only for LSH-style graph backends",
+  "snapshot_mode": "R85_B1_SNAPSHOT_DIR; disabled by default",
+  "snapshot_format": "row_id TAB degree TAB sentinel_worst_index TAB sentinel_worst_norm_float32_bits TAB ordered candidate(pid,hash,norm_float32_bits)",
+  "notes": "Snapshot output captures intermediate candidate state; not native build latency. Preserve original H70, patch_v1, and isolation_v2."
+}

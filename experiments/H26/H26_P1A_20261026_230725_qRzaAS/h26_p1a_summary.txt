@@ -1,0 +1,13 @@
+H26-P1a DISTANCE SUBPHASES: worker elapsed sum (not BUILD wall)
+RUNS=2 LEAVES_PER_RUN=85529
+P1A_SAMPLED_DIST_WORKER_SUM=62.026s vs P0_OUTER_DIST=62.047s
+PROCESS_WALL_MEDIAN_NO_GRAPH_OUTPUT=41.980s
+Buffer setup               0.348s   0.56%
+Point copy                 5.550s   8.95%
+Norm + zero                6.014s   9.70%
+Eigen rankUpdate          44.858s  72.32%
+Distance finalize          5.256s   8.47%
+P0 selection and merge still measured separately (not subphase split):
+P0_SELECT_WORKER_S=38.916 P0_MERGE_WORKER_S=14.001
+DIAGNOSTIC ONLY; P1a timestamps introduce instrumentation overhead; graph output intentionally disabled.
+NO performance/Pareto/novelty claim from P1a data.

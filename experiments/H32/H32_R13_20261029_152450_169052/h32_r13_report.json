@@ -1,0 +1,226 @@
+{
+  "status": "PASS_SOURCE_BASED_PREDICTION_CAPTURE_WITH_AGGREGATE_GATE",
+  "roles": {
+    "VAMANA": {
+      "graph_sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+      "observed_tie_aware_recall": 0.98314,
+      "H31_historical_tie_aware_recall": 0.98314,
+      "aggregate_recall_parity_pass": true,
+      "new_search_binary_sha256": "c1bdc6c91dd1be5fdcd28a03f30599172bd4e6ac6de379305fadcceaaafec34b",
+      "strict_gt10_missed": 1759,
+      "strict_missed_reachable_from_entry0": 1747,
+      "strict_missed_unreachable_from_entry0": 12,
+      "strict_recall": 0.98241,
+      "samples": [
+        {
+          "query": 0,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 1,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 12,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 14,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 16,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 17,
+          "misses_total": 2,
+          "misses_reachable": 2,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 30,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 54,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 75,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 82,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        }
+      ]
+    },
+    "STOCK": {
+      "graph_sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+      "observed_tie_aware_recall": 0.99087,
+      "H31_historical_tie_aware_recall": 0.99087,
+      "aggregate_recall_parity_pass": true,
+      "new_search_binary_sha256": "c1bdc6c91dd1be5fdcd28a03f30599172bd4e6ac6de379305fadcceaaafec34b",
+      "strict_gt10_missed": 979,
+      "strict_missed_reachable_from_entry0": 979,
+      "strict_missed_unreachable_from_entry0": 0,
+      "strict_recall": 0.99021,
+      "samples": [
+        {
+          "query": 1,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 8,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 17,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 81,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 84,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 126,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 130,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 132,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 133,
+          "misses_total": 3,
+          "misses_reachable": 3,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 157,
+          "misses_total": 2,
+          "misses_reachable": 2,
+          "misses_unreachable": 0
+        }
+      ]
+    },
+    "TOP2": {
+      "graph_sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6",
+      "observed_tie_aware_recall": 0.99087,
+      "H31_historical_tie_aware_recall": 0.99087,
+      "aggregate_recall_parity_pass": true,
+      "new_search_binary_sha256": "c1bdc6c91dd1be5fdcd28a03f30599172bd4e6ac6de379305fadcceaaafec34b",
+      "strict_gt10_missed": 979,
+      "strict_missed_reachable_from_entry0": 979,
+      "strict_missed_unreachable_from_entry0": 0,
+      "strict_recall": 0.99021,
+      "samples": [
+        {
+          "query": 1,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 8,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 17,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 81,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 84,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 126,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 130,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 132,
+          "misses_total": 1,
+          "misses_reachable": 1,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 133,
+          "misses_total": 3,
+          "misses_reachable": 3,
+          "misses_unreachable": 0
+        },
+        {
+          "query": 157,
+          "misses_total": 2,
+          "misses_reachable": 2,
+          "misses_unreachable": 0
+        }
+      ]
+    }
+  },
+  "graph_budget_equal": false,
+  "native_binary_exact_parity": false
+}

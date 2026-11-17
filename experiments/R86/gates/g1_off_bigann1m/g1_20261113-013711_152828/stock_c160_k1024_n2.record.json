@@ -1,0 +1,34 @@
+{
+  "arm": "stock_c160_k1024_n2",
+  "r86_binary_sha256": "ba8e621fdcbf1649f101b2a0f63d13791061847e14608907ecbe601c4269b681",
+  "graph_path": "/home/tai/ann-task-a/experiments/R86/gates/g1_off_bigann1m/g1_20261113-013711_152828/stock_c160_k1024_n2.graph",
+  "log_path": "/home/tai/ann-task-a/experiments/R86/gates/g1_off_bigann1m/g1_20261113-013711_152828/stock_c160_k1024_n2.build.log",
+  "time_path": "/home/tai/ann-task-a/experiments/R86/gates/g1_off_bigann1m/g1_20261113-013711_152828/stock_c160_k1024_n2.time",
+  "wall_s": 41.01,
+  "peak_rss_kib": 2830328,
+  "graph": {
+    "n": 1000000,
+    "max_degree_bound": 64,
+    "arcs": 29237221,
+    "graph_bytes": 120948892,
+    "graph_sha256": "d856ef7aa8071cbae5eb6954ed47c408ed5078ccd873d7ab051b83576d061940"
+  },
+  "partition": {
+    "buckets": [
+      84935,
+      85834
+    ],
+    "wp_cumulative": [
+      4727269970,
+      9476371383
+    ],
+    "occupancy_printed": [
+      55
+    ]
+  },
+  "historical_partition_errors": [
+    "BUCKETS_MISMATCH",
+    "COMPARISONS_MISMATCH"
+  ],
+  "status": "GRAPH_VALID_PARTITION_MISMATCH_HOLD"
+}

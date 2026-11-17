@@ -1,0 +1,30 @@
+{
+  "status": "STAGING",
+  "source_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "compiler_db": "/home/tai/ann-task-a/src/PiPNN/build/compile_commands.json",
+  "baseline": "D0=H17+TwoTier",
+  "experimental": "W=grow-only-uninitialized-leaf-workspace",
+  "original_source_sha256": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+    "algorithms/utils/graph.h": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+    "algorithms/utils/r70_two_tier_lshgraph.h": "ac0bece4804c7bc552b30db0df57ee92492033065cef62330ddb58a19d470af1"
+  },
+  "arms": {
+    "D0": {
+      "exit_code": 0,
+      "utils_sha256": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+      "wrapper": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/D0/r84_4_real_benchmark_instantiation.cc",
+      "syntax_log": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/D0/compiler.log",
+      "compile_command": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/D0/compile_command.txt"
+    },
+    "W": {
+      "exit_code": 1,
+      "utils_sha256": "4a20805274bfe62caadb821092e1efdc6964d9a796a277e8b5754625b31b2f41",
+      "wrapper": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/W/r84_4_real_benchmark_instantiation.cc",
+      "syntax_log": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/W/compiler.log",
+      "compile_command": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/W/compile_command.txt"
+    }
+  },
+  "note": "No real graph build, link, or Recall; graph parity required next."
+}

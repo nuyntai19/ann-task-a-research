@@ -1,0 +1,65 @@
+{
+  "phase": "selftest",
+  "source_sha256": "c6af2214f82910ab5ff1f7f2ea0b49ab7bc5927ca91536c1f9fdaea1cc528dd0",
+  "parlay_head": "7cdb4cae8f020525f5eb4ad82e2565d1e38cfbc3",
+  "pipnn_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "native_cpp_flags": [
+    "g++",
+    "-std=c++17",
+    "-O3",
+    "-pthread",
+    "-I",
+    "/home/tai/ann-task-a/src/PiPNN/parlaylib/include",
+    "/home/tai/ann-task-a/experiments/H83/r83_2_selftest/r83_2_compact_fanout_kit/r83_compact_fanout.cc",
+    "-o",
+    "/home/tai/ann-task-a/experiments/H83/r83_2_selftest/r83_2_compact_fanout_kit/r83_compact_fanout"
+  ],
+  "clustered": [
+    {
+      "arm": "flat",
+      "label": "clustered_r1_flat",
+      "checksum": "2880416726823641347",
+      "members": 12288,
+      "populate_s": 0.0044716,
+      "grouping_s": 0.000158642,
+      "subtotal_s": 0.00463025,
+      "peakRSS_KiB": 14316,
+      "process_wall_s": 0.01
+    },
+    {
+      "arm": "compact",
+      "label": "clustered_r1_compact",
+      "checksum": "2880416726823641347",
+      "members": 12288,
+      "populate_s": 0.00407867,
+      "grouping_s": 5.3292e-05,
+      "subtotal_s": 0.00413196,
+      "peakRSS_KiB": 14108,
+      "process_wall_s": 0.0
+    }
+  ],
+  "uniform": [
+    {
+      "arm": "flat",
+      "label": "uniform_r1_flat",
+      "checksum": "5444268427548428291",
+      "members": 12288,
+      "populate_s": 0.00313398,
+      "grouping_s": 5.771e-05,
+      "subtotal_s": 0.00319169,
+      "peakRSS_KiB": 14276,
+      "process_wall_s": 0.0
+    },
+    {
+      "arm": "compact",
+      "label": "uniform_r1_compact",
+      "checksum": "5444268427548428291",
+      "members": 12288,
+      "populate_s": 0.00341652,
+      "grouping_s": 7.0735e-05,
+      "subtotal_s": 0.00348726,
+      "peakRSS_KiB": 14336,
+      "process_wall_s": 0.0
+    }
+  ]
+}

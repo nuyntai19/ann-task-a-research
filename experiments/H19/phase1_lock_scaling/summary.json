@@ -1,0 +1,162 @@
+{
+  "status": "H19_R1_DIAGNOSTIC_COMPLETE_NO_ALGORITHM_NEW",
+  "date_utc": "2026-10-24T15:34:18.794142+00:00",
+  "benchmark": "PiPNN commit 443a328, H17 Top-2, f30, SIFT1M, affinity 0 / 0,2 / 0,2,4,6",
+  "rep_per_worker": 1,
+  "compile_flags": "CMAKE_BUILD_TYPE=Release; uses cached offline dependencies",
+  "instrumentation": "sample 1/256 LSHGraph::merge_neighbors calls per C++ thread; sampled acquire and hold time; not a direct critical path trace",
+  "workers": {
+    "1": {
+      "median_build_wall_s": 142.9,
+      "median_leaf_wall_s": 100.1608,
+      "median_merge_worker_s": 12.72,
+      "median_mean_sampled_wait_ns": 58.321339185316845,
+      "median_mean_sampled_held_ns": 114.62206911855388,
+      "median_wait_fraction": 0.3372278814052465,
+      "median_leaf_parallelism_proxy": 0.9996924944688942,
+      "median_peak_rss_kb": 1714468.0,
+      "build_times_each": [
+        142.9
+      ],
+      "sample_count_each": [
+        468673
+      ]
+    },
+    "2": {
+      "median_build_wall_s": 81.2,
+      "median_leaf_wall_s": 58.7033,
+      "median_merge_worker_s": 14.29,
+      "median_mean_sampled_wait_ns": 63.300163013792165,
+      "median_mean_sampled_held_ns": 129.65572511265876,
+      "median_wait_fraction": 0.3280550991649931,
+      "median_leaf_parallelism_proxy": 1.9975026957598634,
+      "median_peak_rss_kb": 1757628.0,
+      "build_times_each": [
+        81.2
+      ],
+      "sample_count_each": [
+        468672
+      ]
+    },
+    "4": {
+      "median_build_wall_s": 44.68,
+      "median_leaf_wall_s": 30.6931,
+      "median_merge_worker_s": 14.52,
+      "median_mean_sampled_wait_ns": 63.10184329732371,
+      "median_mean_sampled_held_ns": 129.94538599571982,
+      "median_wait_fraction": 0.32687256651342983,
+      "median_leaf_parallelism_proxy": 3.9846089186168876,
+      "median_peak_rss_kb": 1848324.0,
+      "build_times_each": [
+        44.68
+      ],
+      "sample_count_each": [
+        468671
+      ]
+    }
+  },
+  "scaling": {
+    "speedup_1_to_4": 3.198299015219338,
+    "four_worker_efficiency": 0.7995747538048344,
+    "scale_gap_from_linear": 0.20042524619516555
+  },
+  "records": [
+    {
+      "workers": 1,
+      "rep": 1,
+      "build_wall_s": 142.9,
+      "leaf_wall_s": 100.1608,
+      "partition_wall_s": 28.217,
+      "prune_wall_s": 14.1552,
+      "matrix_worker_s": 51.96,
+      "selection_worker_s": 35.45,
+      "merge_worker_s": 12.72,
+      "sum_stage_worker_s": 100.13000000000001,
+      "leaves": 85529,
+      "leaf_pairwork_events": 7289822248,
+      "directed_proposals": 59990170,
+      "sampled_merge_calls": 468673,
+      "sample_stride": 256,
+      "sample_mean_lock_wait_ns": 58.321339185316845,
+      "sample_mean_lock_held_ns": 114.62206911855388,
+      "sample_wait_to_held_ratio": 0.5088142242921382,
+      "sample_wait_fraction_of_lock_latency": 0.3372278814052465,
+      "reported_total_sampled_wait_s": 0.027333637,
+      "reported_total_sampled_held_s": 0.053720269,
+      "phase_parallelism_proxy": 0.9996924944688942,
+      "max_rss_kb": 1714468,
+      "user_cpu_s": 142.64,
+      "sys_cpu_s": 0.9,
+      "voluntary_context_switches": 43,
+      "involuntary_context_switches": 1397
+    },
+    {
+      "workers": 4,
+      "rep": 1,
+      "build_wall_s": 44.68,
+      "leaf_wall_s": 30.6931,
+      "partition_wall_s": 10.0809,
+      "prune_wall_s": 3.6986,
+      "matrix_worker_s": 64.05,
+      "selection_worker_s": 43.73,
+      "merge_worker_s": 14.52,
+      "sum_stage_worker_s": 122.3,
+      "leaves": 85529,
+      "leaf_pairwork_events": 7289822248,
+      "directed_proposals": 59990170,
+      "sampled_merge_calls": 468671,
+      "sample_stride": 256,
+      "sample_mean_lock_wait_ns": 63.10184329732371,
+      "sample_mean_lock_held_ns": 129.94538599571982,
+      "sample_wait_to_held_ratio": 0.48560280008250684,
+      "sample_wait_fraction_of_lock_latency": 0.32687256651342983,
+      "reported_total_sampled_wait_s": 0.029574004,
+      "reported_total_sampled_held_s": 0.060901634,
+      "phase_parallelism_proxy": 3.9846089186168876,
+      "max_rss_kb": 1848324,
+      "user_cpu_s": 177.45,
+      "sys_cpu_s": 1.46,
+      "voluntary_context_switches": 5978,
+      "involuntary_context_switches": 999
+    },
+    {
+      "workers": 2,
+      "rep": 1,
+      "build_wall_s": 81.2,
+      "leaf_wall_s": 58.7033,
+      "partition_wall_s": 14.8168,
+      "prune_wall_s": 7.4396,
+      "matrix_worker_s": 60.61,
+      "selection_worker_s": 42.36,
+      "merge_worker_s": 14.29,
+      "sum_stage_worker_s": 117.25999999999999,
+      "leaves": 85529,
+      "leaf_pairwork_events": 7289822248,
+      "directed_proposals": 59990170,
+      "sampled_merge_calls": 468672,
+      "sample_stride": 256,
+      "sample_mean_lock_wait_ns": 63.300163013792165,
+      "sample_mean_lock_held_ns": 129.65572511265876,
+      "sample_wait_to_held_ratio": 0.4882172612030068,
+      "sample_wait_fraction_of_lock_latency": 0.3280550991649931,
+      "reported_total_sampled_wait_s": 0.029667014,
+      "reported_total_sampled_held_s": 0.060766008,
+      "phase_parallelism_proxy": 1.9975026957598634,
+      "max_rss_kb": 1757628,
+      "user_cpu_s": 161.25,
+      "sys_cpu_s": 1.29,
+      "voluntary_context_switches": 2283,
+      "involuntary_context_switches": 6577
+    }
+  ],
+  "cautions": [
+    "Mutex samples are systematically sampled every 256 calls per thread, not statistically randomized; can bias estimates.",
+    "Wait/held time sample sums are not global CPU time; do not extrapolate without a sample-representativeness test.",
+    "Same instrumented binary at all worker counts, but C++ timing probes induce overhead versus clean H17 build.",
+    "Graph random partition and concurrent merge are nondeterministic; 1 rep is diagnostic only.",
+    "Worker-time sums and phase_parallelism_proxy are not critical-path measurements.",
+    "No graph written and no recall benchmark: instrumentation does not establish quality equivalence.",
+    "Speedup deficiency alone cannot distinguish contention, memory bandwidth, thermal throttling, serial work or load imbalance.",
+    "NO H19-C1 novelty/effectiveness claim from this report."
+  ]
+}

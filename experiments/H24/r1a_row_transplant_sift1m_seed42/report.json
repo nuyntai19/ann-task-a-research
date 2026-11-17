@@ -1,0 +1,287 @@
+{
+  "study": "H24_R1A_ROW_TRANSPLANT_NOT_REAL_STH_OR_TRUE_OPTIMAL_ORACLE",
+  "date": "2026-10-26",
+  "input_graphs": {
+    "low": "64c4ea8ac2bdec39474584c1098a520d751eadd3e8a59f186cc20e5cee75637d",
+    "high": "487d6c3ca8871e450aae51b116e7c3317e3d75a1911eaba8f325af4bff60ca50"
+  },
+  "baseline_low": {
+    "60": {
+      "recall10": 0.959,
+      "qps_median": 2067.53,
+      "dist_per_query": 1553.95
+    },
+    "100": {
+      "recall10": 0.9847,
+      "qps_median": 1403.75,
+      "dist_per_query": 2285.36
+    },
+    "140": {
+      "recall10": 0.9919,
+      "qps_median": 1046.08,
+      "dist_per_query": 2962.16
+    },
+    "200": {
+      "recall10": 0.9965,
+      "qps_median": 793.45,
+      "dist_per_query": 3905.07
+    },
+    "300": {
+      "recall10": 0.9987,
+      "qps_median": 571.64,
+      "dist_per_query": 5352.22
+    },
+    "400": {
+      "recall10": 0.9994,
+      "qps_median": 452.33,
+      "dist_per_query": 6684.97
+    }
+  },
+  "baseline_high": {
+    "60": {
+      "recall10": 0.9784,
+      "qps_median": 2010.06,
+      "dist_per_query": 1620.78
+    },
+    "100": {
+      "recall10": 0.9933,
+      "qps_median": 1347.43,
+      "dist_per_query": 2382.63
+    },
+    "140": {
+      "recall10": 0.9963,
+      "qps_median": 1025.17,
+      "dist_per_query": 3094.55
+    },
+    "200": {
+      "recall10": 0.9982,
+      "qps_median": 765.51,
+      "dist_per_query": 4091.27
+    },
+    "300": {
+      "recall10": 0.9996,
+      "qps_median": 549.98,
+      "dist_per_query": 5614.18
+    },
+    "400": {
+      "recall10": 0.9999,
+      "qps_median": 427.78,
+      "dist_per_query": 7017.21
+    }
+  },
+  "results": [
+    {
+      "policy": "hindsight",
+      "percent": 5,
+      "selected": 50000,
+      "edges": 24549551,
+      "reach_entry0": 1000000,
+      "zero_indeg": 0,
+      "high_only_edges_in_selected": 992208,
+      "metrics": {
+        "60": {
+          "recall": 0.9627,
+          "qps": 1980.28,
+          "dist_per_query": 1584.39,
+          "recovery_fraction": 0.1907,
+          "baseline_low": 0.959,
+          "baseline_high": 0.9784
+        },
+        "100": {
+          "recall": 0.9871,
+          "qps": 1352.26,
+          "dist_per_query": 2326.13,
+          "recovery_fraction": 0.2791,
+          "baseline_low": 0.9847,
+          "baseline_high": 0.9933
+        },
+        "140": {
+          "recall": 0.9939,
+          "qps": 1024.8,
+          "dist_per_query": 3016.41,
+          "recovery_fraction": 0.4545,
+          "baseline_low": 0.9919,
+          "baseline_high": 0.9963
+        },
+        "200": {
+          "recall": 0.9976,
+          "qps": 783.32,
+          "dist_per_query": 3979.26,
+          "recovery_fraction": 0.6471,
+          "baseline_low": 0.9965,
+          "baseline_high": 0.9982
+        },
+        "300": {
+          "recall": 0.999,
+          "qps": 548.98,
+          "dist_per_query": 5452.07,
+          "recovery_fraction": 0.3333,
+          "baseline_low": 0.9987,
+          "baseline_high": 0.9996
+        }
+      }
+    },
+    {
+      "policy": "hindsight",
+      "percent": 10,
+      "selected": 100000,
+      "edges": 24773137,
+      "reach_entry0": 1000000,
+      "zero_indeg": 0,
+      "high_only_edges_in_selected": 1734470,
+      "metrics": {
+        "60": {
+          "recall": 0.9663,
+          "qps": 2073.76,
+          "dist_per_query": 1592.84,
+          "recovery_fraction": 0.3763,
+          "baseline_low": 0.959,
+          "baseline_high": 0.9784
+        },
+        "100": {
+          "recall": 0.9873,
+          "qps": 1377.03,
+          "dist_per_query": 2338.97,
+          "recovery_fraction": 0.3023,
+          "baseline_low": 0.9847,
+          "baseline_high": 0.9933
+        },
+        "140": {
+          "recall": 0.994,
+          "qps": 1061.8,
+          "dist_per_query": 3034.65,
+          "recovery_fraction": 0.4773,
+          "baseline_low": 0.9919,
+          "baseline_high": 0.9963
+        },
+        "200": {
+          "recall": 0.9975,
+          "qps": 793.06,
+          "dist_per_query": 4006.26,
+          "recovery_fraction": 0.5882,
+          "baseline_low": 0.9965,
+          "baseline_high": 0.9982
+        },
+        "300": {
+          "recall": 0.9988,
+          "qps": 567.94,
+          "dist_per_query": 5492.27,
+          "recovery_fraction": 0.1111,
+          "baseline_low": 0.9987,
+          "baseline_high": 0.9996
+        }
+      }
+    },
+    {
+      "policy": "random",
+      "percent": 5,
+      "selected": 50000,
+      "edges": 24280189,
+      "reach_entry0": 1000000,
+      "zero_indeg": 0,
+      "high_only_edges_in_selected": 313393,
+      "metrics": {
+        "60": {
+          "recall": 0.9603,
+          "qps": 2110.11,
+          "dist_per_query": 1557.82,
+          "recovery_fraction": 0.067,
+          "baseline_low": 0.959,
+          "baseline_high": 0.9784
+        },
+        "100": {
+          "recall": 0.9854,
+          "qps": 1401.89,
+          "dist_per_query": 2290.22,
+          "recovery_fraction": 0.0814,
+          "baseline_low": 0.9847,
+          "baseline_high": 0.9933
+        },
+        "140": {
+          "recall": 0.9923,
+          "qps": 1087.46,
+          "dist_per_query": 2969.05,
+          "recovery_fraction": 0.0909,
+          "baseline_low": 0.9919,
+          "baseline_high": 0.9963
+        },
+        "200": {
+          "recall": 0.9966,
+          "qps": 813.24,
+          "dist_per_query": 3915.17,
+          "recovery_fraction": 0.0588,
+          "baseline_low": 0.9965,
+          "baseline_high": 0.9982
+        },
+        "300": {
+          "recall": 0.9989,
+          "qps": 582.79,
+          "dist_per_query": 5366.22,
+          "recovery_fraction": 0.2222,
+          "baseline_low": 0.9987,
+          "baseline_high": 0.9996
+        }
+      }
+    },
+    {
+      "policy": "random",
+      "percent": 10,
+      "selected": 100000,
+      "edges": 24347730,
+      "reach_entry0": 1000000,
+      "zero_indeg": 0,
+      "high_only_edges_in_selected": 627283,
+      "metrics": {
+        "60": {
+          "recall": 0.9605,
+          "qps": 2043.81,
+          "dist_per_query": 1561.45,
+          "recovery_fraction": 0.0773,
+          "baseline_low": 0.959,
+          "baseline_high": 0.9784
+        },
+        "100": {
+          "recall": 0.9857,
+          "qps": 1418.2,
+          "dist_per_query": 2294.75,
+          "recovery_fraction": 0.1163,
+          "baseline_low": 0.9847,
+          "baseline_high": 0.9933
+        },
+        "140": {
+          "recall": 0.9922,
+          "qps": 1086.02,
+          "dist_per_query": 2976.29,
+          "recovery_fraction": 0.0682,
+          "baseline_low": 0.9919,
+          "baseline_high": 0.9963
+        },
+        "200": {
+          "recall": 0.997,
+          "qps": 802.74,
+          "dist_per_query": 3925.51,
+          "recovery_fraction": 0.2941,
+          "baseline_low": 0.9965,
+          "baseline_high": 0.9982
+        },
+        "300": {
+          "recall": 0.9989,
+          "qps": 572.47,
+          "dist_per_query": 5379.54,
+          "recovery_fraction": 0.2222,
+          "baseline_low": 0.9987,
+          "baseline_high": 0.9996
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Hindsight policy reads both LOW/HIGH graphs; not an online cheap predictor.",
+    "Ranks by number of high-only outgoing neighbors, NOT true per-node causal contribution or optimal oracle.",
+    "Row replacements can delete LOW edges and need not preserve symmetrization, cap/spine or actual BUILD provenance.",
+    "Search quality can decrease non-monotonically; no causality attribution to a specific replacement edge.",
+    "Only one SIFT1M seed and 1000 external queries, no held-out cross-corpus validation.",
+    "Query QPS results are from R0f independent 1-thread search, not native paper searcher; discrete ef, unmatched index size.",
+    "No BUILD time for transplant included: this is a diagnostic, not construction algorithm."
+  ]
+}

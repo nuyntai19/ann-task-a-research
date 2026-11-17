@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cmake -S /home/tai/ann-task-a/experiments/H26/PiPNN-H26-src -B /home/tai/ann-task-a/experiments/H26/PiPNN-H26-src/build -DCMAKE_BUILD_TYPE=Release -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DFETCHCONTENT_SOURCE_DIR_PARLAYLIB=/home/tai/ann-task-a/src/PiPNN/build/_deps/parlaylib-src -DFETCHCONTENT_SOURCE_DIR_EIGEN=/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src -DFETCHCONTENT_SOURCE_DIR_ABSEIL-CPP=/home/tai/ann-task-a/src/PiPNN/build/_deps/abseil-cpp-src -DFETCHCONTENT_SOURCE_DIR_HIGHWAY=/home/tai/ann-task-a/src/PiPNN/build/_deps/highway-src -DFETCHCONTENT_SOURCE_DIR_GOOGLEBENCHMARK=/home/tai/ann-task-a/src/PiPNN/build/_deps/googlebenchmark-src
+cmake --build /home/tai/ann-task-a/experiments/H26/PiPNN-H26-src/build --target neighbors-pipnn_FLOAT_T_EUCLIDEAN -j 4

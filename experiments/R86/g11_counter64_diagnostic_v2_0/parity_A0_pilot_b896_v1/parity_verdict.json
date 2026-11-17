@@ -1,0 +1,22 @@
+{
+  "status": "R86_G11_COUNTER64_PARITY_PASS",
+  "arm": "A0",
+  "pilot": true,
+  "beam": 896,
+  "source_graph_sha256": "c8d05bb36f73781f31f8f210d57bd5e8f3a261dbbfafed1e403794704f377186",
+  "original_v4_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "diagnostic_v2_sha256": "a98b8748b92787e6ccbf52556a8eef2c24bff4580c6275c9fa464dd82af4d3a4",
+  "archived_original": {
+    "recall": 0.99819499,
+    "qps": 561.87689209,
+    "avg_cmps": 4294955355,
+    "avg_visited": 740
+  },
+  "new_diagnostic": {
+    "recall": 0.99819499,
+    "qps": 545.30957031,
+    "avg_cmps": 31008,
+    "avg_visited": 740
+  },
+  "qps_not_parity_gated": true
+}

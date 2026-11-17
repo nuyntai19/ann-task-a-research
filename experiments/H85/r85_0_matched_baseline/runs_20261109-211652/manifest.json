@@ -1,0 +1,68 @@
+{
+  "source_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "source_hashes": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+  },
+  "binaries": {
+    "A": "e07853b3e1832e2d9a95d6ed8ed6660bf34bc719dffcfd78789f6f672c6a05a5",
+    "D0": "5e4620d45c0d43c091038c3edac2b863983310b4e40a970943a307db87950d9b"
+  },
+  "datasets": {
+    "base": {
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "rows": 1000000,
+      "cols": 128,
+      "bytes": 512000008,
+      "sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+    },
+    "query": {
+      "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "rows": 10000,
+      "cols": 128,
+      "bytes": 5120008,
+      "sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+    },
+    "gt": {
+      "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "rows": 10000,
+      "cols": 100,
+      "bytes": 8000008,
+      "sha256": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13"
+    }
+  },
+  "cpu_sets": {
+    "4": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "6": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  "free_disk_gib": 74.07,
+  "available_memory_kib": 23084856,
+  "started_at": "2026-11-09T14:16:52.443058+00:00",
+  "run_dir": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/runs_20261109-211652",
+  "protocol": {
+    "arms": [
+      "A",
+      "D0"
+    ],
+    "threads": [
+      4,
+      6
+    ],
+    "reps": 3,
+    "order": "A-D0/D0-A/A-D0",
+    "query_during_build": false,
+    "source": "R72 SIFT1M config; reproducibility rerun on new CPU"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "original_revision": "443a328",
+  "original_source": "/home/tai/ann-task-a/src/PiPNN",
+  "isolated_copy": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/PiPNN-instrumented",
+  "graph_hashes_before": {
+    "results/pipnn_static_sift1m_f15_4t.graph": "83fe7ced38a79e81e21cdd690c92904fa12db635ddfc2f5eb43c1a02c5257f0e",
+    "results/pipnn_sift1m_4t.graph": "9d1393a66699b54fe57fc14eb269804e5b0a9016ec0676fc0034d152acdd7753",
+    "results/pipnn_static_sift1m_f60_4t.graph": "17264c503f26653c0a2d92b95b27dc20173d8e815c4a60e345683df369a5150a"
+  },
+  "source_sha_before_patch": {
+    "pipnn_utils_sha256": "ee2048738ad4462f21bdfea4a1cf7c2ac140f72fbd8875d869bc4f613d93db53",
+    "pipnn_sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd"
+  },
+  "command_baseline": "taskset -c 0,2,4,6 env PARLAY_NUM_THREADS=4 ... -fanout 30 -fanout_scheme 10,3 -cluster_size 1024 -mst_deg 2 -alpha 1.2 -prune_degree 32",
+  "measurement": "Sum of per-leaf elapsed durations (not CPU time, not critical path, not graph-build wall time)"
+}

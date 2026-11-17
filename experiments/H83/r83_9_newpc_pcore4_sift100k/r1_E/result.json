@@ -1,0 +1,44 @@
+{
+  "variant": "E",
+  "rep": 1,
+  "tag": "r1_E",
+  "threads": 4,
+  "binary_sha256": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f",
+  "wall_s": 2.73,
+  "peakRSS_KiB": 335564,
+  "graph": {
+    "vertices": 100000,
+    "maximum_degree": 64,
+    "arcs": 2267610,
+    "graph_bytes": 9470448,
+    "self_arcs": 0,
+    "duplicate_neighbors": 0,
+    "sha256": "96e6c8ff5f5b6b298dba065fb47f9af535c4b1e46fd55482419e2e6677e3d40b"
+  },
+  "phases": {
+    "buckets time": {
+      "count": 2,
+      "individual_s": [
+        0.1622,
+        0.157
+      ],
+      "sum_s": 0.3192
+    },
+    "build leaf time": {
+      "count": 2,
+      "individual_s": [
+        1.1045,
+        1.0939
+      ],
+      "sum_s": 2.1984
+    },
+    "Final prune time": {
+      "count": 1,
+      "individual_s": [
+        0.172
+      ],
+      "sum_s": 0.172
+    }
+  },
+  "exit_code": 0
+}

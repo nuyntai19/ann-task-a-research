@@ -1,0 +1,44 @@
+{
+  "interpretation_limitations": [
+    "Total arcs match does not mean matched in/out degree, topology or same candidate stream.",
+    "Matched Recall estimates are linearly interpolated per graph between adjacent measured efficient-frontier points, not directly measured at exact target.",
+    "Three graphs are descriptive runs, not confidence intervals.",
+    "Edge length distribution samples directed edges; density-normalized length uses uniformly sampled source nodes.",
+    "Structural differences in final graph cannot identify the causal stage without intermediate candidate traces.",
+    "Reachability from node 0 is graph-theoretic access, not proof of efficient navigability."
+  ],
+  "B64": {
+    "arcs_median": 23857547,
+    "entry0_reached_fraction_min_med_max": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "global_edge_length_p99_median": 327.24617644698003,
+    "exact_anchor_norm_edge_length_k1_p95_median": 3.544776677951148
+  },
+  "EDGE_R": {
+    "arcs_median": 23879990,
+    "entry0_reached_fraction_min_med_max": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "global_edge_length_p99_median": 326.937364031139,
+    "exact_anchor_norm_edge_length_k1_p95_median": 3.529830941157645,
+    "jaccard_neighbors_vs_B64_median": 0.941748179955008,
+    "out_degree_TV_vs_B64_median": 0.184697
+  },
+  "EDGE_ALPHA": {
+    "arcs_median": 23835133,
+    "entry0_reached_fraction_min_med_max": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "global_edge_length_p99_median": 327.50583200741534,
+    "exact_anchor_norm_edge_length_k1_p95_median": 3.4920213435853626,
+    "jaccard_neighbors_vs_B64_median": 0.792877590514071,
+    "out_degree_TV_vs_B64_median": 0.142189
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "dataset": "synthetic_gaussian",
+  "n": 100000,
+  "dim": 128,
+  "queries": 200,
+  "seed": 42,
+  "threads": 4,
+  "M": 16,
+  "ef_construction": 100,
+  "build_seconds": 12.867084989999967,
+  "peak_process_rss_mib": 466.046875,
+  "search_results": [
+    {
+      "ef_search": 20,
+      "recall_at_10": 0.2425,
+      "qps": 30543.822064931872
+    },
+    {
+      "ef_search": 50,
+      "recall_at_10": 0.4075,
+      "qps": 15855.930477975942
+    },
+    {
+      "ef_search": 100,
+      "recall_at_10": 0.5405,
+      "qps": 7249.587117770867
+    },
+    {
+      "ef_search": 200,
+      "recall_at_10": 0.688,
+      "qps": 4829.748818523253
+    }
+  ]
+}

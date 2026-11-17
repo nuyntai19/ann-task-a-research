@@ -1,0 +1,92 @@
+[
+  {
+    "threads": 4,
+    "beam": 10,
+    "A_recall_median": 0.76328999,
+    "A_qps_median": 66909.7734375,
+    "D0_recall_median": 0.76380002,
+    "D0_qps_median": 74253.9375,
+    "delta_recall_D0_minus_A": 0.0005100300000000502
+  },
+  {
+    "threads": 4,
+    "beam": 20,
+    "A_recall_median": 0.88933998,
+    "A_qps_median": 45039.16015625,
+    "D0_recall_median": 0.89054,
+    "D0_qps_median": 48795.0078125,
+    "delta_recall_D0_minus_A": 0.0012000199999999683
+  },
+  {
+    "threads": 4,
+    "beam": 40,
+    "A_recall_median": 0.96170998,
+    "A_qps_median": 29599.98632812,
+    "D0_recall_median": 0.96174002,
+    "D0_qps_median": 30335.84765625,
+    "delta_recall_D0_minus_A": 3.004000000006446e-05
+  },
+  {
+    "threads": 4,
+    "beam": 80,
+    "A_recall_median": 0.99120998,
+    "A_qps_median": 17856.6328125,
+    "D0_recall_median": 0.9914,
+    "D0_qps_median": 17529.22070312,
+    "delta_recall_D0_minus_A": 0.00019001999999990193
+  },
+  {
+    "threads": 4,
+    "beam": 160,
+    "A_recall_median": 0.99851,
+    "A_qps_median": 10434.40527344,
+    "D0_recall_median": 0.99857998,
+    "D0_qps_median": 10464.18066406,
+    "delta_recall_D0_minus_A": 6.998000000002502e-05
+  },
+  {
+    "threads": 6,
+    "beam": 10,
+    "A_recall_median": 0.76409,
+    "A_qps_median": 100744.5,
+    "D0_recall_median": 0.76349998,
+    "D0_qps_median": 90838.0703125,
+    "delta_recall_D0_minus_A": -0.0005900200000000799
+  },
+  {
+    "threads": 6,
+    "beam": 20,
+    "A_recall_median": 0.88993001,
+    "A_qps_median": 66652.4453125,
+    "D0_recall_median": 0.89003003,
+    "D0_qps_median": 61514.9921875,
+    "delta_recall_D0_minus_A": 0.00010001999999997846
+  },
+  {
+    "threads": 6,
+    "beam": 40,
+    "A_recall_median": 0.96148998,
+    "A_qps_median": 35426.69921875,
+    "D0_recall_median": 0.96202999,
+    "D0_qps_median": 39143.84375,
+    "delta_recall_D0_minus_A": 0.0005400100000000352
+  },
+  {
+    "threads": 6,
+    "beam": 80,
+    "A_recall_median": 0.99132001,
+    "A_qps_median": 21268.90234375,
+    "D0_recall_median": 0.99133998,
+    "D0_qps_median": 23475.88671875,
+    "delta_recall_D0_minus_A": 1.996999999998028e-05
+  },
+  {
+    "threads": 6,
+    "beam": 160,
+    "A_recall_median": 0.99856001,
+    "A_qps_median": 12766.46777344,
+    "D0_recall_median": 0.99857998,
+    "D0_qps_median": 11434.51757812,
+    "delta_recall_D0_minus_A": 1.996999999998028e-05
+  }
+]

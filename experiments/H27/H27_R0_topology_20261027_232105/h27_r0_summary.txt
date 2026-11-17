@@ -1,0 +1,18 @@
+H27-R0 EXACT GRAPH TOPOLOGY STABILITY (read-only / no BUILD)
+PiPNN pinned graph format, each file SHA256 checked.
+Graph differences are OBSERVATIONS, not demonstrated schedule-only effect or novelty.
+LABEL          N       EDGES         IND0   DEGD0     DUP    REACH0(optional)
+r1_stock     1,000,000   22,793,556        1       0       0  999999
+r1_top2      1,000,000   22,794,064        1       0       0  999999
+r2_stock     1,000,000   22,793,556        1       0       0  999999
+r2_top2      1,000,000   22,794,056        1       0       0  999999
+
+PAIR                                  JACCARD       SYMDIFF_KEYS    CHANGED_ROWS      CHANGED_%
+r1_stock_vs_r1_top2                   0.9997200           6,384           3,347      0.33470%
+r2_stock_vs_r2_top2                   0.9997844           4,916           2,634      0.26340%
+r1_stock_vs_r2_stock                  0.9984536          35,276          17,037      1.70370%
+r1_top2_vs_r2_top2                    0.9984080          36,316          17,537      1.75370%
+
+Decision gate (HEURISTIC; not proof): if topology variation is tiny and quality stable, NO-GO for schedule-stability project. If material, first identify random-seed/algorithm/graph-write confounds before any algorithm proposal.
+ParlayANN determinism is strong prior art. H27-R0 is a diagnostic only.
+H27R0_DONE=/home/tai/ann-task-a/experiments/H27/H27_R0_topology_20261027_232105

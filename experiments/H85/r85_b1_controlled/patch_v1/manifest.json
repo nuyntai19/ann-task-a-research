@@ -1,0 +1,10 @@
+{
+  "source": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/pipnn.h",
+  "source_sha256": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+  "instrumented_header_sha256": "27cc00e808b5fae9326f1cb89be34e538364910187161cb3cc1e4437f6e877a0",
+  "patch_sha256": "cb5c73d5c991bb1f960279704949be0a7db0593f3e6ce6a5a0d9c3bf27c78052",
+  "mode": "PATCH_GENERATION_ONLY_NO_COMPILE_NO_BUILD",
+  "snapshot_mode": "enable only with R85_B1_SNAPSHOT_DIR existing directory",
+  "snapshot_format": "row_id TAB degree TAB sentinel_worst_index TAB sentinel_worst_norm_float32_bits TAB ordered candidate(pid,hash,norm_float32_bits); original candidate sequence preserved",
+  "notes": "Separate N1/N2 runs may vary due to SketchHash construction; compare same-process N2 pass1/pass2 first. Instrumentation affects wall-time."
+}

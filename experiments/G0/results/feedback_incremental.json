@@ -1,0 +1,20 @@
+{
+  "experiment": "G0.2B incremental prediction",
+  "n_dev": 600,
+  "n_validation": 600,
+  "validation_failures": 101,
+  "validation_auc": {
+    "distance_only": 0.7772376436040398,
+    "frontier_only": 0.6878311077600746,
+    "distance_plus_frontier": 0.7783090934343937,
+    "distance_plus_frontier_stall": 0.7798765848528739,
+    "all_five": 0.7858886089009701
+  },
+  "delta_auc_frontier_over_distance": 0.0010714498303538988,
+  "delta_auc_bootstrap_95pct_ci": [
+    -0.0020339517779222687,
+    0.004193963414729803
+  ],
+  "bootstrap_samples": 2000,
+  "note": "Surrogate query-level analysis, not block-level refinement evidence"
+}

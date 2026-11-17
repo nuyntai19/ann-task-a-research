@@ -1,0 +1,52 @@
+{
+  "status": "H23_R1_OFFLINE_EXACT_KEY_ELISION_ORACLE_COMPLETED",
+  "verdict": "NO_GO_EXACT_KEY_WHOLE_LEAF_ELISION_UPPER_BOUND_LT_10_PERCENT",
+  "disclaimer": "Offline post-hoc oracle, not a pre-GEMM predictor or construction speedup; does not preserve event multiplicity or merger order.",
+  "n_points": 1000000,
+  "n_leaves": 85529,
+  "directed_proposal_events": 59990170,
+  "distinct_directed_keys": 24186173,
+  "duplicate_event_fraction": 0.5968310641560108,
+  "observed_nonempty_leaves": 85529,
+  "zero_event_leaves": 0,
+  "observed_memberships": 29995085,
+  "pair_events_from_same_capture_leaf_sizes": 7289822248,
+  "unique_only_keys_per_leaf_percentiles_p0_p25_p50_p75_p90_p99_p100": [
+    8.0,
+    106.0,
+    145.0,
+    200.0,
+    271.0,
+    427.0,
+    730.0
+  ],
+  "leafs_with_at_least_one_global_singleton_key": 85529,
+  "individually_elidable_leaf_count": 0,
+  "individually_elidable_fraction": 0.0,
+  "individually_elidable_pairwork_sum_not_simultaneous": 0,
+  "individually_elidable_pairwork_fraction_upper_bound": 0.0,
+  "greedy_descending": {
+    "ordering": "descending_pairwork",
+    "removed_leaf_count": 0,
+    "saved_pair_events": 0,
+    "saved_pair_fraction": 0.0,
+    "removed_proposal_events": 0,
+    "all_distinct_directed_keys_preserved": true,
+    "optimality_claimed": false
+  },
+  "greedy_ascending": {
+    "ordering": "ascending_pairwork",
+    "removed_leaf_count": 0,
+    "saved_pair_events": 0,
+    "saved_pair_fraction": 0.0,
+    "removed_proposal_events": 0,
+    "all_distinct_directed_keys_preserved": true,
+    "optimality_claimed": false
+  },
+  "same_build_provenance": "per-leaf offset table from the exact H18-R1 proposal capture",
+  "entire_candidate_union_preserved_by_greedy": true,
+  "no_graph_build_performed": true,
+  "no_novelty_claimed": true,
+  "proposal_sha256": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95",
+  "input_path": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin"
+}

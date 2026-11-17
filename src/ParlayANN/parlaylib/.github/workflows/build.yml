@@ -1,0 +1,677 @@
+name: Build
+on: [push, pull_request]
+env:
+  PARLAY_NUM_THREADS: 16
+  OMP_NUM_THREADS: 16
+  CILK_NWORKERS: 16
+
+jobs:
+  build:
+    name: ${{ matrix.config.os }} ${{ matrix.config.cxx }} (C++17) ${{ matrix.config.note }} (${{ matrix.build_type }})
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ${{ matrix.config.os }}
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      matrix:
+        build_type: ["Debug", "RelWithDebInfo", "Release"]
+        config:
+          - {
+            os: ubuntu-20.04,  # Note: GCC-7 is gone in Ubuntu-22
+            cc: "gcc-7", cxx: "g++-7"
+          }
+          - {
+            os: ubuntu-22.04,
+            cc: "gcc-12", cxx: "g++-12"
+          }
+          - {
+            os: ubuntu-20.04,
+            cc: "clang-6.0", cxx: "clang++-6.0"
+          }
+          - {
+            os: ubuntu-22.04,
+            cc: "clang-15", cxx: "clang++-15"
+          }
+          - {
+            os: ubuntu-22.04,
+            cc: "clang-15", cxx: "clang++-15",
+            libcxx: true,
+            libcxx_version: 15,
+            note: " with libc++"
+          }
+          - {
+            os: macos-latest,
+            cc: "gcc-12", cxx: "g++-12"
+          }
+          - {
+            os: macos-latest,
+            cc: "clang", cxx: "clang++"
+          }
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up toolchain repositories
+        run: |
+          if [[ "${{ matrix.config.os }}" == "ubuntu-18.04" ]]; then
+            sudo apt-get update
+            sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+            wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+            sudo apt-add-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-6.0 main"
+          elif [[ "${{ matrix.config.os }}" == "ubuntu-20.04" ]]; then
+            sudo apt-get update
+            sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+            wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+            sudo apt-add-repository "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-15 main"
+          elif [[ "${{ matrix.config.os }}" == "ubuntu-22.04" ]]; then
+            sudo apt-get update
+            sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+            wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+            sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          fi
+
+      - name: Install Compiler
+        if: startsWith(matrix.config.os, 'ubuntu')
+        run: |
+          sudo apt-get update
+          sudo apt-get -qq install ${{matrix.config.cc}} ${{matrix.config.cxx}}
+
+      - name: Install libc++
+        if: matrix.config.libcxx
+        run: sudo apt-get -qq install libc++1-${{matrix.config.libcxx_version}} libc++abi1-${{matrix.config.libcxx_version}} libc++-${{matrix.config.libcxx_version}}-dev libc++abi-${{matrix.config.libcxx_version}}-dev
+
+      - name: Configure
+        run: |
+          mkdir build && cd build
+          CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} cmake -DCMAKE_BUILD_TYPE=${{matrix.build_type}} -DPARLAY_TEST=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On -DUSE_LIBCXX=${{matrix.config.libcxx}} ..
+
+      - name: Build
+        run: |
+          cd build
+          cmake --build . --config ${{ matrix.build_type }}
+
+      - name: Test
+        run: |
+          cd build
+          ctest -C ${{ matrix.build_type }} --no-tests=error --output-on-failure
+
+  msvc:
+    name: windows-latest MSVC 19 (C++17) (${{matrix.build_type}})
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        build_type: ["Debug", "RelWithDebInfo", "Release"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ilammy/msvc-dev-cmd@v1
+      - name: Configure
+        run: |
+          md build
+          cd build
+          cmake -A x64 -DCMAKE_BUILD_TYPE=${{matrix.build_type}} -DCMAKE_CXX_FLAGS=" /bigobj " -DPARLAY_TEST=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+
+      - name: Build
+        run: |
+          cd build
+          cmake --build . --config ${{ matrix.build_type }}
+
+      - name: Test
+        run: |
+          cd build
+          ctest -C ${{ matrix.build_type }} --no-tests=error --output-on-failure
+
+  wsl:
+    strategy:
+      matrix:
+        config:
+          - { cc: "gcc-12", cxx: "g++-12" }
+          - { cc: "clang-15", cxx: "clang++-15" }
+
+    name: windows-2019 WSL Ubuntu 22.04 ${{ matrix.config.cxx }} (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: windows-2019
+    defaults:
+      run:
+        shell: wsl-bash {0}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: Vampire/setup-wsl@v1
+        with:
+          distribution: Ubuntu-22.04
+
+      - name: Install
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get -qq update
+          sudo apt-get -y install make ${{matrix.config.cc}} ${{matrix.config.cxx}}
+          wget --quiet https://github.com/Kitware/CMake/releases/download/v3.18.2/cmake-3.18.2-Linux-x86_64.tar.gz
+          tar -xf cmake-3.18.2-Linux-x86_64.tar.gz
+
+      - name: Configure
+        run: |
+          mkdir build
+          cd build
+          CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} ../cmake-3.18.2-Linux-x86_64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On -DWSL=True ..
+
+      - name: Build
+        run: |
+          cd build
+          ../cmake-3.18.2-Linux-x86_64/bin/cmake --build . --config Debug
+
+      - name: Test
+        run: |
+          cd build
+          ../cmake-3.18.2-Linux-x86_64/bin/ctest -C Debug --no-tests=error --output-on-failure
+
+#  msys:
+#    strategy:
+#      matrix:
+#        include:
+#          - { sys: mingw64 }
+#          - { sys: ucrt64 }
+#          - { sys: clang64 }
+#
+#    name: windows-latest MSYS2 ${{ matrix.sys }} (Debug)
+#    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+#    runs-on: windows-latest
+#    defaults:
+#      run:
+#        shell: msys2 {0}
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: '${{ matrix.icon }} Setup MSYS2'
+#        uses: msys2/setup-msys2@v2
+#        with:
+#          msystem: ${{matrix.sys}}
+#          update: true
+#          install: >-
+#            git
+#            make
+#          pacboy: >-
+#            toolchain:p
+#            cmake:p
+#            ninja:p
+#
+#      - name: Configure
+#        run: |
+#          mkdir build
+#          cd build
+#          cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=" -m64 -Wa,-mbig-obj " -DPARLAY_TEST=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+#
+#      - name: Build
+#        run: |
+#          cd build
+#          cmake --build . --config Debug
+#
+#      - name: Test
+#        run: |
+#          cd build
+#          ctest -C Debug --no-tests=error --output-on-failure
+
+#  cygwin:
+#    strategy:
+#      matrix:
+#        config:
+#          - { cc: "gcc", cxx: "g++" }
+#          - { cc: "clang", cxx: "clang++" }
+#
+#    name: windows-latest Cygwin ${{ matrix.config.cxx }} (Release)
+#    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+#    runs-on: windows-latest
+#    defaults:
+#      run:
+#        shell: C:\tools\cygwin\bin\bash.exe -eo pipefail -o igncr '{0}'
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: egor-tensin/setup-cygwin@v3
+#        with:
+#          packages: git,make,gcc-core,gcc-g++,cmake,clang,libiconv-devel,cygwin32-libiconv-1.14-2
+#
+#      # Note: The benchmarks are currently not compiled on Cygwin because Google Benchmark's CMake configuration fails for some reason...
+#      - name: Configure
+#        run: |
+#          mkdir build
+#          cd build
+#          CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS=" -m64 -Wa,-mbig-obj " -DPARLAY_TEST=On -DPARLAY_EXAMPLES=On ..
+#
+#      - name: Build
+#        run: |
+#          cd build
+#          cmake --build . --config Debug
+#
+#      - name: Test
+#        run: |
+#          cd build
+#          ctest -C Debug --no-tests=error --output-on-failure
+
+  cpp20:
+    name: Ubuntu-22.04 ${{ matrix.config.cxx }} (C++20) (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      matrix:
+        config:
+          - { cc: "gcc-12", cxx: "g++-12" }
+          - { cc: "clang-15", cxx: "clang++-15" }
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up toolchain repositories
+        run: |
+          sudo apt-get update
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+
+      - name: Install compiler
+        run: |
+          sudo apt-get -qq install cmake make ${{matrix.config.cc}} ${{matrix.config.cxx}}
+
+      - name: Configure
+        run: |
+          mkdir build && cd build
+          CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On -DPARLAY_USE_CXX_20=On  ..
+
+      - name: Build
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure
+
+#  cilk-plus:
+#    name: windows-2019 WSL Ubuntu-18.04 Cilk Plus GCC-7 (Debug)
+#    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+#
+#    # Note: GCC-7 on Ubuntu 20 removed Cilk Plus, so we have to go back in time to
+#    # Ubuntu 18 which GitHub stopped supporting, so we go through WSL instead.
+#    runs-on: windows-2019
+#    defaults:
+#      run:
+#        shell: wsl-bash {0}
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: Vampire/setup-wsl@v1
+#        with:
+#          distribution: Ubuntu-18.04
+#
+#      - name: Install GCC-7
+#        run: |
+#          sudo apt-get update
+#          sudo apt-get -qq install gcc-7 g++-7 cmake make
+#
+#      - name: Install CMake
+#        run: |
+#          wget --quiet https://github.com/Kitware/CMake/releases/download/v3.18.2/cmake-3.18.2-Linux-x86_64.tar.gz
+#          tar -xf cmake-3.18.2-Linux-x86_64.tar.gz
+#
+#      - name: Configure
+#        run: |
+#          mkdir build && cd build
+#          CC=gcc-7 CXX=g++-7 ../cmake-3.18.2-Linux-x86_64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_CILKPLUS=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+#
+#      - name: Build
+#        run: |
+#          cd build
+#          ../cmake-3.18.2-Linux-x86_64/bin/cmake --build . --config Debug
+#
+#      - name: Test
+#        run: |
+#          cd build
+#          ../cmake-3.18.2-Linux-x86_64/bin/ctest -C Debug --no-tests=error --output-on-failure
+
+  opencilk:
+    name: ubuntu-22.04 OpenCilk 2.0.0 (Clang 15) (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install OpenCilk
+        shell: bash
+        run: |
+          wget --quiet https://github.com/OpenCilk/opencilk-project/releases/download/opencilk%2Fv2.0/OpenCilk-2.0.0-x86_64-Linux-Ubuntu-22.04.tar.gz
+          tar -xf OpenCilk-2.0.0-x86_64-Linux-Ubuntu-22.04.tar.gz
+          git clone https://github.com/OpenCilk/cilkrts.git
+          mkdir cilkrts/build && pushd cilkrts/build
+          cmake -DCMAKE_C_COMPILER=$PWD/../../OpenCilk-2.0.0-x86_64-Linux-Ubuntu-22.04/bin/clang -DCMAKE_CXX_COMPILER=$PWD/../../OpenCilk-2.0.0-x86_64-Linux-Ubuntu-22.04/bin/clang++ -DCMAKE_INSTALL_PREFIX=/usr/local/ ..
+          make && sudo make install
+          popd
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          cmake -DCMAKE_C_COMPILER=$PWD/../OpenCilk-2.0.0-x86_64-Linux-Ubuntu-22.04/bin/clang -DCMAKE_CXX_COMPILER=$PWD/../OpenCilk-2.0.0-x86_64-Linux-Ubuntu-22.04/bin/clang++ -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_OPENCILK=On -DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure
+
+  omp:
+    name: ubuntu-22.04 OpenMP Clang 15 (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install OpenMP
+        shell: bash
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get update
+          sudo apt-get -qq install clang-15 libomp-15-dev
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=clang-15 CXX=clang++-15 cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_OPENMP=On DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure
+
+  tbb:
+    name: ubuntu-22.04 TBB Clang 15 (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install TBB
+        shell: bash
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get update
+          sudo apt-get -qq install clang-15 libtbb-dev
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=clang-15 CXX=clang++-15 cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_TBB=On DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure
+
+  sequential:
+    name: ubuntu-22.04 Sequential GCC 12 (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Compiler
+        shell: bash
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt-get update
+          sudo apt-get -qq install gcc-12 g++-12
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=gcc-12 CXX=g++-12 cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DPARLAY_SEQUENTIAL=On DPARLAY_BENCHMARK=On -DPARLAY_EXAMPLES=On ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure
+
+  noexcept:
+    name: ubuntu-22.04 GCC 12 Exceptions Disabled (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Compiler
+        shell: bash
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt-get update
+          sudo apt-get -qq install gcc-12 g++-12
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=gcc-12 CXX=g++-12 cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-fno-exceptions" -DPARLAY_TEST=On DPARLAY_BENCHMARK=On ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure
+
+  cppcheck:
+    name: Cppcheck
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Cppcheck
+        shell: bash
+        run: |
+          wget --quiet https://github.com/danmar/cppcheck/archive/2.10.tar.gz
+          tar -xf 2.10.tar.gz
+          mkdir cppcheck-2.10/build && pushd cppcheck-2.10/build
+          cmake .. -DCMAKE_BUILD_TYPE=Release
+          make && sudo make install
+          popd
+
+      - name: Run Cppcheck
+        shell: bash
+        run: |
+          mkdir build && cd build
+          cmake -DENABLE_CPPCHECK=On ..
+          make cppcheck-all
+
+  clang-tidy:
+    name: Clang Tidy
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Intall Clang Tidy
+        shell: bash
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get update
+          sudo apt-get -qq install clang-15 clang-tidy-15
+
+      - name: Run Clang Tidy
+        shell: bash
+        run: |
+          mkdir build
+          cd build
+          CC=clang-15 CXX=clang++-15 cmake -DENABLE_CLANG_TIDY=On -DCLANG_TIDY_EXE=/usr/bin/clang-tidy-15 ..
+          make clang-tidy-all
+
+  iwyu:
+    name: Include-what-you-use
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install IWYU
+        shell: bash
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get -qq install clang-15 libc++1-15 libc++-15-dev libc++abi1-15 libc++abi-15-dev llvm-15-dev libclang-15-dev
+          git clone https://github.com/include-what-you-use/include-what-you-use.git
+          mkdir include-what-you-use/build && pushd include-what-you-use/build
+          git checkout clang_15
+          cmake -DCMAKE_PREFIX_PATH=/usr/lib/llvm-15 ..
+          make && sudo make install
+          popd
+
+      - name: Run IWYU
+        shell: bash
+        run: |
+          mkdir build
+          cd build
+          CC=clang-15 CXX=clang++-15 cmake -DENABLE_IWYU=On ..
+          make iwyu-all
+
+  asan:
+    name: ubuntu-22.04 ASAN Clang 15 (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install
+        shell: bash
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get update
+          sudo apt-get -qq install clang-15 libc++1-15 libc++abi1-15 libc++-15-dev libc++abi-15-dev
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=clang-15 CXX=clang++-15 cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DBUILD_ASAN_TESTS=On -DBUILD_ONLY_SANITIZED=True ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: ASAN
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure -R asan
+
+  ubsan:
+    name: ubuntu-22.04 UBSAN Clang 15 (Debug)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install
+        shell: bash
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          sudo apt-add-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-15 main"
+          sudo apt-get -qq install clang-15 libc++1-15 libc++abi1-15 libc++-15-dev libc++abi-15-dev
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=clang-15 CXX=clang++-15 cmake -DCMAKE_BUILD_TYPE=Debug -DPARLAY_TEST=On -DBUILD_UBSAN_TESTS=On -DBUILD_ONLY_SANITIZED=True ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: UBSAN
+        shell: bash
+        run: |
+          cd build
+          ctest -C Debug --no-tests=error --output-on-failure -R ubsan
+
+  coverage:
+    name: Test Coverage
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install LCov
+        shell: bash
+        run: |
+          sudo apt-get -qq install gcc g++ lcov
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build && cd build
+          CC=gcc CXX=g++ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS_DEBUG=" --coverage " -DPARLAY_TEST=On ..
+
+      - name: Build
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --config Debug
+
+      - name: Test
+        shell: bash
+        run: |
+          cd build
+          cmake --build . --target check --config Debug
+
+      - name: Report coverage
+        shell: bash
+        run: |
+          lcov --directory . --capture --output-file coverage.info
+          lcov --remove coverage.info '/usr/*' '*/googletest/*' '*/test/*' --output-file coverage.info
+          lcov --list coverage.info
+          bash <(curl -s https://codecov.io/bash) -f coverage.info

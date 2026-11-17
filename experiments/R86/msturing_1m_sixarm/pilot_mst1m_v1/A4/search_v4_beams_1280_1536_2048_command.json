@@ -1,0 +1,27 @@
+{
+  "arm": "A4",
+  "beams": [
+    1280,
+    1536,
+    2048
+  ],
+  "command": [
+    "taskset",
+    "-c",
+    "0",
+    "/usr/bin/time",
+    "-f",
+    "R86_MST1M_HIGHBEAM_V4_SEARCH_TIME wall_s=%e peak_rss_kib=%M",
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_sixarm/pilot_mst1m_v1/A4/index.graph",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+    "1280,1536,2048"
+  ],
+  "dataset": "MS-Turing-1M",
+  "evaluator_v4_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": "07484d6442c8dc2a2fd3b98fed29ae9918007e216fab79c210bf4e0ea09db516",
+  "queries": 100000,
+  "status": "SEARCH_START_PILOT_ONLY"
+}

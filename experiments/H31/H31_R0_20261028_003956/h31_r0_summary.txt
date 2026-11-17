@@ -1,0 +1,17 @@
+H31-R0 EXISTING GRAPH & EVIDENCE PROVENANCE AUDIT (read-only; no new BUILD/SEARCH)
+GRAPH_SELECTION_BASIS=USER_ASSIGNED_LABELS_NOT_VERIFIED_BUILD_PROVENANCE
+DATASET_STATUS=INPUT_DATA_PARTIAL_OR_FAIL
+ROLE             N    EDGES(dir)      AVG-D     ZERO-IN   BYTES(graph-only)
+VAMANA    1,000,000    27,643,346  27.6433        205   114,573,392
+STOCK     1,000,000    22,793,556  22.7936          1    95,174,232
+TOP2      1,000,000    22,794,064  22.7941          1    95,176,264
+
+TOP2/VAMANA graph-only bytes ratio = 0.83070 (DESCRIPTIVE, NOT EQUAL BUDGET)
+GRAPH_FILE_SCHEMA_AND_SHA_PASS; SCORE GATES BELOW ARE NOT PASSED:
+  BUILD seed/source/flags lineage: UNVERIFIED
+  Same native searcher 10k query per selected graph: UNVERIFIED
+  Degree/index bytes matched: UNVERIFIED
+  Matched Recall-QPS and intra-query scalability: NOT TESTED
+  Original Vamana 4t 208.10s (one run), Stock 50.58s (three median), H17 Top2 44.95s (three median), H26 P0 Top2 42.035s (two median) are HISTORICAL reported results, NOT NEW/MATCHED timings.
+NEXT DECISION: inventory file validates graph format/structure only. Cross-method Pareto comparison requires controlled search and bytes/degree budgets.
+H31R0_DONE=/home/tai/ann-task-a/experiments/H31/H31_R0_20261028_003956

@@ -1,0 +1,271 @@
+{
+  "audit": "R47_R7_Q160_RESIDUAL_NATIVE_TRACE_OFFLINE_PASS",
+  "source_parity": "R47_R6_V2_INDEPENDENT_NATIVE_TOP10_PARITY_PASS",
+  "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+  "Q160_initial_20_strict_missing_targets_rescued": 15,
+  "Q160_residual_count": 5,
+  "targets": [
+    {
+      "query_id": 1715,
+      "GT_id": 420244,
+      "GT_rank_1based": 9,
+      "Q160_distance_squared_exact": 77529,
+      "Q160_native_rank10_id": 934074,
+      "Q160_native_rank10_distance_squared_exact": 78791,
+      "positive_margin_if_GT_strictly_closer_than_rank10": 1262,
+      "distance_relation": "GT_STRICTLY_CLOSER",
+      "Q160_visited": 187,
+      "Q160_comparisons": 4100,
+      "Q100_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "Q160_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "native_ID_absence_Q80_Q120_Q160": [
+        80,
+        120,
+        160
+      ]
+    },
+    {
+      "query_id": 2711,
+      "GT_id": 886706,
+      "GT_rank_1based": 8,
+      "Q160_distance_squared_exact": 68187,
+      "Q160_native_rank10_id": 99249,
+      "Q160_native_rank10_distance_squared_exact": 70725,
+      "positive_margin_if_GT_strictly_closer_than_rank10": 2538,
+      "distance_relation": "GT_STRICTLY_CLOSER",
+      "Q160_visited": 196,
+      "Q160_comparisons": 4440,
+      "Q100_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "Q160_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "native_ID_absence_Q80_Q120_Q160": [
+        80,
+        120,
+        160
+      ]
+    },
+    {
+      "query_id": 7167,
+      "GT_id": 925061,
+      "GT_rank_1based": 10,
+      "Q160_distance_squared_exact": 70169,
+      "Q160_native_rank10_id": 471985,
+      "Q160_native_rank10_distance_squared_exact": 70400,
+      "positive_margin_if_GT_strictly_closer_than_rank10": 231,
+      "distance_relation": "GT_STRICTLY_CLOSER",
+      "Q160_visited": 183,
+      "Q160_comparisons": 3861,
+      "Q100_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "Q160_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "native_ID_absence_Q80_Q120_Q160": [
+        80,
+        120,
+        160
+      ]
+    },
+    {
+      "query_id": 7935,
+      "GT_id": 978211,
+      "GT_rank_1based": 6,
+      "Q160_distance_squared_exact": 58903,
+      "Q160_native_rank10_id": 236020,
+      "Q160_native_rank10_distance_squared_exact": 60622,
+      "positive_margin_if_GT_strictly_closer_than_rank10": 1719,
+      "distance_relation": "GT_STRICTLY_CLOSER",
+      "Q160_visited": 178,
+      "Q160_comparisons": 3865,
+      "Q100_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "Q160_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "native_ID_absence_Q80_Q120_Q160": [
+        80,
+        120,
+        160
+      ]
+    },
+    {
+      "query_id": 8083,
+      "GT_id": 823939,
+      "GT_rank_1based": 8,
+      "Q160_distance_squared_exact": 59596,
+      "Q160_native_rank10_id": 580430,
+      "Q160_native_rank10_distance_squared_exact": 60109,
+      "positive_margin_if_GT_strictly_closer_than_rank10": 513,
+      "distance_relation": "GT_STRICTLY_CLOSER",
+      "Q160_visited": 178,
+      "Q160_comparisons": 3155,
+      "Q100_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "Q160_direct_target_events": {
+        "label": "NO_DIRECT_TARGET_NODE_EVENT",
+        "event_counts": {
+          "EXPAND": 0,
+          "DISCOVER": 0,
+          "SEEN_SKIP": 0,
+          "SCORE": 0,
+          "CUTOFF_REJECT": 0,
+          "STAGE": 0,
+          "MERGE_KEEP": 0,
+          "MERGE_DROP": 0,
+          "BEAM_EVICT": 0,
+          "BATCH_WAIT": 0
+        },
+        "direct_event_sequence": [],
+        "direct_event_total": 0
+      },
+      "native_ID_absence_Q80_Q120_Q160": [
+        80,
+        120,
+        160
+      ]
+    }
+  ],
+  "scope": "Observational GT-to-kth squared-L2 margins and direct node event audit; no graph hop/reachability check.",
+  "limitations": [
+    "Event labels are observational and not unique causal attributions.",
+    "No direct target event is not proof of global disconnection or of absence of a directed graph path.",
+    "17 query IDs were preselected for native Q100 failures; do not extrapolate to all queries.",
+    "No source/graph/build edits and no new search performed."
+  ]
+}

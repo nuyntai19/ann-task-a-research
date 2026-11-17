@@ -1,0 +1,40 @@
+{
+  "base_block": 65536,
+  "base_prefix": "first n rows of verified BIGANN first10M",
+  "created_utc": "2026-11-11T18:40:28.556515+00:00",
+  "d": 128,
+  "format": "uint32 q,k; uint32 ids[q,k]; float32 distances[q,k]",
+  "full_prefix_parity_checked": true,
+  "gt_bytes": 8000008,
+  "gt_sha256": "f8287eaedb4fb7d77ddbcddcc144ebb284d2a241bf71c1b9a3fdf1238d44b7ac",
+  "independent_scipy_full_base_queries": [
+    0,
+    9999
+  ],
+  "k": 100,
+  "metric": "exact squared_L2 (128D uint8 integer coordinates, float32 GEMM exact integral)",
+  "n": 1000000,
+  "official_gt10m_sha256": "80a4e35d5dc918e00e55f81e133e333e3b65f4de1426728c8a3ca93ac5ce74df",
+  "protocol": "R85_SCALE1_2_BIGANN_EXACT_GT_V1",
+  "q": 10000,
+  "qbatch": 32,
+  "query_f32_sha256": "a2cb2d182b19db70240ebd4bce3b75b8994ea9927a112d4bf0e955815bdac548",
+  "query_scope": "official BIGANN public10k, not SIFT1M queries",
+  "query_u8_sha256": "eca755831fc9a8004e14886df48b81109a8ed3bfc6b632509c93c0460a30d552",
+  "source": {
+    "f32": "/home/tai/ann-task-a/data/sift10m.fbin",
+    "public_query_f32": "/home/tai/ann-task-a/experiments/H85/r85_scale0_public_eval/query.public.10K.fbin",
+    "u8": "/home/tai/ann-task-a/data/bigann10m_u8.u8bin"
+  },
+  "source_stat": {
+    "/home/tai/ann-task-a/data/bigann10m_u8.u8bin": {
+      "mtime_ns": 1792768939309043219,
+      "size": 1280000008
+    },
+    "/home/tai/ann-task-a/data/sift10m.fbin": {
+      "mtime_ns": 1792766444229979312,
+      "size": 5120000008
+    }
+  },
+  "ties": "sort by (distance, neighbor ID) ascending"
+}

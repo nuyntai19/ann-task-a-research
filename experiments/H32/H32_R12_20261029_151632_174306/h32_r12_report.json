@@ -1,0 +1,68 @@
+{
+  "status": "PASS_SOURCE_AND_TIE_PROXY_AUDIT_NATIVE_EQUIVALENCE_UNVERIFIED",
+  "R10": "/home/tai/ann-task-a/experiments/H32/H32_R10_20261029_145742_261037",
+  "R11": "/home/tai/ann-task-a/experiments/H32/H32_R11_20261029_150655_461903",
+  "source_audit": {
+    "repository": "/home/tai/ann-task-a/src/ParlayANN",
+    "files": {
+      "algorithms/vamana/neighbors.h": "KEY_SOURCE_PATTERNS_PRESENT",
+      "algorithms/utils/check_nn_recall.h": "KEY_SOURCE_PATTERNS_PRESENT",
+      "algorithms/utils/beamSearch.h": "KEY_SOURCE_PATTERNS_PRESENT",
+      "algorithms/utils/euclidian_point.h": "KEY_SOURCE_PATTERNS_PRESENT"
+    },
+    "vamana_search_entry_from_source": "ZERO_NONRANDOM",
+    "native_recall_source": "TOP_K_PLUS_EXACT_DISTANCE_TIES_IN_GT_100",
+    "native_binary_parity": "NOT_REVERIFIED_BY_THIS_SOURCE_AUDIT",
+    "git_head": "a48c6a34e5f959190992aa531cc18454cfcc3dd3",
+    "modified_relevant_files": "NONE"
+  },
+  "graphs": {
+    "VAMANA": {
+      "strict_gt10_unreachable_M": 12,
+      "stored_gt_tie_proxy_miss_floor": 10,
+      "float32_sequential_proxy_miss_floor": 10,
+      "affected_queries": 12,
+      "stored_tie_replacements": 2,
+      "float32_tie_replacements": 2,
+      "queries_where_tie_sets_disagree": 0,
+      "strict_ceiling": 0.99988,
+      "stored_gt_tie_proxy_ceiling": 0.9999,
+      "float32_sequential_proxy_ceiling": 0.9999,
+      "native_exact_ceiling_not_certified": true
+    },
+    "STOCK": {
+      "strict_gt10_unreachable_M": 0,
+      "stored_gt_tie_proxy_miss_floor": 0,
+      "float32_sequential_proxy_miss_floor": 0,
+      "affected_queries": 0,
+      "stored_tie_replacements": 0,
+      "float32_tie_replacements": 0,
+      "queries_where_tie_sets_disagree": 0,
+      "strict_ceiling": 1.0,
+      "stored_gt_tie_proxy_ceiling": 1.0,
+      "float32_sequential_proxy_ceiling": 1.0,
+      "native_exact_ceiling_not_certified": true
+    },
+    "TOP2": {
+      "strict_gt10_unreachable_M": 0,
+      "stored_gt_tie_proxy_miss_floor": 0,
+      "float32_sequential_proxy_miss_floor": 0,
+      "affected_queries": 0,
+      "stored_tie_replacements": 0,
+      "float32_tie_replacements": 0,
+      "queries_where_tie_sets_disagree": 0,
+      "strict_ceiling": 1.0,
+      "stored_gt_tie_proxy_ceiling": 1.0,
+      "float32_sequential_proxy_ceiling": 1.0,
+      "native_exact_ceiling_not_certified": true
+    }
+  },
+  "limits": [
+    "No ANN build/search, no mutation.",
+    "Stored GT distance equality may differ from native query-to-base float32 equality.",
+    "Sequential float32 recomputation may differ from compiler SIMD/fast-math numeric evaluation.",
+    "Native binary was not recompiled or verified by this audit.",
+    "Upper bounds apply to entry0 graph traversal; no equal-degree/index-byte matching.",
+    "GT exactness was not independently recomputed."
+  ]
+}

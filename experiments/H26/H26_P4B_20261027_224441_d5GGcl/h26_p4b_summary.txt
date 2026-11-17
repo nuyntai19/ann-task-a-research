@@ -1,0 +1,20 @@
+H26-P4b LOCK WAIT/HOLD + PROCESS CPU TRIAGE — DIAGNOSTIC ONLY
+4-thread SIFT1M, Top2, ABBA-like balanced arms, sampled lock pre/post; no graph output.
+PROCESS CPU ratio=(GNU user+system)/GNU elapsed; includes all BUILD phases.
+ARM          process-wall(s) leaf-wall(s) process-CPU(x) merge-worker(s) context-switches(v/i)
+r1_p0            39.620       27.226          3.95          13.407  7096 / 526
+r1_off           41.030       28.206          3.95          14.243  7710 / 612
+r1_on            41.030       28.081          3.95          14.564  6915 / 638
+r1_1t_on        131.510       91.229          1.00          12.699  1 / 1293
+r2_on            41.180       28.227          3.95          14.593  9928 / 602
+r2_off           43.140       29.999          3.96          14.783  4405 / 644
+r2_p0            41.420       28.652          3.94          13.823  15631 / 656
+--- On/off and original-P0 controls (two independent pairs only) ---
+round 1: off vs P0 process-wall +3.56%, on vs off leaf-wall -0.44%, on vs off process-wall(+CSV) +0.00%
+round 2: off vs P0 process-wall +4.15%, on vs off leaf-wall -5.91%, on vs off process-wall(+CSV) -4.54%
+--- Sampled LSHGraph::merge_neighbors mutex waits vs hold intervals ---
+r1_4t_on: samples=117,026 wait p50/p90/p99=0.030/0.121/0.361 us; hold p50/p90/p99=0.100/0.230/0.501 us; wait>10us=0.0103%, sample-wait-share=30.95%
+r1_1t_on: samples=117,735 wait p50/p90/p99=0.030/0.120/0.220 us; hold p50/p90/p99=0.090/0.211/0.391 us; wait>10us=0.0000%, sample-wait-share=29.92%
+r2_4t_on: samples=117,150 wait p50/p90/p99=0.030/0.130/0.371 us; hold p50/p90/p99=0.100/0.230/0.501 us; wait>10us=0.0068%, sample-wait-share=31.14%
+WARNING: sample-wait-share is NOT percentage of BUILD wall time lost to mutex contention.
+Decision gate: look for robust 4t vs 1t lock-wait tail plus low process CPU / significant merge-worker pressure before considering lock-aware algorithm; inspect probe overhead.

@@ -1,0 +1,1539 @@
+{
+  "audit": "R47_R5_FIXED_GRAPH_Q_SENSITIVITY_PASS",
+  "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+  "query_selection": "17 Q100-native failing queries from R46; selection-conditioned",
+  "q_values": [
+    80,
+    100,
+    120,
+    160
+  ],
+  "queries": 17,
+  "old_missing_gt_targets": [
+    {
+      "query_id": 4757,
+      "gt_id": 453367,
+      "gt_rank": 6,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 4757,
+      "gt_id": 453375,
+      "gt_rank": 7,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 7935,
+      "gt_id": 66125,
+      "gt_rank": 5,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 7935,
+      "gt_id": 978211,
+      "gt_rank": 6,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 84,
+      "gt_id": 469776,
+      "gt_rank": 7,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 1533,
+      "gt_id": 439780,
+      "gt_rank": 2,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 1715,
+      "gt_id": 420244,
+      "gt_rank": 9,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 1822,
+      "gt_id": 968826,
+      "gt_rank": 7,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 2711,
+      "gt_id": 886706,
+      "gt_rank": 8,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 2819,
+      "gt_id": 938020,
+      "gt_rank": 5,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 5272,
+      "gt_id": 77611,
+      "gt_rank": 3,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 5622,
+      "gt_id": 62618,
+      "gt_rank": 9,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 7167,
+      "gt_id": 925061,
+      "gt_rank": 10,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 7196,
+      "gt_id": 438859,
+      "gt_rank": 8,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 8083,
+      "gt_id": 823939,
+      "gt_rank": 8,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 8254,
+      "gt_id": 438741,
+      "gt_rank": 10,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 8748,
+      "gt_id": 593477,
+      "gt_rank": 4,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 8966,
+      "gt_id": 520590,
+      "gt_rank": 4,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": true
+    },
+    {
+      "query_id": 3410,
+      "gt_id": 201879,
+      "gt_rank": 9,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": false
+    },
+    {
+      "query_id": 3410,
+      "gt_id": 266157,
+      "gt_rank": 10,
+      "category": "not_adjacent_to_expanded",
+      "graph_twohop": false
+    }
+  ],
+  "per_query": [
+    {
+      "query_id": 84,
+      "by_q": {
+        "80": {
+          "top10": [
+            8894,
+            227733,
+            32475,
+            216176,
+            280838,
+            711937,
+            299339,
+            351328,
+            215822,
+            280264
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 95,
+          "comparisons": 2106
+        },
+        "100": {
+          "top10": [
+            8894,
+            227733,
+            32475,
+            216176,
+            280838,
+            711937,
+            299339,
+            351328,
+            215822,
+            280264
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 112,
+          "comparisons": 2417
+        },
+        "120": {
+          "top10": [
+            8894,
+            227733,
+            32475,
+            216176,
+            280838,
+            711937,
+            469776,
+            299339,
+            351328,
+            215822
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 134,
+          "comparisons": 2848
+        },
+        "160": {
+          "top10": [
+            8894,
+            227733,
+            32475,
+            216176,
+            280838,
+            711937,
+            469776,
+            299339,
+            351328,
+            215822
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 177,
+          "comparisons": 3584
+        }
+      }
+    },
+    {
+      "query_id": 1533,
+      "by_q": {
+        "80": {
+          "top10": [
+            43311,
+            251375,
+            928831,
+            156396,
+            387392,
+            660730,
+            472197,
+            399588,
+            956166,
+            887955
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 97,
+          "comparisons": 1903
+        },
+        "100": {
+          "top10": [
+            43311,
+            251375,
+            928831,
+            156396,
+            387392,
+            660730,
+            472197,
+            399588,
+            956166,
+            887955
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 110,
+          "comparisons": 2097
+        },
+        "120": {
+          "top10": [
+            43311,
+            439780,
+            251375,
+            928831,
+            156396,
+            387392,
+            660730,
+            472197,
+            399588,
+            956166
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 131,
+          "comparisons": 2428
+        },
+        "160": {
+          "top10": [
+            43311,
+            439780,
+            251375,
+            928831,
+            156396,
+            387392,
+            660730,
+            472197,
+            399588,
+            956166
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 178,
+          "comparisons": 3214
+        }
+      }
+    },
+    {
+      "query_id": 1715,
+      "by_q": {
+        "80": {
+          "top10": [
+            175432,
+            347921,
+            944570,
+            179836,
+            511569,
+            614435,
+            389631,
+            934074,
+            882271,
+            630618
+          ],
+          "strict_hits": 7,
+          "native_tie_hits": 7,
+          "native_deficit": 3,
+          "visited_count": 95,
+          "comparisons": 2210
+        },
+        "100": {
+          "top10": [
+            770838,
+            175432,
+            347921,
+            944570,
+            179836,
+            771091,
+            511569,
+            614435,
+            389631,
+            934074
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 116,
+          "comparisons": 2650
+        },
+        "120": {
+          "top10": [
+            770838,
+            175432,
+            347921,
+            944570,
+            179836,
+            771091,
+            511569,
+            614435,
+            389631,
+            934074
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 147,
+          "comparisons": 3267
+        },
+        "160": {
+          "top10": [
+            770838,
+            175432,
+            347921,
+            944570,
+            179836,
+            771091,
+            511569,
+            614435,
+            389631,
+            934074
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 187,
+          "comparisons": 4100
+        }
+      }
+    },
+    {
+      "query_id": 1822,
+      "by_q": {
+        "80": {
+          "top10": [
+            978291,
+            690270,
+            181194,
+            66030,
+            681619,
+            964284,
+            822909,
+            907443,
+            330248,
+            414270
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 101,
+          "comparisons": 2190
+        },
+        "100": {
+          "top10": [
+            978291,
+            690270,
+            181194,
+            66030,
+            681619,
+            964284,
+            822909,
+            907443,
+            330248,
+            414270
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 128,
+          "comparisons": 2752
+        },
+        "120": {
+          "top10": [
+            978291,
+            690270,
+            181194,
+            66030,
+            681619,
+            964284,
+            822909,
+            907443,
+            330248,
+            414270
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 143,
+          "comparisons": 3012
+        },
+        "160": {
+          "top10": [
+            978291,
+            690270,
+            181194,
+            66030,
+            681619,
+            964284,
+            968826,
+            822909,
+            907443,
+            330248
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 194,
+          "comparisons": 3929
+        }
+      }
+    },
+    {
+      "query_id": 2711,
+      "by_q": {
+        "80": {
+          "top10": [
+            7437,
+            807034,
+            935787,
+            8569,
+            229821,
+            113229,
+            354589,
+            543701,
+            633958,
+            99249
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 105,
+          "comparisons": 2633
+        },
+        "100": {
+          "top10": [
+            7437,
+            807034,
+            935787,
+            8569,
+            229821,
+            113229,
+            354589,
+            543701,
+            633958,
+            99249
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 128,
+          "comparisons": 3156
+        },
+        "120": {
+          "top10": [
+            7437,
+            807034,
+            935787,
+            8569,
+            229821,
+            113229,
+            354589,
+            543701,
+            633958,
+            99249
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 153,
+          "comparisons": 3644
+        },
+        "160": {
+          "top10": [
+            7437,
+            807034,
+            935787,
+            8569,
+            229821,
+            113229,
+            354589,
+            543701,
+            633958,
+            99249
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 196,
+          "comparisons": 4440
+        }
+      }
+    },
+    {
+      "query_id": 2819,
+      "by_q": {
+        "80": {
+          "top10": [
+            322175,
+            107218,
+            509987,
+            140779,
+            982408,
+            124639,
+            14552,
+            887295,
+            9733,
+            880479
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 104,
+          "comparisons": 2232
+        },
+        "100": {
+          "top10": [
+            322175,
+            107218,
+            509987,
+            140779,
+            982408,
+            124639,
+            14552,
+            887295,
+            9733,
+            880479
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 138,
+          "comparisons": 2876
+        },
+        "120": {
+          "top10": [
+            322175,
+            107218,
+            509987,
+            140779,
+            938020,
+            982408,
+            124639,
+            14552,
+            887295,
+            9733
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 155,
+          "comparisons": 3204
+        },
+        "160": {
+          "top10": [
+            322175,
+            107218,
+            509987,
+            140779,
+            938020,
+            982408,
+            124639,
+            14552,
+            887295,
+            9733
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 198,
+          "comparisons": 3929
+        }
+      }
+    },
+    {
+      "query_id": 3410,
+      "by_q": {
+        "80": {
+          "top10": [
+            372082,
+            712653,
+            482633,
+            165207,
+            194546,
+            273362,
+            531021,
+            531344,
+            256504,
+            519512
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 99,
+          "comparisons": 2334
+        },
+        "100": {
+          "top10": [
+            372082,
+            712653,
+            482633,
+            165207,
+            194546,
+            273362,
+            531021,
+            531344,
+            256504,
+            519512
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 117,
+          "comparisons": 2758
+        },
+        "120": {
+          "top10": [
+            372082,
+            712653,
+            482633,
+            165207,
+            194546,
+            273362,
+            531021,
+            531344,
+            201879,
+            266157
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 149,
+          "comparisons": 3359
+        },
+        "160": {
+          "top10": [
+            372082,
+            712653,
+            482633,
+            165207,
+            194546,
+            273362,
+            531021,
+            531344,
+            201879,
+            266157
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 183,
+          "comparisons": 4024
+        }
+      }
+    },
+    {
+      "query_id": 4757,
+      "by_q": {
+        "80": {
+          "top10": [
+            283791,
+            866194,
+            376275,
+            494491,
+            96874,
+            499111,
+            460621,
+            634729,
+            474880,
+            198904
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 87,
+          "comparisons": 1814
+        },
+        "100": {
+          "top10": [
+            283791,
+            866194,
+            376275,
+            494491,
+            96874,
+            499111,
+            460621,
+            634729,
+            474880,
+            198904
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 105,
+          "comparisons": 2138
+        },
+        "120": {
+          "top10": [
+            283791,
+            866194,
+            376275,
+            494491,
+            96874,
+            499111,
+            460621,
+            634729,
+            474880,
+            198904
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 132,
+          "comparisons": 2612
+        },
+        "160": {
+          "top10": [
+            283791,
+            866194,
+            376275,
+            494491,
+            96874,
+            453367,
+            453375,
+            499111,
+            460621,
+            634729
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 190,
+          "comparisons": 3528
+        }
+      }
+    },
+    {
+      "query_id": 5272,
+      "by_q": {
+        "80": {
+          "top10": [
+            833208,
+            223485,
+            90970,
+            980960,
+            223579,
+            198967,
+            277783,
+            594403,
+            980166,
+            562664
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 95,
+          "comparisons": 2193
+        },
+        "100": {
+          "top10": [
+            833208,
+            223485,
+            90970,
+            980960,
+            223579,
+            198967,
+            277783,
+            594403,
+            980166,
+            562664
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 113,
+          "comparisons": 2540
+        },
+        "120": {
+          "top10": [
+            833208,
+            223485,
+            77611,
+            90970,
+            980960,
+            223579,
+            198967,
+            277783,
+            594403,
+            980166
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 137,
+          "comparisons": 2956
+        },
+        "160": {
+          "top10": [
+            833208,
+            223485,
+            77611,
+            90970,
+            980960,
+            223579,
+            198967,
+            277783,
+            594403,
+            980166
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 179,
+          "comparisons": 3684
+        }
+      }
+    },
+    {
+      "query_id": 5622,
+      "by_q": {
+        "80": {
+          "top10": [
+            199806,
+            264084,
+            885914,
+            226203,
+            887467,
+            104573,
+            386013,
+            961981,
+            951781,
+            199089
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 102,
+          "comparisons": 2317
+        },
+        "100": {
+          "top10": [
+            199806,
+            264084,
+            885914,
+            226203,
+            887467,
+            104573,
+            386013,
+            961981,
+            951781,
+            199089
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 113,
+          "comparisons": 2563
+        },
+        "120": {
+          "top10": [
+            199806,
+            264084,
+            885914,
+            226203,
+            887467,
+            104573,
+            386013,
+            961981,
+            951781,
+            199089
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 144,
+          "comparisons": 3220
+        },
+        "160": {
+          "top10": [
+            199806,
+            264084,
+            885914,
+            226203,
+            887467,
+            104573,
+            386013,
+            961981,
+            62618,
+            951781
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 188,
+          "comparisons": 4162
+        }
+      }
+    },
+    {
+      "query_id": 7167,
+      "by_q": {
+        "80": {
+          "top10": [
+            373637,
+            586301,
+            490989,
+            842874,
+            734269,
+            679409,
+            932653,
+            130229,
+            391654,
+            471985
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 99,
+          "comparisons": 2288
+        },
+        "100": {
+          "top10": [
+            373637,
+            586301,
+            490989,
+            842874,
+            734269,
+            679409,
+            932653,
+            130229,
+            391654,
+            471985
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 120,
+          "comparisons": 2634
+        },
+        "120": {
+          "top10": [
+            373637,
+            586301,
+            490989,
+            842874,
+            734269,
+            679409,
+            932653,
+            130229,
+            391654,
+            471985
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 141,
+          "comparisons": 3010
+        },
+        "160": {
+          "top10": [
+            373637,
+            586301,
+            490989,
+            842874,
+            734269,
+            679409,
+            932653,
+            130229,
+            391654,
+            471985
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 183,
+          "comparisons": 3861
+        }
+      }
+    },
+    {
+      "query_id": 7196,
+      "by_q": {
+        "80": {
+          "top10": [
+            925536,
+            137697,
+            725792,
+            289797,
+            614366,
+            232137,
+            924727,
+            426650,
+            924359,
+            798770
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 97,
+          "comparisons": 1787
+        },
+        "100": {
+          "top10": [
+            925536,
+            137697,
+            725792,
+            289797,
+            614366,
+            232137,
+            924727,
+            426650,
+            924359,
+            798770
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 118,
+          "comparisons": 2127
+        },
+        "120": {
+          "top10": [
+            925536,
+            137697,
+            725792,
+            289797,
+            614366,
+            232137,
+            924727,
+            438859,
+            426650,
+            924359
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 138,
+          "comparisons": 2413
+        },
+        "160": {
+          "top10": [
+            925536,
+            137697,
+            725792,
+            289797,
+            614366,
+            232137,
+            924727,
+            438859,
+            426650,
+            924359
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 187,
+          "comparisons": 3146
+        }
+      }
+    },
+    {
+      "query_id": 7935,
+      "by_q": {
+        "80": {
+          "top10": [
+            297974,
+            788111,
+            943515,
+            235765,
+            62749,
+            15562,
+            521695,
+            495232,
+            236020,
+            806879
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 97,
+          "comparisons": 2273
+        },
+        "100": {
+          "top10": [
+            297974,
+            788111,
+            943515,
+            235765,
+            62749,
+            15562,
+            521695,
+            495232,
+            236020,
+            806879
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 123,
+          "comparisons": 2809
+        },
+        "120": {
+          "top10": [
+            297974,
+            788111,
+            943515,
+            235765,
+            62749,
+            15562,
+            521695,
+            495232,
+            236020,
+            806879
+          ],
+          "strict_hits": 8,
+          "native_tie_hits": 8,
+          "native_deficit": 2,
+          "visited_count": 140,
+          "comparisons": 3157
+        },
+        "160": {
+          "top10": [
+            297974,
+            788111,
+            943515,
+            235765,
+            66125,
+            62749,
+            15562,
+            521695,
+            495232,
+            236020
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 178,
+          "comparisons": 3865
+        }
+      }
+    },
+    {
+      "query_id": 8083,
+      "by_q": {
+        "80": {
+          "top10": [
+            704367,
+            618455,
+            484513,
+            258860,
+            787584,
+            565797,
+            618110,
+            703423,
+            993498,
+            580430
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 97,
+          "comparisons": 1965
+        },
+        "100": {
+          "top10": [
+            704367,
+            618455,
+            484513,
+            258860,
+            787584,
+            565797,
+            618110,
+            703423,
+            993498,
+            580430
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 121,
+          "comparisons": 2405
+        },
+        "120": {
+          "top10": [
+            704367,
+            618455,
+            484513,
+            258860,
+            787584,
+            565797,
+            618110,
+            703423,
+            993498,
+            580430
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 145,
+          "comparisons": 2796
+        },
+        "160": {
+          "top10": [
+            704367,
+            618455,
+            484513,
+            258860,
+            787584,
+            565797,
+            618110,
+            703423,
+            993498,
+            580430
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 178,
+          "comparisons": 3155
+        }
+      }
+    },
+    {
+      "query_id": 8254,
+      "by_q": {
+        "80": {
+          "top10": [
+            954577,
+            702938,
+            548995,
+            550066,
+            107243,
+            232025,
+            171238,
+            527424,
+            703098,
+            181028
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 88,
+          "comparisons": 2059
+        },
+        "100": {
+          "top10": [
+            954577,
+            702938,
+            548995,
+            550066,
+            107243,
+            232025,
+            171238,
+            527424,
+            703098,
+            181028
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 114,
+          "comparisons": 2557
+        },
+        "120": {
+          "top10": [
+            954577,
+            702938,
+            548995,
+            550066,
+            107243,
+            232025,
+            171238,
+            527424,
+            703098,
+            181028
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 133,
+          "comparisons": 2971
+        },
+        "160": {
+          "top10": [
+            954577,
+            702938,
+            548995,
+            550066,
+            107243,
+            232025,
+            171238,
+            527424,
+            703098,
+            438741
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 180,
+          "comparisons": 3838
+        }
+      }
+    },
+    {
+      "query_id": 8748,
+      "by_q": {
+        "80": {
+          "top10": [
+            766510,
+            33353,
+            403873,
+            680749,
+            185972,
+            111742,
+            179823,
+            721151,
+            498907,
+            808571
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 92,
+          "comparisons": 1853
+        },
+        "100": {
+          "top10": [
+            766510,
+            33353,
+            403873,
+            680749,
+            185972,
+            111742,
+            179823,
+            721151,
+            498907,
+            808571
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 121,
+          "comparisons": 2411
+        },
+        "120": {
+          "top10": [
+            766510,
+            33353,
+            403873,
+            593477,
+            680749,
+            185972,
+            111742,
+            179823,
+            721151,
+            498907
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 137,
+          "comparisons": 2688
+        },
+        "160": {
+          "top10": [
+            766510,
+            33353,
+            403873,
+            593477,
+            680749,
+            185972,
+            111742,
+            179823,
+            721151,
+            498907
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 179,
+          "comparisons": 3331
+        }
+      }
+    },
+    {
+      "query_id": 8966,
+      "by_q": {
+        "80": {
+          "top10": [
+            436370,
+            40207,
+            488557,
+            471431,
+            62819,
+            175272,
+            463353,
+            250297,
+            729278,
+            803078
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 94,
+          "comparisons": 1958
+        },
+        "100": {
+          "top10": [
+            436370,
+            40207,
+            488557,
+            471431,
+            62819,
+            175272,
+            463353,
+            250297,
+            729278,
+            803078
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 120,
+          "comparisons": 2408
+        },
+        "120": {
+          "top10": [
+            436370,
+            40207,
+            488557,
+            471431,
+            62819,
+            175272,
+            463353,
+            250297,
+            729278,
+            803078
+          ],
+          "strict_hits": 9,
+          "native_tie_hits": 9,
+          "native_deficit": 1,
+          "visited_count": 142,
+          "comparisons": 2771
+        },
+        "160": {
+          "top10": [
+            436370,
+            40207,
+            488557,
+            520590,
+            471431,
+            62819,
+            175272,
+            463353,
+            250297,
+            729278
+          ],
+          "strict_hits": 10,
+          "native_tie_hits": 10,
+          "native_deficit": 0,
+          "visited_count": 192,
+          "comparisons": 3626
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Q80/120/160 Top10 recovered from trace; no independent per-query native ID parity at those Q",
+    "Baseline vs trace aggregate metric parity at each Q only",
+    "Increasing Q on same graph is search control, not evidence for a new graph builder",
+    "Tie handling uses exact integer-coordinate SIFT L2 under 2^24"
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "experiment": "R84.8",
+  "status": "R84_8_TECHNICAL_RECALL_SCREEN_PASS_NOT_STATISTICAL_PROOF",
+  "source_report": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r84_7_summary.json",
+  "source_report_sha256": "9aa8ec5fac411aec4f208f7b7b4501228fd8054c19c878366b7ef6bcb5413c85",
+  "evaluator_sha256": "f3999051c6cc96434ea26d2faedd3ac632ed8d20be342e15c92fd4b905a33fe9",
+  "query_sha256": "9e9328e3f0488840d3f12efcc3b0f6af940dd398fb7b6d178d72bd1e1c0f9d74",
+  "gt_sha256": "e038aff5970977d0ee925b4357295bd81817b99b35e11bbab783fd64e0715e7f",
+  "affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "search_host": {
+    "node": "tai-linux",
+    "kernel": "7.0.0-42-generic"
+  },
+  "created_at_utc": "2026-11-09T09:14:34.107890+00:00",
+  "rows": {
+    "r1_D0": {
+      "arm": "D0",
+      "rep": 1,
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.82300001,
+          "qps": 78947.3671875,
+          "avg_cmps": 424.0,
+          "avg_visited": 17.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.93566668,
+          "qps": 66195.9375,
+          "avg_cmps": 627.0,
+          "avg_visited": 27.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.98466665,
+          "qps": 52714.81640625,
+          "avg_cmps": 1013.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99733335,
+          "qps": 31820.109375,
+          "avg_cmps": 1672.0,
+          "avg_visited": 85.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 1.0,
+          "qps": 21939.44726562,
+          "avg_cmps": 2513.0,
+          "avg_visited": 149.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/quality_r84_8/r1_D0.recall.log"
+    },
+    "r1_W": {
+      "arm": "W",
+      "rep": 1,
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.82366669,
+          "qps": 87310.828125,
+          "avg_cmps": 424.0,
+          "avg_visited": 17.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.93633336,
+          "qps": 53456.87890625,
+          "avg_cmps": 627.0,
+          "avg_visited": 27.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.98466665,
+          "qps": 55762.08203125,
+          "avg_cmps": 1013.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99733335,
+          "qps": 36412.18359375,
+          "avg_cmps": 1671.0,
+          "avg_visited": 85.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 1.0,
+          "qps": 20651.20117188,
+          "avg_cmps": 2513.0,
+          "avg_visited": 149.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/quality_r84_8/r1_W.recall.log"
+    },
+    "r2_W": {
+      "arm": "W",
+      "rep": 2,
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.82300001,
+          "qps": 71856.2890625,
+          "avg_cmps": 424.0,
+          "avg_visited": 17.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.93566668,
+          "qps": 65430.75,
+          "avg_cmps": 627.0,
+          "avg_visited": 27.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.98466665,
+          "qps": 55720.65234375,
+          "avg_cmps": 1013.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99733335,
+          "qps": 30021.015625,
+          "avg_cmps": 1672.0,
+          "avg_visited": 85.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 1.0,
+          "qps": 21808.6640625,
+          "avg_cmps": 2513.0,
+          "avg_visited": 149.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/quality_r84_8/r2_W.recall.log"
+    },
+    "r2_D0": {
+      "arm": "D0",
+      "rep": 2,
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.82300001,
+          "qps": 94488.1875,
+          "avg_cmps": 424.0,
+          "avg_visited": 17.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.93566668,
+          "qps": 69621.71875,
+          "avg_cmps": 627.0,
+          "avg_visited": 27.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.98466665,
+          "qps": 52938.0625,
+          "avg_cmps": 1014.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99733335,
+          "qps": 32534.43359375,
+          "avg_cmps": 1671.0,
+          "avg_visited": 85.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 1.0,
+          "qps": 21279.61523438,
+          "avg_cmps": 2513.0,
+          "avg_visited": 149.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/quality_r84_8/r2_D0.recall.log"
+    },
+    "r3_D0": {
+      "arm": "D0",
+      "rep": 3,
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.82366669,
+          "qps": 86330.9375,
+          "avg_cmps": 424.0,
+          "avg_visited": 17.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.93633336,
+          "qps": 67735.3828125,
+          "avg_cmps": 627.0,
+          "avg_visited": 27.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.98466665,
+          "qps": 55938.83984375,
+          "avg_cmps": 1013.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99733335,
+          "qps": 34079.29296875,
+          "avg_cmps": 1671.0,
+          "avg_visited": 85.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 1.0,
+          "qps": 20986.359375,
+          "avg_cmps": 2513.0,
+          "avg_visited": 149.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/quality_r84_8/r3_D0.recall.log"
+    },
+    "r3_W": {
+      "arm": "W",
+      "rep": 3,
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.82300001,
+          "qps": 77901.84375,
+          "avg_cmps": 424.0,
+          "avg_visited": 17.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.93566668,
+          "qps": 57460.2578125,
+          "avg_cmps": 627.0,
+          "avg_visited": 27.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.98466665,
+          "qps": 54259.359375,
+          "avg_cmps": 1013.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99733335,
+          "qps": 34289.6328125,
+          "avg_cmps": 1672.0,
+          "avg_visited": 85.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 1.0,
+          "qps": 21294.71875,
+          "avg_cmps": 2512.0,
+          "avg_visited": 149.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/quality_r84_8/r3_W.recall.log"
+    }
+  },
+  "assessment": {
+    "beams": [
+      {
+        "beam": 10,
+        "median_recall_D0": 0.82300001,
+        "median_recall_W": 0.82300001,
+        "median_recall_W_minus_D0": 0.0,
+        "paired_recall_deltas_W_minus_D0": [
+          0.0006666800000000306,
+          0.0,
+          -0.0006666800000000306
+        ],
+        "median_qps_D0": 86330.9375,
+        "median_qps_W": 77901.84375,
+        "median_qps_W_over_D0": 0.9023629999384636,
+        "raw": {
+          "D0": {
+            "recall": [
+              0.82300001,
+              0.82300001,
+              0.82366669
+            ],
+            "qps": [
+              78947.3671875,
+              94488.1875,
+              86330.9375
+            ]
+          },
+          "W": {
+            "recall": [
+              0.82366669,
+              0.82300001,
+              0.82300001
+            ],
+            "qps": [
+              87310.828125,
+              71856.2890625,
+              77901.84375
+            ]
+          }
+        }
+      },
+      {
+        "beam": 20,
+        "median_recall_D0": 0.93566668,
+        "median_recall_W": 0.93566668,
+        "median_recall_W_minus_D0": 0.0,
+        "paired_recall_deltas_W_minus_D0": [
+          0.0006666800000000306,
+          0.0,
+          -0.0006666800000000306
+        ],
+        "median_qps_D0": 67735.3828125,
+        "median_qps_W": 57460.2578125,
+        "median_qps_W_over_D0": 0.8483049098808103,
+        "raw": {
+          "D0": {
+            "recall": [
+              0.93566668,
+              0.93566668,
+              0.93633336
+            ],
+            "qps": [
+              66195.9375,
+              69621.71875,
+              67735.3828125
+            ]
+          },
+          "W": {
+            "recall": [
+              0.93633336,
+              0.93566668,
+              0.93566668
+            ],
+            "qps": [
+              53456.87890625,
+              65430.75,
+              57460.2578125
+            ]
+          }
+        }
+      },
+      {
+        "beam": 40,
+        "median_recall_D0": 0.98466665,
+        "median_recall_W": 0.98466665,
+        "median_recall_W_minus_D0": 0.0,
+        "paired_recall_deltas_W_minus_D0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "median_qps_D0": 52938.0625,
+        "median_qps_W": 55720.65234375,
+        "median_qps_W_over_D0": 1.0525631221155856,
+        "raw": {
+          "D0": {
+            "recall": [
+              0.98466665,
+              0.98466665,
+              0.98466665
+            ],
+            "qps": [
+              52714.81640625,
+              52938.0625,
+              55938.83984375
+            ]
+          },
+          "W": {
+            "recall": [
+              0.98466665,
+              0.98466665,
+              0.98466665
+            ],
+            "qps": [
+              55762.08203125,
+              55720.65234375,
+              54259.359375
+            ]
+          }
+        }
+      },
+      {
+        "beam": 80,
+        "median_recall_D0": 0.99733335,
+        "median_recall_W": 0.99733335,
+        "median_recall_W_minus_D0": 0.0,
+        "paired_recall_deltas_W_minus_D0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "median_qps_D0": 32534.43359375,
+        "median_qps_W": 34289.6328125,
+        "median_qps_W_over_D0": 1.053948971132148,
+        "raw": {
+          "D0": {
+            "recall": [
+              0.99733335,
+              0.99733335,
+              0.99733335
+            ],
+            "qps": [
+              31820.109375,
+              32534.43359375,
+              34079.29296875
+            ]
+          },
+          "W": {
+            "recall": [
+              0.99733335,
+              0.99733335,
+              0.99733335
+            ],
+            "qps": [
+              36412.18359375,
+              30021.015625,
+              34289.6328125
+            ]
+          }
+        }
+      },
+      {
+        "beam": 160,
+        "median_recall_D0": 1.0,
+        "median_recall_W": 1.0,
+        "median_recall_W_minus_D0": 0.0,
+        "paired_recall_deltas_W_minus_D0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "median_qps_D0": 21279.61523438,
+        "median_qps_W": 21294.71875,
+        "median_qps_W_over_D0": 1.000709764507189,
+        "raw": {
+          "D0": {
+            "recall": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "qps": [
+              21939.44726562,
+              21279.61523438,
+              20986.359375
+            ]
+          },
+          "W": {
+            "recall": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "qps": [
+              20651.20117188,
+              21808.6640625,
+              21294.71875
+            ]
+          }
+        }
+      }
+    ],
+    "verdict": "R84_8_TECHNICAL_RECALL_SCREEN_PASS_NOT_STATISTICAL_PROOF",
+    "recall_median_drop_review_threshold": -0.005,
+    "qps_median_ratio_review_threshold": 0.9,
+    "qps_bad_beams_to_trigger_review": 2,
+    "notes": [
+      "Same pinned R70 evaluator on the six pre-existing R84.7 4t graphs",
+      "Beam sequence 10,20,40,80,160, 300 heldout SIFT100K queries, k=10",
+      "Three graphs per arm; exploratory thresholds are not statistical noninferiority tests",
+      "QPS may vary with CPU frequency, cache, host load and evaluation order",
+      "R84.7 wall speedup 0.74% is below the predeclared 3% screen regardless of quality verdict"
+    ]
+  },
+  "research_decision": "R84.7 HOLD on the predeclared two-metric BUILD screen (wall gain ~0.74% < 3%), independent of Recall result. W remains a memory-focused candidate. No SIFT1M and no Git push."
+}

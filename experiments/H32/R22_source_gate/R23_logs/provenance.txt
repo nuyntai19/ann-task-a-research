@@ -1,0 +1,18 @@
+443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+ efd405f00dcae1f8b60e72d2d0927dbb0af8682f external/hnswlib (heads/master)
+-5a6161db9a4cdd4af2c57d03f3f2c8f2031a97d7 external/mirage
+ 7cdb4cae8f020525f5eb4ad82e2565d1e38cfbc3 parlaylib (7cdb4ca)
+ CMakeLists.txt                 |  9 ++++--
+ algorithms/CMakeLists.txt      |  2 +-
+ algorithms/PipNN/pipnn.h       | 51 +++++++++++++++++++++++++++++++-
+ algorithms/PipNN/pipnn_utils.h |  5 ++++
+ algorithms/utils/NSGDist.h     |  2 ++
+ algorithms/utils/graph.h       | 66 ++++++++++++++++++++++++++++++++++++++++++
+ algorithms/utils/hash.h        | 18 ++++++++++++
+ algorithms/utils/point_range.h |  1 +
+ algorithms/utils/simhash.h     |  2 ++
+ algorithms/vamana/neighbors.h  | 11 +++++--
+ 10 files changed, 160 insertions(+), 7 deletions(-)
+5c744a2d58a5725eb961a5de37434edbee0dafd77ba3421ce0144d021c67d744  /home/tai/ann-task-a/experiments/H32/R22_source_gate/experiments/patches/pipnn-443a328-graft.patch
+cmake version 3.28.3
+c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0

@@ -1,0 +1,52 @@
+{
+  "graph": "P1",
+  "graph_sha256": "4174ae82ce34e94453fcdba0eeeefcc8a755f17ae26d08e532611af7665a926d",
+  "evaluator_sha256": "3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a",
+  "base_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "query_sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+  "gt_sha256": "70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28",
+  "beams": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "rows": [
+    {
+      "beam": 10,
+      "recall": 0.76969999,
+      "qps": 66561.5,
+      "avg_cmps": 337.0,
+      "avg_visited": 19.0
+    },
+    {
+      "beam": 20,
+      "recall": 0.89890999,
+      "qps": 44054.8046875,
+      "avg_cmps": 486.0,
+      "avg_visited": 29.0
+    },
+    {
+      "beam": 40,
+      "recall": 0.96977001,
+      "qps": 27678.82617188,
+      "avg_cmps": 770.0,
+      "avg_visited": 49.0
+    },
+    {
+      "beam": 80,
+      "recall": 0.99391001,
+      "qps": 16019.22363281,
+      "avg_cmps": 1259.0,
+      "avg_visited": 88.0
+    },
+    {
+      "beam": 160,
+      "recall": 0.99927998,
+      "qps": 8901.29492188,
+      "avg_cmps": 1957.0,
+      "avg_visited": 155.0
+    }
+  ]
+}

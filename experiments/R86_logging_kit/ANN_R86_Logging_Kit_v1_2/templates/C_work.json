@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.2",
+  "run_id": "TEMPLATE_NOT_MEASURED",
+  "graph_id": "TEMPLATE_GRAPH_NOT_MEASURED",
+  "arm_id": "A3",
+  "status": "NOT_MEASURED",
+  "n": 100000,
+  "instrumented": false,
+  "counter_definitions": {
+    "W_P": {
+      "unit": "logical_point_leader_pairs",
+      "meaning": "Partition: sum |ids| * num_leaders"
+    },
+    "W_A": {
+      "unit": "memberships",
+      "meaning": "Partition: sum |ids| * fanout"
+    },
+    "W_L": {
+      "unit": "matrix_entries",
+      "meaning": "Leaf: sum leaf_size**2"
+    },
+    "W_pairs": {
+      "unit": "unordered_pairs",
+      "meaning": "Leaf: sum leaf_size*(leaf_size-1)//2"
+    },
+    "leaf_count": {
+      "unit": "leaves",
+      "meaning": "Number of executed leaf buckets"
+    },
+    "leaf_size_sum": {
+      "unit": "point_occurrences",
+      "meaning": "Sum of leaf sizes (with overlap)"
+    },
+    "max_depth": {
+      "unit": "levels",
+      "meaning": "Highest observed partition recursion depth"
+    },
+    "proposals": {
+      "unit": "directed_proposals",
+      "meaning": "Directed edges proposed by Pick"
+    },
+    "merge_attempts": {
+      "unit": "events",
+      "meaning": "Forward and reverse candidate merge attempts"
+    },
+    "collision_same_id": {
+      "unit": "events",
+      "meaning": "Hash collision and same current candidate ID"
+    },
+    "collision_diff_id": {
+      "unit": "events",
+      "meaning": "Hash collision but different ID"
+    },
+    "hash_accept": {
+      "unit": "events",
+      "meaning": "Accepted hash candidate updates"
+    },
+    "hash_reject": {
+      "unit": "events",
+      "meaning": "Rejected hash candidate updates"
+    },
+    "hash_replace": {
+      "unit": "events",
+      "meaning": "Replaced candidate slots"
+    },
+    "hash_early_break": {
+      "unit": "events",
+      "meaning": "Candidate ended before hash matching"
+    },
+    "hash_full": {
+      "unit": "events",
+      "meaning": "Full-capacity handling events"
+    },
+    "prune_distance_calls": {
+      "unit": "distance_evaluations",
+      "meaning": "Final RobustPrune distance calls"
+    },
+    "top2_comparisons": {
+      "unit": "comparisons",
+      "meaning": "Top-2 microbenchmark only"
+    },
+    "top2_assignments": {
+      "unit": "assignments",
+      "meaning": "Top-2 microbenchmark only; conventional swap=3"
+    },
+    "top2_moves": {
+      "unit": "element_moves",
+      "meaning": "Top-2 microbenchmark only"
+    }
+  },
+  "counters": [],
+  "leaf_histogram": null,
+  "leaf_size_records": null,
+  "counter_imports": [],
+  "notes": "Counters remain empty until the ON executable exports events."
+}

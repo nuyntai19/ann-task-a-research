@@ -1,0 +1,99 @@
+{
+  "arms": {
+    "A0": {
+      "C": 160,
+      "K": 1024,
+      "N": 2,
+      "kind": "stock_on"
+    },
+    "A1": {
+      "C": 160,
+      "K": 1024,
+      "N": 2,
+      "kind": "h17_on"
+    },
+    "A2": {
+      "C": 64,
+      "K": 1024,
+      "N": 2,
+      "kind": "h17_on"
+    },
+    "A4": {
+      "C": 64,
+      "K": 512,
+      "N": 1,
+      "kind": "h17_on"
+    }
+  },
+  "base_source_sha": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "binary_paths": {
+    "h17_on": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_h17_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "stock_on": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_stock_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+  },
+  "binary_sha256": {
+    "h17_on": "ef707479be221cb7a3c6257298d22f614678878f0a7bfc724dc8b28fabdd21c4",
+    "stock_on": "396ef852992428cd3f935bcb33eeeeacc1bae565fbc4a441c1fa9d19720122ff"
+  },
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "flag_spec": [
+    [
+      "-top_level_leaders",
+      "100"
+    ],
+    [
+      "-fanout_scheme",
+      "10,3,1"
+    ],
+    [
+      "-mst_deg",
+      "2"
+    ],
+    [
+      "-prune",
+      "1"
+    ],
+    [
+      "-prune_all",
+      "1"
+    ],
+    [
+      "-prune_degree",
+      "64"
+    ],
+    [
+      "-hash_bits",
+      "12"
+    ],
+    [
+      "-alpha",
+      "1.1"
+    ],
+    [
+      "-k",
+      "0"
+    ]
+  ],
+  "gate_note": "Empirical counter diagnostic. OFF 18 graph median build/QPS independent; no D0 ON; no exact matched Recall.",
+  "input_sha256": {
+    "100000": "405ec32c7c0e540f4ca78fb52354fc7619a842bafd5d196475c95ec2d71ce8e7",
+    "1000000": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042"
+  },
+  "inputs": {
+    "100000": "/home/tai/ann-task-a/00_PROJECT_HOME/05_RESULTS_AND_COUNTERS/R86_MSTURING1M_A0_A1_A2_A4_ON_v1_0/datasets/MSTuring_100K_prefix.fbin",
+    "1000000": "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin"
+  },
+  "on_source_header": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/algorithms/PipNN/r86_counters.hpp",
+  "purpose": "ON logical work counters, distinct from OFF formal timing and Search",
+  "script_version": "R86_MSTURING1M_A0_A1_A2_A4_ON_v1_0",
+  "sizes": [
+    100000,
+    1000000
+  ],
+  "source_note": "MS-Turing1M 100D; full pinned source; same C/K/N/CLI as OFF arms; counter-ON verified release binaries.",
+  "threads": 4
+}

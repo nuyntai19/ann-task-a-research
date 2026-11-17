@@ -1,0 +1,129 @@
+{
+  "status": "BUILD_COLLECTION_DONE_GRAPH_SHA_VARIANCE_HOLD",
+  "metrics": {
+    "A0": {
+      "C": 160,
+      "K": 1024,
+      "N": 2,
+      "off_builds": 3,
+      "on_builds": 1,
+      "graph_SHA_equivalent_all_four": false,
+      "graph_shas": [
+        "02c1ff2104309a59e7bb51016966a2e847aa1913e39c99f8010b8acca787d909",
+        "57252481ace67e1fb9e6c55c223e3e01b707cb5898744519c4b136cd4e5d7877",
+        "6827eeb7d87416d1a817ed73d31c6e268eee5ea2ad64318cab11c45fc7fb1ed7",
+        "f1727131d7427c4132ed48468c026f97f09e0b5fe7d94a56d26f4a46c0885978"
+      ],
+      "OFF_wall_s": [
+        3.25,
+        3.26,
+        3.28
+      ],
+      "OFF_peakRSS_KiB": [
+        415664,
+        414756,
+        415888
+      ]
+    },
+    "A1": {
+      "C": 160,
+      "K": 1024,
+      "N": 2,
+      "off_builds": 3,
+      "on_builds": 1,
+      "graph_SHA_equivalent_all_four": false,
+      "graph_shas": [
+        "18809c747d38ee1dfa26053bb6b3650dd0adf26f798ef47a0f6250e81530d841",
+        "5bae9f4eff8b05eb5f0ed521d2044ce80601cfd620741a01da13fcdfbbc67f92",
+        "a40f45b31954ac483133b807ce7e1591e5d76fd34fa6638ebc28ce29c53948f6",
+        "c68a4adb6ec1e651cb05cd0e25eb48c029d1b6cd17a88d0bb78e02a181c9e14d"
+      ],
+      "OFF_wall_s": [
+        2.68,
+        2.68,
+        2.67
+      ],
+      "OFF_peakRSS_KiB": [
+        414848,
+        414736,
+        414952
+      ]
+    },
+    "A2": {
+      "C": 64,
+      "K": 1024,
+      "N": 2,
+      "off_builds": 3,
+      "on_builds": 1,
+      "graph_SHA_equivalent_all_four": false,
+      "graph_shas": [
+        "23365f0e7eb92b45e99d342f2f40a782c1ffa93d5fa7bf7b3c419f4455099561",
+        "2606931d8c07234a157b5d151381e9b46b067c6e91ed016847869d2d2b85ce2b",
+        "3ae4f18205c2841f0045e94d006dc6dda15357554f789610bafcb8b6e58cb4d1",
+        "5f4853c48efeeacfe2dd447169975c2bef6a8b804d4bebddabc49062a7402d45"
+      ],
+      "OFF_wall_s": [
+        2.66,
+        2.66,
+        2.66
+      ],
+      "OFF_peakRSS_KiB": [
+        339596,
+        339940,
+        340312
+      ]
+    },
+    "A3": {
+      "C": 64,
+      "K": 512,
+      "N": 2,
+      "off_builds": 3,
+      "on_builds": 1,
+      "graph_SHA_equivalent_all_four": false,
+      "graph_shas": [
+        "096ad8491d70c8357d8540b76b086ae16f89c59cde7048d00b5c2f1a50678691",
+        "13c117fcecdb02b9b55f53280da3621ee68cc6f9dea5095e71e54bb247e0f731",
+        "2311777f6c807410bac87669c297a8ff247960d4f8583bb63c29eaea0458c1c4",
+        "7cc23f8c3a373af5ed1066225caa3b5bbecbda9e2110a40f9fd28b762a1d4d7b"
+      ],
+      "OFF_wall_s": [
+        2.08,
+        2.07,
+        2.08
+      ],
+      "OFF_peakRSS_KiB": [
+        341152,
+        338796,
+        341244
+      ]
+    },
+    "A4": {
+      "C": 64,
+      "K": 512,
+      "N": 1,
+      "off_builds": 3,
+      "on_builds": 1,
+      "graph_SHA_equivalent_all_four": false,
+      "graph_shas": [
+        "5872d07e3b4d737f20227cc0496ba2608ed1ca4ea35d7640184c4bab6a86b0f9",
+        "aa7234e667ddfb3f681fccaa78ec8eeb7304f76e0d25cfd45ee640c9ddbe4b5b",
+        "d4f312f54f1cb0e1a0bc28f3899b358986ee5d4053e67cc57b48486abf300202",
+        "f1f872fa731d867e1699527616c4653e11c6740108f73740f292f803ae8e72d2"
+      ],
+      "OFF_wall_s": [
+        1.1,
+        1.1,
+        1.11
+      ],
+      "OFF_peakRSS_KiB": [
+        336868,
+        337116,
+        336824
+      ]
+    }
+  },
+  "search": {
+    "status": "GT_EVALUATOR_NOT_VERIFIED"
+  },
+  "warning": "G2 graph format audit pending; do not claim matched-Recall or causal speedup from raw build wall alone."
+}

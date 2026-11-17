@@ -1,0 +1,14 @@
+--- algorithms/vamana/neighbors.h.bak-distcount	2026-09-15 08:58:31.039959984 -0700
++++ algorithms/vamana/neighbors.h	2026-09-15 08:58:31.095058438 -0700
+@@ -82,6 +82,11 @@
+   long build_num_distances = parlay::reduce(parlay::map(BuildStats.distances,
+                                                         [] (auto x) {return (long) x;}));
+ 
++  // GRAFT instrumentation: the build-side distance count is computed above but
++  // was only printed in the range-search branch; report it unconditionally so
++  // build cost can be compared in distance evaluations, not just wall-clock.
++  std::cout << "BUILD_DISTANCES " << build_num_distances << std::endl;
++
+   char* oFile = P.getOptionValue("-graph_outfile");
+   if(oFile != nullptr) {
+     std::cout << "Writing graph to " << oFile << std::endl;

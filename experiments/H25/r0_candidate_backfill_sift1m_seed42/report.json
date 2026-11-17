@@ -1,0 +1,659 @@
+{
+  "study": "H25_R0_OFFLINE_PROPOSAL_BACKFILL_DIAGNOSTIC_NOT_GRAPH_BUILDER",
+  "provenance": "H18-R1 32-byte header, uint64 leaf offsets, uint64 directed keys (u<<32)|v",
+  "input_capture": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin",
+  "n": 1000000,
+  "leaf_count": 85529,
+  "baseline_proposal_events": 59990170,
+  "baseline_unique_directed_keys": 24186173,
+  "baseline_duplicate_fraction": 0.5968310641560108,
+  "sample_design": {
+    "method": "uniform random over eligible leaves, canonical leaf-ID order",
+    "seed": 42,
+    "sampled_leaf_count": 64,
+    "eligible_leaf_count": 85529,
+    "sampled_events": 41568,
+    "rank": 4,
+    "max_leaf_size": 2048,
+    "top2_agreement": 1.0,
+    "top2_valid_rows": 20784,
+    "top2_mismatched_rows_skipped": 0
+  },
+  "duplicate_baseline_slots_in_valid_rows": 24116,
+  "proposal_event_budget_unchanged_by_construction": true,
+  "baseline_unique_directed_key_set_preserved_by_first_occurrence_rule": true,
+  "extra_leaf_GEMM_pair_evaluations_in_PROPOSED_builder": 0,
+  "extra_offline_oracle_computation_not_included_in_BUILD": true,
+  "policies": {
+    "nearest": {
+      "replacements": 15484,
+      "novel_full_union_keys": 12255,
+      "fallback_duplicates": 8632,
+      "selected_in_later_baseline": 3229
+    },
+    "random": {
+      "replacements": 15484,
+      "novel_full_union_keys": 12388,
+      "fallback_duplicates": 8632,
+      "selected_in_later_baseline": 3096
+    },
+    "hindsight": {
+      "replacements": 12794,
+      "novel_full_union_keys": 12794,
+      "fallback_duplicates": 11322,
+      "selected_in_later_baseline": 0
+    }
+  },
+  "ratios": {
+    "nearest": {
+      "replaceable_duplicate_slot_fraction": 0.6420633604246143,
+      "truly_new_key_fraction_of_duplicate_slots": 0.5081688505556478,
+      "truly_new_key_fraction_of_sample_events": 0.29481812933025403
+    },
+    "random": {
+      "replaceable_duplicate_slot_fraction": 0.6420633604246143,
+      "truly_new_key_fraction_of_duplicate_slots": 0.5136838613368718,
+      "truly_new_key_fraction_of_sample_events": 0.29801770592763666
+    },
+    "hindsight": {
+      "replaceable_duplicate_slot_fraction": 0.5305191574058716,
+      "truly_new_key_fraction_of_duplicate_slots": 0.5305191574058716,
+      "truly_new_key_fraction_of_sample_events": 0.30778483448806776
+    }
+  },
+  "per_leaf": [
+    {
+      "leaf": 3746,
+      "size": 182,
+      "valid_top2_rows": 182,
+      "duplicate_slots": 22,
+      "nearest_new_full_union": 7,
+      "random_new_full_union": 10,
+      "hindsight_new_full_union": 14
+    },
+    {
+      "leaf": 5456,
+      "size": 384,
+      "valid_top2_rows": 384,
+      "duplicate_slots": 17,
+      "nearest_new_full_union": 8,
+      "random_new_full_union": 7,
+      "hindsight_new_full_union": 10
+    },
+    {
+      "leaf": 5807,
+      "size": 677,
+      "valid_top2_rows": 677,
+      "duplicate_slots": 294,
+      "nearest_new_full_union": 172,
+      "random_new_full_union": 172,
+      "hindsight_new_full_union": 189
+    },
+    {
+      "leaf": 7345,
+      "size": 347,
+      "valid_top2_rows": 347,
+      "duplicate_slots": 591,
+      "nearest_new_full_union": 156,
+      "random_new_full_union": 153,
+      "hindsight_new_full_union": 160
+    },
+    {
+      "leaf": 7627,
+      "size": 359,
+      "valid_top2_rows": 359,
+      "duplicate_slots": 470,
+      "nearest_new_full_union": 253,
+      "random_new_full_union": 262,
+      "hindsight_new_full_union": 267
+    },
+    {
+      "leaf": 7877,
+      "size": 292,
+      "valid_top2_rows": 292,
+      "duplicate_slots": 256,
+      "nearest_new_full_union": 114,
+      "random_new_full_union": 117,
+      "hindsight_new_full_union": 130
+    },
+    {
+      "leaf": 8049,
+      "size": 594,
+      "valid_top2_rows": 594,
+      "duplicate_slots": 153,
+      "nearest_new_full_union": 50,
+      "random_new_full_union": 57,
+      "hindsight_new_full_union": 68
+    },
+    {
+      "leaf": 10951,
+      "size": 621,
+      "valid_top2_rows": 621,
+      "duplicate_slots": 501,
+      "nearest_new_full_union": 230,
+      "random_new_full_union": 250,
+      "hindsight_new_full_union": 272
+    },
+    {
+      "leaf": 13195,
+      "size": 270,
+      "valid_top2_rows": 270,
+      "duplicate_slots": 244,
+      "nearest_new_full_union": 172,
+      "random_new_full_union": 164,
+      "hindsight_new_full_union": 182
+    },
+    {
+      "leaf": 14128,
+      "size": 369,
+      "valid_top2_rows": 369,
+      "duplicate_slots": 380,
+      "nearest_new_full_union": 240,
+      "random_new_full_union": 241,
+      "hindsight_new_full_union": 259
+    },
+    {
+      "leaf": 15605,
+      "size": 110,
+      "valid_top2_rows": 110,
+      "duplicate_slots": 127,
+      "nearest_new_full_union": 74,
+      "random_new_full_union": 74,
+      "hindsight_new_full_union": 77
+    },
+    {
+      "leaf": 16644,
+      "size": 621,
+      "valid_top2_rows": 621,
+      "duplicate_slots": 708,
+      "nearest_new_full_union": 372,
+      "random_new_full_union": 374,
+      "hindsight_new_full_union": 388
+    },
+    {
+      "leaf": 17220,
+      "size": 697,
+      "valid_top2_rows": 697,
+      "duplicate_slots": 598,
+      "nearest_new_full_union": 299,
+      "random_new_full_union": 306,
+      "hindsight_new_full_union": 346
+    },
+    {
+      "leaf": 19428,
+      "size": 338,
+      "valid_top2_rows": 338,
+      "duplicate_slots": 266,
+      "nearest_new_full_union": 127,
+      "random_new_full_union": 137,
+      "hindsight_new_full_union": 150
+    },
+    {
+      "leaf": 23664,
+      "size": 221,
+      "valid_top2_rows": 221,
+      "duplicate_slots": 275,
+      "nearest_new_full_union": 167,
+      "random_new_full_union": 169,
+      "hindsight_new_full_union": 171
+    },
+    {
+      "leaf": 30315,
+      "size": 113,
+      "valid_top2_rows": 113,
+      "duplicate_slots": 67,
+      "nearest_new_full_union": 40,
+      "random_new_full_union": 39,
+      "hindsight_new_full_union": 43
+    },
+    {
+      "leaf": 31120,
+      "size": 123,
+      "valid_top2_rows": 123,
+      "duplicate_slots": 56,
+      "nearest_new_full_union": 34,
+      "random_new_full_union": 36,
+      "hindsight_new_full_union": 37
+    },
+    {
+      "leaf": 31358,
+      "size": 171,
+      "valid_top2_rows": 171,
+      "duplicate_slots": 147,
+      "nearest_new_full_union": 102,
+      "random_new_full_union": 103,
+      "hindsight_new_full_union": 104
+    },
+    {
+      "leaf": 31698,
+      "size": 207,
+      "valid_top2_rows": 207,
+      "duplicate_slots": 141,
+      "nearest_new_full_union": 79,
+      "random_new_full_union": 83,
+      "hindsight_new_full_union": 89
+    },
+    {
+      "leaf": 34403,
+      "size": 143,
+      "valid_top2_rows": 143,
+      "duplicate_slots": 159,
+      "nearest_new_full_union": 118,
+      "random_new_full_union": 118,
+      "hindsight_new_full_union": 119
+    },
+    {
+      "leaf": 37009,
+      "size": 138,
+      "valid_top2_rows": 138,
+      "duplicate_slots": 125,
+      "nearest_new_full_union": 76,
+      "random_new_full_union": 80,
+      "hindsight_new_full_union": 86
+    },
+    {
+      "leaf": 37510,
+      "size": 194,
+      "valid_top2_rows": 194,
+      "duplicate_slots": 116,
+      "nearest_new_full_union": 80,
+      "random_new_full_union": 87,
+      "hindsight_new_full_union": 92
+    },
+    {
+      "leaf": 37909,
+      "size": 173,
+      "valid_top2_rows": 173,
+      "duplicate_slots": 153,
+      "nearest_new_full_union": 90,
+      "random_new_full_union": 93,
+      "hindsight_new_full_union": 100
+    },
+    {
+      "leaf": 38111,
+      "size": 110,
+      "valid_top2_rows": 110,
+      "duplicate_slots": 142,
+      "nearest_new_full_union": 75,
+      "random_new_full_union": 76,
+      "hindsight_new_full_union": 80
+    },
+    {
+      "leaf": 38501,
+      "size": 471,
+      "valid_top2_rows": 471,
+      "duplicate_slots": 508,
+      "nearest_new_full_union": 307,
+      "random_new_full_union": 305,
+      "hindsight_new_full_union": 316
+    },
+    {
+      "leaf": 38512,
+      "size": 412,
+      "valid_top2_rows": 412,
+      "duplicate_slots": 589,
+      "nearest_new_full_union": 310,
+      "random_new_full_union": 312,
+      "hindsight_new_full_union": 317
+    },
+    {
+      "leaf": 39913,
+      "size": 224,
+      "valid_top2_rows": 224,
+      "duplicate_slots": 269,
+      "nearest_new_full_union": 149,
+      "random_new_full_union": 155,
+      "hindsight_new_full_union": 164
+    },
+    {
+      "leaf": 42571,
+      "size": 334,
+      "valid_top2_rows": 334,
+      "duplicate_slots": 398,
+      "nearest_new_full_union": 154,
+      "random_new_full_union": 160,
+      "hindsight_new_full_union": 172
+    },
+    {
+      "leaf": 42773,
+      "size": 313,
+      "valid_top2_rows": 313,
+      "duplicate_slots": 357,
+      "nearest_new_full_union": 202,
+      "random_new_full_union": 200,
+      "hindsight_new_full_union": 211
+    },
+    {
+      "leaf": 43871,
+      "size": 183,
+      "valid_top2_rows": 183,
+      "duplicate_slots": 190,
+      "nearest_new_full_union": 127,
+      "random_new_full_union": 130,
+      "hindsight_new_full_union": 136
+    },
+    {
+      "leaf": 45001,
+      "size": 110,
+      "valid_top2_rows": 110,
+      "duplicate_slots": 106,
+      "nearest_new_full_union": 83,
+      "random_new_full_union": 82,
+      "hindsight_new_full_union": 84
+    },
+    {
+      "leaf": 46630,
+      "size": 172,
+      "valid_top2_rows": 172,
+      "duplicate_slots": 138,
+      "nearest_new_full_union": 108,
+      "random_new_full_union": 107,
+      "hindsight_new_full_union": 109
+    },
+    {
+      "leaf": 46743,
+      "size": 592,
+      "valid_top2_rows": 592,
+      "duplicate_slots": 790,
+      "nearest_new_full_union": 391,
+      "random_new_full_union": 390,
+      "hindsight_new_full_union": 404
+    },
+    {
+      "leaf": 47416,
+      "size": 227,
+      "valid_top2_rows": 227,
+      "duplicate_slots": 216,
+      "nearest_new_full_union": 142,
+      "random_new_full_union": 141,
+      "hindsight_new_full_union": 146
+    },
+    {
+      "leaf": 54010,
+      "size": 221,
+      "valid_top2_rows": 221,
+      "duplicate_slots": 344,
+      "nearest_new_full_union": 198,
+      "random_new_full_union": 198,
+      "hindsight_new_full_union": 199
+    },
+    {
+      "leaf": 55044,
+      "size": 504,
+      "valid_top2_rows": 504,
+      "duplicate_slots": 702,
+      "nearest_new_full_union": 342,
+      "random_new_full_union": 345,
+      "hindsight_new_full_union": 357
+    },
+    {
+      "leaf": 55944,
+      "size": 897,
+      "valid_top2_rows": 897,
+      "duplicate_slots": 1557,
+      "nearest_new_full_union": 519,
+      "random_new_full_union": 525,
+      "hindsight_new_full_union": 530
+    },
+    {
+      "leaf": 57971,
+      "size": 169,
+      "valid_top2_rows": 169,
+      "duplicate_slots": 187,
+      "nearest_new_full_union": 124,
+      "random_new_full_union": 128,
+      "hindsight_new_full_union": 130
+    },
+    {
+      "leaf": 58417,
+      "size": 196,
+      "valid_top2_rows": 196,
+      "duplicate_slots": 294,
+      "nearest_new_full_union": 138,
+      "random_new_full_union": 139,
+      "hindsight_new_full_union": 143
+    },
+    {
+      "leaf": 59606,
+      "size": 348,
+      "valid_top2_rows": 348,
+      "duplicate_slots": 510,
+      "nearest_new_full_union": 224,
+      "random_new_full_union": 231,
+      "hindsight_new_full_union": 241
+    },
+    {
+      "leaf": 59900,
+      "size": 648,
+      "valid_top2_rows": 648,
+      "duplicate_slots": 983,
+      "nearest_new_full_union": 442,
+      "random_new_full_union": 447,
+      "hindsight_new_full_union": 453
+    },
+    {
+      "leaf": 61329,
+      "size": 620,
+      "valid_top2_rows": 620,
+      "duplicate_slots": 1044,
+      "nearest_new_full_union": 415,
+      "random_new_full_union": 420,
+      "hindsight_new_full_union": 423
+    },
+    {
+      "leaf": 62890,
+      "size": 178,
+      "valid_top2_rows": 178,
+      "duplicate_slots": 185,
+      "nearest_new_full_union": 130,
+      "random_new_full_union": 131,
+      "hindsight_new_full_union": 131
+    },
+    {
+      "leaf": 63576,
+      "size": 281,
+      "valid_top2_rows": 281,
+      "duplicate_slots": 303,
+      "nearest_new_full_union": 208,
+      "random_new_full_union": 211,
+      "hindsight_new_full_union": 212
+    },
+    {
+      "leaf": 63697,
+      "size": 374,
+      "valid_top2_rows": 374,
+      "duplicate_slots": 376,
+      "nearest_new_full_union": 165,
+      "random_new_full_union": 173,
+      "hindsight_new_full_union": 189
+    },
+    {
+      "leaf": 64821,
+      "size": 130,
+      "valid_top2_rows": 130,
+      "duplicate_slots": 116,
+      "nearest_new_full_union": 85,
+      "random_new_full_union": 85,
+      "hindsight_new_full_union": 87
+    },
+    {
+      "leaf": 64983,
+      "size": 109,
+      "valid_top2_rows": 109,
+      "duplicate_slots": 104,
+      "nearest_new_full_union": 72,
+      "random_new_full_union": 74,
+      "hindsight_new_full_union": 74
+    },
+    {
+      "leaf": 65061,
+      "size": 142,
+      "valid_top2_rows": 142,
+      "duplicate_slots": 89,
+      "nearest_new_full_union": 59,
+      "random_new_full_union": 58,
+      "hindsight_new_full_union": 62
+    },
+    {
+      "leaf": 66147,
+      "size": 243,
+      "valid_top2_rows": 243,
+      "duplicate_slots": 371,
+      "nearest_new_full_union": 191,
+      "random_new_full_union": 191,
+      "hindsight_new_full_union": 191
+    },
+    {
+      "leaf": 66563,
+      "size": 135,
+      "valid_top2_rows": 135,
+      "duplicate_slots": 142,
+      "nearest_new_full_union": 98,
+      "random_new_full_union": 97,
+      "hindsight_new_full_union": 102
+    },
+    {
+      "leaf": 66816,
+      "size": 481,
+      "valid_top2_rows": 481,
+      "duplicate_slots": 487,
+      "nearest_new_full_union": 319,
+      "random_new_full_union": 319,
+      "hindsight_new_full_union": 326
+    },
+    {
+      "leaf": 67193,
+      "size": 164,
+      "valid_top2_rows": 164,
+      "duplicate_slots": 194,
+      "nearest_new_full_union": 145,
+      "random_new_full_union": 145,
+      "hindsight_new_full_union": 145
+    },
+    {
+      "leaf": 70340,
+      "size": 725,
+      "valid_top2_rows": 725,
+      "duplicate_slots": 1143,
+      "nearest_new_full_union": 510,
+      "random_new_full_union": 510,
+      "hindsight_new_full_union": 517
+    },
+    {
+      "leaf": 70764,
+      "size": 736,
+      "valid_top2_rows": 736,
+      "duplicate_slots": 1313,
+      "nearest_new_full_union": 471,
+      "random_new_full_union": 472,
+      "hindsight_new_full_union": 474
+    },
+    {
+      "leaf": 71785,
+      "size": 131,
+      "valid_top2_rows": 131,
+      "duplicate_slots": 135,
+      "nearest_new_full_union": 93,
+      "random_new_full_union": 94,
+      "hindsight_new_full_union": 95
+    },
+    {
+      "leaf": 73385,
+      "size": 693,
+      "valid_top2_rows": 693,
+      "duplicate_slots": 1010,
+      "nearest_new_full_union": 509,
+      "random_new_full_union": 513,
+      "hindsight_new_full_union": 523
+    },
+    {
+      "leaf": 75914,
+      "size": 198,
+      "valid_top2_rows": 198,
+      "duplicate_slots": 244,
+      "nearest_new_full_union": 167,
+      "random_new_full_union": 168,
+      "hindsight_new_full_union": 168
+    },
+    {
+      "leaf": 76373,
+      "size": 344,
+      "valid_top2_rows": 344,
+      "duplicate_slots": 411,
+      "nearest_new_full_union": 239,
+      "random_new_full_union": 240,
+      "hindsight_new_full_union": 245
+    },
+    {
+      "leaf": 78900,
+      "size": 113,
+      "valid_top2_rows": 113,
+      "duplicate_slots": 101,
+      "nearest_new_full_union": 81,
+      "random_new_full_union": 80,
+      "hindsight_new_full_union": 81
+    },
+    {
+      "leaf": 79228,
+      "size": 201,
+      "valid_top2_rows": 201,
+      "duplicate_slots": 246,
+      "nearest_new_full_union": 177,
+      "random_new_full_union": 177,
+      "hindsight_new_full_union": 177
+    },
+    {
+      "leaf": 82750,
+      "size": 352,
+      "valid_top2_rows": 352,
+      "duplicate_slots": 511,
+      "nearest_new_full_union": 278,
+      "random_new_full_union": 279,
+      "hindsight_new_full_union": 279
+    },
+    {
+      "leaf": 83005,
+      "size": 213,
+      "valid_top2_rows": 213,
+      "duplicate_slots": 311,
+      "nearest_new_full_union": 181,
+      "random_new_full_union": 180,
+      "hindsight_new_full_union": 181
+    },
+    {
+      "leaf": 83393,
+      "size": 628,
+      "valid_top2_rows": 628,
+      "duplicate_slots": 987,
+      "nearest_new_full_union": 469,
+      "random_new_full_union": 470,
+      "hindsight_new_full_union": 469
+    },
+    {
+      "leaf": 85501,
+      "size": 118,
+      "valid_top2_rows": 118,
+      "duplicate_slots": 147,
+      "nearest_new_full_union": 98,
+      "random_new_full_union": 98,
+      "hindsight_new_full_union": 98
+    }
+  ],
+  "timing": {
+    "backfill_phase_wall_seconds": 2.068,
+    "NOTE": "time measured in Python offline diagnostic; NOT PiPNN BUILD wall"
+  },
+  "NOT_MEASURED": [
+    "post-HashPrune survival",
+    "final graph degree/index bytes",
+    "final graph Recall/QPS",
+    "production grouping/synchronization overhead",
+    "end-to-end BUILD",
+    "peak memory at 1B",
+    "algorithm novelty"
+  ],
+  "interpretation": "Only structural feasibility. Even positive novelty of proposal keys DOES NOT establish Recall or Pareto gains.",
+  "sha256_capture": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95",
+  "input_base": "/home/tai/ann-task-a/data/sift1m.fbin",
+  "parameter_skip_sha": false
+}

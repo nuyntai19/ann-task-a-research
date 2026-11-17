@@ -1,0 +1,23 @@
+{
+  "kind": "SYNTHETIC_RESERVOIR_MICROBENCH_NOT_NATIVE_PIPNN_BUILD",
+  "nodes": 100000,
+  "high_per_mille": 46,
+  "repeats_per_arm": 3,
+  "stock": {
+    "median_elapsed_ms": 166,
+    "median_VmHWM_KiB": 130244
+  },
+  "tier": {
+    "median_elapsed_ms": 151,
+    "median_VmHWM_KiB": 61816
+  },
+  "checksum_all_equal": true,
+  "limitations": [
+    "synthetic per-row ordered input; not replay of R60 distribution",
+    "VmHWM is total-process high-water RSS, not allocation size",
+    "elapsed time includes constructor and sequential merges, but excludes object destruction; does not include real PiPNN BUILD or SEARCH",
+    "three repeats are preliminary and do not demonstrate end-to-end two-metric benefit"
+  ],
+  "time_delta_percent": -9.04,
+  "VmHWM_delta_percent": -52.54
+}

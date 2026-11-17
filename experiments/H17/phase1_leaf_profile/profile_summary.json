@@ -1,0 +1,15 @@
+{
+  "matrix_leaf_seconds": 60.42,
+  "selection_leaf_seconds": 67.24,
+  "merge_leaf_seconds": 14.42,
+  "stage_fraction_of_sum_percent": {
+    "matrix": 42.525337837837846,
+    "selection": 47.32545045045045,
+    "merge": 10.149211711711713
+  },
+  "leaf_calls": 85529,
+  "within_leaf_pair_count": 7289822248,
+  "directed_candidate_count": 59990170,
+  "baseline_uninstrumented_f30_seconds": 49.76,
+  "note": "Summed per-leaf wall durations overlap across threads, not total BUILD time."
+}

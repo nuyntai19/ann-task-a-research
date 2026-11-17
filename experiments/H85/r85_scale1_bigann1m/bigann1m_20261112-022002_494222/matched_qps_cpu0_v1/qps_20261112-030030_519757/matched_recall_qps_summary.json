@@ -1,0 +1,1838 @@
+{
+  "build_run": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222",
+  "independent_graphs_per_arm": 3,
+  "limits": "Three different BUILD graphs per arm, no independent dataset/seed replication across scale; the 5 CPU0 repeats are timing replicates, not n=15 independent graphs.",
+  "protocol": "R85_SCALE1_BIGANN1M_MATCHED_RECALL_CPU0_V1",
+  "qps_session": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222/matched_qps_cpu0_v1/qps_20261112-030030_519757",
+  "target_results": {
+    "0.89": {
+      "arms": {
+        "C64_K1024_N1": {
+          "avg_cmps_median_of_three_graphs": 827.7207292480184,
+          "latency_change_percent_by_rep_vs_stock": [
+            -0.21696855040916896,
+            -1.332657797473058,
+            -0.7329618020749495
+          ],
+          "latency_us_graph_medians": [
+            42.94076657773778,
+            42.74466931626358,
+            42.9600593007617
+          ],
+          "latency_us_median_of_three_graphs": 42.94076657773778,
+          "latency_us_range_across_graphs": [
+            42.74466931626358,
+            42.9600593007617
+          ],
+          "median_latency_change_percent_vs_stock": -0.7329618020749495
+        },
+        "C64_K1024_N2": {
+          "avg_cmps_median_of_three_graphs": 795.726094417283,
+          "latency_change_percent_by_rep_vs_stock": [
+            -6.314187282579575,
+            -6.92358878200745,
+            -6.63820263429894
+          ],
+          "latency_us_graph_medians": [
+            40.3168811079542,
+            40.322566006604816,
+            40.404432569642765
+          ],
+          "latency_us_median_of_three_graphs": 40.322566006604816,
+          "latency_us_range_across_graphs": [
+            40.3168811079542,
+            40.404432569642765
+          ],
+          "median_latency_change_percent_vs_stock": -6.63820263429894
+        },
+        "C64_K512_N1": {
+          "avg_cmps_median_of_three_graphs": 819.3669599639716,
+          "latency_change_percent_by_rep_vs_stock": [
+            -1.9520424865278718,
+            -2.7613937876244,
+            -2.1583352506959086
+          ],
+          "latency_us_graph_medians": [
+            42.194092480913724,
+            42.12571226243003,
+            42.343196654407784
+          ],
+          "latency_us_median_of_three_graphs": 42.194092480913724,
+          "latency_us_range_across_graphs": [
+            42.12571226243003,
+            42.343196654407784
+          ],
+          "median_latency_change_percent_vs_stock": -2.1583352506959086
+        },
+        "C64_K512_N2": {
+          "avg_cmps_median_of_three_graphs": 778.4035789473684,
+          "latency_change_percent_by_rep_vs_stock": [
+            -8.159177806111472,
+            -8.81068051771533,
+            -9.153131551310445
+          ],
+          "latency_us_graph_medians": [
+            39.52290535618377,
+            39.50504006122447,
+            39.31604011457027
+          ],
+          "latency_us_median_of_three_graphs": 39.50504006122447,
+          "latency_us_range_across_graphs": [
+            39.31604011457027,
+            39.52290535618377
+          ],
+          "median_latency_change_percent_vs_stock": -8.81068051771533
+        },
+        "D0": {
+          "avg_cmps_median_of_three_graphs": 863.1322188449847,
+          "latency_change_percent_by_rep_vs_stock": [
+            -0.04338689664376005,
+            -0.8628466733688556,
+            -0.5166394807972985
+          ],
+          "latency_us_graph_medians": [
+            43.01546594463649,
+            42.948200907291096,
+            43.05367768526147
+          ],
+          "latency_us_median_of_three_graphs": 43.01546594463649,
+          "latency_us_range_across_graphs": [
+            42.948200907291096,
+            43.05367768526147
+          ],
+          "median_latency_change_percent_vs_stock": -0.5166394807972985
+        },
+        "STOCK": {
+          "avg_cmps_median_of_three_graphs": 866.183518689653,
+          "latency_us_graph_medians": [
+            43.03413712123081,
+            43.32200337222508,
+            43.277265123096704
+          ],
+          "latency_us_median_of_three_graphs": 43.277265123096704,
+          "latency_us_range_across_graphs": [
+            43.03413712123081,
+            43.32200337222508
+          ]
+        }
+      },
+      "graphs": {
+        "t4_r1_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 829.1529233123622,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 43.25242742726323,
+          "latency_us_median": 42.94076657773778,
+          "latency_us_min": 42.871204805621765,
+          "latency_us_temporal_samples": [
+            42.94076657773778,
+            42.90997540071891,
+            43.05221811472196,
+            42.871204805621765,
+            43.25242742726323
+          ]
+        },
+        "t4_r1_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 794.020013199912,
+          "bracket_beams": [
+            21,
+            22
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 40.40574635709161,
+          "latency_us_median": 40.3168811079542,
+          "latency_us_min": 40.266767740239146,
+          "latency_us_temporal_samples": [
+            40.3168811079542,
+            40.35611425624295,
+            40.3061536362555,
+            40.40574635709161,
+            40.266767740239146
+          ]
+        },
+        "t4_r1_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 819.3669599639716,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 42.42223415653973,
+          "latency_us_median": 42.194092480913724,
+          "latency_us_min": 42.133475110646124,
+          "latency_us_temporal_samples": [
+            42.42223415653973,
+            42.194092480913724,
+            42.21743603636803,
+            42.181715936123545,
+            42.133475110646124
+          ]
+        },
+        "t4_r1_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 780.0460214346829,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 39.756569805759455,
+          "latency_us_median": 39.52290535618377,
+          "latency_us_min": 39.48264743521086,
+          "latency_us_temporal_samples": [
+            39.756569805759455,
+            39.52290535618377,
+            39.48613759382023,
+            39.48264743521086,
+            39.57913884411403
+          ]
+        },
+        "t4_r1_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 863.1322188449847,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 43.064715649193204,
+          "latency_us_median": 43.01546594463649,
+          "latency_us_min": 42.94475438561443,
+          "latency_us_temporal_samples": [
+            43.064715649193204,
+            43.01546594463649,
+            42.94475438561443,
+            42.99498836455586,
+            43.0322607196949
+          ]
+        },
+        "t4_r1_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 863.4298366671756,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 43.311898079064406,
+          "latency_us_median": 43.03413712123081,
+          "latency_us_min": 43.01872260111557,
+          "latency_us_temporal_samples": [
+            43.03413712123081,
+            43.02091674568342,
+            43.04545224071535,
+            43.311898079064406,
+            43.01872260111557
+          ]
+        },
+        "t4_r2_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 826.0222409160224,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 42.854703447836954,
+          "latency_us_median": 42.74466931626358,
+          "latency_us_min": 42.63706109822971,
+          "latency_us_temporal_samples": [
+            42.645763259751035,
+            42.74466931626358,
+            42.854703447836954,
+            42.81811397012483,
+            42.63706109822971
+          ]
+        },
+        "t4_r2_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 795.726094417283,
+          "bracket_beams": [
+            21,
+            22
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 40.41481745089361,
+          "latency_us_median": 40.322566006604816,
+          "latency_us_min": 40.23545594334364,
+          "latency_us_temporal_samples": [
+            40.32678934302024,
+            40.322566006604816,
+            40.23545594334364,
+            40.41481745089361,
+            40.30632236744416
+          ]
+        },
+        "t4_r2_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 817.8637136944399,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 42.15566804156561,
+          "latency_us_median": 42.12571226243003,
+          "latency_us_min": 41.96848331996075,
+          "latency_us_temporal_samples": [
+            42.07972801950021,
+            42.14193859266503,
+            41.96848331996075,
+            42.12571226243003,
+            42.15566804156561
+          ]
+        },
+        "t4_r2_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 778.4035789473684,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 39.62797893054628,
+          "latency_us_median": 39.50504006122447,
+          "latency_us_min": 39.4769169840746,
+          "latency_us_temporal_samples": [
+            39.497920960744686,
+            39.62797893054628,
+            39.54070602466274,
+            39.50504006122447,
+            39.4769169840746
+          ]
+        },
+        "t4_r2_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 861.8363310742324,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 43.11873140139805,
+          "latency_us_median": 42.948200907291096,
+          "latency_us_min": 42.9012682788254,
+          "latency_us_temporal_samples": [
+            42.9012682788254,
+            42.948200907291096,
+            42.907500604934896,
+            42.99888737292469,
+            43.11873140139805
+          ]
+        },
+        "t4_r2_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 867.8618051277954,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 43.36381924255191,
+          "latency_us_median": 43.32200337222508,
+          "latency_us_min": 43.291169653668476,
+          "latency_us_temporal_samples": [
+            43.291169653668476,
+            43.36381924255191,
+            43.31863603526597,
+            43.32200337222508,
+            43.32389792567493
+          ]
+        },
+        "t4_r3_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 827.7207292480184,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 43.13612061225471,
+          "latency_us_median": 42.9600593007617,
+          "latency_us_min": 42.76232045938864,
+          "latency_us_temporal_samples": [
+            42.76232045938864,
+            42.9600593007617,
+            42.83856797625849,
+            43.13612061225471,
+            43.01923711042033
+          ]
+        },
+        "t4_r3_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 798.0578993905328,
+          "bracket_beams": [
+            21,
+            22
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 40.49041487330104,
+          "latency_us_median": 40.404432569642765,
+          "latency_us_min": 40.39802813979137,
+          "latency_us_temporal_samples": [
+            40.39802813979137,
+            40.440919857092254,
+            40.404432569642765,
+            40.49041487330104,
+            40.40098735761214
+          ]
+        },
+        "t4_r3_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 821.0013755601186,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 42.91149863556234,
+          "latency_us_median": 42.343196654407784,
+          "latency_us_min": 42.18775212563815,
+          "latency_us_temporal_samples": [
+            42.18775212563815,
+            42.29299214927753,
+            42.343196654407784,
+            42.40253896513773,
+            42.91149863556234
+          ]
+        },
+        "t4_r3_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 776.3009458834906,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 39.53715862480431,
+          "latency_us_median": 39.31604011457027,
+          "latency_us_min": 39.29141494607988,
+          "latency_us_temporal_samples": [
+            39.30386814662279,
+            39.29141494607988,
+            39.31604011457027,
+            39.34191877944496,
+            39.53715862480431
+          ]
+        },
+        "t4_r3_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 865.3836716944998,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 43.159523905757524,
+          "latency_us_median": 43.05367768526147,
+          "latency_us_min": 43.002383250617584,
+          "latency_us_temporal_samples": [
+            43.159523905757524,
+            43.002383250617584,
+            43.094431071313224,
+            43.05367768526147,
+            43.04581190280733
+          ]
+        },
+        "t4_r3_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 866.183518689653,
+          "bracket_beams": [
+            20,
+            21
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 43.36223559313698,
+          "latency_us_median": 43.277265123096704,
+          "latency_us_min": 43.13011038671797,
+          "latency_us_temporal_samples": [
+            43.30295923970715,
+            43.17807166996231,
+            43.13011038671797,
+            43.36223559313698,
+            43.277265123096704
+          ]
+        }
+      },
+      "target_recall": 0.89
+    },
+    "0.96": {
+      "arms": {
+        "C64_K1024_N1": {
+          "avg_cmps_median_of_three_graphs": 1349.959730296975,
+          "latency_change_percent_by_rep_vs_stock": [
+            2.777953686369816,
+            1.6502005906826822,
+            2.855056335499473
+          ],
+          "latency_us_graph_medians": [
+            69.69185606830338,
+            69.16435553358403,
+            69.91470594999964
+          ],
+          "latency_us_median_of_three_graphs": 69.69185606830338,
+          "latency_us_range_across_graphs": [
+            69.16435553358403,
+            69.91470594999964
+          ],
+          "median_latency_change_percent_vs_stock": 2.777953686369816
+        },
+        "C64_K1024_N2": {
+          "avg_cmps_median_of_three_graphs": 1279.3926071441256,
+          "latency_change_percent_by_rep_vs_stock": [
+            -4.950351973100209,
+            -5.1962258596594975,
+            -5.229335431394744
+          ],
+          "latency_us_graph_medians": [
+            64.45143293908644,
+            64.5059419702624,
+            64.41942070779102
+          ],
+          "latency_us_median_of_three_graphs": 64.45143293908644,
+          "latency_us_range_across_graphs": [
+            64.41942070779102,
+            64.5059419702624
+          ],
+          "median_latency_change_percent_vs_stock": -5.1962258596594975
+        },
+        "C64_K512_N1": {
+          "avg_cmps_median_of_three_graphs": 1351.4446752843885,
+          "latency_change_percent_by_rep_vs_stock": [
+            1.6125119920217923,
+            1.1100740729319991,
+            1.282892482626985
+          ],
+          "latency_us_graph_medians": [
+            68.90159130912795,
+            68.79684516675992,
+            68.84604314046054
+          ],
+          "latency_us_median_of_three_graphs": 68.84604314046054,
+          "latency_us_range_across_graphs": [
+            68.79684516675992,
+            68.90159130912795
+          ],
+          "median_latency_change_percent_vs_stock": 1.282892482626985
+        },
+        "C64_K512_N2": {
+          "avg_cmps_median_of_three_graphs": 1264.4853869878093,
+          "latency_change_percent_by_rep_vs_stock": [
+            -5.822009173635212,
+            -6.259492850174764,
+            -6.780254724606749
+          ],
+          "latency_us_graph_medians": [
+            63.86037808751819,
+            63.78247880214482,
+            63.36519867729203
+          ],
+          "latency_us_median_of_three_graphs": 63.78247880214482,
+          "latency_us_range_across_graphs": [
+            63.36519867729203,
+            63.86037808751819
+          ],
+          "median_latency_change_percent_vs_stock": -6.259492850174764
+        },
+        "D0": {
+          "avg_cmps_median_of_three_graphs": 1370.454316568047,
+          "latency_change_percent_by_rep_vs_stock": [
+            -0.4829391419154838,
+            -0.5672460338496554,
+            -0.2900682495236562
+          ],
+          "latency_us_graph_medians": [
+            67.48070410923144,
+            67.65557084034498,
+            67.77683866012376
+          ],
+          "latency_us_median_of_three_graphs": 67.65557084034498,
+          "latency_us_range_across_graphs": [
+            67.48070410923144,
+            67.77683866012376
+          ],
+          "median_latency_change_percent_vs_stock": -0.4829391419154838
+        },
+        "STOCK": {
+          "avg_cmps_median_of_three_graphs": 1374.6014416971684,
+          "latency_us_graph_medians": [
+            67.80817633416821,
+            68.04153374186619,
+            67.97400968013396
+          ],
+          "latency_us_median_of_three_graphs": 67.97400968013396,
+          "latency_us_range_across_graphs": [
+            67.80817633416821,
+            68.04153374186619
+          ]
+        }
+      },
+      "graphs": {
+        "t4_r1_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 1349.959730296975,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 69.70815822307557,
+          "latency_us_median": 69.69185606830338,
+          "latency_us_min": 69.5935312717229,
+          "latency_us_temporal_samples": [
+            69.5935312717229,
+            69.69619065420801,
+            69.69185606830338,
+            69.68102300595051,
+            69.70815822307557
+          ]
+        },
+        "t4_r1_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 1279.3926071441256,
+          "bracket_beams": [
+            40,
+            44
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 64.66721207144494,
+          "latency_us_median": 64.45143293908644,
+          "latency_us_min": 64.38162538487845,
+          "latency_us_temporal_samples": [
+            64.46679299435633,
+            64.39898971165995,
+            64.66721207144494,
+            64.45143293908644,
+            64.38162538487845
+          ]
+        },
+        "t4_r1_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 1351.4446752843885,
+          "bracket_beams": [
+            48,
+            50
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 69.15977086694876,
+          "latency_us_median": 68.90159130912795,
+          "latency_us_min": 68.66715526439646,
+          "latency_us_temporal_samples": [
+            68.66715526439646,
+            68.90159130912795,
+            69.15977086694876,
+            68.90950723128174,
+            68.79888956526673
+          ]
+        },
+        "t4_r1_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 1268.3225343389304,
+          "bracket_beams": [
+            40,
+            44
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 64.2868350289915,
+          "latency_us_median": 63.86037808751819,
+          "latency_us_min": 63.72299225195525,
+          "latency_us_temporal_samples": [
+            64.2868350289915,
+            63.753123669253455,
+            63.72299225195525,
+            63.86037808751819,
+            63.98247283661935
+          ]
+        },
+        "t4_r1_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 1366.915839335539,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 67.71254589950819,
+          "latency_us_median": 67.48070410923144,
+          "latency_us_min": 67.42511626489183,
+          "latency_us_temporal_samples": [
+            67.71254589950819,
+            67.65428018132448,
+            67.44253488801266,
+            67.48070410923144,
+            67.42511626489183
+          ]
+        },
+        "t4_r1_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 1369.3024009785154,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 67.92913396200471,
+          "latency_us_median": 67.80817633416821,
+          "latency_us_min": 67.58664876512879,
+          "latency_us_temporal_samples": [
+            67.58664876512879,
+            67.72723582139484,
+            67.80817633416821,
+            67.92913396200471,
+            67.84749649916348
+          ]
+        },
+        "t4_r2_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 1338.5825640352712,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 69.24166317041836,
+          "latency_us_median": 69.16435553358403,
+          "latency_us_min": 68.86062327734311,
+          "latency_us_temporal_samples": [
+            68.9664337152283,
+            68.86062327734311,
+            69.23323843993265,
+            69.24166317041836,
+            69.16435553358403
+          ]
+        },
+        "t4_r2_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 1281.6934956449852,
+          "bracket_beams": [
+            40,
+            44
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 64.73467909088109,
+          "latency_us_median": 64.5059419702624,
+          "latency_us_min": 64.26466388670364,
+          "latency_us_temporal_samples": [
+            64.26466388670364,
+            64.5059419702624,
+            64.73467909088109,
+            64.48124775009052,
+            64.56873449718573
+          ]
+        },
+        "t4_r2_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 1348.5426246669936,
+          "bracket_beams": [
+            48,
+            50
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 68.84883601618816,
+          "latency_us_median": 68.79684516675992,
+          "latency_us_min": 68.64463950386482,
+          "latency_us_temporal_samples": [
+            68.84883601618816,
+            68.64463950386482,
+            68.79684516675992,
+            68.80149795789814,
+            68.7029919610413
+          ]
+        },
+        "t4_r2_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 1264.4853869878093,
+          "bracket_beams": [
+            40,
+            44
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 64.032170612312,
+          "latency_us_median": 63.78247880214482,
+          "latency_us_min": 63.57816096904152,
+          "latency_us_temporal_samples": [
+            63.69458437180781,
+            63.79954505827756,
+            64.032170612312,
+            63.57816096904152,
+            63.78247880214482
+          ]
+        },
+        "t4_r2_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 1370.454316568047,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 68.43386197312944,
+          "latency_us_median": 67.65557084034498,
+          "latency_us_min": 67.55888427269737,
+          "latency_us_temporal_samples": [
+            67.65557084034498,
+            67.6467686646046,
+            67.55888427269737,
+            67.78058857831353,
+            68.43386197312944
+          ]
+        },
+        "t4_r2_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 1375.8236172306704,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 68.25522650906895,
+          "latency_us_median": 68.04153374186619,
+          "latency_us_min": 67.90064701628248,
+          "latency_us_temporal_samples": [
+            67.90064701628248,
+            68.25522650906895,
+            67.97173399002446,
+            68.12435571292265,
+            68.04153374186619
+          ]
+        },
+        "t4_r3_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 1351.9724525138033,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 70.11774725821186,
+          "latency_us_median": 69.91470594999964,
+          "latency_us_min": 69.6974883008977,
+          "latency_us_temporal_samples": [
+            69.6974883008977,
+            69.91470594999964,
+            70.0151213160552,
+            70.11774725821186,
+            69.78765436571184
+          ]
+        },
+        "t4_r3_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 1278.629433980142,
+          "bracket_beams": [
+            40,
+            44
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 64.78736215869965,
+          "latency_us_median": 64.41942070779102,
+          "latency_us_min": 64.14785840991647,
+          "latency_us_temporal_samples": [
+            64.78736215869965,
+            64.14785840991647,
+            64.41942070779102,
+            64.35769075363913,
+            64.50938885158857
+          ]
+        },
+        "t4_r3_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 1351.7907309358977,
+          "bracket_beams": [
+            48,
+            50
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 68.93739795703824,
+          "latency_us_median": 68.84604314046054,
+          "latency_us_min": 68.71880500129406,
+          "latency_us_temporal_samples": [
+            68.73968374177596,
+            68.71880500129406,
+            68.92217202720181,
+            68.93739795703824,
+            68.84604314046054
+          ]
+        },
+        "t4_r3_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 1257.490914276885,
+          "bracket_beams": [
+            40,
+            44
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 63.446448536855996,
+          "latency_us_median": 63.36519867729203,
+          "latency_us_min": 63.180534538825015,
+          "latency_us_temporal_samples": [
+            63.36519867729203,
+            63.180534538825015,
+            63.203887284528726,
+            63.38703257136833,
+            63.446448536855996
+          ]
+        },
+        "t4_r3_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 1372.4111520952983,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 67.79204721686733,
+          "latency_us_median": 67.77683866012376,
+          "latency_us_min": 67.71186862188215,
+          "latency_us_temporal_samples": [
+            67.77683866012376,
+            67.79204721686733,
+            67.78967815066297,
+            67.71186862188215,
+            67.7455778047687
+          ]
+        },
+        "t4_r3_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 1374.6014416971684,
+          "bracket_beams": [
+            24,
+            40
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 68.80163908820457,
+          "latency_us_median": 67.97400968013396,
+          "latency_us_min": 67.80688589823433,
+          "latency_us_temporal_samples": [
+            68.80163908820457,
+            67.95667709859528,
+            68.76934667931546,
+            67.97400968013396,
+            67.80688589823433
+          ]
+        }
+      },
+      "target_recall": 0.96
+    },
+    "0.99": {
+      "arms": {
+        "C64_K1024_N1": {
+          "avg_cmps_median_of_three_graphs": 2209.827942857142,
+          "latency_change_percent_by_rep_vs_stock": [
+            5.19796341186376,
+            5.1559743536200076,
+            5.4064348914369065
+          ],
+          "latency_us_graph_medians": [
+            125.02528834482546,
+            125.25263580752461,
+            124.80900644671085
+          ],
+          "latency_us_median_of_three_graphs": 125.02528834482546,
+          "latency_us_range_across_graphs": [
+            124.80900644671085,
+            125.25263580752461
+          ],
+          "median_latency_change_percent_vs_stock": 5.19796341186376
+        },
+        "C64_K1024_N2": {
+          "avg_cmps_median_of_three_graphs": 2157.6784834419573,
+          "latency_change_percent_by_rep_vs_stock": [
+            -1.8976254148632354,
+            -2.3432860736492533,
+            -1.5862011550368038
+          ],
+          "latency_us_graph_medians": [
+            116.59234905336177,
+            116.32017009745624,
+            116.52920874458081
+          ],
+          "latency_us_median_of_three_graphs": 116.52920874458081,
+          "latency_us_range_across_graphs": [
+            116.32017009745624,
+            116.59234905336177
+          ],
+          "median_latency_change_percent_vs_stock": -1.8976254148632354
+        },
+        "C64_K512_N1": {
+          "avg_cmps_median_of_three_graphs": 2232.284340747384,
+          "latency_change_percent_by_rep_vs_stock": [
+            6.876169769559626,
+            5.04009061650601,
+            5.607851996593749
+          ],
+          "latency_us_graph_medians": [
+            127.0197968597059,
+            125.1146051952843,
+            125.04749918011836
+          ],
+          "latency_us_median_of_three_graphs": 125.1146051952843,
+          "latency_us_range_across_graphs": [
+            125.04749918011836,
+            127.0197968597059
+          ],
+          "median_latency_change_percent_vs_stock": 5.607851996593749
+        },
+        "C64_K512_N2": {
+          "avg_cmps_median_of_three_graphs": 2149.5261318681332,
+          "latency_change_percent_by_rep_vs_stock": [
+            -2.8623470970370435,
+            -2.3047645223078117,
+            -2.0458104718971692
+          ],
+          "latency_us_graph_medians": [
+            115.44580017946329,
+            116.36605361354336,
+            115.9849973570116
+          ],
+          "latency_us_median_of_three_graphs": 115.9849973570116,
+          "latency_us_range_across_graphs": [
+            115.44580017946329,
+            116.36605361354336
+          ],
+          "median_latency_change_percent_vs_stock": -2.3047645223078117
+        },
+        "D0": {
+          "avg_cmps_median_of_three_graphs": 2298.67019576096,
+          "latency_change_percent_by_rep_vs_stock": [
+            -0.09411646224368742,
+            -0.5998274760907085,
+            0.28621805997621763
+          ],
+          "latency_us_graph_medians": [
+            118.73577673504542,
+            118.39682609449119,
+            118.74629143140348
+          ],
+          "latency_us_median_of_three_graphs": 118.73577673504542,
+          "latency_us_range_across_graphs": [
+            118.39682609449119,
+            118.74629143140348
+          ],
+          "median_latency_change_percent_vs_stock": -0.09411646224368742
+        },
+        "STOCK": {
+          "avg_cmps_median_of_three_graphs": 2302.970771445449,
+          "latency_us_graph_medians": [
+            118.8476319216705,
+            119.11128832901424,
+            118.40738810230854
+          ],
+          "latency_us_median_of_three_graphs": 118.8476319216705,
+          "latency_us_range_across_graphs": [
+            118.40738810230854,
+            119.11128832901424
+          ]
+        }
+      },
+      "graphs": {
+        "t4_r1_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 2209.827942857142,
+          "bracket_beams": [
+            100,
+            104
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 125.48974539705219,
+          "latency_us_median": 125.02528834482546,
+          "latency_us_min": 124.67602800987767,
+          "latency_us_temporal_samples": [
+            125.48974539705219,
+            124.67602800987767,
+            125.00402268141231,
+            125.02528834482546,
+            125.23811923307854
+          ]
+        },
+        "t4_r1_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 2157.6784834419573,
+          "bracket_beams": [
+            80,
+            96
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 116.88613631404363,
+          "latency_us_median": 116.59234905336177,
+          "latency_us_min": 116.121606853875,
+          "latency_us_temporal_samples": [
+            116.121606853875,
+            116.59234905336177,
+            116.88613631404363,
+            116.56206182503115,
+            116.73314719867025
+          ]
+        },
+        "t4_r1_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 2258.102254048893,
+          "bracket_beams": [
+            100,
+            104
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 127.18401116883692,
+          "latency_us_median": 127.0197968597059,
+          "latency_us_min": 125.97391854492349,
+          "latency_us_temporal_samples": [
+            127.1205480889416,
+            127.0197968597059,
+            125.97391854492349,
+            127.18401116883692,
+            126.640029682189
+          ]
+        },
+        "t4_r1_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 2147.462360328212,
+          "bracket_beams": [
+            80,
+            96
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 115.75637723853036,
+          "latency_us_median": 115.44580017946329,
+          "latency_us_min": 115.36573699759296,
+          "latency_us_temporal_samples": [
+            115.36573699759296,
+            115.42243881006146,
+            115.75637723853036,
+            115.44580017946329,
+            115.7197035821386
+          ]
+        },
+        "t4_r1_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 2299.3283037974675,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 119.1992451673082,
+          "latency_us_median": 118.73577673504542,
+          "latency_us_min": 118.60519364217541,
+          "latency_us_temporal_samples": [
+            119.07450652877296,
+            119.1992451673082,
+            118.73577673504542,
+            118.60519364217541,
+            118.65430848880698
+          ]
+        },
+        "t4_r1_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 2302.970771445449,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 119.87517498340465,
+          "latency_us_median": 118.8476319216705,
+          "latency_us_min": 118.62262562627066,
+          "latency_us_temporal_samples": [
+            118.8476319216705,
+            118.62262562627066,
+            119.87517498340465,
+            119.35113528915124,
+            118.824035856096
+          ]
+        },
+        "t4_r2_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 2212.6818415841594,
+          "bracket_beams": [
+            100,
+            104
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 125.78566612462592,
+          "latency_us_median": 125.25263580752461,
+          "latency_us_min": 124.52767859707137,
+          "latency_us_temporal_samples": [
+            125.33395418063743,
+            125.78566612462592,
+            124.52767859707137,
+            125.23415882179958,
+            125.25263580752461
+          ]
+        },
+        "t4_r2_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 2157.8795532828076,
+          "bracket_beams": [
+            80,
+            96
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 116.33056699718799,
+          "latency_us_median": 116.32017009745624,
+          "latency_us_min": 116.09091028438196,
+          "latency_us_temporal_samples": [
+            116.33056699718799,
+            116.32017009745624,
+            116.09091028438196,
+            116.32670794240998,
+            116.24858798039676
+          ]
+        },
+        "t4_r2_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 2232.284340747384,
+          "bracket_beams": [
+            100,
+            104
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 125.25438780687203,
+          "latency_us_median": 125.1146051952843,
+          "latency_us_min": 124.82545273358032,
+          "latency_us_temporal_samples": [
+            125.1146051952843,
+            125.20456952089405,
+            124.82545273358032,
+            125.25438780687203,
+            125.100940841674
+          ]
+        },
+        "t4_r2_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 2153.2422590673564,
+          "bracket_beams": [
+            80,
+            96
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 118.48422595208359,
+          "latency_us_median": 116.36605361354336,
+          "latency_us_min": 115.72648272321283,
+          "latency_us_temporal_samples": [
+            115.72648272321283,
+            116.54069644999365,
+            118.48422595208359,
+            116.14173378879315,
+            116.36605361354336
+          ]
+        },
+        "t4_r2_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 2298.67019576096,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 118.65912101844341,
+          "latency_us_median": 118.39682609449119,
+          "latency_us_min": 117.95448767086698,
+          "latency_us_temporal_samples": [
+            118.39682609449119,
+            117.95448767086698,
+            118.65912101844341,
+            118.07452311217544,
+            118.64506123353146
+          ]
+        },
+        "t4_r2_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 2305.0285407122456,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 119.47405764706323,
+          "latency_us_median": 119.11128832901424,
+          "latency_us_min": 119.0347153907481,
+          "latency_us_temporal_samples": [
+            119.0347153907481,
+            119.47405764706323,
+            119.17382011622315,
+            119.1032362634836,
+            119.11128832901424
+          ]
+        },
+        "t4_r3_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 2209.823934782607,
+          "bracket_beams": [
+            100,
+            104
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 125.7842151992249,
+          "latency_us_median": 124.80900644671085,
+          "latency_us_min": 124.69424756249646,
+          "latency_us_temporal_samples": [
+            124.76659356361348,
+            125.7842151992249,
+            125.00044881527845,
+            124.69424756249646,
+            124.80900644671085
+          ]
+        },
+        "t4_r3_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 2156.508032404227,
+          "bracket_beams": [
+            80,
+            96
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 116.85229548355852,
+          "latency_us_median": 116.52920874458081,
+          "latency_us_min": 116.3407326460387,
+          "latency_us_temporal_samples": [
+            116.85229548355852,
+            116.52920874458081,
+            116.58393051359641,
+            116.3407326460387,
+            116.3696035758224
+          ]
+        },
+        "t4_r3_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 2230.655569620257,
+          "bracket_beams": [
+            100,
+            104
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 125.31072017209772,
+          "latency_us_median": 125.04749918011836,
+          "latency_us_min": 124.44933950883987,
+          "latency_us_temporal_samples": [
+            124.44933950883987,
+            125.04749918011836,
+            125.09075145605055,
+            125.31072017209772,
+            124.54602018196002
+          ]
+        },
+        "t4_r3_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 2149.5261318681332,
+          "bracket_beams": [
+            80,
+            96
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 116.05377496415814,
+          "latency_us_median": 115.9849973570116,
+          "latency_us_min": 115.71152245824393,
+          "latency_us_temporal_samples": [
+            115.71152245824393,
+            115.9849973570116,
+            115.90098871531144,
+            116.00935208925395,
+            116.05377496415814
+          ]
+        },
+        "t4_r3_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 2296.530125644424,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 119.08548923201191,
+          "latency_us_median": 118.74629143140348,
+          "latency_us_min": 118.5790675045087,
+          "latency_us_temporal_samples": [
+            118.97553368497731,
+            119.08548923201191,
+            118.5790675045087,
+            118.66631627337709,
+            118.74629143140348
+          ]
+        },
+        "t4_r3_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 2296.4321528796536,
+          "bracket_beams": [
+            50,
+            80
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 118.83815661447646,
+          "latency_us_median": 118.40738810230854,
+          "latency_us_min": 118.35063861146344,
+          "latency_us_temporal_samples": [
+            118.40738810230854,
+            118.35063861146344,
+            118.83815661447646,
+            118.4069613923631,
+            118.59224088364083
+          ]
+        }
+      },
+      "target_recall": 0.99
+    },
+    "0.998": {
+      "arms": {
+        "C64_K1024_N1": {
+          "avg_cmps_median_of_three_graphs": 3489.2097866187178,
+          "latency_change_percent_by_rep_vs_stock": [
+            6.290132294400186,
+            3.119002688292105,
+            6.465334334385409
+          ],
+          "latency_us_graph_medians": [
+            220.28834011630107,
+            217.34078504702308,
+            220.3433154920422
+          ],
+          "latency_us_median_of_three_graphs": 220.28834011630107,
+          "latency_us_range_across_graphs": [
+            217.34078504702308,
+            220.3433154920422
+          ],
+          "median_latency_change_percent_vs_stock": 6.290132294400186
+        },
+        "C64_K1024_N2": {
+          "avg_cmps_median_of_three_graphs": 3354.03919354838,
+          "latency_change_percent_by_rep_vs_stock": [
+            -4.011648526447553,
+            -4.93267739094545,
+            -3.986478994044673
+          ],
+          "latency_us_graph_medians": [
+            198.93770155485058,
+            200.3705038791695,
+            198.71198153636232
+          ],
+          "latency_us_median_of_three_graphs": 198.93770155485058,
+          "latency_us_range_across_graphs": [
+            198.71198153636232,
+            200.3705038791695
+          ],
+          "median_latency_change_percent_vs_stock": -4.011648526447553
+        },
+        "C64_K512_N1": {
+          "avg_cmps_median_of_three_graphs": 3555.037479347233,
+          "latency_change_percent_by_rep_vs_stock": [
+            7.601150031478632,
+            5.704471126254562,
+            6.214251401631654
+          ],
+          "latency_us_graph_medians": [
+            223.00544954997946,
+            222.79009822278812,
+            219.8236679822465
+          ],
+          "latency_us_median_of_three_graphs": 222.79009822278812,
+          "latency_us_range_across_graphs": [
+            219.8236679822465,
+            223.00544954997946
+          ],
+          "median_latency_change_percent_vs_stock": 6.214251401631654
+        },
+        "C64_K512_N2": {
+          "avg_cmps_median_of_three_graphs": 3388.9850360418122,
+          "latency_change_percent_by_rep_vs_stock": [
+            -3.0911769797281607,
+            -4.480357276075453,
+            -2.4621637794550955
+          ],
+          "latency_us_graph_medians": [
+            200.84539650991445,
+            201.3238452255319,
+            201.86674238258036
+          ],
+          "latency_us_median_of_three_graphs": 201.3238452255319,
+          "latency_us_range_across_graphs": [
+            200.84539650991445,
+            201.86674238258036
+          ],
+          "median_latency_change_percent_vs_stock": -3.0911769797281607
+        },
+        "D0": {
+          "avg_cmps_median_of_three_graphs": 3549.5008990483543,
+          "latency_change_percent_by_rep_vs_stock": [
+            -0.9517599657757114,
+            -2.929443489961414,
+            -1.215881931312368
+          ],
+          "latency_us_graph_medians": [
+            205.2793793514711,
+            204.5926590331401,
+            204.4460784281971
+          ],
+          "latency_us_median_of_three_graphs": 204.5926590331401,
+          "latency_us_range_across_graphs": [
+            204.4460784281971,
+            205.2793793514711
+          ],
+          "median_latency_change_percent_vs_stock": -1.215881931312368
+        },
+        "STOCK": {
+          "avg_cmps_median_of_three_graphs": 3580.149095846621,
+          "latency_us_graph_medians": [
+            207.2519201558156,
+            210.76695796215208,
+            206.96249804653766
+          ],
+          "latency_us_median_of_three_graphs": 207.2519201558156,
+          "latency_us_range_across_graphs": [
+            206.96249804653766,
+            210.76695796215208
+          ]
+        }
+      },
+      "graphs": {
+        "t4_r1_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 3489.2097866187178,
+          "bracket_beams": [
+            192,
+            224
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 220.5945410439158,
+          "latency_us_median": 220.28834011630107,
+          "latency_us_min": 220.1151901626314,
+          "latency_us_temporal_samples": [
+            220.28834011630107,
+            220.1151901626314,
+            220.11567415956284,
+            220.5945410439158,
+            220.29253710559578
+          ]
+        },
+        "t4_r1_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 3354.03919354838,
+          "bracket_beams": [
+            160,
+            176
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 199.32187326848293,
+          "latency_us_median": 198.93770155485058,
+          "latency_us_min": 198.31004225445838,
+          "latency_us_temporal_samples": [
+            198.31004225445838,
+            199.32187326848293,
+            198.89190274035744,
+            198.93770155485058,
+            199.2602621898591
+          ]
+        },
+        "t4_r1_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 3562.240238784248,
+          "bracket_beams": [
+            192,
+            224
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 223.34150166569952,
+          "latency_us_median": 223.00544954997946,
+          "latency_us_min": 222.41097328321354,
+          "latency_us_temporal_samples": [
+            223.30189515481246,
+            223.0052624179902,
+            222.41097328321354,
+            223.34150166569952,
+            223.00544954997946
+          ]
+        },
+        "t4_r1_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 3383.9300390558733,
+          "bracket_beams": [
+            160,
+            176
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 201.1518475575636,
+          "latency_us_median": 200.84539650991445,
+          "latency_us_min": 200.23823983716804,
+          "latency_us_temporal_samples": [
+            200.23823983716804,
+            201.1518475575636,
+            200.90570230270933,
+            200.640532278399,
+            200.84539650991445
+          ]
+        },
+        "t4_r1_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 3557.0198847869024,
+          "bracket_beams": [
+            120,
+            160
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 205.3947411587722,
+          "latency_us_median": 205.2793793514711,
+          "latency_us_min": 205.07176213846108,
+          "latency_us_temporal_samples": [
+            205.2954980240844,
+            205.15460210817054,
+            205.2793793514711,
+            205.3947411587722,
+            205.07176213846108
+          ]
+        },
+        "t4_r1_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 3580.149095846621,
+          "bracket_beams": [
+            120,
+            160
+          ],
+          "graph_rep": 1,
+          "latency_us_max": 207.5695047863477,
+          "latency_us_median": 207.2519201558156,
+          "latency_us_min": 206.14406637647951,
+          "latency_us_temporal_samples": [
+            206.14406637647951,
+            207.27214444954416,
+            207.5695047863477,
+            207.2519201558156,
+            206.83552836327894
+          ]
+        },
+        "t4_r2_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 3451.7027988318396,
+          "bracket_beams": [
+            192,
+            224
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 217.63360006446112,
+          "latency_us_median": 217.34078504702308,
+          "latency_us_min": 216.28253437412985,
+          "latency_us_temporal_samples": [
+            216.28253437412985,
+            217.3937031176232,
+            217.34078504702308,
+            217.63360006446112,
+            217.09975189754908
+          ]
+        },
+        "t4_r2_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 3376.6756550357454,
+          "bracket_beams": [
+            160,
+            176
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 200.4874100160883,
+          "latency_us_median": 200.3705038791695,
+          "latency_us_min": 199.8328225924912,
+          "latency_us_temporal_samples": [
+            199.8328225924912,
+            200.21645572114278,
+            200.40681310158047,
+            200.3705038791695,
+            200.4874100160883
+          ]
+        },
+        "t4_r2_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 3555.037479347233,
+          "bracket_beams": [
+            192,
+            224
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 222.9726443145822,
+          "latency_us_median": 222.79009822278812,
+          "latency_us_min": 222.28935183051306,
+          "latency_us_temporal_samples": [
+            222.90722787638504,
+            222.69377954503005,
+            222.28935183051306,
+            222.9726443145822,
+            222.79009822278812
+          ]
+        },
+        "t4_r2_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 3388.9850360418122,
+          "bracket_beams": [
+            160,
+            176
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 202.08872777292555,
+          "latency_us_median": 201.3238452255319,
+          "latency_us_min": 201.2181032985007,
+          "latency_us_temporal_samples": [
+            201.2181032985007,
+            201.8905488792339,
+            202.08872777292555,
+            201.24932798381673,
+            201.3238452255319
+          ]
+        },
+        "t4_r2_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 3549.5008990483543,
+          "bracket_beams": [
+            120,
+            160
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 204.87194084402182,
+          "latency_us_median": 204.5926590331401,
+          "latency_us_min": 203.8935035385444,
+          "latency_us_temporal_samples": [
+            203.8935035385444,
+            204.5926590331401,
+            204.7893277789151,
+            204.87194084402182,
+            204.2742979098704
+          ]
+        },
+        "t4_r2_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 3632.033783852049,
+          "bracket_beams": [
+            120,
+            160
+          ],
+          "graph_rep": 2,
+          "latency_us_max": 211.4361406131747,
+          "latency_us_median": 210.76695796215208,
+          "latency_us_min": 210.53869613204427,
+          "latency_us_temporal_samples": [
+            210.63175497860792,
+            210.76695796215208,
+            211.4361406131747,
+            211.16511260654204,
+            210.53869613204427
+          ]
+        },
+        "t4_r3_C64_K1024_N1": {
+          "arm": "C64_K1024_N1",
+          "avg_cmps_median": 3494.3882299588386,
+          "bracket_beams": [
+            192,
+            224
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 220.51498735350356,
+          "latency_us_median": 220.3433154920422,
+          "latency_us_min": 220.10697545172786,
+          "latency_us_temporal_samples": [
+            220.10697545172786,
+            220.33146654705112,
+            220.51498735350356,
+            220.3433154920422,
+            220.4102326658405
+          ]
+        },
+        "t4_r3_C64_K1024_N2": {
+          "arm": "C64_K1024_N2",
+          "avg_cmps_median": 3351.077067636772,
+          "bracket_beams": [
+            160,
+            176
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 198.85724330285478,
+          "latency_us_median": 198.71198153636232,
+          "latency_us_min": 198.00865109441946,
+          "latency_us_temporal_samples": [
+            198.00865109441946,
+            198.71198153636232,
+            198.85724330285478,
+            198.8265674451713,
+            198.62037791342402
+          ]
+        },
+        "t4_r3_C64_K512_N1": {
+          "arm": "C64_K512_N1",
+          "avg_cmps_median": 3517.462552932162,
+          "bracket_beams": [
+            192,
+            224
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 220.2763095950138,
+          "latency_us_median": 219.8236679822465,
+          "latency_us_min": 219.3494397757258,
+          "latency_us_temporal_samples": [
+            220.2763095950138,
+            219.8705981217139,
+            219.7994590372286,
+            219.8236679822465,
+            219.3494397757258
+          ]
+        },
+        "t4_r3_C64_K512_N2": {
+          "arm": "C64_K512_N2",
+          "avg_cmps_median": 3403.2167317597705,
+          "bracket_beams": [
+            160,
+            176
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 202.22704853369046,
+          "latency_us_median": 201.86674238258036,
+          "latency_us_min": 201.84650549156146,
+          "latency_us_temporal_samples": [
+            202.0033992628176,
+            201.8628006879168,
+            201.84650549156146,
+            202.22704853369046,
+            201.86674238258036
+          ]
+        },
+        "t4_r3_D0": {
+          "arm": "D0",
+          "avg_cmps_median": 3548.8107883979196,
+          "bracket_beams": [
+            120,
+            160
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 205.12038691186416,
+          "latency_us_median": 204.4460784281971,
+          "latency_us_min": 204.18076562776182,
+          "latency_us_temporal_samples": [
+            204.22395287590095,
+            205.12038691186416,
+            204.52748207591878,
+            204.4460784281971,
+            204.18076562776182
+          ]
+        },
+        "t4_r3_STOCK": {
+          "arm": "STOCK",
+          "avg_cmps_median": 3579.4339303122483,
+          "bracket_beams": [
+            120,
+            160
+          ],
+          "graph_rep": 3,
+          "latency_us_max": 206.99017845136487,
+          "latency_us_median": 206.96249804653766,
+          "latency_us_min": 206.41100928884381,
+          "latency_us_temporal_samples": [
+            206.41100928884381,
+            206.96249804653766,
+            206.98533235405873,
+            206.99017845136487,
+            206.86228701585884
+          ]
+        }
+      },
+      "target_recall": 0.998
+    }
+  },
+  "temporal_qps_repeats_per_graph": 5
+}

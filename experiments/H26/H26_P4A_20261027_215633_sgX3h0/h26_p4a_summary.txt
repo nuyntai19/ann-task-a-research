@@ -1,0 +1,25 @@
+H26-P4a: LEAF TIMELINE / PARALLELISM AUDIT — DIAGNOSTIC ONLY
+NO exact critical path or per-vertex lock contention measured.
+Graph output disabled; wall on trace includes CSV flush at exit.
+--- 4-thread instrumentation on/off comparisons ---
+round=1: leaf wall overhead=-1.47%; process wall(+CSV)=-2.22%
+round=2: leaf wall overhead=-7.61%; process wall(+CSV)=+9.37%
+--- traced runs ---
+r1_4t_on: threads=4 leaf_phase_wall=28.334s, trace_envelope=28.331s, elapsed_sum=112.748 worker-s; avg concurrent leaf calls=3.980, max=4, distinct thread tokens=4
+  leaf ms p50=0.638, p99=7.203; longest 1% of leaves carry 6.39% of elapsed work; worker load Gini=0.0008
+  concurrency_pct={'0': 0.0, '1': 0.403, '2': 0.281, '3': 0.266, '4': 99.051}
+  per_thread_elapsed_s={0: 28.184, 1: 28.204, 2: 28.125, 3: 28.235}
+r1_2t_on: threads=2 leaf_phase_wall=49.240s, trace_envelope=49.237s, elapsed_sum=98.270 worker-s; avg concurrent leaf calls=1.996, max=2, distinct thread tokens=2
+  leaf ms p50=0.577, p99=6.182; longest 1% of leaves carry 6.46% of elapsed work; worker load Gini=0.0009
+  concurrency_pct={'0': 0.0, '1': 0.416, '2': 99.584}
+  per_thread_elapsed_s={0: 49.22, 1: 49.05}
+r1_1t_on: threads=1 leaf_phase_wall=91.044s, trace_envelope=91.042s, elapsed_sum=91.017 worker-s; avg concurrent leaf calls=1.000, max=1, distinct thread tokens=1
+  leaf ms p50=0.553, p99=5.497; longest 1% of leaves carry 6.27% of elapsed work; worker load Gini=0.0000
+  concurrency_pct={'0': 0.027, '1': 99.973}
+  per_thread_elapsed_s={0: 91.017}
+r2_4t_on: threads=4 leaf_phase_wall=28.519s, trace_envelope=28.516s, elapsed_sum=112.785 worker-s; avg concurrent leaf calls=3.955, max=4, distinct thread tokens=4
+  leaf ms p50=0.639, p99=7.195; longest 1% of leaves carry 6.34% of elapsed work; worker load Gini=0.0027
+  concurrency_pct={'0': 0.0, '1': 1.278, '2': 0.219, '3': 0.216, '4': 98.287}
+  per_thread_elapsed_s={0: 28.22, 1: 28.421, 2: 28.068, 3: 28.076}
+ATTENTION: high avg concurrency is NOT CPU utilization; merge stage includes both lock wait and work.
+DECISION: if 4t saturation low or load skew strong, profile scheduler and tail; if merge expensive, proceed to low-rate lock acquisition sampling with overhead control.

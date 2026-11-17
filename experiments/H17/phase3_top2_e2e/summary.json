@@ -1,0 +1,76 @@
+{
+  "status": "A_B_BUILD_COMPLETE_QUALITY_NOT_YET_VERIFIED",
+  "date_utc": "2026-10-23T12:41:59.742089+00:00",
+  "source_revision": "443a328",
+  "reps_per_arm": 3,
+  "run_order": [
+    [
+      "A",
+      1
+    ],
+    [
+      "B",
+      1
+    ],
+    [
+      "B",
+      2
+    ],
+    [
+      "A",
+      2
+    ],
+    [
+      "A",
+      3
+    ],
+    [
+      "B",
+      3
+    ]
+  ],
+  "A_VQPartialSort": {
+    "median_build_s": 50.28,
+    "median_selection_sum_s": 70.66,
+    "build_s_each": [
+      47.44,
+      53.22,
+      50.28
+    ]
+  },
+  "B_top2": {
+    "median_build_s": 44.95,
+    "median_selection_sum_s": 44.86,
+    "build_s_each": [
+      44.27,
+      44.95,
+      46.08
+    ]
+  },
+  "B_vs_A": {
+    "build_time_reduction_percent": 10.601,
+    "build_speedup": 1.1186,
+    "selection_sum_reduction_percent": 36.513
+  },
+  "candidate_counts_identical": true,
+  "leaf_calls_identical": true,
+  "observed_candidate_counts": [
+    59990170
+  ],
+  "observed_leaf_calls": [
+    85529
+  ],
+  "graphs_for_quality_audit": {
+    "A_graph": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep1.graph",
+    "B_graph": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep1.graph"
+  },
+  "screening_verdict": "PROMISING_BUILD_SPEED_ONLY",
+  "limits": [
+    "Build speed numbers reflect fixed SIFT1M f30 / 4 threads, not scaling.",
+    "A/B random partition and concurrent reservoir merging may differ between runs.",
+    "Equal candidate counts do not guarantee identical selected graph edges.",
+    "Search Recall/QPS and reachability of both generated graphs are NOT tested here.",
+    "No novelty claim; top2 selection is an established optimization.",
+    "Summed leaf-stage times across threads are not wall times."
+  ]
+}

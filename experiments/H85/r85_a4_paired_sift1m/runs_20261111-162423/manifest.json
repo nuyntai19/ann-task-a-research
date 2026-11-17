@@ -1,0 +1,192 @@
+{
+  "source_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "source_sha256": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+  },
+  "binary_sha256": {
+    "A": "e07853b3e1832e2d9a95d6ed8ed6660bf34bc719dffcfd78789f6f672c6a05a5",
+    "D0": "5e4620d45c0d43c091038c3edac2b863983310b4e40a970943a307db87950d9b",
+    "H17": "8757b9be9fa3ae1f90febe082001fa60ba22c71ba6b6cdd899e013f6c0bcd500"
+  },
+  "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+  "data_sha256": {
+    "base": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+    "query": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+    "gt": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13"
+  },
+  "runner_dependencies": {
+    "old": "1e76bef61f16a15516d88c6249a3e07e5f47f0f54b1be31c00ac8942382f2d59",
+    "a1": "843cacaffb0c16d0ab8f86a32546ca74cc3b4c59d47ac3fd724e5fffc2accdb9",
+    "a1c": "a61c32764d4624800f8bbc8c7de62e9c2938ab7da5ab89adaef35f9c90d2c778"
+  },
+  "schedule": [
+    [
+      1,
+      "STOCK"
+    ],
+    [
+      1,
+      "D0"
+    ],
+    [
+      1,
+      "C64_K1024_N2"
+    ],
+    [
+      1,
+      "C64_K512_N2"
+    ],
+    [
+      1,
+      "C64_K1024_N1"
+    ],
+    [
+      1,
+      "C64_K512_N1"
+    ],
+    [
+      2,
+      "C64_K1024_N2"
+    ],
+    [
+      2,
+      "C64_K512_N2"
+    ],
+    [
+      2,
+      "C64_K1024_N1"
+    ],
+    [
+      2,
+      "C64_K512_N1"
+    ],
+    [
+      2,
+      "STOCK"
+    ],
+    [
+      2,
+      "D0"
+    ],
+    [
+      3,
+      "C64_K1024_N1"
+    ],
+    [
+      3,
+      "C64_K512_N1"
+    ],
+    [
+      3,
+      "STOCK"
+    ],
+    [
+      3,
+      "D0"
+    ],
+    [
+      3,
+      "C64_K1024_N2"
+    ],
+    [
+      3,
+      "C64_K512_N2"
+    ]
+  ],
+  "arms": {
+    "STOCK": [
+      "A",
+      160,
+      1024,
+      2,
+      "STOCK_HIGHWAY",
+      "STOCK_FLAT_C160"
+    ],
+    "D0": [
+      "D0",
+      160,
+      1024,
+      2,
+      "H17_PACKED_TOP2",
+      "TIER_B64_C160"
+    ],
+    "C64_K1024_N2": [
+      "H17",
+      64,
+      1024,
+      2,
+      "H17_PACKED_TOP2",
+      "STOCK_FLAT_C64"
+    ],
+    "C64_K512_N2": [
+      "H17",
+      64,
+      512,
+      2,
+      "H17_PACKED_TOP2",
+      "STOCK_FLAT_C64"
+    ],
+    "C64_K1024_N1": [
+      "H17",
+      64,
+      1024,
+      1,
+      "H17_PACKED_TOP2",
+      "STOCK_FLAT_C64"
+    ],
+    "C64_K512_N1": [
+      "H17",
+      64,
+      512,
+      1,
+      "H17_PACKED_TOP2",
+      "STOCK_FLAT_C64"
+    ]
+  },
+  "build_cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "qps_cpu": 0,
+  "targets": [
+    0.76,
+    0.89,
+    0.96,
+    0.99,
+    0.998
+  ],
+  "quality_beams": [
+    10,
+    11,
+    12,
+    20,
+    21,
+    22,
+    23,
+    24,
+    40,
+    44,
+    46,
+    48,
+    50,
+    80,
+    96,
+    100,
+    104,
+    108,
+    112,
+    120,
+    160,
+    176,
+    192,
+    224,
+    256
+  ],
+  "qps_repetitions": 5,
+  "protocol": "New paired SIFT1M graph builds: 4 P-cores, no overlap; 25-beam 4P graph quality; 1P repeated QPS, graph-interleaved.",
+  "created_at_local": "2026-11-11T16:24:23",
+  "phase_created": "build"
+}

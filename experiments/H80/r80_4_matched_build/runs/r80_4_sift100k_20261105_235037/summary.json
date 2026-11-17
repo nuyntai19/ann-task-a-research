@@ -1,0 +1,152 @@
+{
+  "run": "r80_4_sift100k_20261105_235037",
+  "base": {
+    "path": "/home/tai/ann-task-a/data/sift100k.fbin",
+    "sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "dims": [
+      100000,
+      128
+    ]
+  },
+  "paired_binaries": {
+    "D0": "f16d2e0b7577800f199174edf1f47491aa1c284a30db373c99a63d97bdba50d9",
+    "E": "6396e1d3f076b6c95dc003c167457b27f275b3f98b259c081e88deb07dd1de5e"
+  },
+  "provenance": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+    "algorithms/utils/graph.h": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+    "algorithms/utils/r70_two_tier_lshgraph.h": "ac0bece4804c7bc552b30db0df57ee92492033065cef62330ddb58a19d470af1",
+    "shadow_pipnn_h": "b837de4d91673825c25c5ba0cf0e03f2ce36e21bc60b712f7b444a4cecdd705f",
+    "neighbors_h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "bench_main": "66afcec9be5ad2e628db45c7032920ff9af5faa1c9a576f19ea45b37712047d4",
+    "r80_4_shadow_neighbors_h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "r80_4_shadow_pipnn_h": "b837de4d91673825c25c5ba0cf0e03f2ce36e21bc60b712f7b444a4cecdd705f",
+    "r80_4_shadow_pipnn_utils_h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+  },
+  "thread_env": {
+    "PARLAY_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "fixed_flags": [
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune_degree",
+    "64",
+    "-table_size",
+    "160",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1"
+  ],
+  "rows": [
+    {
+      "rep": 1,
+      "variant": "D0",
+      "key": "r1_D0",
+      "wall_s": 8.59,
+      "peak_RSS_KiB": 346644,
+      "graph": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r1_D0.graph",
+      "n": 100000,
+      "max_degree": 64,
+      "arcs": 1827178,
+      "size_bytes": 7708720,
+      "sha256": "c98411c203ddda129ed589dc19299fd66370ef6be85eb8beb6ddbab45c173e52",
+      "elapsed_host_s": 8.61165856399748,
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r1_D0.log",
+      "time_file": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r1_D0.time"
+    },
+    {
+      "rep": 1,
+      "variant": "E",
+      "key": "r1_E",
+      "wall_s": 8.15,
+      "peak_RSS_KiB": 343856,
+      "graph": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r1_E.graph",
+      "n": 100000,
+      "max_degree": 64,
+      "arcs": 1823733,
+      "size_bytes": 7694940,
+      "sha256": "391720d6952e881f30f25da81f69b5c7f3c4ab364a93b36a29f04cdb46960d39",
+      "elapsed_host_s": 8.179352643011953,
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r1_E.log",
+      "time_file": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r1_E.time"
+    },
+    {
+      "rep": 2,
+      "variant": "E",
+      "key": "r2_E",
+      "wall_s": 7.91,
+      "peak_RSS_KiB": 345856,
+      "graph": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r2_E.graph",
+      "n": 100000,
+      "max_degree": 64,
+      "arcs": 1827177,
+      "size_bytes": 7708716,
+      "sha256": "78604241cee3e53eb1c1360e4f19f3bbcf976572877ef05d7ed0097c90cbba0b",
+      "elapsed_host_s": 7.9368078030092875,
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r2_E.log",
+      "time_file": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r2_E.time"
+    },
+    {
+      "rep": 2,
+      "variant": "D0",
+      "key": "r2_D0",
+      "wall_s": 7.82,
+      "peak_RSS_KiB": 344660,
+      "graph": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r2_D0.graph",
+      "n": 100000,
+      "max_degree": 64,
+      "arcs": 1827171,
+      "size_bytes": 7708692,
+      "sha256": "08d6b0864bc0d881d888b917b4faff0f797ab6b4d98932fad580e6b202fc0cab",
+      "elapsed_host_s": 7.837366601001122,
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r2_D0.log",
+      "time_file": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r2_D0.time"
+    },
+    {
+      "rep": 3,
+      "variant": "D0",
+      "key": "r3_D0",
+      "wall_s": 7.79,
+      "peak_RSS_KiB": 345304,
+      "graph": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r3_D0.graph",
+      "n": 100000,
+      "max_degree": 64,
+      "arcs": 1823328,
+      "size_bytes": 7693320,
+      "sha256": "3ebfe4c6e9d1250dfbcf6f4efbbd1e66ced1bbdc9cd87313720fe7591a6a0e1e",
+      "elapsed_host_s": 7.816234886995517,
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r3_D0.log",
+      "time_file": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r3_D0.time"
+    },
+    {
+      "rep": 3,
+      "variant": "E",
+      "key": "r3_E",
+      "wall_s": 7.77,
+      "peak_RSS_KiB": 343748,
+      "graph": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r3_E.graph",
+      "n": 100000,
+      "max_degree": 64,
+      "arcs": 1827171,
+      "size_bytes": 7708692,
+      "sha256": "93f95c830fbb0022446104ef8125252a8e11fb56a4413b91e47f60bd38b640b6",
+      "elapsed_host_s": 7.787174372002482,
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r3_E.log",
+      "time_file": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/r3_E.time"
+    }
+  ],
+  "warning": "source uses random_device per BUILD; different independent runs not guaranteed graph-byte-identical"
+}

@@ -1,0 +1,17 @@
+{
+  "h17_path": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/build_h17_flat/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+  "h17_sha256": "8757b9be9fa3ae1f90febe082001fa60ba22c71ba6b6cdd899e013f6c0bcd500",
+  "d0_path": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_d0/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+  "d0_sha256": "5e4620d45c0d43c091038c3edac2b863983310b4e40a970943a307db87950d9b",
+  "h17_feature_flags": {
+    "H17": "ON",
+    "TwoTier": "OFF",
+    "matched_to_D0": true
+  },
+  "source_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "source_sha256": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d"
+  },
+  "origin": "R85-A1 H17 flat C160/C64; compare to R85-0f D0 on same PC"
+}

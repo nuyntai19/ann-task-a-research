@@ -1,0 +1,63 @@
+{
+  "experiment": "G0.3 exploratory fixed-outdegree graph-edge swap",
+  "warning": "All oracle policies use FULL f60 graph built beforehand; NOT a cheap G build algorithm",
+  "n": 1000000,
+  "max_degree": 32,
+  "budget": 100000,
+  "seed": 20261023,
+  "pool_size": 250000,
+  "baseline_directed_edges": 22788826,
+  "expected_graph_bytes": 95155312,
+  "oracle_eligible_pool_count": 247319,
+  "graphs": {
+    "f30": "/home/tai/ann-task-a/results/pipnn_sift1m_4t.graph",
+    "f60": "/home/tai/ann-task-a/results/pipnn_static_sift1m_f60_4t.graph",
+    "random_2hop": "/home/tai/ann-task-a/experiments/G0/results/g03/random_2hop_b100000_s20261023.graph",
+    "oracle_random": "/home/tai/ann-task-a/experiments/G0/results/g03/oracle_random_b100000_s20261023.graph",
+    "oracle_lowdegree": "/home/tai/ann-task-a/experiments/G0/results/g03/oracle_lowdegree_b100000_s20261023.graph",
+    "oracle_geometry": "/home/tai/ann-task-a/experiments/G0/results/g03/oracle_geometry_b100000_s20261023.graph"
+  },
+  "policies": {
+    "random_2hop": {
+      "directed_edge_replacements": 100000,
+      "fraction_baseline_edges_replaced": 0.004388115473785267,
+      "changed_source_vertices": 100000,
+      "mean_selected_outdegree": 22.84359,
+      "reachable_from_vertex_0": 1000000,
+      "wall_seconds_including_file_copy_and_bfs": 13.353,
+      "candidate_generation": "two-hop from f30",
+      "twohop_attempts": 107474,
+      "extra_distance_evals": 0
+    },
+    "oracle_random": {
+      "directed_edge_replacements": 100000,
+      "fraction_baseline_edges_replaced": 0.004388115473785267,
+      "changed_source_vertices": 100000,
+      "mean_selected_outdegree": 22.97386,
+      "reachable_from_vertex_0": 1000000,
+      "wall_seconds_including_file_copy_and_bfs": 13.507,
+      "candidate_generation": "f60-only oracle",
+      "extra_distance_evals": 0
+    },
+    "oracle_lowdegree": {
+      "directed_edge_replacements": 100000,
+      "fraction_baseline_edges_replaced": 0.004388115473785267,
+      "changed_source_vertices": 100000,
+      "mean_selected_outdegree": 15.45306,
+      "reachable_from_vertex_0": 1000000,
+      "wall_seconds_including_file_copy_and_bfs": 13.441,
+      "candidate_generation": "f60-only oracle",
+      "extra_distance_evals": 0
+    },
+    "oracle_geometry": {
+      "directed_edge_replacements": 100000,
+      "fraction_baseline_edges_replaced": 0.004388115473785267,
+      "changed_source_vertices": 100000,
+      "mean_selected_outdegree": 22.97386,
+      "reachable_from_vertex_0": 1000000,
+      "wall_seconds_including_file_copy_and_bfs": 13.375,
+      "candidate_generation": "f60-only oracle",
+      "extra_distance_evals": 1938090
+    }
+  }
+}

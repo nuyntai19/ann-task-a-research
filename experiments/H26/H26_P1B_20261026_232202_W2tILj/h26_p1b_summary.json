@@ -1,0 +1,271 @@
+{
+  "runs": [
+    {
+      "log": "p1b_r1_top2.log",
+      "bins": [
+        {
+          "bin": "2-63",
+          "leaves": 1,
+          "rows": 61,
+          "pairs": 1891,
+          "pair_dims": 242048,
+          "rank_ns": 21049,
+          "dist_ns": 48631
+        },
+        {
+          "bin": "64-127",
+          "leaves": 6489,
+          "rows": 746103,
+          "pairs": 43446537,
+          "pair_dims": 5561156736,
+          "rank_ns": 330067522,
+          "dist_ns": 505114839
+        },
+        {
+          "bin": "128-255",
+          "leaves": 32157,
+          "rows": 5985752,
+          "pairs": 580845852,
+          "pair_dims": 74348269056,
+          "rank_ns": 3749250056,
+          "dist_ns": 5377897763
+        },
+        {
+          "bin": "256-383",
+          "leaves": 17665,
+          "rows": 5555529,
+          "pairs": 888414587,
+          "pair_dims": 113717067136,
+          "rank_ns": 5363069758,
+          "dist_ns": 7377306884
+        },
+        {
+          "bin": "384-511",
+          "leaves": 11204,
+          "rows": 4958977,
+          "pairs": 1107549006,
+          "pair_dims": 141766272768,
+          "rank_ns": 6610671309,
+          "dist_ns": 8912342716
+        },
+        {
+          "bin": "512-767",
+          "leaves": 12149,
+          "rows": 7570693,
+          "pairs": 2394989897,
+          "pair_dims": 306558706816,
+          "rank_ns": 14518823757,
+          "dist_ns": 20049278216
+        },
+        {
+          "bin": "768-1023",
+          "leaves": 5849,
+          "rows": 5162610,
+          "pairs": 2296697563,
+          "pair_dims": 293977288064,
+          "rank_ns": 14064218173,
+          "dist_ns": 19516035528
+        },
+        {
+          "bin": "1024-1535",
+          "leaves": 15,
+          "rows": 15360,
+          "pairs": 7872000,
+          "pair_dims": 1007616000,
+          "rank_ns": 47480164,
+          "dist_ns": 65057838
+        },
+        {
+          "bin": "1536+",
+          "leaves": 0,
+          "rows": 0,
+          "pairs": 0,
+          "pair_dims": 0,
+          "rank_ns": 0,
+          "dist_ns": 0
+        }
+      ],
+      "rank_worker_ns": 44683601788,
+      "dist_worker_ns": 61803082415,
+      "leaves": 85529,
+      "rows": 29995085,
+      "pair_dims_proxy": 936936618624
+    },
+    {
+      "log": "p1b_r2_top2.log",
+      "bins": [
+        {
+          "bin": "2-63",
+          "leaves": 1,
+          "rows": 61,
+          "pairs": 1891,
+          "pair_dims": 242048,
+          "rank_ns": 23183,
+          "dist_ns": 38181
+        },
+        {
+          "bin": "64-127",
+          "leaves": 6489,
+          "rows": 746103,
+          "pairs": 43446537,
+          "pair_dims": 5561156736,
+          "rank_ns": 334195650,
+          "dist_ns": 510189657
+        },
+        {
+          "bin": "128-255",
+          "leaves": 32157,
+          "rows": 5985752,
+          "pairs": 580845852,
+          "pair_dims": 74348269056,
+          "rank_ns": 3825971387,
+          "dist_ns": 5477410548
+        },
+        {
+          "bin": "256-383",
+          "leaves": 17665,
+          "rows": 5555529,
+          "pairs": 888414587,
+          "pair_dims": 113717067136,
+          "rank_ns": 5494367156,
+          "dist_ns": 7560502399
+        },
+        {
+          "bin": "384-511",
+          "leaves": 11204,
+          "rows": 4958977,
+          "pairs": 1107549006,
+          "pair_dims": 141766272768,
+          "rank_ns": 6738855659,
+          "dist_ns": 9067597631
+        },
+        {
+          "bin": "512-767",
+          "leaves": 12149,
+          "rows": 7570693,
+          "pairs": 2394989897,
+          "pair_dims": 306558706816,
+          "rank_ns": 14816428704,
+          "dist_ns": 20404094936
+        },
+        {
+          "bin": "768-1023",
+          "leaves": 5849,
+          "rows": 5162610,
+          "pairs": 2296697563,
+          "pair_dims": 293977288064,
+          "rank_ns": 14409788030,
+          "dist_ns": 19923971012
+        },
+        {
+          "bin": "1024-1535",
+          "leaves": 15,
+          "rows": 15360,
+          "pairs": 7872000,
+          "pair_dims": 1007616000,
+          "rank_ns": 46911109,
+          "dist_ns": 65108121
+        },
+        {
+          "bin": "1536+",
+          "leaves": 0,
+          "rows": 0,
+          "pairs": 0,
+          "pair_dims": 0,
+          "rank_ns": 0,
+          "dist_ns": 0
+        }
+      ],
+      "rank_worker_ns": 45666540878,
+      "dist_worker_ns": 63008912485,
+      "leaves": 85529,
+      "rows": 29995085,
+      "pair_dims_proxy": 936936618624
+    }
+  ],
+  "median_bins": [
+    {
+      "bin": "2-63",
+      "leaves": 1.0,
+      "rows": 61.0,
+      "pairs": 1891.0,
+      "pair_dims": 242048.0,
+      "rank_ns": 22116.0,
+      "dist_ns": 43406.0
+    },
+    {
+      "bin": "64-127",
+      "leaves": 6489.0,
+      "rows": 746103.0,
+      "pairs": 43446537.0,
+      "pair_dims": 5561156736.0,
+      "rank_ns": 332131586.0,
+      "dist_ns": 507652248.0
+    },
+    {
+      "bin": "128-255",
+      "leaves": 32157.0,
+      "rows": 5985752.0,
+      "pairs": 580845852.0,
+      "pair_dims": 74348269056.0,
+      "rank_ns": 3787610721.5,
+      "dist_ns": 5427654155.5
+    },
+    {
+      "bin": "256-383",
+      "leaves": 17665.0,
+      "rows": 5555529.0,
+      "pairs": 888414587.0,
+      "pair_dims": 113717067136.0,
+      "rank_ns": 5428718457.0,
+      "dist_ns": 7468904641.5
+    },
+    {
+      "bin": "384-511",
+      "leaves": 11204.0,
+      "rows": 4958977.0,
+      "pairs": 1107549006.0,
+      "pair_dims": 141766272768.0,
+      "rank_ns": 6674763484.0,
+      "dist_ns": 8989970173.5
+    },
+    {
+      "bin": "512-767",
+      "leaves": 12149.0,
+      "rows": 7570693.0,
+      "pairs": 2394989897.0,
+      "pair_dims": 306558706816.0,
+      "rank_ns": 14667626230.5,
+      "dist_ns": 20226686576.0
+    },
+    {
+      "bin": "768-1023",
+      "leaves": 5849.0,
+      "rows": 5162610.0,
+      "pairs": 2296697563.0,
+      "pair_dims": 293977288064.0,
+      "rank_ns": 14237003101.5,
+      "dist_ns": 19720003270.0
+    },
+    {
+      "bin": "1024-1535",
+      "leaves": 15.0,
+      "rows": 15360.0,
+      "pairs": 7872000.0,
+      "pair_dims": 1007616000.0,
+      "rank_ns": 47195636.5,
+      "dist_ns": 65082979.5
+    },
+    {
+      "bin": "1536+",
+      "leaves": 0.0,
+      "rows": 0.0,
+      "pairs": 0.0,
+      "pair_dims": 0.0,
+      "rank_ns": 0.0,
+      "dist_ns": 0.0
+    }
+  ],
+  "median_rank_worker_s": 45.175071333,
+  "bin_median_warning": "These are medians per-bin; their sum is not the median per-run total."
+}

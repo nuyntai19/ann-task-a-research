@@ -1,0 +1,2224 @@
+{
+  "status": "R47_R3_OFFLINE_WITNESS_AUDIT_PASS",
+  "scope": "R46 17 native-failing queries; 20 strict GT IDs; one fully repeated native event block per query",
+  "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+  "trace_repetitions_identical": 5,
+  "queries": 17,
+  "targets": 20,
+  "twohop_targets": 18,
+  "non_twohop_targets": 2,
+  "distinct_witness_occurrences_across_targets": 88,
+  "witness_status_counts": {
+    "MERGE_DROP": 3,
+    "CUTOFF_REJECT": 70,
+    "KEPT_THEN_EVICTED": 15
+  },
+  "results": [
+    {
+      "query_id": 84,
+      "gt_id": 469776,
+      "gt_rank": 7,
+      "twohop": true,
+      "witness_count": 4,
+      "status_counts": {
+        "MERGE_DROP": 1,
+        "CUTOFF_REJECT": 3
+      },
+      "witnesses": [
+        {
+          "v": 185089,
+          "expanded_parents": [
+            161547
+          ],
+          "logged_expanded_parents": [
+            161547
+          ],
+          "status": "MERGE_DROP",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_DROP"
+          ],
+          "score_records": [
+            {
+              "distance": 60773.0,
+              "cutoff": 61003.0
+            }
+          ]
+        },
+        {
+          "v": 367405,
+          "expanded_parents": [
+            965855
+          ],
+          "logged_expanded_parents": [
+            965855
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 70532.0,
+              "cutoff": 66287.0
+            }
+          ]
+        },
+        {
+          "v": 460447,
+          "expanded_parents": [
+            152053
+          ],
+          "logged_expanded_parents": [
+            152053
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 75404.0,
+              "cutoff": 64848.0
+            }
+          ]
+        },
+        {
+          "v": 710089,
+          "expanded_parents": [
+            244520,
+            433969,
+            601303
+          ],
+          "logged_expanded_parents": [
+            244520,
+            433969,
+            601303
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 62325.0,
+              "cutoff": 62108.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 1533,
+      "gt_id": 439780,
+      "gt_rank": 2,
+      "twohop": true,
+      "witness_count": 5,
+      "status_counts": {
+        "KEPT_THEN_EVICTED": 2,
+        "CUTOFF_REJECT": 3
+      },
+      "witnesses": [
+        {
+          "v": 15784,
+          "expanded_parents": [
+            156396
+          ],
+          "logged_expanded_parents": [
+            156396
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 103607.0,
+              "cutoff": 165245.0
+            }
+          ]
+        },
+        {
+          "v": 241295,
+          "expanded_parents": [
+            498212
+          ],
+          "logged_expanded_parents": [
+            498212
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 97246.0,
+              "cutoff": 101412.0
+            }
+          ]
+        },
+        {
+          "v": 241541,
+          "expanded_parents": [
+            432313
+          ],
+          "logged_expanded_parents": [
+            432313
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 99941.0,
+              "cutoff": 96701.0
+            }
+          ]
+        },
+        {
+          "v": 492691,
+          "expanded_parents": [
+            315359
+          ],
+          "logged_expanded_parents": [
+            315359
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 131631.0,
+              "cutoff": 96483.0
+            }
+          ]
+        },
+        {
+          "v": 613224,
+          "expanded_parents": [
+            432313
+          ],
+          "logged_expanded_parents": [
+            432313
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 112014.0,
+              "cutoff": 96701.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 1715,
+      "gt_id": 420244,
+      "gt_rank": 9,
+      "twohop": true,
+      "witness_count": 5,
+      "status_counts": {
+        "CUTOFF_REJECT": 3,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "witnesses": [
+        {
+          "v": 76162,
+          "expanded_parents": [
+            941247,
+            947678
+          ],
+          "logged_expanded_parents": [
+            941247,
+            947678
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 104075.0,
+              "cutoff": 97236.0
+            }
+          ]
+        },
+        {
+          "v": 279747,
+          "expanded_parents": [
+            547576
+          ],
+          "logged_expanded_parents": [
+            547576
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 96350.0,
+              "cutoff": 99488.0
+            }
+          ]
+        },
+        {
+          "v": 310765,
+          "expanded_parents": [
+            614105,
+            614435
+          ],
+          "logged_expanded_parents": [
+            614105,
+            614435
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 104044.0,
+              "cutoff": 107038.0
+            }
+          ]
+        },
+        {
+          "v": 531972,
+          "expanded_parents": [
+            787003
+          ],
+          "logged_expanded_parents": [
+            787003
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 100123.0,
+              "cutoff": 91799.0
+            }
+          ]
+        },
+        {
+          "v": 922768,
+          "expanded_parents": [
+            920630
+          ],
+          "logged_expanded_parents": [
+            920630
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 109370.0,
+              "cutoff": 93881.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 1822,
+      "gt_id": 968826,
+      "gt_rank": 7,
+      "twohop": true,
+      "witness_count": 14,
+      "status_counts": {
+        "KEPT_THEN_EVICTED": 2,
+        "CUTOFF_REJECT": 12
+      },
+      "witnesses": [
+        {
+          "v": 122505,
+          "expanded_parents": [
+            893231
+          ],
+          "logged_expanded_parents": [
+            893231
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 122445.0,
+              "cutoff": 152419.0
+            }
+          ]
+        },
+        {
+          "v": 152327,
+          "expanded_parents": [
+            750734,
+            752664
+          ],
+          "logged_expanded_parents": [
+            750734,
+            752664
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 110890.0,
+              "cutoff": 97417.0
+            }
+          ]
+        },
+        {
+          "v": 168760,
+          "expanded_parents": [
+            171736
+          ],
+          "logged_expanded_parents": [
+            171736
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 97099.0,
+              "cutoff": 96398.0
+            }
+          ]
+        },
+        {
+          "v": 171119,
+          "expanded_parents": [
+            171736
+          ],
+          "logged_expanded_parents": [
+            171736
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 101242.0,
+              "cutoff": 96398.0
+            }
+          ]
+        },
+        {
+          "v": 199212,
+          "expanded_parents": [
+            573681
+          ],
+          "logged_expanded_parents": [
+            573681
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 115904.0,
+              "cutoff": 97417.0
+            }
+          ]
+        },
+        {
+          "v": 219691,
+          "expanded_parents": [
+            289177
+          ],
+          "logged_expanded_parents": [
+            289177
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 107182.0,
+              "cutoff": 93031.0
+            }
+          ]
+        },
+        {
+          "v": 373389,
+          "expanded_parents": [
+            573681,
+            907443
+          ],
+          "logged_expanded_parents": [
+            573681,
+            907443
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "SEEN_SKIP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 95020.0,
+              "cutoff": 98852.0
+            }
+          ]
+        },
+        {
+          "v": 377940,
+          "expanded_parents": [
+            741129
+          ],
+          "logged_expanded_parents": [
+            741129
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 127741.0,
+              "cutoff": 101974.0
+            }
+          ]
+        },
+        {
+          "v": 425026,
+          "expanded_parents": [
+            752664
+          ],
+          "logged_expanded_parents": [
+            752664
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 124104.0,
+              "cutoff": 96398.0
+            }
+          ]
+        },
+        {
+          "v": 516885,
+          "expanded_parents": [
+            573681
+          ],
+          "logged_expanded_parents": [
+            573681
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 126494.0,
+              "cutoff": 97417.0
+            }
+          ]
+        },
+        {
+          "v": 645631,
+          "expanded_parents": [
+            671546
+          ],
+          "logged_expanded_parents": [
+            671546
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 155729.0,
+              "cutoff": 93031.0
+            }
+          ]
+        },
+        {
+          "v": 732015,
+          "expanded_parents": [
+            437406
+          ],
+          "logged_expanded_parents": [
+            437406
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 155817.0,
+              "cutoff": 92303.0
+            }
+          ]
+        },
+        {
+          "v": 969024,
+          "expanded_parents": [
+            61674
+          ],
+          "logged_expanded_parents": [
+            61674
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 100253.0,
+              "cutoff": 95085.0
+            }
+          ]
+        },
+        {
+          "v": 987362,
+          "expanded_parents": [
+            123145,
+            339559
+          ],
+          "logged_expanded_parents": [
+            123145,
+            339559
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 100471.0,
+              "cutoff": 93863.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 2711,
+      "gt_id": 886706,
+      "gt_rank": 8,
+      "twohop": true,
+      "witness_count": 3,
+      "status_counts": {
+        "CUTOFF_REJECT": 3
+      },
+      "witnesses": [
+        {
+          "v": 452,
+          "expanded_parents": [
+            7437
+          ],
+          "logged_expanded_parents": [
+            7437
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 96076.0,
+              "cutoff": 86226.0
+            }
+          ]
+        },
+        {
+          "v": 679582,
+          "expanded_parents": [
+            215745
+          ],
+          "logged_expanded_parents": [
+            215745
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 95861.0,
+              "cutoff": 89867.0
+            }
+          ]
+        },
+        {
+          "v": 940240,
+          "expanded_parents": [
+            989070
+          ],
+          "logged_expanded_parents": [
+            989070
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 98924.0,
+              "cutoff": 84587.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 2819,
+      "gt_id": 938020,
+      "gt_rank": 5,
+      "twohop": true,
+      "witness_count": 9,
+      "status_counts": {
+        "CUTOFF_REJECT": 7,
+        "KEPT_THEN_EVICTED": 1,
+        "MERGE_DROP": 1
+      },
+      "witnesses": [
+        {
+          "v": 287474,
+          "expanded_parents": [
+            236117,
+            335626
+          ],
+          "logged_expanded_parents": [
+            236117,
+            335626
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 76128.0,
+              "cutoff": 64680.0
+            }
+          ]
+        },
+        {
+          "v": 442087,
+          "expanded_parents": [
+            15978
+          ],
+          "logged_expanded_parents": [
+            15978
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 86417.0,
+              "cutoff": 67153.0
+            }
+          ]
+        },
+        {
+          "v": 574288,
+          "expanded_parents": [
+            575624
+          ],
+          "logged_expanded_parents": [
+            575624
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 65112.0,
+              "cutoff": 64680.0
+            }
+          ]
+        },
+        {
+          "v": 702166,
+          "expanded_parents": [
+            14561,
+            47251
+          ],
+          "logged_expanded_parents": [
+            14561,
+            47251
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 70942.0,
+              "cutoff": 65512.0
+            }
+          ]
+        },
+        {
+          "v": 709583,
+          "expanded_parents": [
+            575624
+          ],
+          "logged_expanded_parents": [
+            575624
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 81819.0,
+              "cutoff": 64680.0
+            }
+          ]
+        },
+        {
+          "v": 775620,
+          "expanded_parents": [
+            112428
+          ],
+          "logged_expanded_parents": [
+            112428
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 84317.0,
+              "cutoff": 65512.0
+            }
+          ]
+        },
+        {
+          "v": 794957,
+          "expanded_parents": [
+            812756
+          ],
+          "logged_expanded_parents": [
+            812756
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 70619.0,
+              "cutoff": 64680.0
+            }
+          ]
+        },
+        {
+          "v": 802260,
+          "expanded_parents": [
+            153342,
+            413603,
+            563120,
+            660400,
+            807933
+          ],
+          "logged_expanded_parents": [
+            153342,
+            413603,
+            563120,
+            660400,
+            807933
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT",
+            "SEEN_SKIP",
+            "SEEN_SKIP",
+            "SEEN_SKIP",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 69506.0,
+              "cutoff": 73389.0
+            }
+          ]
+        },
+        {
+          "v": 811266,
+          "expanded_parents": [
+            413603,
+            812756
+          ],
+          "logged_expanded_parents": [
+            413603,
+            812756
+          ],
+          "status": "MERGE_DROP",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "SEEN_SKIP",
+            "MERGE_DROP"
+          ],
+          "score_records": [
+            {
+              "distance": 64666.0,
+              "cutoff": 64680.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 3410,
+      "gt_id": 201879,
+      "gt_rank": 9,
+      "twohop": false,
+      "witness_count": 0,
+      "status_counts": {},
+      "witnesses": []
+    },
+    {
+      "query_id": 3410,
+      "gt_id": 266157,
+      "gt_rank": 10,
+      "twohop": false,
+      "witness_count": 0,
+      "status_counts": {},
+      "witnesses": []
+    },
+    {
+      "query_id": 4757,
+      "gt_id": 453367,
+      "gt_rank": 6,
+      "twohop": true,
+      "witness_count": 2,
+      "status_counts": {
+        "CUTOFF_REJECT": 2
+      },
+      "witnesses": [
+        {
+          "v": 293128,
+          "expanded_parents": [
+            326900
+          ],
+          "logged_expanded_parents": [
+            326900
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 93715.0,
+              "cutoff": 89896.0
+            }
+          ]
+        },
+        {
+          "v": 459165,
+          "expanded_parents": [
+            326900
+          ],
+          "logged_expanded_parents": [
+            326900
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 99932.0,
+              "cutoff": 89896.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 4757,
+      "gt_id": 453375,
+      "gt_rank": 7,
+      "twohop": true,
+      "witness_count": 1,
+      "status_counts": {
+        "CUTOFF_REJECT": 1
+      },
+      "witnesses": [
+        {
+          "v": 460072,
+          "expanded_parents": [
+            326900
+          ],
+          "logged_expanded_parents": [
+            326900
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 104061.0,
+              "cutoff": 89896.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 5272,
+      "gt_id": 77611,
+      "gt_rank": 3,
+      "twohop": true,
+      "witness_count": 6,
+      "status_counts": {
+        "KEPT_THEN_EVICTED": 3,
+        "CUTOFF_REJECT": 3
+      },
+      "witnesses": [
+        {
+          "v": 515930,
+          "expanded_parents": [
+            261808,
+            516168
+          ],
+          "logged_expanded_parents": [
+            261808,
+            516168
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 65529.0,
+              "cutoff": 67113.0
+            }
+          ]
+        },
+        {
+          "v": 524609,
+          "expanded_parents": [
+            524249
+          ],
+          "logged_expanded_parents": [
+            524249
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 65656.0,
+              "cutoff": 70929.0
+            }
+          ]
+        },
+        {
+          "v": 540485,
+          "expanded_parents": [
+            89551,
+            90970,
+            540513
+          ],
+          "logged_expanded_parents": [
+            89551,
+            90970,
+            540513
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "SEEN_SKIP",
+            "BEAM_EVICT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 65744.0,
+              "cutoff": 69998.0
+            }
+          ]
+        },
+        {
+          "v": 851653,
+          "expanded_parents": [
+            685458
+          ],
+          "logged_expanded_parents": [
+            685458
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 78411.0,
+              "cutoff": 64634.0
+            }
+          ]
+        },
+        {
+          "v": 868501,
+          "expanded_parents": [
+            89551
+          ],
+          "logged_expanded_parents": [
+            89551
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 85174.0,
+              "cutoff": 68893.0
+            }
+          ]
+        },
+        {
+          "v": 905024,
+          "expanded_parents": [
+            516168
+          ],
+          "logged_expanded_parents": [
+            516168
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 83718.0,
+              "cutoff": 67113.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 5622,
+      "gt_id": 62618,
+      "gt_rank": 9,
+      "twohop": true,
+      "witness_count": 6,
+      "status_counts": {
+        "CUTOFF_REJECT": 6
+      },
+      "witnesses": [
+        {
+          "v": 111198,
+          "expanded_parents": [
+            578270
+          ],
+          "logged_expanded_parents": [
+            578270
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 91026.0,
+              "cutoff": 78105.0
+            }
+          ]
+        },
+        {
+          "v": 185668,
+          "expanded_parents": [
+            185281
+          ],
+          "logged_expanded_parents": [
+            185281
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 77400.0,
+              "cutoff": 76433.0
+            }
+          ]
+        },
+        {
+          "v": 221835,
+          "expanded_parents": [
+            961588,
+            993213
+          ],
+          "logged_expanded_parents": [
+            961588,
+            993213
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 87097.0,
+              "cutoff": 80654.0
+            }
+          ]
+        },
+        {
+          "v": 531129,
+          "expanded_parents": [
+            403592
+          ],
+          "logged_expanded_parents": [
+            403592
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 91772.0,
+              "cutoff": 75917.0
+            }
+          ]
+        },
+        {
+          "v": 533084,
+          "expanded_parents": [
+            399540,
+            403592
+          ],
+          "logged_expanded_parents": [
+            399540,
+            403592
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 109723.0,
+              "cutoff": 75917.0
+            }
+          ]
+        },
+        {
+          "v": 966037,
+          "expanded_parents": [
+            551812
+          ],
+          "logged_expanded_parents": [
+            551812
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 82530.0,
+              "cutoff": 77231.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 7167,
+      "gt_id": 925061,
+      "gt_rank": 10,
+      "twohop": true,
+      "witness_count": 6,
+      "status_counts": {
+        "CUTOFF_REJECT": 6
+      },
+      "witnesses": [
+        {
+          "v": 97107,
+          "expanded_parents": [
+            246467
+          ],
+          "logged_expanded_parents": [
+            246467
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 94813.0,
+              "cutoff": 79720.0
+            }
+          ]
+        },
+        {
+          "v": 111179,
+          "expanded_parents": [
+            842895
+          ],
+          "logged_expanded_parents": [
+            842895
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 92516.0,
+              "cutoff": 81070.0
+            }
+          ]
+        },
+        {
+          "v": 206045,
+          "expanded_parents": [
+            586301
+          ],
+          "logged_expanded_parents": [
+            586301
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 86957.0,
+              "cutoff": 83560.0
+            }
+          ]
+        },
+        {
+          "v": 244861,
+          "expanded_parents": [
+            474439
+          ],
+          "logged_expanded_parents": [
+            474439
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 81861.0,
+              "cutoff": 81070.0
+            }
+          ]
+        },
+        {
+          "v": 561706,
+          "expanded_parents": [
+            834872
+          ],
+          "logged_expanded_parents": [
+            834872
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 85373.0,
+              "cutoff": 80501.0
+            }
+          ]
+        },
+        {
+          "v": 789274,
+          "expanded_parents": [
+            842895
+          ],
+          "logged_expanded_parents": [
+            842895
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 87681.0,
+              "cutoff": 81070.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 7196,
+      "gt_id": 438859,
+      "gt_rank": 8,
+      "twohop": true,
+      "witness_count": 4,
+      "status_counts": {
+        "CUTOFF_REJECT": 2,
+        "KEPT_THEN_EVICTED": 1,
+        "MERGE_DROP": 1
+      },
+      "witnesses": [
+        {
+          "v": 76027,
+          "expanded_parents": [
+            454567
+          ],
+          "logged_expanded_parents": [
+            454567
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 149943.0,
+              "cutoff": 137037.0
+            }
+          ]
+        },
+        {
+          "v": 95206,
+          "expanded_parents": [
+            519009
+          ],
+          "logged_expanded_parents": [
+            519009
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 145829.0,
+              "cutoff": 149329.0
+            }
+          ]
+        },
+        {
+          "v": 455468,
+          "expanded_parents": [
+            291588,
+            509007,
+            924727
+          ],
+          "logged_expanded_parents": [
+            291588,
+            509007,
+            924727
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 156959.0,
+              "cutoff": 151159.0
+            }
+          ]
+        },
+        {
+          "v": 790382,
+          "expanded_parents": [
+            291588,
+            927006
+          ],
+          "logged_expanded_parents": [
+            291588,
+            927006
+          ],
+          "status": "MERGE_DROP",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_DROP",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 151899.0,
+              "cutoff": 154007.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 7935,
+      "gt_id": 66125,
+      "gt_rank": 5,
+      "twohop": true,
+      "witness_count": 6,
+      "status_counts": {
+        "CUTOFF_REJECT": 4,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "witnesses": [
+        {
+          "v": 62738,
+          "expanded_parents": [
+            659145
+          ],
+          "logged_expanded_parents": [
+            659145
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 74281.0,
+              "cutoff": 69605.0
+            }
+          ]
+        },
+        {
+          "v": 300526,
+          "expanded_parents": [
+            297974
+          ],
+          "logged_expanded_parents": [
+            297974
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 94340.0,
+              "cutoff": 75828.0
+            }
+          ]
+        },
+        {
+          "v": 325066,
+          "expanded_parents": [
+            456677
+          ],
+          "logged_expanded_parents": [
+            456677
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 88074.0,
+              "cutoff": 3.40282e+38
+            }
+          ]
+        },
+        {
+          "v": 683694,
+          "expanded_parents": [
+            683613
+          ],
+          "logged_expanded_parents": [
+            683613
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 88574.0,
+              "cutoff": 70713.0
+            }
+          ]
+        },
+        {
+          "v": 735033,
+          "expanded_parents": [
+            456677
+          ],
+          "logged_expanded_parents": [
+            456677
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 77175.0,
+              "cutoff": 3.40282e+38
+            }
+          ]
+        },
+        {
+          "v": 930853,
+          "expanded_parents": [
+            195621,
+            274437,
+            463374
+          ],
+          "logged_expanded_parents": [
+            195621,
+            274437,
+            463374
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 74659.0,
+              "cutoff": 72363.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 7935,
+      "gt_id": 978211,
+      "gt_rank": 6,
+      "twohop": true,
+      "witness_count": 1,
+      "status_counts": {
+        "CUTOFF_REJECT": 1
+      },
+      "witnesses": [
+        {
+          "v": 367999,
+          "expanded_parents": [
+            367033
+          ],
+          "logged_expanded_parents": [
+            367033
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 77280.0,
+              "cutoff": 69638.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 8083,
+      "gt_id": 823939,
+      "gt_rank": 8,
+      "twohop": true,
+      "witness_count": 3,
+      "status_counts": {
+        "KEPT_THEN_EVICTED": 1,
+        "CUTOFF_REJECT": 2
+      },
+      "witnesses": [
+        {
+          "v": 791218,
+          "expanded_parents": [
+            664980
+          ],
+          "logged_expanded_parents": [
+            664980
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 77357.0,
+              "cutoff": 95505.0
+            }
+          ]
+        },
+        {
+          "v": 853825,
+          "expanded_parents": [
+            442835,
+            504049
+          ],
+          "logged_expanded_parents": [
+            442835,
+            504049
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 83451.0,
+              "cutoff": 76367.0
+            }
+          ]
+        },
+        {
+          "v": 857371,
+          "expanded_parents": [
+            504049
+          ],
+          "logged_expanded_parents": [
+            504049
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 82969.0,
+              "cutoff": 76367.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 8254,
+      "gt_id": 438741,
+      "gt_rank": 10,
+      "twohop": true,
+      "witness_count": 7,
+      "status_counts": {
+        "CUTOFF_REJECT": 7
+      },
+      "witnesses": [
+        {
+          "v": 368812,
+          "expanded_parents": [
+            585879
+          ],
+          "logged_expanded_parents": [
+            585879
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 98193.0,
+              "cutoff": 84744.0
+            }
+          ]
+        },
+        {
+          "v": 429502,
+          "expanded_parents": [
+            910749
+          ],
+          "logged_expanded_parents": [
+            910749
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 91408.0,
+              "cutoff": 84426.0
+            }
+          ]
+        },
+        {
+          "v": 713533,
+          "expanded_parents": [
+            470729
+          ],
+          "logged_expanded_parents": [
+            470729
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 97913.0,
+              "cutoff": 87845.0
+            }
+          ]
+        },
+        {
+          "v": 730552,
+          "expanded_parents": [
+            969566
+          ],
+          "logged_expanded_parents": [
+            969566
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 107351.0,
+              "cutoff": 84744.0
+            }
+          ]
+        },
+        {
+          "v": 806770,
+          "expanded_parents": [
+            459667
+          ],
+          "logged_expanded_parents": [
+            459667
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 108056.0,
+              "cutoff": 84744.0
+            }
+          ]
+        },
+        {
+          "v": 956649,
+          "expanded_parents": [
+            969566
+          ],
+          "logged_expanded_parents": [
+            969566
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 119107.0,
+              "cutoff": 84744.0
+            }
+          ]
+        },
+        {
+          "v": 970023,
+          "expanded_parents": [
+            969566
+          ],
+          "logged_expanded_parents": [
+            969566
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 85574.0,
+              "cutoff": 84744.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 8748,
+      "gt_id": 593477,
+      "gt_rank": 4,
+      "twohop": true,
+      "witness_count": 3,
+      "status_counts": {
+        "CUTOFF_REJECT": 3
+      },
+      "witnesses": [
+        {
+          "v": 397503,
+          "expanded_parents": [
+            219567,
+            676165
+          ],
+          "logged_expanded_parents": [
+            219567,
+            676165
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT",
+            "SEEN_SKIP"
+          ],
+          "score_records": [
+            {
+              "distance": 103337.0,
+              "cutoff": 90060.0
+            }
+          ]
+        },
+        {
+          "v": 425868,
+          "expanded_parents": [
+            874986
+          ],
+          "logged_expanded_parents": [
+            874986
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 90732.0,
+              "cutoff": 90060.0
+            }
+          ]
+        },
+        {
+          "v": 753208,
+          "expanded_parents": [
+            843582
+          ],
+          "logged_expanded_parents": [
+            843582
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 126734.0,
+              "cutoff": 90060.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query_id": 8966,
+      "gt_id": 520590,
+      "gt_rank": 4,
+      "twohop": true,
+      "witness_count": 3,
+      "status_counts": {
+        "CUTOFF_REJECT": 2,
+        "KEPT_THEN_EVICTED": 1
+      },
+      "witnesses": [
+        {
+          "v": 119461,
+          "expanded_parents": [
+            753214
+          ],
+          "logged_expanded_parents": [
+            753214
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 118846.0,
+              "cutoff": 98599.0
+            }
+          ]
+        },
+        {
+          "v": 412585,
+          "expanded_parents": [
+            1738
+          ],
+          "logged_expanded_parents": [
+            1738
+          ],
+          "status": "KEPT_THEN_EVICTED",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "STAGE",
+            "MERGE_KEEP",
+            "BEAM_EVICT"
+          ],
+          "score_records": [
+            {
+              "distance": 101227.0,
+              "cutoff": 102336.0
+            }
+          ]
+        },
+        {
+          "v": 521216,
+          "expanded_parents": [
+            65253
+          ],
+          "logged_expanded_parents": [
+            65253
+          ],
+          "status": "CUTOFF_REJECT",
+          "event_types": [
+            "DISCOVER",
+            "SCORE",
+            "CUTOFF_REJECT"
+          ],
+          "score_records": [
+            {
+              "distance": 135866.0,
+              "cutoff": 121872.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "caution": "A two-hop witness does not imply the native search would have reached the target; R47 has not yet shown per-query Top-k ID parity."
+}

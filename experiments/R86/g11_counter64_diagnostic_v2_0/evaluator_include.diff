@@ -1,0 +1,11 @@
+--- original-v4
++++ diagnostic-v2
+@@ -12,7 +12,7 @@
+ 
+ #include "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/utils/euclidian_point.h"
+ #include "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/utils/point_range.h"
+-#include "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/utils/check_nn_recall.h"
++#include "/home/tai/ann-task-a/experiments/R86/g11_counter64_diagnostic_v2_0/h70_effective_utils/check_nn_recall.h"
+ 
+ int main(int argc, char **argv) {
+   if (argc != 6) {

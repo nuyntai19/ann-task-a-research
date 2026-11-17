@@ -1,0 +1,19 @@
+{
+  "kind": "NOMINAL_ALLOCATION_MODEL_NOT_RSS",
+  "nodes": 1000000,
+  "cap": 160,
+  "base": 64,
+  "promoted": 45804,
+  "flat_bytes": 1288000000,
+  "small_bytes": 520000000,
+  "promoted_bytes": 58995552,
+  "pointer_bytes": 8000000,
+  "tier_bytes": 586995552,
+  "nominal_saved_bytes": 701004448,
+  "nominal_saved_MiB": 668.53,
+  "nominal_saved_percent": 54.426,
+  "limitations": [
+    "allocator overhead, page residency, fragmentation, slab reserves, vector buffers, graph, peak overlap not modeled",
+    "promoted count is from R60 snapshot, not proven for any modified concurrency schedule"
+  ]
+}

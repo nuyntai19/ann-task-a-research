@@ -1,0 +1,33 @@
+========== R74 HARDWARE AUDIT ==========
+2026-11-05T01:09:48+07:00
+[CPU SUMMARY]
+Architecture:                            x86_64
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Model name:                              AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+NUMA node(s):                            1
+[CPU TO CORE MAPPING]
+CPU CORE SOCKET NODE ONLINE
+  0    0      0    0    yes
+  1    0      0    0    yes
+  2    1      0    0    yes
+  3    1      0    0    yes
+  4    2      0    0    yes
+  5    2      0    0    yes
+  6    3      0    0    yes
+  7    3      0    0    yes
+[CPU RESOURCE SETTINGS]
+/sys/devices/system/cpu/smt/active: 1
+/sys/fs/cgroup/cpuset.cpus.effective: 0-7
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor: schedutil
+/proc/sys/kernel/perf_event_paranoid: 4
+[PROFILING TOOL]
+perf version 7.0.14
+[MEMORY]
+               total        used        free      shared  buff/cache   available
+BNhớ:           13Gi       6.5Gi       2.2Gi        70Mi       5.2Gi       7.1Gi
+Tráo đổi:      4.0Gi       168Mi       3.8Gi
+R74_HARDWARE_AUDIT_PASS

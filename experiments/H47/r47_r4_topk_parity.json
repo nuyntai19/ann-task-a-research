@@ -1,0 +1,463 @@
+{
+  "audit": "R47_R4_NATIVE_TOPK_ID_PARITY_PASS",
+  "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+  "r45_query_sample_sha256": "b1074bcd62c377d2c4e0ebbf9adc04253ed6a56ac3cee9f942e0560a3eeac72b",
+  "Q": 100,
+  "k": 10,
+  "queries": 17,
+  "repeats": 5,
+  "checks": [
+    "top10_order_exact",
+    "full_beam100_order_exact",
+    "visited_id_set",
+    "full_distance_comparisons",
+    "R45_repeats_identical",
+    "R47_repeats_identical"
+  ],
+  "method": "R47 MERGE_KEEP/BEAM_EVICT replay + exact integer-coordinate L2 ranking, cross-checked with R45 SEARCH beam and visited IDs",
+  "caution": "Supports search-result parity only; does not demonstrate a graph-construction causal mechanism or a recall improvement.",
+  "per_query": [
+    {
+      "query_id": 84,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        8894,
+        227733,
+        32475,
+        216176,
+        280838,
+        711937,
+        299339,
+        351328,
+        215822,
+        280264
+      ],
+      "visited_count": 112,
+      "comparisons": 2417,
+      "events_first_repeat": {
+        "merge_keep": 413,
+        "merge_drop": 28,
+        "evicted_old_beam": 314
+      }
+    },
+    {
+      "query_id": 1533,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        43311,
+        251375,
+        928831,
+        156396,
+        387392,
+        660730,
+        472197,
+        399588,
+        956166,
+        887955
+      ],
+      "visited_count": 110,
+      "comparisons": 2097,
+      "events_first_repeat": {
+        "merge_keep": 435,
+        "merge_drop": 38,
+        "evicted_old_beam": 336
+      }
+    },
+    {
+      "query_id": 1715,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        770838,
+        175432,
+        347921,
+        944570,
+        179836,
+        771091,
+        511569,
+        614435,
+        389631,
+        934074
+      ],
+      "visited_count": 116,
+      "comparisons": 2650,
+      "events_first_repeat": {
+        "merge_keep": 498,
+        "merge_drop": 47,
+        "evicted_old_beam": 399
+      }
+    },
+    {
+      "query_id": 1822,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        978291,
+        690270,
+        181194,
+        66030,
+        681619,
+        964284,
+        822909,
+        907443,
+        330248,
+        414270
+      ],
+      "visited_count": 128,
+      "comparisons": 2752,
+      "events_first_repeat": {
+        "merge_keep": 598,
+        "merge_drop": 58,
+        "evicted_old_beam": 499
+      }
+    },
+    {
+      "query_id": 2711,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        7437,
+        807034,
+        935787,
+        8569,
+        229821,
+        113229,
+        354589,
+        543701,
+        633958,
+        99249
+      ],
+      "visited_count": 128,
+      "comparisons": 3156,
+      "events_first_repeat": {
+        "merge_keep": 564,
+        "merge_drop": 38,
+        "evicted_old_beam": 465
+      }
+    },
+    {
+      "query_id": 2819,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        322175,
+        107218,
+        509987,
+        140779,
+        982408,
+        124639,
+        14552,
+        887295,
+        9733,
+        880479
+      ],
+      "visited_count": 138,
+      "comparisons": 2876,
+      "events_first_repeat": {
+        "merge_keep": 646,
+        "merge_drop": 47,
+        "evicted_old_beam": 547
+      }
+    },
+    {
+      "query_id": 3410,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        372082,
+        712653,
+        482633,
+        165207,
+        194546,
+        273362,
+        531021,
+        531344,
+        256504,
+        519512
+      ],
+      "visited_count": 117,
+      "comparisons": 2758,
+      "events_first_repeat": {
+        "merge_keep": 467,
+        "merge_drop": 53,
+        "evicted_old_beam": 368
+      }
+    },
+    {
+      "query_id": 4757,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        283791,
+        866194,
+        376275,
+        494491,
+        96874,
+        499111,
+        460621,
+        634729,
+        474880,
+        198904
+      ],
+      "visited_count": 105,
+      "comparisons": 2138,
+      "events_first_repeat": {
+        "merge_keep": 340,
+        "merge_drop": 47,
+        "evicted_old_beam": 241
+      }
+    },
+    {
+      "query_id": 5272,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        833208,
+        223485,
+        90970,
+        980960,
+        223579,
+        198967,
+        277783,
+        594403,
+        980166,
+        562664
+      ],
+      "visited_count": 113,
+      "comparisons": 2540,
+      "events_first_repeat": {
+        "merge_keep": 528,
+        "merge_drop": 35,
+        "evicted_old_beam": 429
+      }
+    },
+    {
+      "query_id": 5622,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        199806,
+        264084,
+        885914,
+        226203,
+        887467,
+        104573,
+        386013,
+        961981,
+        951781,
+        199089
+      ],
+      "visited_count": 113,
+      "comparisons": 2563,
+      "events_first_repeat": {
+        "merge_keep": 524,
+        "merge_drop": 36,
+        "evicted_old_beam": 425
+      }
+    },
+    {
+      "query_id": 7167,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        373637,
+        586301,
+        490989,
+        842874,
+        734269,
+        679409,
+        932653,
+        130229,
+        391654,
+        471985
+      ],
+      "visited_count": 120,
+      "comparisons": 2634,
+      "events_first_repeat": {
+        "merge_keep": 557,
+        "merge_drop": 53,
+        "evicted_old_beam": 458
+      }
+    },
+    {
+      "query_id": 7196,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        925536,
+        137697,
+        725792,
+        289797,
+        614366,
+        232137,
+        924727,
+        426650,
+        924359,
+        798770
+      ],
+      "visited_count": 118,
+      "comparisons": 2127,
+      "events_first_repeat": {
+        "merge_keep": 504,
+        "merge_drop": 55,
+        "evicted_old_beam": 405
+      }
+    },
+    {
+      "query_id": 7935,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        297974,
+        788111,
+        943515,
+        235765,
+        62749,
+        15562,
+        521695,
+        495232,
+        236020,
+        806879
+      ],
+      "visited_count": 123,
+      "comparisons": 2809,
+      "events_first_repeat": {
+        "merge_keep": 438,
+        "merge_drop": 25,
+        "evicted_old_beam": 339
+      }
+    },
+    {
+      "query_id": 8083,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        704367,
+        618455,
+        484513,
+        258860,
+        787584,
+        565797,
+        618110,
+        703423,
+        993498,
+        580430
+      ],
+      "visited_count": 121,
+      "comparisons": 2405,
+      "events_first_repeat": {
+        "merge_keep": 613,
+        "merge_drop": 53,
+        "evicted_old_beam": 514
+      }
+    },
+    {
+      "query_id": 8254,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        954577,
+        702938,
+        548995,
+        550066,
+        107243,
+        232025,
+        171238,
+        527424,
+        703098,
+        181028
+      ],
+      "visited_count": 114,
+      "comparisons": 2557,
+      "events_first_repeat": {
+        "merge_keep": 386,
+        "merge_drop": 51,
+        "evicted_old_beam": 287
+      }
+    },
+    {
+      "query_id": 8748,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        766510,
+        33353,
+        403873,
+        680749,
+        185972,
+        111742,
+        179823,
+        721151,
+        498907,
+        808571
+      ],
+      "visited_count": 121,
+      "comparisons": 2411,
+      "events_first_repeat": {
+        "merge_keep": 493,
+        "merge_drop": 39,
+        "evicted_old_beam": 394
+      }
+    },
+    {
+      "query_id": 8966,
+      "top10_parity": true,
+      "beam100_parity": true,
+      "visited_id_set_parity": true,
+      "comparisons_parity": true,
+      "top10": [
+        436370,
+        40207,
+        488557,
+        471431,
+        62819,
+        175272,
+        463353,
+        250297,
+        729278,
+        803078
+      ],
+      "visited_count": 120,
+      "comparisons": 2408,
+      "events_first_repeat": {
+        "merge_keep": 507,
+        "merge_drop": 48,
+        "evicted_old_beam": 408
+      }
+    }
+  ]
+}

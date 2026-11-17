@@ -1,0 +1,60 @@
+{
+  "B160": {
+    "median_wall_s": 41.79,
+    "median_peak_rss_kib": 2798160,
+    "median_arcs": 26017720,
+    "all_wall_s": [
+      42.28,
+      41.79,
+      41.75
+    ],
+    "all_peak_rss_kib": [
+      2798160,
+      2801688,
+      2792372
+    ]
+  },
+  "B64": {
+    "median_wall_s": 41.5,
+    "median_peak_rss_kib": 2032800,
+    "median_arcs": 23848958,
+    "all_wall_s": [
+      41.89,
+      41.12,
+      41.5
+    ],
+    "all_peak_rss_kib": [
+      2029372,
+      2032800,
+      2033360
+    ]
+  },
+  "D0": {
+    "median_wall_s": 43.24,
+    "median_peak_rss_kib": 2214520,
+    "median_arcs": 26036292,
+    "all_wall_s": [
+      43.24,
+      43.22,
+      43.74
+    ],
+    "all_peak_rss_kib": [
+      2216452,
+      2210744,
+      2214520
+    ]
+  },
+  "B64_vs_D0": {
+    "wall_pct": -4.024051803885298,
+    "rss_pct": -8.20584144645341
+  },
+  "B160_vs_D0": {
+    "wall_pct": -3.3533765032377483,
+    "rss_pct": 26.355146939291572
+  },
+  "B64_vs_B160": {
+    "wall_pct": -0.6939459200765663,
+    "rss_pct": -27.352260056608625
+  },
+  "status": "BUILD_PASS_PENDING_QUALITY_AND_MATCHED_RECALL"
+}

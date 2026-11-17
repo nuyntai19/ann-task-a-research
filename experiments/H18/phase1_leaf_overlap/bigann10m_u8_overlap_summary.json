@@ -1,0 +1,218 @@
+{
+  "dataset": "bigann10m_u8",
+  "n_points": 10000000,
+  "leaf_count": 990624,
+  "leaf_memberships": 299999736,
+  "mean_leaf_size": 302.8391559259618,
+  "max_leaf_size": 1024,
+  "total_pair_events_D": 64285768792,
+  "pair_event_samples": 6000,
+  "seed": 20261023,
+  "estimated_pair_redundancy_fraction": 0.186223,
+  "estimated_pair_redundancy_95pct_normal_CI": [
+    0.178921,
+    0.193525
+  ],
+  "sampled_pair_multiplicity_histogram": {
+    "1": 4154,
+    "2": 1040,
+    "3": 364,
+    "5": 95,
+    "4": 185,
+    "7": 28,
+    "6": 72,
+    "9": 15,
+    "10+": 33,
+    "8": 14
+  },
+  "probe_leaf_count": 64,
+  "best_local_pair_opportunities": [
+    {
+      "leaf_a": 23817,
+      "leaf_b": 23784,
+      "shared_points": 401,
+      "saved_pairs_if_paired": 80200,
+      "local_pairwork_reduction_fraction": 0.08825,
+      "size_a": 1024,
+      "size_b": 878
+    },
+    {
+      "leaf_a": 810037,
+      "leaf_b": 667392,
+      "shared_points": 395,
+      "saved_pairs_if_paired": 77815,
+      "local_pairwork_reduction_fraction": 0.080628,
+      "size_a": 1024,
+      "size_b": 940
+    },
+    {
+      "leaf_a": 810037,
+      "leaf_b": 590313,
+      "shared_points": 362,
+      "saved_pairs_if_paired": 65341,
+      "local_pairwork_reduction_fraction": 0.079103,
+      "size_a": 1024,
+      "size_b": 778
+    },
+    {
+      "leaf_a": 595312,
+      "leaf_b": 309282,
+      "shared_points": 327,
+      "saved_pairs_if_paired": 53301,
+      "local_pairwork_reduction_fraction": 0.060602,
+      "size_a": 1024,
+      "size_b": 844
+    },
+    {
+      "leaf_a": 581577,
+      "leaf_b": 581277,
+      "shared_points": 305,
+      "saved_pairs_if_paired": 46360,
+      "local_pairwork_reduction_fraction": 0.046019,
+      "size_a": 1024,
+      "size_b": 984
+    },
+    {
+      "leaf_a": 581577,
+      "leaf_b": 581276,
+      "shared_points": 274,
+      "saved_pairs_if_paired": 37401,
+      "local_pairwork_reduction_fraction": 0.058158,
+      "size_a": 1024,
+      "size_b": 489
+    },
+    {
+      "leaf_a": 966051,
+      "leaf_b": 926586,
+      "shared_points": 267,
+      "saved_pairs_if_paired": 35511,
+      "local_pairwork_reduction_fraction": 0.040182,
+      "size_a": 1024,
+      "size_b": 849
+    },
+    {
+      "leaf_a": 595509,
+      "leaf_b": 595360,
+      "shared_points": 264,
+      "saved_pairs_if_paired": 34716,
+      "local_pairwork_reduction_fraction": 0.076762,
+      "size_a": 601,
+      "size_b": 738
+    },
+    {
+      "leaf_a": 888683,
+      "leaf_b": 776311,
+      "shared_points": 252,
+      "saved_pairs_if_paired": 31626,
+      "local_pairwork_reduction_fraction": 0.034666,
+      "size_a": 1024,
+      "size_b": 882
+    },
+    {
+      "leaf_a": 341474,
+      "leaf_b": 885139,
+      "shared_points": 222,
+      "saved_pairs_if_paired": 24531,
+      "local_pairwork_reduction_fraction": 0.043013,
+      "size_a": 672,
+      "size_b": 831
+    },
+    {
+      "leaf_a": 888683,
+      "leaf_b": 885702,
+      "shared_points": 218,
+      "saved_pairs_if_paired": 23653,
+      "local_pairwork_reduction_fraction": 0.041057,
+      "size_a": 1024,
+      "size_b": 324
+    },
+    {
+      "leaf_a": 153251,
+      "leaf_b": 153324,
+      "shared_points": 216,
+      "saved_pairs_if_paired": 23220,
+      "local_pairwork_reduction_fraction": 0.028429,
+      "size_a": 1024,
+      "size_b": 766
+    },
+    {
+      "leaf_a": 43709,
+      "leaf_b": 43715,
+      "shared_points": 213,
+      "saved_pairs_if_paired": 22578,
+      "local_pairwork_reduction_fraction": 0.022434,
+      "size_a": 1024,
+      "size_b": 983
+    },
+    {
+      "leaf_a": 23817,
+      "leaf_b": 15866,
+      "shared_points": 209,
+      "saved_pairs_if_paired": 21736,
+      "local_pairwork_reduction_fraction": 0.023964,
+      "size_a": 1024,
+      "size_b": 876
+    },
+    {
+      "leaf_a": 595312,
+      "leaf_b": 309405,
+      "shared_points": 199,
+      "saved_pairs_if_paired": 19701,
+      "local_pairwork_reduction_fraction": 0.032791,
+      "size_a": 1024,
+      "size_b": 393
+    },
+    {
+      "leaf_a": 210942,
+      "leaf_b": 393742,
+      "shared_points": 197,
+      "saved_pairs_if_paired": 19306,
+      "local_pairwork_reduction_fraction": 0.044558,
+      "size_a": 479,
+      "size_b": 799
+    },
+    {
+      "leaf_a": 473114,
+      "leaf_b": 473070,
+      "shared_points": 193,
+      "saved_pairs_if_paired": 18528,
+      "local_pairwork_reduction_fraction": 0.021927,
+      "size_a": 1024,
+      "size_b": 802
+    },
+    {
+      "leaf_a": 966051,
+      "leaf_b": 943654,
+      "shared_points": 191,
+      "saved_pairs_if_paired": 18145,
+      "local_pairwork_reduction_fraction": 0.017767,
+      "size_a": 1024,
+      "size_b": 998
+    },
+    {
+      "leaf_a": 926979,
+      "leaf_b": 512999,
+      "shared_points": 178,
+      "saved_pairs_if_paired": 15753,
+      "local_pairwork_reduction_fraction": 0.027456,
+      "size_a": 622,
+      "size_b": 873
+    },
+    {
+      "leaf_a": 388479,
+      "leaf_b": 536827,
+      "shared_points": 177,
+      "saved_pairs_if_paired": 15576,
+      "local_pairwork_reduction_fraction": 0.025144,
+      "size_a": 1024,
+      "size_b": 438
+    }
+  ],
+  "critical_limit": "No exact unique-pair total U measured; CI is a sampling interval (not a performance prediction). Local pair opportunities overlap and must not be summed. Candidate preservation and actual GEMM scheduling untested.",
+  "datatype": "uint8_t original BIGANN native values; PiPNN UINT8_T_EUCLIDEAN",
+  "actual_input_file": "/home/tai/ann-task-a/data/bigann10m_u8.u8bin",
+  "source_bigann_first10m": "exact first 10M vectors from official BIGANN range; no duplication or resampling",
+  "comparability": "Compare bigann1m_u8 with bigann10m_u8; Float32 BIGANN1M audit is an additional implementation check, not an exact run-match.",
+  "not_a_full_build": true,
+  "not_a_novelty_proof": true
+}

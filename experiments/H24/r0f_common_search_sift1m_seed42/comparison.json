@@ -1,0 +1,584 @@
+{
+  "status": "H24_R0f_SHARED_SEARCH_FINISHED_NOT_STH",
+  "n": 1000000,
+  "nq": 1000,
+  "k": 10,
+  "shared_search": "standalone fixed-entry single-thread classical best-first HNSW layer-0 beam; squared L2; 2 repeats/ef; query+GT identical",
+  "same_original_vertex_ids": true,
+  "graph": {
+    "pipnn": {
+      "path": "/home/tai/ann-task-a/results/pipnn_sift1m_4t.graph",
+      "bytes": 95155312,
+      "directed_edges": 22788826,
+      "mean_degree": 22.788826,
+      "max_degree": 32,
+      "sha256": "9d1393a66699b54fe57fc14eb269804e5b0a9016ec0676fc0034d152acdd7753"
+    },
+    "low": {
+      "path": "/home/tai/ann-task-a/experiments/H24/r0f_common_search_sift1m_seed42/low.graph",
+      "bytes": 100853756,
+      "directed_edges": 24213437,
+      "mean_degree": 24.213437,
+      "max_degree": 79,
+      "sha256": "64c4ea8ac2bdec39474584c1098a520d751eadd3e8a59f186cc20e5cee75637d"
+    },
+    "high": {
+      "path": "/home/tai/ann-task-a/experiments/H24/r0f_common_search_sift1m_seed42/high.graph",
+      "bytes": 106204032,
+      "directed_edges": 25551006,
+      "mean_degree": 25.551006,
+      "max_degree": 79,
+      "sha256": "487d6c3ca8871e450aae51b116e7c3317e3d75a1911eaba8f325af4bff60ca50"
+    }
+  },
+  "search": {
+    "pipnn_entry1": {
+      "60": {
+        "recall10": 0.9661,
+        "dist_per_query": 1367.68,
+        "qps_median": 2330.46,
+        "qps_repetitions": [
+          2333.998,
+          2326.92
+        ]
+      },
+      "100": {
+        "recall10": 0.9874,
+        "dist_per_query": 2002.63,
+        "qps_median": 1556.48,
+        "qps_repetitions": [
+          1566.513,
+          1546.451
+        ]
+      },
+      "140": {
+        "recall10": 0.9943,
+        "dist_per_query": 2598.57,
+        "qps_median": 1194.14,
+        "qps_repetitions": [
+          1185.293,
+          1202.991
+        ]
+      },
+      "200": {
+        "recall10": 0.9976,
+        "dist_per_query": 3436.39,
+        "qps_median": 875.96,
+        "qps_repetitions": [
+          868.275,
+          883.644
+        ]
+      },
+      "300": {
+        "recall10": 0.9991,
+        "dist_per_query": 4727.54,
+        "qps_median": 626.65,
+        "qps_repetitions": [
+          637.477,
+          615.822
+        ]
+      },
+      "400": {
+        "recall10": 0.9996,
+        "dist_per_query": 5925.62,
+        "qps_median": 499.87,
+        "qps_repetitions": [
+          494.913,
+          504.819
+        ]
+      }
+    },
+    "pipnn_entry8": {
+      "60": {
+        "recall10": 0.9668,
+        "dist_per_query": 1295.46,
+        "qps_median": 2472.45,
+        "qps_repetitions": [
+          2480.099,
+          2464.798
+        ]
+      },
+      "100": {
+        "recall10": 0.9874,
+        "dist_per_query": 1929.4,
+        "qps_median": 1611.63,
+        "qps_repetitions": [
+          1608.641,
+          1614.612
+        ]
+      },
+      "140": {
+        "recall10": 0.9942,
+        "dist_per_query": 2524.98,
+        "qps_median": 1240.11,
+        "qps_repetitions": [
+          1239.553,
+          1240.661
+        ]
+      },
+      "200": {
+        "recall10": 0.9976,
+        "dist_per_query": 3362.06,
+        "qps_median": 887.83,
+        "qps_repetitions": [
+          881.584,
+          894.08
+        ]
+      },
+      "300": {
+        "recall10": 0.9991,
+        "dist_per_query": 4654.26,
+        "qps_median": 650.89,
+        "qps_repetitions": [
+          650.473,
+          651.303
+        ]
+      },
+      "400": {
+        "recall10": 0.9996,
+        "dist_per_query": 5852.24,
+        "qps_median": 511.68,
+        "qps_repetitions": [
+          510.278,
+          513.078
+        ]
+      }
+    },
+    "low_entry1": {
+      "60": {
+        "recall10": 0.959,
+        "dist_per_query": 1553.95,
+        "qps_median": 2067.53,
+        "qps_repetitions": [
+          2071.24,
+          2063.821
+        ]
+      },
+      "100": {
+        "recall10": 0.9847,
+        "dist_per_query": 2285.36,
+        "qps_median": 1403.75,
+        "qps_repetitions": [
+          1407.883,
+          1399.612
+        ]
+      },
+      "140": {
+        "recall10": 0.9919,
+        "dist_per_query": 2962.16,
+        "qps_median": 1046.08,
+        "qps_repetitions": [
+          1030.813,
+          1061.342
+        ]
+      },
+      "200": {
+        "recall10": 0.9965,
+        "dist_per_query": 3905.07,
+        "qps_median": 793.45,
+        "qps_repetitions": [
+          796.851,
+          790.047
+        ]
+      },
+      "300": {
+        "recall10": 0.9987,
+        "dist_per_query": 5352.22,
+        "qps_median": 571.64,
+        "qps_repetitions": [
+          573.332,
+          569.952
+        ]
+      },
+      "400": {
+        "recall10": 0.9994,
+        "dist_per_query": 6684.97,
+        "qps_median": 452.33,
+        "qps_repetitions": [
+          450.98,
+          453.685
+        ]
+      }
+    },
+    "low_entry8": {
+      "60": {
+        "recall10": 0.9627,
+        "dist_per_query": 1482.1,
+        "qps_median": 2194.4,
+        "qps_repetitions": [
+          2204.24,
+          2184.557
+        ]
+      },
+      "100": {
+        "recall10": 0.9849,
+        "dist_per_query": 2205.87,
+        "qps_median": 1453.16,
+        "qps_repetitions": [
+          1447.87,
+          1458.446
+        ]
+      },
+      "140": {
+        "recall10": 0.9915,
+        "dist_per_query": 2882.33,
+        "qps_median": 1101.92,
+        "qps_repetitions": [
+          1103.665,
+          1100.168
+        ]
+      },
+      "200": {
+        "recall10": 0.9963,
+        "dist_per_query": 3825.8,
+        "qps_median": 818.84,
+        "qps_repetitions": [
+          821.441,
+          816.248
+        ]
+      },
+      "300": {
+        "recall10": 0.9987,
+        "dist_per_query": 5273.55,
+        "qps_median": 585.31,
+        "qps_repetitions": [
+          585.133,
+          585.482
+        ]
+      },
+      "400": {
+        "recall10": 0.9994,
+        "dist_per_query": 6605.82,
+        "qps_median": 458.75,
+        "qps_repetitions": [
+          456.05,
+          461.449
+        ]
+      }
+    },
+    "high_entry1": {
+      "60": {
+        "recall10": 0.9784,
+        "dist_per_query": 1620.78,
+        "qps_median": 2010.06,
+        "qps_repetitions": [
+          2008.918,
+          2011.2
+        ]
+      },
+      "100": {
+        "recall10": 0.9933,
+        "dist_per_query": 2382.63,
+        "qps_median": 1347.43,
+        "qps_repetitions": [
+          1354.301,
+          1340.565
+        ]
+      },
+      "140": {
+        "recall10": 0.9963,
+        "dist_per_query": 3094.55,
+        "qps_median": 1025.17,
+        "qps_repetitions": [
+          1020.279,
+          1030.065
+        ]
+      },
+      "200": {
+        "recall10": 0.9982,
+        "dist_per_query": 4091.27,
+        "qps_median": 765.51,
+        "qps_repetitions": [
+          762.356,
+          768.656
+        ]
+      },
+      "300": {
+        "recall10": 0.9996,
+        "dist_per_query": 5614.18,
+        "qps_median": 549.98,
+        "qps_repetitions": [
+          548.731,
+          551.224
+        ]
+      },
+      "400": {
+        "recall10": 0.9999,
+        "dist_per_query": 7017.21,
+        "qps_median": 427.78,
+        "qps_repetitions": [
+          432.016,
+          423.536
+        ]
+      }
+    },
+    "high_entry8": {
+      "60": {
+        "recall10": 0.9775,
+        "dist_per_query": 1549.12,
+        "qps_median": 2106.51,
+        "qps_repetitions": [
+          2121.979,
+          2091.037
+        ]
+      },
+      "100": {
+        "recall10": 0.9922,
+        "dist_per_query": 2310.75,
+        "qps_median": 1402.35,
+        "qps_repetitions": [
+          1404.314,
+          1400.376
+        ]
+      },
+      "140": {
+        "recall10": 0.9964,
+        "dist_per_query": 3024.36,
+        "qps_median": 1059.16,
+        "qps_repetitions": [
+          1055.982,
+          1062.337
+        ]
+      },
+      "200": {
+        "recall10": 0.9982,
+        "dist_per_query": 4020.9,
+        "qps_median": 789.94,
+        "qps_repetitions": [
+          789.865,
+          790.008
+        ]
+      },
+      "300": {
+        "recall10": 0.9996,
+        "dist_per_query": 5544.43,
+        "qps_median": 558.5,
+        "qps_repetitions": [
+          563.666,
+          553.327
+        ]
+      },
+      "400": {
+        "recall10": 0.9999,
+        "dist_per_query": 6947.66,
+        "qps_median": 441.33,
+        "qps_repetitions": [
+          440.618,
+          442.051
+        ]
+      }
+    }
+  },
+  "threshold_matched_grid": {
+    "entry1": {
+      "0.99": {
+        "pipnn": {
+          "ef": 140,
+          "recall10": 0.9943,
+          "dist_per_query": 2598.57,
+          "qps_median": 1194.14,
+          "qps_repetitions": [
+            1185.293,
+            1202.991
+          ]
+        },
+        "low": {
+          "ef": 140,
+          "recall10": 0.9919,
+          "dist_per_query": 2962.16,
+          "qps_median": 1046.08,
+          "qps_repetitions": [
+            1030.813,
+            1061.342
+          ]
+        },
+        "high": {
+          "ef": 100,
+          "recall10": 0.9933,
+          "dist_per_query": 2382.63,
+          "qps_median": 1347.43,
+          "qps_repetitions": [
+            1354.301,
+            1340.565
+          ]
+        }
+      },
+      "0.995": {
+        "pipnn": {
+          "ef": 200,
+          "recall10": 0.9976,
+          "dist_per_query": 3436.39,
+          "qps_median": 875.96,
+          "qps_repetitions": [
+            868.275,
+            883.644
+          ]
+        },
+        "low": {
+          "ef": 200,
+          "recall10": 0.9965,
+          "dist_per_query": 3905.07,
+          "qps_median": 793.45,
+          "qps_repetitions": [
+            796.851,
+            790.047
+          ]
+        },
+        "high": {
+          "ef": 140,
+          "recall10": 0.9963,
+          "dist_per_query": 3094.55,
+          "qps_median": 1025.17,
+          "qps_repetitions": [
+            1020.279,
+            1030.065
+          ]
+        }
+      },
+      "0.998": {
+        "pipnn": {
+          "ef": 300,
+          "recall10": 0.9991,
+          "dist_per_query": 4727.54,
+          "qps_median": 626.65,
+          "qps_repetitions": [
+            637.477,
+            615.822
+          ]
+        },
+        "low": {
+          "ef": 300,
+          "recall10": 0.9987,
+          "dist_per_query": 5352.22,
+          "qps_median": 571.64,
+          "qps_repetitions": [
+            573.332,
+            569.952
+          ]
+        },
+        "high": {
+          "ef": 200,
+          "recall10": 0.9982,
+          "dist_per_query": 4091.27,
+          "qps_median": 765.51,
+          "qps_repetitions": [
+            762.356,
+            768.656
+          ]
+        }
+      }
+    },
+    "entry8": {
+      "0.99": {
+        "pipnn": {
+          "ef": 140,
+          "recall10": 0.9942,
+          "dist_per_query": 2524.98,
+          "qps_median": 1240.11,
+          "qps_repetitions": [
+            1239.553,
+            1240.661
+          ]
+        },
+        "low": {
+          "ef": 140,
+          "recall10": 0.9915,
+          "dist_per_query": 2882.33,
+          "qps_median": 1101.92,
+          "qps_repetitions": [
+            1103.665,
+            1100.168
+          ]
+        },
+        "high": {
+          "ef": 100,
+          "recall10": 0.9922,
+          "dist_per_query": 2310.75,
+          "qps_median": 1402.35,
+          "qps_repetitions": [
+            1404.314,
+            1400.376
+          ]
+        }
+      },
+      "0.995": {
+        "pipnn": {
+          "ef": 200,
+          "recall10": 0.9976,
+          "dist_per_query": 3362.06,
+          "qps_median": 887.83,
+          "qps_repetitions": [
+            881.584,
+            894.08
+          ]
+        },
+        "low": {
+          "ef": 200,
+          "recall10": 0.9963,
+          "dist_per_query": 3825.8,
+          "qps_median": 818.84,
+          "qps_repetitions": [
+            821.441,
+            816.248
+          ]
+        },
+        "high": {
+          "ef": 140,
+          "recall10": 0.9964,
+          "dist_per_query": 3024.36,
+          "qps_median": 1059.16,
+          "qps_repetitions": [
+            1055.982,
+            1062.337
+          ]
+        }
+      },
+      "0.998": {
+        "pipnn": {
+          "ef": 300,
+          "recall10": 0.9991,
+          "dist_per_query": 4654.26,
+          "qps_median": 650.89,
+          "qps_repetitions": [
+            650.473,
+            651.303
+          ]
+        },
+        "low": {
+          "ef": 300,
+          "recall10": 0.9987,
+          "dist_per_query": 5273.55,
+          "qps_median": 585.31,
+          "qps_repetitions": [
+            585.133,
+            585.482
+          ]
+        },
+        "high": {
+          "ef": 200,
+          "recall10": 0.9982,
+          "dist_per_query": 4020.9,
+          "qps_median": 789.94,
+          "qps_repetitions": [
+            789.865,
+            790.008
+          ]
+        }
+      }
+    }
+  },
+  "historic_build_seconds": {
+    "pipnn_sift1m_H17_BUILD_s": 49.76,
+    "dense_low_H24_R0e_BUILD_s": 91.39,
+    "dense_high_H24_R0e_BUILD_s": 151.53,
+    "note": "BUILD timings historical; Dense was rebuilt in this gate for graph dump; compare quality with same search only. PiPNN H17 tuning/index cap differs."
+  },
+  "limitations": [
+    "Dense graph CSR export required 2 rebuilds; logged times in new export logs, not historical H24-build repeat equivalent",
+    "PiPNN graph selected from existing H17 artifact; must confirm its provenance and BUILD config",
+    "PiPNN R32 vs Dense R64 plus spine: graph size and topology are not matched degree/bytes",
+    "One common independent search protocol controls implementation but need not reproduce native ParlayANN or GRAFT tuned search performance",
+    "Selected thresholds compare different achieved recall within ef grid; no curve interpolation, no statistical CI",
+    "STH not implemented; results assess competitive baseline only"
+  ]
+}

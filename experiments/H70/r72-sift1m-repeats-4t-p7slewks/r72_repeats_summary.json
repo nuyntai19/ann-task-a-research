@@ -1,0 +1,129 @@
+{
+  "kind": "R72_SIFT1M_BUILD_3_PER_ARM",
+  "pilot": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM",
+  "repeats": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-repeats-4t-p7slewks",
+  "source_manifest": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-repeats-4t-p7slewks/inputs.sha256",
+  "summary": {
+    "A_stock": {
+      "runs": [
+        {
+          "round": 1,
+          "wall": 117.74,
+          "rss": 2785608,
+          "graph_bytes": 108162108,
+          "graph_sha256": "75900b22e981deca876f5c9fc70e6e878261b6a5a1a90e3871e0195749e2c925"
+        },
+        {
+          "round": 2,
+          "wall": 115.98,
+          "rss": 2809104,
+          "graph_bytes": 108162208,
+          "graph_sha256": "4e45b9d5f4826a525fed500cd6ff10e5e82f3a7be0338aee6c669e9f0deff34f"
+        },
+        {
+          "round": 3,
+          "wall": 114.8,
+          "rss": 2801780,
+          "graph_bytes": 108162188,
+          "graph_sha256": "0a0abbad832f95ad75e245610c529decf52aef0d42f5055fbfadded696aa5495"
+        }
+      ],
+      "wall_median": 115.98,
+      "rss_median": 2801780,
+      "wall_delta_pct": 0.0,
+      "rss_delta_pct": 0.0
+    },
+    "B_h17": {
+      "runs": [
+        {
+          "round": 1,
+          "wall": 104.2,
+          "rss": 2801784,
+          "graph_bytes": 108162208,
+          "graph_sha256": "30c04fb70f91239955395fe1166122c4f6de8276bf080642a07bd8e7213e693c"
+        },
+        {
+          "round": 2,
+          "wall": 105.3,
+          "rss": 2803568,
+          "graph_bytes": 108162240,
+          "graph_sha256": "6197a73f8714088fc52e2840eae8ec5a33903fcf25931712f7a201f7b4d31b3c"
+        },
+        {
+          "round": 3,
+          "wall": 105.63,
+          "rss": 2800664,
+          "graph_bytes": 108162252,
+          "graph_sha256": "27d7501c06830fb8577d11c9190d2820929e4738f6be3b3eb93fa8cccdd1a39b"
+        }
+      ],
+      "wall_median": 105.3,
+      "rss_median": 2801784,
+      "wall_delta_pct": -9.20848422141749,
+      "rss_delta_pct": 0.00014276638422572319
+    },
+    "C_tier": {
+      "runs": [
+        {
+          "round": 1,
+          "wall": 119.18,
+          "rss": 2210944,
+          "graph_bytes": 108162164,
+          "graph_sha256": "56c523e0f1508e60a6cd7335c7559887d848d16be1afb0d1516f57158b936627"
+        },
+        {
+          "round": 2,
+          "wall": 119.59,
+          "rss": 2200228,
+          "graph_bytes": 108162200,
+          "graph_sha256": "ca9ab4fe204ca390aa8e98e581d5e2aaf71ee6c8e0a94f35b49812338348df9c"
+        },
+        {
+          "round": 3,
+          "wall": 117.57,
+          "rss": 2212912,
+          "graph_bytes": 108162184,
+          "graph_sha256": "1b3abea75aa74550bded394bf1f894a3d9f6c42b782711b3a9640e75a7cb3ace"
+        }
+      ],
+      "wall_median": 119.18,
+      "rss_median": 2210944,
+      "wall_delta_pct": 2.759096395930327,
+      "rss_delta_pct": -21.08787984781103
+    },
+    "D_h17_tier": {
+      "runs": [
+        {
+          "round": 1,
+          "wall": 108.77,
+          "rss": 2213216,
+          "graph_bytes": 108162092,
+          "graph_sha256": "20c6baf6542365f1e7d6fa15829bad2a1fb10bf49e0d0899361b678db33c1537"
+        },
+        {
+          "round": 2,
+          "wall": 103.25,
+          "rss": 2220128,
+          "graph_bytes": 108162204,
+          "graph_sha256": "2d4ba7dc219e20917d26b2feb509942903c48274c757e9855e1bd3d879ce7f0f"
+        },
+        {
+          "round": 3,
+          "wall": 106.02,
+          "rss": 2204996,
+          "graph_bytes": 108162396,
+          "graph_sha256": "3eec8fe38deaf0a256cc50ddb668c027122c14239f4453571a10d9c7bdb7f74f"
+        }
+      ],
+      "wall_median": 106.02,
+      "rss_median": 2213216,
+      "wall_delta_pct": -8.587687532333167,
+      "rss_delta_pct": -21.00678854157
+    }
+  },
+  "limitations": [
+    "Three BUILD runs per arm; no formal significance test.",
+    "Repeat graph validity and Recall@10 have not yet been checked.",
+    "One SIFT1M dataset and one 4-thread configuration."
+  ]
+}

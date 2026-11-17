@@ -1,0 +1,33 @@
+{
+  "status": "R86_G12B2_NATIVE_SEARCH_AND_PER_QUERY_PARITY_PASS",
+  "arm": "A1",
+  "rep": 1,
+  "beam": 768,
+  "graph_sha256": "7da34f1c3e0ff8a67092a2c9f96bc35122b88fdbe36c59347d1f213b55c46979",
+  "script_sha256": "ea8139260c0ef12a52bacd3f7692850950ed9623a0c34df26ec221084246ae89",
+  "native_binary_sha256": "2ed91c6dbeaef72b1c49d6e63101e4e49a1bdad9bee8df33ed7291a59d982715",
+  "upstream_recall": 0.99753898,
+  "upstream_cmps": 27958,
+  "upstream_visited": 659,
+  "native_recall": 0.99753898,
+  "native_avg_cmps": 27958,
+  "native_avg_visited": 659,
+  "query_sha256": "1c18ec26c9c91b1b65c3514b75d15a42599114a1db157c8737025b9443ecf7ff",
+  "steps_sha256": "42084c9ed0ec328225663ddbb8a3a34a872c84f8d31df8671268c8dbe5941c2e",
+  "log_sha256": "738cc765462831344a975df63a5f74381bed793ff3761c7c8cba018f5ecdd292",
+  "perquery_summary": {
+    "queries": 100000,
+    "correct_total": 997539,
+    "recall_10": 0.997539,
+    "avg_cmps_floor": 27958,
+    "avg_visited_floor": 659,
+    "mean_scanned_neighbors": 38466.91015,
+    "mean_seen_skips": 10509.25983,
+    "mean_hash_accepted": 27957.65032,
+    "mean_cutoff_rejects": 18593.72294,
+    "mean_merge_calls": 83.59904,
+    "detailed_query_ids": 128,
+    "detailed_steps": 84335
+  },
+  "scientific_caveat": "Diagnostic timings never substitute for uninstrumented formal QPS."
+}

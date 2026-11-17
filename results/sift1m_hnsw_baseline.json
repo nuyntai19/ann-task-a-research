@@ -1,0 +1,66 @@
+{
+  "dataset": "SIFT1M",
+  "dataset_file_bytes": 525128288,
+  "n": 1000000,
+  "dim": 128,
+  "queries": 10000,
+  "k": 10,
+  "metric": "l2",
+  "algorithm": "hnswlib",
+  "hnswlib_version": "0.8.0",
+  "python_version": "3.12.3",
+  "seed": 42,
+  "M": 16,
+  "ef_construction": 100,
+  "build_threads": 4,
+  "search_threads": 1,
+  "train_load_seconds": 0.1392836039995018,
+  "init_seconds": 0.02463754800010065,
+  "build_seconds": 85.88002936399971,
+  "save_seconds": 0.2543617909996101,
+  "raw_to_index_seconds": 86.29866075100108,
+  "peak_process_rss_through_build_mib": 1267.05078125,
+  "index_bytes": 660526992,
+  "search_results": [
+    {
+      "ef_search": 100,
+      "recall_at_10": 0.97645,
+      "qps": 3898.1252927681494,
+      "search_times_seconds": [
+        2.561156105999544,
+        2.5653357060000417,
+        2.5695823639998707
+      ]
+    },
+    {
+      "ef_search": 200,
+      "recall_at_10": 0.9919,
+      "qps": 2158.60488073077,
+      "search_times_seconds": [
+        4.632621787000971,
+        4.615769402000296,
+        4.682734621999771
+      ]
+    },
+    {
+      "ef_search": 400,
+      "recall_at_10": 0.99691,
+      "qps": 1177.5972133612763,
+      "search_times_seconds": [
+        8.49186792099863,
+        8.476540957999532,
+        8.494645893999405
+      ]
+    },
+    {
+      "ef_search": 800,
+      "recall_at_10": 0.99793,
+      "qps": 643.9178916867716,
+      "search_times_seconds": [
+        15.529930336000689,
+        15.482089888999326,
+        15.53256621500077
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "rep": 1,
+    "exact_knn10_cut_points": [
+      210.98262113752517,
+      244.0661569813917
+    ],
+    "groups": [
+      {
+        "density_group": "dense",
+        "sample_n": 43,
+        "exact_knn10_distance": {
+          "count": 43,
+          "min": 78.95568377260753,
+          "p10": 114.86538650003112,
+          "p50": 177.5725203965974,
+          "p90": 206.12803639390555,
+          "p95": 210.0918839610792,
+          "p99": 210.75330178864232,
+          "max": 210.97156206465363
+        },
+        "B64_mean_out_degree": 24.58139534883721,
+        "EDGE_R_mean_out_degree": 24.976744186046513,
+        "EDGE_ALPHA_mean_out_degree": 24.72093023255814,
+        "EDGE_R_minus_B64_mean_degree": 0.3953488372093023,
+        "EDGE_ALPHA_minus_B64_mean_degree": 0.13953488372093023
+      },
+      {
+        "density_group": "middle",
+        "sample_n": 42,
+        "exact_knn10_distance": {
+          "count": 42,
+          "min": 211.00473928326824,
+          "p10": 216.69336766938173,
+          "p50": 230.2628139455885,
+          "p90": 241.762314935142,
+          "p95": 242.90621213540058,
+          "p99": 243.5738811705977,
+          "max": 243.7683326439265
+        },
+        "B64_mean_out_degree": 23.261904761904763,
+        "EDGE_R_mean_out_degree": 23.547619047619047,
+        "EDGE_ALPHA_mean_out_degree": 23.785714285714285,
+        "EDGE_R_minus_B64_mean_degree": 0.2857142857142857,
+        "EDGE_ALPHA_minus_B64_mean_degree": 0.5238095238095238
+      },
+      {
+        "density_group": "sparse",
+        "sample_n": 43,
+        "exact_knn10_distance": {
+          "count": 43,
+          "min": 244.21506915012432,
+          "p10": 246.31237356962995,
+          "p50": 257.4315442986737,
+          "p90": 276.72337614524497,
+          "p95": 280.041567278113,
+          "p99": 290.82816986992935,
+          "max": 298.01342251650345
+        },
+        "B64_mean_out_degree": 22.58139534883721,
+        "EDGE_R_mean_out_degree": 22.325581395348838,
+        "EDGE_ALPHA_mean_out_degree": 21.906976744186046,
+        "EDGE_R_minus_B64_mean_degree": -0.2558139534883721,
+        "EDGE_ALPHA_minus_B64_mean_degree": -0.6744186046511628
+      }
+    ],
+    "note": "True density measured on a small *uniform node sample*, not on all 1M nodes"
+  },
+  {
+    "rep": 2,
+    "exact_knn10_cut_points": [
+      210.98262113752517,
+      244.0661569813917
+    ],
+    "groups": [
+      {
+        "density_group": "dense",
+        "sample_n": 43,
+        "exact_knn10_distance": {
+          "count": 43,
+          "min": 78.95568377260753,
+          "p10": 114.86538650003112,
+          "p50": 177.5725203965974,
+          "p90": 206.12803639390555,
+          "p95": 210.0918839610792,
+          "p99": 210.75330178864232,
+          "max": 210.97156206465363
+        },
+        "B64_mean_out_degree": 24.441860465116278,
+        "EDGE_R_mean_out_degree": 24.976744186046513,
+        "EDGE_ALPHA_mean_out_degree": 24.348837209302324,
+        "EDGE_R_minus_B64_mean_degree": 0.5348837209302325,
+        "EDGE_ALPHA_minus_B64_mean_degree": -0.09302325581395349
+      },
+      {
+        "density_group": "middle",
+        "sample_n": 42,
+        "exact_knn10_distance": {
+          "count": 42,
+          "min": 211.00473928326824,
+          "p10": 216.69336766938173,
+          "p50": 230.2628139455885,
+          "p90": 241.762314935142,
+          "p95": 242.90621213540058,
+          "p99": 243.5738811705977,
+          "max": 243.7683326439265
+        },
+        "B64_mean_out_degree": 22.976190476190474,
+        "EDGE_R_mean_out_degree": 23.571428571428573,
+        "EDGE_ALPHA_mean_out_degree": 23.928571428571427,
+        "EDGE_R_minus_B64_mean_degree": 0.5952380952380952,
+        "EDGE_ALPHA_minus_B64_mean_degree": 0.9523809523809523
+      },
+      {
+        "density_group": "sparse",
+        "sample_n": 43,
+        "exact_knn10_distance": {
+          "count": 43,
+          "min": 244.21506915012432,
+          "p10": 246.31237356962995,
+          "p50": 257.4315442986737,
+          "p90": 276.72337614524497,
+          "p95": 280.041567278113,
+          "p99": 290.82816986992935,
+          "max": 298.01342251650345
+        },
+        "B64_mean_out_degree": 22.627906976744185,
+        "EDGE_R_mean_out_degree": 22.25581395348837,
+        "EDGE_ALPHA_mean_out_degree": 21.930232558139537,
+        "EDGE_R_minus_B64_mean_degree": -0.37209302325581395,
+        "EDGE_ALPHA_minus_B64_mean_degree": -0.6976744186046512
+      }
+    ],
+    "note": "True density measured on a small *uniform node sample*, not on all 1M nodes"
+  },
+  {
+    "rep": 3,
+    "exact_knn10_cut_points": [
+      210.98262113752517,
+      244.0661569813917
+    ],
+    "groups": [
+      {
+        "density_group": "dense",
+        "sample_n": 43,
+        "exact_knn10_distance": {
+          "count": 43,
+          "min": 78.95568377260753,
+          "p10": 114.86538650003112,
+          "p50": 177.5725203965974,
+          "p90": 206.12803639390555,
+          "p95": 210.0918839610792,
+          "p99": 210.75330178864232,
+          "max": 210.97156206465363
+        },
+        "B64_mean_out_degree": 24.348837209302324,
+        "EDGE_R_mean_out_degree": 24.976744186046513,
+        "EDGE_ALPHA_mean_out_degree": 24.72093023255814,
+        "EDGE_R_minus_B64_mean_degree": 0.627906976744186,
+        "EDGE_ALPHA_minus_B64_mean_degree": 0.37209302325581395
+      },
+      {
+        "density_group": "middle",
+        "sample_n": 42,
+        "exact_knn10_distance": {
+          "count": 42,
+          "min": 211.00473928326824,
+          "p10": 216.69336766938173,
+          "p50": 230.2628139455885,
+          "p90": 241.762314935142,
+          "p95": 242.90621213540058,
+          "p99": 243.5738811705977,
+          "max": 243.7683326439265
+        },
+        "B64_mean_out_degree": 23.19047619047619,
+        "EDGE_R_mean_out_degree": 23.547619047619047,
+        "EDGE_ALPHA_mean_out_degree": 23.785714285714285,
+        "EDGE_R_minus_B64_mean_degree": 0.35714285714285715,
+        "EDGE_ALPHA_minus_B64_mean_degree": 0.5952380952380952
+      },
+      {
+        "density_group": "sparse",
+        "sample_n": 43,
+        "exact_knn10_distance": {
+          "count": 43,
+          "min": 244.21506915012432,
+          "p10": 246.31237356962995,
+          "p50": 257.4315442986737,
+          "p90": 276.72337614524497,
+          "p95": 280.041567278113,
+          "p99": 290.82816986992935,
+          "max": 298.01342251650345
+        },
+        "B64_mean_out_degree": 22.558139534883722,
+        "EDGE_R_mean_out_degree": 22.325581395348838,
+        "EDGE_ALPHA_mean_out_degree": 21.906976744186046,
+        "EDGE_R_minus_B64_mean_degree": -0.23255813953488372,
+        "EDGE_ALPHA_minus_B64_mean_degree": -0.6511627906976745
+      }
+    ],
+    "note": "True density measured on a small *uniform node sample*, not on all 1M nodes"
+  }
+]

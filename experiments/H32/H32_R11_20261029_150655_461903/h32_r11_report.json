@@ -1,0 +1,135 @@
+{
+  "status": "PASS_STRUCTURAL_TRIAGE_SEARCH_MISSES_NOT_CLASSIFIABLE",
+  "read_only": true,
+  "graph_source": "H31 pinned SHA and H32-R10 actual local report",
+  "r10_report": "/home/tai/ann-task-a/experiments/H32/H32_R10_20261029_145742_261037/h32_r10_report.json",
+  "gt_file": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+  "query_count": 10000,
+  "topk": 10,
+  "graph_index_search_entry_policy": "NOT_INDEPENDENTLY_VERIFIED_FROM_NATIVE_SEARCHER",
+  "exact_gt_recomputed": false,
+  "h31_query_results_verified": false,
+  "predictions_file": null,
+  "predictions_role_summaries": null,
+  "graphs": {
+    "VAMANA": {
+      "graph": {
+        "sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+        "nodes": 1000000,
+        "edges": 27643346,
+        "bytes": 114573392,
+        "entry": 0,
+        "reachable": 999795,
+        "unreachable": 205
+      },
+      "gt_unreachable_positions_M": 12,
+      "queries_affected": 12,
+      "distinct_unreachable_GT": 11,
+      "GT_reachable_positions": 99988,
+      "hop_histogram_gt_positions": {
+        "1": 4,
+        "2": 154,
+        "3": 2620,
+        "4": 16911,
+        "5": 32942,
+        "6": 40882,
+        "7": 6303,
+        "8": 172
+      },
+      "mean_hops_among_reachable_GT": 5.313787654518542,
+      "max_hops_among_reachable_GT": 8,
+      "zero_indeg_gt_positions": 12,
+      "h31_q100_recall_historical": 0.98314,
+      "h31_q100_missed_slots_from_reported_recall": 1686,
+      "reachable_missed_slots_lower_bound_conditional": 1674,
+      "limitations": [
+        "R10 M from entry-0 BFS; H31 actual start point not proven by this script",
+        "No historical per-query search result IDs provided; aggregate misses do not identify queries",
+        "GT exactness not recomputed; graph degree/index size not matched",
+        "Hop distances are graph-topology descriptors, not actual visited/search paths"
+      ]
+    },
+    "STOCK": {
+      "graph": {
+        "sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+        "nodes": 1000000,
+        "edges": 22793556,
+        "bytes": 95174232,
+        "entry": 0,
+        "reachable": 999999,
+        "unreachable": 1
+      },
+      "gt_unreachable_positions_M": 0,
+      "queries_affected": 0,
+      "distinct_unreachable_GT": 0,
+      "GT_reachable_positions": 100000,
+      "hop_histogram_gt_positions": {
+        "1": 3,
+        "2": 112,
+        "3": 1665,
+        "4": 13156,
+        "5": 21547,
+        "6": 12419,
+        "7": 23048,
+        "8": 22297,
+        "9": 4746,
+        "10": 863,
+        "11": 135,
+        "12": 9
+      },
+      "mean_hops_among_reachable_GT": 6.32744,
+      "max_hops_among_reachable_GT": 12,
+      "zero_indeg_gt_positions": 0,
+      "h31_q100_recall_historical": 0.99087,
+      "h31_q100_missed_slots_from_reported_recall": 913,
+      "reachable_missed_slots_lower_bound_conditional": 913,
+      "limitations": [
+        "R10 M from entry-0 BFS; H31 actual start point not proven by this script",
+        "No historical per-query search result IDs provided; aggregate misses do not identify queries",
+        "GT exactness not recomputed; graph degree/index size not matched",
+        "Hop distances are graph-topology descriptors, not actual visited/search paths"
+      ]
+    },
+    "TOP2": {
+      "graph": {
+        "sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6",
+        "nodes": 1000000,
+        "edges": 22794064,
+        "bytes": 95176264,
+        "entry": 0,
+        "reachable": 999999,
+        "unreachable": 1
+      },
+      "gt_unreachable_positions_M": 0,
+      "queries_affected": 0,
+      "distinct_unreachable_GT": 0,
+      "GT_reachable_positions": 100000,
+      "hop_histogram_gt_positions": {
+        "1": 3,
+        "2": 112,
+        "3": 1665,
+        "4": 13155,
+        "5": 21549,
+        "6": 12418,
+        "7": 23046,
+        "8": 22300,
+        "9": 4745,
+        "10": 863,
+        "11": 135,
+        "12": 9
+      },
+      "mean_hops_among_reachable_GT": 6.32745,
+      "max_hops_among_reachable_GT": 12,
+      "zero_indeg_gt_positions": 0,
+      "h31_q100_recall_historical": 0.99087,
+      "h31_q100_missed_slots_from_reported_recall": 913,
+      "reachable_missed_slots_lower_bound_conditional": 913,
+      "limitations": [
+        "R10 M from entry-0 BFS; H31 actual start point not proven by this script",
+        "No historical per-query search result IDs provided; aggregate misses do not identify queries",
+        "GT exactness not recomputed; graph degree/index size not matched",
+        "Hop distances are graph-topology descriptors, not actual visited/search paths"
+      ]
+    }
+  }
+}

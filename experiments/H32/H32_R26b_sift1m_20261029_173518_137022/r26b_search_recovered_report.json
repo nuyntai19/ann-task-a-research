@@ -1,0 +1,382 @@
+{
+  "status": "R26B_SEARCH_RECOVERY_PASS_SAME_NATIVE",
+  "script_fix": "Prior R26b omitted -verbose; old logs contain no search statistics; fixed-Q native prints search: ..., not For 10@10 ...",
+  "native_search_sha256": "ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8",
+  "graphs": {
+    "pipnn": {
+      "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+      "vertices": 1000000,
+      "header_maxdeg": 32,
+      "arcs": 22797630,
+      "bytes": 95190528,
+      "mean_degree": 22.79763,
+      "isolated_vertices": 0
+    },
+    "fg": {
+      "sha256": "e0842613d7fc24e4b3b1f3ec60aff2ce4f5e054b3bcc51812a06c83355b64389",
+      "vertices": 1000000,
+      "header_maxdeg": 32,
+      "arcs": 28368175,
+      "bytes": 117472708,
+      "mean_degree": 28.368175,
+      "isolated_vertices": 0
+    }
+  },
+  "budget_delta_percent": 24.434755,
+  "graph_budget_matched": false,
+  "measurements": {
+    "80": {
+      "pipnn": {
+        "log_file": "search_pipnn_q80.verbose.log",
+        "sha256": "adbb1af18e926d99f23b12efec3d76fba1e6256d568ba9c8ad129b18ea9569dd",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.98614,
+            "qps": 2901.61,
+            "visited": 94,
+            "comparisons": 1744
+          },
+          {
+            "recall_native_tie_aware": 0.98614,
+            "qps": 2925.8,
+            "visited": 94,
+            "comparisons": 1744
+          },
+          {
+            "recall_native_tie_aware": 0.98614,
+            "qps": 2681.03,
+            "visited": 94,
+            "comparisons": 1744
+          },
+          {
+            "recall_native_tie_aware": 0.98614,
+            "qps": 2917.22,
+            "visited": 94,
+            "comparisons": 1744
+          },
+          {
+            "recall_native_tie_aware": 0.98614,
+            "qps": 2936.11,
+            "visited": 94,
+            "comparisons": 1744
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.98614,
+          "qps": 2917.22,
+          "visited": 94,
+          "comparisons": 1744
+        }
+      },
+      "fg": {
+        "log_file": "search_fg_q80.verbose.log",
+        "sha256": "62d98603b4eedecbe3270b40bb246625e1d5b97427e2a1031091e2ba51818613",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.98566,
+            "qps": 2754.75,
+            "visited": 94,
+            "comparisons": 1861
+          },
+          {
+            "recall_native_tie_aware": 0.98566,
+            "qps": 2767.32,
+            "visited": 94,
+            "comparisons": 1861
+          },
+          {
+            "recall_native_tie_aware": 0.98566,
+            "qps": 2766.94,
+            "visited": 94,
+            "comparisons": 1861
+          },
+          {
+            "recall_native_tie_aware": 0.98566,
+            "qps": 2802.14,
+            "visited": 94,
+            "comparisons": 1861
+          },
+          {
+            "recall_native_tie_aware": 0.98566,
+            "qps": 2767.36,
+            "visited": 94,
+            "comparisons": 1861
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.98566,
+          "qps": 2767.32,
+          "visited": 94,
+          "comparisons": 1861
+        }
+      }
+    },
+    "100": {
+      "pipnn": {
+        "log_file": "search_pipnn_q100.verbose.log",
+        "sha256": "158c68e772bde35c9b8ac736dc9ca8c240d2ce610dd020fe2977877956d7a0cc",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.99096,
+            "qps": 2420.24,
+            "visited": 116,
+            "comparisons": 2068
+          },
+          {
+            "recall_native_tie_aware": 0.99096,
+            "qps": 2483.94,
+            "visited": 116,
+            "comparisons": 2068
+          },
+          {
+            "recall_native_tie_aware": 0.99096,
+            "qps": 2502.16,
+            "visited": 116,
+            "comparisons": 2068
+          },
+          {
+            "recall_native_tie_aware": 0.99096,
+            "qps": 2481.52,
+            "visited": 116,
+            "comparisons": 2068
+          },
+          {
+            "recall_native_tie_aware": 0.99096,
+            "qps": 2491.07,
+            "visited": 116,
+            "comparisons": 2068
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.99096,
+          "qps": 2483.94,
+          "visited": 116,
+          "comparisons": 2068
+        }
+      },
+      "fg": {
+        "log_file": "search_fg_q100.verbose.log",
+        "sha256": "2d23b09ba82e685a069ebfa342c64c7974e2581b4478c9dfd067c8b0de077b46",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.99045,
+            "qps": 2368.69,
+            "visited": 115,
+            "comparisons": 2195
+          },
+          {
+            "recall_native_tie_aware": 0.99045,
+            "qps": 2357.71,
+            "visited": 115,
+            "comparisons": 2195
+          },
+          {
+            "recall_native_tie_aware": 0.99045,
+            "qps": 2335.08,
+            "visited": 115,
+            "comparisons": 2195
+          },
+          {
+            "recall_native_tie_aware": 0.99045,
+            "qps": 2368.21,
+            "visited": 115,
+            "comparisons": 2195
+          },
+          {
+            "recall_native_tie_aware": 0.99045,
+            "qps": 2371.86,
+            "visited": 115,
+            "comparisons": 2195
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.99045,
+          "qps": 2368.21,
+          "visited": 115,
+          "comparisons": 2195
+        }
+      }
+    },
+    "120": {
+      "pipnn": {
+        "log_file": "search_pipnn_q120.verbose.log",
+        "sha256": "2f98a2daa63ab115e9e6fdc2ff48600b8ea12314e23f5c14fce6be4d18d22cd7",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.99365,
+            "qps": 2177.91,
+            "visited": 137,
+            "comparisons": 2373
+          },
+          {
+            "recall_native_tie_aware": 0.99365,
+            "qps": 2166.73,
+            "visited": 137,
+            "comparisons": 2373
+          },
+          {
+            "recall_native_tie_aware": 0.99365,
+            "qps": 2174.06,
+            "visited": 137,
+            "comparisons": 2373
+          },
+          {
+            "recall_native_tie_aware": 0.99365,
+            "qps": 2183.93,
+            "visited": 137,
+            "comparisons": 2373
+          },
+          {
+            "recall_native_tie_aware": 0.99365,
+            "qps": 2182.21,
+            "visited": 137,
+            "comparisons": 2373
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.99365,
+          "qps": 2177.91,
+          "visited": 137,
+          "comparisons": 2373
+        }
+      },
+      "fg": {
+        "log_file": "search_fg_q120.verbose.log",
+        "sha256": "d5a42feaff95a2b2f2ff8c5d66d93933e9791e9456d3c39c8ddd704a633e9b52",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.99311,
+            "qps": 2072.03,
+            "visited": 136,
+            "comparisons": 2505
+          },
+          {
+            "recall_native_tie_aware": 0.99311,
+            "qps": 2082.17,
+            "visited": 136,
+            "comparisons": 2505
+          },
+          {
+            "recall_native_tie_aware": 0.99311,
+            "qps": 2078.11,
+            "visited": 136,
+            "comparisons": 2505
+          },
+          {
+            "recall_native_tie_aware": 0.99311,
+            "qps": 2058.78,
+            "visited": 136,
+            "comparisons": 2505
+          },
+          {
+            "recall_native_tie_aware": 0.99311,
+            "qps": 2075.26,
+            "visited": 136,
+            "comparisons": 2505
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.99311,
+          "qps": 2075.26,
+          "visited": 136,
+          "comparisons": 2505
+        }
+      }
+    },
+    "160": {
+      "pipnn": {
+        "log_file": "search_pipnn_q160.verbose.log",
+        "sha256": "7d74b3679fe9323924e47c17b23fc68af03ca8a0c2344429e24b63e165abfbc1",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.99667,
+            "qps": 1695.05,
+            "visited": 180,
+            "comparisons": 2975
+          },
+          {
+            "recall_native_tie_aware": 0.99667,
+            "qps": 1678.3,
+            "visited": 180,
+            "comparisons": 2975
+          },
+          {
+            "recall_native_tie_aware": 0.99667,
+            "qps": 1703.72,
+            "visited": 180,
+            "comparisons": 2975
+          },
+          {
+            "recall_native_tie_aware": 0.99667,
+            "qps": 1686.69,
+            "visited": 180,
+            "comparisons": 2975
+          },
+          {
+            "recall_native_tie_aware": 0.99667,
+            "qps": 1710.0,
+            "visited": 180,
+            "comparisons": 2975
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.99667,
+          "qps": 1695.05,
+          "visited": 180,
+          "comparisons": 2975
+        }
+      },
+      "fg": {
+        "log_file": "search_fg_q160.verbose.log",
+        "sha256": "03cd9ff58fac192d19f66c263790c378192a9f5de025d4f5d521b171b5ab7841",
+        "five_internal_repeats": [
+          {
+            "recall_native_tie_aware": 0.996,
+            "qps": 1646.02,
+            "visited": 178,
+            "comparisons": 3112
+          },
+          {
+            "recall_native_tie_aware": 0.996,
+            "qps": 1642.3,
+            "visited": 178,
+            "comparisons": 3112
+          },
+          {
+            "recall_native_tie_aware": 0.996,
+            "qps": 1633.54,
+            "visited": 178,
+            "comparisons": 3112
+          },
+          {
+            "recall_native_tie_aware": 0.996,
+            "qps": 1646.73,
+            "visited": 178,
+            "comparisons": 3112
+          },
+          {
+            "recall_native_tie_aware": 0.996,
+            "qps": 1653.52,
+            "visited": 178,
+            "comparisons": 3112
+          }
+        ],
+        "median": {
+          "recall_native_tie_aware": 0.996,
+          "qps": 1646.02,
+          "visited": 178,
+          "comparisons": 3112
+        }
+      }
+    }
+  },
+  "limits": [
+    "8 native SEARCH configurations rerun only; NO index graph rebuilt or candidate pool regeneration",
+    "5 repetitions are inside a single native process per graph/Q, not 5 independent processes",
+    "Data is SIFT1M, same native ParlayANN searcher, single CPU 0, k=10, fixed Q 80/100/120/160",
+    "FG graph has 24.435% more arcs than PiPNN. NO equal-budget superiority claim",
+    "Same fixed Q is not same Recall; QPS alone does not isolate distance-work or imply exact latency distribution",
+    "The reported Recall is native tie-aware Recall; strict top10 was not independently computed here",
+    "No PiPNN II, no novelty claim, no independent BUILD repetitions"
+  ]
+}

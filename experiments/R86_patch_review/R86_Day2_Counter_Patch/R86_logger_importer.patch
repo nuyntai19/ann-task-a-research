@@ -1,0 +1,15 @@
+--- a/scripts/r86_log.py
++++ b/scripts/r86_log.py
+@@ -278,7 +278,11 @@
+             except json.JSONDecodeError as e:die(f'Leaf JSONL parse error line {line_no}: {e}')
+             ps, dep, size = r.get('pass_id'),r.get('depth'),r.get('size')
+             if not isinstance(ps,int) or ps<1 or (E.get('N') is not None and ps>E['N']):die('Invalid leaf pass_id')
+-            if not isinstance(dep,int) or dep<0 or not isinstance(size,int) or size<0:die('Invalid depth/size in leaf record')
++            # A final leaf after MergeBuckets/SplitDuplicates has no reliable
++            # recursion depth in the PiPNN bucket list: null is the truthful scope.
++            if dep is not None and (not isinstance(dep,int) or dep<0):
++                die('Invalid leaf depth; use null if not tracked by PiPNN')
++            if not isinstance(size,int) or size<0:die('Invalid leaf size')
+             key=(ps,dep)
+             bins=hist.setdefault(key,{})
+             bins[size]=bins.get(size,0)+1

@@ -1,0 +1,285 @@
+{
+  "study": "H25_R1_NATIVE_PIPNN_OFFLINE_INTERVENTION_PILOT",
+  "verdict": "DIAGNOSTIC_ONLY_NOT_PARETO_NOT_NOVELTY",
+  "gates": {
+    "native_leaves_match_capture": true,
+    "samples": 8,
+    "same_evaluator_for_all": true,
+    "offline_patch_cost_excluded_from_BUILD": true,
+    "matched_index_bytes": false,
+    "matched_edge_count": false
+  },
+  "graph": {
+    "baseline": {
+      "n": "1000000",
+      "edges": "22788653",
+      "graph_bytes": "95154620",
+      "reachable0": "1000000",
+      "zero_indegree": "0",
+      "peak_rss_kb_build": 1977628,
+      "verified_rows": 20784,
+      "patches_applied": 0,
+      "native_BUILD_includes_offline_policy_cost": false
+    },
+    "nearest": {
+      "n": "1000000",
+      "edges": "22800345",
+      "graph_bytes": "95201388",
+      "reachable0": "1000000",
+      "zero_indegree": "0",
+      "peak_rss_kb_build": 1978104,
+      "verified_rows": 20784,
+      "patches_applied": 23584,
+      "native_BUILD_includes_offline_policy_cost": false
+    },
+    "random": {
+      "n": "1000000",
+      "edges": "22802093",
+      "graph_bytes": "95208380",
+      "reachable0": "999999",
+      "zero_indegree": "1",
+      "peak_rss_kb_build": 1975080,
+      "verified_rows": 20784,
+      "patches_applied": 23584,
+      "native_BUILD_includes_offline_policy_cost": false
+    }
+  },
+  "search": {
+    "baseline": {
+      "100": {
+        "recall10": 0.9864,
+        "median_qps": 1313.23,
+        "min_qps": 1248.72,
+        "max_qps": 1333.95
+      },
+      "120": {
+        "recall10": 0.991,
+        "median_qps": 1107.28,
+        "min_qps": 1052.3,
+        "max_qps": 1140.07
+      },
+      "140": {
+        "recall10": 0.9938,
+        "median_qps": 1039.08,
+        "min_qps": 938.687,
+        "max_qps": 1042.11
+      },
+      "160": {
+        "recall10": 0.9954,
+        "median_qps": 915.043,
+        "min_qps": 862.116,
+        "max_qps": 934.403
+      },
+      "180": {
+        "recall10": 0.9965,
+        "median_qps": 810.139,
+        "min_qps": 793.677,
+        "max_qps": 839.737
+      },
+      "200": {
+        "recall10": 0.9971,
+        "median_qps": 769.927,
+        "min_qps": 763.029,
+        "max_qps": 771.116
+      },
+      "240": {
+        "recall10": 0.9975,
+        "median_qps": 665.252,
+        "min_qps": 658.612,
+        "max_qps": 666.006
+      },
+      "300": {
+        "recall10": 0.9979,
+        "median_qps": 554.163,
+        "min_qps": 550.928,
+        "max_qps": 554.351
+      }
+    },
+    "nearest": {
+      "100": {
+        "recall10": 0.9871,
+        "median_qps": 1330.24,
+        "min_qps": 1329.36,
+        "max_qps": 1330.87
+      },
+      "120": {
+        "recall10": 0.9912,
+        "median_qps": 1148.26,
+        "min_qps": 1146.62,
+        "max_qps": 1153.22
+      },
+      "140": {
+        "recall10": 0.9934,
+        "median_qps": 1018.38,
+        "min_qps": 1018.12,
+        "max_qps": 1021.13
+      },
+      "160": {
+        "recall10": 0.9948,
+        "median_qps": 925.035,
+        "min_qps": 917.886,
+        "max_qps": 926.548
+      },
+      "180": {
+        "recall10": 0.9958,
+        "median_qps": 841.119,
+        "min_qps": 839.597,
+        "max_qps": 841.435
+      },
+      "200": {
+        "recall10": 0.9967,
+        "median_qps": 727.698,
+        "min_qps": 704.541,
+        "max_qps": 769.325
+      },
+      "240": {
+        "recall10": 0.9974,
+        "median_qps": 654.256,
+        "min_qps": 643.035,
+        "max_qps": 654.415
+      },
+      "300": {
+        "recall10": 0.998,
+        "median_qps": 546.876,
+        "min_qps": 546.014,
+        "max_qps": 548.154
+      }
+    },
+    "random": {
+      "100": {
+        "recall10": 0.9873,
+        "median_qps": 1330.77,
+        "min_qps": 1330.53,
+        "max_qps": 1334.0
+      },
+      "120": {
+        "recall10": 0.9914,
+        "median_qps": 1147.65,
+        "min_qps": 1045.72,
+        "max_qps": 1148.77
+      },
+      "140": {
+        "recall10": 0.9936,
+        "median_qps": 1015.17,
+        "min_qps": 1009.23,
+        "max_qps": 1019.93
+      },
+      "160": {
+        "recall10": 0.9949,
+        "median_qps": 913.746,
+        "min_qps": 909.239,
+        "max_qps": 914.9
+      },
+      "180": {
+        "recall10": 0.996,
+        "median_qps": 836.249,
+        "min_qps": 834.325,
+        "max_qps": 838.087
+      },
+      "200": {
+        "recall10": 0.9966,
+        "median_qps": 765.214,
+        "min_qps": 703.457,
+        "max_qps": 767.423
+      },
+      "240": {
+        "recall10": 0.9975,
+        "median_qps": 656.641,
+        "min_qps": 620.219,
+        "max_qps": 664.683
+      },
+      "300": {
+        "recall10": 0.9981,
+        "median_qps": 545.606,
+        "min_qps": 528.84,
+        "max_qps": 546.979
+      }
+    }
+  },
+  "relative_to_baseline": {
+    "nearest": {
+      "100": {
+        "delta_recall10_percentage_points": 0.06999999999999229,
+        "relative_median_qps_pct": 1.2952795778347959
+      },
+      "120": {
+        "delta_recall10_percentage_points": 0.019999999999997797,
+        "relative_median_qps_pct": 3.7009609132288235
+      },
+      "140": {
+        "delta_recall10_percentage_points": -0.0400000000000067,
+        "relative_median_qps_pct": -1.9921468991800362
+      },
+      "160": {
+        "delta_recall10_percentage_points": -0.05999999999999339,
+        "relative_median_qps_pct": 1.0919705412751002
+      },
+      "180": {
+        "delta_recall10_percentage_points": -0.07000000000000339,
+        "relative_median_qps_pct": 3.8240351347114565
+      },
+      "200": {
+        "delta_recall10_percentage_points": -0.039999999999995595,
+        "relative_median_qps_pct": -5.484805702358797
+      },
+      "240": {
+        "delta_recall10_percentage_points": -0.010000000000010001,
+        "relative_median_qps_pct": -1.6529074696505996
+      },
+      "300": {
+        "delta_recall10_percentage_points": 0.009999999999998899,
+        "relative_median_qps_pct": -1.314956068882267
+      }
+    },
+    "random": {
+      "100": {
+        "delta_recall10_percentage_points": 0.08999999999999009,
+        "relative_median_qps_pct": 1.3356380831994308
+      },
+      "120": {
+        "delta_recall10_percentage_points": 0.039999999999995595,
+        "relative_median_qps_pct": 3.6458709630807107
+      },
+      "140": {
+        "delta_recall10_percentage_points": -0.019999999999997797,
+        "relative_median_qps_pct": -2.3010740270239083
+      },
+      "160": {
+        "delta_recall10_percentage_points": -0.04999999999999449,
+        "relative_median_qps_pct": -0.14174197278160605
+      },
+      "180": {
+        "delta_recall10_percentage_points": -0.050000000000005596,
+        "relative_median_qps_pct": 3.2229037239288605
+      },
+      "200": {
+        "delta_recall10_percentage_points": -0.04999999999999449,
+        "relative_median_qps_pct": -0.6121359557464512
+      },
+      "240": {
+        "delta_recall10_percentage_points": 0.0,
+        "relative_median_qps_pct": -1.2943967098182352
+      },
+      "300": {
+        "delta_recall10_percentage_points": 0.019999999999997797,
+        "relative_median_qps_pct": -1.5441305175553088
+      }
+    }
+  },
+  "warnings": [
+    "nearest: index bytes 95201388 != baseline 95154620; NOT memory/edge-matched",
+    "nearest: total graph edge count differs from baseline",
+    "random: index bytes 95208380 != baseline 95154620; NOT memory/edge-matched",
+    "random: total graph edge count differs from baseline",
+    "random: reachable0 changed"
+  ],
+  "not_proved": [
+    "feasible concurrent first-occurrence detection",
+    "complete policy BUILD cost",
+    "deterministic graph equivalence across runs",
+    "post-HashPrune proposal survival attribution",
+    "matched Recall/bytes across builder settings",
+    "repeated native BUILD",
+    "algorithm novelty"
+  ]
+}

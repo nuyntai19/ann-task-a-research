@@ -1,0 +1,3045 @@
+{
+  "audit": "R42_EXACT_BASE_TOP10_2HOP_RESCUE",
+  "status": "READ_ONLY_BASE_ANCHORS_NOT_SEARCH_RECALL",
+  "protocol": {
+    "n": 1000000,
+    "dim": 128,
+    "r41_source_count": 32,
+    "r41_source_ids_sha256": "d437fae6de60774dba3599170c1944fac7dd3372f4d073d586d0eef7a633b5c6",
+    "topk": 10,
+    "hops": 2,
+    "directed": true,
+    "monotonicity": "strict Float64 squared L2 distance to exact BASE target at intermediate vertex",
+    "candidate_pool": "R26a original fixed capacity rows",
+    "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+    "pool_sha256": "7e22a4ca2b71bd560560f7e4aa2a1f2dcad46b8f25ae48ca8ea014c17086f9e8"
+  },
+  "summary": {
+    "all": {
+      "sources": 32,
+      "gt_total": 320,
+      "direct": 207,
+      "reachable_within_2_hops": 300,
+      "monotone_to_base_target_within_2_hops": 297,
+      "pool_captured_but_pruned": {
+        "n": 71,
+        "reachable_2hop": 64,
+        "monotone_2hop": 62
+      },
+      "missing_before_pool": {
+        "n": 42,
+        "reachable_2hop": 29,
+        "monotone_2hop": 28
+      },
+      "graph_direct": {
+        "n": 207,
+        "reachable_2hop": 207,
+        "monotone_2hop": 207
+      },
+      "direct_fraction": 0.646875,
+      "reachable_within_2_hops_fraction": 0.9375,
+      "monotone_to_base_target_within_2_hops_fraction": 0.928125
+    },
+    "full_outdegree": {
+      "sources": 7,
+      "gt_total": 70,
+      "direct": 50,
+      "reachable_within_2_hops": 69,
+      "monotone_to_base_target_within_2_hops": 68,
+      "pool_captured_but_pruned": {
+        "n": 14,
+        "reachable_2hop": 13,
+        "monotone_2hop": 12
+      },
+      "missing_before_pool": {
+        "n": 6,
+        "reachable_2hop": 6,
+        "monotone_2hop": 6
+      },
+      "graph_direct": {
+        "n": 50,
+        "reachable_2hop": 50,
+        "monotone_2hop": 50
+      },
+      "direct_fraction": 0.7142857,
+      "reachable_within_2_hops_fraction": 0.9857143,
+      "monotone_to_base_target_within_2_hops_fraction": 0.9714286
+    },
+    "slack_outdegree": {
+      "sources": 25,
+      "gt_total": 250,
+      "direct": 157,
+      "reachable_within_2_hops": 231,
+      "monotone_to_base_target_within_2_hops": 229,
+      "pool_captured_but_pruned": {
+        "n": 57,
+        "reachable_2hop": 51,
+        "monotone_2hop": 50
+      },
+      "missing_before_pool": {
+        "n": 36,
+        "reachable_2hop": 23,
+        "monotone_2hop": 22
+      },
+      "graph_direct": {
+        "n": 157,
+        "reachable_2hop": 157,
+        "monotone_2hop": 157
+      },
+      "direct_fraction": 0.628,
+      "reachable_within_2_hops_fraction": 0.924,
+      "monotone_to_base_target_within_2_hops_fraction": 0.916
+    }
+  },
+  "limitations": [
+    "2-hop topological reachability and monotonic base-target witness are NOT query Recall, beam-search accessibility or multi-hop routing quality.",
+    "No heldout query in calculation, no graph modification, and the 32-anchor original sample is small.",
+    "Short paths do not imply a search algorithm finds them; local kNN loss need not be an ANN quality loss."
+  ],
+  "per_source": [
+    {
+      "source": 12582,
+      "outdegree": 26,
+      "records": [
+        {
+          "target": 11768,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 11468,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 218254,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 90622,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 243211,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 501980,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 627347,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 626440,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 771278,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 534275,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 8,
+        "captured_but_pruned": 0,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 69874,
+      "outdegree": 25,
+      "records": [
+        {
+          "target": 86757,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 88248,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 82310,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 472474,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 83187,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 495596,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 89634,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 956464,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 70345,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 516770,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 91267,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 86569,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 88437,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 20908,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 501584,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 633816,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 500765,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 174716,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 331387,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 416183,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 409864,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 8,
+        "captured_but_pruned": 1,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 133644,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 566347,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 602603,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 488524,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 768399,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 526788,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 720877,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 503301,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 25952,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 721632,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 844532,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 146880,
+      "outdegree": 11,
+      "records": [
+        {
+          "target": 147000,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 147295,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 841340,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 147451,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 638158,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 393346,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 112300,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 705533,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 117020,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 706963,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 4,
+        "captured_but_pruned": 5,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 157289,
+      "outdegree": 22,
+      "records": [
+        {
+          "target": 839205,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 155560,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 627472,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 456682,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 595369,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 98554,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 595938,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 246369,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 229347,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 634195,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 190634,
+      "outdegree": 15,
+      "records": [
+        {
+          "target": 313390,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 319405,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 990532,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 190584,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 572062,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 178772,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 314276,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 719654,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 758673,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 220789,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 4,
+        "captured_but_pruned": 4,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 195127,
+      "outdegree": 26,
+      "records": [
+        {
+          "target": 273943,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 197250,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 276066,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 195685,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 274501,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 195098,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 273914,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 516493,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 16025,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 208298,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        }
+      ],
+      "baseline": {
+        "pool_hit": 5,
+        "graph_hit": 3,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 5
+      }
+    },
+    {
+      "source": 242451,
+      "outdegree": 21,
+      "records": [
+        {
+          "target": 242492,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 242461,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 541771,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 70014,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 189825,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 892035,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 170957,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 513670,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 225218,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 698331,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 8,
+        "captured_but_pruned": 1,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 293131,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 509903,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 859344,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 516113,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 825538,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 481089,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 774080,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 156989,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 529729,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 773706,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 556079,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 6,
+        "captured_but_pruned": 3,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 298860,
+      "outdegree": 24,
+      "records": [
+        {
+          "target": 281404,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 279831,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 419564,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 316035,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 280059,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 350800,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 315968,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 155825,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 336823,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 317848,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 368394,
+      "outdegree": 27,
+      "records": [
+        {
+          "target": 366379,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 757873,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 662815,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 282645,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 353362,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 587971,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 354393,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 247838,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 280040,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 338172,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 378604,
+      "outdegree": 27,
+      "records": [
+        {
+          "target": 965245,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 569514,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 655481,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 654917,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 378594,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 42199,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 569498,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 654321,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 479512,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 376811,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 6,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 392771,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 393092,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 931894,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 564314,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 957286,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 9901,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 885795,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 932412,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 622397,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 182652,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 239063,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 7,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 404097,
+      "outdegree": 19,
+      "records": [
+        {
+          "target": 404191,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 400240,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 400254,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 400337,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 404574,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 404383,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 413767,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 399552,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 938708,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 29781,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 7,
+        "graph_hit": 6,
+        "captured_but_pruned": 1,
+        "lost_before_pool": 3
+      }
+    },
+    {
+      "source": 420422,
+      "outdegree": 19,
+      "records": [
+        {
+          "target": 420215,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 420170,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 488894,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 793932,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 111904,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 759698,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 489922,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 581572,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 197539,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 276355,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 6,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 441598,
+      "outdegree": 21,
+      "records": [
+        {
+          "target": 441792,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 352412,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 616229,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 530281,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 60837,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 458092,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 861119,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 529884,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 713557,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 533214,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 9,
+        "captured_but_pruned": 0,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 442632,
+      "outdegree": 16,
+      "records": [
+        {
+          "target": 443100,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 442416,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 442802,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 823954,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 718397,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 660833,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 660164,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 443264,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 790824,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 718410,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 7,
+        "captured_but_pruned": 1,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 459706,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 459487,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 209247,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 897731,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 896976,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 753970,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 779103,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 925765,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 754653,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 680026,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 753833,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 575600,
+      "outdegree": 16,
+      "records": [
+        {
+          "target": 574856,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 574574,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 575062,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 576544,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 504998,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 785005,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 490209,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 168607,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 933758,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 499540,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 5,
+        "captured_but_pruned": 4,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 657359,
+      "outdegree": 27,
+      "records": [
+        {
+          "target": 755252,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 335124,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 975127,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 371463,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 177906,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 137833,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 395152,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 882641,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 311803,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 553179,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 8,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 672708,
+      "outdegree": 11,
+      "records": [
+        {
+          "target": 673062,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 673101,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 672580,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 672887,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 673215,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 673150,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 673017,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 672849,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 672799,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 672783,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 6,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 739961,
+      "outdegree": 26,
+      "records": [
+        {
+          "target": 609908,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 742068,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 952151,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 454365,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 735808,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 976175,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 284947,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 991752,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 992295,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 757201,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 9,
+        "captured_but_pruned": 0,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 759058,
+      "outdegree": 16,
+      "records": [
+        {
+          "target": 758349,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 758907,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 759065,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 759273,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 760382,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 758233,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 759022,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 759776,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 835097,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 833822,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 5,
+        "captured_but_pruned": 4,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 800894,
+      "outdegree": 12,
+      "records": [
+        {
+          "target": 800583,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 189271,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 189371,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 992698,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 878912,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 917708,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 887602,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 32697,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 189085,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 887547,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 849247,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 858066,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 859290,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 849280,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 216006,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 215813,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 560911,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 563376,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 858543,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 925276,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 997139,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 7,
+        "captured_but_pruned": 2,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 863489,
+      "outdegree": 20,
+      "records": [
+        {
+          "target": 872066,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 862924,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 863316,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 864611,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 873089,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 865326,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 920565,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 920114,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 211637,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 919738,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 7,
+        "graph_hit": 3,
+        "captured_but_pruned": 4,
+        "lost_before_pool": 3
+      }
+    },
+    {
+      "source": 866316,
+      "outdegree": 17,
+      "records": [
+        {
+          "target": 639695,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 829985,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 153303,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 75224,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": false,
+          "monotone_to_base_target_within_2_hops": false
+        },
+        {
+          "target": 8360,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 829826,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 88715,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 951793,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 480053,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 123861,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 8,
+        "graph_hit": 5,
+        "captured_but_pruned": 3,
+        "lost_before_pool": 2
+      }
+    },
+    {
+      "source": 901198,
+      "outdegree": 21,
+      "records": [
+        {
+          "target": 362658,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 174984,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 748441,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 65658,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 724242,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 278664,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 242240,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 187627,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 431687,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 428246,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 7,
+        "captured_but_pruned": 3,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 935728,
+      "outdegree": 19,
+      "records": [
+        {
+          "target": 937720,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 935105,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 720657,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 721297,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 133690,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 950133,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 415542,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 70149,
+          "category": "missing_before_pool",
+          "in_pool": false,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 127898,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 213740,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 9,
+        "graph_hit": 8,
+        "captured_but_pruned": 1,
+        "lost_before_pool": 1
+      }
+    },
+    {
+      "source": 962572,
+      "outdegree": 32,
+      "records": [
+        {
+          "target": 971475,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 602694,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 801337,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 153835,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 745045,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 619026,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 288642,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 228395,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 818847,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 113104,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 9,
+        "captured_but_pruned": 1,
+        "lost_before_pool": 0
+      }
+    },
+    {
+      "source": 968382,
+      "outdegree": 28,
+      "records": [
+        {
+          "target": 442575,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 886389,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 386256,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 864539,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 44390,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 787687,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 383526,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 787757,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 428224,
+          "category": "graph_direct",
+          "in_pool": true,
+          "direct": true,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        },
+        {
+          "target": 423885,
+          "category": "pool_captured_but_pruned",
+          "in_pool": true,
+          "direct": false,
+          "reachable_within_2_hops": true,
+          "monotone_to_base_target_within_2_hops": true
+        }
+      ],
+      "baseline": {
+        "pool_hit": 10,
+        "graph_hit": 6,
+        "captured_but_pruned": 4,
+        "lost_before_pool": 0
+      }
+    }
+  ]
+}

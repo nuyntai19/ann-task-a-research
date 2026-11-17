@@ -1,0 +1,162 @@
+{
+  "study": "H32_R8_LOCAL_READ_ONLY_AUDIT",
+  "mode": "NO_BUILD_NO_SEARCH_NO_GRAPH_MUTATION",
+  "root": "/home/tai/ann-task-a",
+  "timestamp_utc": "2026-10-29T07:22:06.244828+00:00",
+  "overall": "PASS_LOCAL_AUDIT",
+  "status_items": [
+    {
+      "name": "INVENTORY",
+      "status": "PASS",
+      "details": "original H31-R0 inventory found"
+    },
+    {
+      "name": "GRAPH_VAMANA",
+      "status": "PASS",
+      "details": "pinned SHA, byte length, degree sum, header and inventory match",
+      "path": "/home/tai/ann-task-a/results/vamana_sift1m.graph",
+      "sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+      "bytes": 114573392,
+      "directed_edges": 27643346,
+      "max_degree": 32
+    },
+    {
+      "name": "GRAPH_STOCK",
+      "status": "PASS",
+      "details": "pinned SHA, byte length, degree sum, header and inventory match",
+      "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_stock.graph",
+      "sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+      "bytes": 95174232,
+      "directed_edges": 22793556,
+      "max_degree": 32
+    },
+    {
+      "name": "GRAPH_TOP2",
+      "status": "PASS",
+      "details": "pinned SHA, byte length, degree sum, header and inventory match",
+      "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_top2.graph",
+      "sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6",
+      "bytes": 95176264,
+      "directed_edges": 22794064,
+      "max_degree": 32
+    },
+    {
+      "name": "DATA_BASE",
+      "status": "PASS_HEADER_SIZE_ONLY",
+      "details": "n=1000000,d=128,bytes=512000008; NO exact GT correctness claim",
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "bytes": 512000008
+    },
+    {
+      "name": "DATA_QUERIES",
+      "status": "PASS_HEADER_SIZE_ONLY",
+      "details": "n=10000,d=128,bytes=5120008; NO exact GT correctness claim",
+      "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "bytes": 5120008
+    },
+    {
+      "name": "DATA_GT",
+      "status": "PASS_HEADER_SIZE_ONLY",
+      "details": "n=10000,d=100,bytes=8000008; NO exact GT correctness claim",
+      "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "bytes": 8000008
+    },
+    {
+      "name": "GT_SAMPLE",
+      "status": "PASS_SAMPLE_ONLY",
+      "details": "100 spaced rows; not exact GT validation"
+    },
+    {
+      "name": "SEARCH_BINARY",
+      "status": "PASS",
+      "details": "actual_sha256=ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8, expected=ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8",
+      "path": "/home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors",
+      "sha256": "ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8"
+    },
+    {
+      "name": "PARLAYANN_HEAD",
+      "status": "PASS",
+      "details": "actual=a48c6a34e5f959190992aa531cc18454cfcc3dd3, expected=a48c6a34e5f959190992aa531cc18454cfcc3dd3",
+      "head": "a48c6a34e5f959190992aa531cc18454cfcc3dd3"
+    },
+    {
+      "name": "SESSION_R2_INITIAL",
+      "status": "PASS",
+      "details": "9 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search",
+      "dir": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_101943_596045",
+      "qps_medians": {
+        "VAMANA_Q100": 2426.57,
+        "STOCK_Q100": 2438.54,
+        "TOP2_Q100": 2445.2,
+        "TOP2_Q120": 1934.15,
+        "STOCK_Q120": 2093.59,
+        "VAMANA_Q120": 2111.17,
+        "VAMANA_Q160": 1671.84,
+        "STOCK_Q160": 1662.64,
+        "TOP2_Q160": 1655.05
+      }
+    },
+    {
+      "name": "SESSION_R2B_1",
+      "status": "PASS",
+      "details": "3 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search",
+      "dir": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104205_116336",
+      "qps_medians": {
+        "VAMANA_Q120": 2086.2,
+        "STOCK_Q120": 2076.61,
+        "TOP2_Q120": 2189.66
+      }
+    },
+    {
+      "name": "SESSION_R2B_2",
+      "status": "PASS",
+      "details": "3 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search",
+      "dir": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104324_359107",
+      "qps_medians": {
+        "STOCK_Q120": 2185.38,
+        "TOP2_Q120": 2185.01,
+        "VAMANA_Q120": 2185.31
+      }
+    },
+    {
+      "name": "SESSION_R2B_3",
+      "status": "PASS",
+      "details": "3 role×Q records, 5 raw search repetitions each, JSON/log/graph+binary SHA consistent; no new search",
+      "dir": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104440_070228",
+      "qps_medians": {
+        "TOP2_Q120": 2186.04,
+        "VAMANA_Q120": 2167.98,
+        "STOCK_Q120": 2182.54
+      }
+    }
+  ],
+  "cpu_information": {
+    "sched_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "online_cpus": "0-7",
+    "note": "CPU physical mapping / governor / thermal not measured; run lscpu -e=CPU,CORE,SOCKET separately if required."
+  },
+  "scientific_gates": {
+    "Q01_existing_graph_provenance": "PASS",
+    "Q01_equal_graph_budget": "BLOCKED_KNOWN_DIFFERENT_BYTES",
+    "Q01_equal_recall_pareto": "NOT_DETERMINED",
+    "Q02_intraquery_binary": "NOT_VERIFIED_INTERQUERY_ONLY_CURRENT_PARLAYANN",
+    "H17_engineering_build_speedup": "HISTORIC_RESULT_NOT_REMEASURED",
+    "H33_new_algorithm": "NOT_AUTHORIZED_OR_EVALUATED"
+  },
+  "notes": [
+    "Graph input files are NEVER written to; only output report files are created.",
+    "GT sample checks 100 spaced rows for range and non-negative finite scores; not exact oracle correctness.",
+    "R2b 3 process rounds with 5 internal repetitions each are not 15 independent graph builds.",
+    "Matched graph bytes and matched recall are not established.",
+    "No ANN build/search workload or CPU profiling was invoked."
+  ]
+}

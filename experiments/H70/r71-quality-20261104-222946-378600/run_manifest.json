@@ -1,0 +1,261 @@
+{
+  "timestamp": "2026-11-04T22:29:51.464335+07:00",
+  "input_manifest": [
+    {
+      "path": "/home/tai/ann-task-a/data/sift100k.fbin",
+      "sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/A_stock",
+      "sha256": "89481f1b15efb7ffa2315f35ae71208b37dba23aa78e76bd5c785f4c83743f76"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/B_h17",
+      "sha256": "0918c0cc7c30fd1645baca0eea85be4667c94d02cfbb54478a881fb5fe16c267"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/C_tier",
+      "sha256": "f0784650ae49182d15175aa81e3a613900611548e2f80d532b85c5cb91f0cbfb"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/D_h17_tier",
+      "sha256": "8f3e9a4659ede27739b34eb8b270d0d0b8b8e4457aa741f97c3998d0ee18d964"
+    }
+  ],
+  "source_run": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ",
+  "recalled_binary": "/home/tai/ann-task-a/experiments/H70/build-r70/algorithms/PipNN/r70_graph_recall",
+  "recalled_binary_sha256": "f3999051c6cc96434ea26d2faedd3ac632ed8d20be342e15c92fd4b905a33fe9",
+  "base": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "queries": "/home/tai/ann-task-a/data/sift100k_queries_300.fbin",
+  "gt": "/home/tai/ann-task-a/data/sift100k_gt300.ibin",
+  "runs": [
+    {
+      "tag": "r1_A_stock",
+      "variant": "A_stock",
+      "round": 1,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r1_A_stock.graph",
+      "build_wall_sec": 9.15,
+      "build_peak_rss_KiB": 416160,
+      "graph_stats": {
+        "size_bytes": 7693900,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1823473,
+        "average_degree": 18.23473,
+        "sha256": "62bb59e6817b98dfd2755f1142e01eb40537ebd4defc79bd4b104f9b5f9dcebb",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r1_B_h17",
+      "variant": "B_h17",
+      "round": 1,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r1_B_h17.graph",
+      "build_wall_sec": 7.89,
+      "build_peak_rss_KiB": 415700,
+      "graph_stats": {
+        "size_bytes": 7707884,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1826969,
+        "average_degree": 18.26969,
+        "sha256": "f09b7f036b185468c2896afcfa5c394b998459f31417473d7229462095266216",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r1_C_tier",
+      "variant": "C_tier",
+      "round": 1,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r1_C_tier.graph",
+      "build_wall_sec": 8.53,
+      "build_peak_rss_KiB": 345336,
+      "graph_stats": {
+        "size_bytes": 7706460,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1826613,
+        "average_degree": 18.26613,
+        "sha256": "8135edd4e1e9ed5913b389ad589a3b27799b128d6f0cea46b3380515b9f12075",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r1_D_h17_tier",
+      "variant": "D_h17_tier",
+      "round": 1,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r1_D_h17_tier.graph",
+      "build_wall_sec": 7.67,
+      "build_peak_rss_KiB": 345432,
+      "graph_stats": {
+        "size_bytes": 7696372,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1824091,
+        "average_degree": 18.24091,
+        "sha256": "dc36f3f6d2009456c17a3c965745cbfd2615c58e8be8368e600cd042f195adb4",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r2_A_stock",
+      "variant": "A_stock",
+      "round": 2,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r2_A_stock.graph",
+      "build_wall_sec": 8.67,
+      "build_peak_rss_KiB": 413772,
+      "graph_stats": {
+        "size_bytes": 7708668,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1827165,
+        "average_degree": 18.27165,
+        "sha256": "6fa2b7cca4465ed8a1045ebbff022c36f9f9665ad735d31494d596f0fc356102",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r2_B_h17",
+      "variant": "B_h17",
+      "round": 2,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r2_B_h17.graph",
+      "build_wall_sec": 7.71,
+      "build_peak_rss_KiB": 415416,
+      "graph_stats": {
+        "size_bytes": 7695952,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1823986,
+        "average_degree": 18.23986,
+        "sha256": "79430c818d29f7e10cf9bd00521d816e99c0b345186c2034e8405d0583f90611",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r2_C_tier",
+      "variant": "C_tier",
+      "round": 2,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r2_C_tier.graph",
+      "build_wall_sec": 8.83,
+      "build_peak_rss_KiB": 345816,
+      "graph_stats": {
+        "size_bytes": 7708684,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1827169,
+        "average_degree": 18.27169,
+        "sha256": "68740a859983abd95e8ecd1637d98dcffaf0e21882451674456b6f9c5e3fd051",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r2_D_h17_tier",
+      "variant": "D_h17_tier",
+      "round": 2,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r2_D_h17_tier.graph",
+      "build_wall_sec": 7.79,
+      "build_peak_rss_KiB": 344916,
+      "graph_stats": {
+        "size_bytes": 7708708,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1827175,
+        "average_degree": 18.27175,
+        "sha256": "2b388dbb00d7bd93b27bb8c8e4694eafcf06bd230e7719e1b850965ef9dcc1e5",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r3_A_stock",
+      "variant": "A_stock",
+      "round": 3,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r3_A_stock.graph",
+      "build_wall_sec": 8.62,
+      "build_peak_rss_KiB": 414444,
+      "graph_stats": {
+        "size_bytes": 7702728,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1825680,
+        "average_degree": 18.2568,
+        "sha256": "21e7e362fe70315c3874c49b96ed983afa8a5c4b737df5fc3a4c10d539fd1570",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r3_B_h17",
+      "variant": "B_h17",
+      "round": 3,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r3_B_h17.graph",
+      "build_wall_sec": 7.67,
+      "build_peak_rss_KiB": 415128,
+      "graph_stats": {
+        "size_bytes": 7708688,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1827170,
+        "average_degree": 18.2717,
+        "sha256": "77cd2810b490feb499a84478d208f29ba3f19188c2661c5e4620bbfc19e2bfef",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r3_C_tier",
+      "variant": "C_tier",
+      "round": 3,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r3_C_tier.graph",
+      "build_wall_sec": 8.84,
+      "build_peak_rss_KiB": 344184,
+      "graph_stats": {
+        "size_bytes": 7693172,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1823291,
+        "average_degree": 18.23291,
+        "sha256": "c38ceada60d1038bc0d3e360b848ff885aa9642e99aaf32477a5c6c039dc9835",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    },
+    {
+      "tag": "r3_D_h17_tier",
+      "variant": "D_h17_tier",
+      "round": 3,
+      "graph": "/home/tai/ann-task-a/experiments/H70/r71-factorial-4t-cCQjM1KQ/r3_D_h17_tier.graph",
+      "build_wall_sec": 7.75,
+      "build_peak_rss_KiB": 345064,
+      "graph_stats": {
+        "size_bytes": 7707592,
+        "n": 100000,
+        "max_degree": 64,
+        "arcs": 1826896,
+        "average_degree": 18.26896,
+        "sha256": "2170934f45e2e15f27f8594178f40f131f9153a05013e9fbcf341eab97177cdb",
+        "invalid_ids": 0,
+        "duplicates": 0,
+        "selfloops": 0
+      }
+    }
+  ]
+}

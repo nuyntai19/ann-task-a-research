@@ -1,0 +1,375 @@
+{
+  "status": "TARGETED_H19_R20B_READONLY",
+  "root": "/home/tai/ann-task-a",
+  "focus": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling",
+  "no_build_no_search_no_graph_change": true,
+  "no_pipnn_ii_run": true,
+  "historical_doc_medians_kib": {
+    "1": 1714432,
+    "2": 1758336,
+    "4": 1849076
+  },
+  "strict_log_medians_kib": {
+    "1": 1714432,
+    "2": 1758336,
+    "4": 1849076
+  },
+  "all_nine_logs_strict_single_rss": true,
+  "strict_median_match_existing_doc": true,
+  "per_worker_completeness": {
+    "1": {
+      "strict_rss_parsed": 3,
+      "file_status": [
+        "READ",
+        "READ",
+        "READ"
+      ]
+    },
+    "2": {
+      "strict_rss_parsed": 3,
+      "file_status": [
+        "READ",
+        "READ",
+        "READ"
+      ]
+    },
+    "4": {
+      "strict_rss_parsed": 3,
+      "file_status": [
+        "READ",
+        "READ",
+        "READ"
+      ]
+    }
+  },
+  "exact_nine_logs": [
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w1_rep1.log",
+      "status": "READ",
+      "sha256": "2141b32acc0f5f9275f045ace80beb075f74b342bc806f268b03fd6ea127610f",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1714412"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 227694"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1714412,
+          "raw": "Maximum resident set size (kbytes): 1714412"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1714412,
+      "worker": 1,
+      "rep": 1
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w1_rep2.log",
+      "status": "READ",
+      "sha256": "01311fb08370ad8ade0851b9ac2eb09949dcca8143f75d3545dd25a9d92d4f30",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1714440"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 227694"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1714440,
+          "raw": "Maximum resident set size (kbytes): 1714440"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1714440,
+      "worker": 1,
+      "rep": 2
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w1_rep3.log",
+      "status": "READ",
+      "sha256": "497d84a72ddd69c7e3a229504c55386b2b4b99d7949586c963aa9625a928dedd",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1714432"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 227693"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1714432,
+          "raw": "Maximum resident set size (kbytes): 1714432"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1714432,
+      "worker": 1,
+      "rep": 3
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w2_rep1.log",
+      "status": "READ",
+      "sha256": "65b3ef64f889d4a1104c1b2d7623c986392136b2bc0b372d7a3e7065cb893316",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1758336"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 242967"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1758336,
+          "raw": "Maximum resident set size (kbytes): 1758336"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1758336,
+      "worker": 2,
+      "rep": 1
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w2_rep2.log",
+      "status": "READ",
+      "sha256": "3939a4892fa1a31d789eb5f3355bf5cf54b7cc65323f353a06d4a551d47560af",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1759276"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 246621"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1759276,
+          "raw": "Maximum resident set size (kbytes): 1759276"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1759276,
+      "worker": 2,
+      "rep": 2
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w2_rep3.log",
+      "status": "READ",
+      "sha256": "1c38ba0aaf004790fabf3f454500948714c371cb5cf17d33acef978d8ca449b8",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1758220"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 240573"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1758220,
+          "raw": "Maximum resident set size (kbytes): 1758220"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1758220,
+      "worker": 2,
+      "rep": 3
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w4_rep1.log",
+      "status": "READ",
+      "sha256": "d4808e23718f447068c49a33af2dfaa25b273ab81d09fef78280df621d52631f",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1849076"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 261836"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1849076,
+          "raw": "Maximum resident set size (kbytes): 1849076"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1849076,
+      "worker": 4,
+      "rep": 1
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w4_rep2.log",
+      "status": "READ",
+      "sha256": "07f8c28cc81343b075ec8e3e85c849ab296ae40450eafdcabec4a844ccb3a66e",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1849164"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 261929"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1849164,
+          "raw": "Maximum resident set size (kbytes): 1849164"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1849164,
+      "worker": 4,
+      "rep": 2
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/w4_rep3.log",
+      "status": "READ",
+      "sha256": "d82625f906b7445d61eeee2875f4560655b39332e6373b6cfb37ff4543281b8b",
+      "n_matching_stat_lines": 4,
+      "relevant_lines": [
+        {
+          "line": 46,
+          "text": "Maximum resident set size (kbytes): 1848916"
+        },
+        {
+          "line": 48,
+          "text": "Major (requiring I/O) page faults: 0"
+        },
+        {
+          "line": 49,
+          "text": "Minor (reclaiming a frame) page faults: 261916"
+        },
+        {
+          "line": 52,
+          "text": "Swaps: 0"
+        }
+      ],
+      "strict_rss_candidates": [
+        {
+          "line": 46,
+          "rss_kib": 1848916,
+          "raw": "Maximum resident set size (kbytes): 1848916"
+        }
+      ],
+      "unambiguous_peak_rss_kib": 1848916,
+      "worker": 4,
+      "rep": 3
+    }
+  ],
+  "summary_json": {
+    "path": "/home/tai/ann-task-a/experiments/H19/phase2_perf_scaling/summary.json",
+    "status": "READ",
+    "sha256": "1fac3a62e70a5dca77bdce745b4bc72cfdd80623a4cbd9c4e4ed05b3a50e6c69",
+    "json_root_type": "dict",
+    "top_keys": [
+      "status",
+      "date_utc",
+      "model",
+      "reps_per_worker",
+      "threads",
+      "perf_counters",
+      "note",
+      "workers",
+      "speedup_1_to_4",
+      "efficiency_1_to_4",
+      "records",
+      "cautions"
+    ],
+    "content_excerpt": "{\n  \"status\": \"H19_R2_PERF_DIAGNOSTIC_COMPLETE_NOT_NOVELTY\",\n  \"date_utc\": \"2026-10-24T16:21:24.560933+00:00\",\n  \"model\": \"CLEAN H17 Top-2 PiPNN 443a328, SIFT1M, f30, one full graph BUILD per worker/rep\",\n  \"reps_per_worker\": 3,\n  \"threads\": \"1/2/4 physical cores (CPU 0 / 0,2 / 0,2,4,6)\",\n  \"perf_counters\": [\n    \"cycles\",\n    \"instructions\",\n    \"cache-references\",\n    \"cache-misses\"\n  ],\n  \"note\": \"Generic cache-miss events on AMD are NOT total DRAM accesses or bandwidth. Counters are scoped to perf child and can be multiplexed; read perf raw logs.\",\n  \"workers\": {\n    \"1\": {\n      \"median_build_wall_s\": 126.2,\n      \"median_partition_s\": 25.0386,\n      \"median_leaf_s\": 87.5487,\n      \"median_prune_s\": 13.3043,\n      \"median_ipc\": 1.8790557427840702,\n      \"median_cache_mpki\": 3.019857009589487,\n      \"median_generic_cache_miss_ratio\": 0.093205238325509,\n      \"median_peak_rss_kb\": 1714432,\n      \"build_times_each\": [\n        129.3,\n        126.2,\n        126.0\n      ],\n      \"cache_mpki_each\": [\n        3.029452828826778,\n        3.019857009589487,\n        3.0162423395430498\n      ]\n    },\n    \"2\": {\n      \"median_build_wall_s\": 71.45,\n      \"median_partition_s\": 14.684,\n      \"median_leaf_s\": 49.0921,\n      \"median_prune_s\": 6.7229,\n      \"median_ipc\": 1.756413902069777,\n      \"median_cache_mpki\": 3.100310454011569,\n      \"median_generic_cache_miss_ratio\": 0.09626501528799677,\n      \"median_peak_rss_kb\": 1758336,\n      \"build_times_each\": [\n        71.45,\n        70.52,\n        71.86\n      ],\n      \"cache_mpki_each\": [\n        3.0854732236148115,\n        3.100310454011569,\n        3.1023062193908437\n      ]\n    },\n    \"4\": {\n      \"median_build_wall_s\": 44.13,\n      \"median_partition_s\": 9.2495,\n      \"median_leaf_s\": 30.9636,\n      \"median_prune_s\": 3.7251,\n      \"median_ipc\": 1.5721194176479143,\n      \"median_cache_mpki\": 3.2208346248209394,\n      \"median_generic_cache_miss_ratio\": 0.09981355973705772,\n      \"median_peak_rss_kb\": 1849076,\n      \"build_times_each\": [\n        46.05,\n        41.84,\n        44.13\n      ],\n      \"cache_mpki_each\": [\n        3.327015624482527,\n        3.207250178801232,\n        3.2208346248209394\n      ]\n    }\n  },\n  \"speedup_1_to_4\": 2.8597326082030365,\n  \"efficiency_1_to_4\": 0.7149331520507591,\n  \"records\": [\n    {\n      \"workers\": 1,\n      \"rep\": 1,\n      \"build_wall_s\": 129.3,\n      \"partition_wall_s\": 27.2899,\n      \"leaf_wall_s\": 88.2525,\n      \"prune_wall_s\": 13.3043,\n      \"max_rss_kb\": 1714412,\n      \"user_cpu_s\": 128.77,\n      \"system_cpu_s\": 0.88,\n      \"perf_events\": {\n        \"cycles\": 499153799031,\n        \"instructions\": 917817404365,\n        \"cache-references\": 29946729773,\n        \"cache-misses\": 2780484532\n      },\n      \"ipc\": 1.8387467072207915,\n      \"cache_mpki\": 3.029452828826778,\n      \"generic_cache_miss_ratio\": 0.09284768497516839\n    },\n    {\n      \"workers\": 2,\n      \"rep\": 1,\n      \"build_wall_s\": 71.45,\n      \"partition_wall_s\": 14.684,\n      \"leaf_wall_s\": 49.0227,\n      \"prune_wall_s\": 7.5019,\n      \"max_rss_kb\": 1758336,\n      \"user_cpu_s\": 142.19,\n      \"system_cpu_s\": 1.17,\n      \"perf_events\": {\n        \"cycles\": 516554571693,\n        \"instructions\": 918448810481,\n        \"cache-references\": 29437996800,\n        \"cache-misses\": 2833849212\n      },\n      \"ipc\": 1.7780286165521633,\n      \"cache_mpki\": 3.0854732236148115,\n      \"generic_cache_miss_ratio\": 0.09626501528799677\n    },\n    {\n      \"workers\": 4,\n      \"rep\": 1,\n      \"build_wall_s\": 46.05,\n      \"partition_wall_s\": 9.724,\n      \"leaf_wall_s\": 32.3413,\n      \"prune_wall_s\": 3.7902,\n      \"max_rss_kb\": 1849076,\n      \"user_cpu_s\": 182.17,\n      \"system_cpu_s\": 1.56,\n      \"perf_events\": {\n        \"cycles\": 639622606095,\n        \"instructions\": 920477655850,\n        \"cache-references\": 33695489713,\n        \"cache-misses\": 3062443543\n      },\n      \"ipc\": 1.4390949398578416,\n      \"cache_mpki\": 3.327015624482527,\n      \"generic_cache_miss_ratio\": 0.09088585947508826\n    },\n    {\n      \"workers\": 1,\n    "
+  },
+  "interpretation": "Historical RSS source line check only; historical MemAvailable/swap/OOM cannot be inferred from current meminfo. Blank/unparsed counters do not establish zero usage."
+}

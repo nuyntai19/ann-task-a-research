@@ -1,0 +1,30 @@
+H26-P3b CONTROL TRIAGE — SAME SIFT1M, NO GRAPH OUTPUT, BALANCED ORDER
+Preflight: sampled Fused-vs-Highway only. Not complete equivalence, no graph quality gate.
+3 arms: P0-original top2 / P3b binary top2 / P3b binary fused.
+Instrumented worker sums NOT BUILD wall. Do not claim novelty.
+
+ARM                wall(s)    leaf(s)   dist-worker   select-worker   merge-worker
+p0_top2             44.790     30.951        65.634          42.348         14.638
+p3b_top2            48.650     34.707        64.979          58.927         14.412
+p3b_fused           44.390     30.533        65.892          41.136         14.612
+
+p3b_top2 vs p0_top2:
+  wall_s             round gains [+8.81%, +8.14%, +9.04%] ; median paired +8.81%
+  leaf_wall_s        round gains [+12.51%, +11.57%, +12.67%] ; median paired +12.51%
+  select_worker_s    round gains [+39.11%, +37.08%, +39.41%] ; median paired +39.11%
+  dist_worker_s      round gains [-2.09%, -1.89%, -0.68%] ; median paired -1.89%
+p3b_fused vs p0_top2:
+  wall_s             round gains [+5.50%, -1.33%, +0.92%] ; median paired +0.92%
+  leaf_wall_s        round gains [+4.90%, -1.84%, +0.56%] ; median paired +0.56%
+  select_worker_s    round gains [+4.31%, -4.31%, -2.68%] ; median paired -2.68%
+  dist_worker_s      round gains [+5.65%, -0.52%, +3.61%] ; median paired +3.61%
+p3b_fused vs p3b_top2:
+  wall_s             round gains [-3.04%, -8.76%, -7.45%] ; median paired -7.45%
+  leaf_wall_s        round gains [-6.76%, -12.03%, -10.75%] ; median paired -10.75%
+  select_worker_s    round gains [-25.02%, -30.19%, -30.20%] ; median paired -30.19%
+  dist_worker_s      round gains [+7.90%, +1.41%, +4.31%] ; median paired +4.31%
+
+DECISION RULE: If P3b-top2 slows materially vs P0-top2, original P3b fused-vs-top2 gain is confounded by control-path regression.
+If fused ~= P0 on wall+selection, H26-P3b has no validated benefit over optimized baseline.
+Different binaries/compiler codegen: triangulation, not proof of exact causal attribution.
+Graph/Recall/QPS NOT checked. Full semantic identity NOT proven.

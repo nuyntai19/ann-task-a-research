@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "runner": "/home/tai/Downloads/run_r85_a4_paired_sift1m.py",
+  "runner_sha256": "b9db158b022d9df9633817031282d68e45f7c0ee9236d2b7059aa184d73e3106",
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "topology": {
+    "0": {
+      "core_id": "0",
+      "package_id": "0",
+      "siblings": "0-1"
+    },
+    "2": {
+      "core_id": "4",
+      "package_id": "0",
+      "siblings": "2-3"
+    },
+    "4": {
+      "core_id": "8",
+      "package_id": "0",
+      "siblings": "4-5"
+    },
+    "6": {
+      "core_id": "12",
+      "package_id": "0",
+      "siblings": "6-7"
+    }
+  },
+  "allowed_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "output": "/home/tai/ann-task-a/experiments/H85/r85_a4c_telemetry",
+  "existing_a4": true,
+  "existing_a4b": true,
+  "failures": [],
+  "notes": [],
+  "pre_snapshot": {
+    "ts_utc": "2026-11-11T14:15:33.379470+00:00",
+    "monotonic": 27232.651527416,
+    "freq_mhz": {
+      "0": {
+        "scaling_cur_freq": 2857.7,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      },
+      "2": {
+        "scaling_cur_freq": 4304.3,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      },
+      "4": {
+        "scaling_cur_freq": 5300.0,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      },
+      "6": {
+        "scaling_cur_freq": 4938.2,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      }
+    },
+    "temp": [
+      {
+        "zone": "thermal_zone0",
+        "type": "acpitz",
+        "c": 27.8
+      },
+      {
+        "zone": "thermal_zone1",
+        "type": "iwlwifi_1",
+        "c": 42.0
+      },
+      {
+        "zone": "thermal_zone2",
+        "type": "x86_pkg_temp",
+        "c": 48.0
+      },
+      {
+        "zone": "hwmon0/temp1_input",
+        "type": null,
+        "c": 27.8
+      },
+      {
+        "zone": "hwmon1/temp1_input",
+        "type": null,
+        "c": 39.5
+      },
+      {
+        "zone": "hwmon2/temp1_input",
+        "type": "Composite",
+        "c": 40.85
+      },
+      {
+        "zone": "hwmon2/temp2_input",
+        "type": "Sensor 1",
+        "c": 40.85
+      },
+      {
+        "zone": "hwmon2/temp3_input",
+        "type": "Sensor 2",
+        "c": 44.85
+      },
+      {
+        "zone": "hwmon4/temp10_input",
+        "type": "Core 8",
+        "c": 34.0
+      },
+      {
+        "zone": "hwmon4/temp14_input",
+        "type": "Core 12",
+        "c": 35.0
+      },
+      {
+        "zone": "hwmon4/temp18_input",
+        "type": "Core 16",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp1_input",
+        "type": "Package id 0",
+        "c": 36.0
+      },
+      {
+        "zone": "hwmon4/temp22_input",
+        "type": "Core 20",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp26_input",
+        "type": "Core 24",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp27_input",
+        "type": "Core 25",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp28_input",
+        "type": "Core 26",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp29_input",
+        "type": "Core 27",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp2_input",
+        "type": "Core 0",
+        "c": 31.0
+      },
+      {
+        "zone": "hwmon4/temp30_input",
+        "type": "Core 28",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp31_input",
+        "type": "Core 29",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp32_input",
+        "type": "Core 30",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp33_input",
+        "type": "Core 31",
+        "c": 33.0
+      },
+      {
+        "zone": "hwmon4/temp6_input",
+        "type": "Core 4",
+        "c": 34.0
+      },
+      {
+        "zone": "hwmon5/temp1_input",
+        "type": null,
+        "c": 42.0
+      }
+    ],
+    "rapl": {
+      "/sys/class/powercap/intel-rapl:0:0/energy_uj": {
+        "uj": 64046749919,
+        "max": "262143328850",
+        "name": "core"
+      },
+      "/sys/class/powercap/intel-rapl:0/energy_uj": {
+        "uj": 26970378404,
+        "max": "262143328850",
+        "name": "package-0"
+      }
+    },
+    "system": {
+      "loadavg": "1.36 1.11 0.92 1/1187 296871",
+      "meminfo": {
+        "MemAvailable": "   28589620 kB",
+        "SwapTotal": "       4194300 kB",
+        "SwapFree": "        4194300 kB"
+      },
+      "cpu_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=251617878\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=178\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=138"
+    }
+  }
+}

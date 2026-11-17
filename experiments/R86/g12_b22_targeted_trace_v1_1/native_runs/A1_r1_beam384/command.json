@@ -1,0 +1,14 @@
+[
+  "taskset",
+  "-c",
+  "0",
+  "/usr/bin/time",
+  "-f",
+  "R86_G12B22_TARGETED_DIAGNOSTIC_TIME_IGNORE wall_s=%e peak_rss_kib=%M",
+  "/home/tai/ann-task-a/experiments/R86/g12_b22_targeted_trace_v1_1/r86_msturing1m_v4_targeted_trace",
+  "/home/tai/ann-task-a/experiments/R86/msturing_1m_sixarm/formal_mst1m_v1/A1/r1/index.graph",
+  "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+  "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+  "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+  "384"
+]

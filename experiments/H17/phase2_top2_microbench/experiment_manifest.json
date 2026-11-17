@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-23",
+  "kind": "microbenchmark, not full graph build",
+  "source_revision": "443a328",
+  "source_sha256": "ee2048738ad4462f21bdfea4a1cf7c2ac140f72fbd8875d869bc4f613d93db53",
+  "microbench_sha256": "b4e4b3c8495a9a1471c862b51d75ea4c2440836296a7aa36cd9f0e1726d931ce",
+  "highway_source": "/home/tai/ann-task-a/src/PiPNN/build/_deps/highway-src",
+  "single_core": 0,
+  "cases_per_scenario": 160,
+  "reps": 7,
+  "rows": 4096,
+  "baseline_build_seconds": 49.76,
+  "notes": [
+    "Original benchmark uses Highway VQPartialSort, not std::sort.",
+    "The two algorithms operate on the same original 11-bit-id packed double keys.",
+    "Only finite float inputs are tested, including many exact ties.",
+    "Synthetic leaf rows, not actual PiPNN graph candidate pools.",
+    "Benchmarked selected rows on one core, not full 4-thread ANN BUILD.",
+    "Any speedup from streaming top-2 is a baseline optimization, not novelty."
+  ]
+}

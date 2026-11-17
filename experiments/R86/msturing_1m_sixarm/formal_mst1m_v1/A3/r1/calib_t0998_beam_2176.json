@@ -1,0 +1,30 @@
+{
+  "arm": "A3",
+  "beam": 2176,
+  "command": [
+    "taskset",
+    "-c",
+    "0",
+    "/usr/bin/time",
+    "-f",
+    "R86_MST1M_FORMAL_SEARCH_TIME wall_s=%e peak_rss_kib=%M",
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_sixarm/formal_mst1m_v1/A3/r1/index.graph",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+    "2176"
+  ],
+  "cpu_search": 0,
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": "0fff20ec47502c675c4905787d319390e49fa5bee856ac16c814c74697c5fbb2",
+  "log_sha256": "b46d532fa4485052a7ae2b4d059c1d48f02b7cd89f1e8299cf710fb11898ff7d",
+  "qps": 340.27886963,
+  "query_count": 100000,
+  "recall_at10": 0.99807101,
+  "rep": 1,
+  "search_threads": 1,
+  "source_log": "/home/tai/ann-task-a/experiments/R86/msturing_1m_sixarm/formal_mst1m_v1/A3/r1/calib_t0998_beam_2176.log",
+  "status": "NATIVE_100K_SEARCH_EXIT0_SINGLE_RUN_NOT_P95",
+  "target": 0.998
+}

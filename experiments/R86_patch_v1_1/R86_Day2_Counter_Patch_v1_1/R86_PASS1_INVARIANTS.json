@@ -1,0 +1,28 @@
+{
+  "record_hash_work_once_per_merge_outside_lock": true,
+  "branch_partition": [
+    "merge_attempts == hash_early_break + collision_same_id + collision_diff_id + hash_insert_not_full + hash_replace_full",
+    "merge_attempts == hash_accept + hash_reject + collision_same_id",
+    "collision_diff_id == hash_diff_collision_rewrite + hash_diff_collision_reject",
+    "hash_accept == hash_insert_not_full + hash_replace_full + hash_diff_collision_rewrite",
+    "hash_reject == hash_early_break + hash_diff_collision_reject",
+    "hash_replace == hash_replace_full + hash_diff_collision_rewrite",
+    "hash_same_id_rewrite <= collision_same_id",
+    "hash_compute == merge_attempts - hash_early_break"
+  ],
+  "cross_function": [
+    "merge_attempts == 2*proposals if all producers are eigen_knn singleton edge merges",
+    "W_P pass1 == COMPARISONS printed after pass1 if same counter reset semantics",
+    "W_P pass2 == COMPARISONS printed after pass2 minus pass1",
+    "executed_leaf_size_sum <= Total points (difference counts singleton buckets if any)",
+    "leaf_count and W_L and W_pairs == independent leaf-size dump for each pass",
+    "top2_q_writes == sum_leaf s*(s-1) for STOCK/fallback; H17 MST_DEG=2 => 0",
+    "partial_sort_calls == sum_leaf s for STOCK/fallback; H17 MST_DEG=2 => 0"
+  ],
+  "notes": [
+    "hash_moves only counts T-slot shifts; hash_slot_writes counts explicit slot overwrites",
+    "hash_worst_scan counts deg slots, comparisons are deg-1 for deg>0",
+    "time/RSS not measured using ON builds",
+    "merge_attempts==accept+reject (Claude B2) is false if same IDs are separated, hence corrected by +collision_same_id"
+  ]
+}

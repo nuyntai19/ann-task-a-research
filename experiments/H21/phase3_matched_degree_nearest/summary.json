@@ -1,0 +1,27 @@
+{
+  "status": "H21_R3_NEAREST_ONLY_MATCHED_DEGREE_CONTROL_COMPLETED_NOT_NOVELTY",
+  "scope": "Topology-only control from H18-R1.2 SAME-BUILD pre/post, not a from-raw graph builder",
+  "edge_selection": "For each u, take d_post(u) nearest pregraph out-neighbors by squared L2; tie by ascending ID",
+  "source_sha256": {
+    "pre": "f08338d3bb8e0caaaeae8dac2d00af407a34c374fe711c3e42edbb12548817dd",
+    "post": "f01497f5feeddb95ddbdd381f7377a82984f8c9c474012b84384145f86e16e17",
+    "base": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+  },
+  "output_graph": "/home/tai/ann-task-a/experiments/H21/phase3_matched_degree_nearest/nearest_only_matched_degree.graph",
+  "output_sha256": "dae318b95b45c03e8cdb841805eae903352e254c68d33fc4780003cb5f38f5db",
+  "n": 1000000,
+  "edges": 22800883,
+  "max_degree": 32,
+  "per_vertex_degree_identical": true,
+  "vertices_with_changed_outneighbor_set": 999167,
+  "baseline_reachable_from_0": 999999,
+  "control_reachable_from_0": 997880,
+  "baseline_zero_indegree_nodes": 1,
+  "control_zero_indegree_nodes": 1761,
+  "limitations": [
+    "No claims about improved search quality or build performance.",
+    "Changing topology may reduce connectivity; measure exact Recall/QPS on same native searcher.",
+    "This is nearest-only matched-degree control, not novel graph construction.",
+    "Only one stochastic SIFT1M pre/post pair."
+  ]
+}

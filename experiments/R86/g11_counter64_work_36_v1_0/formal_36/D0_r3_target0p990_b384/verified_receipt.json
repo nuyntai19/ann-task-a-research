@@ -1,0 +1,21 @@
+{
+  "arm": "D0",
+  "beam": 384,
+  "diagnostic_binary_sha256": "a98b8748b92787e6ccbf52556a8eef2c24bff4580c6275c9fa464dd82af4d3a4",
+  "diagnostic_row": {
+    "avg_cmps": 16724,
+    "avg_visited": 370,
+    "beam": 384,
+    "qps": 1204.82055664,
+    "recall": 0.99105102
+  },
+  "expected_recall": 0.99105102,
+  "graph_sha256": "4d4b7755d12418cd0cbc6218de5144997f47171e7ae1ea5bcd7b3de9c73dbff8",
+  "kind": "formal_work_only",
+  "note": "One 100K-query diagnostic work run; QPS descriptive, NOT formal QPS",
+  "rep": 3,
+  "search_stderr_sha256": "b883a195290b2095aa00281fe6679af5e0e034295352451648d8209f5e44d431",
+  "search_stdout_sha256": "13b24bc28b452f4510c2fe31dd63dba62c874058646ca5f21229f84f47520a2e",
+  "status": "COUNTER64_WORK_PASS",
+  "target": "0.990"
+}

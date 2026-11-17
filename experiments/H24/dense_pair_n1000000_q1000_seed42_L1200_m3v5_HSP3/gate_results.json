@@ -1,0 +1,191 @@
+{
+  "status": "MEASURED_DENSE_PAIR_ONLY",
+  "runs_found": 1,
+  "runs_expected": 1,
+  "speedup_goal": 1.15,
+  "gate_tlow_over_thigh": 0.869565,
+  "runs": [
+    {
+      "seed": 42,
+      "arms": {
+        "low": {
+          "L": 1200,
+          "m": 3,
+          "C": 200,
+          "n": 1000000,
+          "leader_s": 21.26,
+          "candidate_s": 52.68,
+          "ending_spine_s": 17.45,
+          "build_s": 91.39,
+          "graph": {
+            "candidate_edges": 200000000,
+            "directed_edges": 24213437,
+            "csr_memory_MB": 105.0
+          },
+          "query_hub": [
+            {
+              "ef": 60,
+              "recall10": 0.959,
+              "dist_per_query": 1554.0,
+              "qps": 5469.0
+            },
+            {
+              "ef": 100,
+              "recall10": 0.9847,
+              "dist_per_query": 2285.0,
+              "qps": 3807.0
+            },
+            {
+              "ef": 140,
+              "recall10": 0.9919,
+              "dist_per_query": 2962.0,
+              "qps": 2870.0
+            },
+            {
+              "ef": 200,
+              "recall10": 0.9965,
+              "dist_per_query": 3905.0,
+              "qps": 2176.0
+            },
+            {
+              "ef": 300,
+              "recall10": 0.9987,
+              "dist_per_query": 5353.0,
+              "qps": 1543.0
+            },
+            {
+              "ef": 400,
+              "recall10": 0.9994,
+              "dist_per_query": 6685.0,
+              "qps": 1166.0
+            }
+          ],
+          "limitations": [
+            "Stage timings have 0.01s display rounding",
+            "CLI wall time includes query evaluation; do not use it as BUILD",
+            "CSR memory in log excludes vectors, other index state, peak BUILD RSS"
+          ],
+          "log": "/home/tai/ann-task-a/experiments/H24/dense_pair_n1000000_q1000_seed42_L1200_m3v5_HSP3/dense_low_m3_seed42.log"
+        },
+        "high": {
+          "L": 1200,
+          "m": 5,
+          "C": 200,
+          "n": 1000000,
+          "leader_s": 24.59,
+          "candidate_s": 108.6,
+          "ending_spine_s": 18.34,
+          "build_s": 151.53,
+          "graph": {
+            "candidate_edges": 200000000,
+            "directed_edges": 25551006,
+            "csr_memory_MB": 110.0
+          },
+          "query_hub": [
+            {
+              "ef": 60,
+              "recall10": 0.9784,
+              "dist_per_query": 1621.0,
+              "qps": 5863.0
+            },
+            {
+              "ef": 100,
+              "recall10": 0.9933,
+              "dist_per_query": 2383.0,
+              "qps": 3863.0
+            },
+            {
+              "ef": 140,
+              "recall10": 0.9963,
+              "dist_per_query": 3095.0,
+              "qps": 2658.0
+            },
+            {
+              "ef": 200,
+              "recall10": 0.9982,
+              "dist_per_query": 4092.0,
+              "qps": 2027.0
+            },
+            {
+              "ef": 300,
+              "recall10": 0.9996,
+              "dist_per_query": 5615.0,
+              "qps": 1309.0
+            },
+            {
+              "ef": 400,
+              "recall10": 0.9999,
+              "dist_per_query": 7018.0,
+              "qps": 1079.0
+            }
+          ],
+          "limitations": [
+            "Stage timings have 0.01s display rounding",
+            "CLI wall time includes query evaluation; do not use it as BUILD",
+            "CSR memory in log excludes vectors, other index state, peak BUILD RSS"
+          ],
+          "log": "/home/tai/ann-task-a/experiments/H24/dense_pair_n1000000_q1000_seed42_L1200_m3v5_HSP3/dense_high_m5_seed42.log"
+        }
+      },
+      "gate": {
+        "status": "POSITIVE_TIME_ALLOWANCE_ONLY",
+        "low_div_high": 0.60311,
+        "additional_seconds_max": 40.3752,
+        "stage_only_no_actual_rescue": true,
+        "recall_at_same_ef": [
+          {
+            "ef": 60,
+            "low_recall10": 0.959,
+            "high_recall10": 0.9784,
+            "delta_recall10": 0.0194,
+            "low_qps": 5469.0,
+            "high_qps": 5863.0
+          },
+          {
+            "ef": 100,
+            "low_recall10": 0.9847,
+            "high_recall10": 0.9933,
+            "delta_recall10": 0.0086,
+            "low_qps": 3807.0,
+            "high_qps": 3863.0
+          },
+          {
+            "ef": 140,
+            "low_recall10": 0.9919,
+            "high_recall10": 0.9963,
+            "delta_recall10": 0.0044,
+            "low_qps": 2870.0,
+            "high_qps": 2658.0
+          },
+          {
+            "ef": 200,
+            "low_recall10": 0.9965,
+            "high_recall10": 0.9982,
+            "delta_recall10": 0.0017,
+            "low_qps": 2176.0,
+            "high_qps": 2027.0
+          },
+          {
+            "ef": 300,
+            "low_recall10": 0.9987,
+            "high_recall10": 0.9996,
+            "delta_recall10": 0.0009,
+            "low_qps": 1543.0,
+            "high_qps": 1309.0
+          },
+          {
+            "ef": 400,
+            "low_recall10": 0.9994,
+            "high_recall10": 0.9999,
+            "delta_recall10": 0.0005,
+            "low_qps": 1166.0,
+            "high_qps": 1079.0
+          }
+        ]
+      }
+    }
+  ],
+  "decision_note": "A single seed is preliminary; three paired seeds and stable quality evidence required for robust decision.",
+  "median_tlow_over_thigh": 0.60311,
+  "median_allowance_seconds": 40.3752
+}

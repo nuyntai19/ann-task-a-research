@@ -1,0 +1,207 @@
+==============================================================
+TASK A / H17 / PiPNN PHASE-0 READ-ONLY BUILD AUDIT
+==============================================================
+2026-10-23T15:05:24+07:00
+Root: /home/tai/ann-task-a
+Report: /home/tai/ann-task-a/experiments/H17/phase0/pipnn_phase_audit.txt
+
+== 1. HARDWARE & MEMORY (no benchmark) ==
+Available CPUs: 8
+               total        used        free      shared  buff/cache   available
+BNhớ:           13Gi       7.7Gi       268Mi       137Mi       6.1Gi       5.9Gi
+Tráo đổi:      4.0Gi       304Ki       4.0Gi
+
+== 2. EXACT SOURCE REVISIONS (root itself need not be a repo) ==
+src/PiPNN: 443a328
+src/ParlayANN: a48c6a3
+
+== 3. SOURCE-INTEGRATED TIMERS ==
+76:      t.next("first level assign time");
+417:    t.next("buckets time");
+442:    t.next("build leaf time");
+527:    t.next("Final prune time");
+550:        ht.next("SketchHash construction time");
+
+PiPNN execution anchors:
+357:  auto recursively_sketch_wrapper(GraphH &G, PR &Points, size_t cluster_size) {
+445:  void multiple_clustertrees(GraphH &G, PR &Points, long cluster_size,
+449:      recursively_sketch_wrapper(G, Points, cluster_size);
+466:    eigen_knn(G, active_indices, Points, MST_DEG);
+502:  void ExportToGraph(GraphH& graph, commandLine& P, GraphI G, PR& Points, bool prune_all, size_t prune_degree, double alpha) {
+603:    C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);
+609:    ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);
+
+== 4. EXISTING BUILD LOG EVIDENCE (not re-running builds) ==
+Candidate text logs inspected: 171
+Logs containing integrated PiPNN phase markers: 26
+
+--- logs/pipnn_static_sift1m_f60_4t.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0925
+Parlay time: first level assign time: 1.5901
+Parlay time: buckets time: 23.4149
+Total buckets: 171399
+Total points: 59998750
+Building leaves:
+Parlay time: build leaf time: 69.0847
+Average table size: 50
+Parlay time: Final prune time: 4.8741
+
+--- logs/pipnn_static_sift1m_f15_4t.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0850
+Parlay time: first level assign time: 1.8053
+Parlay time: buckets time: 4.2306
+Total buckets: 42360
+Total points: 14982446
+Building leaves:
+Parlay time: build leaf time: 16.6343
+Average table size: 24
+Parlay time: Final prune time: 1.9918
+
+--- logs/pipnn_static_f60_4t.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0133
+Parlay time: first level assign time: 0.2180
+Parlay time: buckets time: 0.8996
+Total buckets: 16002
+Total points: 5939577
+Building leaves:
+Parlay time: build leaf time: 7.6063
+Average table size: 36
+Parlay time: Final prune time: 0.3063
+
+--- logs/pipnn_static_f15_4t.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0126
+Parlay time: first level assign time: 0.1825
+Parlay time: buckets time: 0.2741
+Total buckets: 2657
+Total points: 1135205
+Building leaves:
+Parlay time: build leaf time: 1.8691
+Average table size: 14
+Parlay time: Final prune time: 0.1008
+
+--- logs/pipnn_affinity_physical4_rep3.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.1044
+Parlay time: first level assign time: 1.6719
+Parlay time: buckets time: 9.1409
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 37.0340
+Average table size: 36
+Parlay time: Final prune time: 3.3827
+
+--- logs/pipnn_affinity_smt4_rep3.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.1273
+Parlay time: first level assign time: 2.9350
+Parlay time: buckets time: 15.0859
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 61.0861
+Average table size: 36
+Parlay time: Final prune time: 11.2352
+
+--- logs/pipnn_affinity_smt8_rep3.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0837
+Parlay time: first level assign time: 1.8618
+Parlay time: buckets time: 10.1979
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 37.5282
+Average table size: 36
+Parlay time: Final prune time: 2.6085
+
+--- logs/pipnn_affinity_smt8_rep2.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0859
+Parlay time: first level assign time: 7.0717
+Parlay time: buckets time: 15.2922
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 36.9441
+Average table size: 36
+Parlay time: Final prune time: 2.5996
+
+--- logs/pipnn_affinity_physical4_rep2.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.1025
+Parlay time: first level assign time: 1.6641
+Parlay time: buckets time: 9.0735
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 36.7561
+Average table size: 36
+Parlay time: Final prune time: 3.3670
+
+--- logs/pipnn_affinity_smt4_rep2.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.1288
+Parlay time: first level assign time: 2.8258
+Parlay time: buckets time: 14.6418
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 59.5689
+Average table size: 36
+Parlay time: Final prune time: 4.4381
+
+--- logs/pipnn_affinity_smt4_rep1.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.1270
+Parlay time: first level assign time: 8.2858
+Parlay time: buckets time: 20.1765
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 60.0029
+Average table size: 36
+Parlay time: Final prune time: 4.4275
+
+--- logs/pipnn_affinity_smt8_rep1.log (9 matching lines) ---
+Parlay time: SketchHash construction time: 0.0770
+Parlay time: first level assign time: 1.7836
+Parlay time: buckets time: 9.7241
+Total buckets: 85529
+Total points: 29995085
+Building leaves:
+Parlay time: build leaf time: 34.7899
+Average table size: 36
+Parlay time: Final prune time: 2.4983
+
+Recent possible BUILD-related scripts and logs:
+   experiments/G0/logs/g03_construct_b500000.log
+   experiments/G0/logs/g03_construct.log
+   logs/pipnn_refine_sift1m_f60_Q120.log
+   logs/pipnn_refine_sift1m_f60_Q118.log
+   logs/pipnn_refine_sift1m_f60_Q115.log
+   logs/pipnn_refine_sift1m_f60_Q110.log
+   logs/pipnn_refine_sift1m_f60_Q90.log
+   logs/pipnn_refine_sift1m_f60_Q85.log
+   logs/pipnn_refine_sift1m_f30_Q145.log
+   logs/pipnn_refine_sift1m_f30_Q140.log
+   logs/pipnn_refine_sift1m_f30_Q135.log
+   logs/pipnn_refine_sift1m_f30_Q130.log
+   logs/pipnn_refine_sift1m_f30_Q95.log
+   logs/pipnn_refine_sift1m_f30_Q90.log
+   logs/pipnn_refine_sift1m_f15_Q195.log
+   logs/pipnn_refine_sift1m_f15_Q190.log
+   logs/pipnn_refine_sift1m_f15_Q185.log
+   logs/pipnn_refine_sift1m_f15_Q150.log
+   logs/pipnn_refine_sift1m_f15_Q145.log
+   logs/pipnn_refine_sift1m_f15_Q140.log
+   logs/pipnn_sift1m_common_f60_Q240.log
+   logs/pipnn_sift1m_common_f60_Q200.log
+
+== 5. EXISTING EXECUTABLES / BUILD CANDIDATES ==
+/home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN (2288 KiB)
+
+== 6. G0.3 CONTROL: 500K CHECK, NO RECOMPUTATION ==
+f30                  Recall@10=0.99502 median_qps=1656.29
+f60                  Recall@10=0.99607 median_qps=1618.0
+random_2hop          Recall@10=0.99448 median_qps=1727.67
+oracle_random        Recall@10=0.9951 median_qps=1704.59
+oracle_lowdegree     Recall@10=0.99516 median_qps=1706.48
+oracle_geometry      Recall@10=0.99492 median_qps=1715.55
+
+== CONCLUSION ==
+This script only inspected existing files and wrote this report.
+Next gate: interpret observed PiPNN stage times, or plan one guarded SIFT1M BUILD if no logs exist.

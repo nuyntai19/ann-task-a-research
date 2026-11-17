@@ -1,0 +1,28 @@
+{
+  "a1c_source": "/home/tai/ann-task-a/experiments/H85/r85_a1c_matched_search/r85_a1c_graph_recall.cc",
+  "a1c_source_sha256": "a2b4f27e8dd9f7cd428c5568b1691eb6dc810d2cb7813a4e421ea238c13fb2c0",
+  "binary": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+  "binary_sha256": "3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a",
+  "created_utc": "2026-11-11T17:38:03.285203+00:00",
+  "dataset_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "graphs_sha256": {
+    "P1": "4174ae82ce34e94453fcdba0eeeefcc8a755f17ae26d08e532611af7665a926d",
+    "P2": "6819b93fcccaded1cd0517e5490171a4ef4100b4768bf8d5e4197831627fec9c"
+  },
+  "gt_sha256": "70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28",
+  "link_recovery": {
+    "link_cwd": "/home/tai/ann-task-a/experiments/H70/build-r70/algorithms/PipNN",
+    "object_sha256": "48a236ab28834d0405b074a9f31083e9192adff779b19779a6d68d7446a4f13f",
+    "old_link_failure_log": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/native_link.log",
+    "original_runner_sha256": "1ce98cfe4adea2b9192e681b8442b7747c61e5a658e1ecb5a68d92094875b625",
+    "reason": "Original runner linked from H70/build-r70 instead of H70/build-r70/algorithms/PipNN",
+    "recovery_link_log": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/native_link_recovery_v1.log",
+    "static_archive_count": 42
+  },
+  "query_sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+  "r72_original": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/r72_graph_recall.cc",
+  "r72_sha256": "f39b5857956b0e9a884012c46e4ea736826c2f0369d040357683aa2c9b2b1830",
+  "role": "SIFT100K native A1c/R72 evaluator; only base size validation changed",
+  "source": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall.cc",
+  "source_sha256": "ede609931611abe815a7f5e14f69a84c7ef6690b0ee481f83a59e71add384437"
+}

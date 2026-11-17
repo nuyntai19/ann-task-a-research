@@ -1,0 +1,52 @@
+{
+  "schedule": [
+    [
+      1,
+      "C32"
+    ],
+    [
+      1,
+      "C48"
+    ],
+    [
+      1,
+      "C96"
+    ],
+    [
+      2,
+      "C96"
+    ],
+    [
+      2,
+      "C32"
+    ],
+    [
+      2,
+      "C48"
+    ]
+  ],
+  "arms": [
+    "C32",
+    "C48",
+    "C96"
+  ],
+  "capacities": {
+    "C32": 32,
+    "C48": 48,
+    "C64": 64,
+    "C96": 96,
+    "C160": 160
+  },
+  "threads": 4,
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "h17_sha256": "8757b9be9fa3ae1f90febe082001fa60ba22c71ba6b6cdd899e013f6c0bcd500",
+  "origin_a1": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/runs_20261109-215545",
+  "search_beams": "pinned A1c 25-beam list",
+  "repetition_count_new": 2,
+  "protocol": "No D0, only table_size changes"
+}

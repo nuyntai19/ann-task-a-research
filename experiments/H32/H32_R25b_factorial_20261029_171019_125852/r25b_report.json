@@ -1,0 +1,58 @@
+{
+  "status": "R25B_ENDING_FACTORIAL_SYNTHETIC_ONE_SEED",
+  "sample_anchors": 256,
+  "n": 2048,
+  "d": 32,
+  "pool_C": 64,
+  "pool_local_gt10_coverage": 0.348828125,
+  "graphs": {
+    "PiPNN_RobustPrune": {
+      "arcs": 8341,
+      "graph_bytes": 41564,
+      "maxdeg": 16,
+      "unreachable_from_entry0": 0,
+      "sha256": "e02237f1dc8b8c3bd636e5c886b8a2c9e53b41bff32c940d38856b4d256dfc4f",
+      "local_gt10_edge_coverage": 0.292578125
+    },
+    "FG_Vamana_ending_no_spine": {
+      "arcs": 10118,
+      "graph_bytes": 48672,
+      "maxdeg": 16,
+      "unreachable_from_entry0": 0,
+      "sha256": "2fbb0871ec8b6ab914d1f841815c13f5873daae3d7bc1608feb9dbd5efa70c5e",
+      "local_gt10_edge_coverage": 0.352734375
+    },
+    "FG_Vamana_ending_with_spine": {
+      "arcs": 10779,
+      "graph_bytes": 51316,
+      "maxdeg": 24,
+      "unreachable_from_entry0": 0,
+      "sha256": "ee08b7671cfb1619962e26ea936fa57d2206e036f4899e73c8c1159323df2b4e",
+      "local_gt10_edge_coverage": 0.354296875
+    },
+    "FG_GRAFT_ending_no_spine": {
+      "arcs": 9414,
+      "graph_bytes": 45856,
+      "maxdeg": 16,
+      "unreachable_from_entry0": 0,
+      "sha256": "525bc8d3c284af1ffb75789751eb2102e0a4bcdb13292f531404ef7db38d4dcf",
+      "local_gt10_edge_coverage": 0.32265625
+    },
+    "FG_GRAFT_ending_with_spine": {
+      "arcs": 10078,
+      "graph_bytes": 48512,
+      "maxdeg": 24,
+      "unreachable_from_entry0": 0,
+      "sha256": "1120ea336c0046b24739827cab11141844e5a9c62a5600d469eb1218bc1b0af3",
+      "local_gt10_edge_coverage": 0.32421875
+    }
+  },
+  "methodology": "dense-prune=1 is Vamana-style ending; dense-prune=0 is GRAFT-style ending; spine={0,3}; all FG variants use same source/candidate matrix",
+  "restrictions": [
+    "synthetic 2048x32, single seed",
+    "not query ANN recall",
+    "not edge/byte-budget matched",
+    "graph source-only local coverage, excludes path quality",
+    "FG executables include unrelated query/local-completeness diagnostics"
+  ]
+}

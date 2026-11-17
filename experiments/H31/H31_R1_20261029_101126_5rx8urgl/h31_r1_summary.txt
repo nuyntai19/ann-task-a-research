@@ -1,0 +1,10 @@
+H31-R1 DIRECTED BFS FROM COMMON SEARCHER ENTRY 0 (READ ONLY, no BUILD/SEARCH)
+ROLE             N     EDGES(dir)   REACH0  UNREACH0  BFS_HOPS_MAX  P50_HOPS  P95_HOPS  P99_HOPS
+VAMANA   1,000,000     27,643,346   999,795       205             8         5         7         7
+STOCK    1,000,000     22,793,556   999,999         1            12         6         8         9
+TOP2     1,000,000     22,794,064   999,999         1            12         6         8         9
+SOURCE_SHA256_MATCH_H31_R0_INVENTORY=PASS for all 3 graphs
+BFS from entry 0 only; other entries/SCCs not inferred. BFS hops are NOT greedy/beam ANN hops.
+Vamana and PiPNN graph bytes/outdegree differ. NOT an equal-budget Pareto comparison.
+NO RECALL, NO QPS, NO NOVELTY CLAIM, NO NEW BUILD.
+H31R1_DONE=/home/tai/ann-task-a/experiments/H31/H31_R1_20261029_101126_5rx8urgl

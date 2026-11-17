@@ -1,0 +1,113 @@
+{
+  "arm": "C64_K512_N1",
+  "beam_order": [
+    224,
+    192,
+    104,
+    100,
+    50,
+    48,
+    40,
+    24
+  ],
+  "graph_sha256": "11e52a7a41cfca7bca25c3adf63977b792da03a9b54604d20c0f87c0defc7dc3",
+  "log_sha256": "16cc1a6ef1d56bf874b5dc0eb7a54de2e9d72c8454cdf97e3a7ddb4974f70c69",
+  "matched": {
+    "0.89": {
+      "avg_cmps": 821.0013755601186,
+      "bracket_beams": [
+        24,
+        40
+      ],
+      "interpolation_weight": 0.02325981267476356,
+      "latency_us": 42.40253896513773
+    },
+    "0.96": {
+      "avg_cmps": 1351.7907309358977,
+      "bracket_beams": [
+        48,
+        50
+      ],
+      "interpolation_weight": 0.6046519740462845,
+      "latency_us": 68.93739795703824
+    },
+    "0.99": {
+      "avg_cmps": 2230.655569620257,
+      "bracket_beams": [
+        100,
+        104
+      ],
+      "interpolation_weight": 0.037936708860814176,
+      "latency_us": 125.31072017209772
+    },
+    "0.998": {
+      "avg_cmps": 3517.462552932162,
+      "bracket_beams": [
+        192,
+        224
+      ],
+      "interpolation_weight": 0.2812319327468272,
+      "latency_us": 219.8236679822465
+    }
+  },
+  "rep": 4,
+  "rows": [
+    {
+      "avg_cmps": 3764.0,
+      "avg_visited": 191.0,
+      "beam": 224,
+      "qps": 4194.22998047,
+      "recall": 0.99845999
+    },
+    {
+      "avg_cmps": 3421.0,
+      "avg_visited": 172.0,
+      "beam": 192,
+      "qps": 4704.85498047,
+      "recall": 0.99782002
+    },
+    {
+      "avg_cmps": 2298.0,
+      "avg_visited": 107.0,
+      "beam": 104,
+      "qps": 7760.10693359,
+      "recall": 0.99076003
+    },
+    {
+      "avg_cmps": 2228.0,
+      "avg_visited": 104.0,
+      "beam": 100,
+      "qps": 7989.09667969,
+      "recall": 0.98997003
+    },
+    {
+      "avg_cmps": 1368.0,
+      "avg_visited": 57.0,
+      "beam": 50,
+      "qps": 14324.78027344,
+      "recall": 0.96101999
+    },
+    {
+      "avg_cmps": 1327.0,
+      "avg_visited": 56.0,
+      "beam": 48,
+      "qps": 14791.97949219,
+      "recall": 0.95844001
+    },
+    {
+      "avg_cmps": 1157.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "qps": 16870.00585938,
+      "recall": 0.94458997
+    },
+    {
+      "avg_cmps": 813.0,
+      "avg_visited": 32.0,
+      "beam": 24,
+      "qps": 23809.12695312,
+      "recall": 0.88870001
+    }
+  ],
+  "tag": "t4_r3_C64_K512_N1"
+}

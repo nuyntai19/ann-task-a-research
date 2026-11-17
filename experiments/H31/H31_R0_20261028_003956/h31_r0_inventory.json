@@ -1,0 +1,294 @@
+{
+  "study": "H31_R0_EXISTING_GRAPH_AUDIT",
+  "mode": "READ_ONLY_NO_BUILD_NO_SEARCH",
+  "time_utc": "2026-10-27T17:39:56.484676+00:00",
+  "host_home_root": "/home/tai/ann-task-a",
+  "graph_selection_basis": "USER_ASSIGNED_LABELS_NOT_VERIFIED_BUILD_PROVENANCE",
+  "graph_roles": {
+    "VAMANA": {
+      "path": "/home/tai/ann-task-a/results/vamana_sift1m.graph",
+      "bytes": 114573392,
+      "sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+      "schema": "little-endian u32: [n,max_degree,degree[n],neighbor_ids[sum(degree)]]",
+      "n": 1000000,
+      "max_degree": 32,
+      "directed_edge_occurrences": 27643346,
+      "mean_outdegree": 27.643346,
+      "zero_outdegree_vertices": 0,
+      "zero_indegree_vertices": 205,
+      "neighbor_id_bounds_validated": true,
+      "max_neighbor_id": 999999,
+      "degree_histogram": {
+        "1": 1,
+        "2": 7,
+        "3": 27,
+        "4": 82,
+        "5": 189,
+        "6": 451,
+        "7": 822,
+        "8": 1420,
+        "9": 2178,
+        "10": 3219,
+        "11": 4566,
+        "12": 6029,
+        "13": 7908,
+        "14": 9586,
+        "15": 11665,
+        "16": 13795,
+        "17": 15858,
+        "18": 17779,
+        "19": 20299,
+        "20": 22351,
+        "21": 24415,
+        "22": 26497,
+        "23": 28597,
+        "24": 30883,
+        "25": 32775,
+        "26": 35520,
+        "27": 38371,
+        "28": 42534,
+        "29": 47877,
+        "30": 58502,
+        "31": 80654,
+        "32": 415143
+      },
+      "graph_only_bytes_per_vector": 114.5734,
+      "notes": [
+        "No duplicate-edge scan or BFS in H31-R0; use H27 for exact edge-set/BFS on known H26 graphs.",
+        "Graph-only bytes exclude base-vector storage/searcher metadata."
+      ]
+    },
+    "STOCK": {
+      "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_stock.graph",
+      "bytes": 95174232,
+      "sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+      "schema": "little-endian u32: [n,max_degree,degree[n],neighbor_ids[sum(degree)]]",
+      "n": 1000000,
+      "max_degree": 32,
+      "directed_edge_occurrences": 22793556,
+      "mean_outdegree": 22.793556,
+      "zero_outdegree_vertices": 0,
+      "zero_indegree_vertices": 1,
+      "neighbor_id_bounds_validated": true,
+      "max_neighbor_id": 999999,
+      "degree_histogram": {
+        "1": 7,
+        "2": 22,
+        "3": 140,
+        "4": 519,
+        "5": 1296,
+        "6": 2716,
+        "7": 4959,
+        "8": 7986,
+        "9": 11976,
+        "10": 16339,
+        "11": 20719,
+        "12": 25691,
+        "13": 30099,
+        "14": 34704,
+        "15": 37680,
+        "16": 40424,
+        "17": 42041,
+        "18": 43188,
+        "19": 43842,
+        "20": 43227,
+        "21": 42012,
+        "22": 40842,
+        "23": 38936,
+        "24": 37121,
+        "25": 34763,
+        "26": 32903,
+        "27": 30305,
+        "28": 28238,
+        "29": 26450,
+        "30": 24487,
+        "31": 22585,
+        "32": 233783
+      },
+      "graph_only_bytes_per_vector": 95.1742,
+      "notes": [
+        "No duplicate-edge scan or BFS in H31-R0; use H27 for exact edge-set/BFS on known H26 graphs.",
+        "Graph-only bytes exclude base-vector storage/searcher metadata."
+      ]
+    },
+    "TOP2": {
+      "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_top2.graph",
+      "bytes": 95176264,
+      "sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6",
+      "schema": "little-endian u32: [n,max_degree,degree[n],neighbor_ids[sum(degree)]]",
+      "n": 1000000,
+      "max_degree": 32,
+      "directed_edge_occurrences": 22794064,
+      "mean_outdegree": 22.794064,
+      "zero_outdegree_vertices": 0,
+      "zero_indegree_vertices": 1,
+      "neighbor_id_bounds_validated": true,
+      "max_neighbor_id": 999999,
+      "degree_histogram": {
+        "1": 7,
+        "2": 22,
+        "3": 140,
+        "4": 519,
+        "5": 1295,
+        "6": 2716,
+        "7": 4956,
+        "8": 7989,
+        "9": 11967,
+        "10": 16333,
+        "11": 20718,
+        "12": 25688,
+        "13": 30088,
+        "14": 34700,
+        "15": 37682,
+        "16": 40426,
+        "17": 42045,
+        "18": 43187,
+        "19": 43850,
+        "20": 43221,
+        "21": 42005,
+        "22": 40845,
+        "23": 38942,
+        "24": 37116,
+        "25": 34778,
+        "26": 32907,
+        "27": 30294,
+        "28": 28243,
+        "29": 26453,
+        "30": 24496,
+        "31": 22576,
+        "32": 233796
+      },
+      "graph_only_bytes_per_vector": 95.1763,
+      "notes": [
+        "No duplicate-edge scan or BFS in H31-R0; use H27 for exact edge-set/BFS on known H26 graphs.",
+        "Graph-only bytes exclude base-vector storage/searcher metadata."
+      ]
+    }
+  },
+  "dataset": {
+    "base": {
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "status": "STRUCTURE_PASS",
+      "n": 1000000,
+      "d_or_k": 128,
+      "bytes": 512000008,
+      "expected_bytes": 512000008,
+      "sha256": "NOT_COMPUTED_BY_DEFAULT: >500MB possible",
+      "caution": "Header/size validation is not value-level ground truth verification."
+    },
+    "queries": {
+      "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "status": "STRUCTURE_PASS",
+      "n": 10000,
+      "d_or_k": 128,
+      "bytes": 5120008,
+      "expected_bytes": 5120008,
+      "sha256": "NOT_COMPUTED_BY_DEFAULT: >500MB possible",
+      "caution": "Header/size validation is not value-level ground truth verification."
+    },
+    "gt": {
+      "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "status": "STRUCTURE_FAIL",
+      "n": 10000,
+      "d_or_k": 100,
+      "bytes": 8000008,
+      "expected_bytes": 4000008,
+      "sha256": "NOT_COMPUTED_BY_DEFAULT: >500MB possible",
+      "caution": "Header/size validation is not value-level ground truth verification."
+    }
+  },
+  "input_dataset_status": "INPUT_DATA_PARTIAL_OR_FAIL",
+  "evidence_files": {
+    "LEGACY_PARLAY_SEARCH_LOGS": [
+      {
+        "path": "/home/tai/ann-task-a/logs/pipnn_commonsearch_Q100.log",
+        "bytes": 992,
+        "sha256": "9a100d94f3f9d23b1c8d4376b6282ce7ec5ef25ab3d46447088c224bd9ae3a09"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/pipnn_commonsearch_Q108.log",
+        "bytes": 994,
+        "sha256": "8edff11bfa7e0330f9060a31f795db46e8297f7dfbd964a5f5d6e060db2d5033"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/pipnn_commonsearch_Q112.log",
+        "bytes": 988,
+        "sha256": "ca7db86c9f5addc3b02f03f3c067b765139c557d88d3d428b616f6c63908ab28"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/pipnn_commonsearch_Q120.log",
+        "bytes": 995,
+        "sha256": "764b75dc5ed83a4f5c03ca26dfd5f15022a272dd975a1aa2a18dbb22638ff927"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/vamana_sift1m_Q128.log",
+        "bytes": 996,
+        "sha256": "558f62b8ce19c1469b62f5befe5f587cae69064d752251b2f992032938c9648f"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/vamana_sift1m_Q144.log",
+        "bytes": 996,
+        "sha256": "46a63b04a8399b2d3e4f6109ff60395788b1d01711c4dd2886d143c2547b443d"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/vamana_sift1m_Q160.log",
+        "bytes": 996,
+        "sha256": "3dd31053a2c1d2b67e17d8b247bd7c8e133e448e5f3a0ba83a9e74963d6c84f9"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/vamana_sift1m_Q176.log",
+        "bytes": 993,
+        "sha256": "4e3b763878aea3856b764d3837040ed13041ef7ba87325ce9e2988f0be416974"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/vamana_sift1m_Q192.log",
+        "bytes": 996,
+        "sha256": "ecc55e9b259d2ef56019384f6ba72665a4b338eb07def0497b175f6ba1868f90"
+      },
+      {
+        "path": "/home/tai/ann-task-a/logs/vamana_sift1m_Q96.log",
+        "bytes": 991,
+        "sha256": "a525f5aaa3c048a9bf0c9ac206254dae92786cf434692de43c15e6cef3d3e943"
+      }
+    ],
+    "H27_EXACT_TOPOLOGY_SUMMARIES": [
+      {
+        "path": "/home/tai/ann-task-a/experiments/H27/H27_R0_topology_20261027_232105/h27_r0_summary.json",
+        "bytes": 5202,
+        "sha256": "c3b3de420ba67b1f90cd131d8afc2d1775d35343d3bb303ac891346357f3a80e"
+      }
+    ],
+    "H26_P0_PROFILE_OUTPUT": [
+      {
+        "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/h26_summary.txt",
+        "bytes": 698,
+        "sha256": "01fad31a746b8e7adef78c23ae71eff69ead0f2d1b8b027bb073e79901d50d1c"
+      }
+    ]
+  },
+  "baseline_provenance_historical_only": {
+    "Vamana_4t_single_build_s": 208.1,
+    "PiPNN_stock_G0_4t_median3_build_s": 50.58,
+    "PiPNN_H17_top2_4t_median3_build_s": 44.95,
+    "PiPNN_H26_P0_stock_median2_build_s": 50.025,
+    "PiPNN_H26_P0_top2_median2_build_s": 42.035,
+    "warning": "Reference data from prior research reports; not measured or automatically matched to these selected graph files."
+  },
+  "gates": {
+    "graph_file_schema": "PASS",
+    "graph_sha256": "PASS",
+    "dataset_header_and_size": "INPUT_DATA_PARTIAL_OR_FAIL",
+    "same_BUILD_seed_and_flags": "UNVERIFIED",
+    "same_searcher_same_query_set": "UNVERIFIED",
+    "matched_graph_bytes_or_degree": "UNVERIFIED",
+    "matched_Recall_QPS_curves": "NOT_EVALUATED_IN_R0",
+    "intra_query_parallelism": "NOT_EVALUATED_IN_R0"
+  },
+  "caveats": [
+    "File names and hashes do not establish same BUILD seed, source code, or parameter lineage.",
+    "Original graph-only bytes are not full index footprint.",
+    "Indegree zero != reachability from entry. No BFS run here; H27 audits known H26 graphs.",
+    "H27 Stock/Top2 edge similarity does not identify scheduler causality.",
+    "No new BUILD/Search measurements; independent historical timings are not strict matched comparison."
+  ]
+}

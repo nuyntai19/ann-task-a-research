@@ -1,0 +1,28 @@
+{
+  "scope": "SIFT100K 1-thread B1 candidate snapshot comparison",
+  "firstpass_N1_vs_N2": {
+    "rows": 100000,
+    "rows_changed": 6368,
+    "edges_before": 3159121,
+    "edges_after": 3158893,
+    "candidates_removed": 6883,
+    "candidates_added": 6655,
+    "identical_rows": 93632
+  },
+  "secondpass_N2P1_vs_N2P2": {
+    "rows": 100000,
+    "rows_changed": 99947,
+    "edges_before": 3158893,
+    "edges_after": 4270275,
+    "candidates_removed": 109862,
+    "candidates_added": 1221244,
+    "identical_rows": 53
+  },
+  "snapshot_sha256": {
+    "C64_K512_N1/pass1.tsv": "049b5b725c379275ca40d4fe1e370c49994e817799f50585ee729231eed43205",
+    "C64_K512_N2/pass1.tsv": "f8f8aa4f314645af55795ad47d582b58c80d0d526f79e0ee6f7926a7c74dde03",
+    "C64_K512_N2/pass2.tsv": "4fae344b9c936f51156f473d05f45b0705ea4645c2fc3f1fea77bffefc7a79c7"
+  },
+  "strict_firstpass_identical": false,
+  "NOTE": "Snapshot cost contaminates native wall times; candidate delta is not automatically Recall/latency gain."
+}

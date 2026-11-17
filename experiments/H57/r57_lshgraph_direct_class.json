@@ -1,0 +1,37 @@
+{
+  "audit": "R57_PINNED_SOURCE_EXTRACTED_LSHGRAPH_DIRECT_CALL_PASS",
+  "original_source": "/home/tai/ann-task-a/src/PiPNN/algorithms/utils/graph.h",
+  "original_git_blob_sha1": "7c5b8c1196a3ad741dfd22fe8f35b72acae2b19f",
+  "original_source_sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+  "native": {
+    "cpp_sha256": "9988f538ad68d8005f2596c331f3dc5848aba23dc0e086e8ae235e81f23fbb28",
+    "source_extracted_class_sha256": "d5fca525799f9e83b9e205e8b2d281a71f4037d438e80e0ab1766a2172769b5a",
+    "compiler": "/usr/bin/g++",
+    "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "eigen_include": "/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src",
+    "native_stdout": [
+      "R57_EIGEN_VERSION 3.4.0",
+      "R57_FLOAT32 A=1.00199997 B=1.00100005 BF16_A=1 BF16_B=1",
+      "Allocate = 0",
+      "Allocate = 0",
+      "R57_CAP1_AB=101 BA=202",
+      "Allocate = 0",
+      "Allocate = 0",
+      "R57_CAP2_AB=101 BA=202",
+      "Allocate = 0",
+      "Allocate = 0",
+      "Allocate = 0",
+      "Allocate = 0",
+      "R57_SOURCE_EXTRACTED_LSHGRAPH_DIRECT_CALL_PASS"
+    ],
+    "actual_class_method_called": true,
+    "scope": "Original LSHCandidate/LSHGraph class text compiled verbatim; single-thread stubs replace only Abseil/Parlay dependencies; constant-hash test fixture; NOT full linked PiPNN executable."
+  },
+  "limits": [
+    "Compiles actual original class/method code extracted verbatim, not a rewritten comparator.",
+    "Abseil Mutex/Span and Parlay parallel_for are replaced by single-thread scaffolding.",
+    "Fixed relative hash=7 forces a synthetic hash collision.",
+    "Not the fully linked PiPNN library, not an observed production proposal stream.",
+    "No SIFT1M prevalence, graph-quality, Recall or BUILD-performance implication."
+  ]
+}

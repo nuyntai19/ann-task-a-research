@@ -1,0 +1,391 @@
+{
+  "experiment": "R84.7",
+  "source_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "status": "R84_7_TWO_METRIC_SCREEN_HOLD_OR_NO_GO",
+  "base_path": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "base_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "binary_sha256": {
+    "D0": "7340ce1817f1272d0137bb02ef8dea79756a5fa9252037d29afc3af670f6e48f",
+    "W": "b79cada58551a8893c1c6fb81fd868ecd521830825ae1eb21ed887e46ec8ef95"
+  },
+  "source_reports_sha256": {
+    "r84_4": "52da633bdf72fa11c8df32fdb63512d94881514aab2d86cb8470b8c43758624c",
+    "r84_4b": "0a0dae51cbf9919ff867e478a4884bbd91b088b91444acf52a7b108e555e7c57",
+    "r84_5": "838d6dcc6cc63845c3c2da30e37fd1eb496fa60fdfa36ff9b6c20bccc2f5dd22",
+    "r84_6": "1e08c62d6385da12df51c9be8f6c38eaae1053c8c13bc91785b4ee7451fbc610"
+  },
+  "threads": 4,
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "core_topology": {
+    "0": {
+      "package": 0,
+      "core": 0
+    },
+    "2": {
+      "package": 0,
+      "core": 4
+    },
+    "4": {
+      "package": 0,
+      "core": 8
+    },
+    "6": {
+      "package": 0,
+      "core": 12
+    }
+  },
+  "hardware": {
+    "cpu_model": "Intel(R) Core(TM) i5-14600KF",
+    "kernel": "7.0.0-42-generic",
+    "machine": "x86_64",
+    "scaling_governor": {
+      "0": "powersave",
+      "2": "powersave",
+      "4": "powersave",
+      "6": "powersave"
+    }
+  },
+  "ordered_runs": [
+    "r1_D0",
+    "r1_W",
+    "r2_W",
+    "r2_D0",
+    "r3_D0",
+    "r3_W"
+  ],
+  "created_at_utc": "2026-11-09T09:05:07.119388+00:00",
+  "runs": {
+    "r1_D0": {
+      "variant": "D0",
+      "rep": 1,
+      "tag": "r1_D0",
+      "threads": 4,
+      "wall_s": 2.7,
+      "peakRSS_KiB": 346128,
+      "binary_sha256": "7340ce1817f1272d0137bb02ef8dea79756a5fa9252037d29afc3af670f6e48f",
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267604,
+        "graph_bytes": 9470424,
+        "sha256": "71f7d0653408d2aec30de17e5b283e39e85a3eb9c6d8e646a537a900a9fb068d",
+        "self_arcs": 0,
+        "duplicate_neighbors": 0
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "values_s": [
+            0.1556,
+            0.1495
+          ],
+          "sum_s": 0.3051
+        },
+        "build leaf time": {
+          "count": 2,
+          "values_s": [
+            1.112,
+            1.1024
+          ],
+          "sum_s": 2.2144
+        },
+        "Final prune time": {
+          "count": 1,
+          "values_s": [
+            0.1373
+          ],
+          "sum_s": 0.1373
+        }
+      },
+      "exit_code": 0,
+      "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r1_D0/graph.bin"
+    },
+    "r1_W": {
+      "variant": "W",
+      "rep": 1,
+      "tag": "r1_W",
+      "threads": 4,
+      "wall_s": 2.68,
+      "peakRSS_KiB": 234348,
+      "binary_sha256": "b79cada58551a8893c1c6fb81fd868ecd521830825ae1eb21ed887e46ec8ef95",
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267609,
+        "graph_bytes": 9470444,
+        "sha256": "5475e96fb6bd621e347285e522d09a9b5901135979d5933dd703d7ae5a079e9a",
+        "self_arcs": 0,
+        "duplicate_neighbors": 0
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "values_s": [
+            0.1556,
+            0.1502
+          ],
+          "sum_s": 0.3058
+        },
+        "build leaf time": {
+          "count": 2,
+          "values_s": [
+            1.0864,
+            1.1066
+          ],
+          "sum_s": 2.193
+        },
+        "Final prune time": {
+          "count": 1,
+          "values_s": [
+            0.14
+          ],
+          "sum_s": 0.14
+        }
+      },
+      "exit_code": 0,
+      "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r1_W/graph.bin"
+    },
+    "r2_W": {
+      "variant": "W",
+      "rep": 2,
+      "tag": "r2_W",
+      "threads": 4,
+      "wall_s": 2.68,
+      "peakRSS_KiB": 232480,
+      "binary_sha256": "b79cada58551a8893c1c6fb81fd868ecd521830825ae1eb21ed887e46ec8ef95",
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267600,
+        "graph_bytes": 9470408,
+        "sha256": "e7c0d38761d00baa5c7a9fa035d49129b3248f7d60eca453c5c0cedce4da6c8c",
+        "self_arcs": 0,
+        "duplicate_neighbors": 0
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "values_s": [
+            0.1551,
+            0.1513
+          ],
+          "sum_s": 0.3064
+        },
+        "build leaf time": {
+          "count": 2,
+          "values_s": [
+            1.0892,
+            1.1113
+          ],
+          "sum_s": 2.2005
+        },
+        "Final prune time": {
+          "count": 1,
+          "values_s": [
+            0.1377
+          ],
+          "sum_s": 0.1377
+        }
+      },
+      "exit_code": 0,
+      "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r2_W/graph.bin"
+    },
+    "r2_D0": {
+      "variant": "D0",
+      "rep": 2,
+      "tag": "r2_D0",
+      "threads": 4,
+      "wall_s": 2.7,
+      "peakRSS_KiB": 343728,
+      "binary_sha256": "7340ce1817f1272d0137bb02ef8dea79756a5fa9252037d29afc3af670f6e48f",
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267612,
+        "graph_bytes": 9470456,
+        "sha256": "a63d1154817a29edfb40c6c701ddd73d3eb7c4b7e60cf1ae6985c85ad4d3be0d",
+        "self_arcs": 0,
+        "duplicate_neighbors": 0
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "values_s": [
+            0.156,
+            0.1514
+          ],
+          "sum_s": 0.3074
+        },
+        "build leaf time": {
+          "count": 2,
+          "values_s": [
+            1.1084,
+            1.103
+          ],
+          "sum_s": 2.2114
+        },
+        "Final prune time": {
+          "count": 1,
+          "values_s": [
+            0.1374
+          ],
+          "sum_s": 0.1374
+        }
+      },
+      "exit_code": 0,
+      "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r2_D0/graph.bin"
+    },
+    "r3_D0": {
+      "variant": "D0",
+      "rep": 3,
+      "tag": "r3_D0",
+      "threads": 4,
+      "wall_s": 2.71,
+      "peakRSS_KiB": 345108,
+      "binary_sha256": "7340ce1817f1272d0137bb02ef8dea79756a5fa9252037d29afc3af670f6e48f",
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267611,
+        "graph_bytes": 9470452,
+        "sha256": "9321a584745791b9c4c7fe4f13dd09b4919c1d58d5e69f51e9a96c6c7f7107a8",
+        "self_arcs": 0,
+        "duplicate_neighbors": 0
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "values_s": [
+            0.1569,
+            0.1508
+          ],
+          "sum_s": 0.3077
+        },
+        "build leaf time": {
+          "count": 2,
+          "values_s": [
+            1.1189,
+            1.107
+          ],
+          "sum_s": 2.2259
+        },
+        "Final prune time": {
+          "count": 1,
+          "values_s": [
+            0.1367
+          ],
+          "sum_s": 0.1367
+        }
+      },
+      "exit_code": 0,
+      "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r3_D0/graph.bin"
+    },
+    "r3_W": {
+      "variant": "W",
+      "rep": 3,
+      "tag": "r3_W",
+      "threads": 4,
+      "wall_s": 2.68,
+      "peakRSS_KiB": 233880,
+      "binary_sha256": "b79cada58551a8893c1c6fb81fd868ecd521830825ae1eb21ed887e46ec8ef95",
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267623,
+        "graph_bytes": 9470500,
+        "sha256": "a327ff6acaf4c65eeee95f85acafb2030c59f0f51466157b97b80ce751ae4be4",
+        "self_arcs": 0,
+        "duplicate_neighbors": 0
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "values_s": [
+            0.1566,
+            0.1512
+          ],
+          "sum_s": 0.3078
+        },
+        "build leaf time": {
+          "count": 2,
+          "values_s": [
+            1.0836,
+            1.1078
+          ],
+          "sum_s": 2.1914
+        },
+        "Final prune time": {
+          "count": 1,
+          "values_s": [
+            0.145
+          ],
+          "sum_s": 0.145
+        }
+      },
+      "exit_code": 0,
+      "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r3_W/graph.bin"
+    }
+  },
+  "note": "New-PC 4 P-core BUILD only. 4t graph SHAs may differ across repeated runs; full Recall pending.",
+  "medians": {
+    "D0": {
+      "wall_s": 2.7,
+      "peakRSS_KiB": 345108,
+      "buckets time": 0.3074,
+      "build leaf time": 2.2144,
+      "Final prune time": 0.1373
+    },
+    "W": {
+      "wall_s": 2.68,
+      "peakRSS_KiB": 233880,
+      "buckets time": 0.3064,
+      "build leaf time": 2.193,
+      "Final prune time": 0.14
+    }
+  },
+  "W_over_D0_medians": {
+    "wall_s": 0.9925925925925926,
+    "peakRSS_KiB": 0.6777008936332974
+  },
+  "paired": [
+    {
+      "rep": 1,
+      "wall_W_minus_D0_s": -0.02,
+      "rss_W_minus_D0_KiB": -111780,
+      "wall_W_over_D0": 0.992593,
+      "rss_W_over_D0": 0.677056,
+      "graph_sha_equal": false
+    },
+    {
+      "rep": 2,
+      "wall_W_minus_D0_s": -0.02,
+      "rss_W_minus_D0_KiB": -111248,
+      "wall_W_over_D0": 0.992593,
+      "rss_W_over_D0": 0.676349,
+      "graph_sha_equal": false
+    },
+    {
+      "rep": 3,
+      "wall_W_minus_D0_s": -0.03,
+      "rss_W_minus_D0_KiB": -111228,
+      "wall_W_over_D0": 0.98893,
+      "rss_W_over_D0": 0.677701,
+      "graph_sha_equal": false
+    }
+  ],
+  "paired_wins": {
+    "wall": 3,
+    "rss": 3
+  },
+  "thresholds": {
+    "wall_ratio_max": 0.97,
+    "rss_ratio_max": 0.98,
+    "min_win_count_per_metric": 2
+  },
+  "verdict": "R84_7_TWO_METRIC_SCREEN_HOLD_OR_NO_GO"
+}

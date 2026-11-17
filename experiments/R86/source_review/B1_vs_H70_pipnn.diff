@@ -1,0 +1,193 @@
+--- /home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/pipnn.h	2026-11-04 21:33:47.809709993 +0700
++++ /home/tai/ann-task-a/experiments/H85/r85_b1_controlled/isolation_v4/source/algorithms/PipNN/pipnn.h	2026-11-11 23:22:33.089355554 +0700
+@@ -5,6 +5,19 @@
+ #include <algorithm>
+ #include <queue>
+ #include <random>
++// R85_B1_SNAPSHOT_INCLUDES_BEGIN
++#include <algorithm>
++#include <cstdint>
++#include <cstdlib>
++#include <cstring>
++#include <fstream>
++#include <stdexcept>
++#include <tuple>
++#include <vector>
++#include <type_traits>
++#include <functional>
++// R85_B1_SNAPSHOT_INCLUDES_END
++
+ #include <set>
+ #include <utility>
+ #include <bitset>
+@@ -446,10 +459,76 @@
+   }
+ 
+   void multiple_clustertrees(GraphH &G, PR &Points, long cluster_size,
+-                             long num_clusters) {
++                             long num_clusters,
++                             std::function<void(GraphH&)> b1_after_first = {}) {
+     G.allocate_graph(Points.size());
+     for (auto i = 0; i < num_clusters; i++) {
+       recursively_sketch_wrapper(G, Points, cluster_size);
++      // R85_B1_SNAPSHOT_BEGIN -- observation only, after finished round.
++      // The original BUILD graph and its candidate order are not modified.
++      if (const char* b1_dir = std::getenv("R85_B1_SNAPSHOT_DIR")) {
++        if constexpr (std::is_same<GraphH, HashSetGraph<indexType>>::value) {
++          // HashSetGraph is instantiated by PiPNN even if no_reservoir is false.
++          // It has no LSH candidate hash or sentinel-worst fields.
++          throw std::runtime_error("R85_B1_SNAPSHOT_UNSUPPORTED_HASHSETGRAPH");
++        } else {
++        if (!*b1_dir) throw std::runtime_error("R85_B1_EMPTY_SNAPSHOT_DIR");
++        const std::string b1_path = std::string(b1_dir) + "/pass" +
++                                    std::to_string(i + 1) + ".tsv";
++        {
++          std::ifstream exists(b1_path);
++          if (exists.good()) throw std::runtime_error("R85_B1_REFUSE_OVERWRITE " + b1_path);
++        }
++        std::ofstream b1_out(b1_path, std::ios::out | std::ios::trunc);
++        if (!b1_out.good()) throw std::runtime_error("R85_B1_CANNOT_WRITE " + b1_path);
++        uint64_t b1_total_candidates = 0;
++        uint64_t b1_nonempty_rows = 0;
++        for (size_t b1_row = 0; b1_row < G.size(); ++b1_row) {
++          const size_t b1_degree = static_cast<size_t>(G.degree(b1_row));
++          if (b1_degree > G.kMaxDegree) throw std::runtime_error("R85_B1_INVALID_DEGREE");
++          const size_t b1_worst_index = G.get_furthest_index(b1_row);
++          if (b1_degree != 0 && b1_worst_index >= b1_degree)
++            throw std::runtime_error("R85_B1_INVALID_WORST_INDEX");
++          float b1_worst_float = static_cast<float>(G.get_furthest(b1_row));
++          uint32_t b1_worst_bits = 0;
++          std::memcpy(&b1_worst_bits, &b1_worst_float, sizeof(b1_worst_bits));
++          std::vector<std::tuple<uint64_t,uint16_t,uint32_t>> b1_entries;
++          for (const auto& b1_c : G.Neighbors(b1_row)) {
++            float b1_float = static_cast<float>(b1_c.norm);
++            uint32_t b1_bits = 0;
++            static_assert(sizeof(b1_float) == sizeof(b1_bits), "float must be 32 bits");
++            std::memcpy(&b1_bits, &b1_float, sizeof(b1_bits));
++            b1_entries.emplace_back(static_cast<uint64_t>(b1_c.point_id),
++                                    static_cast<uint16_t>(b1_c.hash), b1_bits);
++          }
++          if (b1_entries.size() != b1_degree)
++            throw std::runtime_error("R85_B1_DEGREE_MISMATCH");
++          // Preserve live candidate order: lower_bound and worst_index use it.
++          // All values are explicit; no padding, locks, unused slots or pointers.
++          b1_total_candidates += b1_entries.size();
++          b1_nonempty_rows += !b1_entries.empty();
++          b1_out << b1_row << '\t' << b1_entries.size()
++                 << '\t' << b1_worst_index << '\t' << b1_worst_bits;
++          for (const auto& b1_c : b1_entries) {
++            b1_out << '\t' << std::get<0>(b1_c) << ','
++                   << std::get<1>(b1_c) << ',' << std::get<2>(b1_c);
++          }
++          b1_out << '\n';
++        }
++        b1_out.flush();
++        if (!b1_out.good()) throw std::runtime_error("R85_B1_WRITE_ERROR " + b1_path);
++        b1_out.close();
++        std::cout << "R85_B1_SNAPSHOT_PASS round=" << (i + 1)
++                  << " nodes=" << G.size()
++                  << " nonempty=" << b1_nonempty_rows
++                  << " candidates=" << b1_total_candidates
++                  << " file=" << b1_path << std::endl;
++        } // end LSHGraph-style snapshot branch
++      }
++      // R85_B1_SNAPSHOT_END
++      // R85_B1_PAIRED_P1_HOOK_BEGIN: P1 snapshot already written above.
++      if (i == 0 && b1_after_first) b1_after_first(G);
++      // R85_B1_PAIRED_P1_HOOK_END
+       std::cout << "Built cluster " << i << " of " << num_clusters << std::endl;
+       std::cout << "Leaf count: " << leaf_count << std::endl;
+       std::cout << "# of comparisons during clustering: " << COMPARISONS
+@@ -617,7 +696,91 @@
+     }
+     std::cout << std::endl;
+ 
+-    C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);
++    // R85_B1_PAIRED_EXPORT_BEGIN. Disabled unless the P1 output env is set.
++    if (const char* b1_p1_env = std::getenv("R85_B1_P1_GRAPH_OUTFILE")) {
++      if constexpr (std::is_same<GraphH, HashSetGraph<indexType>>::value) {
++        throw std::runtime_error("R85_B1_PAIRED_UNSUPPORTED_HASHSETGRAPH");
++      } else {
++        if (!*b1_p1_env)
++          throw std::runtime_error("R85_B1_PAIRED_EMPTY_P1_PATH");
++        if (cluster_rounds != 2 || cluster_size != 512 || table_size != 64 ||
++            MSTDeg != 2 || prune_degree != 64 || Hsize != 12 || !prune_all ||
++            Points.size() != 100000)
++          throw std::runtime_error("R85_B1_PAIRED_PROTOCOL_RESTRICTED_TO_100K_C64_K512_N2");
++        const std::string b1_p1_path(b1_p1_env);
++        if (b1_p1_path[0] != '/')
++          throw std::runtime_error("R85_B1_PAIRED_P1_ABSOLUTE_PATH_REQUIRED");
++        if (const char* b1_final_path = P.getOptionValue("-graph_outfile")) {
++          if (b1_p1_path == b1_final_path)
++            throw std::runtime_error("R85_B1_PAIRED_P1_P2_SAME_PATH");
++        } else {
++          throw std::runtime_error("R85_B1_PAIRED_P2_OUTPUT_REQUIRED");
++        }
++        {
++          std::ifstream b1_existing(b1_p1_path, std::ios::binary);
++          if (b1_existing.good())
++            throw std::runtime_error("R85_B1_PAIRED_REFUSE_OVERWRITE_P1");
++        }
++        auto b1_capture_visible_reservoir = [](GraphH& b1_h) {
++          std::vector<uint64_t> b1_state;
++          for (size_t b1_i = 0; b1_i < b1_h.size(); ++b1_i) {
++            const size_t b1_degree = static_cast<size_t>(b1_h.degree(b1_i));
++            if (b1_degree > b1_h.kMaxDegree)
++              throw std::runtime_error("R85_B1_PAIRED_INVALID_DEGREE");
++            const size_t b1_worst_idx = b1_h.get_furthest_index(b1_i);
++            if (b1_degree && b1_worst_idx >= b1_degree)
++              throw std::runtime_error("R85_B1_PAIRED_INVALID_WORST");
++            float b1_worst_val = static_cast<float>(b1_h.get_furthest(b1_i));
++            uint32_t b1_worst_bits = 0;
++            std::memcpy(&b1_worst_bits, &b1_worst_val, sizeof(b1_worst_bits));
++            b1_state.push_back(static_cast<uint64_t>(b1_i));
++            b1_state.push_back(static_cast<uint64_t>(b1_degree));
++            b1_state.push_back(static_cast<uint64_t>(b1_worst_idx));
++            b1_state.push_back(static_cast<uint64_t>(b1_worst_bits));
++            size_t b1_seen = 0;
++            for (const auto& b1_c : b1_h.Neighbors(b1_i)) {
++              float b1_norm = static_cast<float>(b1_c.norm);
++              uint32_t b1_norm_bits = 0;
++              std::memcpy(&b1_norm_bits, &b1_norm, sizeof(b1_norm_bits));
++              b1_state.push_back(static_cast<uint64_t>(b1_c.point_id));
++              b1_state.push_back(static_cast<uint64_t>(b1_c.hash));
++              b1_state.push_back(static_cast<uint64_t>(b1_norm_bits));
++              ++b1_seen;
++            }
++            if (b1_seen != b1_degree)
++              throw std::runtime_error("R85_B1_PAIRED_DEGREE_MISMATCH");
++          }
++          return b1_state;
++        };
++        std::function<void(GraphH&)> b1_after_first = [&](GraphH& b1_h) {
++          const auto b1_before = b1_capture_visible_reservoir(b1_h);
++          GraphI b1_p1_graph;
++          b1_p1_graph.allocate_graph(prune_degree, Points.size());
++          // ExportToGraph uses original robustPrune and must NOT mutate b1_h.
++          ExportToGraph(b1_h, P, b1_p1_graph, Points,
++                        prune_all, prune_degree, alpha);
++          const auto b1_after = b1_capture_visible_reservoir(b1_h);
++          if (b1_before != b1_after)
++            throw std::runtime_error("R85_B1_PAIRED_RESERVOIR_MUTATED_BY_P1_EXPORT");
++          std::cout << "R85_B1_PAIRED_RESERVOIR_UNCHANGED_PASS values="
++                    << b1_before.size() << std::endl;
++          // Graph::save accepts a mutable char* in the original benchmark.
++          std::vector<char> b1_path_buf(b1_p1_path.begin(), b1_p1_path.end());
++          b1_path_buf.push_back('\0');
++          b1_p1_graph.save(b1_path_buf.data());
++          std::ifstream b1_verify(b1_p1_path, std::ios::binary | std::ios::ate);
++          if (!b1_verify.good() || b1_verify.tellg() <= 0)
++            throw std::runtime_error("R85_B1_PAIRED_P1_GRAPH_SAVE_FAILED");
++          std::cout << "R85_B1_PAIRED_P1_EXPORT_PASS file="
++                    << b1_p1_path << std::endl;
++        };
++        C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds,
++                                b1_after_first);
++      }
++    } else {
++      C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);
++    }
++    // R85_B1_PAIRED_EXPORT_END
+ 
+     // Export the edges from the hashgraph into G.
+     std::cout << "Allocating graph, prune_degree = " << prune_degree << std::endl;

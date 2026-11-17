@@ -1,0 +1,381 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ba41e07..3495969 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -16,7 +16,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -ffast-math")
+ 
+ FetchContent_Declare(parlaylib
+   GIT_REPOSITORY  https://github.com/cmuparlay/parlaylib.git
+-  GIT_TAG         master
++  # PATCH: was `master`. The repo ALSO vendors parlaylib as a submodule, and the
++  # per-directory `parlay` symlinks make quoted includes resolve to the SUBMODULE
++  # while the CMake include path points at this FetchContent copy -- two different
++  # parlaylib versions in one binary (ODR violation on parlay::scheduler, which
++  # crashes multi-threaded). Pin this to the submodule commit so both agree.
++  GIT_TAG         7cdb4cae8f020525f5eb4ad82e2565d1e38cfbc3
+ )
+ FetchContent_GetProperties(parlaylib)
+ if(NOT parlaylib_POPULATED)
+@@ -75,7 +80,7 @@ set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
+ set(HWY_ENABLE_TESTS OFF CACHE BOOL "" FORCE)
+ set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "" FORCE)
+ set(BENCHMARK_ENABLE_GTEST_TESTS OFF CACHE BOOL "" FORCE)
+-add_subdirectory(external/mirage)
++#add_subdirectory(external/mirage)  # PATCH: submodule incomplete, not needed
+ 
+ add_subdirectory(algorithms)
+ add_subdirectory(analysis)
+diff --git a/algorithms/CMakeLists.txt b/algorithms/CMakeLists.txt
+index 660d8c1..54e6c37 100644
+--- a/algorithms/CMakeLists.txt
++++ b/algorithms/CMakeLists.txt
+@@ -1,7 +1,7 @@
+ add_subdirectory(HCNNG)
+ add_subdirectory(HNSW)
+ add_subdirectory(hnswlib)
+-add_subdirectory(mirage)
++#add_subdirectory(mirage)  # PATCH
+ add_subdirectory(PipNN)
+ add_subdirectory(pyNNDescent)
+ add_subdirectory(vamana)
+diff --git a/algorithms/PipNN/pipnn.h b/algorithms/PipNN/pipnn.h
+index ebe6e52..ffc64cf 100644
+--- a/algorithms/PipNN/pipnn.h
++++ b/algorithms/PipNN/pipnn.h
+@@ -142,6 +142,9 @@ struct cluster {
+         pos += b.size();
+       }
+       new_bucket = parlay::remove_duplicates(new_bucket);
++      /* GRAFT-DET: remove_duplicates is hash-based and its output order varies
++       * run to run; the next level samples leaders by position. Sort. */
++      if (getenv("PIPNN_DETERMINISTIC")) parlay::sort_inplace(new_bucket);
+       CHECK(new_bucket.size() > 0);
+ 
+       if (new_bucket.size() >= MIN_CLUSTER_SIZE &&
+@@ -358,7 +361,8 @@ struct cluster {
+     // TODO: this is non-deterministic! wtf.
+     // https://en.cppreference.com/w/cpp/numeric/random/random_device.html
+     std::random_device rd;
+-    std::mt19937 rng(rd());
++    /* GRAFT-DET (2026-10-02): PIPNN_SEED fixes the partition seed. */
++    std::mt19937 rng(getenv("PIPNN_SEED") ? (unsigned)atol(getenv("PIPNN_SEED")) : rd());
+     std::uniform_int_distribution<int> uni(0, Points.size());
+     parlay::random rnd(uni(rng));
+     auto ids = parlay::tabulate(Points.size(), [&](uint32_t i) { return i; });
+@@ -428,6 +432,18 @@ struct cluster {
+     std::cout << "Total points: " << total_points << std::endl;
+ 
+     std::cout << "Computed buckets!" << std::endl;
++    if (getenv("PIPNN_DET_DEBUG")) {                 /* GRAFT-DET: leaf-set fingerprint */
++      uint64_t hs = 0, ho = 0;
++      for (size_t i = 0; i < buckets.size(); i++) {
++        auto b = buckets[i]; std::sort(b.begin(), b.end());
++        uint64_t h = 1469598103934665603ull;
++        for (auto x : b) { h ^= x; h *= 1099511628211ull; }
++        uint64_t hb = 1469598103934665603ull;
++        for (auto x : buckets[i]) { hb ^= x; hb *= 1099511628211ull; }
++        hs += h * 0x9E3779B97F4A7C15ull; ho = (ho ^ hb) * 1099511628211ull;
++      }
++      std::cout << "GRAFT-DET leaves set-hash " << hs << " order-hash " << ho << std::endl;
++    }
+ 
+     //G.allocate_graph(Points.size());
+     // Build on each bucket. // note the hack of checking size. This is a hack
+@@ -458,6 +474,9 @@ struct cluster {
+   void RunLeaf(GraphH &G, PR &Points,
+                parlay::sequence<uint32_t> &active_indices) {
+     leaf_count++;
++    { size_t N = active_indices.size();
++      LEAF_PAIRS.fetch_add(N * (N - 1) / 2, std::memory_order_relaxed);
++      LEAF_POINTS.fetch_add(N, std::memory_order_relaxed); }
+     EigenKNN(G, Points, active_indices);
+   }
+ 
+@@ -486,6 +505,8 @@ struct cluster {
+ 
+   std::vector<int> FANOUT_SCHEME = {};
+   std::atomic<size_t> COMPARISONS = 0;
++  std::atomic<size_t> LEAF_PAIRS = 0;   // GRAFT-COUNTER: leaf GEMM pairs N(N-1)/2
++  std::atomic<size_t> LEAF_POINTS = 0;  // GRAFT-COUNTER: sum of leaf sizes
+ };
+ 
+ 
+@@ -510,6 +531,30 @@ struct pipnn_index {
+ 
+     graph.finalize();
+ 
++    /* GRAFT-DUMP (2026-10-01): read-only export of the HashPrune reservoir
++     * before the final prune, for fg --dense-cands: n x C int32, sorted by
++     * exact distance (the reservoir stores bfloat16 norms), -1 padded.
++     * Env PIPNN_DUMP=<path>, PIPNN_DUMP_C=<C>. The graph is not touched. */
++    if (const char *dp = getenv("PIPNN_DUMP")) {
++      const size_t C = getenv("PIPNN_DUMP_C") ? (size_t)atol(getenv("PIPNN_DUMP_C")) : 160;
++      const size_t n = Points.size();
++      std::vector<int32_t> out(n * C, -1);
++      std::atomic<size_t> tot(0), dd(0);
++      parlay::parallel_for(0, n, [&](size_t i) {
++        auto nb = graph.Neighbors(i);
++        std::vector<std::pair<float, int32_t>> v;
++        v.reserve(nb.size());
++        for (auto &c : nb) v.emplace_back(Points[i].distance(Points[c.point_id]), (int32_t)c.point_id);
++        std::sort(v.begin(), v.end());
++        const size_t k = std::min(C, v.size());
++        for (size_t j = 0; j < k; j++) out[i * C + j] = v[j].second;
++        tot += v.size(); dd += v.size();
++      });
++      FILE *f = fopen(dp, "wb"); fwrite(out.data(), 4, out.size(), f); fclose(f);
++      std::cout << "GRAFT-DUMP " << dp << " C=" << C << " mean reservoir " << (double)tot.load() / n
++                << " dump distances " << dd.load() << std::endl;
++    }
++
+     //create LSH table
+     //auto H = SimHash<Point, PR, indexType>(12, Points.dimension());
+ 
+@@ -608,6 +653,10 @@ struct pipnn_index {
+     assert(G.max_degree() == prune_degree);
+     ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);
+     std::cout << "Average distance traversed: " << (dist_traversed.load() / Points.size()) << std::endl;
++    { size_t c = C.COMPARISONS.load(), l = C.LEAF_PAIRS.load(), p = prune_dist.load();
++      std::cout << "LEAF_POINTS " << C.LEAF_POINTS.load() << " leaves " << leaf_count.load() << std::endl;
++      std::cout << "BUILD_DISTANCES_PIPNN clustering=" << c << " leaf=" << l
++                << " prune=" << p << " total=" << (c + l + p) << std::endl; }
+   }
+ };
+ 
+diff --git a/algorithms/PipNN/pipnn_utils.h b/algorithms/PipNN/pipnn_utils.h
+index 81b9149..60fcbde 100644
+--- a/algorithms/PipNN/pipnn_utils.h
++++ b/algorithms/PipNN/pipnn_utils.h
+@@ -23,6 +23,7 @@
+ #pragma once
+ 
+ #include <math.h>
++#include "../utils/portability_shim.h"  // ARM PATCH
+ 
+ #include <algorithm>
+ #include <atomic>
+@@ -59,6 +60,7 @@
+ namespace parlayANN {
+ 
+ std::atomic<size_t> dist_traversed(0);
++std::atomic<size_t> prune_dist(0);  // GRAFT-COUNTER: scalar distances in the alpha-prune
+ 
+ //using GraphH = NghDistGraphHeap<uint32_t>;
+ 
+@@ -121,6 +123,7 @@ struct cluster_utils {
+ 
+     float inverse_alpha = 1.0 / alpha;
+     size_t candidate_idx = 0;
++    size_t nd_local = 0;
+     while (new_nbhs.size() < degree && candidate_idx < candidates.size()) {
+       // Don't need to do modifications.
+       const indexType p_prime = candidates[candidate_idx].first;
+@@ -129,6 +132,7 @@ struct cluster_utils {
+       if (p_prime == p) continue;
+       bool add = true;
+       for (auto p_star : new_nbhs) {
++        ++nd_local;
+         const auto dist_starprime = Points[p_star].distance(Points[p_prime]);
+         if (dist_starprime <= dist_pprime) {
+           add = false;
+@@ -138,6 +142,7 @@ struct cluster_utils {
+       if (add) new_nbhs.push_back(p_prime);
+     }
+     dist_traversed.fetch_add(candidate_idx, std::memory_order_relaxed);
++    prune_dist.fetch_add(nd_local, std::memory_order_relaxed);
+     G[p].update_neighbors(new_nbhs);
+   }
+ 
+diff --git a/algorithms/utils/NSGDist.h b/algorithms/utils/NSGDist.h
+index aab1509..5aaa3e7 100644
+--- a/algorithms/utils/NSGDist.h
++++ b/algorithms/utils/NSGDist.h
+@@ -6,7 +6,9 @@
+ #define EFANNA2E_DISTANCE_H
+ 
+ #include <math.h>
++#if defined(__x86_64__) || defined(__i386__) || defined(_M_X64)
+ #include <x86intrin.h>
++#endif  // ARM PATCH: x86 intrinsics header is unused on non-x86
+ 
+ #include <algorithm>
+ #include <iostream>
+diff --git a/algorithms/utils/graph.h b/algorithms/utils/graph.h
+index 7c5b8c1..6d61159 100644
+--- a/algorithms/utils/graph.h
++++ b/algorithms/utils/graph.h
+@@ -23,6 +23,7 @@
+ #pragma once
+ 
+ #include <algorithm>
++#include "portability_shim.h"  // ARM PATCH
+ #include <fcntl.h>
+ #include <iostream>
+ #include <sys/mman.h>
+@@ -737,6 +738,71 @@ public:
+ 
+ template<typename rangeType>
+ void merge_neighbors(const size_t i, const rangeType& r) {
++  /* GRAFT-DET (2026-10-02): with PIPNN_DETERMINISTIC set, the reservoir is a
++   * function of the offered multiset, not of merge order: candidates are
++   * ordered by (bfloat16 distance, id), a bucket keeps its minimum, a full
++   * table evicts its maximum. */
++  static const bool kDet = getenv("PIPNN_DETERMINISTIC") != nullptr;
++  if (kDet) { merge_neighbors_det(i, r); return; }
++  merge_neighbors_orig(i, r);
++}
++
++template<typename rangeType>
++void merge_neighbors_det(const size_t i, const rangeType& r) {
++  locks[i].Lock();
++  const size_t base = i * (kMaxDegree + 1);
++  T* const sentinel = &tables[base];
++  T* const begin = &tables[base + 1];
++  size_t deg = static_cast<size_t>(sentinel->point_id);
++  auto key = [](float d, indexType id) { return std::make_pair(d, id); };
++  auto kf = [](const T& t) { return static_cast<float>(t.norm); };
++  auto worst = [&](size_t &wi) {
++    wi = 0;
++    for (size_t j = 1; j < deg; ++j)
++      if (key(kf(begin[j]), begin[j].point_id) > key(kf(begin[wi]), begin[wi].point_id)) wi = j;
++  };
++  struct Cmp { bool operator()(const T& a, uint16_t b) const { return a.hash < b; } } cmp;
++  /* GRAFT-DET: the table maximum is cached and recomputed only after a
++   * write that can change it (eviction, or a bucket update of the maximum);
++   * rejections are O(1). Same result as rescanning on every offer. */
++  size_t wi = 0; bool wvalid = false;
++  /* GRAFT-DET (det4): the sentinel holds the maximum's index whenever the
++   * table is full at the end of a call, so a call starts with it valid. */
++  if (deg == kMaxDegree) { wi = static_cast<size_t>(sentinel->hash); wvalid = true; }
++  for (const auto& cand : r) {
++    const indexType pid = cand.first;
++    const float db = static_cast<float>(Eigen::bfloat16(static_cast<float>(cand.second)));
++    if (deg == kMaxDegree) {
++      if (!wvalid) { worst(wi); wvalid = true; }
++      if (db > kf(begin[wi])) break;                       /* r is sorted: nothing later fits */
++      if (key(db, pid) >= key(kf(begin[wi]), begin[wi].point_id)) continue;
++    }
++    const uint16_t h = static_cast<uint16_t>(H.relative_hash(i, pid));
++    T* end = begin + deg;
++    T* pos_ptr = std::lower_bound(begin, end, h, cmp);
++    size_t pos = static_cast<size_t>(pos_ptr - begin);
++    if (pos < deg && pos_ptr->hash == h) {                 /* bucket keeps its minimum */
++      if (key(db, pid) < key(kf(*pos_ptr), pos_ptr->point_id)) { pos_ptr->point_id = pid; pos_ptr->norm = Eigen::bfloat16(db); if (pos == wi) wvalid = false; }
++      continue;
++    }
++    if (deg == kMaxDegree) {                               /* evict the maximum, keep hash order */
++      if (wi < pos) { std::move(begin + wi + 1, begin + pos, begin + wi); --pos; }
++      else if (pos < wi) { std::move_backward(begin + pos, begin + wi, begin + wi + 1); }
++      begin[pos].point_id = pid; begin[pos].norm = Eigen::bfloat16(db); begin[pos].hash = h;
++      wvalid = false;
++    } else {
++      std::move_backward(pos_ptr, end, end + 1);
++      pos_ptr->point_id = pid; pos_ptr->norm = Eigen::bfloat16(db); pos_ptr->hash = h;
++      ++deg; wvalid = false;
++    }
++  }
++  if (deg == kMaxDegree) { if (!wvalid) worst(wi); sentinel->hash = static_cast<uint16_t>(wi); sentinel->norm = begin[wi].norm; }
++  sentinel->point_id = static_cast<indexType>(deg);
++  locks[i].Unlock();
++}
++
++template<typename rangeType>
++void merge_neighbors_orig(const size_t i, const rangeType& r) {
+   locks[i].Lock();
+ 
+   const size_t base   = i * (kMaxDegree + 1);
+diff --git a/algorithms/utils/hash.h b/algorithms/utils/hash.h
+index 3d4a2c2..f293df4 100644
+--- a/algorithms/utils/hash.h
++++ b/algorithms/utils/hash.h
+@@ -1,7 +1,10 @@
+ #include "parlay/parallel.h"
++#include "portability_shim.h"  // ARM PATCH
+ #include "parlay/primitives.h"
+ #include "parlay/random.h"
++#if defined(__x86_64__) || defined(__i386__) || defined(_M_X64)
+ #include <immintrin.h>
++#endif  // ARM PATCH: x86 intrinsics header is unused on non-x86
+ 
+ #include <cmath>  // For sqrt
+ #include <iomanip> // For formatting output
+@@ -14,7 +17,22 @@ struct Hash_Family{
+ public:
+     Hash_Family(indexType num_hashes, indexType dim, int seed = 0)
+         : num_hashes(num_hashes), dim(dim), gen(parlay::random_generator(seed)) {
++        /* GRAFT-DET (2026-10-02): normal_dist is stateful (Box-Muller caches
++         * every second draw) and was shared by a parallel tabulate, so the
++         * hash vectors depended on scheduling. Under PIPNN_DETERMINISTIC draw
++         * sequentially with a reset per element. */
++        const bool det = getenv("PIPNN_DETERMINISTIC") != nullptr;
+         for (auto i = 0; i < num_hashes; i++) {
++            if (det) {
++                parlay::sequence<float> vec(dim);
++                for (size_t j = 0; j < (size_t)dim; j++) {
++                    auto r = gen[(i+1) * dim + j];
++                    normal_dist.reset();
++                    vec[j] = normal_dist(r);
++                }
++                random_vectors.push_back(vec);
++                continue;
++            }
+             auto vec = parlay::tabulate(dim, [&](size_t j) {
+                 auto r = gen[(i+1) * dim + j];
+                 return normal_dist(r);
+diff --git a/algorithms/utils/point_range.h b/algorithms/utils/point_range.h
+index 4dc5d3d..906add1 100644
+--- a/algorithms/utils/point_range.h
++++ b/algorithms/utils/point_range.h
+@@ -23,6 +23,7 @@
+ #pragma once
+ 
+ #include <sys/mman.h>
++#include "portability_shim.h"  // ARM PATCH
+ #include <algorithm>
+ #include <iostream>
+ 
+diff --git a/algorithms/utils/simhash.h b/algorithms/utils/simhash.h
+index 6c82cac..de54e48 100644
+--- a/algorithms/utils/simhash.h
++++ b/algorithms/utils/simhash.h
+@@ -1,7 +1,9 @@
+ #include "parlay/parallel.h"
+ #include "parlay/primitives.h"
+ #include "parlay/random.h"
++#if defined(__x86_64__) || defined(__i386__) || defined(_M_X64)
+ #include <immintrin.h>
++#endif  // ARM PATCH: x86 intrinsics header is unused on non-x86
+ 
+ #include <cmath>  // For sqrt
+ #include <iomanip> // For formatting output
+diff --git a/algorithms/vamana/neighbors.h b/algorithms/vamana/neighbors.h
+index 9a4bc66..827ecb3 100644
+--- a/algorithms/vamana/neighbors.h
++++ b/algorithms/vamana/neighbors.h
+@@ -57,11 +57,11 @@ void ANN_Quantized(long k, BuildParams &BP,
+   Graph<unsigned int> G;
+   stats<unsigned int> BuildStats(Points.size());
+   if(gFile) {
+-    // Just load the graph and search it.  Leaving this as a stub for
+-    // now.
++    // GRAFT: load a prebuilt graph and fall through to the query sweep
++    // (start point 0; the build path uses the medoid).
++    G = Graph<unsigned int>(gFile);
+     idx_time = 0;
+     start_point = 0;
+-    return;
+   } else{
+     I.build_index(G, Q_Points, QQ_Points, BuildStats);
+     start_point = I.get_start();
+@@ -82,6 +82,11 @@ void ANN_Quantized(long k, BuildParams &BP,
+   long build_num_distances = parlay::reduce(parlay::map(BuildStats.distances,
+                                                         [] (auto x) {return (long) x;}));
+ 
++  // GRAFT instrumentation: the build-side distance count is computed above but
++  // was only printed in the range-search branch; report it unconditionally so
++  // build cost can be compared in distance evaluations, not just wall-clock.
++  std::cout << "BUILD_DISTANCES " << build_num_distances << std::endl;
++
+   char* oFile = P.getOptionValue("-graph_outfile");
+   if(oFile != nullptr) {
+     std::cout << "Writing graph to " << oFile << std::endl;

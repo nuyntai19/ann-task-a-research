@@ -1,0 +1,11 @@
+2026-10-27T22:44:42+07:00
+study=H26-P4b lock acquisition/hold sampling, not CPU time or critical path
+P0_source=/home/tai/ann-task-a/experiments/H26/PiPNN-H26-src
+P4B_source=/home/tai/ann-task-a/experiments/H26/PiPNN-H26-P4B-src
+p0_git=443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+p4b_git=443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+df77b6dfd715b5056689588fbf3114e01f284852826cc029c2a49f78c10f6c75  /home/tai/ann-task-a/experiments/H26/PiPNN-H26-src/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN
+01031c86c093e80cfa45d9eb6a1269d32db39887f08f2d458239248fdd7402a6  /home/tai/ann-task-a/experiments/H26/PiPNN-H26-P4B-src/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN
+8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e  /home/tai/ann-task-a/data/sift1m.fbin
+sample_mod=1024
+graph_output=disabled, selector=top2, same SIFT1M, num_clusters=1, 4T CPU0,2,4,6

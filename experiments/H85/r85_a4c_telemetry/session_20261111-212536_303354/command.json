@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-u",
+    "/home/tai/Downloads/run_r85_a4_paired_sift1m.py",
+    "--run-build"
+  ],
+  "cwd": "/home/tai",
+  "PARLAY_NUM_THREADS": "4",
+  "start_utc": "2026-11-11T14:25:36.849296+00:00",
+  "run_scope": "A4 six arms x 3 BUILD, no SEARCH; A4 runner owns build artifacts",
+  "native_cpu_pinning": "internal A4 taskset 0,2,4,6",
+  "parent_required_cpus": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ]
+}

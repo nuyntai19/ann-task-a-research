@@ -1,0 +1,121 @@
+{
+  "status": "READ_ONLY_AUDIT_COMPLETE",
+  "graph": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/r1_same_run.graph",
+  "candidate_log": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin",
+  "n": 1000000,
+  "leaves": 85529,
+  "candidate_events": 59990170,
+  "edges": 22804365,
+  "reachable_from_node0": 999999,
+  "unreachable_nodes": [
+    568552
+  ],
+  "unreachable_count": 1,
+  "indegree_zero_count": 1,
+  "indegree_zero_nodes_first30": [
+    568552
+  ],
+  "note": "Single missing node (if observed) with no self-loop must have indegree 0. Candidate counts do not establish which stage discarded reverse edges.",
+  "unreachable_node_details": [
+    {
+      "node": 568552,
+      "indegree": 0,
+      "outdegree": 7,
+      "final_outneighbors": [
+        568292,
+        569151,
+        675170,
+        833236,
+        619858,
+        637419,
+        710360
+      ],
+      "neighbors_in_candidate_log": {
+        "outgoing_proposal_events": 60,
+        "distinct_outgoing_targets": 10,
+        "incoming_directed_proposal_events": 46,
+        "distinct_incoming_sources": 9,
+        "top_outgoing_candidate_targets": [
+          [
+            568292,
+            21
+          ],
+          [
+            568974,
+            19
+          ],
+          [
+            568307,
+            6
+          ],
+          [
+            568179,
+            6
+          ],
+          [
+            619858,
+            2
+          ],
+          [
+            568237,
+            2
+          ],
+          [
+            710360,
+            1
+          ],
+          [
+            569151,
+            1
+          ],
+          [
+            675170,
+            1
+          ],
+          [
+            144047,
+            1
+          ]
+        ],
+        "top_incoming_directed_proposer_sources": [
+          [
+            568974,
+            19
+          ],
+          [
+            833236,
+            16
+          ],
+          [
+            568292,
+            3
+          ],
+          [
+            568179,
+            3
+          ],
+          [
+            637419,
+            1
+          ],
+          [
+            619858,
+            1
+          ],
+          [
+            710360,
+            1
+          ],
+          [
+            568307,
+            1
+          ],
+          [
+            569151,
+            1
+          ]
+        ]
+      }
+    }
+  ]
+}

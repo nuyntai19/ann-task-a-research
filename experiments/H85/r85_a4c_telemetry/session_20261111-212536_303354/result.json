@@ -1,0 +1,364 @@
+{
+  "exit_code": 0,
+  "elapsed_s": 520.345,
+  "telemetry_samples": 513,
+  "observed_builds": 18,
+  "observed_arms": [
+    "C64_K1024_N1",
+    "C64_K1024_N2",
+    "C64_K512_N1",
+    "C64_K512_N2",
+    "D0",
+    "STOCK"
+  ],
+  "build_records": [
+    {
+      "tag": "t4_r1_STOCK",
+      "wall_s": 39.92,
+      "rss_kib": 2799964,
+      "arcs": 26001995
+    },
+    {
+      "tag": "t4_r1_D0",
+      "wall_s": 35.23,
+      "rss_kib": 2209688,
+      "arcs": 26037230
+    },
+    {
+      "tag": "t4_r1_C64_K1024_N2",
+      "wall_s": 33.94,
+      "rss_kib": 2038936,
+      "arcs": 23829341
+    },
+    {
+      "tag": "t4_r1_C64_K512_N2",
+      "wall_s": 28.95,
+      "rss_kib": 2048204,
+      "arcs": 24358627
+    },
+    {
+      "tag": "t4_r1_C64_K1024_N1",
+      "wall_s": 17.58,
+      "rss_kib": 1965456,
+      "arcs": 20480245
+    },
+    {
+      "tag": "t4_r1_C64_K512_N1",
+      "wall_s": 15.16,
+      "rss_kib": 1980476,
+      "arcs": 21470217
+    },
+    {
+      "tag": "t4_r2_C64_K1024_N2",
+      "wall_s": 33.93,
+      "rss_kib": 2030984,
+      "arcs": 23849702
+    },
+    {
+      "tag": "t4_r2_C64_K512_N2",
+      "wall_s": 28.97,
+      "rss_kib": 2038316,
+      "arcs": 24363078
+    },
+    {
+      "tag": "t4_r2_C64_K1024_N1",
+      "wall_s": 17.62,
+      "rss_kib": 1977616,
+      "arcs": 20500786
+    },
+    {
+      "tag": "t4_r2_C64_K512_N1",
+      "wall_s": 15.15,
+      "rss_kib": 1979952,
+      "arcs": 21473154
+    },
+    {
+      "tag": "t4_r2_STOCK",
+      "wall_s": 39.8,
+      "rss_kib": 2793880,
+      "arcs": 25988510
+    },
+    {
+      "tag": "t4_r2_D0",
+      "wall_s": 35.33,
+      "rss_kib": 2211428,
+      "arcs": 25994698
+    },
+    {
+      "tag": "t4_r3_C64_K1024_N1",
+      "wall_s": 17.59,
+      "rss_kib": 1977020,
+      "arcs": 20500479
+    },
+    {
+      "tag": "t4_r3_C64_K512_N1",
+      "wall_s": 15.18,
+      "rss_kib": 1978840,
+      "arcs": 21492522
+    },
+    {
+      "tag": "t4_r3_STOCK",
+      "wall_s": 39.96,
+      "rss_kib": 2809516,
+      "arcs": 25978336
+    },
+    {
+      "tag": "t4_r3_D0",
+      "wall_s": 35.49,
+      "rss_kib": 2203768,
+      "arcs": 25999564
+    },
+    {
+      "tag": "t4_r3_C64_K1024_N2",
+      "wall_s": 33.9,
+      "rss_kib": 2025736,
+      "arcs": 23839949
+    },
+    {
+      "tag": "t4_r3_C64_K512_N2",
+      "wall_s": 28.94,
+      "rss_kib": 2037308,
+      "arcs": 24361805
+    }
+  ],
+  "all_builds_pass": true,
+  "end_snapshot": {
+    "ts_utc": "2026-11-11T14:34:17.194742+00:00",
+    "monotonic": 28356.466795383,
+    "freq_mhz": {
+      "0": {
+        "scaling_cur_freq": 799.7,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      },
+      "2": {
+        "scaling_cur_freq": 800.0,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      },
+      "4": {
+        "scaling_cur_freq": 800.0,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      },
+      "6": {
+        "scaling_cur_freq": 800.0,
+        "scaling_governor": "powersave",
+        "scaling_driver": "intel_pstate"
+      }
+    },
+    "temp": [
+      {
+        "zone": "thermal_zone0",
+        "type": "acpitz",
+        "c": 27.8
+      },
+      {
+        "zone": "thermal_zone1",
+        "type": "iwlwifi_1",
+        "c": 41.0
+      },
+      {
+        "zone": "thermal_zone2",
+        "type": "x86_pkg_temp",
+        "c": 53.0
+      },
+      {
+        "zone": "hwmon0/temp1_input",
+        "type": null,
+        "c": 27.8
+      },
+      {
+        "zone": "hwmon1/temp1_input",
+        "type": null,
+        "c": 39.5
+      },
+      {
+        "zone": "hwmon2/temp1_input",
+        "type": "Composite",
+        "c": 40.85
+      },
+      {
+        "zone": "hwmon2/temp2_input",
+        "type": "Sensor 1",
+        "c": 40.85
+      },
+      {
+        "zone": "hwmon2/temp3_input",
+        "type": "Sensor 2",
+        "c": 44.85
+      },
+      {
+        "zone": "hwmon4/temp10_input",
+        "type": "Core 8",
+        "c": 62.0
+      },
+      {
+        "zone": "hwmon4/temp14_input",
+        "type": "Core 12",
+        "c": 68.0
+      },
+      {
+        "zone": "hwmon4/temp18_input",
+        "type": "Core 16",
+        "c": 50.0
+      },
+      {
+        "zone": "hwmon4/temp1_input",
+        "type": "Package id 0",
+        "c": 68.0
+      },
+      {
+        "zone": "hwmon4/temp22_input",
+        "type": "Core 20",
+        "c": 49.0
+      },
+      {
+        "zone": "hwmon4/temp26_input",
+        "type": "Core 24",
+        "c": 42.0
+      },
+      {
+        "zone": "hwmon4/temp27_input",
+        "type": "Core 25",
+        "c": 42.0
+      },
+      {
+        "zone": "hwmon4/temp28_input",
+        "type": "Core 26",
+        "c": 43.0
+      },
+      {
+        "zone": "hwmon4/temp29_input",
+        "type": "Core 27",
+        "c": 43.0
+      },
+      {
+        "zone": "hwmon4/temp2_input",
+        "type": "Core 0",
+        "c": 66.0
+      },
+      {
+        "zone": "hwmon4/temp30_input",
+        "type": "Core 28",
+        "c": 42.0
+      },
+      {
+        "zone": "hwmon4/temp31_input",
+        "type": "Core 29",
+        "c": 42.0
+      },
+      {
+        "zone": "hwmon4/temp32_input",
+        "type": "Core 30",
+        "c": 42.0
+      },
+      {
+        "zone": "hwmon4/temp33_input",
+        "type": "Core 31",
+        "c": 42.0
+      },
+      {
+        "zone": "hwmon4/temp6_input",
+        "type": "Core 4",
+        "c": 65.0
+      },
+      {
+        "zone": "hwmon5/temp1_input",
+        "type": null,
+        "c": 41.0
+      }
+    ],
+    "rapl": {
+      "/sys/class/powercap/intel-rapl:0:0/energy_uj": {
+        "uj": 118318523458,
+        "max": "262143328850",
+        "name": "core"
+      },
+      "/sys/class/powercap/intel-rapl:0/energy_uj": {
+        "uj": 89753192838,
+        "max": "262143328850",
+        "name": "package-0"
+      }
+    },
+    "cpu_stat": {
+      "cpu0": [
+        689303,
+        46,
+        36794,
+        2068851,
+        1573,
+        0,
+        327,
+        0,
+        0,
+        0
+      ],
+      "cpu2": [
+        508124,
+        93,
+        40658,
+        2259761,
+        2006,
+        0,
+        149,
+        0,
+        0,
+        0
+      ],
+      "cpu4": [
+        517211,
+        25,
+        39629,
+        2252046,
+        2102,
+        0,
+        233,
+        0,
+        0,
+        0
+      ],
+      "cpu6": [
+        523008,
+        33,
+        39523,
+        2246870,
+        2002,
+        0,
+        210,
+        0,
+        0,
+        0
+      ]
+    },
+    "throttle_counts": {
+      "0": {
+        "core_throttle_count": 4,
+        "package_throttle_count": 304
+      },
+      "2": {
+        "core_throttle_count": 25,
+        "package_throttle_count": 304
+      },
+      "4": {
+        "core_throttle_count": 0,
+        "package_throttle_count": 304
+      },
+      "6": {
+        "core_throttle_count": 270,
+        "package_throttle_count": 304
+      }
+    },
+    "system": {
+      "loadavg": "4.27 3.59 2.25 1/1192 308323",
+      "meminfo": {
+        "MemAvailable": "   28694060 kB",
+        "SwapTotal": "       4194300 kB",
+        "SwapFree": "        4194300 kB"
+      },
+      "cpu_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=252786830\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=185\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=145"
+    }
+  },
+  "note": "BUILD only, no per-graph latency measurement. Historical A4 scripts and artifacts preserved."
+}

@@ -1,0 +1,58 @@
+{
+  "purpose": "R86 W(n) SIFT1M prefix study; data only, ANN BUILD NOT RUN",
+  "source_sift1m": "/home/tai/ann-task-a/data/sift1m.fbin",
+  "source_sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+  "datasets": {
+    "10000": {
+      "path": "/home/tai/ann-task-a/experiments/R86/scaling_wn_sift1m_prefixes_v1_0/sift1m_prefix_10000.fbin",
+      "sha256": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+      "n": 10000,
+      "d": 128
+    },
+    "30000": {
+      "path": "/home/tai/ann-task-a/experiments/R86/scaling_wn_sift1m_prefixes_v1_0/sift1m_prefix_30000.fbin",
+      "sha256": "2c46914ad6d60f0be5496d9e6d9544e32b835d64f63184a4fe2bfd17aecaf9c5",
+      "n": 30000,
+      "d": 128
+    },
+    "100000": {
+      "path": "/home/tai/ann-task-a/data/sift100k.fbin",
+      "sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+      "n": 100000,
+      "d": 128
+    },
+    "300000": {
+      "path": "/home/tai/ann-task-a/experiments/R86/scaling_wn_sift1m_prefixes_v1_0/sift1m_prefix_300000.fbin",
+      "sha256": "e546700a4b7354e247b1707610433abccb9a9cba9310fa0e48d7f4276d7fab73",
+      "n": 300000,
+      "d": 128
+    },
+    "1000000": {
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+      "n": 1000000,
+      "d": 128
+    }
+  },
+  "candidate_arms": {
+    "A0": {
+      "C": 160,
+      "K": 1024,
+      "N": 2,
+      "binary_sha256": "396ef852992428cd3f935bcb33eeeeacc1bae565fbc4a441c1fa9d19720122ff"
+    },
+    "A3": {
+      "C": 64,
+      "K": 512,
+      "N": 2,
+      "binary_sha256": "ef707479be221cb7a3c6257298d22f614678878f0a7bfc724dc8b28fabdd21c4"
+    },
+    "A4": {
+      "C": 64,
+      "K": 512,
+      "N": 1,
+      "binary_sha256": "ef707479be221cb7a3c6257298d22f614678878f0a7bfc724dc8b28fabdd21c4"
+    }
+  },
+  "status": "PREFIX_DATA_PREPARED_NATIVE_ON_BUILD_NOT_STARTED"
+}

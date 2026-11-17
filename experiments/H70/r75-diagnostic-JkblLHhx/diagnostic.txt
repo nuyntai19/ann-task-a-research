@@ -1,0 +1,96 @@
+========== R75 DIAGNOSTIC ==========
+2026-11-05T01:40:29+07:00
+========== CPU TOPOLOGY ==========
+CPU CORE SOCKET ONLINE
+  0    0      0     có
+  1    0      0     có
+  2    1      0     có
+  3    1      0     có
+  4    2      0     có
+  5    2      0     có
+  6    3      0     có
+  7    3      0     có
+========== CPU QUOTA / THROTTLING ==========
+FILE=/sys/fs/cgroup/cpu.stat
+usage_usec 43611481000
+user_usec 37462253000
+system_usec 6149228000
+nice_usec 6441000
+core_sched.force_idle_usec 0
+nr_periods 0
+nr_throttled 0
+throttled_usec 0
+nr_bursts 0
+burst_usec 0
+========== TEMPERATURE ==========
+lm-sensors not installed
+========== BUILD LOG TIMING CLUES ==========
+LOG=/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM/A_stock.log
+3:Parlay time: SketchHash construction time: 0.0740
+4:Size of SketchHash (bytes): 48006144
+20:Parlay time: first level assign time: 0.4457
+21:Parlay time: buckets time: 17.9575
+27:Parlay time: build leaf time: 34.5189
+28:Built cluster 0 of 2
+30:# of comparisons during clustering: 4804051721
+37:Parlay time: first level assign time: 0.4273
+38:Parlay time: buckets time: 16.7800
+44:Parlay time: build leaf time: 34.4241
+45:Built cluster 1 of 2
+47:# of comparisons during clustering: 9667904774
+48:Allocating graph, prune_degree = 64
+50:Parlay time: Final prune time: 12.3761
+56:Graph built in 116.7 seconds
+57:Parlay time: 116.9054
+LOG=/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM/D_h17_tier.log
+3:Parlay time: SketchHash construction time: 0.1012
+4:Size of SketchHash (bytes): 48006144
+16:Parlay time: first level assign time: 0.4651
+17:Parlay time: buckets time: 17.9959
+23:Parlay time: build leaf time: 32.3107
+24:Built cluster 0 of 2
+26:# of comparisons during clustering: 4804051721
+33:Parlay time: first level assign time: 0.4415
+34:Parlay time: buckets time: 17.9643
+40:Parlay time: build leaf time: 33.2145
+41:Built cluster 1 of 2
+43:# of comparisons during clustering: 9667904774
+44:Allocating graph, prune_degree = 64
+46:Parlay time: Final prune time: 6.1870
+52:Graph built in 107.9 seconds
+53:Parlay time: 108.1487
+LOG=/home/tai/ann-task-a/experiments/H70/r73-sift1m-8t-LrQhN895/r1_A_stock.log
+3:Parlay time: SketchHash construction time: 0.0533
+4:Size of SketchHash (bytes): 48006144
+20:Parlay time: first level assign time: 0.4458
+21:Parlay time: buckets time: 18.6564
+27:Parlay time: build leaf time: 33.3341
+28:Built cluster 0 of 2
+30:# of comparisons during clustering: 4804051721
+37:Parlay time: first level assign time: 0.4949
+38:Parlay time: buckets time: 19.4055
+44:Parlay time: build leaf time: 36.3333
+45:Built cluster 1 of 2
+47:# of comparisons during clustering: 9667904774
+48:Allocating graph, prune_degree = 64
+50:Parlay time: Final prune time: 4.2607
+56:Graph built in 112.3 seconds
+57:Parlay time: 112.5017
+LOG=/home/tai/ann-task-a/experiments/H70/r73-sift1m-8t-LrQhN895/r1_D_h17_tier.log
+3:Parlay time: SketchHash construction time: 0.0863
+4:Size of SketchHash (bytes): 48006144
+16:Parlay time: first level assign time: 0.4868
+17:Parlay time: buckets time: 19.3435
+23:Parlay time: build leaf time: 29.2292
+24:Built cluster 0 of 2
+26:# of comparisons during clustering: 4804051721
+33:Parlay time: first level assign time: 0.4862
+34:Parlay time: buckets time: 20.0835
+40:Parlay time: build leaf time: 29.5920
+41:Built cluster 1 of 2
+43:# of comparisons during clustering: 9667904774
+44:Allocating graph, prune_degree = 64
+46:Parlay time: Final prune time: 4.6973
+52:Graph built in 103.2 seconds
+53:Parlay time: 103.3731
+R75_DIAGNOSTIC_COLLECTION_PASS

@@ -1,0 +1,79 @@
+{
+  "study": "H31_R0B_GT_LAYOUT_CORRECTION",
+  "schema_source": "ParlayANN@a48c6a3 algorithms/utils/types.h groundTruth<uint> constructor, lines 48-70 and save lines 85-96",
+  "status": "INPUT_DATA_STRUCTURE_AND_GT_VALUES_PASS",
+  "base": {
+    "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+    "status": "STRUCTURE_PASS",
+    "n": 1000000,
+    "d": 128,
+    "bytes": 512000008
+  },
+  "queries": {
+    "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+    "status": "STRUCTURE_PASS",
+    "n": 10000,
+    "d": 128,
+    "bytes": 5120008
+  },
+  "gt": {
+    "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+    "status": "STRUCTURE_AND_FULL_ID_DISTANCE_VALUE_PASS",
+    "n": 10000,
+    "k": 100,
+    "bytes": 8000008,
+    "layout": "header:u32[n,k]; uint32[n*k] IDs; float32[n*k] distances",
+    "expected_bytes": 8000008,
+    "ids_bytes": 4000000,
+    "distances_bytes": 4000000,
+    "all_ids_in_base_range": true,
+    "all_distances_finite_nonnegative": true,
+    "distance_order_warnings_rows": 0,
+    "first_query_first_ids": [
+      932085,
+      934876,
+      561813,
+      708177,
+      706771,
+      695756,
+      435345,
+      701258,
+      455537,
+      872728
+    ],
+    "first_query_first_distances": [
+      232.871216,
+      234.714722,
+      243.989761,
+      255.460373,
+      256.31427,
+      258.862885,
+      261.241272,
+      264.280151,
+      267.284485,
+      268.069031
+    ],
+    "sha256": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13",
+    "caution": "Does not independently recompute exact nearest-neighbor ground truth or verify query/base vectors semantics."
+  },
+  "original_inventory": {
+    "original_inventory": "/home/tai/ann-task-a/experiments/H31/H31_R0_20261028_003956/h31_r0_inventory.json",
+    "original_ground_truth_status": "STRUCTURE_FAIL",
+    "original_ground_truth_size": 8000008,
+    "vamana_sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+    "vamana_matches_historical_sha256": true,
+    "graph_sha256": {
+      "VAMANA": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+      "STOCK": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+      "TOP2": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6"
+    },
+    "caution": "These hashes are read from the existing inventory; graph files are NOT rescanned or rehashed in R0b."
+  },
+  "guardrails": [
+    "No graph BUILD or SEARCH",
+    "Does NOT overwrite any original graph, dataset or H31_R0 inventory.",
+    "H31_R0b fixes false STRUCTURE_FAIL caused by missing float32 distance array in GT size model.",
+    "Correct file layout/ID range/finite distances do NOT prove ground truth computed on same base/query version.",
+    "Vamana SHA historical match proves byte identity with recorded prior graph, NOT code/flags/seed lineage."
+  ]
+}

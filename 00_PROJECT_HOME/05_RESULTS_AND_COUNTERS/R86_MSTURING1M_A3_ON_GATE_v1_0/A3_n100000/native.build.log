@@ -1,0 +1,59 @@
+Vary degree = 0
+Data: detected 100000 points with dimension 100
+Aligning bytes to 448
+Parlay time: SketchHash construction time: 0.0026
+Size of SketchHash (bytes): 4804800
+R70_RESERVOIR_VARIANT=STOCK_FLAT_C64
+R71_SELECTION_VARIANT=H17_PACKED_TOP2
+Allocate = 0
+Set MSTDeg to: 2 fanout: 1
+Sizeof indexType = 4
+Fanout scheme: 10 3 1 
+Allocating: 52000000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 0.0139
+Parlay time: buckets time: 0.1633
+buckets size (bytes): 12211696
+Total buckets: 13231
+Total points: 3000000
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 0.7627
+Built cluster 0 of 2
+Leaf count: 13231
+# of comparisons during clustering: 91799963
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 0.0135
+Parlay time: buckets time: 0.1772
+buckets size (bytes): 12212488
+Total buckets: 13281
+Total points: 2999998
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 0.7559
+Built cluster 1 of 2
+Leaf count: 26512
+# of comparisons during clustering: 202411318
+Allocating graph, prune_degree = 64
+Average table size: 63
+Parlay time: Final prune time: 0.2751
+Average distance traversed: 63
+Writing graph to /home/tai/ann-task-a/00_PROJECT_HOME/05_RESULTS_AND_COUNTERS/R86_MSTURING1M_A3_ON_GATE_v1_0/A3_n100000/index.graph
+Writing graph with 100000 points and max degree 64
+PiPNN graph built with 100000 points and parameters Trees = 2
+Graph has average degree 40.86 and maximum degree 62
+Graph built in 2.144 seconds
+Parlay time: 2.1560
+R86_WN_ON_TIME wall_s=2.18 peak_rss_kib=368888

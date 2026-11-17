@@ -1,0 +1,1431 @@
+{
+  "status": "PASS_STOCK_TOP2_EDGE_MULTISETS_AUDIT_READONLY",
+  "root": "/home/tai/ann-task-a",
+  "provenance": {
+    "R14": "/home/tai/ann-task-a/experiments/H32/H32_R14_20261029_153429_101069",
+    "R13": "/home/tai/ann-task-a/experiments/H32/H32_R13_20261029_152450_169052",
+    "stock_sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+    "top2_sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6"
+  },
+  "counts": {
+    "nodes_total": 1000000,
+    "nodes_same_order": 996648,
+    "nodes_changed_edge_multiset": 3347,
+    "common_arcs_multiset": 22790618,
+    "stock_only_arcs_multiset": 2938,
+    "top2_only_arcs_multiset": 3446,
+    "max_per_node_symdiff": 9,
+    "nodes_with_added_arc": 3301,
+    "nodes_with_removed_arc": 2803,
+    "nodes_degree_changed": 679,
+    "nodes_same_multiset_different_order": 5,
+    "graph_a_arcs": 22793556,
+    "graph_b_arcs": 22794064,
+    "jaccard_arc_multiset": 0.9997199631776144,
+    "changed_edge_vertex_fraction": 0.003347,
+    "same_order_vertex_fraction": 0.996648
+  },
+  "changed_vertex_samples": [
+    {
+      "vertex_id": 12,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 19,
+      "top2_degree": 19,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        192630
+      ],
+      "added_sample": [
+        271446
+      ]
+    },
+    {
+      "vertex_id": 34,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 21,
+      "top2_degree": 21,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        274013
+      ],
+      "added_sample": [
+        195197
+      ]
+    },
+    {
+      "vertex_id": 214,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 31,
+      "top2_degree": 31,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        272948
+      ],
+      "added_sample": [
+        194132
+      ]
+    },
+    {
+      "vertex_id": 403,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        202009
+      ],
+      "added_sample": [
+        266287
+      ]
+    },
+    {
+      "vertex_id": 420,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 21,
+      "top2_degree": 21,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        267253
+      ],
+      "added_sample": [
+        202975
+      ]
+    },
+    {
+      "vertex_id": 566,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 30,
+      "top2_degree": 30,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        206906
+      ],
+      "added_sample": [
+        271184
+      ]
+    },
+    {
+      "vertex_id": 580,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        274508
+      ],
+      "added_sample": [
+        195692
+      ]
+    },
+    {
+      "vertex_id": 726,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 26,
+      "top2_degree": 27,
+      "removed_count": 1,
+      "added_count": 2,
+      "removed_sample": [
+        498438
+      ],
+      "added_sample": [
+        510545,
+        529592
+      ]
+    },
+    {
+      "vertex_id": 822,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 29,
+      "top2_degree": 30,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        266912
+      ]
+    },
+    {
+      "vertex_id": 1272,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        434715
+      ],
+      "added_sample": [
+        247933
+      ]
+    },
+    {
+      "vertex_id": 1384,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 28,
+      "top2_degree": 28,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        162805
+      ],
+      "added_sample": [
+        614517
+      ]
+    },
+    {
+      "vertex_id": 1440,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 30,
+      "top2_degree": 30,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        268990
+      ],
+      "added_sample": [
+        204712
+      ]
+    },
+    {
+      "vertex_id": 1589,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 24,
+      "top2_degree": 24,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        291863
+      ],
+      "added_sample": [
+        290615
+      ]
+    },
+    {
+      "vertex_id": 1755,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 30,
+      "top2_degree": 29,
+      "removed_count": 1,
+      "added_count": 0,
+      "removed_sample": [
+        507415
+      ],
+      "added_sample": []
+    },
+    {
+      "vertex_id": 1913,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 24,
+      "top2_degree": 24,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        270722
+      ],
+      "added_sample": [
+        206444
+      ]
+    },
+    {
+      "vertex_id": 2226,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        193029
+      ],
+      "added_sample": [
+        271845
+      ]
+    },
+    {
+      "vertex_id": 2449,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        201748
+      ],
+      "added_sample": [
+        266026
+      ]
+    },
+    {
+      "vertex_id": 2945,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        192868
+      ],
+      "added_sample": [
+        271684
+      ]
+    },
+    {
+      "vertex_id": 3098,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 23,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        203248
+      ],
+      "added_sample": [
+        267526
+      ]
+    },
+    {
+      "vertex_id": 3244,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 30,
+      "top2_degree": 30,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        459792
+      ],
+      "added_sample": [
+        354813
+      ]
+    },
+    {
+      "vertex_id": 3582,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        205267
+      ],
+      "added_sample": [
+        269545
+      ]
+    },
+    {
+      "vertex_id": 5336,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 22,
+      "top2_degree": 22,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        194635
+      ],
+      "added_sample": [
+        273451
+      ]
+    },
+    {
+      "vertex_id": 5520,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 8,
+      "top2_degree": 9,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        194329
+      ]
+    },
+    {
+      "vertex_id": 5574,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 21,
+      "top2_degree": 21,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        860721
+      ],
+      "added_sample": [
+        300668
+      ]
+    },
+    {
+      "vertex_id": 6867,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 2,
+      "added_count": 2,
+      "removed_sample": [
+        746609,
+        465505
+      ],
+      "added_sample": [
+        747727,
+        974636
+      ]
+    },
+    {
+      "vertex_id": 7878,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 21,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 3,
+      "removed_sample": [
+        461550
+      ],
+      "added_sample": [
+        455607,
+        463007,
+        252921
+      ]
+    },
+    {
+      "vertex_id": 8077,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 20,
+      "top2_degree": 20,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        195447
+      ],
+      "added_sample": [
+        274263
+      ]
+    },
+    {
+      "vertex_id": 8226,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 20,
+      "top2_degree": 21,
+      "removed_count": 1,
+      "added_count": 2,
+      "removed_sample": [
+        925508
+      ],
+      "added_sample": [
+        269573,
+        478840
+      ]
+    },
+    {
+      "vertex_id": 8643,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        200291
+      ],
+      "added_sample": [
+        264569
+      ]
+    },
+    {
+      "vertex_id": 8681,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 15,
+      "top2_degree": 16,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        205580
+      ]
+    },
+    {
+      "vertex_id": 9048,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 17,
+      "top2_degree": 18,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        203051
+      ]
+    },
+    {
+      "vertex_id": 9714,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 27,
+      "top2_degree": 27,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        204768
+      ],
+      "added_sample": [
+        269046
+      ]
+    },
+    {
+      "vertex_id": 9760,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        270729
+      ],
+      "added_sample": [
+        206451
+      ]
+    },
+    {
+      "vertex_id": 10302,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 19,
+      "top2_degree": 19,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        278260
+      ],
+      "added_sample": [
+        199444
+      ]
+    },
+    {
+      "vertex_id": 10804,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        205487
+      ],
+      "added_sample": [
+        269765
+      ]
+    },
+    {
+      "vertex_id": 11057,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 23,
+      "top2_degree": 24,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        193586
+      ]
+    },
+    {
+      "vertex_id": 11131,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        204272
+      ],
+      "added_sample": [
+        268550
+      ]
+    },
+    {
+      "vertex_id": 11249,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        265237
+      ],
+      "added_sample": [
+        200959
+      ]
+    },
+    {
+      "vertex_id": 11288,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 17,
+      "top2_degree": 17,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        198990
+      ],
+      "added_sample": [
+        277806
+      ]
+    },
+    {
+      "vertex_id": 11350,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        273523
+      ],
+      "added_sample": [
+        194707
+      ]
+    },
+    {
+      "vertex_id": 11397,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 18,
+      "top2_degree": 18,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        194693
+      ],
+      "added_sample": [
+        273509
+      ]
+    },
+    {
+      "vertex_id": 11710,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 18,
+      "top2_degree": 19,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        196226
+      ]
+    },
+    {
+      "vertex_id": 11856,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 15,
+      "top2_degree": 15,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        197947
+      ],
+      "added_sample": [
+        276763
+      ]
+    },
+    {
+      "vertex_id": 11921,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 27,
+      "top2_degree": 27,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        275952
+      ],
+      "added_sample": [
+        197136
+      ]
+    },
+    {
+      "vertex_id": 12117,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 28,
+      "top2_degree": 28,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        276397
+      ],
+      "added_sample": [
+        197581
+      ]
+    },
+    {
+      "vertex_id": 12612,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 24,
+      "top2_degree": 24,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        195619
+      ],
+      "added_sample": [
+        274435
+      ]
+    },
+    {
+      "vertex_id": 12645,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        140313
+      ],
+      "added_sample": [
+        765644
+      ]
+    },
+    {
+      "vertex_id": 12892,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 30,
+      "top2_degree": 30,
+      "removed_count": 2,
+      "added_count": 2,
+      "removed_sample": [
+        183056,
+        190505
+      ],
+      "added_sample": [
+        206525,
+        252162
+      ]
+    },
+    {
+      "vertex_id": 12972,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 3,
+      "added_count": 3,
+      "removed_sample": [
+        256711,
+        272667,
+        333002
+      ],
+      "added_sample": [
+        250089,
+        193851,
+        17511
+      ]
+    },
+    {
+      "vertex_id": 13072,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        15303
+      ],
+      "added_sample": [
+        13424
+      ]
+    },
+    {
+      "vertex_id": 13202,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        205999
+      ],
+      "added_sample": [
+        270277
+      ]
+    },
+    {
+      "vertex_id": 13259,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 31,
+      "top2_degree": 31,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        269379
+      ],
+      "added_sample": [
+        205101
+      ]
+    },
+    {
+      "vertex_id": 13648,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 13,
+      "top2_degree": 14,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        266989
+      ]
+    },
+    {
+      "vertex_id": 14046,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        192966
+      ],
+      "added_sample": [
+        271782
+      ]
+    },
+    {
+      "vertex_id": 14278,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 25,
+      "top2_degree": 25,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        488532
+      ],
+      "added_sample": [
+        843300
+      ]
+    },
+    {
+      "vertex_id": 14347,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 31,
+      "top2_degree": 31,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        274105
+      ],
+      "added_sample": [
+        195289
+      ]
+    },
+    {
+      "vertex_id": 14619,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 28,
+      "top2_degree": 28,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        203298
+      ],
+      "added_sample": [
+        267576
+      ]
+    },
+    {
+      "vertex_id": 14822,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 29,
+      "top2_degree": 29,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        197777
+      ],
+      "added_sample": [
+        276593
+      ]
+    },
+    {
+      "vertex_id": 15226,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        200712
+      ],
+      "added_sample": [
+        264990
+      ]
+    },
+    {
+      "vertex_id": 15250,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        195552
+      ],
+      "added_sample": [
+        274368
+      ]
+    },
+    {
+      "vertex_id": 15514,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 22,
+      "top2_degree": 22,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        202372
+      ],
+      "added_sample": [
+        266650
+      ]
+    },
+    {
+      "vertex_id": 15664,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        970032
+      ],
+      "added_sample": [
+        200487
+      ]
+    },
+    {
+      "vertex_id": 15723,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        277233
+      ],
+      "added_sample": [
+        198417
+      ]
+    },
+    {
+      "vertex_id": 15845,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 31,
+      "top2_degree": 31,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        276828
+      ],
+      "added_sample": [
+        198012
+      ]
+    },
+    {
+      "vertex_id": 16243,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 27,
+      "top2_degree": 27,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        197334
+      ],
+      "added_sample": [
+        276150
+      ]
+    },
+    {
+      "vertex_id": 16593,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        198515
+      ],
+      "added_sample": [
+        277331
+      ]
+    },
+    {
+      "vertex_id": 16783,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 17,
+      "top2_degree": 17,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        274393
+      ],
+      "added_sample": [
+        195577
+      ]
+    },
+    {
+      "vertex_id": 16925,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        277630
+      ],
+      "added_sample": [
+        198814
+      ]
+    },
+    {
+      "vertex_id": 18038,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        204596
+      ],
+      "added_sample": [
+        268874
+      ]
+    },
+    {
+      "vertex_id": 18247,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 27,
+      "top2_degree": 26,
+      "removed_count": 2,
+      "added_count": 1,
+      "removed_sample": [
+        16025,
+        965898
+      ],
+      "added_sample": [
+        193880
+      ]
+    },
+    {
+      "vertex_id": 18518,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 10,
+      "top2_degree": 11,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        193792
+      ]
+    },
+    {
+      "vertex_id": 18710,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        271904
+      ],
+      "added_sample": [
+        193088
+      ]
+    },
+    {
+      "vertex_id": 18865,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 25,
+      "top2_degree": 25,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        204508
+      ],
+      "added_sample": [
+        268786
+      ]
+    },
+    {
+      "vertex_id": 19109,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 23,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        773222
+      ],
+      "added_sample": [
+        67531
+      ]
+    },
+    {
+      "vertex_id": 19855,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 28,
+      "top2_degree": 29,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        271771
+      ]
+    },
+    {
+      "vertex_id": 19886,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 14,
+      "top2_degree": 14,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        277383
+      ],
+      "added_sample": [
+        198567
+      ]
+    },
+    {
+      "vertex_id": 19917,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 26,
+      "top2_degree": 26,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        204840
+      ],
+      "added_sample": [
+        269118
+      ]
+    },
+    {
+      "vertex_id": 19996,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        273689
+      ],
+      "added_sample": [
+        194873
+      ]
+    },
+    {
+      "vertex_id": 20035,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        202043
+      ],
+      "added_sample": [
+        266321
+      ]
+    },
+    {
+      "vertex_id": 21030,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        264494
+      ],
+      "added_sample": [
+        200216
+      ]
+    },
+    {
+      "vertex_id": 21126,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        200179
+      ],
+      "added_sample": [
+        264457
+      ]
+    },
+    {
+      "vertex_id": 21277,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 24,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 0,
+      "removed_sample": [
+        405568
+      ],
+      "added_sample": []
+    },
+    {
+      "vertex_id": 21553,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 17,
+      "top2_degree": 17,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        205027
+      ],
+      "added_sample": [
+        269305
+      ]
+    },
+    {
+      "vertex_id": 22565,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 2,
+      "added_count": 2,
+      "removed_sample": [
+        575736,
+        626968
+      ],
+      "added_sample": [
+        370756,
+        132870
+      ]
+    },
+    {
+      "vertex_id": 22744,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 14,
+      "top2_degree": 14,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        275346
+      ],
+      "added_sample": [
+        196530
+      ]
+    },
+    {
+      "vertex_id": 23156,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 23,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        274880
+      ],
+      "added_sample": [
+        196064
+      ]
+    },
+    {
+      "vertex_id": 23526,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 22,
+      "top2_degree": 22,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        192778
+      ],
+      "added_sample": [
+        271594
+      ]
+    },
+    {
+      "vertex_id": 24091,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        294541
+      ],
+      "added_sample": [
+        293527
+      ]
+    },
+    {
+      "vertex_id": 24109,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 19,
+      "top2_degree": 22,
+      "removed_count": 3,
+      "added_count": 6,
+      "removed_sample": [
+        716989,
+        326049,
+        936287
+      ],
+      "added_sample": [
+        716944,
+        24098,
+        929804,
+        822394,
+        495876,
+        638883
+      ]
+    },
+    {
+      "vertex_id": 24348,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 16,
+      "top2_degree": 16,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        194417
+      ],
+      "added_sample": [
+        273233
+      ]
+    },
+    {
+      "vertex_id": 24379,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 23,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        196709
+      ],
+      "added_sample": [
+        275525
+      ]
+    },
+    {
+      "vertex_id": 26449,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 32,
+      "top2_degree": 32,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        202815
+      ],
+      "added_sample": [
+        267093
+      ]
+    },
+    {
+      "vertex_id": 26980,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 28,
+      "top2_degree": 28,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        919901
+      ],
+      "added_sample": [
+        920364
+      ]
+    },
+    {
+      "vertex_id": 27240,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 27,
+      "top2_degree": 28,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        201417
+      ]
+    },
+    {
+      "vertex_id": 27618,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 24,
+      "top2_degree": 24,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        264916
+      ],
+      "added_sample": [
+        200638
+      ]
+    },
+    {
+      "vertex_id": 28222,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 23,
+      "top2_degree": 23,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        206816
+      ],
+      "added_sample": [
+        271094
+      ]
+    },
+    {
+      "vertex_id": 28289,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 16,
+      "top2_degree": 17,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        525348
+      ]
+    },
+    {
+      "vertex_id": 28519,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 12,
+      "top2_degree": 13,
+      "removed_count": 0,
+      "added_count": 1,
+      "removed_sample": [],
+      "added_sample": [
+        276528
+      ]
+    },
+    {
+      "vertex_id": 29322,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 18,
+      "top2_degree": 18,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        28673
+      ],
+      "added_sample": [
+        29084
+      ]
+    },
+    {
+      "vertex_id": 30287,
+      "kind": "EDGE_SET_OR_MULTIPLICITY_CHANGED",
+      "stock_degree": 27,
+      "top2_degree": 27,
+      "removed_count": 1,
+      "added_count": 1,
+      "removed_sample": [
+        140310
+      ],
+      "added_sample": [
+        255402
+      ]
+    }
+  ],
+  "limits": [
+    "A changed edge cannot be attributed to Top2 optimization without controlled identical BUILD seed and construction-state provenance.",
+    "Agreement of 10,000 Q100 query predictions does not imply equivalence for every query, beam or dataset.",
+    "No new BUILD/ANN SEARCH; no measured performance improvement from this audit.",
+    "Graph budgets between Vamana and PiPNN remain unmatched.",
+    "No H33, no algorithm novelty claim."
+  ]
+}

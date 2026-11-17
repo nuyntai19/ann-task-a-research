@@ -1,0 +1,29 @@
+Dataset: SIFT1M
+Dimension: 128
+Build threads: 4
+Search threads: 1
+Distance: Euclidean
+Max degree: 32
+
+PiPNN:
+  num_clusters: 1
+  cluster_size: 1024
+  mst_deg: 2
+  alpha: 1.2
+  prune: 1
+  prune_all: 1
+  prune_degree: 32
+  hash_bits: 12
+
+Static configurations:
+  f15: fanout_scheme=5,3
+  f30: fanout_scheme=10,3
+  f60: fanout_scheme=20,3
+
+Target Recall: 0.995
+Reference:
+  f30: Q=135, Recall=0.99502, QPS=1774.03
+  f60: Q=118, Recall=0.99500, QPS=1873.67
+
+G status: HOLD
+Next phase: G0 instrumentation and feedback validation

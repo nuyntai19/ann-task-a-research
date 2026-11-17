@@ -1,0 +1,249 @@
+{
+  "kind": "R72_SIFT1M_FOUR_ARM_PILOT_QUALITY",
+  "created_at": "2026-11-04T23:06:24.636246+07:00",
+  "source_run": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM",
+  "build_threads": 4,
+  "search_threads": 1,
+  "query_count": 10000,
+  "k": 10,
+  "beams": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "cut": 1.35,
+  "native_evaluator": "/home/tai/ann-task-a/experiments/H70/build-r70/algorithms/PipNN/r72_graph_recall",
+  "native_evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+  "manifest": [
+    {
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/A_stock",
+      "sha256": "89481f1b15efb7ffa2315f35ae71208b37dba23aa78e76bd5c785f4c83743f76"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/B_h17",
+      "sha256": "0918c0cc7c30fd1645baca0eea85be4667c94d02cfbb54478a881fb5fe16c267"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/C_tier",
+      "sha256": "f0784650ae49182d15175aa81e3a613900611548e2f80d532b85c5cb91f0cbfb"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H70/r71-bin/D_h17_tier",
+      "sha256": "8f3e9a4659ede27739b34eb8b270d0d0b8b8e4457aa741f97c3998d0ee18d964"
+    }
+  ],
+  "base": "/home/tai/ann-task-a/data/sift1m.fbin",
+  "queries": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+  "gt": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+  "runs": [
+    {
+      "variant": "A_stock",
+      "graph": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM/A_stock.graph",
+      "build_wall_sec": 117.74,
+      "build_peak_rss_KiB": 2785608,
+      "graph_stats": {
+        "n": 1000000,
+        "max_degree": 64,
+        "arcs": 26040525,
+        "avg_degree": 26.040525,
+        "graph_bytes": 108162108,
+        "sha256": "75900b22e981deca876f5c9fc70e6e878261b6a5a1a90e3871e0195749e2c925",
+        "invalid_neighbor_ids": 0,
+        "self_loops": 0,
+        "duplicate_neighbors": 0
+      },
+      "search": {
+        "10": {
+          "recall": 0.76396,
+          "qps": 14057.6796875,
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0
+        },
+        "20": {
+          "recall": 0.89055002,
+          "qps": 9497.06347656,
+          "avg_cmps": 846.0,
+          "avg_visited": 29.0
+        },
+        "40": {
+          "recall": 0.96170998,
+          "qps": 6002.91650391,
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0
+        },
+        "80": {
+          "recall": 0.99137998,
+          "qps": 3649.74023438,
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0
+        },
+        "160": {
+          "recall": 0.99858999,
+          "qps": 2100.91894531,
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0
+        }
+      }
+    },
+    {
+      "variant": "B_h17",
+      "graph": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM/B_h17.graph",
+      "build_wall_sec": 104.2,
+      "build_peak_rss_KiB": 2801784,
+      "graph_stats": {
+        "n": 1000000,
+        "max_degree": 64,
+        "arcs": 26040550,
+        "avg_degree": 26.04055,
+        "graph_bytes": 108162208,
+        "sha256": "30c04fb70f91239955395fe1166122c4f6de8276bf080642a07bd8e7213e693c",
+        "invalid_neighbor_ids": 0,
+        "self_loops": 0,
+        "duplicate_neighbors": 0
+      },
+      "search": {
+        "10": {
+          "recall": 0.76389998,
+          "qps": 14308.01464844,
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0
+        },
+        "20": {
+          "recall": 0.89055002,
+          "qps": 9735.89453125,
+          "avg_cmps": 846.0,
+          "avg_visited": 29.0
+        },
+        "40": {
+          "recall": 0.96170998,
+          "qps": 6068.26318359,
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0
+        },
+        "80": {
+          "recall": 0.99137998,
+          "qps": 3678.19360352,
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0
+        },
+        "160": {
+          "recall": 0.99858999,
+          "qps": 2116.64599609,
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0
+        }
+      }
+    },
+    {
+      "variant": "C_tier",
+      "graph": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM/C_tier.graph",
+      "build_wall_sec": 119.18,
+      "build_peak_rss_KiB": 2210944,
+      "graph_stats": {
+        "n": 1000000,
+        "max_degree": 64,
+        "arcs": 26040539,
+        "avg_degree": 26.040539,
+        "graph_bytes": 108162164,
+        "sha256": "56c523e0f1508e60a6cd7335c7559887d848d16be1afb0d1516f57158b936627",
+        "invalid_neighbor_ids": 0,
+        "self_loops": 0,
+        "duplicate_neighbors": 0
+      },
+      "search": {
+        "10": {
+          "recall": 0.76385999,
+          "qps": 14291.4921875,
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0
+        },
+        "20": {
+          "recall": 0.89055002,
+          "qps": 9787.05371094,
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0
+        },
+        "40": {
+          "recall": 0.96174997,
+          "qps": 6164.46435547,
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0
+        },
+        "80": {
+          "recall": 0.99141002,
+          "qps": 3678.30273438,
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0
+        },
+        "160": {
+          "recall": 0.99857998,
+          "qps": 2135.83886719,
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0
+        }
+      }
+    },
+    {
+      "variant": "D_h17_tier",
+      "graph": "/home/tai/ann-task-a/experiments/H70/r72-sift1m-pilot-4t-v71Mv4cM/D_h17_tier.graph",
+      "build_wall_sec": 108.77,
+      "build_peak_rss_KiB": 2213216,
+      "graph_stats": {
+        "n": 1000000,
+        "max_degree": 64,
+        "arcs": 26040521,
+        "avg_degree": 26.040521,
+        "graph_bytes": 108162092,
+        "sha256": "20c6baf6542365f1e7d6fa15829bad2a1fb10bf49e0d0899361b678db33c1537",
+        "invalid_neighbor_ids": 0,
+        "self_loops": 0,
+        "duplicate_neighbors": 0
+      },
+      "search": {
+        "10": {
+          "recall": 0.76378,
+          "qps": 14277.43261719,
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0
+        },
+        "20": {
+          "recall": 0.89051998,
+          "qps": 9710.32128906,
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0
+        },
+        "40": {
+          "recall": 0.96166003,
+          "qps": 6140.19775391,
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0
+        },
+        "80": {
+          "recall": 0.99138999,
+          "qps": 3666.76171875,
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0
+        },
+        "160": {
+          "recall": 0.99858999,
+          "qps": 2110.86035156,
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "ONE BUILD per arm: descriptive pilot, not a reproducible speed/RSS result.",
+    "GT is separately exact-validated for only TWO query samples by r72_preflight.",
+    "Search QPS is measured once per graph; repeat measurements and warmups for robust QPS.",
+    "Graph topological difference at 4 threads is affected by concurrency nondeterminism.",
+    "BUILD wall includes serialization and process time; no claim of algorithmic novelty."
+  ]
+}

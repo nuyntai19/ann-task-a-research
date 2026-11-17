@@ -1,0 +1,13 @@
+{
+  "purpose": "H17.4 single-change A/B build performance, not ANN novelty",
+  "original_repo_revision": "443a328",
+  "original_repo_pipnn_utils_sha256": "ee2048738ad4462f21bdfea4a1cf7c2ac140f72fbd8875d869bc4f613d93db53",
+  "A_instrumented_source_sha256": "16dac0153e1cd1fdbdb0d46f3c2ac78c7fdc98bb1f10fa2d4c576054fdd8c095",
+  "B_top2_source_sha256": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520",
+  "B_source_path": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/PiPNN-top2",
+  "original_graphs": "/home/tai/ann-task-a/experiments/G0/metadata/baseline_graphs.sha256",
+  "control_A_binary": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+  "B_micro_validation": "/home/tai/ann-task-a/experiments/H17/phase2_top2_microbench/summary.json",
+  "fairness": "A/B same source except top2 patch; 4 identical pinned threads; same args",
+  "warning": "PiPNN is nondeterministic. Graph hashes across builds need not match; end-to-end ANN search quality must be validated separately."
+}

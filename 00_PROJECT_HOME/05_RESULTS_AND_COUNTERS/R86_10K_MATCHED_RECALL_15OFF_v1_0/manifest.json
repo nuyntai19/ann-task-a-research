@@ -1,0 +1,142 @@
+{
+  "campaign": "R86_10K_MATCHED_RECALL_15OFF_v1_0",
+  "source": "R85-B1 ORIGINAL BINARY / verified 10k exact GT",
+  "beams": [
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    96,
+    112,
+    128,
+    144,
+    160,
+    192,
+    224,
+    256
+  ],
+  "targets": [
+    0.99,
+    0.998
+  ],
+  "reps": 5,
+  "cpu_logical_id": 0,
+  "parlay_num_threads": 1,
+  "query_count": 10000,
+  "pin_sha": {
+    "base": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "queries": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+    "gt": "70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28",
+    "evaluator": "3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a"
+  },
+  "graphs": [
+    {
+      "arm": "A0",
+      "run_id": "stock_C160_K1024_N2_off_r1",
+      "build_rep": 1,
+      "graph_sha256": "f1727131d7427c4132ed48468c026f97f09e0b5fe7d94a56d26f4a46c0885978",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/stock_C160_K1024_N2_off_r1/stock_C160_K1024_N2_off_r1.graph"
+    },
+    {
+      "arm": "A0",
+      "run_id": "stock_C160_K1024_N2_off_r2",
+      "build_rep": 2,
+      "graph_sha256": "02c1ff2104309a59e7bb51016966a2e847aa1913e39c99f8010b8acca787d909",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/stock_C160_K1024_N2_off_r2/stock_C160_K1024_N2_off_r2.graph"
+    },
+    {
+      "arm": "A0",
+      "run_id": "stock_C160_K1024_N2_off_r3",
+      "build_rep": 3,
+      "graph_sha256": "57252481ace67e1fb9e6c55c223e3e01b707cb5898744519c4b136cd4e5d7877",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/stock_C160_K1024_N2_off_r3/stock_C160_K1024_N2_off_r3.graph"
+    },
+    {
+      "arm": "A1",
+      "run_id": "h17_C160_K1024_N2_off_r1",
+      "build_rep": 1,
+      "graph_sha256": "18809c747d38ee1dfa26053bb6b3650dd0adf26f798ef47a0f6250e81530d841",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C160_K1024_N2_off_r1/h17_C160_K1024_N2_off_r1.graph"
+    },
+    {
+      "arm": "A1",
+      "run_id": "h17_C160_K1024_N2_off_r2",
+      "build_rep": 2,
+      "graph_sha256": "5bae9f4eff8b05eb5f0ed521d2044ce80601cfd620741a01da13fcdfbbc67f92",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C160_K1024_N2_off_r2/h17_C160_K1024_N2_off_r2.graph"
+    },
+    {
+      "arm": "A1",
+      "run_id": "h17_C160_K1024_N2_off_r3",
+      "build_rep": 3,
+      "graph_sha256": "a40f45b31954ac483133b807ce7e1591e5d76fd34fa6638ebc28ce29c53948f6",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C160_K1024_N2_off_r3/h17_C160_K1024_N2_off_r3.graph"
+    },
+    {
+      "arm": "A2",
+      "run_id": "h17_C64_K1024_N2_off_r1",
+      "build_rep": 1,
+      "graph_sha256": "3ae4f18205c2841f0045e94d006dc6dda15357554f789610bafcb8b6e58cb4d1",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K1024_N2_off_r1/h17_C64_K1024_N2_off_r1.graph"
+    },
+    {
+      "arm": "A2",
+      "run_id": "h17_C64_K1024_N2_off_r2",
+      "build_rep": 2,
+      "graph_sha256": "2606931d8c07234a157b5d151381e9b46b067c6e91ed016847869d2d2b85ce2b",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K1024_N2_off_r2/h17_C64_K1024_N2_off_r2.graph"
+    },
+    {
+      "arm": "A2",
+      "run_id": "h17_C64_K1024_N2_off_r3",
+      "build_rep": 3,
+      "graph_sha256": "5f4853c48efeeacfe2dd447169975c2bef6a8b804d4bebddabc49062a7402d45",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K1024_N2_off_r3/h17_C64_K1024_N2_off_r3.graph"
+    },
+    {
+      "arm": "A3",
+      "run_id": "h17_C64_K512_N2_off_r1",
+      "build_rep": 1,
+      "graph_sha256": "2311777f6c807410bac87669c297a8ff247960d4f8583bb63c29eaea0458c1c4",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K512_N2_off_r1/h17_C64_K512_N2_off_r1.graph"
+    },
+    {
+      "arm": "A3",
+      "run_id": "h17_C64_K512_N2_off_r2",
+      "build_rep": 2,
+      "graph_sha256": "13c117fcecdb02b9b55f53280da3621ee68cc6f9dea5095e71e54bb247e0f731",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K512_N2_off_r2/h17_C64_K512_N2_off_r2.graph"
+    },
+    {
+      "arm": "A3",
+      "run_id": "h17_C64_K512_N2_off_r3",
+      "build_rep": 3,
+      "graph_sha256": "096ad8491d70c8357d8540b76b086ae16f89c59cde7048d00b5c2f1a50678691",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K512_N2_off_r3/h17_C64_K512_N2_off_r3.graph"
+    },
+    {
+      "arm": "A4",
+      "run_id": "h17_C64_K512_N1_off_r1",
+      "build_rep": 1,
+      "graph_sha256": "aa7234e667ddfb3f681fccaa78ec8eeb7304f76e0d25cfd45ee640c9ddbe4b5b",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K512_N1_off_r1/h17_C64_K512_N1_off_r1.graph"
+    },
+    {
+      "arm": "A4",
+      "run_id": "h17_C64_K512_N1_off_r2",
+      "build_rep": 2,
+      "graph_sha256": "5872d07e3b4d737f20227cc0496ba2608ed1ca4ea35d7640184c4bab6a86b0f9",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K512_N1_off_r2/h17_C64_K512_N1_off_r2.graph"
+    },
+    {
+      "arm": "A4",
+      "run_id": "h17_C64_K512_N1_off_r3",
+      "build_rep": 3,
+      "graph_sha256": "d4f312f54f1cb0e1a0bc28f3899b358986ee5d4053e67cc57b48486abf300202",
+      "path": "/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/h17_C64_K512_N1_off_r3/h17_C64_K512_N1_off_r3.graph"
+    }
+  ],
+  "metric_notes": "avg_cmps native counter, not certified NDC; 1e6/QPS throughput-equivalent, not p95/p99/query latency; interpolation per graph first"
+}

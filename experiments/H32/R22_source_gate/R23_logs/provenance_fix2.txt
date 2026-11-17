@@ -1,0 +1,28 @@
+PiPNN HEAD:
+443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+Author header:
+19e7d9d3fc7e0432136eff564ceb7c115952ce2b6b902b6e8a24a9c14d8a77a9  /home/tai/ann-task-a/experiments/H32/R22_source_gate/pipnn_r23_patched/algorithms/utils/portability_shim.h
+Modified and untracked files:
+ M CMakeLists.txt
+ M algorithms/CMakeLists.txt
+ M algorithms/PipNN/pipnn.h
+ M algorithms/PipNN/pipnn_utils.h
+ M algorithms/utils/NSGDist.h
+ M algorithms/utils/graph.h
+ M algorithms/utils/hash.h
+ M algorithms/utils/point_range.h
+ M algorithms/utils/simhash.h
+ M algorithms/vamana/neighbors.h
+?? algorithms/utils/portability_shim.h
+Source differences:
+ CMakeLists.txt                 | 11 +++++--
+ algorithms/CMakeLists.txt      |  2 +-
+ algorithms/PipNN/pipnn.h       | 51 +++++++++++++++++++++++++++++++-
+ algorithms/PipNN/pipnn_utils.h |  5 ++++
+ algorithms/utils/NSGDist.h     |  2 ++
+ algorithms/utils/graph.h       | 66 ++++++++++++++++++++++++++++++++++++++++++
+ algorithms/utils/hash.h        | 18 ++++++++++++
+ algorithms/utils/point_range.h |  1 +
+ algorithms/utils/simhash.h     |  2 ++
+ algorithms/vamana/neighbors.h  | 11 +++++--
+ 10 files changed, 161 insertions(+), 8 deletions(-)

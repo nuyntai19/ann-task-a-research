@@ -1,0 +1,74 @@
+{
+  "schema": "R86_G1_R85_protocol_preflight_v1",
+  "created_local": "2026-11-13T01:21:13+07:00",
+  "R85_runner": "/home/tai/Downloads/run_r85_scale1_bigann1m_v1.py",
+  "R85_session": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222",
+  "R86_target": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds",
+  "file_evidence": [
+    {
+      "path": "/home/tai/Downloads/run_r85_scale1_bigann1m_v1.py",
+      "purpose": "R85 SCALE1 runner source (never execute)",
+      "exists": true,
+      "size": 20441,
+      "sha256": "55a193b9d033491c646965d3ffd3d8e1a00eeef7c3b303b79a3b8f49f983e988",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/run_r85_scale1_bigann1m_v1.py"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222/t4_r1_STOCK.build.log",
+      "purpose": "Historical R85 build stdout",
+      "exists": true,
+      "size": 2477,
+      "sha256": "ff494392fcc1e28d1ebb29a7453e6bb1ed49c9be61a24a92db966fed835a7984",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/t4_r1_STOCK.build.log"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222/t4_r1_C64_K512_N2.build.log",
+      "purpose": "Historical R85 build stdout",
+      "exists": true,
+      "size": 2499,
+      "sha256": "cd1b8447b5b353acd83bff3de7a76fc8d68005451d90c14d82e01eb5c01da6e9",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/t4_r1_C64_K512_N2.build.log"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222/manifest.json",
+      "purpose": "R85 pinned protocol/config/manifest",
+      "exists": true,
+      "size": 9044,
+      "sha256": "95c011ee008b46df3588bb7980ceb9413a6ec79ed99d1bde4ef89651c890aa07",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/manifest.json"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/H85/r85_scale1_bigann1m/bigann1m_20261112-022002_494222/matched_qps_cpu0_v1/qps_20261112-030030_519757/manifest.json",
+      "purpose": "R85 pinned protocol/config/manifest",
+      "exists": true,
+      "size": 17120,
+      "sha256": "3d710520547824c13415b44a3dda5fa7758f8d1ee8448e9a32760c95ee438d29",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/matched_qps_cpu0_v1/qps_20261112-030030_519757/manifest.json"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/R86_STAGING_PROVENANCE.json",
+      "purpose": "R86 G0 provenance (read-only)",
+      "exists": true,
+      "size": 1489,
+      "sha256": "a3c4ddab5b6d277e2ae22a2656920bee2be2deac81001bbc9013077fa3f5aa17",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/R86_STAGING_PROVENANCE.json"
+    },
+    {
+      "path": "/home/tai/ann-task-a/experiments/R86/gates/g0_20261113_011256/g0_manifest.json",
+      "purpose": "R86 G0 provenance (read-only)",
+      "exists": true,
+      "size": 14950,
+      "sha256": "4e5e671ed6bf9ab67273982d942154901c330e136ce6c5d6ec0dd589dced3ac9",
+      "status": "READ_ONLY_AUDITED",
+      "evidence_copy": "files/g0_manifest.json"
+    }
+  ],
+  "status": "PREFLIGHT_EVIDENCE_ONLY_NO_ANN_RUN",
+  "WARNING": "Never execute the R85 historical runner with --resume-build or --run-quality on R85 session for R86 measurements."
+}

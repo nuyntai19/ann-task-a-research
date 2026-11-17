@@ -1,0 +1,201 @@
+--- original-beamSearch.h
++++ diagnostic-beamSearch.h
+@@ -1,3 +1,5 @@
++#include <cstdint>
++#include <vector>
+ #ifndef ALGORITHMS_ANN_BEAM_SEARCH_H_
+ #define ALGORITHMS_ANN_BEAM_SEARCH_H_
+ 
+@@ -17,6 +19,42 @@
+ #include "stats.h"
+ 
+ namespace parlayANN {
++// R86 G12-B2 independent instrumentation, not a Search algorithm change.
++struct G12B2Step {
++  std::uint64_t ordinal=0;
++  std::uint64_t node_id=0;
++  double node_dist=0;
++  std::uint64_t frontier_before=0;
++  std::uint64_t scanned=0;
++  std::uint64_t accepted_hash=0;
++  std::uint64_t cutoff_reject=0;
++  std::uint64_t enqueued=0;
++  std::uint64_t sort_input=0;
++  std::uint64_t skip_merge=0;
++  std::uint64_t frontier_after=0;
++  double best_frontier_after=0;
++};
++struct G12B2Trace {
++  std::uint64_t query_id=0;
++  std::uint64_t expanded=0;
++  std::uint64_t neighbors_scanned=0;
++  std::uint64_t seen_rejects=0;
++  std::uint64_t same_query_rejects=0;
++  std::uint64_t hash_accepted=0;
++  std::uint64_t full_distance_cmps=0;
++  std::uint64_t cutoff_rejects=0;
++  std::uint64_t enqueued=0;
++  std::uint64_t merges=0;
++  std::uint64_t sort_inputs=0;
++  std::uint64_t skipped_zero=0;
++  std::uint64_t skipped_small=0;
++  std::uint64_t final_frontier=0;
++  double best_frontier_dist=0;
++  std::vector<G12B2Step> steps;
++};
++inline std::vector<G12B2Trace> g12b2_trace_records;
++inline thread_local G12B2Trace* g12b2_active_trace = nullptr;
++
+ 
+ // main beam search
+ template<typename indexType, typename Point, typename PointRange,
+@@ -112,6 +150,18 @@
+     auto position = std::upper_bound(visited.begin(), visited.end(), current, less);
+     visited.insert(position, current);
+     num_visited++;
++    G12B2Step* g12b2_step = nullptr;
++    if (g12b2_active_trace) {
++      ++g12b2_active_trace->expanded;
++      if (g12b2_active_trace->query_id < 128) {
++        g12b2_active_trace->steps.emplace_back();
++        g12b2_step = &g12b2_active_trace->steps.back();
++        g12b2_step->ordinal = num_visited;
++        g12b2_step->node_id = current.first;
++        g12b2_step->node_dist = static_cast<double>(current.second);
++        g12b2_step->frontier_before = frontier.size();
++      }
++    }
+     bool frontier_full = frontier.size() == beamSize;
+ 
+     // if using filtering based on lower quality distances measure, then maintain the average
+@@ -128,13 +178,29 @@
+     pruned.clear();
+     filtered.clear();
+     long num_elts = std::min<long>(G[current.first].size(), QP.degree_limit);
++    if (g12b2_active_trace) {
++      g12b2_active_trace->neighbors_scanned += num_elts;
++      if (g12b2_step) g12b2_step->scanned = num_elts;
++    }
+     for (indexType i=0; i<num_elts; i++) {
+       auto a = G[current.first][i];
+-      if (has_been_seen(a) || Points[a].same_as(p)) continue;  // skip if already seen
++      // Preserve the short-circuit evaluation of the original expression.
++      if (has_been_seen(a)) {
++        if (g12b2_active_trace) ++g12b2_active_trace->seen_rejects;
++        continue;
++      }
++      if (Points[a].same_as(p)) {
++        if (g12b2_active_trace) ++g12b2_active_trace->same_query_rejects;
++        continue;
++      }
+       Q_Points[a].prefetch();
+       pruned.push_back(a);
+     }
+     dist_cmps += pruned.size();
++    if (g12b2_active_trace) {
++      g12b2_active_trace->hash_accepted += pruned.size();
++      if (g12b2_step) g12b2_step->accepted_hash = pruned.size();
++    }
+ 
+     // filter using low-quality distance
+     if (use_filtering && frontier_full) {
+@@ -154,8 +220,18 @@
+       distanceType dist = Points[a].distance(p);
+       full_dist_cmps++;
+       // skip if frontier not full and distance too large
+-      if (dist >= cutoff) continue;
++      if (dist >= cutoff) {
++        if (g12b2_active_trace) {
++          ++g12b2_active_trace->cutoff_rejects;
++          if (g12b2_step) ++g12b2_step->cutoff_reject;
++        }
++        continue;
++      }
+       candidates.push_back(std::pair{a, dist});
++      if (g12b2_active_trace) {
++        ++g12b2_active_trace->enqueued;
++        if (g12b2_step) ++g12b2_step->enqueued;
++      }
+     }
+     // If candidates insufficently full then skip rest of step until sufficiently full.
+     // This iproves performance for higher accuracies (e.g. beam sizes of 100+)
+@@ -163,6 +239,15 @@
+         (QP.limit >= 2 * beamSize &&
+          candidates.size() < beamSize/8 &&
+          offset + 1 < remain)) {
++      if (g12b2_active_trace) {
++        if (candidates.empty()) ++g12b2_active_trace->skipped_zero;
++        else ++g12b2_active_trace->skipped_small;
++        if (g12b2_step) {
++          g12b2_step->skip_merge = 1;
++          g12b2_step->frontier_after = frontier.size();
++          g12b2_step->best_frontier_after = static_cast<double>(frontier.front().second);
++        }
++      }
+       offset++;
+       continue;
+     }
+@@ -170,6 +255,11 @@
+ 
+     // sort the candidates by distance from p,
+     // and remove any duplicates (to be robust for neighbor lists with duplicates)
++    if (g12b2_active_trace) {
++      ++g12b2_active_trace->merges;
++      g12b2_active_trace->sort_inputs += candidates.size();
++      if (g12b2_step) g12b2_step->sort_input = candidates.size();
++    }
+     std::sort(candidates.begin(), candidates.end(), less);
+     auto candidates_end = std::unique(candidates.begin(), candidates.end(),
+                                       [] (auto a, auto b) {return a.first == b.first;});
+@@ -206,6 +296,15 @@
+                                   visited.end(),
+                                   unvisited_frontier.begin(), less) -
+               unvisited_frontier.begin());
++    if (g12b2_step) {
++      g12b2_step->frontier_after = frontier.size();
++      g12b2_step->best_frontier_after = static_cast<double>(frontier.front().second);
++    }
++  }
++  if (g12b2_active_trace) {
++    g12b2_active_trace->full_distance_cmps = full_dist_cmps;
++    g12b2_active_trace->final_frontier = frontier.size();
++    g12b2_active_trace->best_frontier_dist = static_cast<double>(frontier.front().second);
+   }
+ 
+   return std::make_pair(std::make_pair(parlay::to_sequence(frontier),
+@@ -610,6 +709,8 @@
+     abort();
+   }
+   parlay::sequence<parlay::sequence<indexType>> all_neighbors(Query_Points.size());
++  g12b2_trace_records.clear();
++  g12b2_trace_records.resize(Query_Points.size());
+   if (random) {
+     parlay::random_generator gen;
+     std::uniform_int_distribution<long> dis(0, G.size() - 1);
+@@ -620,20 +721,26 @@
+ 
+     parlay::parallel_for(0, Query_Points.size(), [&](size_t i) {
+       parlay::sequence<indexType> starting_points = {indices[i]};
++      g12b2_active_trace = &g12b2_trace_records[i];
++      g12b2_active_trace->query_id = i;
+       auto ngh_dist = beam_search_rerank(Query_Points[i], Q_Query_Points[i], QQ_Query_Points[i],
+                                          G,
+                                          Base_Points, Q_Base_Points, QQ_Base_Points,
+                                          QueryStats, starting_points, QP);
+       all_neighbors[i] = parlay::map(ngh_dist, [] (auto& p) {return p.first;});
++      g12b2_active_trace = nullptr;
+     });
+   } else {
+     parlay::sequence<indexType> starting_points = {starting_point};
+     parlay::parallel_for(0, Query_Points.size(), [&](size_t i) {
++      g12b2_active_trace = &g12b2_trace_records[i];
++      g12b2_active_trace->query_id = i;
+       auto ngh_dist = beam_search_rerank(Query_Points[i], Q_Query_Points[i], QQ_Query_Points[i],
+                                          G,
+                                          Base_Points, Q_Base_Points, QQ_Base_Points,
+                                          QueryStats, starting_points, QP);
+       all_neighbors[i] = parlay::map(ngh_dist, [] (auto& p) {return p.first;});
++      g12b2_active_trace = nullptr;
+     });
+   }
+ 

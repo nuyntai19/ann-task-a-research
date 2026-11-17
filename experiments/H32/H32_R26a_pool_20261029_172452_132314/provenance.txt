@@ -1,0 +1,24 @@
+R26A_CONFIG: Original patched PiPNN; NOT PiPNN II and NOT H17.
+R26A_BUILD_ARGS: -num_clusters 1 -fanout 30 -fanout_scheme 10,3 -cluster_size 1024 -mst_deg 2 -alpha 1.2 -prune_degree 32 -table_size 160 -hash_bits 12 -top_level_leaders 1000 -fraction_leaders 0.005 -prune 1 -prune_all 1 -k 10
+R26A_THREADS=PARLAY_NUM_THREADS=4; taskset physical cpus=0,2,4,6
+R26A_SEED=20261029; PIPNN_DETERMINISTIC=1; dump_C=160
+R26A_BINARY_SHA256=5bc2bb9fb1c41e8dcfc7f052b63afde8ff977fec8aa810e81a1cfe3e3e49a68c
+443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+ M CMakeLists.txt
+ M algorithms/CMakeLists.txt
+ M algorithms/PipNN/pipnn.h
+ M algorithms/PipNN/pipnn_utils.h
+ M algorithms/utils/NSGDist.h
+ M algorithms/utils/graph.h
+ M algorithms/utils/hash.h
+ M algorithms/utils/point_range.h
+ M algorithms/utils/simhash.h
+ M algorithms/vamana/neighbors.h
+?? algorithms/utils/portability_shim.h
+NUMPY_VERSION 2.5.4
+Hệ thống tập tin    Cỡ  Dùng   Còn %Dùng Gắn vào
+/dev/nvme0n1p5    393G   50G  324G   14% /
+               total        used        free      shared  buff/cache   available
+BNhớ:           13Gi       3.5Gi       5.1Gi        57Mi       5.4Gi        10Gi
+Tráo đổi:      4.0Gi          0B       4.0Gi
+CPU(s) scaling MHz:                      138%

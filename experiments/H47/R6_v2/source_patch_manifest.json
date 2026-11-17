@@ -1,0 +1,41 @@
+{
+  "audit": "R47_R6_V2_ISOLATED_TRACE_GATE_PATCH",
+  "pinned_commit": "a48c6a34e5f959190992aa531cc18454cfcc3dd3",
+  "source_r45": "experiments/H45/ParlayANN-native-trace",
+  "destination": "experiments/H47/R6_v2/ParlayANN-native-trace-r6",
+  "only_edited_files": [
+    "algorithms/utils/beamSearch.h",
+    "algorithms/utils/check_nn_recall.h"
+  ],
+  "search_gate_old": "if (r45_selected && QP.beamSize == 100) {",
+  "search_gate_new": "if (r45_selected && (QP.beamSize == 80 || QP.beamSize == 120 || QP.beamSize == 160)) {",
+  "eval_gate_old": "if (r45_ids && QP.beamSize == 100 && GT.size() > 0 && k > 0) {",
+  "eval_gate_new": "if (r45_ids && (QP.beamSize == 80 || QP.beamSize == 120 || QP.beamSize == 160) && GT.size() > 0 && k > 0) {",
+  "original_hashes": {
+    "beamSearch.h": "fb1c819f3c712ccc8d99e7108496c584e85a134df466221d9eb1428ca3b929b5",
+    "check_nn_recall.h": "b8b7c725dc39fd001df262da4370d7aa10042cca980586289fcc6f1681ada316"
+  },
+  "patched_hashes": {
+    "beamSearch.h": "561ef128ccf16559769750ef109f57dd5daabc67c3d17e886bae67b303d0035b",
+    "check_nn_recall.h": "0188bdae1813372de0338b446e5c553fab86af1bdbf769e5413a021f6ce89f33"
+  },
+  "targets": [
+    84,
+    1533,
+    1715,
+    1822,
+    2711,
+    2819,
+    3410,
+    4757,
+    5272,
+    5622,
+    7167,
+    7196,
+    7935,
+    8083,
+    8254,
+    8748,
+    8966
+  ]
+}

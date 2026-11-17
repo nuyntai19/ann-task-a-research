@@ -1,0 +1,33 @@
+--- old/beamSearch.h
++++ targeted/beamSearch.h
+@@ -53,6 +53,7 @@
+   std::vector<G12B2Step> steps;
+ };
+ inline std::vector<G12B2Trace> g12b2_trace_records;
++inline std::vector<std::uint8_t> g12b22_trace_mask;
+ inline thread_local G12B2Trace* g12b2_active_trace = nullptr;
+ 
+ 
+@@ -153,7 +154,7 @@
+     G12B2Step* g12b2_step = nullptr;
+     if (g12b2_active_trace) {
+       ++g12b2_active_trace->expanded;
+-      if (g12b2_active_trace->query_id < 128) {
++      if (g12b22_trace_mask[g12b2_active_trace->query_id]) {
+         g12b2_active_trace->steps.emplace_back();
+         g12b2_step = &g12b2_active_trace->steps.back();
+         g12b2_step->ordinal = num_visited;
+@@ -711,6 +712,13 @@
+   parlay::sequence<parlay::sequence<indexType>> all_neighbors(Query_Points.size());
+   g12b2_trace_records.clear();
+   g12b2_trace_records.resize(Query_Points.size());
++  g12b22_trace_mask.assign(Query_Points.size(), 0);
++  // 40 frozen target/control query IDs. All 100K queries still execute.
++  const std::uint64_t g12b22_target_ids[] = {26ULL, 281ULL, 883ULL, 9656ULL, 13988ULL, 15073ULL, 22718ULL, 24911ULL, 35537ULL, 35881ULL, 36860ULL, 47397ULL, 51038ULL, 51057ULL, 51368ULL, 52490ULL, 52675ULL, 52829ULL, 58215ULL, 58284ULL, 59465ULL, 60888ULL, 63505ULL, 64083ULL, 68724ULL, 72899ULL, 74005ULL, 76009ULL, 79125ULL, 80462ULL, 82690ULL, 86384ULL, 86397ULL, 89023ULL, 89981ULL, 90520ULL, 90612ULL, 91439ULL, 91737ULL, 96189ULL};
++  for (auto g12b22_id : g12b22_target_ids) {
++    if (g12b22_id >= Query_Points.size()) std::abort();
++    g12b22_trace_mask[g12b22_id] = 1;
++  }
+   if (random) {
+     parlay::random_generator gen;
+     std::uniform_int_distribution<long> dis(0, G.size() - 1);

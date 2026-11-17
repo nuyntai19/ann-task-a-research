@@ -1,0 +1,283 @@
+{
+  "study": "H26_P2_OFFLINE_H18_PAIR_REUSE_AUDIT",
+  "capture_path": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin",
+  "capture_shape": {
+    "n": 1000000,
+    "leaves": 85529,
+    "proposal_events": 59990170,
+    "rows": 29995085,
+    "total_undirected_offdiag_pair_occurrences": 7289822248,
+    "triangular_pair_dim_proxy_at_dim128": 936936618624
+  },
+  "method": "Independent sample with replacement: select leaf proportional to C(n,2); sample unordered distinct pair within leaf; scan all leaf memberships and count multiplicity of each sampled pair.",
+  "sample_size": 30000,
+  "seed": 42,
+  "all_pair_occurrences": {
+    "n": 30000,
+    "fraction_pair_occurrences_with_multiplicity_gt_1": 0.4750666666666667,
+    "estimated_redundant_pair_occurrence_fraction": 0.30260881678888935,
+    "ci95_hoeffding": [
+      0.2947678140318925,
+      0.3104498195458862
+    ],
+    "multiplicity_mean_occurrence_weighted": 2.189033333333333,
+    "multiplicity_max_in_sample": 28,
+    "multiplicity_histogram": {
+      "1": 15748,
+      "2": 6487,
+      "3": 3194,
+      "4": 1661,
+      "5": 950,
+      "6": 653,
+      "7": 414,
+      "8": 318,
+      "9": 184,
+      "10": 94,
+      "11": 85,
+      "12": 60,
+      "13": 38,
+      "14": 30,
+      "15": 20,
+      "16": 23,
+      "17": 13,
+      "18": 10,
+      "19": 6,
+      "20": 3,
+      "21": 3,
+      "22": 2,
+      "23": 2,
+      "24": 1,
+      "28": 1
+    }
+  },
+  "per_leaf_size_bin": {
+    "2-63": null,
+    "64-127": {
+      "n": 178,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.5056179775280899,
+      "estimated_redundant_pair_occurrence_fraction": 0.3093967362225789,
+      "ci95_hoeffding": [
+        0.2076027239304883,
+        0.4111907485146695
+      ],
+      "multiplicity_mean_occurrence_weighted": 2.1292134831460676,
+      "multiplicity_max_in_sample": 12,
+      "multiplicity_histogram": {
+        "1": 88,
+        "2": 50,
+        "3": 17,
+        "4": 8,
+        "5": 5,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 3,
+        "10": 1,
+        "12": 1
+      }
+    },
+    "128-255": {
+      "n": 2286,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.4991251093613298,
+      "estimated_redundant_pair_occurrence_fraction": 0.32165896066428057,
+      "ci95_hoeffding": [
+        0.2932540046636678,
+        0.35006391666489334
+      ],
+      "multiplicity_mean_occurrence_weighted": 2.3070866141732282,
+      "multiplicity_max_in_sample": 23,
+      "multiplicity_histogram": {
+        "1": 1145,
+        "2": 487,
+        "3": 263,
+        "4": 155,
+        "5": 71,
+        "6": 56,
+        "7": 30,
+        "8": 27,
+        "9": 15,
+        "10": 5,
+        "11": 10,
+        "12": 3,
+        "13": 7,
+        "14": 2,
+        "15": 2,
+        "16": 3,
+        "19": 3,
+        "21": 1,
+        "23": 1
+      }
+    },
+    "256-383": {
+      "n": 3639,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.5122286342401758,
+      "estimated_redundant_pair_occurrence_fraction": 0.3282137751801683,
+      "ci95_hoeffding": [
+        0.30570036903660724,
+        0.3507271813237294
+      ],
+      "multiplicity_mean_occurrence_weighted": 2.3064028579280023,
+      "multiplicity_max_in_sample": 23,
+      "multiplicity_histogram": {
+        "1": 1775,
+        "2": 822,
+        "3": 433,
+        "4": 218,
+        "5": 116,
+        "6": 90,
+        "7": 56,
+        "8": 53,
+        "9": 23,
+        "10": 12,
+        "11": 14,
+        "12": 9,
+        "13": 6,
+        "14": 1,
+        "15": 3,
+        "16": 4,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "23": 1
+      }
+    },
+    "384-511": {
+      "n": 4542,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.49295464553060325,
+      "estimated_redundant_pair_occurrence_fraction": 0.3143824379249626,
+      "ci95_hoeffding": [
+        0.2942308780640039,
+        0.33453399778592136
+      ],
+      "multiplicity_mean_occurrence_weighted": 2.2470277410832233,
+      "multiplicity_max_in_sample": 28,
+      "multiplicity_histogram": {
+        "1": 2303,
+        "2": 1016,
+        "3": 498,
+        "4": 262,
+        "5": 151,
+        "6": 107,
+        "7": 67,
+        "8": 43,
+        "9": 31,
+        "10": 12,
+        "11": 17,
+        "12": 11,
+        "13": 4,
+        "14": 2,
+        "15": 5,
+        "16": 3,
+        "17": 4,
+        "18": 1,
+        "20": 1,
+        "21": 2,
+        "22": 1,
+        "28": 1
+      }
+    },
+    "512-767": {
+      "n": 9932,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.4743254128070882,
+      "estimated_redundant_pair_occurrence_fraction": 0.3026903387727736,
+      "ci95_hoeffding": [
+        0.28906291132656986,
+        0.3163177662189774
+      ],
+      "multiplicity_mean_occurrence_weighted": 2.1985501409585178,
+      "multiplicity_max_in_sample": 22,
+      "multiplicity_histogram": {
+        "1": 5221,
+        "2": 2130,
+        "3": 1056,
+        "4": 544,
+        "5": 334,
+        "6": 202,
+        "7": 131,
+        "8": 112,
+        "9": 62,
+        "10": 40,
+        "11": 31,
+        "12": 13,
+        "13": 11,
+        "14": 17,
+        "15": 4,
+        "16": 8,
+        "17": 5,
+        "18": 7,
+        "19": 1,
+        "20": 2,
+        "22": 1
+      }
+    },
+    "768-1023": {
+      "n": 9388,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.44706007669365144,
+      "estimated_redundant_pair_occurrence_fraction": 0.2826115202446071,
+      "ci95_hoeffding": [
+        0.2685948229802599,
+        0.29662821750895435
+      ],
+      "multiplicity_mean_occurrence_weighted": 2.08010225820196,
+      "multiplicity_max_in_sample": 24,
+      "multiplicity_histogram": {
+        "1": 5191,
+        "2": 1977,
+        "3": 924,
+        "4": 473,
+        "5": 273,
+        "6": 196,
+        "7": 127,
+        "8": 82,
+        "9": 50,
+        "10": 24,
+        "11": 13,
+        "12": 23,
+        "13": 10,
+        "14": 8,
+        "15": 6,
+        "16": 5,
+        "17": 3,
+        "18": 1,
+        "19": 1,
+        "24": 1
+      }
+    },
+    "1024-1535": {
+      "n": 35,
+      "fraction_pair_occurrences_with_multiplicity_gt_1": 0.2857142857142857,
+      "estimated_redundant_pair_occurrence_fraction": 0.17448979591836736,
+      "ci95_hoeffding": [
+        0,
+        0.40405085079465375
+      ],
+      "multiplicity_mean_occurrence_weighted": 1.5714285714285714,
+      "multiplicity_max_in_sample": 7,
+      "multiplicity_histogram": {
+        "1": 25,
+        "2": 5,
+        "3": 3,
+        "4": 1,
+        "7": 1
+      }
+    },
+    "1536+": null
+  },
+  "estimated_unique_pair_fraction_of_total_occurrences": 0.6973911832111106,
+  "estimated_distinct_undirected_pair_keys": 5083857763,
+  "elapsed_seconds": 8.31,
+  "not_proven": [
+    "A repeated mathematical point pair causes avoidable time in Eigen rankUpdate",
+    "A pair-distance cache could beat BLAS/Eigen matrix kernels",
+    "A cache can be implemented without extra synchronization/memory overhead",
+    "A new algorithm or a speedup has been demonstrated",
+    "Replicability across BUILD seeds/datasets"
+  ],
+  "warnings": [
+    "Confidence interval is only for independent sampling of one pinned H18 capture, NOT across BUILD seeds.",
+    "Proposal duplicate fraction is NOT pair-computation redundancy.",
+    "Pair multiplicity ignores diagonal; distance matrix also includes diagonals.",
+    "Floating-point tie behavior and kernel execution order may matter for exact equivalence."
+  ],
+  "capture_sha256": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95"
+}

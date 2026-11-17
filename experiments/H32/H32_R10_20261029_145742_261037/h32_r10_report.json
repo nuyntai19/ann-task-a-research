@@ -1,0 +1,242 @@
+{
+  "status": "PASS_REAL_READONLY_GT_REACHABILITY",
+  "method": "directed_BFS_entry_0_vs_GT_top10",
+  "notes": [
+    "No ANN BUILD, SEARCH, or graph edits.",
+    "GT validated structurally, not independently recomputed exact NN.",
+    "Upper bound assumes search walks only directed edges from entry 0 with no teleport/fallback.",
+    "No equal-graph-budget or causal repair claim."
+  ],
+  "provenance": {
+    "inventory": "/home/tai/ann-task-a/experiments/H31/H31_R0_20261028_003956/h31_r0_inventory.json",
+    "base": {
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "n": 1000000,
+      "d": 128,
+      "bytes": 512000008,
+      "header_size_verified_only": true
+    },
+    "queries": {
+      "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "n": 10000,
+      "d": 128,
+      "bytes": 5120008,
+      "header_size_verified_only": true
+    },
+    "GT": {
+      "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "queries": 10000,
+      "GT_k": 100,
+      "layout": "uint32 IDs block then float32 distance block"
+    }
+  },
+  "graphs": {
+    "VAMANA": {
+      "graph": {
+        "path": "/home/tai/ann-task-a/results/vamana_sift1m.graph",
+        "sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+        "bytes": 114573392,
+        "nodes": 1000000,
+        "max_degree": 32,
+        "edges": 27643346,
+        "entry": 0,
+        "reachable": 999795,
+        "unreachable": 205,
+        "unreachable_rate": 0.000205
+      },
+      "GT": {
+        "unreachable_gt_positions_M": 12,
+        "queries_with_unreachable_gt": 12,
+        "query_hit_histogram": {
+          "0": 9988,
+          "1": 12
+        },
+        "distinct_unreachable_gt_vertices": 11,
+        "top_unreachable_vertices": [
+          [
+            269328,
+            2
+          ],
+          [
+            266178,
+            1
+          ],
+          [
+            992240,
+            1
+          ],
+          [
+            269147,
+            1
+          ],
+          [
+            269425,
+            1
+          ],
+          [
+            275000,
+            1
+          ],
+          [
+            265178,
+            1
+          ],
+          [
+            269491,
+            1
+          ],
+          [
+            267060,
+            1
+          ],
+          [
+            275132,
+            1
+          ],
+          [
+            273034,
+            1
+          ]
+        ],
+        "sample_queries": [
+          {
+            "query_index": 934,
+            "unreachable_gt_ids": [
+              266178
+            ]
+          },
+          {
+            "query_index": 1330,
+            "unreachable_gt_ids": [
+              992240
+            ]
+          },
+          {
+            "query_index": 1359,
+            "unreachable_gt_ids": [
+              269147
+            ]
+          },
+          {
+            "query_index": 2479,
+            "unreachable_gt_ids": [
+              269425
+            ]
+          },
+          {
+            "query_index": 2916,
+            "unreachable_gt_ids": [
+              275000
+            ]
+          },
+          {
+            "query_index": 3042,
+            "unreachable_gt_ids": [
+              269328
+            ]
+          },
+          {
+            "query_index": 4551,
+            "unreachable_gt_ids": [
+              269328
+            ]
+          },
+          {
+            "query_index": 5470,
+            "unreachable_gt_ids": [
+              265178
+            ]
+          },
+          {
+            "query_index": 5881,
+            "unreachable_gt_ids": [
+              269491
+            ]
+          },
+          {
+            "query_index": 6069,
+            "unreachable_gt_ids": [
+              267060
+            ]
+          },
+          {
+            "query_index": 7291,
+            "unreachable_gt_ids": [
+              275132
+            ]
+          },
+          {
+            "query_index": 8886,
+            "unreachable_gt_ids": [
+              273034
+            ]
+          }
+        ],
+        "structural_miss_floor_fraction": 0.00012,
+        "reachability_recall_ceiling": 0.99988
+      },
+      "h31_q100_recall_historical": 0.98314,
+      "h31_q100_missed_slots_historical": 1686,
+      "structural_M_over_historical_missed_slots": 0.0071174377224199285
+    },
+    "STOCK": {
+      "graph": {
+        "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_stock.graph",
+        "sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+        "bytes": 95174232,
+        "nodes": 1000000,
+        "max_degree": 32,
+        "edges": 22793556,
+        "entry": 0,
+        "reachable": 999999,
+        "unreachable": 1,
+        "unreachable_rate": 1e-06
+      },
+      "GT": {
+        "unreachable_gt_positions_M": 0,
+        "queries_with_unreachable_gt": 0,
+        "query_hit_histogram": {
+          "0": 10000
+        },
+        "distinct_unreachable_gt_vertices": 0,
+        "top_unreachable_vertices": [],
+        "sample_queries": [],
+        "structural_miss_floor_fraction": 0.0,
+        "reachability_recall_ceiling": 1.0
+      },
+      "h31_q100_recall_historical": 0.99087,
+      "h31_q100_missed_slots_historical": 913,
+      "structural_M_over_historical_missed_slots": 0.0
+    },
+    "TOP2": {
+      "graph": {
+        "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_top2.graph",
+        "sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6",
+        "bytes": 95176264,
+        "nodes": 1000000,
+        "max_degree": 32,
+        "edges": 22794064,
+        "entry": 0,
+        "reachable": 999999,
+        "unreachable": 1,
+        "unreachable_rate": 1e-06
+      },
+      "GT": {
+        "unreachable_gt_positions_M": 0,
+        "queries_with_unreachable_gt": 0,
+        "query_hit_histogram": {
+          "0": 10000
+        },
+        "distinct_unreachable_gt_vertices": 0,
+        "top_unreachable_vertices": [],
+        "sample_queries": [],
+        "structural_miss_floor_fraction": 0.0,
+        "reachability_recall_ceiling": 1.0
+      },
+      "h31_q100_recall_historical": 0.99087,
+      "h31_q100_missed_slots_historical": 913,
+      "structural_M_over_historical_missed_slots": 0.0
+    }
+  },
+  "research_decision": "STRUCTURAL_MISS_FLOOR_NONZERO; PRIOR_ART_AND_MATCHED_BUDGET_REVIEW_BEFORE_ANY_REPAIR; NO H33 CLAIM"
+}

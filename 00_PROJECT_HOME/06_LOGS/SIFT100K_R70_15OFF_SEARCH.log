@@ -1,0 +1,104 @@
+INPUT_SHA_PASS base e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12
+INPUT_SHA_PASS query 9e9328e3f0488840d3f12efcc3b0f6af940dd398fb7b6d178d72bd1e1c0f9d74
+INPUT_SHA_PASS gt e038aff5970977d0ee925b4357295bd81817b99b35e11bbab783fd64e0715e7f
+INPUT_SHA_PASS evaluator f3999051c6cc96434ea26d2faedd3ac632ed8d20be342e15c92fd4b905a33fe9
+GRAPH_SHA_PASS_15_OFF
+PRECHECK_APPROVED_R70_STORED_GRAPH_EVALUATOR
+OUTPUT_DIR=/home/tai/ann-task-a/00_PROJECT_HOME/05_RESULTS_AND_COUNTERS/R70_SIFT100K_A0_A4_15OFF_v1_0
+CAMPAIGN_PLAN=15 graphs x 3 repeated searches = 45 native calls
+CPU_PIN=0  SEARCH_THREADS=1  BEAMS=[10, 20, 40, 80, 160]  QUERIES=300 K=10
+SEARCH_START A0 stock_C160_K1024_N2_off_r1 search_rep 1
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r1 search_rep 1 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r1 search_rep 1
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r1 search_rep 1 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r1 search_rep 1
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r1 search_rep 1 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r1 search_rep 1
+SEARCH_PASS A3 h17_C64_K512_N2_off_r1 search_rep 1 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r1 search_rep 1
+SEARCH_PASS A4 h17_C64_K512_N1_off_r1 search_rep 1 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r2 search_rep 1
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r2 search_rep 1 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r2 search_rep 1
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r2 search_rep 1 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r2 search_rep 1
+SEARCH_PASS A3 h17_C64_K512_N2_off_r2 search_rep 1 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r2 search_rep 1
+SEARCH_PASS A4 h17_C64_K512_N1_off_r2 search_rep 1 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r2 search_rep 1
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r2 search_rep 1 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r3 search_rep 1
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r3 search_rep 1 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r3 search_rep 1
+SEARCH_PASS A3 h17_C64_K512_N2_off_r3 search_rep 1 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r3 search_rep 1
+SEARCH_PASS A4 h17_C64_K512_N1_off_r3 search_rep 1 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r3 search_rep 1
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r3 search_rep 1 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r3 search_rep 1
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r3 search_rep 1 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r1 search_rep 2
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r1 search_rep 2 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r1 search_rep 2
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r1 search_rep 2 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r1 search_rep 2
+SEARCH_PASS A3 h17_C64_K512_N2_off_r1 search_rep 2 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r1 search_rep 2
+SEARCH_PASS A4 h17_C64_K512_N1_off_r1 search_rep 2 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r1 search_rep 2
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r1 search_rep 2 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r2 search_rep 2
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r2 search_rep 2 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r2 search_rep 2
+SEARCH_PASS A3 h17_C64_K512_N2_off_r2 search_rep 2 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r2 search_rep 2
+SEARCH_PASS A4 h17_C64_K512_N1_off_r2 search_rep 2 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r2 search_rep 2
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r2 search_rep 2 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r2 search_rep 2
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r2 search_rep 2 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r3 search_rep 2
+SEARCH_PASS A3 h17_C64_K512_N2_off_r3 search_rep 2 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r3 search_rep 2
+SEARCH_PASS A4 h17_C64_K512_N1_off_r3 search_rep 2 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r3 search_rep 2
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r3 search_rep 2 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r3 search_rep 2
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r3 search_rep 2 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r3 search_rep 2
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r3 search_rep 2 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r1 search_rep 3
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r1 search_rep 3 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r1 search_rep 3
+SEARCH_PASS A3 h17_C64_K512_N2_off_r1 search_rep 3 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r1 search_rep 3
+SEARCH_PASS A4 h17_C64_K512_N1_off_r1 search_rep 3 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r1 search_rep 3
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r1 search_rep 3 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r1 search_rep 3
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r1 search_rep 3 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r2 search_rep 3
+SEARCH_PASS A3 h17_C64_K512_N2_off_r2 search_rep 3 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r2 search_rep 3
+SEARCH_PASS A4 h17_C64_K512_N1_off_r2 search_rep 3 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r2 search_rep 3
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r2 search_rep 3 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r2 search_rep 3
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r2 search_rep 3 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r2 search_rep 3
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r2 search_rep 3 rows 5
+SEARCH_START A4 h17_C64_K512_N1_off_r3 search_rep 3
+SEARCH_PASS A4 h17_C64_K512_N1_off_r3 search_rep 3 rows 5
+SEARCH_START A0 stock_C160_K1024_N2_off_r3 search_rep 3
+SEARCH_PASS A0 stock_C160_K1024_N2_off_r3 search_rep 3 rows 5
+SEARCH_START A1 h17_C160_K1024_N2_off_r3 search_rep 3
+SEARCH_PASS A1 h17_C160_K1024_N2_off_r3 search_rep 3 rows 5
+SEARCH_START A2 h17_C64_K1024_N2_off_r3 search_rep 3
+SEARCH_PASS A2 h17_C64_K1024_N2_off_r3 search_rep 3 rows 5
+SEARCH_START A3 h17_C64_K512_N2_off_r3 search_rep 3
+SEARCH_PASS A3 h17_C64_K512_N2_off_r3 search_rep 3 rows 5
+SEARCH_CAMPAIGN_COMPLETE_15_GRAPHS
+RAW_ROWS=/home/tai/ann-task-a/00_PROJECT_HOME/05_RESULTS_AND_COUNTERS/R70_SIFT100K_A0_A4_15OFF_v1_0/search_all_rows.csv
+ARM_SUMMARY=/home/tai/ann-task-a/00_PROJECT_HOME/05_RESULTS_AND_COUNTERS/R70_SIFT100K_A0_A4_15OFF_v1_0/arm_beam_summary.csv
+OUTPUT_DIR=/home/tai/ann-task-a/00_PROJECT_HOME/05_RESULTS_AND_COUNTERS/R70_SIFT100K_A0_A4_15OFF_v1_0
+MATCHED_RECALL_AND_P95_P99_NOT_MEASURED

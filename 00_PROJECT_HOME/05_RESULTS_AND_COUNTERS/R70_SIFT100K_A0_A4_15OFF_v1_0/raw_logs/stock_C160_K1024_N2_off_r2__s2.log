@@ -1,0 +1,12 @@
+Data: detected 100000 points with dimension 128
+Data: detected 300 points with dimension 128
+Ground truth: detected 300 points with num results 100
+Graph: detected 100000 points with max degree 64
+Total edges read from file: 1827164
+R70_RECALL_INPUT_PASS graph_nodes=100000 queries=300 gt_k=100
+R70_RECALL_ROW beam=10 recall=0.79166669 qps=50377.83593750 avg_cmps=370 avg_visited=18
+R70_RECALL_ROW beam=20 recall=0.90833336 qps=36737.69140625 avg_cmps=541 avg_visited=28
+R70_RECALL_ROW beam=40 recall=0.97600001 qps=22217.28515625 avg_cmps=866 avg_visited=48
+R70_RECALL_ROW beam=80 recall=0.99599999 qps=13025.92187500 avg_cmps=1432 avg_visited=86
+R70_RECALL_ROW beam=160 recall=0.99966669 qps=7560.48388672 avg_cmps=2201 avg_visited=151
+R70_RECALL_EVAL_PASS

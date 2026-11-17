@@ -1,0 +1,270 @@
+{
+  "status": "H19_R2_PERF_DIAGNOSTIC_COMPLETE_NOT_NOVELTY",
+  "date_utc": "2026-10-24T16:21:24.560933+00:00",
+  "model": "CLEAN H17 Top-2 PiPNN 443a328, SIFT1M, f30, one full graph BUILD per worker/rep",
+  "reps_per_worker": 3,
+  "threads": "1/2/4 physical cores (CPU 0 / 0,2 / 0,2,4,6)",
+  "perf_counters": [
+    "cycles",
+    "instructions",
+    "cache-references",
+    "cache-misses"
+  ],
+  "note": "Generic cache-miss events on AMD are NOT total DRAM accesses or bandwidth. Counters are scoped to perf child and can be multiplexed; read perf raw logs.",
+  "workers": {
+    "1": {
+      "median_build_wall_s": 126.2,
+      "median_partition_s": 25.0386,
+      "median_leaf_s": 87.5487,
+      "median_prune_s": 13.3043,
+      "median_ipc": 1.8790557427840702,
+      "median_cache_mpki": 3.019857009589487,
+      "median_generic_cache_miss_ratio": 0.093205238325509,
+      "median_peak_rss_kb": 1714432,
+      "build_times_each": [
+        129.3,
+        126.2,
+        126.0
+      ],
+      "cache_mpki_each": [
+        3.029452828826778,
+        3.019857009589487,
+        3.0162423395430498
+      ]
+    },
+    "2": {
+      "median_build_wall_s": 71.45,
+      "median_partition_s": 14.684,
+      "median_leaf_s": 49.0921,
+      "median_prune_s": 6.7229,
+      "median_ipc": 1.756413902069777,
+      "median_cache_mpki": 3.100310454011569,
+      "median_generic_cache_miss_ratio": 0.09626501528799677,
+      "median_peak_rss_kb": 1758336,
+      "build_times_each": [
+        71.45,
+        70.52,
+        71.86
+      ],
+      "cache_mpki_each": [
+        3.0854732236148115,
+        3.100310454011569,
+        3.1023062193908437
+      ]
+    },
+    "4": {
+      "median_build_wall_s": 44.13,
+      "median_partition_s": 9.2495,
+      "median_leaf_s": 30.9636,
+      "median_prune_s": 3.7251,
+      "median_ipc": 1.5721194176479143,
+      "median_cache_mpki": 3.2208346248209394,
+      "median_generic_cache_miss_ratio": 0.09981355973705772,
+      "median_peak_rss_kb": 1849076,
+      "build_times_each": [
+        46.05,
+        41.84,
+        44.13
+      ],
+      "cache_mpki_each": [
+        3.327015624482527,
+        3.207250178801232,
+        3.2208346248209394
+      ]
+    }
+  },
+  "speedup_1_to_4": 2.8597326082030365,
+  "efficiency_1_to_4": 0.7149331520507591,
+  "records": [
+    {
+      "workers": 1,
+      "rep": 1,
+      "build_wall_s": 129.3,
+      "partition_wall_s": 27.2899,
+      "leaf_wall_s": 88.2525,
+      "prune_wall_s": 13.3043,
+      "max_rss_kb": 1714412,
+      "user_cpu_s": 128.77,
+      "system_cpu_s": 0.88,
+      "perf_events": {
+        "cycles": 499153799031,
+        "instructions": 917817404365,
+        "cache-references": 29946729773,
+        "cache-misses": 2780484532
+      },
+      "ipc": 1.8387467072207915,
+      "cache_mpki": 3.029452828826778,
+      "generic_cache_miss_ratio": 0.09284768497516839
+    },
+    {
+      "workers": 2,
+      "rep": 1,
+      "build_wall_s": 71.45,
+      "partition_wall_s": 14.684,
+      "leaf_wall_s": 49.0227,
+      "prune_wall_s": 7.5019,
+      "max_rss_kb": 1758336,
+      "user_cpu_s": 142.19,
+      "system_cpu_s": 1.17,
+      "perf_events": {
+        "cycles": 516554571693,
+        "instructions": 918448810481,
+        "cache-references": 29437996800,
+        "cache-misses": 2833849212
+      },
+      "ipc": 1.7780286165521633,
+      "cache_mpki": 3.0854732236148115,
+      "generic_cache_miss_ratio": 0.09626501528799677
+    },
+    {
+      "workers": 4,
+      "rep": 1,
+      "build_wall_s": 46.05,
+      "partition_wall_s": 9.724,
+      "leaf_wall_s": 32.3413,
+      "prune_wall_s": 3.7902,
+      "max_rss_kb": 1849076,
+      "user_cpu_s": 182.17,
+      "system_cpu_s": 1.56,
+      "perf_events": {
+        "cycles": 639622606095,
+        "instructions": 920477655850,
+        "cache-references": 33695489713,
+        "cache-misses": 3062443543
+      },
+      "ipc": 1.4390949398578416,
+      "cache_mpki": 3.327015624482527,
+      "generic_cache_miss_ratio": 0.09088585947508826
+    },
+    {
+      "workers": 1,
+      "rep": 2,
+      "build_wall_s": 126.2,
+      "partition_wall_s": 24.9811,
+      "leaf_wall_s": 87.5487,
+      "prune_wall_s": 13.2775,
+      "max_rss_kb": 1714440,
+      "user_cpu_s": 125.92,
+      "system_cpu_s": 0.88,
+      "perf_events": {
+        "cycles": 488397740213,
+        "instructions": 917726578510,
+        "cache-references": 29734412902,
+        "cache-misses": 2771403041
+      },
+      "ipc": 1.8790557427840702,
+      "cache_mpki": 3.019857009589487,
+      "generic_cache_miss_ratio": 0.093205238325509
+    },
+    {
+      "workers": 2,
+      "rep": 2,
+      "build_wall_s": 70.52,
+      "partition_wall_s": 14.4635,
+      "leaf_wall_s": 49.0921,
+      "prune_wall_s": 6.7107,
+      "max_rss_kb": 1759276,
+      "user_cpu_s": 140.41,
+      "system_cpu_s": 1.22,
+      "perf_events": {
+        "cycles": 522901046744,
+        "instructions": 918430667908,
+        "cache-references": 29501034189,
+        "cache-misses": 2847420201
+      },
+      "ipc": 1.756413902069777,
+      "cache_mpki": 3.100310454011569,
+      "generic_cache_miss_ratio": 0.09651933497510107
+    },
+    {
+      "workers": 4,
+      "rep": 2,
+      "build_wall_s": 41.84,
+      "partition_wall_s": 8.8868,
+      "leaf_wall_s": 29.2169,
+      "prune_wall_s": 3.5553,
+      "max_rss_kb": 1849164,
+      "user_cpu_s": 166.19,
+      "system_cpu_s": 1.37,
+      "perf_events": {
+        "cycles": 584968793508,
+        "instructions": 919640798992,
+        "cache-references": 29550274780,
+        "cache-misses": 2949518117
+      },
+      "ipc": 1.5721194176479143,
+      "cache_mpki": 3.207250178801232,
+      "generic_cache_miss_ratio": 0.09981355973705772
+    },
+    {
+      "workers": 1,
+      "rep": 3,
+      "build_wall_s": 126.0,
+      "partition_wall_s": 25.0386,
+      "leaf_wall_s": 87.2726,
+      "prune_wall_s": 13.3043,
+      "max_rss_kb": 1714432,
+      "user_cpu_s": 125.72,
+      "system_cpu_s": 0.8,
+      "perf_events": {
+        "cycles": 486765293629,
+        "instructions": 917716012308,
+        "cache-references": 29235959863,
+        "cache-misses": 2768053892
+      },
+      "ipc": 1.8853357548688743,
+      "cache_mpki": 3.0162423395430498,
+      "generic_cache_miss_ratio": 0.09467976782603096
+    },
+    {
+      "workers": 2,
+      "rep": 3,
+      "build_wall_s": 71.86,
+      "partition_wall_s": 14.7328,
+      "leaf_wall_s": 50.1533,
+      "prune_wall_s": 6.7229,
+      "max_rss_kb": 1758220,
+      "user_cpu_s": 142.99,
+      "system_cpu_s": 1.12,
+      "perf_events": {
+        "cycles": 524172412691,
+        "instructions": 918443874815,
+        "cache-references": 29707055160,
+        "cache-misses": 2849294145
+      },
+      "ipc": 1.7521789635968945,
+      "cache_mpki": 3.1023062193908437,
+      "generic_cache_miss_ratio": 0.09591304589613184
+    },
+    {
+      "workers": 4,
+      "rep": 3,
+      "build_wall_s": 44.13,
+      "partition_wall_s": 9.2495,
+      "leaf_wall_s": 30.9636,
+      "prune_wall_s": 3.7251,
+      "max_rss_kb": 1848916,
+      "user_cpu_s": 175.43,
+      "system_cpu_s": 1.43,
+      "perf_events": {
+        "cycles": 556292559905,
+        "instructions": 919404819229,
+        "cache-references": 29291147722,
+        "cache-misses": 2961250876
+      },
+      "ipc": 1.6527361419070747,
+      "cache_mpki": 3.2208346248209394,
+      "generic_cache_miss_ratio": 0.10109712682155719
+    }
+  ],
+  "cautions": [
+    "Only one rep per worker by default; diagnostic not confidence interval.",
+    "Original PiPNN partitions are nondeterministic; no graph/Recall output or graph equivalence claim.",
+    "perf stat includes time/runuser/taskset wrappers; these are small but not identically zero.",
+    "Run under schedutil; CPU clocks/thermal/cache effects are not isolated or causally identified.",
+    "No hardware memory bandwidth measurement; generic cache events alone cannot attribute bottleneck.",
+    "Clean H17 patch compiled in isolation; no H17_LEAF_PROFILE or H19-R1 lock timing.",
+    "Do not infer critical path or concurrency bottleneck solely from IPC/cache-MPKI.",
+    "NO H19-C1 algorithm novelty or effectiveness claim from this report."
+  ]
+}

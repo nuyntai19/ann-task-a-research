@@ -1,0 +1,69 @@
+{
+  "algorithm": "SciPy directed CSR WCC/SCC; exact indegrees; uniform edge sample of reciprocal and geometric distances",
+  "arm": "A1",
+  "base_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "components": {
+    "SCC": {
+      "count": 1,
+      "largest": 1000000,
+      "largest_fraction": 1.0,
+      "second_largest": 0,
+      "singleton_count": 0
+    },
+    "WCC": {
+      "count": 1,
+      "largest": 1000000,
+      "largest_fraction": 1.0,
+      "second_largest": 0,
+      "singleton_count": 0
+    }
+  },
+  "directed_arcs": 52876723,
+  "edge_self_loops_exact": 0,
+  "full_out_degree": 388269,
+  "graph_bytes": 215506900,
+  "graph_sha256": "7da34f1c3e0ff8a67092a2c9f96bc35122b88fdbe36c59347d1f213b55c46979",
+  "in_degree_quantiles": {
+    "p0": 1.0,
+    "p10": 30.0,
+    "p100": 268.0,
+    "p25": 39.0,
+    "p50": 51.0,
+    "p75": 65.0,
+    "p90": 78.0,
+    "p95": 87.0,
+    "p99": 106.0,
+    "p99.9": 138.0
+  },
+  "limitations": "Sampled reciprocity and geometry are proxies, not evidence of navigability, coverage or causal Search time. Cross-beam Search and trueNN reachability are separate experiments.",
+  "max_degree_declared": 64,
+  "mean_in_degree": 52.876723,
+  "mean_out_degree": 52.876723,
+  "n": 1000000,
+  "out_degree_quantiles": {
+    "p0": 5.0,
+    "p10": 34.0,
+    "p100": 64.0,
+    "p25": 44.0,
+    "p50": 57.0,
+    "p75": 64.0,
+    "p90": 64.0,
+    "p95": 64.0,
+    "p99": 64.0,
+    "p99.9": 64.0
+  },
+  "rep": 1,
+  "sample_seed": 861215,
+  "sampled_arc_count": 20000,
+  "sampled_edge_l2_squared_mean": 0.8745260888194156,
+  "sampled_edge_l2_squared_p50": 0.8916553254774061,
+  "sampled_edge_l2_squared_p90": 1.0229387384233455,
+  "sampled_edge_l2_squared_p99": 1.163637991206029,
+  "sampled_reciprocal_fraction": 0.65805,
+  "sampled_rows_with_duplicate_neighbors_fraction": 0.0,
+  "source_graph_format": "uint32 little-endian n,maxDeg, n degree array, concatenated uint32 neighbor IDs",
+  "status": "R86_G12_NATIVE_TOPOLOGY_AUDIT_PASS",
+  "top_1pct_vertices_share_of_incoming_arcs": 0.022709217437699384,
+  "zero_in_degree": 0,
+  "zero_out_degree": 0
+}

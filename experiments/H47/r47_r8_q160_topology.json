@@ -1,0 +1,2934 @@
+{
+  "audit": "R47_R8_DIRECTED_TOPOLOGY_WITNESS_OFFLINE_PASS",
+  "protocol": {
+    "graph_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+    "n": 1000000,
+    "max_degree": 32,
+    "arcs": 22797630,
+    "queries": 17,
+    "Q_values": [
+      100,
+      160
+    ],
+    "preselected_GT_targets": 20,
+    "native_parity": "R47_R6_V2_INDEPENDENT_NATIVE_TOP10_PARITY_PASS",
+    "R46_Q100_directed_twohop_replication": 18
+  },
+  "summary": {
+    "100": {
+      "PERSISTENT_5": {
+        "targets": 5,
+        "shortest_hops_distribution": {
+          "2": 5
+        },
+        "twohop_witness_total": 18,
+        "twohop_witness_statuses": {
+          "CUTOFF_REJECT": 15,
+          "KEPT_THEN_EVICTED": 3
+        }
+      },
+      "RESCUED_15": {
+        "targets": 15,
+        "shortest_hops_distribution": {
+          "2": 13,
+          "3": 1,
+          ">3_or_absent": 1
+        },
+        "twohop_witness_total": 70,
+        "twohop_witness_statuses": {
+          "CUTOFF_REJECT": 55,
+          "KEPT_THEN_EVICTED": 12,
+          "MERGE_DROP": 3
+        }
+      }
+    },
+    "160": {
+      "PERSISTENT_5": {
+        "targets": 5,
+        "shortest_hops_distribution": {
+          "2": 5
+        },
+        "twohop_witness_total": 20,
+        "twohop_witness_statuses": {
+          "CUTOFF_REJECT": 15,
+          "KEPT_THEN_EVICTED": 4,
+          "MERGE_DROP": 1
+        }
+      },
+      "RESCUED_15": {
+        "targets": 15,
+        "shortest_hops_distribution": {
+          "0": 15
+        },
+        "twohop_witness_total": 285,
+        "twohop_witness_statuses": {
+          "CUTOFF_REJECT": 239,
+          "EXPANDED": 35,
+          "KEPT_THEN_EVICTED": 8,
+          "MERGE_DROP": 3
+        }
+      }
+    }
+  },
+  "per_target_Q100_Q160": [
+    {
+      "query_id": 84,
+      "GT_id": 469776,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 112,
+      "native_comparisons": 2417,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        161547,
+        185089,
+        469776
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 4,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 161547,
+          "intermediate_v": 185089,
+          "v_trace_events": [
+            "DISCOVER",
+            "MERGE_DROP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "MERGE_DROP"
+        },
+        {
+          "expanded_u": 965855,
+          "intermediate_v": 367405,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 152053,
+          "intermediate_v": 460447,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 244520,
+          "intermediate_v": 710089,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 84,
+      "GT_id": 469776,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 177,
+      "native_comparisons": 3584,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        469776
+      ],
+      "outgoing_edges_from_expanded_to_target": 3,
+      "directed_2hop_witness_intermediates": 19,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 16,
+        "EXPANDED": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 469776,
+          "intermediate_v": 20771,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 469776,
+          "intermediate_v": 143040,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 161547,
+          "intermediate_v": 185089,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 469776,
+          "intermediate_v": 322840,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 469776,
+          "intermediate_v": 367405,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 1533,
+      "GT_id": 439780,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 110,
+      "native_comparisons": 2097,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        156396,
+        15784,
+        439780
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 5,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 156396,
+          "intermediate_v": 15784,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 498212,
+          "intermediate_v": 241295,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 432313,
+          "intermediate_v": 241541,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 315359,
+          "intermediate_v": 492691,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 432313,
+          "intermediate_v": 613224,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 1533,
+      "GT_id": 439780,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 178,
+      "native_comparisons": 3214,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        439780
+      ],
+      "outgoing_edges_from_expanded_to_target": 1,
+      "directed_2hop_witness_intermediates": 16,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 13,
+        "EXPANDED": 1,
+        "KEPT_THEN_EVICTED": 1,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 439780,
+          "intermediate_v": 4084,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 439780,
+          "intermediate_v": 8779,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 439780,
+          "intermediate_v": 13485,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 156396,
+          "intermediate_v": 15784,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 372121,
+          "intermediate_v": 21787,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 1715,
+      "GT_id": 420244,
+      "Q": 100,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 116,
+      "native_comparisons": 2650,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        941247,
+        76162,
+        420244
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 5,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 941247,
+          "intermediate_v": 76162,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 547576,
+          "intermediate_v": 279747,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 614105,
+          "intermediate_v": 310765,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 787003,
+          "intermediate_v": 531972,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 920630,
+          "intermediate_v": 922768,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 1715,
+      "GT_id": 420244,
+      "Q": 160,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 187,
+      "native_comparisons": 4100,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        614352,
+        76162,
+        420244
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 5,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 614352,
+          "intermediate_v": 76162,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 547576,
+          "intermediate_v": 279747,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 614105,
+          "intermediate_v": 310765,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 787003,
+          "intermediate_v": 531972,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 920630,
+          "intermediate_v": 922768,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 1822,
+      "GT_id": 968826,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 128,
+      "native_comparisons": 2752,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        893231,
+        122505,
+        968826
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 14,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 12,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 893231,
+          "intermediate_v": 122505,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 750734,
+          "intermediate_v": 152327,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 171736,
+          "intermediate_v": 168760,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 171736,
+          "intermediate_v": 171119,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 573681,
+          "intermediate_v": 199212,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 1822,
+      "GT_id": 968826,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 194,
+      "native_comparisons": 3929,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        968826
+      ],
+      "outgoing_edges_from_expanded_to_target": 3,
+      "directed_2hop_witness_intermediates": 32,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 27,
+        "EXPANDED": 3,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 619854,
+          "intermediate_v": 37282,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 968826,
+          "intermediate_v": 105345,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 968826,
+          "intermediate_v": 106909,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 968826,
+          "intermediate_v": 111797,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 893231,
+          "intermediate_v": 122505,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 2711,
+      "GT_id": 886706,
+      "Q": 100,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 128,
+      "native_comparisons": 3156,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        7437,
+        452,
+        886706
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 7437,
+          "intermediate_v": 452,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 215745,
+          "intermediate_v": 679582,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 989070,
+          "intermediate_v": 940240,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 2711,
+      "GT_id": 886706,
+      "Q": 160,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 196,
+      "native_comparisons": 4440,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        7437,
+        452,
+        886706
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 7437,
+          "intermediate_v": 452,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 215745,
+          "intermediate_v": 679582,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 989070,
+          "intermediate_v": 940240,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 2819,
+      "GT_id": 938020,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 138,
+      "native_comparisons": 2876,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        236117,
+        287474,
+        938020
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 9,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 7,
+        "KEPT_THEN_EVICTED": 1,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 236117,
+          "intermediate_v": 287474,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 15978,
+          "intermediate_v": 442087,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 575624,
+          "intermediate_v": 574288,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 14561,
+          "intermediate_v": 702166,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 575624,
+          "intermediate_v": 709583,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 2819,
+      "GT_id": 938020,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 198,
+      "native_comparisons": 3929,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        938020
+      ],
+      "outgoing_edges_from_expanded_to_target": 2,
+      "directed_2hop_witness_intermediates": 22,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 19,
+        "EXPANDED": 2,
+        "KEPT_THEN_EVICTED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 938020,
+          "intermediate_v": 94,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 412910,
+          "intermediate_v": 66238,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 938020,
+          "intermediate_v": 223332,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 231871,
+          "intermediate_v": 287474,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 938020,
+          "intermediate_v": 319182,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 3410,
+      "GT_id": 201879,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 117,
+      "native_comparisons": 2758,
+      "R46_graph_twohop_Q100": false,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 3,
+      "shortest_path_example": [
+        1562,
+        284140,
+        203498,
+        201879
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 0,
+      "twohop_witness_status_counts": {},
+      "twohop_witness_examples": [],
+      "directed_3hop_last_intermediate_count": 9,
+      "hop3_example_intermediate_status": [
+        {
+          "node": 284140,
+          "status": "KEPT_THEN_EVICTED",
+          "trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ]
+        },
+        {
+          "node": 203498,
+          "status": "NO_DIRECT_NODE_EVENT",
+          "trace_events": []
+        }
+      ]
+    },
+    {
+      "query_id": 3410,
+      "GT_id": 266157,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 117,
+      "native_comparisons": 2758,
+      "R46_graph_twohop_Q100": false,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": null,
+      "shortest_path_example": null,
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 0,
+      "twohop_witness_status_counts": {},
+      "twohop_witness_examples": [],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 3410,
+      "GT_id": 201879,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 183,
+      "native_comparisons": 4024,
+      "R46_graph_twohop_Q100": false,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        201879
+      ],
+      "outgoing_edges_from_expanded_to_target": 4,
+      "directed_2hop_witness_intermediates": 11,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 7,
+        "EXPANDED": 4
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 201879,
+          "intermediate_v": 88264,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 84823,
+          "intermediate_v": 203498,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 201436,
+          "intermediate_v": 203920,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 201879,
+          "intermediate_v": 266157,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 203498,
+          "intermediate_v": 267776,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 3410,
+      "GT_id": 266157,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 183,
+      "native_comparisons": 4024,
+      "R46_graph_twohop_Q100": false,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        266157
+      ],
+      "outgoing_edges_from_expanded_to_target": 1,
+      "directed_2hop_witness_intermediates": 1,
+      "twohop_witness_status_counts": {
+        "EXPANDED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 203498,
+          "intermediate_v": 201879,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 4757,
+      "GT_id": 453367,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 105,
+      "native_comparisons": 2138,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        326900,
+        293128,
+        453367
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 2,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 326900,
+          "intermediate_v": 293128,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 326900,
+          "intermediate_v": 459165,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 4757,
+      "GT_id": 453375,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 105,
+      "native_comparisons": 2138,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        326900,
+        460072,
+        453375
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 1,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 326900,
+          "intermediate_v": 460072,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 4757,
+      "GT_id": 453367,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 190,
+      "native_comparisons": 3528,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        453367
+      ],
+      "outgoing_edges_from_expanded_to_target": 2,
+      "directed_2hop_witness_intermediates": 11,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 9,
+        "EXPANDED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 453367,
+          "intermediate_v": 77580,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453367,
+          "intermediate_v": 94571,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453367,
+          "intermediate_v": 141901,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453367,
+          "intermediate_v": 179084,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 326900,
+          "intermediate_v": 293128,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 4757,
+      "GT_id": 453375,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 190,
+      "native_comparisons": 3528,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        453375
+      ],
+      "outgoing_edges_from_expanded_to_target": 2,
+      "directed_2hop_witness_intermediates": 9,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 7,
+        "EXPANDED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 453375,
+          "intermediate_v": 4092,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453375,
+          "intermediate_v": 22434,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453375,
+          "intermediate_v": 154715,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453375,
+          "intermediate_v": 452941,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 453375,
+          "intermediate_v": 453367,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 5272,
+      "GT_id": 77611,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 113,
+      "native_comparisons": 2540,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        261808,
+        515930,
+        77611
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 6,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3,
+        "KEPT_THEN_EVICTED": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 261808,
+          "intermediate_v": 515930,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 524249,
+          "intermediate_v": 524609,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 89551,
+          "intermediate_v": 540485,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 685458,
+          "intermediate_v": 851653,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 89551,
+          "intermediate_v": 868501,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 5272,
+      "GT_id": 77611,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 179,
+      "native_comparisons": 3684,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        77611
+      ],
+      "outgoing_edges_from_expanded_to_target": 4,
+      "directed_2hop_witness_intermediates": 23,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 19,
+        "EXPANDED": 4
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 77611,
+          "intermediate_v": 60777,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 77611,
+          "intermediate_v": 64992,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 77611,
+          "intermediate_v": 86867,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 77611,
+          "intermediate_v": 101162,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 77611,
+          "intermediate_v": 344241,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 5622,
+      "GT_id": 62618,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 113,
+      "native_comparisons": 2563,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        578270,
+        111198,
+        62618
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 6,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 6
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 578270,
+          "intermediate_v": 111198,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 185281,
+          "intermediate_v": 185668,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 961588,
+          "intermediate_v": 221835,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 403592,
+          "intermediate_v": 531129,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 399540,
+          "intermediate_v": 533084,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 5622,
+      "GT_id": 62618,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 188,
+      "native_comparisons": 4162,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        62618
+      ],
+      "outgoing_edges_from_expanded_to_target": 3,
+      "directed_2hop_witness_intermediates": 22,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 19,
+        "EXPANDED": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 62618,
+          "intermediate_v": 20359,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 62618,
+          "intermediate_v": 36223,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 62618,
+          "intermediate_v": 73152,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 62618,
+          "intermediate_v": 75328,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 62618,
+          "intermediate_v": 111198,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7167,
+      "GT_id": 925061,
+      "Q": 100,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 120,
+      "native_comparisons": 2634,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        246467,
+        97107,
+        925061
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 6,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 6
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 246467,
+          "intermediate_v": 97107,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 842895,
+          "intermediate_v": 111179,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 586301,
+          "intermediate_v": 206045,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 474439,
+          "intermediate_v": 244861,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 834872,
+          "intermediate_v": 561706,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7167,
+      "GT_id": 925061,
+      "Q": 160,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 183,
+      "native_comparisons": 3861,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        246467,
+        97107,
+        925061
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 6,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 4,
+        "KEPT_THEN_EVICTED": 1,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 246467,
+          "intermediate_v": 97107,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 842895,
+          "intermediate_v": 111179,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 586301,
+          "intermediate_v": 206045,
+          "v_trace_events": [
+            "DISCOVER",
+            "MERGE_DROP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "MERGE_DROP"
+        },
+        {
+          "expanded_u": 474439,
+          "intermediate_v": 244861,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 834872,
+          "intermediate_v": 561706,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7196,
+      "GT_id": 438859,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 118,
+      "native_comparisons": 2127,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        454567,
+        76027,
+        438859
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 4,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 2,
+        "KEPT_THEN_EVICTED": 1,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 454567,
+          "intermediate_v": 76027,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 519009,
+          "intermediate_v": 95206,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 291588,
+          "intermediate_v": 455468,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 291588,
+          "intermediate_v": 790382,
+          "v_trace_events": [
+            "DISCOVER",
+            "MERGE_DROP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "MERGE_DROP"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7196,
+      "GT_id": 438859,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 187,
+      "native_comparisons": 3146,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        438859
+      ],
+      "outgoing_edges_from_expanded_to_target": 3,
+      "directed_2hop_witness_intermediates": 17,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 11,
+        "EXPANDED": 3,
+        "KEPT_THEN_EVICTED": 2,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 438859,
+          "intermediate_v": 3780,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 438859,
+          "intermediate_v": 74577,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 454567,
+          "intermediate_v": 76027,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 438859,
+          "intermediate_v": 88222,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 438859,
+          "intermediate_v": 95206,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "SEEN_SKIP",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7935,
+      "GT_id": 66125,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 123,
+      "native_comparisons": 2809,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        659145,
+        62738,
+        66125
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 6,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 4,
+        "KEPT_THEN_EVICTED": 2
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 659145,
+          "intermediate_v": 62738,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 297974,
+          "intermediate_v": 300526,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 456677,
+          "intermediate_v": 325066,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 683613,
+          "intermediate_v": 683694,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 456677,
+          "intermediate_v": 735033,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7935,
+      "GT_id": 978211,
+      "Q": 100,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 123,
+      "native_comparisons": 2809,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        367033,
+        367999,
+        978211
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 1,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 367033,
+          "intermediate_v": 367999,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7935,
+      "GT_id": 66125,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 178,
+      "native_comparisons": 3865,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        66125
+      ],
+      "outgoing_edges_from_expanded_to_target": 2,
+      "directed_2hop_witness_intermediates": 29,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 24,
+        "EXPANDED": 2,
+        "KEPT_THEN_EVICTED": 2,
+        "MERGE_DROP": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 66125,
+          "intermediate_v": 2462,
+          "v_trace_events": [
+            "DISCOVER",
+            "EXPAND",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "EXPANDED"
+        },
+        {
+          "expanded_u": 66125,
+          "intermediate_v": 3953,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 66125,
+          "intermediate_v": 21590,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 66125,
+          "intermediate_v": 30730,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 66125,
+          "intermediate_v": 62738,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 7935,
+      "GT_id": 978211,
+      "Q": 160,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 178,
+      "native_comparisons": 3865,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        548223,
+        351513,
+        978211
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 548223,
+          "intermediate_v": 351513,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 367033,
+          "intermediate_v": 367999,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 548223,
+          "intermediate_v": 452301,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8083,
+      "GT_id": 823939,
+      "Q": 100,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 121,
+      "native_comparisons": 2405,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        664980,
+        791218,
+        823939
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 2,
+        "KEPT_THEN_EVICTED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 664980,
+          "intermediate_v": 791218,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 442835,
+          "intermediate_v": 853825,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 504049,
+          "intermediate_v": 857371,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8083,
+      "GT_id": 823939,
+      "Q": 160,
+      "Q160_group": "PERSISTENT_5",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 178,
+      "native_comparisons": 3155,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        664980,
+        791218,
+        823939
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 2,
+        "KEPT_THEN_EVICTED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 664980,
+          "intermediate_v": 791218,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 442835,
+          "intermediate_v": 853825,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 504049,
+          "intermediate_v": 857371,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8254,
+      "GT_id": 438741,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 114,
+      "native_comparisons": 2557,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        585879,
+        368812,
+        438741
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 7,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 7
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 585879,
+          "intermediate_v": 368812,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 910749,
+          "intermediate_v": 429502,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 470729,
+          "intermediate_v": 713533,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 969566,
+          "intermediate_v": 730552,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 459667,
+          "intermediate_v": 806770,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8254,
+      "GT_id": 438741,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 180,
+      "native_comparisons": 3838,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        438741
+      ],
+      "outgoing_edges_from_expanded_to_target": 1,
+      "directed_2hop_witness_intermediates": 29,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 28,
+        "EXPANDED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 438741,
+          "intermediate_v": 82233,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 438741,
+          "intermediate_v": 183654,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 438741,
+          "intermediate_v": 256215,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 438741,
+          "intermediate_v": 296755,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 438741,
+          "intermediate_v": 322343,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8748,
+      "GT_id": 593477,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 121,
+      "native_comparisons": 2411,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        219567,
+        397503,
+        593477
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 219567,
+          "intermediate_v": 397503,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 874986,
+          "intermediate_v": 425868,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 843582,
+          "intermediate_v": 753208,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8748,
+      "GT_id": 593477,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 179,
+      "native_comparisons": 3331,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        593477
+      ],
+      "outgoing_edges_from_expanded_to_target": 1,
+      "directed_2hop_witness_intermediates": 21,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 20,
+        "EXPANDED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 593477,
+          "intermediate_v": 1443,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 593477,
+          "intermediate_v": 73076,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 593477,
+          "intermediate_v": 119900,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 593477,
+          "intermediate_v": 134067,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 593477,
+          "intermediate_v": 139921,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8966,
+      "GT_id": 520590,
+      "Q": 100,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": false,
+      "native_visited_count": 120,
+      "native_comparisons": 2408,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [],
+      "shortest_hops_from_expanded_at_most_3": 2,
+      "shortest_path_example": [
+        753214,
+        119461,
+        520590
+      ],
+      "outgoing_edges_from_expanded_to_target": 0,
+      "directed_2hop_witness_intermediates": 3,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 2,
+        "KEPT_THEN_EVICTED": 1
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 753214,
+          "intermediate_v": 119461,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 1738,
+          "intermediate_v": 412585,
+          "v_trace_events": [
+            "BEAM_EVICT",
+            "DISCOVER",
+            "MERGE_KEEP",
+            "SCORE",
+            "STAGE"
+          ],
+          "v_trace_status": "KEPT_THEN_EVICTED"
+        },
+        {
+          "expanded_u": 65253,
+          "intermediate_v": 521216,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    },
+    {
+      "query_id": 8966,
+      "GT_id": 520590,
+      "Q": 160,
+      "Q160_group": "RESCUED_15",
+      "native_top10_contains_GT": true,
+      "native_visited_count": 192,
+      "native_comparisons": 3626,
+      "R46_graph_twohop_Q100": true,
+      "target_trace_node_event_types": [
+        "DISCOVER",
+        "EXPAND",
+        "MERGE_KEEP",
+        "SCORE",
+        "SEEN_SKIP",
+        "STAGE"
+      ],
+      "shortest_hops_from_expanded_at_most_3": 0,
+      "shortest_path_example": [
+        520590
+      ],
+      "outgoing_edges_from_expanded_to_target": 3,
+      "directed_2hop_witness_intermediates": 23,
+      "twohop_witness_status_counts": {
+        "CUTOFF_REJECT": 20,
+        "EXPANDED": 3
+      },
+      "twohop_witness_examples": [
+        {
+          "expanded_u": 520590,
+          "intermediate_v": 83452,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 520590,
+          "intermediate_v": 107660,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 520590,
+          "intermediate_v": 119461,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE",
+            "SEEN_SKIP"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 520590,
+          "intermediate_v": 148985,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        },
+        {
+          "expanded_u": 520590,
+          "intermediate_v": 259853,
+          "v_trace_events": [
+            "CUTOFF_REJECT",
+            "DISCOVER",
+            "SCORE"
+          ],
+          "v_trace_status": "CUTOFF_REJECT"
+        }
+      ],
+      "directed_3hop_last_intermediate_count": 0,
+      "hop3_example_intermediate_status": []
+    }
+  ],
+  "interpretation_limits": [
+    "Shortest directed path means from ANY ALREADY expanded native search vertex; it is not an entry-point-to-target path or original query search trajectory.",
+    "A graph 2-hop/3-hop witness is structural, not proof search would expand a candidate with its Q cutoff or ordering.",
+    "Unknown within <=3 hops does not mean disconnected or impossible to reach by longer paths.",
+    "Q160 rescued group is selected by recovery outcome; direct hop distribution is descriptive/selection-conditioned, not an unbiased causal control.",
+    "No direct target event may indicate search did not score it; it is not proof construction omitted a useful edge.",
+    "Twenty targets were selected via Q100 failures and holdout GT. Do not use their IDs to add/replace graph edges in a proposed training/builder method.",
+    "No new graph, build, or ANN search executed. No novelty or search speedup established."
+  ]
+}

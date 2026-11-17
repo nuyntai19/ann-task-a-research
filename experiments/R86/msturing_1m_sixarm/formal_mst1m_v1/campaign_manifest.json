@@ -1,0 +1,80 @@
+{
+  "arms": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "D0"
+  ],
+  "binary_sha256": {
+    "d0": "7c2aad71a97f9c2b2e6de6026085be43954a7dd0845feffb672f6782c84575ab",
+    "eval": "ea6c757b47b1267b7009ff0a1a80a3fdeaaf59740c4c2036712accf9ba0d0af5",
+    "h17": "5f673586210f93b424fc81791ec7873cb74600843b5004c0a4aaaf32bf936297",
+    "stock": "aa2d174ed063070045f1fbbc8051b1d97b851168b2f3bf53ee32215a867583be"
+  },
+  "build_threads": 4,
+  "campaign": "R86_MSTURING1M_FORMAL_OFF_3X5_V1",
+  "cpu_build": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "cpu_search": 0,
+  "dataset_sha256": {
+    "base": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "gt": "fa5acf5ab262b42355296e99f920e6aa863f48820ca6f70fa37ca7966634c344",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+  },
+  "evaluator_v4_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "highbeam_script_sha256": "0b9eb6a9c3a6a79ae00989d8dd4a7e031132fceda29d2efc66bfa5b8cd61edc8",
+  "note": "3 independent native OFF graph builds/arm, 5 searches/graph/target; quality-floor selected per independent graph. Not exact interpolated matched-Recall; no p95/p99 or NDC. Graphs and logs preserved exclusively.",
+  "pilot_script_sha256": "92a4abb8e66d1b0692a3ff8cee7a4e2ea9bff315036dd05cdb0ab7acda695bff",
+  "query_count": 100000,
+  "reps": [
+    1,
+    2,
+    3
+  ],
+  "script_sha256": "3f6cde145120298411c0be94fd4d983b52aa7eabe1fe77dc410dd255f6ec797e",
+  "search_reps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "search_threads": 1,
+  "start_beams": {
+    "A0": [
+      384,
+      896
+    ],
+    "A1": [
+      384,
+      896
+    ],
+    "A2": [
+      768,
+      2048
+    ],
+    "A3": [
+      832,
+      2176
+    ],
+    "A4": [
+      832,
+      2048
+    ],
+    "D0": [
+      384,
+      896
+    ]
+  },
+  "targets": {
+    "t0990": 0.99,
+    "t0998": 0.998
+  },
+  "version": 1
+}

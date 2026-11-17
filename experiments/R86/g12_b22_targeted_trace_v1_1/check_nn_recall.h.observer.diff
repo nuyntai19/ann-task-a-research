@@ -1,0 +1,21 @@
+--- old/check_nn_recall.h
++++ targeted/check_nn_recall.h
+@@ -162,7 +162,8 @@
+     if (!f) { std::cerr << "G12B2_STEPS_CSV_OPEN_FAILED" << std::endl; std::abort(); }
+     f << std::setprecision(17);
+     f << "query_id,step,node_id,node_dist,frontier_before,neighbors_scanned,hash_accepted,cutoff_reject,enqueued,sort_input,skipped_merge,frontier_after,best_frontier_after\n";
+-    for (size_t i=0; i<std::min<size_t>(128, Query_Points.size()); ++i) {
++    for (size_t i=0; i<Query_Points.size(); ++i) {
++      if (!g12b22_trace_mask[i]) continue;
+       for (const auto &s : g12b2_trace_records[i].steps) {
+         f << i << "," << s.ordinal << "," << s.node_id << ","
+           << s.node_dist << "," << s.frontier_before << "," << s.scanned
+@@ -174,7 +175,7 @@
+     f.close();
+     if (!f) { std::cerr << "R86_G12B2_STEPS_CSV_WRITE_HOLD" << std::endl; std::abort(); }
+   }
+-  std::cout << "R86_G12B2_NATIVE_PER_QUERY_100K_AND_128_STEP_TRACE_WRITTEN" << std::endl;
++  std::cout << "R86_G12B22_NATIVE_PER_QUERY_100K_AND_TARGETED_STEP_TRACE_WRITTEN" << std::endl;
+   if (verbose)
+     std::cout << "search: Q=" << QP.beamSize << ", k=" << QP.k
+               << ", limit=" << QP.limit

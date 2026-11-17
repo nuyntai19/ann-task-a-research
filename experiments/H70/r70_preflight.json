@@ -1,0 +1,4848 @@
+{
+  "protocol": "R70 SOURCE PREFLIGHT ONLY",
+  "root": "/home/tai/ann-task-a",
+  "pinned_expected_commit_prefix": "443a328",
+  "files_examined": 9651,
+  "truncated_at_max_files": false,
+  "git_root_commit": null,
+  "git_status_short": null,
+  "potential_source_files": [
+    {
+      "path": "src/PiPNN/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "42181aed1cef043279340307c5d0f41cca158f356d9dc0b5b5c267309d25fa80",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 80,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 507,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 508,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "src/PiPNN/algorithms/PipNN/pipnn.h",
+      "sha256": "bfb0085fdaa513e959bb600368e3a1124b6d58eedc73309632676d5edb965e02",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 557,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 608,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "src/PiPNN/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "src/ParlayANN/algorithms/utils/graph.h",
+      "sha256": "804e12b44ec86b7303c99c7f4dc92524619f700b5d0408a7538fb46b2c2cf6e7",
+      "matched": [
+        "allocate_graph",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 138,
+          "text": "  void allocate_graph(long maxDeg, size_t n) {"
+        },
+        {
+          "line": 141,
+          "text": "    indexType* ptr = (indexType*) aligned_alloc(1l << 21, num_bytes);"
+        },
+        {
+          "line": 148,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 181,
+          "text": "    allocate_graph(max_deg, n);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H45/ParlayANN-native-trace/algorithms/utils/graph.h",
+      "sha256": "804e12b44ec86b7303c99c7f4dc92524619f700b5d0408a7538fb46b2c2cf6e7",
+      "matched": [
+        "allocate_graph",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 138,
+          "text": "  void allocate_graph(long maxDeg, size_t n) {"
+        },
+        {
+          "line": 141,
+          "text": "    indexType* ptr = (indexType*) aligned_alloc(1l << 21, num_bytes);"
+        },
+        {
+          "line": 148,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 181,
+          "text": "    allocate_graph(max_deg, n);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H32/R22_source_gate/pipnn_r23_patched/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "cb6dc248abee36ce3cb6358cf1b8f12c885060fb904b18cdb55151431c2460b4",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 81,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 490,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 491,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H32/R22_source_gate/pipnn_r23_patched/algorithms/PipNN/pipnn.h",
+      "sha256": "93c1f2379589d1ba84932ba3b7c8b4a8991548d97eb8e0d17b94e9ce4fd87222",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph",
+        "HashPrune"
+      ],
+      "matching_lines": [
+        {
+          "line": 448,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 463,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 534,
+          "text": "    /* GRAFT-DUMP (2026-10-01): read-only export of the HashPrune reservoir"
+        },
+        {
+          "line": 601,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 652,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H32/R22_source_gate/pipnn_r23_patched/algorithms/utils/graph.h",
+      "sha256": "024e15c4112d75bdaf58e9cf4673fa698df6a3b00b7a370b13585cb4c16ac021",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 99,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 182,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 191,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 204,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 237,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 349,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 359,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 368,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 402,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 408,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 411,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 412,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 414,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 420,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 427,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 431,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 435,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 441,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 451,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 453,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 473,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 483,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 484,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 485,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 494,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 530,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 534,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 537,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 538,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 547,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 553,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 558,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 562,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 568,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 574,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 577,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 582,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 589,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 651,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 659,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 663,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 667,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 669,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 672,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 673,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 675,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 680,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 685,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H32/R22_source_gate/pipnn/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "ee2048738ad4462f21bdfea4a1cf7c2ac140f72fbd8875d869bc4f613d93db53",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 79,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 485,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 486,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H32/R22_source_gate/pipnn/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H32/R22_source_gate/pipnn/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase4_quality_gate/PiPNN-search-loader/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "16dac0153e1cd1fdbdb0d46f3c2ac78c7fdc98bb1f10fa2d4c576054fdd8c095",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 89,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 500,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 501,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase4_quality_gate/PiPNN-search-loader/algorithms/PipNN/pipnn.h",
+      "sha256": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 455,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 564,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 615,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase4_quality_gate/PiPNN-search-loader/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase3_top2_e2e/PiPNN-top2/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 89,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 532,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 533,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase3_top2_e2e/PiPNN-top2/algorithms/PipNN/pipnn.h",
+      "sha256": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 455,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 564,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 615,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase3_top2_e2e/PiPNN-top2/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase1_leaf_profile/PiPNN-instrumented/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "16dac0153e1cd1fdbdb0d46f3c2ac78c7fdc98bb1f10fa2d4c576054fdd8c095",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 89,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 500,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 501,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase1_leaf_profile/PiPNN-instrumented/algorithms/PipNN/pipnn.h",
+      "sha256": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 455,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 564,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 615,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H17/phase1_leaf_profile/PiPNN-instrumented/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H19/phase2_perf_scaling/PiPNN-h19-r2-clean-top2/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "3b7d3d103c1ee90aecb1616472818328f4f5411b3f3bbc8564897c6261cc68d5",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 79,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 512,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 513,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H19/phase2_perf_scaling/PiPNN-h19-r2-clean-top2/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H19/phase2_perf_scaling/PiPNN-h19-r2-clean-top2/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H19/phase1_lock_scaling/PiPNN-h19-instrumented/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 89,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 532,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 533,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H19/phase1_lock_scaling/PiPNN-h19-instrumented/algorithms/PipNN/pipnn.h",
+      "sha256": "a388874a68b06ea3c4d0cf3473d1bf1713d951729f314439c4c5625405a239a4",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 455,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 564,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 621,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H19/phase1_lock_scaling/PiPNN-h19-instrumented/algorithms/utils/graph.h",
+      "sha256": "b34c56e308241c0aef5c49dd56f931fce7afa8bb3123155ea1c8f140b1e69be7",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 100,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 183,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 192,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 205,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 238,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 350,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 360,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 369,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 403,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 409,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 412,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 413,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 415,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 421,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 428,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 432,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 436,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 442,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 452,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 454,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 474,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 484,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 485,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 486,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 495,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 531,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 535,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 538,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 539,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 548,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 554,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 559,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 563,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 569,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 575,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 578,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 583,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 590,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 652,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 673,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 677,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 681,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 683,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 686,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 687,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 689,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 692,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 693,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 694,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 699,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase1_leaf_overlap/PiPNN-leaf-audit/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "ee2048738ad4462f21bdfea4a1cf7c2ac140f72fbd8875d869bc4f613d93db53",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 79,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 485,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 486,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase1_leaf_overlap/PiPNN-leaf-audit/algorithms/PipNN/pipnn.h",
+      "sha256": "c31009148a39d95a601c6c7d95d953d11ecb629f58e1f7e550a0e0fcbb36741a",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 461,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 478,
+          "text": "      G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 588,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 639,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase1_leaf_overlap/PiPNN-leaf-audit/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase3_prune_stage_audit/PiPNN-prune-stage-audit/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "e5ac3faf46fd2cefde190b49ea6c7bae8c1580bcd3ddd6d290c6e9e2e47f107c",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 170,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 614,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 615,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase3_prune_stage_audit/PiPNN-prune-stage-audit/algorithms/PipNN/pipnn.h",
+      "sha256": "a067416669aceb3942548bc3339b51f3354655e972f261ec07e25e4cb02f0003",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 438,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 462,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 620,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 671,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase3_prune_stage_audit/PiPNN-prune-stage-audit/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase2_candidate_audit/PiPNN-candidate-audit/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "e5ac3faf46fd2cefde190b49ea6c7bae8c1580bcd3ddd6d290c6e9e2e47f107c",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 170,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 614,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 615,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase2_candidate_audit/PiPNN-candidate-audit/algorithms/PipNN/pipnn.h",
+      "sha256": "bebb8036430b7d47eae30b65168a3c7ad0ac520d37c9a91a680e8d2cd7ed32bc",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 433,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 457,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 566,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 617,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H18/phase2_candidate_audit/PiPNN-candidate-audit/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P3B-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "a9e817320f4809dbfaad789b070e4777173009f249d2f6bf65676790efac1747",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 85,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 631,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 632,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P3B-src/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P3B-src/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "0a53487155159e3c04d18840e5c072ff94aa843d13d7dc9350dc1519034a931e",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 85,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 559,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 560,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-src/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-src/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P1B-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "6263abe8272772cd48d48c0963f63cab90959a3a7cdc7953f26ee5379c2c1132",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 85,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 662,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 663,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P1B-src/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P1B-src/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P3A-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "58053f63656be2a9b36f7259e415e107aa24b78cc7451ce0d41e3fa97640e7f5",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 85,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 638,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 639,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P3A-src/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P3A-src/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P1A-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "cb5441e4a35b5383fe5a2c5ece4713f71a9ec5be8e02d968194ae852ca02ebb4",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 85,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 600,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 601,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P1A-src/algorithms/PipNN/pipnn.h",
+      "sha256": "43d30d9959dbad6c4736e9d6d942cb8a5a7aeab3db389249865cd9f96c7d2ebd",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 447,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 556,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 607,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P1A-src/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P4B-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "0a53487155159e3c04d18840e5c072ff94aa843d13d7dc9350dc1519034a931e",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 85,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 559,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 560,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P4B-src/algorithms/PipNN/pipnn.h",
+      "sha256": "55f23339c3c5a45598b33010983e155d35a384ab02528e3077dd22e7d53f9519",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 448,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 557,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 608,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P4B-src/algorithms/utils/graph.h",
+      "sha256": "b09cf0dae84bec72c09b97d6dc75b3bcb25c2a146ef6a21ef3331508db3eea10",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 106,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 189,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 198,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 211,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 244,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 356,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 366,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 375,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 409,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 415,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 418,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 419,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 421,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 427,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 434,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 438,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 442,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 448,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 458,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 460,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 480,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 490,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 491,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 492,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 501,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 537,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 541,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 544,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 545,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 554,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 560,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 565,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 569,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 575,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 584,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 589,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 596,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 666,
+          "text": "// H26-P4b: low-rate sampled LSHGraph lock wait/hold telemetry."
+        },
+        {
+          "line": 763,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 767,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 771,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 773,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 776,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 777,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 779,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 782,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 783,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 784,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P4A-src/algorithms/PipNN/pipnn_utils.h",
+      "sha256": "68ca1cd520f918ed87f004270c59674aa02233262a70228e1cd78dfa9fc42bef",
+      "matched": [
+        "LSHGraph",
+        "merge_neighbors"
+      ],
+      "matching_lines": [
+        {
+          "line": 87,
+          "text": "  // using GraphH = LSHGraph<indexType, float, sketchHash>;"
+        },
+        {
+          "line": 653,
+          "text": "    G.merge_neighbors(u, span_f);"
+        },
+        {
+          "line": 654,
+          "text": "    G.merge_neighbors(v, span_r);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P4A-src/algorithms/PipNN/pipnn.h",
+      "sha256": "e340158393c4a953230696cb41da4cad340923b775b1ec0f26a0fce8c9093ba3",
+      "matched": [
+        "LSHGraph",
+        "allocate_graph"
+      ],
+      "matching_lines": [
+        {
+          "line": 432,
+          "text": "    //G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 448,
+          "text": "    G.allocate_graph(Points.size());"
+        },
+        {
+          "line": 557,
+          "text": "        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);"
+        },
+        {
+          "line": 608,
+          "text": "    G.allocate_graph(prune_degree, Points.size());"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H26/PiPNN-H26-P4A-src/algorithms/utils/graph.h",
+      "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+      "matched": [
+        "LSHGraph",
+        "LSHCandidate",
+        "merge_neighbors",
+        "allocate_graph",
+        "kMaxDegree",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 98,
+          "text": "  void merge_neighbors(const rangeType& r) {"
+        },
+        {
+          "line": 181,
+          "text": "  void allocate_graph(long _maxDeg, size_t _n) {"
+        },
+        {
+          "line": 190,
+          "text": "      ptr = (indexType*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 203,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 236,
+          "text": "    allocate_graph(max_deg, n);"
+        },
+        {
+          "line": 348,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 358,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 367,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 401,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 407,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 410,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 411,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 413,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 419,
+          "text": "    parlay::parallel_for(0, (kMaxDegree+1)*n, [&] (size_t i) {"
+        },
+        {
+          "line": 426,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 430,
+          "text": "    return tables[i*(kMaxDegree+1)].first;"
+        },
+        {
+          "line": 434,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 440,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 450,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 452,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 472,
+          "text": "      if (current_degree < kMaxDegree && !is_present(ngh)) {"
+        },
+        {
+          "line": 482,
+          "text": "          std::pop_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 483,
+          "text": "          neighbors[kMaxDegree - 1] = ngh;"
+        },
+        {
+          "line": 484,
+          "text": "          std::push_heap(neighbors, neighbors + kMaxDegree, dist_comparator);"
+        },
+        {
+          "line": 493,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 529,
+          "text": "  static constexpr size_t kMaxDegree = 1024;"
+        },
+        {
+          "line": 533,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 536,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 537,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 546,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 552,
+          "text": "    allocate_graph(n);"
+        },
+        {
+          "line": 557,
+          "text": "    return tables[i*(kMaxDegree+1)].point_id;"
+        },
+        {
+          "line": 561,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 567,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 573,
+          "text": "  void merge_neighbors(size_t i, const rangeType& r) {"
+        },
+        {
+          "line": 576,
+          "text": "    size_t offset = i * (kMaxDegree + 1);"
+        },
+        {
+          "line": 581,
+          "text": "    merged_nghs.reserve(kMaxDegree);"
+        },
+        {
+          "line": 588,
+          "text": "    while (merged_nghs.size() < kMaxDegree) {"
+        },
+        {
+          "line": 650,
+          "text": "struct LSHCandidate{"
+        },
+        {
+          "line": 658,
+          "text": "struct LSHGraph {"
+        },
+        {
+          "line": 662,
+          "text": "  using T = LSHCandidate<indexType,distanceType>;"
+        },
+        {
+          "line": 666,
+          "text": "  LSHGraph(){}"
+        },
+        {
+          "line": 668,
+          "text": "  void allocate_graph(size_t n) {"
+        },
+        {
+          "line": 671,
+          "text": "    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));"
+        },
+        {
+          "line": 672,
+          "text": "    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);"
+        },
+        {
+          "line": 674,
+          "text": "    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;"
+        },
+        {
+          "line": 677,
+          "text": "      tables[i*(kMaxDegree+1)].point_id = 0;"
+        },
+        {
+          "line": 678,
+          "text": "      tables[i*(kMaxDegree+1)].norm = Eigen::bfloat16(0);"
+        },
+        {
+          "line": 679,
+          "text": "      tables[i*(kMaxDegree+1)].hash = 0;"
+        },
+        {
+          "line": 684,
+          "text": "  LSHGraph(size_t n,size_t maxdeg, sketchHash &H, bool allocate=true) : n(n), H(H), kMaxDegree(maxdeg) {"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H47/ParlayANN-native-decision-trace/algorithms/utils/graph.h",
+      "sha256": "804e12b44ec86b7303c99c7f4dc92524619f700b5d0408a7538fb46b2c2cf6e7",
+      "matched": [
+        "allocate_graph",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 138,
+          "text": "  void allocate_graph(long maxDeg, size_t n) {"
+        },
+        {
+          "line": 141,
+          "text": "    indexType* ptr = (indexType*) aligned_alloc(1l << 21, num_bytes);"
+        },
+        {
+          "line": 148,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 181,
+          "text": "    allocate_graph(max_deg, n);"
+        }
+      ]
+    },
+    {
+      "path": "experiments/H47/R6_v2/ParlayANN-native-trace-r6/algorithms/utils/graph.h",
+      "sha256": "804e12b44ec86b7303c99c7f4dc92524619f700b5d0408a7538fb46b2c2cf6e7",
+      "matched": [
+        "allocate_graph",
+        "aligned_alloc"
+      ],
+      "matching_lines": [
+        {
+          "line": 138,
+          "text": "  void allocate_graph(long maxDeg, size_t n) {"
+        },
+        {
+          "line": 141,
+          "text": "    indexType* ptr = (indexType*) aligned_alloc(1l << 21, num_bytes);"
+        },
+        {
+          "line": 148,
+          "text": "    allocate_graph(maxDeg, n);"
+        },
+        {
+          "line": 181,
+          "text": "    allocate_graph(max_deg, n);"
+        }
+      ]
+    }
+  ],
+  "likely_graph_source_files": 36,
+  "checklist": {
+    "pinned_source_verified": false,
+    "native_semantic_parity_tested": false,
+    "native_rss_measured": false,
+    "native_build_executed": false
+  },
+  "warnings": [
+    "A file matching tokens is not proof it is PiPNN pinned 443a328.",
+    "Do not edit stock sources. Verify commit and source file before building R70 worktree.",
+    "R57 BF16/hash ordering caveat: parity requires exactly same ordered per-source candidate stream."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "study": "H26_P0_PIPNN_PHASE_DIAGNOSIS_NOT_PARETO",
+  "caution": "worker-stage time sums are NOT overall BUILD wall; total process wall includes graph writing; stock/top2 comparison is a reimplementation, not independently verified user H17 binary",
+  "records": [
+    {
+      "file": "r1_stock.log",
+      "selector": "stock",
+      "total_process_wall_s_includes_graph_output": 48.03,
+      "max_rss_kb": 1975668,
+      "dist_worker_s": 59.574177852,
+      "select_worker_s": 65.650109721,
+      "merge_worker_s": 13.744761856,
+      "instrumented_worker_sum_s": 138.969049429,
+      "dist_share_of_instrumented_worker": 0.4286866615032634,
+      "select_share_of_instrumented_worker": 0.4724081368530983,
+      "merge_share_of_instrumented_worker": 0.09890520164363843,
+      "leaf_count": 85529,
+      "rows": 29995085,
+      "directed_proposals": 59990170,
+      "top2_checks_in_timed_run": 0
+    },
+    {
+      "file": "r1_top2.log",
+      "selector": "top2",
+      "total_process_wall_s_includes_graph_output": 41.9,
+      "max_rss_kb": 1972884,
+      "dist_worker_s": 61.518316751,
+      "select_worker_s": 38.625168716,
+      "merge_worker_s": 13.913796738,
+      "instrumented_worker_sum_s": 114.05728220499999,
+      "dist_share_of_instrumented_worker": 0.5393633406101201,
+      "select_share_of_instrumented_worker": 0.33864710756983796,
+      "merge_share_of_instrumented_worker": 0.121989551820042,
+      "leaf_count": 85529,
+      "rows": 29995085,
+      "directed_proposals": 59990170,
+      "top2_checks_in_timed_run": 0
+    },
+    {
+      "file": "r2_stock.log",
+      "selector": "stock",
+      "total_process_wall_s_includes_graph_output": 52.02,
+      "max_rss_kb": 1976740,
+      "dist_worker_s": 64.315866383,
+      "select_worker_s": 72.771400854,
+      "merge_worker_s": 14.345291126,
+      "instrumented_worker_sum_s": 151.432558363,
+      "dist_share_of_instrumented_worker": 0.42471623723630164,
+      "select_share_of_instrumented_worker": 0.48055320230118015,
+      "merge_share_of_instrumented_worker": 0.09473056046251828,
+      "leaf_count": 85529,
+      "rows": 29995085,
+      "directed_proposals": 59990170,
+      "top2_checks_in_timed_run": 0
+    },
+    {
+      "file": "r2_top2.log",
+      "selector": "top2",
+      "total_process_wall_s_includes_graph_output": 42.17,
+      "max_rss_kb": 1975648,
+      "dist_worker_s": 61.728318085,
+      "select_worker_s": 38.891346026,
+      "merge_worker_s": 13.924960203,
+      "instrumented_worker_sum_s": 114.544624314,
+      "dist_share_of_instrumented_worker": 0.5389019210171295,
+      "select_share_of_instrumented_worker": 0.3395300849683487,
+      "merge_share_of_instrumented_worker": 0.12156799401452179,
+      "leaf_count": 85529,
+      "rows": 29995085,
+      "directed_proposals": 59990170,
+      "top2_checks_in_timed_run": 0
+    }
+  ],
+  "summary_by_mode": {
+    "stock": {
+      "n_builds": 2,
+      "medians": {
+        "total_process_wall_s_includes_graph_output": 50.025000000000006,
+        "dist_worker_s": 61.9450221175,
+        "select_worker_s": 69.2107552875,
+        "merge_worker_s": 14.045026491,
+        "instrumented_worker_sum_s": 145.200803896,
+        "dist_share_of_instrumented_worker": 0.4267014493697825,
+        "select_share_of_instrumented_worker": 0.4764806695771392,
+        "merge_share_of_instrumented_worker": 0.09681788105307836,
+        "max_rss_kb": 1976204.0
+      },
+      "leaf_counts": [
+        85529
+      ],
+      "rows": [
+        29995085
+      ],
+      "directed_proposals": [
+        59990170
+      ]
+    },
+    "top2": {
+      "n_builds": 2,
+      "medians": {
+        "total_process_wall_s_includes_graph_output": 42.035,
+        "dist_worker_s": 61.623317418,
+        "select_worker_s": 38.758257371,
+        "merge_worker_s": 13.9193784705,
+        "instrumented_worker_sum_s": 114.3009532595,
+        "dist_share_of_instrumented_worker": 0.5391326308136248,
+        "select_share_of_instrumented_worker": 0.3390885962690933,
+        "merge_share_of_instrumented_worker": 0.1217787729172819,
+        "max_rss_kb": 1974266.0
+      },
+      "leaf_counts": [
+        85529
+      ],
+      "rows": [
+        29995085
+      ],
+      "directed_proposals": [
+        59990170
+      ]
+    }
+  },
+  "top2_minus_stock_percent_of_medians": {
+    "total_process_wall_s_includes_graph_output": -15.97201399300352,
+    "dist_worker_s": -0.5193390663252639,
+    "select_worker_s": -43.99966130986576,
+    "merge_worker_s": -0.8946086401511177,
+    "instrumented_worker_sum_s": -21.280771047680968,
+    "dist_share_of_instrumented_worker": 26.34891013609113,
+    "select_share_of_instrumented_worker": -28.834763313688416,
+    "merge_share_of_instrumented_worker": 25.78128295383708,
+    "max_rss_kb": -0.09806679877178981
+  },
+  "hypotheses_not_proved": [
+    "quality equivalence of independent native builds",
+    "novelty",
+    "Pareto",
+    "parallel overhead costs of any new design",
+    "CPU cycle-level stage attribution",
+    "statistical significance with few builds"
+  ]
+}

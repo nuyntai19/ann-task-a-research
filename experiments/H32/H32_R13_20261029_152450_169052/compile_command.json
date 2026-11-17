@@ -1,0 +1,11 @@
+[
+  "/usr/bin/g++",
+  "-std=c++17",
+  "-O3",
+  "-pthread",
+  "-I/home/tai/ann-task-a/src/ParlayANN",
+  "-I/home/tai/ann-task-a/src/ParlayANN/parlaylib/include",
+  "/home/tai/ann-task-a/experiments/H32/R13_kit/h32_r13_native_capture.cpp",
+  "-o",
+  "/home/tai/ann-task-a/experiments/H32/H32_R13_20261029_152450_169052/h32_r13_native_capture"
+]

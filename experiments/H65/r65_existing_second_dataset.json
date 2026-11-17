@@ -1,0 +1,2784 @@
+{
+  "audit": "R65_EXISTING_SECOND_DATASET_PROVENANCE_INVENTORY",
+  "created_utc": "2026-11-03T18:03:02.337778+00:00",
+  "root": "/home/tai/ann-task-a",
+  "read_only": true,
+  "data_candidates": {
+    "BIGANN1M_U8": {
+      "status": "FORMAT_PASS",
+      "n": 1000000,
+      "dimension": 128,
+      "bytes": 128000008,
+      "expected_bytes": 128000008,
+      "path": "data/bigann1m_u8.u8bin",
+      "expected_n": 1000000,
+      "expected_dimension": 128,
+      "role": "DATA_ONLY_NOT_SEARCH_PROVENANCE"
+    },
+    "BIGANN1M_FLOAT": {
+      "status": "FORMAT_PASS",
+      "n": 1000000,
+      "dimension": 128,
+      "bytes": 512000008,
+      "expected_bytes": 512000008,
+      "path": "data/bigann1m_prefix.fbin",
+      "expected_n": 1000000,
+      "expected_dimension": 128,
+      "role": "DATA_ONLY_NOT_SEARCH_PROVENANCE"
+    },
+    "BIGANN10M_U8": {
+      "status": "FORMAT_PASS",
+      "n": 10000000,
+      "dimension": 128,
+      "bytes": 1280000008,
+      "expected_bytes": 1280000008,
+      "path": "data/bigann10m_u8.u8bin",
+      "expected_n": 10000000,
+      "expected_dimension": 128,
+      "role": "DATA_ONLY_NOT_SEARCH_PROVENANCE"
+    },
+    "SIFT10M_FLOAT": {
+      "status": "FORMAT_PASS",
+      "n": 10000000,
+      "dimension": 128,
+      "bytes": 5120000008,
+      "expected_bytes": 5120000008,
+      "path": "data/sift10m.fbin",
+      "expected_n": 10000000,
+      "expected_dimension": 128,
+      "role": "DATA_ONLY_NOT_SEARCH_PROVENANCE"
+    }
+  },
+  "pinned_R26A_control": {
+    "status": "PASS",
+    "path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/nodump.graph",
+    "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef"
+  },
+  "scan": {
+    "scanned_entries": 17841,
+    "entry_cap": 18000,
+    "truncated": false,
+    "max_depth": 7,
+    "scan_roots": [
+      "results",
+      "logs",
+      "experiments"
+    ],
+    "errors": []
+  },
+  "graph_file_count_discovered": 57,
+  "graph_file_count_inspected": 57,
+  "graph_file_count_omitted_by_cap": 0,
+  "graph_candidates": [
+    {
+      "path": "experiments/G0/results/g03/oracle_geometry_b100000_s20261023.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/oracle_geometry_b500000_s20261024.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/oracle_lowdegree_b100000_s20261023.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/oracle_lowdegree_b500000_s20261024.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/oracle_random_b100000_s20261023.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/oracle_random_b500000_s20261024.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/random_2hop_b100000_s20261023.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/G0/results/g03/random_2hop_b500000_s20261024.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H17/phase3_top2_e2e/A_rep1.graph",
+      "bytes": 95161404,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22790349,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H17/phase3_top2_e2e/B_rep1.graph",
+      "bytes": 95205672,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22801416,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H18/phase2_candidate_audit/r1_same_run.graph",
+      "bytes": 95217468,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22804365,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H18/phase3_prune_stage_audit/postprune_final.graph",
+      "bytes": 95203540,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22800883,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H18/phase3_prune_stage_audit/preprune_hashgraph.graph",
+      "bytes": 151995136,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 80,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 36998782,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H21/phase3_matched_degree_nearest/nearest_only_matched_degree.graph",
+      "bytes": 95203540,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22800883,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H24/r0f_common_search_sift1m_seed42/high.graph",
+      "bytes": 106204032,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 79,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 25551006,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H24/r0f_common_search_sift1m_seed42/low.graph",
+      "bytes": 100853756,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 79,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 24213437,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H24/r1a_row_transplant_sift1m_seed42/hindsight_p10.graph",
+      "bytes": 103092556,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 77,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 24773137,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H24/r1a_row_transplant_sift1m_seed42/hindsight_p5.graph",
+      "bytes": 102198212,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 79,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 24549551,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H24/r1a_row_transplant_sift1m_seed42/random_p10.graph",
+      "bytes": 101390928,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 79,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 24347730,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H24/r1a_row_transplant_sift1m_seed42/random_p5.graph",
+      "bytes": 101120764,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 79,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 24280189,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H25/r1_native_build_sift1m_seed42/baseline.graph",
+      "bytes": 95154620,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788653,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H25/r1_native_build_sift1m_seed42/nearest.graph",
+      "bytes": 95201388,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22800345,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H25/r1_native_build_sift1m_seed42/random.graph",
+      "bytes": 95208380,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22802093,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_stock.graph",
+      "bytes": 95174232,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22793556,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_top2.graph",
+      "bytes": 95176264,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22794064,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H26/H26_profile_20261026_222107_gcgcqF/r2_stock.graph",
+      "bytes": 95174232,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22793556,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H26/H26_profile_20261026_222107_gcgcqF/r2_top2.graph",
+      "bytes": 95176232,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22794056,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H26/preflight/validate_top2.graph",
+      "bytes": 95176284,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22794069,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R24_synthetic_20261029_165515_118691/t1_dump.graph",
+      "bytes": 41564,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 16,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 8341,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R24_synthetic_20261029_165515_118691/t4_dump.graph",
+      "bytes": 41564,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 16,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 8341,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R24_synthetic_20261029_165515_118691/t4_nodump.graph",
+      "bytes": 41564,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 16,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 8341,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R25_pool_ending_20261029_170450_123214/fg_nospine.graph",
+      "bytes": 48672,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 16,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 10118,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R25_pool_ending_20261029_170450_123214/fg_spine.graph",
+      "bytes": 51316,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 24,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 10779,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R25b_factorial_20261029_171019_125852/graft_nospine.graph",
+      "bytes": 45856,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 16,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 9414,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R25b_factorial_20261029_171019_125852/graft_spine.graph",
+      "bytes": 48512,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 2048,
+      "header_max_degree": 24,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 10078,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.graph",
+      "bytes": 95190528,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22797630,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/nodump.graph",
+      "bytes": 95190528,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22797630,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "experiments/H32/H32_R26b_sift1m_20261029_173518_137022/fg_vamana_style_nospine.graph",
+      "bytes": 117472708,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 28368175,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift100k.graph",
+      "bytes": 6966984,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 100000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 1641744,
+      "dataset_name_hint": "sift100k",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift100k_1t.graph",
+      "bytes": 6971364,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 100000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 1642839,
+      "dataset_name_hint": "sift100k",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_4t.graph",
+      "bytes": 95155312,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22788826,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_4t_rep2.graph",
+      "bytes": 95181624,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22795404,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_4t_rep3.graph",
+      "bytes": 95168588,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22792145,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_8t_rep2.graph",
+      "bytes": 95041884,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22760469,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_8t_rep3.graph",
+      "bytes": 95123904,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22780974,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_buildonly_1t.graph",
+      "bytes": 95174716,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22793677,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_buildonly_2t.graph",
+      "bytes": 95085032,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22771256,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_buildonly_4t.graph",
+      "bytes": 95150448,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22787610,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_sift1m_buildonly_8t.graph",
+      "bytes": 95203620,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 22800903,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_static_f15_4t.graph",
+      "bytes": 4722280,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 100000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 1080568,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_static_f60_4t.graph",
+      "bytes": 8776232,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 100000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 2094056,
+      "dataset_name_hint": null,
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_static_sift1m_f15_4t.graph",
+      "bytes": 74382240,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 17595558,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/pipnn_static_sift1m_f60_4t.graph",
+      "bytes": 109601856,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 26400462,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/vamana_sift100k.graph",
+      "bytes": 10854996,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 100000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 2613747,
+      "dataset_name_hint": "sift100k",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/vamana_sift1m.graph",
+      "bytes": 114573392,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 27643346,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/vamana_sift1m_2t.graph",
+      "bytes": 114573392,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 27643346,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "path": "results/vamana_sift1m_8t.graph",
+      "bytes": 114573392,
+      "format": "PARLAYANN_GRAPH_POSSIBLE",
+      "header_n": 1000000,
+      "header_max_degree": 32,
+      "status": "HEADER_AND_LENGTH_PASS",
+      "directed_edges": 27643346,
+      "dataset_name_hint": "sift1m",
+      "dataset_name_hint_is_provenance": false,
+      "eligible_as_verified_second_experiment": false
+    }
+  ],
+  "log_file_count_discovered": 923,
+  "log_file_count_inspected": 90,
+  "log_file_count_omitted_by_cap": 833,
+  "log_candidates": [
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1682,
+      "sampled_bytes": 1682,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "bigann10m"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H18/phase1_leaf_overlap/bigann10m_u8.partition.log",
+      "dataset_name_hint": "bigann10m",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 5783,
+      "sampled_bytes": 5783,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "bigann10m",
+        "bigann1m"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H18/phase1_leaf_overlap/bigann10m_u8_overlap_summary.json",
+      "dataset_name_hint": "bigann10m",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1675,
+      "sampled_bytes": 1675,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "bigann1m"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H18/phase1_leaf_overlap/bigann1m.partition.log",
+      "dataset_name_hint": "bigann1m",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 5282,
+      "sampled_bytes": 5282,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "bigann1m"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H18/phase1_leaf_overlap/bigann1m_overlap_summary.json",
+      "dataset_name_hint": "bigann1m",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1665,
+      "sampled_bytes": 1665,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "bigann1m"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H18/phase1_leaf_overlap/bigann1m_u8.partition.log",
+      "dataset_name_hint": "bigann1m",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 5753,
+      "sampled_bytes": 5753,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "bigann10m",
+        "bigann1m"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H18/phase1_leaf_overlap/bigann1m_u8_overlap_summary.json",
+      "dataset_name_hint": "bigann1m",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 4007,
+      "sampled_bytes": 4007,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/box/p1_deep10m.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 850,
+      "sampled_bytes": 850,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/box/p3_deep100m_graft.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 566,
+      "sampled_bytes": 566,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/box/p3_deep100m_hnsw.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 858,
+      "sampled_bytes": 858,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/box/p7_deep100m_h200.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 875,
+      "sampled_bytes": 875,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/box/p8_deep100m_h400p64.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1106,
+      "sampled_bytes": 1106,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/diagnostics/lambda_gist.txt",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1115,
+      "sampled_bytes": 1115,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/diagnostics/lambda_glove.txt",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1483,
+      "sampled_bytes": 1483,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": true,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e1/pipnn_glove.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1083,
+      "sampled_bytes": 1083,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": true,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e1/vamana_glove.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 852,
+      "sampled_bytes": 852,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e11_gist_profile.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 535,
+      "sampled_bytes": 535,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e12_hnsw_gist.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1616,
+      "sampled_bytes": 1616,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e4/cand0_glove.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1647,
+      "sampled_bytes": 1647,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e9_gist.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 978,
+      "sampled_bytes": 978,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e9_gist_pipnn.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1004,
+      "sampled_bytes": 1004,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/e9_gist_vamana.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 10931,
+      "sampled_bytes": 10931,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/funnel_census/glove.json",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 7192,
+      "sampled_bytes": 7192,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": true,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/paired_wallclock/graft-build-paired-glove100-d0-s1.json",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 9314,
+      "sampled_bytes": 9314,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/paired_wallclock/paired-glove-s1.json",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2945,
+      "sampled_bytes": 2945,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H24/vendor/graft-ann/results/paired_wallclock/run-glove.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2404,
+      "sampled_bytes": 2404,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_margin_A.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2856,
+      "sampled_bytes": 2856,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_margin_A_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2406,
+      "sampled_bytes": 2406,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_margin_B.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2987,
+      "sampled_bytes": 2987,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_margin_B_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2404,
+      "sampled_bytes": 2404,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_oracle_A.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2996,
+      "sampled_bytes": 2996,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_oracle_A_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2405,
+      "sampled_bytes": 2405,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_oracle_B.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2865,
+      "sampled_bytes": 2865,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_oracle_B_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2402,
+      "sampled_bytes": 2402,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_pilot_A.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2850,
+      "sampled_bytes": 2850,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_pilot_A_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2401,
+      "sampled_bytes": 2401,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_pilot_B.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2861,
+      "sampled_bytes": 2861,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_am_pilot_B_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2308,
+      "sampled_bytes": 2308,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_hsp1000.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2318,
+      "sampled_bytes": 2318,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_hsp10000.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2854,
+      "sampled_bytes": 2854,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_hsp10000_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2853,
+      "sampled_bytes": 2853,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_hsp1000_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2319,
+      "sampled_bytes": 2319,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_hsp30000.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2850,
+      "sampled_bytes": 2850,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_hsp30000_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 670,
+      "sampled_bytes": 670,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_policies.txt",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1572,
+      "sampled_bytes": 1572,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_prep.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2188,
+      "sampled_bytes": 2188,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_sp0.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2970,
+      "sampled_bytes": 2970,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_sp0_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2196,
+      "sampled_bytes": 2196,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_sp1.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2994,
+      "sampled_bytes": 2994,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/gist_sp1_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2477,
+      "sampled_bytes": 2477,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_margin_A.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2746,
+      "sampled_bytes": 2746,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_margin_A_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2477,
+      "sampled_bytes": 2477,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_margin_B.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2754,
+      "sampled_bytes": 2754,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_margin_B_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2477,
+      "sampled_bytes": 2477,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_oracle_A.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2748,
+      "sampled_bytes": 2748,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_oracle_A_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2477,
+      "sampled_bytes": 2477,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_oracle_B.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2750,
+      "sampled_bytes": 2750,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_oracle_B_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2474,
+      "sampled_bytes": 2474,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_pilot_A.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2746,
+      "sampled_bytes": 2746,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_pilot_A_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2473,
+      "sampled_bytes": 2473,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_pilot_B.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2745,
+      "sampled_bytes": 2745,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_am_pilot_B_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2382,
+      "sampled_bytes": 2382,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_hsp1000.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2391,
+      "sampled_bytes": 2391,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_hsp10000.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2748,
+      "sampled_bytes": 2748,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_hsp10000_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2745,
+      "sampled_bytes": 2745,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_hsp1000_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2394,
+      "sampled_bytes": 2394,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_hsp30000.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2747,
+      "sampled_bytes": 2747,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_hsp30000_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 670,
+      "sampled_bytes": 670,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_policies.txt",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1578,
+      "sampled_bytes": 1578,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_prep.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2261,
+      "sampled_bytes": 2261,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_sp0.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2742,
+      "sampled_bytes": 2742,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_sp0_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2267,
+      "sampled_bytes": 2267,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_sp1.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2748,
+      "sampled_bytes": 2748,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/adaptive/glove_sp1_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 960,
+      "sampled_bytes": 960,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_a0.02_kb32_cands.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2202,
+      "sampled_bytes": 2202,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_ceiling.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2857,
+      "sampled_bytes": 2857,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_ceiling_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2318,
+      "sampled_bytes": 2318,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_count_kb32_cap200.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2991,
+      "sampled_bytes": 2991,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_count_kb32_cap200_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 1986,
+      "sampled_bytes": 1986,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_j2_k10_cands.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2307,
+      "sampled_bytes": 2307,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_pair_k10_cap200.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2999,
+      "sampled_bytes": 2999,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_pair_k10_cap200_parlay.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 376,
+      "sampled_bytes": 376,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/gist_sig.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2274,
+      "sampled_bytes": 2274,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": true,
+        "peak_rss": true,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "glove"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/glove_ceiling.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 2893,
+      "sampled_bytes": 2893,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/capped/glove_ceiling_parlay.log",
+      "dataset_name_hint": "glove",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 944,
+      "sampled_bytes": 944,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/deep/fg_dense_deep10m_L2400.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 944,
+      "sampled_bytes": 944,
+      "hints": {
+        "graph_path": true,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/deep/fg_dense_deep10m_L800.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 827,
+      "sampled_bytes": 827,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/deep/fg_dense_gist.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 775,
+      "sampled_bytes": 775,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": true,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "deep"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/deep/fg_graft_T8ef400_deep10m.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 82,
+      "sampled_bytes": 82,
+      "hints": {
+        "graph_path": false,
+        "data_path": false,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/deep/make_fbin.log",
+      "dataset_name_hint": "deep",
+      "eligible_as_verified_second_experiment": false
+    },
+    {
+      "status": "TEXT_SAMPLE_ONLY",
+      "bytes": 328,
+      "sampled_bytes": 328,
+      "hints": {
+        "graph_path": false,
+        "data_path": true,
+        "heldout_gt_path": false,
+        "build_wall": false,
+        "peak_rss": false,
+        "query_recall": false,
+        "query_comparisons": false,
+        "source_commit": false,
+        "graph_sha": false
+      },
+      "dataset_in_text": [
+        "gist"
+      ],
+      "note": "These are only keyword matches in bounded text, NOT per-run or graph provenance joins.",
+      "path": "experiments/H32/R22_source_gate/experiments/results/deep/make_gist.log",
+      "dataset_name_hint": "gist",
+      "eligible_as_verified_second_experiment": false
+    }
+  ],
+  "dataset_name_graph_hints": {},
+  "scientific_gates": {
+    "R65_BOUNDED_FILE_INVENTORY": "COMPLETED",
+    "SECOND_INDEPENDENT_DATASET_GRAPH_SEARCH_BUILD_PARITY": "BLOCKED_NOT_PROVEN_BY_FILENAME_OR_HEADER",
+    "PIPNN_HUBNESS_LID_QUALITY_FAILURE": "UNMEASURED",
+    "H33": "NOT_OPEN"
+  },
+  "limits": [
+    "Searched only results/, logs/, experiments/ with bounded depth/entry caps.",
+    "Name hints and graph n,degree,bytes DO NOT prove which base dataset produced a graph.",
+    "Does not search all files or reconstruct BUILD source/seed/config, GT, graph hash and search logs in one run.",
+    "Graph degree/payload ID integrity beyond header/length and SHA are not checked here.",
+    "Does not read all alternate datasets or calculate LID/hubness, Recall, latency or graph reachability.",
+    "No second-dataset native ANN record is promoted to PASS without a manually verified same-build and same-graph provenance chain."
+  ]
+}

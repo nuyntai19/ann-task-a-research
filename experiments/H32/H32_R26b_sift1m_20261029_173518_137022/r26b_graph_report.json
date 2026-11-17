@@ -1,0 +1,24 @@
+{
+  "status": "R26B_GRAPH_INTEGRITY_PASS",
+  "pipnn": {
+    "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+    "vertices": 1000000,
+    "header_maxdeg": 32,
+    "arcs": 22797630,
+    "bytes": 95190528,
+    "mean_degree": 22.79763,
+    "isolated_vertices": 0
+  },
+  "fg": {
+    "sha256": "e0842613d7fc24e4b3b1f3ec60aff2ce4f5e054b3bcc51812a06c83355b64389",
+    "vertices": 1000000,
+    "header_maxdeg": 32,
+    "arcs": 28368175,
+    "bytes": 117472708,
+    "mean_degree": 28.368175,
+    "isolated_vertices": 0
+  },
+  "extra_arcs_percent": 24.43475484074442,
+  "graph_budget_within_5pct": false,
+  "caveat": "Same pruning cap 32 does not equal same number of arcs. Qualitative search comparison only if graph budget unmatched."
+}

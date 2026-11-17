@@ -1,0 +1,361 @@
+{
+  "H18_leaf_membership_source_not_R26a_build": {
+    "bigann10m_u8": {
+      "bytes": 1203961464,
+      "leaf_header": {
+        "base_n": 10000000,
+        "magic": "H18LEAF1",
+        "num_leaves": 990624
+      },
+      "relative_path": "experiments/H18/phase1_leaf_overlap/bigann10m_u8.leaves.bin",
+      "sha256": "NOT_COMPUTED_LARGE_FILE",
+      "status": "HEADER_PASS_NOT_FULL_CONTENT_CHECK"
+    },
+    "bigann1m": {
+      "bytes": 120319632,
+      "leaf_header": {
+        "base_n": 1000000,
+        "magic": "H18LEAF1",
+        "num_leaves": 80591
+      },
+      "relative_path": "experiments/H18/phase1_leaf_overlap/bigann1m.leaves.bin",
+      "sha256": "8b389297a6c7d786f2882e4fb93f2cf00f46fd596a45909dfa80d07e94917c47",
+      "status": "HEADER_PASS_NOT_FULL_CONTENT_CHECK"
+    },
+    "bigann1m_u8": {
+      "bytes": 120319632,
+      "leaf_header": {
+        "base_n": 1000000,
+        "magic": "H18LEAF1",
+        "num_leaves": 80591
+      },
+      "relative_path": "experiments/H18/phase1_leaf_overlap/bigann1m_u8.leaves.bin",
+      "sha256": "8b389297a6c7d786f2882e4fb93f2cf00f46fd596a45909dfa80d07e94917c47",
+      "status": "HEADER_PASS_NOT_FULL_CONTENT_CHECK"
+    },
+    "sift1m": {
+      "bytes": 120322480,
+      "leaf_header": {
+        "base_n": 1000000,
+        "magic": "H18LEAF1",
+        "num_leaves": 85529
+      },
+      "relative_path": "experiments/H18/phase1_leaf_overlap/sift1m.leaves.bin",
+      "sha256": "f14c60fd723c870aa09c2e91f642ff6ae9c2f597dd13d406b93dad42d354d56a",
+      "status": "HEADER_PASS_NOT_FULL_CONTENT_CHECK"
+    }
+  },
+  "R26a_known_source_graph": {
+    "dump_build_log": {
+      "bytes": 1207,
+      "expected_sha256": "f0736533770f4fb569c81cbea608863a0c7baa407db804b5514bee3f855e5c72",
+      "relative_path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.time.log",
+      "sha256": "f0736533770f4fb569c81cbea608863a0c7baa407db804b5514bee3f855e5c72",
+      "sha_match": true,
+      "status": "PASS"
+    },
+    "dump_graph": {
+      "bytes": 95190528,
+      "expected_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+      "graph_header": {
+        "max_degree": 32,
+        "n": 1000000
+      },
+      "relative_path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.graph",
+      "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+      "sha_match": true,
+      "status": "PASS"
+    },
+    "nodump_build_log": {
+      "bytes": 1208,
+      "expected_sha256": "971ae489fff5aa5659f5833c377e709ec96775e8e01633eb3a2e50c01471ca2f",
+      "relative_path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/nodump.time.log",
+      "sha256": "971ae489fff5aa5659f5833c377e709ec96775e8e01633eb3a2e50c01471ca2f",
+      "sha_match": true,
+      "status": "PASS"
+    },
+    "nodump_graph": {
+      "bytes": 95190528,
+      "expected_sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+      "graph_header": {
+        "max_degree": 32,
+        "n": 1000000
+      },
+      "relative_path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/nodump.graph",
+      "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+      "sha_match": true,
+      "status": "PASS"
+    },
+    "pool_export": {
+      "bytes": 640000000,
+      "expected_sha256": "7e22a4ca2b71bd560560f7e4aa2a1f2dcad46b8f25ae48ca8ea014c17086f9e8",
+      "relative_path": "experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.candidates.i32",
+      "sha256": "NOT_COMPUTED_LARGE_FILE",
+      "sha_match": "UNVERIFIED",
+      "status": "SIZE_ONLY_SHA_UNVERIFIED"
+    }
+  },
+  "audit": "R64_READONLY_DATASET_EVIDENCE_INVENTORY",
+  "bounded_data_discovery": [
+    {
+      "bytes": 1280000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 1280000008,
+        "expected_payload_only_bytes": 1280000008,
+        "header_d": 128,
+        "header_n": 10000000,
+        "kind": "u8bin",
+        "status": "PASS"
+      },
+      "path": "data/bigann10m_u8.u8bin"
+    },
+    {
+      "bytes": 512000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 512000008,
+        "expected_payload_only_bytes": 512000008,
+        "header_d": 128,
+        "header_n": 1000000,
+        "kind": "fbin",
+        "status": "PASS"
+      },
+      "path": "data/bigann1m_prefix.fbin"
+    },
+    {
+      "bytes": 128000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 128000008,
+        "expected_payload_only_bytes": 128000008,
+        "header_d": 128,
+        "header_n": 1000000,
+        "kind": "u8bin",
+        "status": "PASS"
+      },
+      "path": "data/bigann1m_u8.u8bin"
+    },
+    {
+      "bytes": 1280000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 1280000008,
+        "expected_payload_only_bytes": 128000000008,
+        "header_d": 128,
+        "header_n": 1000000000,
+        "kind": "u8bin",
+        "reason": "matrix header/size mismatch",
+        "status": "INVALID"
+      },
+      "path": "data/bigann_first10m.u8bin"
+    },
+    {
+      "bytes": 525128288,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "path": "data/sift-128-euclidean.hdf5"
+    },
+    {
+      "bytes": 51200008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 51200008,
+        "expected_payload_only_bytes": 51200008,
+        "header_d": 128,
+        "header_n": 100000,
+        "kind": "fbin",
+        "status": "PASS"
+      },
+      "path": "data/sift100k.fbin"
+    },
+    {
+      "bytes": 240008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 240008,
+        "expected_ids_and_float_distances_bytes": 240008,
+        "expected_payload_only_bytes": 120008,
+        "header_d": 100,
+        "header_n": 300,
+        "kind": "ibin",
+        "layout": "ids_plus_float32_distances",
+        "status": "PASS"
+      },
+      "path": "data/sift100k_gt300.ibin"
+    },
+    {
+      "bytes": 153608,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 153608,
+        "expected_payload_only_bytes": 153608,
+        "header_d": 128,
+        "header_n": 300,
+        "kind": "fbin",
+        "status": "PASS"
+      },
+      "path": "data/sift100k_queries_300.fbin"
+    },
+    {
+      "bytes": 5120000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 5120000008,
+        "expected_payload_only_bytes": 5120000008,
+        "header_d": 128,
+        "header_n": 10000000,
+        "kind": "fbin",
+        "status": "PASS"
+      },
+      "path": "data/sift10m.fbin"
+    },
+    {
+      "bytes": 512000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 512000008,
+        "expected_payload_only_bytes": 512000008,
+        "header_d": 128,
+        "header_n": 1000000,
+        "kind": "fbin",
+        "status": "PASS"
+      },
+      "path": "data/sift1m.fbin"
+    },
+    {
+      "bytes": 8000008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 8000008,
+        "expected_ids_and_float_distances_bytes": 8000008,
+        "expected_payload_only_bytes": 4000008,
+        "header_d": 100,
+        "header_n": 10000,
+        "kind": "ibin",
+        "layout": "ids_plus_float32_distances",
+        "status": "PASS"
+      },
+      "path": "data/sift1m_gt.ibin"
+    },
+    {
+      "bytes": 5120008,
+      "classification": "DISCOVERED_ONLY_UNMATCHED_PROVENANCE",
+      "matrix": {
+        "actual_bytes": 5120008,
+        "expected_payload_only_bytes": 5120008,
+        "header_d": 128,
+        "header_n": 10000,
+        "kind": "fbin",
+        "status": "PASS"
+      },
+      "path": "data/sift1m_queries.fbin"
+    }
+  ],
+  "bounded_discovery_stats": {
+    "entry_limit": 4000,
+    "max_depth": 3,
+    "note": "Only regular files, no symlink recursion; not a global filesystem inventory.",
+    "result_limit": 300,
+    "scanned_entries": 12,
+    "scoped_root": "data/",
+    "truncated": false
+  },
+  "caveat": "SIFT graph/BUILD and R47 query evidence originate from historical separated processes; this inventory does not parse all search logs and does not prove same-protocol multi-dataset Pareto. Alternate dataset graph/search/build provenance requires a separate verified manifest, not a filename match.",
+  "created_utc": "2026-11-03T17:50:15.903659+00:00",
+  "gates": {
+    "H33": "NOT_OPEN",
+    "HUBNESS_LID_CONSTRUCTION_FAILURE": "UNMEASURED",
+    "MULTI_DATASET_GRAPH_SEARCH_BUILD_PARITY": "BLOCKED_NOT_PROVEN_BY_THIS_INVENTORY",
+    "R26A_BUILD_LOG_SHA": "PASS",
+    "R26A_GRAPH_SHA_PROVENANCE": "PASS",
+    "SIFT1M_INPUTS": "PASS"
+  },
+  "historical_report_presence_only": {
+    "R47_search_q_sensitivity": {
+      "bytes": 32850,
+      "relative_path": "experiments/H47/r47_r5_q_sensitivity.json",
+      "sha256": "ba1b2878ea0c880b51b33c555abc530502d12063b1ddd046ff35db2c4ce2b01f",
+      "status": "PRESENT_UNVERIFIED"
+    },
+    "R54_build_provenance_report": {
+      "bytes": 2996,
+      "relative_path": "experiments/H54/r54_archival_build_gate.json",
+      "sha256": "a5a72c8854b9a14e247f7c86f68d4af2840610337ddd17b963860a066ba6553d",
+      "status": "PRESENT_UNVERIFIED"
+    },
+    "R59_occupancy": {
+      "bytes": 2309,
+      "relative_path": "experiments/H59/r59_reservoir_occupancy.json",
+      "sha256": "3d0bda0d28263356b65b4c4890236ae62966509f3b03b14a9ee36ed8909ca25d",
+      "status": "PRESENT_UNVERIFIED"
+    }
+  },
+  "known_historical_facts_from_google_doc_not_live_recomputed": {
+    "H18_BIGANN10M_evidence": "LEAF_MEMBERSHIP_ONLY_NO_ANN_BUILD_OR_SEARCH",
+    "H18_BIGANN1M_evidence": "LEAF_MEMBERSHIP_ONLY_NO_ANN_BUILD_OR_SEARCH",
+    "R26a_nodump_peak_rss_KiB": 2599924,
+    "R26a_nodump_wall_seconds": 47.58,
+    "R47_fixed_graph_Q100_recall_at_10": 0.99096,
+    "R47_fixed_graph_Q160_recall_at_10": 0.99667,
+    "SIFT1M_R26a_arcs": 22797630,
+    "SIFT1M_R26a_bytes": 95190528
+  },
+  "not_done": [
+    "NO_BUILD",
+    "NO_SEARCH",
+    "NO_GRAPH_MODIFICATION",
+    "NO_FULL_FILESYSTEM_WALK",
+    "NO_NEW_HUBNESS_OR_LID_MEASUREMENT",
+    "NO_AUTOMATIC_CROSS_RUN_ARTIFACT_JOINS"
+  ],
+  "root": "/home/tai/ann-task-a",
+  "scope": "ONLY_PREVIOUSLY_PINNED_R26A_AND_BOUNDED_DATA_DISCOVERY",
+  "verified_inputs": {
+    "SIFT1M": {
+      "base": {
+        "bytes": 512000008,
+        "matrix": {
+          "actual_bytes": 512000008,
+          "expected_payload_only_bytes": 512000008,
+          "header_d": 128,
+          "header_n": 1000000,
+          "kind": "fbin",
+          "status": "PASS"
+        },
+        "relative_path": "data/sift1m.fbin",
+        "sha256": "NOT_COMPUTED_LARGE_FILE",
+        "status": "PASS"
+      },
+      "gt": {
+        "bytes": 8000008,
+        "matrix": {
+          "actual_bytes": 8000008,
+          "expected_ids_and_float_distances_bytes": 8000008,
+          "expected_payload_only_bytes": 4000008,
+          "header_d": 100,
+          "header_n": 10000,
+          "kind": "ibin",
+          "layout": "ids_plus_float32_distances",
+          "status": "PASS"
+        },
+        "relative_path": "data/sift1m_gt.ibin",
+        "sha256": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13",
+        "status": "PASS"
+      },
+      "queries": {
+        "bytes": 5120008,
+        "matrix": {
+          "actual_bytes": 5120008,
+          "expected_payload_only_bytes": 5120008,
+          "header_d": 128,
+          "header_n": 10000,
+          "kind": "fbin",
+          "status": "PASS"
+        },
+        "relative_path": "data/sift1m_queries.fbin",
+        "sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+        "status": "PASS"
+      }
+    }
+  }
+}

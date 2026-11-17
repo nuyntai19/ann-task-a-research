@@ -1,0 +1,16 @@
+12 Nov 2026 — R86 v1.2 patch tests in assistant's isolated container
+
+PASS: source SHA check against user-provided H70 snapshot (four files).
+PASS: patch --dry-run against H70 snapshot.
+PASS: fresh staging into a temporary separate directory; no modifications to H70/R85.
+PASS: G0 exact source OFF projection byte identity on pipnn.h, pipnn_utils.h, graph.h.
+PASS: g++17 header unit test ON and OFF, including measured-zero vs not-measured.
+PASS: synthetic C++ merge_neighbors ON/OFF state parity (305 merge attempts) and branch identities.
+PASS: unsupported occupancy graph type fails explicitly (ON only).
+PASS: JSONL occupancy after pass 1 / pre-prune pass 0, optional per-node u32le degrees.
+PASS: Python syntax of scripts/tests and shell syntax of build helpers.
+NOT RUN: native PiPNN 4-binary compile (requires user's Ubuntu/CMake dependencies).
+NOT RUN: native 10K / BIGANN1M gate and matching Recall/G1/G2/G3.
+
+The R85 historical logs in the sheet are NOT R86 measurement results.
+PASS: standalone synthetic v1.2 verify_event_stream.py fixture with JSONL pass1/pre-prune occupancy, stock Top-2 Q writes, per-node degrees, legacy comparison line: 54/54 checks.

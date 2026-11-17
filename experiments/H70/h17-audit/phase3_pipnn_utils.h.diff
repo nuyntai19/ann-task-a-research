@@ -1,0 +1,138 @@
+--- /home/tai/ann-task-a/experiments/H70/h17-audit/baseline_pipnn_utils.h	2026-11-04 21:24:47.593270443 +0700
++++ /home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/PiPNN-top2/algorithms/PipNN/pipnn_utils.h	2026-10-23 19:27:42.836036641 +0700
+@@ -26,6 +26,8 @@
+ 
+ #include <algorithm>
+ #include <atomic>
++#include <chrono>
++#include <cstdint>
+ #include <type_traits>
+ #include <Eigen/Dense>
+ #include <cfloat>
+@@ -59,6 +61,14 @@
+ namespace parlayANN {
+ 
+ std::atomic<size_t> dist_traversed(0);
++// H17 instrumentation: sum of wall elapsed time inside EACH leaf call.
++// Concurrent leaves run simultaneously: these are leaf-seconds, not build wall seconds.
++std::atomic<uint64_t> h17_matrix_ns{0};
++std::atomic<uint64_t> h17_selection_ns{0};
++std::atomic<uint64_t> h17_merge_ns{0};
++std::atomic<uint64_t> h17_leaf_calls{0};
++std::atomic<uint64_t> h17_pair_count{0};
++std::atomic<uint64_t> h17_directed_candidates{0};
+ 
+ //using GraphH = NghDistGraphHeap<uint32_t>;
+ 
+@@ -436,8 +446,11 @@
+ 
+ template<typename GraphH, typename PR>
+ void eigen_knn(GraphH &G, parlay::sequence<uint32_t> &active_indices, PR &Points, size_t MST_DEG) {
++  using H17Clock = std::chrono::steady_clock;
++  const auto h17_t0 = H17Clock::now();
+   auto N = active_indices.size();
+   eigen_build_distmat(active_indices, Points);
++  const auto h17_t1 = H17Clock::now();
+   float* dist_mat = (float*)get_dist_mat();
+ 
+   using indexType = uint32_t;
+@@ -446,29 +459,63 @@
+   std::vector<std::tuple<uint32_t, uint32_t, float>> directed_edges;
+   directed_edges.reserve(N * MST_DEG);
+ 
+-  std::vector<double> Q;
+-  Q.reserve(N);
+-
+-  for (size_t i = 0; i < N; ++i) {
+-    Q.clear();
+-    for (indexType j = 0; j < N; ++j) {
+-      if (i == j) continue;
+-      float dist_ij = (i < j) ? dist_mat[j * N + i] : dist_mat[i * N + j];
+-      double packed = packFloatAndInt(dist_ij, j);
+-      Q.push_back(packed);
++  // H17.4: replace ONLY k=2 candidate selection, using packed-double
++  // comparisons to preserve the original distance/ID tie-breaking rule.
++  // For MST_DEG != 2, use exactly the original Highway algorithm.
++  if (MST_DEG == 2) {
++    for (size_t i = 0; i < N; ++i) {
++      double first = std::numeric_limits<double>::infinity();
++      double second = std::numeric_limits<double>::infinity();
++      size_t count = 0;
++      for (indexType j = 0; j < N; ++j) {
++        if (i == j) continue;
++        float dist_ij = (i < j) ? dist_mat[j * N + i] : dist_mat[i * N + j];
++        double d = packFloatAndInt(dist_ij, j);
++        if (count == 0 || d < first) {
++          second = first;
++          first = d;
++        } else if (count == 1 || d < second) {
++          second = d;
++        }
++        if (count < 2) ++count;
++      }
++      const uint32_t global_i = active_indices[i];
++      if (count > 0) {
++        auto p = unpackDouble(first);
++        directed_edges.emplace_back(global_i, active_indices[p.second], p.first);
++      }
++      if (count > 1) {
++        auto p = unpackDouble(second);
++        directed_edges.emplace_back(global_i, active_indices[p.second], p.first);
++      }
+     }
+-    size_t limit = std::min(MST_DEG, Q.size());
+-    VQPartialSort(Q.data(), Q.data() + Q.size(), limit);
+-    
+-    uint32_t global_i = active_indices[i];
+-    for (size_t j = 0; j < limit; j++) {
+-      auto unpacked = unpackDouble(Q[j]);
+-      uint32_t global_neighbor = active_indices[unpacked.second];
+-      float dist = unpacked.first;
+-      directed_edges.emplace_back(global_i, global_neighbor, dist);
++  } else {
++    std::vector<double> Q;
++    Q.reserve(N);
++
++    for (size_t i = 0; i < N; ++i) {
++      Q.clear();
++      for (indexType j = 0; j < N; ++j) {
++        if (i == j) continue;
++        float dist_ij = (i < j) ? dist_mat[j * N + i] : dist_mat[i * N + j];
++        double packed = packFloatAndInt(dist_ij, j);
++        Q.push_back(packed);
++      }
++      size_t limit = std::min(MST_DEG, Q.size());
++      VQPartialSort(Q.data(), Q.data() + Q.size(), limit);
++
++      uint32_t global_i = active_indices[i];
++      for (size_t j = 0; j < limit; j++) {
++        auto unpacked = unpackDouble(Q[j]);
++        uint32_t global_neighbor = active_indices[unpacked.second];
++        float dist = unpacked.first;
++        directed_edges.emplace_back(global_i, global_neighbor, dist);
++      }
+     }
+   }
+ 
++  // H17: selection phase ends after constructing candidate edge vector.
++  const auto h17_t2 = H17Clock::now();
+   // the problem with this approach is that we only merge one neighbor at a time.
+   for (const auto& edge : directed_edges) {
+     uint32_t u = std::get<0>(edge);
+@@ -485,6 +532,16 @@
+     G.merge_neighbors(u, span_f);
+     G.merge_neighbors(v, span_r);
+   }
++  const auto h17_t3 = H17Clock::now();
++  auto h17_ns = [](const H17Clock::time_point& a, const H17Clock::time_point& b) -> uint64_t {
++    return static_cast<uint64_t>(std::chrono::duration_cast<std::chrono::nanoseconds>(b-a).count());
++  };
++  h17_matrix_ns.fetch_add(h17_ns(h17_t0, h17_t1), std::memory_order_relaxed);
++  h17_selection_ns.fetch_add(h17_ns(h17_t1, h17_t2), std::memory_order_relaxed);
++  h17_merge_ns.fetch_add(h17_ns(h17_t2, h17_t3), std::memory_order_relaxed);
++  h17_leaf_calls.fetch_add(1, std::memory_order_relaxed);
++  h17_pair_count.fetch_add(static_cast<uint64_t>(N) * (N - 1) / 2, std::memory_order_relaxed);
++  h17_directed_candidates.fetch_add(directed_edges.size(), std::memory_order_relaxed);
+ }
+ 
+ 

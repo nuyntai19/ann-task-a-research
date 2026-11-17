@@ -1,0 +1,66 @@
+{
+  "checks": {
+    "original_sha256": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "instrumented_sha256": "27cc00e808b5fae9326f1cb89be34e538364910187161cb3cc1e4437f6e877a0",
+    "patch_manifest_sha256": "2b6e4352dd5e307a4a81a2656577ac016c6fd0ae706bde3867b5b8cf80ea681f"
+  },
+  "omitted_dangling_symlinks": [
+    {
+      "path": "data_tools/parlay",
+      "target": "../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "rangeSearch/bench/parlay",
+      "target": "../../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "rangeSearch/vamanaRange/parlay",
+      "target": "../../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "python/parlay",
+      "target": "../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "algorithms/bench/parlay",
+      "target": "../../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "algorithms/vamanaRange/parlay",
+      "target": "../../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "algorithms/HCNNG/parlay",
+      "target": "../../parlaylib/include/parlay",
+      "reason": "dangling"
+    },
+    {
+      "path": "algorithms/pyNNDescent/parlay",
+      "target": "../../parlaylib/include/parlay",
+      "reason": "dangling"
+    }
+  ],
+  "preserved_in_tree_symlinks": [
+    {
+      "path": "data_tools/utils",
+      "target": "../algorithms/utils"
+    },
+    {
+      "path": "rangeSearch/utils",
+      "target": "../algorithms/utils"
+    }
+  ],
+  "source": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328",
+  "patch": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/patch_v1",
+  "staged_source": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/isolation_v2/source",
+  "cmake_build": "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/isolation_v2/cmake-build",
+  "variant": "H17_FLAT",
+  "created_at_utc": "2026-11-11T15:34:51.844780+00:00",
+  "scope": "STAGING_AND_OPTIONAL_COMPILATION_ONLY_NO_NATIVE_BUILD"
+}

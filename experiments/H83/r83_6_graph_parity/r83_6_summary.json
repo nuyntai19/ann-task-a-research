@@ -1,0 +1,112 @@
+{
+  "experiment": "R83.6",
+  "source_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "base": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "base_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "sample": "/home/tai/ann-task-a/experiments/H83/r83_6_graph_parity/sift8k_prefix.fbin",
+  "sample_sha256": "b11f72a0bb36ce195ec06bc28e02a722098b8bd13ecb35ca8af2ff65fe85fbed",
+  "n": 8192,
+  "dim": 128,
+  "threads": 1,
+  "binary_sha256": {
+    "D0": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+    "E": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f"
+  },
+  "status": "R83_6_1T_EXACT_GRAPH_PARITY_PASS",
+  "runs": {
+    "D0_r1": {
+      "arm": "D0",
+      "name": "D0_r1",
+      "exit_code": 0,
+      "python_elapsed_s": 1.87026,
+      "binary_sha256": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+      "n": 8192,
+      "max_degree": 64,
+      "arcs": 93229,
+      "graph_sha256": "9546734326e6045d6fe777d6d1725a76161bad65ba373f2b78b4efeda9a4b1ae",
+      "graph_bytes": 405692,
+      "self_edges": 0,
+      "repeated_neighbours": 0,
+      "gnu_wall_s": 1.83,
+      "peakRSS_KiB": 58288
+    },
+    "E_r1": {
+      "arm": "E",
+      "name": "E_r1",
+      "exit_code": 0,
+      "python_elapsed_s": 1.82585,
+      "binary_sha256": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f",
+      "n": 8192,
+      "max_degree": 64,
+      "arcs": 93229,
+      "graph_sha256": "9546734326e6045d6fe777d6d1725a76161bad65ba373f2b78b4efeda9a4b1ae",
+      "graph_bytes": 405692,
+      "self_edges": 0,
+      "repeated_neighbours": 0,
+      "gnu_wall_s": 1.8,
+      "peakRSS_KiB": 57708
+    },
+    "E_r2": {
+      "arm": "E",
+      "name": "E_r2",
+      "exit_code": 0,
+      "python_elapsed_s": 1.46733,
+      "binary_sha256": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f",
+      "n": 8192,
+      "max_degree": 64,
+      "arcs": 93229,
+      "graph_sha256": "9546734326e6045d6fe777d6d1725a76161bad65ba373f2b78b4efeda9a4b1ae",
+      "graph_bytes": 405692,
+      "self_edges": 0,
+      "repeated_neighbours": 0,
+      "gnu_wall_s": 1.43,
+      "peakRSS_KiB": 58096
+    },
+    "D0_r2": {
+      "arm": "D0",
+      "name": "D0_r2",
+      "exit_code": 0,
+      "python_elapsed_s": 1.56794,
+      "binary_sha256": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+      "n": 8192,
+      "max_degree": 64,
+      "arcs": 93229,
+      "graph_sha256": "9546734326e6045d6fe777d6d1725a76161bad65ba373f2b78b4efeda9a4b1ae",
+      "graph_bytes": 405692,
+      "self_edges": 0,
+      "repeated_neighbours": 0,
+      "gnu_wall_s": 1.53,
+      "peakRSS_KiB": 58204
+    }
+  },
+  "comparisons": {
+    "D0_REPEAT": {
+      "different_degree_rows": 0,
+      "different_ordered_adjacency_rows": 0,
+      "different_unordered_adjacency_rows": 0,
+      "examples": [],
+      "byte_identical": true
+    },
+    "E_REPEAT": {
+      "different_degree_rows": 0,
+      "different_ordered_adjacency_rows": 0,
+      "different_unordered_adjacency_rows": 0,
+      "examples": [],
+      "byte_identical": true
+    },
+    "D0_E_R1": {
+      "different_degree_rows": 0,
+      "different_ordered_adjacency_rows": 0,
+      "different_unordered_adjacency_rows": 0,
+      "examples": [],
+      "byte_identical": true
+    },
+    "D0_E_R2": {
+      "different_degree_rows": 0,
+      "different_ordered_adjacency_rows": 0,
+      "different_unordered_adjacency_rows": 0,
+      "examples": [],
+      "byte_identical": true
+    }
+  }
+}

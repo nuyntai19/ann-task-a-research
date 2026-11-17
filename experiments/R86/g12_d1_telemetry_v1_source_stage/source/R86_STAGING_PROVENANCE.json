@@ -1,0 +1,22 @@
+{
+  "source": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328",
+  "staged": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+  "patch_sha256": "70c9088092f58c16be6835cddad6710003216723164bd74fff81510c909e0a8c",
+  "baseline_sha256": {
+    "algorithms/PipNN/pipnn.h": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+    "algorithms/PipNN/pipnn_utils.h": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+    "algorithms/PipNN/neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "algorithms/utils/graph.h": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e"
+  },
+  "omitted_dangling_symlinks": [
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/data_tools/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/rangeSearch/bench/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/rangeSearch/vamanaRange/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/python/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/bench/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/vamanaRange/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/HCNNG/parlay",
+    "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/pyNNDescent/parlay"
+  ],
+  "note": "No edits made to original H70/R85; G0 source OFF parity checked."
+}

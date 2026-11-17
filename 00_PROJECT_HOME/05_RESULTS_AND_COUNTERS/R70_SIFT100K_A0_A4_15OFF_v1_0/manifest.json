@@ -1,0 +1,138 @@
+{
+  "campaign": "R70_SIFT100K_A0_A4_15OFF",
+  "date_utc": "2026-11-13T10:33:01Z",
+  "search_reps": 3,
+  "beams": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "k": 10,
+  "queries": 300,
+  "cpu": 0,
+  "threads": 1,
+  "input_sha256": {
+    "base": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "query": "9e9328e3f0488840d3f12efcc3b0f6af940dd398fb7b6d178d72bd1e1c0f9d74",
+    "gt": "e038aff5970977d0ee925b4357295bd81817b99b35e11bbab783fd64e0715e7f",
+    "evaluator": "f3999051c6cc96434ea26d2faedd3ac632ed8d20be342e15c92fd4b905a33fe9"
+  },
+  "graphs": [
+    {
+      "arm_id": "A0",
+      "build_rep": 1,
+      "run_id": "stock_C160_K1024_N2_off_r1",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/stock_C160_K1024_N2_off_r1/stock_C160_K1024_N2_off_r1.graph",
+      "graph_sha256": "f1727131d7427c4132ed48468c026f97f09e0b5fe7d94a56d26f4a46c0885978"
+    },
+    {
+      "arm_id": "A0",
+      "build_rep": 2,
+      "run_id": "stock_C160_K1024_N2_off_r2",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/stock_C160_K1024_N2_off_r2/stock_C160_K1024_N2_off_r2.graph",
+      "graph_sha256": "02c1ff2104309a59e7bb51016966a2e847aa1913e39c99f8010b8acca787d909"
+    },
+    {
+      "arm_id": "A0",
+      "build_rep": 3,
+      "run_id": "stock_C160_K1024_N2_off_r3",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/stock_C160_K1024_N2_off_r3/stock_C160_K1024_N2_off_r3.graph",
+      "graph_sha256": "57252481ace67e1fb9e6c55c223e3e01b707cb5898744519c4b136cd4e5d7877"
+    },
+    {
+      "arm_id": "A1",
+      "build_rep": 1,
+      "run_id": "h17_C160_K1024_N2_off_r1",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C160_K1024_N2_off_r1/h17_C160_K1024_N2_off_r1.graph",
+      "graph_sha256": "18809c747d38ee1dfa26053bb6b3650dd0adf26f798ef47a0f6250e81530d841"
+    },
+    {
+      "arm_id": "A1",
+      "build_rep": 2,
+      "run_id": "h17_C160_K1024_N2_off_r2",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C160_K1024_N2_off_r2/h17_C160_K1024_N2_off_r2.graph",
+      "graph_sha256": "5bae9f4eff8b05eb5f0ed521d2044ce80601cfd620741a01da13fcdfbbc67f92"
+    },
+    {
+      "arm_id": "A1",
+      "build_rep": 3,
+      "run_id": "h17_C160_K1024_N2_off_r3",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C160_K1024_N2_off_r3/h17_C160_K1024_N2_off_r3.graph",
+      "graph_sha256": "a40f45b31954ac483133b807ce7e1591e5d76fd34fa6638ebc28ce29c53948f6"
+    },
+    {
+      "arm_id": "A2",
+      "build_rep": 1,
+      "run_id": "h17_C64_K1024_N2_off_r1",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K1024_N2_off_r1/h17_C64_K1024_N2_off_r1.graph",
+      "graph_sha256": "3ae4f18205c2841f0045e94d006dc6dda15357554f789610bafcb8b6e58cb4d1"
+    },
+    {
+      "arm_id": "A2",
+      "build_rep": 2,
+      "run_id": "h17_C64_K1024_N2_off_r2",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K1024_N2_off_r2/h17_C64_K1024_N2_off_r2.graph",
+      "graph_sha256": "2606931d8c07234a157b5d151381e9b46b067c6e91ed016847869d2d2b85ce2b"
+    },
+    {
+      "arm_id": "A2",
+      "build_rep": 3,
+      "run_id": "h17_C64_K1024_N2_off_r3",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K1024_N2_off_r3/h17_C64_K1024_N2_off_r3.graph",
+      "graph_sha256": "5f4853c48efeeacfe2dd447169975c2bef6a8b804d4bebddabc49062a7402d45"
+    },
+    {
+      "arm_id": "A3",
+      "build_rep": 1,
+      "run_id": "h17_C64_K512_N2_off_r1",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K512_N2_off_r1/h17_C64_K512_N2_off_r1.graph",
+      "graph_sha256": "2311777f6c807410bac87669c297a8ff247960d4f8583bb63c29eaea0458c1c4"
+    },
+    {
+      "arm_id": "A3",
+      "build_rep": 2,
+      "run_id": "h17_C64_K512_N2_off_r2",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K512_N2_off_r2/h17_C64_K512_N2_off_r2.graph",
+      "graph_sha256": "13c117fcecdb02b9b55f53280da3621ee68cc6f9dea5095e71e54bb247e0f731"
+    },
+    {
+      "arm_id": "A3",
+      "build_rep": 3,
+      "run_id": "h17_C64_K512_N2_off_r3",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K512_N2_off_r3/h17_C64_K512_N2_off_r3.graph",
+      "graph_sha256": "096ad8491d70c8357d8540b76b086ae16f89c59cde7048d00b5c2f1a50678691"
+    },
+    {
+      "arm_id": "A4",
+      "build_rep": 1,
+      "run_id": "h17_C64_K512_N1_off_r1",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K512_N1_off_r1/h17_C64_K512_N1_off_r1.graph",
+      "graph_sha256": "aa7234e667ddfb3f681fccaa78ec8eeb7304f76e0d25cfd45ee640c9ddbe4b5b"
+    },
+    {
+      "arm_id": "A4",
+      "build_rep": 2,
+      "run_id": "h17_C64_K512_N1_off_r2",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K512_N1_off_r2/h17_C64_K512_N1_off_r2.graph",
+      "graph_sha256": "5872d07e3b4d737f20227cc0496ba2608ed1ca4ea35d7640184c4bab6a86b0f9"
+    },
+    {
+      "arm_id": "A4",
+      "build_rep": 3,
+      "run_id": "h17_C64_K512_N1_off_r3",
+      "graph_path": "/home/tai/ann-task-a/00_PROJECT_HOME/04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS/h17_C64_K512_N1_off_r3/h17_C64_K512_N1_off_r3.graph",
+      "graph_sha256": "d4f312f54f1cb0e1a0bc28f3899b358986ee5d4053e67cc57b48486abf300202"
+    }
+  ],
+  "evaluator": "/home/tai/ann-task-a/experiments/H70/build-r70/algorithms/PipNN/r70_graph_recall",
+  "limitations": [
+    "single logical CPU; 300 queries each process",
+    "QPS inverse is throughput-equivalent time, not measured per-query P95/P99",
+    "five coarse beams; not an exactly matched-Recall latency sweep",
+    "ANN distance calculations measured at search differ from build W_P/W_L",
+    "build repetitions and repeated searches are distinct independent axes",
+    "not a full graph connectivity audit"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "argv": [
+    "/home/tai/ann-task-a/experiments/H84/r84_5_matched_native_binary/W/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "-base_path",
+    "/home/tai/ann-task-a/experiments/H84/r84_6_workspace_graph_parity_1t/sift8k_prefix.fbin",
+    "-graph_outfile",
+    "/home/tai/ann-task-a/experiments/H84/r84_6_workspace_graph_parity_1t/W_r2/graph.bin",
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-fanout",
+    "30",
+    "-fanout_scheme",
+    "10,3,1",
+    "-top_level_leaders",
+    "100",
+    "-mst_deg",
+    "2",
+    "-alpha",
+    "1.2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-table_size",
+    "160",
+    "-hash_bits",
+    "12",
+    "-k",
+    "0"
+  ],
+  "env_thread_vars": {
+    "PARLAY_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "affinity": [
+    0
+  ]
+}

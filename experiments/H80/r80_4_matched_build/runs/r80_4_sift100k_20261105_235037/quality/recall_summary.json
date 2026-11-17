@@ -1,0 +1,266 @@
+{
+  "evaluator_sha256": "f3999051c6cc96434ea26d2faedd3ac632ed8d20be342e15c92fd4b905a33fe9",
+  "query_sha256": "9e9328e3f0488840d3f12efcc3b0f6af940dd398fb7b6d178d72bd1e1c0f9d74",
+  "gt_sha256": "e038aff5970977d0ee925b4357295bd81817b99b35e11bbab783fd64e0715e7f",
+  "rows": [
+    {
+      "variant": "D0",
+      "rep": 1,
+      "key": "r1_D0",
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.79166669,
+          "qps": 50821.6171875,
+          "avg_cmps": 370.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.90833336,
+          "qps": 38915.5546875,
+          "avg_cmps": 541.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.97600001,
+          "qps": 35352.34375,
+          "avg_cmps": 866.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99599999,
+          "qps": 19973.36914062,
+          "avg_cmps": 1432.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 0.99966669,
+          "qps": 11852.55371094,
+          "avg_cmps": 2201.0,
+          "avg_visited": 151.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/quality/r1_D0.recall.log"
+    },
+    {
+      "variant": "E",
+      "rep": 1,
+      "key": "r1_E",
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.79900002,
+          "qps": 48348.10546875,
+          "avg_cmps": 367.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.90766668,
+          "qps": 45392.6484375,
+          "avg_cmps": 539.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.97600001,
+          "qps": 35022.18359375,
+          "avg_cmps": 865.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99533331,
+          "qps": 16225.86425781,
+          "avg_cmps": 1427.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 0.99966669,
+          "qps": 9825.75683594,
+          "avg_cmps": 2191.0,
+          "avg_visited": 150.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/quality/r1_E.recall.log"
+    },
+    {
+      "variant": "E",
+      "rep": 2,
+      "key": "r2_E",
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.79166669,
+          "qps": 45194.3359375,
+          "avg_cmps": 370.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.90833336,
+          "qps": 45808.5234375,
+          "avg_cmps": 541.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.97600001,
+          "qps": 29949.0859375,
+          "avg_cmps": 866.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99599999,
+          "qps": 19214.7578125,
+          "avg_cmps": 1432.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 0.99966669,
+          "qps": 11020.09277344,
+          "avg_cmps": 2201.0,
+          "avg_visited": 151.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/quality/r2_E.recall.log"
+    },
+    {
+      "variant": "D0",
+      "rep": 2,
+      "key": "r2_D0",
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.79166669,
+          "qps": 47095.76171875,
+          "avg_cmps": 370.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.90833336,
+          "qps": 40106.94921875,
+          "avg_cmps": 541.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.97600001,
+          "qps": 33564.55859375,
+          "avg_cmps": 866.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99599999,
+          "qps": 17070.67382812,
+          "avg_cmps": 1432.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 0.99966669,
+          "qps": 11851.14941406,
+          "avg_cmps": 2201.0,
+          "avg_visited": 151.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/quality/r2_D0.recall.log"
+    },
+    {
+      "variant": "D0",
+      "rep": 3,
+      "key": "r3_D0",
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.79333335,
+          "qps": 46627.29296875,
+          "avg_cmps": 367.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.90799999,
+          "qps": 45296.6953125,
+          "avg_cmps": 540.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.97566664,
+          "qps": 24683.23242188,
+          "avg_cmps": 865.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99566668,
+          "qps": 16601.18554688,
+          "avg_cmps": 1428.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 0.99966669,
+          "qps": 8587.37597656,
+          "avg_cmps": 2192.0,
+          "avg_visited": 150.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/quality/r3_D0.recall.log"
+    },
+    {
+      "variant": "E",
+      "rep": 3,
+      "key": "r3_E",
+      "beams": [
+        {
+          "beam": 10.0,
+          "recall": 0.79166669,
+          "qps": 48123.1953125,
+          "avg_cmps": 370.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20.0,
+          "recall": 0.90833336,
+          "qps": 43930.296875,
+          "avg_cmps": 541.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40.0,
+          "recall": 0.97600001,
+          "qps": 34670.0546875,
+          "avg_cmps": 866.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 80.0,
+          "recall": 0.99599999,
+          "qps": 19127.7734375,
+          "avg_cmps": 1433.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160.0,
+          "recall": 0.99966669,
+          "qps": 11332.30078125,
+          "avg_cmps": 2201.0,
+          "avg_visited": 151.0
+        }
+      ],
+      "log": "/home/tai/ann-task-a/experiments/H80/r80_4_matched_build/runs/r80_4_sift100k_20261105_235037/quality/r3_E.recall.log"
+    }
+  ],
+  "note": "search-only evaluator, reported QPS not an isolated build-time measure"
+}

@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-13T15:08:40.519749+00:00",
+  "graph_sha_pinned_pass": 15,
+  "graphs_total": 15,
+  "phase_pass": 15,
+  "copied_occupancy": 5,
+  "issues": [],
+  "model_note": "M_model = 8*n*(C+1) is a theoretical flat-slot capacity, not allocations/RSS",
+  "timing_note": "Candidate values from native printed lines; verify time units, phase scope, and whether pass timings are wall-clock before importing.",
+  "graph_note": "graph_bytes is serialized native saved graph file size, not in-memory index allocations"
+}

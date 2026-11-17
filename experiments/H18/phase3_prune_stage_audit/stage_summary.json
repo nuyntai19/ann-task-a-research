@@ -1,0 +1,205 @@
+{
+  "status": "STAGE_DIAGNOSTIC_COMPLETE_NO_NOVELTY_CLAIM",
+  "date_utc": "2026-10-23T18:00:34.887649+00:00",
+  "scope": "SIFT1M, f30, 4 pinned CPU, exact same BUILD; R1 candidate logging enabled",
+  "source_revision": "443a328",
+  "baseline_note": "A new stochastic BUILD; previously orphaned ID 568552 need not recur.",
+  "files": {
+    "before_final_prune_graph": "/home/tai/ann-task-a/experiments/H18/phase3_prune_stage_audit/preprune_hashgraph.graph",
+    "after_final_prune_graph": "/home/tai/ann-task-a/experiments/H18/phase3_prune_stage_audit/postprune_final.graph",
+    "candidate_log": "/home/tai/ann-task-a/experiments/H18/phase3_prune_stage_audit/same_build_proposals.bin"
+  },
+  "graph_states": {
+    "after_merge_before_prune": {
+      "edges": 36998782,
+      "max_degree": 80,
+      "reachable_from_0": 1000000,
+      "unreachable_count": 0,
+      "unreachable_nodes_first30": []
+    },
+    "after_final_prune": {
+      "edges": 22800883,
+      "max_degree": 32,
+      "reachable_from_0": 999999,
+      "unreachable_count": 1,
+      "unreachable_nodes_first30": [
+        568552
+      ]
+    }
+  },
+  "transition": {
+    "pre_zero_in_count": 0,
+    "post_zero_in_count": 1,
+    "zero_in_pre_and_post": 0,
+    "lost_last_incoming_at_final_prune": 1,
+    "gained_first_incoming_at_final_prune": 0,
+    "lost_last_incoming_node_ids_first30": [
+      568552
+    ],
+    "pre_zero_in_node_ids_first30": [],
+    "post_zero_in_node_ids_first30": [
+      568552
+    ],
+    "incoming_removed_total_across_nodes": 14197899,
+    "node568552_pre_indegree": 11,
+    "node568552_post_indegree": 0
+  },
+  "reachability_transition": {
+    "newly_unreachable_after_prune": 1,
+    "newly_unreachable_node_ids_first30": [
+      568552
+    ],
+    "newly_reachable_after_prune": 0,
+    "note": "New reachable should be zero if final edges are subset of pre-graph directed edges."
+  },
+  "candidate_capture": {
+    "leaf_count": 85529,
+    "directed_proposal_events": 59990170
+  },
+  "watched_nodes": [
+    {
+      "node": 568552,
+      "pre_indegree": 11,
+      "post_indegree": 0,
+      "pre_outdegree": 11,
+      "post_outdegree": 7,
+      "pre_reachable_from_0": true,
+      "post_reachable_from_0": false,
+      "pre_incoming_sources_first100": [
+        144047,
+        568179,
+        568237,
+        568307,
+        568974,
+        569151,
+        619858,
+        637419,
+        675170,
+        710360,
+        833236
+      ],
+      "pre_outneighbors_first40": [
+        637419,
+        619858,
+        569151,
+        675170,
+        144047,
+        568179,
+        710360,
+        568974,
+        833236,
+        568307,
+        568292
+      ],
+      "post_outneighbors_first40": [
+        568292,
+        569151,
+        675170,
+        833236,
+        619858,
+        637419,
+        710360
+      ],
+      "leaf_candidate_incident": {
+        "forward_proposals_outgoing": 60,
+        "forward_proposals_incoming": 46,
+        "distinct_proposal_neighbor_ids": 12,
+        "top_incoming_forward_sources": [
+          [
+            568974,
+            19
+          ],
+          [
+            833236,
+            16
+          ],
+          [
+            568292,
+            3
+          ],
+          [
+            568179,
+            3
+          ],
+          [
+            637419,
+            1
+          ],
+          [
+            619858,
+            1
+          ],
+          [
+            710360,
+            1
+          ],
+          [
+            568307,
+            1
+          ],
+          [
+            569151,
+            1
+          ]
+        ],
+        "top_outgoing_forward_targets": [
+          [
+            568292,
+            21
+          ],
+          [
+            568974,
+            19
+          ],
+          [
+            568307,
+            6
+          ],
+          [
+            568179,
+            6
+          ],
+          [
+            619858,
+            2
+          ],
+          [
+            568237,
+            2
+          ],
+          [
+            710360,
+            1
+          ],
+          [
+            569151,
+            1
+          ],
+          [
+            675170,
+            1
+          ],
+          [
+            144047,
+            1
+          ]
+        ],
+        "note": "Every directed forward proposal also attempts a REVERSE merge; either source or destination can create incoming candidate to u."
+      }
+    }
+  ],
+  "interpretation_rules": [
+    "If node has pre_in>0 and post_in=0, LAST incoming was removed during final prune (proven for this build).",
+    "If node has pre_in=0 but incident candidate proposals exist, the incoming opportunities were absent from the hashgraph after merge; exact merge-internal cause is NOT isolated.",
+    "If graph is fully reachable, the single orphan in prior R1 build did not repeat; do not claim it was repaired or caused by instrumentation.",
+    "Source of forward proposals != full set of potential incoming edges: PiPNN also performs reverse merge.",
+    "Zero indegree at non-entry node implies unreachable, but directed reachability can fail even with positive indegree.",
+    "This does NOT establish a novel algorithm or justify repairing/locking edges; evaluate NSG/FGIM/simple repair prior art first."
+  ],
+  "elapsed_analysis_seconds": 37.2,
+  "provenance": {
+    "preprune_hashgraph.graph": "f08338d3bb8e0caaaeae8dac2d00af407a34c374fe711c3e42edbb12548817dd",
+    "postprune_final.graph": "f01497f5feeddb95ddbdd381f7377a82984f8c9c474012b84384145f86e16e17",
+    "same_build_proposals.bin": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95"
+  }
+}

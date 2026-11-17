@@ -1,0 +1,83 @@
+--- a/algorithms/PipNN/pipnn.h
++++ b/algorithms/PipNN/pipnn.h
+@@ -5,6 +5,17 @@
+ #include <algorithm>
+ #include <queue>
+ #include <random>
++// R85_B1_SNAPSHOT_INCLUDES_BEGIN
++#include <algorithm>
++#include <cstdint>
++#include <cstdlib>
++#include <cstring>
++#include <fstream>
++#include <stdexcept>
++#include <tuple>
++#include <vector>
++// R85_B1_SNAPSHOT_INCLUDES_END
++
+ #include <set>
+ #include <utility>
+ #include <bitset>
+@@ -450,6 +461,62 @@
+     G.allocate_graph(Points.size());
+     for (auto i = 0; i < num_clusters; i++) {
+       recursively_sketch_wrapper(G, Points, cluster_size);
++      // R85_B1_SNAPSHOT_BEGIN -- observation only, after finished round.
++      // The original BUILD graph and its candidate order are not modified.
++      if (const char* b1_dir = std::getenv("R85_B1_SNAPSHOT_DIR")) {
++        if (!*b1_dir) throw std::runtime_error("R85_B1_EMPTY_SNAPSHOT_DIR");
++        const std::string b1_path = std::string(b1_dir) + "/pass" +
++                                    std::to_string(i + 1) + ".tsv";
++        {
++          std::ifstream exists(b1_path);
++          if (exists.good()) throw std::runtime_error("R85_B1_REFUSE_OVERWRITE " + b1_path);
++        }
++        std::ofstream b1_out(b1_path, std::ios::out | std::ios::trunc);
++        if (!b1_out.good()) throw std::runtime_error("R85_B1_CANNOT_WRITE " + b1_path);
++        uint64_t b1_total_candidates = 0;
++        uint64_t b1_nonempty_rows = 0;
++        for (size_t b1_row = 0; b1_row < G.size(); ++b1_row) {
++          const size_t b1_degree = static_cast<size_t>(G.degree(b1_row));
++          if (b1_degree > G.kMaxDegree) throw std::runtime_error("R85_B1_INVALID_DEGREE");
++          const size_t b1_worst_index = G.get_furthest_index(b1_row);
++          if (b1_degree != 0 && b1_worst_index >= b1_degree)
++            throw std::runtime_error("R85_B1_INVALID_WORST_INDEX");
++          float b1_worst_float = static_cast<float>(G.get_furthest(b1_row));
++          uint32_t b1_worst_bits = 0;
++          std::memcpy(&b1_worst_bits, &b1_worst_float, sizeof(b1_worst_bits));
++          std::vector<std::tuple<uint64_t,uint16_t,uint32_t>> b1_entries;
++          for (const auto& b1_c : G.Neighbors(b1_row)) {
++            float b1_float = static_cast<float>(b1_c.norm);
++            uint32_t b1_bits = 0;
++            static_assert(sizeof(b1_float) == sizeof(b1_bits), "float must be 32 bits");
++            std::memcpy(&b1_bits, &b1_float, sizeof(b1_bits));
++            b1_entries.emplace_back(static_cast<uint64_t>(b1_c.point_id),
++                                    static_cast<uint16_t>(b1_c.hash), b1_bits);
++          }
++          if (b1_entries.size() != b1_degree)
++            throw std::runtime_error("R85_B1_DEGREE_MISMATCH");
++          // Preserve live candidate order: lower_bound and worst_index use it.
++          // All values are explicit; no padding, locks, unused slots or pointers.
++          b1_total_candidates += b1_entries.size();
++          b1_nonempty_rows += !b1_entries.empty();
++          b1_out << b1_row << '\t' << b1_entries.size()
++                 << '\t' << b1_worst_index << '\t' << b1_worst_bits;
++          for (const auto& b1_c : b1_entries) {
++            b1_out << '\t' << std::get<0>(b1_c) << ','
++                   << std::get<1>(b1_c) << ',' << std::get<2>(b1_c);
++          }
++          b1_out << '\n';
++        }
++        b1_out.flush();
++        if (!b1_out.good()) throw std::runtime_error("R85_B1_WRITE_ERROR " + b1_path);
++        b1_out.close();
++        std::cout << "R85_B1_SNAPSHOT_PASS round=" << (i + 1)
++                  << " nodes=" << G.size()
++                  << " nonempty=" << b1_nonempty_rows
++                  << " candidates=" << b1_total_candidates
++                  << " file=" << b1_path << std::endl;
++      }
++      // R85_B1_SNAPSHOT_END
+       std::cout << "Built cluster " << i << " of " << num_clusters << std::endl;
+       std::cout << "Leaf count: " << leaf_count << std::endl;
+       std::cout << "# of comparisons during clustering: " << COMPARISONS

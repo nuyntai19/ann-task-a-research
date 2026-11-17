@@ -1,0 +1,35 @@
+{
+  "decision": "CONTROL_PASS_MATCH_STABLE",
+  "pass_is_not_G1_PASS": true,
+  "R85_reference": {
+    "P1_buckets": 8367,
+    "P1_total_points": 2999666,
+    "P1_WP_cumulative": 89859812,
+    "P2_buckets": 8297,
+    "P2_total_points": 2999577,
+    "P2_WP_cumulative": 177341343
+  },
+  "predeclared_core_fields": [
+    "P1_buckets",
+    "P2_buckets",
+    "P1_WP_cumulative",
+    "P2_WP_cumulative"
+  ],
+  "extra_invariant_fields": [
+    "P1_total_points",
+    "P2_total_points"
+  ],
+  "all_six_match_R85_reference": true,
+  "all_six_match_buckets_and_WP": true,
+  "within_thread_stability": {
+    "1": true,
+    "4": true
+  },
+  "all_six_stable": true,
+  "n_repetitions": 6,
+  "dataset": "SIFT100K",
+  "C": 160,
+  "K": 1024,
+  "N": 2,
+  "interpretation": "Eligible to construct four binaries separately and run 10K ON/OFF counters; does not prove Recall or G1"
+}

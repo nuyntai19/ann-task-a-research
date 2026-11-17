@@ -1,0 +1,185 @@
+{
+  "description": "PiPNN SIFT100K, 4-thread within-arm vs cross-arm graph comparisons",
+  "groups": {
+    "stock-stock": {
+      "pair_count": 3,
+      "median_symdiff_pct": 5.3647,
+      "min_symdiff_pct": 4.5154,
+      "max_symdiff_pct": 5.4397,
+      "median_different_nodes": 65867
+    },
+    "tier-tier": {
+      "pair_count": 3,
+      "median_symdiff_pct": 4.3221,
+      "min_symdiff_pct": 0.0094,
+      "max_symdiff_pct": 4.3229,
+      "median_different_nodes": 58997
+    },
+    "stock-tier": {
+      "pair_count": 9,
+      "median_symdiff_pct": 4.3258,
+      "min_symdiff_pct": 1.7508,
+      "max_symdiff_pct": 5.3567,
+      "median_different_nodes": 59083
+    }
+  },
+  "pairs": {
+    "stock-stock": [
+      {
+        "group": "stock-stock",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/02_stock.graph",
+        "different_adjacency_nodes": 66520,
+        "different_order_only_nodes": 8610,
+        "only_first_arcs": 98074,
+        "only_second_arcs": 100594,
+        "symmetric_difference_over_sum_pct": 5.4397
+      },
+      {
+        "group": "stock-stock",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/03_stock.graph",
+        "different_adjacency_nodes": 65867,
+        "different_order_only_nodes": 8723,
+        "only_first_arcs": 97009,
+        "only_second_arcs": 98884,
+        "symmetric_difference_over_sum_pct": 5.3647
+      },
+      {
+        "group": "stock-stock",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/02_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/03_stock.graph",
+        "different_adjacency_nodes": 60739,
+        "different_order_only_nodes": 6638,
+        "only_first_arcs": 82820,
+        "only_second_arcs": 82175,
+        "symmetric_difference_over_sum_pct": 4.5154
+      }
+    ],
+    "tier-tier": [
+      {
+        "group": "tier-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/tier.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/01_tier.graph",
+        "different_adjacency_nodes": 136,
+        "different_order_only_nodes": 0,
+        "only_first_arcs": 180,
+        "only_second_arcs": 165,
+        "symmetric_difference_over_sum_pct": 0.0094
+      },
+      {
+        "group": "tier-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/tier.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/04_tier.graph",
+        "different_adjacency_nodes": 58997,
+        "different_order_only_nodes": 7473,
+        "only_first_arcs": 78983,
+        "only_second_arcs": 78991,
+        "symmetric_difference_over_sum_pct": 4.3229
+      },
+      {
+        "group": "tier-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/01_tier.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/04_tier.graph",
+        "different_adjacency_nodes": 59001,
+        "different_order_only_nodes": 7467,
+        "only_first_arcs": 78961,
+        "only_second_arcs": 78984,
+        "symmetric_difference_over_sum_pct": 4.3221
+      }
+    ],
+    "stock-tier": [
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/tier.graph",
+        "different_adjacency_nodes": 65596,
+        "different_order_only_nodes": 8822,
+        "only_first_arcs": 96627,
+        "only_second_arcs": 98968,
+        "symmetric_difference_over_sum_pct": 5.3558
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/01_tier.graph",
+        "different_adjacency_nodes": 65606,
+        "different_order_only_nodes": 8814,
+        "only_first_arcs": 96650,
+        "only_second_arcs": 98976,
+        "symmetric_difference_over_sum_pct": 5.3567
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/04_tier.graph",
+        "different_adjacency_nodes": 65672,
+        "different_order_only_nodes": 9126,
+        "only_first_arcs": 96049,
+        "only_second_arcs": 98398,
+        "symmetric_difference_over_sum_pct": 5.3244
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/02_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/tier.graph",
+        "different_adjacency_nodes": 58226,
+        "different_order_only_nodes": 788,
+        "only_first_arcs": 75331,
+        "only_second_arcs": 75152,
+        "symmetric_difference_over_sum_pct": 4.1177
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/02_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/01_tier.graph",
+        "different_adjacency_nodes": 58219,
+        "different_order_only_nodes": 788,
+        "only_first_arcs": 75268,
+        "only_second_arcs": 75074,
+        "symmetric_difference_over_sum_pct": 4.1139
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/02_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/04_tier.graph",
+        "different_adjacency_nodes": 62060,
+        "different_order_only_nodes": 6841,
+        "only_first_arcs": 86698,
+        "only_second_arcs": 86527,
+        "symmetric_difference_over_sum_pct": 4.74
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/03_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/tier.graph",
+        "different_adjacency_nodes": 32780,
+        "different_order_only_nodes": 12925,
+        "only_first_arcs": 31753,
+        "only_second_arcs": 32219,
+        "symmetric_difference_over_sum_pct": 1.7508
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/03_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/01_tier.graph",
+        "different_adjacency_nodes": 32818,
+        "different_order_only_nodes": 12912,
+        "only_first_arcs": 31812,
+        "only_second_arcs": 32263,
+        "symmetric_difference_over_sum_pct": 1.7536
+      },
+      {
+        "group": "stock-tier",
+        "first": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/03_stock.graph",
+        "second": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/04_tier.graph",
+        "different_adjacency_nodes": 59083,
+        "different_order_only_nodes": 7585,
+        "only_first_arcs": 78793,
+        "only_second_arcs": 79267,
+        "symmetric_difference_over_sum_pct": 4.3258
+      }
+    ]
+  },
+  "caveat": "Descriptive only: concurrency and repeated runs may change graph; no Recall or causal attribution."
+}

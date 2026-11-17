@@ -1,0 +1,44 @@
+{
+  "runs": [
+    {
+      "buffers_worker_ns": 0.341646417,
+      "copy_worker_ns": 5.544615009,
+      "norm_zero_worker_ns": 6.01841808,
+      "rankupdate_worker_ns": 44.79104182,
+      "finalize_worker_ns": 5.250826901,
+      "calls": 85529,
+      "p0_dist_worker_s": 61.968176711,
+      "p0_select_worker_s": 38.81643199,
+      "p0_merge_worker_s": 14.061504747,
+      "leaves": 85529,
+      "process_wall_s_no_graph_output": 42.01
+    },
+    {
+      "buffers_worker_ns": 0.353943719,
+      "copy_worker_ns": 5.555083598,
+      "norm_zero_worker_ns": 6.008622191,
+      "rankupdate_worker_ns": 44.925279967,
+      "finalize_worker_ns": 5.261815121,
+      "calls": 85529,
+      "p0_dist_worker_s": 62.125576576,
+      "p0_select_worker_s": 39.016193532,
+      "p0_merge_worker_s": 13.940582397,
+      "leaves": 85529,
+      "process_wall_s_no_graph_output": 41.95
+    }
+  ],
+  "median": {
+    "buffers_worker_ns": 0.347795068,
+    "copy_worker_ns": 5.5498493035,
+    "norm_zero_worker_ns": 6.0135201355,
+    "rankupdate_worker_ns": 44.8581608935,
+    "finalize_worker_ns": 5.256321011,
+    "calls": 85529.0,
+    "p0_dist_worker_s": 62.0468766435,
+    "p0_select_worker_s": 38.916312761,
+    "p0_merge_worker_s": 14.001043572,
+    "leaves": 85529.0,
+    "process_wall_s_no_graph_output": 41.980000000000004
+  },
+  "worker_dist_subphase_sum_s": 62.0256464115
+}

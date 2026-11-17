@@ -1,0 +1,386 @@
+--- a/algorithms/PipNN/CMakeLists.txt
++++ b/algorithms/PipNN/CMakeLists.txt
+@@ -1,7 +1,12 @@
+ # R71_H17_PACKED_TOP2_ISOLATED
+ option(R71_USE_H17 "Enable H17 packed top2 for MST_DEG==2" OFF)
++# R86 counting is research-only; compile into a distinct ON binary.
++option(R86_USE_COUNTERS "Enable R86 logical operation counters" OFF)
+ # R70_COMPILE_TIME_RESERVOIR_SELECTION (research-only isolated worktree)
+ option(R70_USE_TIER "R70 Two-Tier physical reservoir; logical C unchanged" OFF)
++if(R86_USE_COUNTERS AND R70_USE_TIER)
++    message(FATAL_ERROR "R86_COUNTERS supports flat LSHGraph only; TwoTier is unsupported")
++endif()
+ #add_executable(${TARGET_NAME} ../bench/neighborsTime.C)
+ #target_link_libraries(${TARGET_NAME} PRIVATE parlay ParlayANN Eigen3::Eigen)
+ #target_include_directories(${TARGET_NAME} PRIVATE ../bench)
+@@ -42,6 +47,9 @@
+         if(R70_USE_TIER)
+             target_compile_definitions(${TARGET_NAME} PRIVATE R70_TWO_TIER=1)
+         endif()
++        if(R86_USE_COUNTERS)
++            target_compile_definitions(${TARGET_NAME} PRIVATE R86_COUNTERS=1)
++        endif()
+ 
+         message(STATUS "Configured Target: ${TARGET_NAME} with Definitions: ${DATATYPE_DEFINE}, ${DISTANCETYPE_DEFINE}")
+     endforeach()
+--- a/algorithms/PipNN/pipnn.h
++++ b/algorithms/PipNN/pipnn.h
+@@ -15,6 +15,7 @@
+ #include "../utils/r70_two_tier_lshgraph.h"
+ #endif // R70_COMPILE_TIME_RESERVOIR_SELECTION
+ #include "pipnn_utils.h"
++#include "r86_counters.hpp" // R86 isolated instrumentation; OFF compiles to no-ops.
+ #include "parlay/parallel.h"
+ #include "parlay/primitives.h"
+ #include "parlay/random.h"
+@@ -58,6 +59,8 @@
+     num_leaders = std::max<size_t>(num_leaders, 3);
+ 
+     COMPARISONS.fetch_add(num_leaders * ids.size(), std::memory_order_relaxed);
++    r86::add(r86::Metric::W_P, static_cast<uint64_t>(ids.size()) * num_leaders, depth);
++    r86::note_depth(depth);
+ 
+     Bucket leaders;
+     std::mt19937 prng(seed);
+@@ -69,6 +72,7 @@
+       fanout = fanout_scheme[depth];
+     }
+     fanout = std::min<int>(fanout, (int)num_leaders);
++    r86::add(r86::Metric::W_A, static_cast<uint64_t>(ids.size()) * fanout, depth);
+ 
+     int granularity = 5000;
+     parlay::sequence<std::pair<uint32_t, uint32_t>> flat(ids.size() * fanout);
+@@ -437,6 +441,9 @@
+     // to get around the RecursivelySketch routine producing empty clusters...
+     // Looking into it.
+     std::cout << "Building leaves:" << std::endl;
++    // Independent audit source: final executed leaf sizes (not RunLeaf counters).
++    // The final bucket list no longer carries recursion depth; JSON depth=null.
++    r86::emit_leaf_sizes(buckets);
+      parlay::parallel_for(0, buckets.size(), [&](size_t i) {
+        CHECK(buckets[i].size() <= MAX_CLUSTER_SIZE);
+        if (buckets[i].size() > 1) RunLeaf(G, Points, buckets[i]);
+@@ -449,6 +456,7 @@
+                              long num_clusters) {
+     G.allocate_graph(Points.size());
+     for (auto i = 0; i < num_clusters; i++) {
++      r86::begin_pass(static_cast<int>(i + 1));
+       recursively_sketch_wrapper(G, Points, cluster_size);
+       std::cout << "Built cluster " << i << " of " << num_clusters << std::endl;
+       std::cout << "Leaf count: " << leaf_count << std::endl;
+@@ -460,6 +468,11 @@
+   /*  Leaf code  */
+   void RunLeaf(GraphH &G, PR &Points,
+                parlay::sequence<uint32_t> &active_indices) {
++    const uint64_t s = active_indices.size();
++    r86::add(r86::Metric::leaf_count, 1);
++    r86::add(r86::Metric::leaf_size_sum, s);
++    r86::add(r86::Metric::W_L, s * s);
++    r86::add(r86::Metric::W_pairs, s * (s - 1) / 2);
+     leaf_count++;
+     EigenKNN(G, Points, active_indices);
+   }
+@@ -539,6 +552,9 @@
+                    std::string fanout_scheme, int Hsize, long table_size,
+                    bool no_reservoir, size_t fixed_num_leaders) {
+     if (no_reservoir) {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++        throw std::runtime_error("R86_COUNTERS_SCOPE_ONLY_FLAT_LSH");
++#endif
+         HashSetGraph<indexType> hash_set_graph;
+         build_index_impl(G, P, Points, cluster_rounds, cluster_size, MSTDeg, prune, prune_all, alpha, prune_degree, top_level_leaders, fanout, fanout_per_level, fraction_leaders, fanout_scheme, Hsize, table_size, hash_set_graph, fixed_num_leaders);
+     } else {
+@@ -584,6 +600,7 @@
+                    int fanout_per_level, double fraction_leaders,
+                    std::string fanout_scheme, int Hsize, long table_size,
+                    GraphH& graph_h, size_t fixed_num_leaders) {
++    r86::require_output_paths(); // only checked in R86_COUNTERS=ON
+     cluster<GraphH, Point, PointRange, indexType> C;
+     C.MST_DEG = MSTDeg;
+     C.ALPHA = alpha;
+@@ -619,11 +636,15 @@
+ 
+     C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);
+ 
++    // Final prune happens once after N cluster-tree passes.
++    r86::set_active_pass(0);
++    r86::declare_metric(r86::Metric::prune_distance_calls);
+     // Export the edges from the hashgraph into G.
+     std::cout << "Allocating graph, prune_degree = " << prune_degree << std::endl;
+     G.allocate_graph(prune_degree, Points.size());
+     assert(G.max_degree() == prune_degree);
+     ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);
++    r86::dump_jsonl_from_env(); // after all parallel workers have joined
+     std::cout << "Average distance traversed: " << (dist_traversed.load() / Points.size()) << std::endl;
+   }
+ };
+--- a/algorithms/PipNN/pipnn_utils.h
++++ b/algorithms/PipNN/pipnn_utils.h
+@@ -32,6 +32,7 @@
+ 
+ 
+ #include "../utils/graph.h"
++#include "r86_counters.hpp"
+ #include "../utils/hash.h"
+ #include "parlay/parallel.h"
+ #include "parlay/primitives.h"
+@@ -129,6 +130,7 @@
+       if (p_prime == p) continue;
+       bool add = true;
+       for (auto p_star : new_nbhs) {
++        r86::add(r86::Metric::prune_distance_calls);
+         const auto dist_starprime = Points[p_star].distance(Points[p_prime]);
+         if (dist_starprime <= dist_pprime) {
+           add = false;
+@@ -503,6 +505,9 @@
+ #if defined(R71_H17_TOP2)
+   }
+ #endif
++  r86::add(r86::Metric::proposals, directed_edges.size());
++  // Every emitted directed edge produces a forward and reverse merge call.
++  // merge_attempts is counted inside the storage merge routine (actual visits).
+   // the problem with this approach is that we only merge one neighbor at a time.
+   for (const auto& edge : directed_edges) {
+     uint32_t u = std::get<0>(edge);
+--- a/algorithms/utils/graph.h
++++ b/algorithms/utils/graph.h
+@@ -31,6 +31,9 @@
+ #include <unistd.h>
+ #include <bitset>
+ #include <atomic>
++#if defined(R86_COUNTERS) && R86_COUNTERS
++#include "../PipNN/r86_counters.hpp"
++#endif
+ 
+ #include "parlay/parallel.h"
+ #include "parlay/primitives.h"
+@@ -776,9 +779,18 @@
+   for (const auto& cand : r) {
+     const indexType    pid  = cand.first;
+     const distanceType dist = cand.second;
+-
+-    // Early break
+-    if (deg == kMaxDegree && dist >= max_val) break;
++#if defined(R86_COUNTERS) && R86_COUNTERS
++    r86::add(r86::Metric::merge_attempts);
++    if (deg == kMaxDegree) r86::add(r86::Metric::hash_full);
++#endif
++    // Early break: this candidate was visited, but its hash was not evaluated.
++    if (deg == kMaxDegree && dist >= max_val) {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++      r86::add(r86::Metric::hash_early_break);
++      r86::add(r86::Metric::hash_reject);
++#endif
++      break;
++    }
+ 
+     const uint16_t cand_hash = static_cast<uint16_t>(H.relative_hash(i, pid));
+ 
+@@ -787,16 +799,33 @@
+ 
+     // Hash collision: keep nearer
+     if (pos < deg && pos_ptr->hash == cand_hash) {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++      if (pos_ptr->point_id == pid)
++        r86::add(r86::Metric::collision_same_id);
++      else
++        r86::add(r86::Metric::collision_diff_id);
++#endif
+       const distanceType old = to_dt(pos_ptr->norm);
+       if (old > dist) {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++        r86::add(r86::Metric::hash_accept);
++        r86::add(r86::Metric::hash_replace);
++#endif
+         pos_ptr->point_id = pid;
+         pos_ptr->norm     = Eigen::bfloat16(dist);
+         if (pos == max_idx) recompute_worst();
++      } else {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++        r86::add(r86::Metric::hash_reject);
++#endif
+       }
+       continue;
+     }
+ 
+     if (deg < kMaxDegree) {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++      r86::add(r86::Metric::hash_accept);
++#endif
+       // make room
+       std::move_backward(pos_ptr, end, end + 1);
+       pos_ptr->point_id = pid;
+@@ -812,6 +841,10 @@
+         set_worst(max_idx + 1, max_val);
+       }
+     } else {
++#if defined(R86_COUNTERS) && R86_COUNTERS
++      r86::add(r86::Metric::hash_accept);
++      r86::add(r86::Metric::hash_replace);
++#endif
+       // full: replace worst while keeping hash order
+       if (max_idx < pos) {
+         // shift left [max_idx+1 .. pos-1] by 1
+--- /dev/null
++++ b/algorithms/PipNN/r86_counters.hpp
+@@ -0,0 +1,160 @@
++#pragma once
++// R86 v1.0 candidate patch, manually reviewed source hooks, no dependency outside C++17.
++// These are logical algorithm events, never hardware instructions.
++#include <cstdint>
++#include <string>
++#if defined(R86_COUNTERS) && R86_COUNTERS
++#include <array>
++#include <atomic>
++#include <cstdlib>
++#include <fstream>
++#include <mutex>
++#include <stdexcept>
++#include <vector>
++#endif
++namespace r86 {
++enum class Metric : unsigned {
++ W_P, W_A, W_L, W_pairs, leaf_count, leaf_size_sum, max_depth,
++ proposals, merge_attempts, collision_same_id, collision_diff_id,
++ hash_accept, hash_reject, hash_replace, hash_early_break, hash_full,
++ prune_distance_calls, top2_comparisons, top2_assignments, top2_moves, COUNT
++};
++#if defined(R86_COUNTERS) && R86_COUNTERS
++constexpr unsigned MAX_PASSES=16;
++constexpr unsigned MAX_DEPTH=64;
++constexpr unsigned N_METRICS=static_cast<unsigned>(Metric::COUNT);
++constexpr unsigned TOTAL=MAX_PASSES*(MAX_DEPTH+1)*N_METRICS;
++struct Buffer {
++ std::array<std::uint64_t,TOTAL> counts{};
++ std::array<std::uint8_t,TOTAL> touched{};
++};
++struct Registry {
++ std::mutex mutex;
++ std::vector<Buffer*> buffers;
++ std::atomic<int> active_pass{0};
++};
++inline Registry& registry() {static Registry* r=new Registry;return *r;}
++inline Buffer& local() {
++ static thread_local Buffer* p=[]() {
++   Buffer* b=new Buffer;
++   auto& r=registry();
++   std::lock_guard<std::mutex> lk(r.mutex);
++   r.buffers.push_back(b);
++   return b;
++ }();
++ return *p;
++}
++inline std::size_t index(int pass,int depth,Metric m) {
++ if(pass<0||pass>=static_cast<int>(MAX_PASSES)||depth < -1||depth>=static_cast<int>(MAX_DEPTH))
++   throw std::out_of_range("R86 pass/depth out of range");
++ return (static_cast<unsigned>(pass)*(MAX_DEPTH+1)+static_cast<unsigned>(depth+1))*N_METRICS+static_cast<unsigned>(m);
++}
++inline int active_pass() {return registry().active_pass.load(std::memory_order_relaxed);}
++inline void set_active_pass(int pass) {
++ if(pass<0||pass>=static_cast<int>(MAX_PASSES)) throw std::out_of_range("R86 pass id");
++ registry().active_pass.store(pass,std::memory_order_release);
++}
++inline void declare_metric(Metric m,int depth=-1) {
++ std::size_t pos=index(active_pass(),depth,m);
++ local().touched[pos]=1;
++}
++inline void add(Metric m,std::uint64_t amount=1,int depth=-1) {
++ std::size_t pos=index(active_pass(),depth,m);
++ Buffer& b=local();b.touched[pos]=1;b.counts[pos]+=amount;
++}
++inline void note_depth(int depth) {
++ std::size_t pos=index(active_pass(),-1,Metric::max_depth);
++ Buffer& b=local();b.touched[pos]=1;
++ if(static_cast<std::uint64_t>(depth)>b.counts[pos]) b.counts[pos]=depth;
++}
++inline void begin_pass(int pass) {
++ set_active_pass(pass);
++ // Declare measured event categories explicitly: measured zero != absent/not measured.
++ for(Metric m : {Metric::W_P,Metric::W_A,Metric::W_L,Metric::W_pairs,
++                 Metric::leaf_count,Metric::leaf_size_sum,Metric::max_depth,
++                 Metric::proposals,Metric::merge_attempts,
++                 Metric::collision_same_id,Metric::collision_diff_id,
++                 Metric::hash_accept,Metric::hash_reject,Metric::hash_replace,
++                 Metric::hash_early_break,Metric::hash_full}) declare_metric(m);
++}
++inline const char* metric_name(Metric m) {
++ constexpr const char* names[]={"W_P","W_A","W_L","W_pairs","leaf_count",
++ "leaf_size_sum","max_depth","proposals","merge_attempts",
++ "collision_same_id","collision_diff_id","hash_accept","hash_reject",
++ "hash_replace","hash_early_break","hash_full","prune_distance_calls",
++ "top2_comparisons","top2_assignments","top2_moves"};
++ return names[static_cast<unsigned>(m)];
++}
++inline std::string check_path(const char* env) {
++ const char* p=std::getenv(env);
++ if(!p||!*p||*p!='/') throw std::runtime_error(std::string("R86 requires absolute path env ")+env);
++ std::ifstream existing(p);
++ if(existing.good()) throw std::runtime_error(std::string("R86 refuses overwrite ")+p);
++ return p;
++}
++inline void require_output_paths() {
++ (void)check_path("R86_COUNTER_OUT");
++ (void)check_path("R86_LEAF_SIZE_OUT");
++}
++template<class Buckets>
++inline void emit_leaf_sizes(const Buckets& buckets) {
++ const char* p=std::getenv("R86_LEAF_SIZE_OUT");
++ if(!p||!*p) throw std::runtime_error("R86_LEAF_SIZE_OUT unset");
++ std::ofstream file(p,std::ios::app);
++ if(!file) throw std::runtime_error("R86 cannot write leaf-size dump");
++ const int pass=active_pass();
++ for(const auto& b:buckets) {
++   // Only buckets executed by RunLeaf are included.
++   if(b.size()>1) file<<"{\"pass_id\":"<<pass<<",\"depth\":null,\"size\":"<<b.size()<<"}\n";
++ }
++ file.flush();
++ if(!file) throw std::runtime_error("R86 failed leaf-size flush");
++}
++inline void dump_jsonl(const std::string& path) {
++ std::vector<std::uint64_t> sum(TOTAL,0);
++ std::vector<std::uint8_t> touched(TOTAL,0);
++ auto& r=registry();
++ // Only call after parallel work has fully joined. Never reset in multi-BUILD process.
++ {
++  std::lock_guard<std::mutex> lk(r.mutex);
++  for(const Buffer* b:r.buffers)
++   for(unsigned i=0;i<TOTAL;++i) {
++    if(b->touched[i]) touched[i]=1;
++    if(i%N_METRICS==static_cast<unsigned>(Metric::max_depth)) {
++      if(b->counts[i]>sum[i]) sum[i]=b->counts[i];
++    } else sum[i]+=b->counts[i];
++   }
++ }
++ std::ofstream out(path);
++ if(!out) throw std::runtime_error("R86 cannot open counter output");
++ for(unsigned ps=0;ps<MAX_PASSES;++ps)
++  for(unsigned dep=0;dep<=MAX_DEPTH;++dep)
++   for(unsigned k=0;k<N_METRICS;++k) {
++    const unsigned i=(ps*(MAX_DEPTH+1)+dep)*N_METRICS+k;
++    if(!touched[i]) continue; // absent = NOT_MEASURED; declared zero is emitted.
++    out<<"{\"pass_id\":"<<ps<<",\"depth\":";
++    if(dep==0) out<<"null"; else out<<(dep-1);
++    out<<",\"metric_code\":\""<<metric_name(static_cast<Metric>(k))
++       <<"\",\"observed\":"<<sum[i]<<"}\n";
++   }
++ out.flush();
++ if(!out) throw std::runtime_error("R86 failed counter output");
++}
++inline void dump_jsonl_from_env() {
++ const char* out=std::getenv("R86_COUNTER_OUT");
++ if(!out||!*out) throw std::runtime_error("R86_COUNTER_OUT unset");
++ dump_jsonl(out);
++}
++#else
++inline void set_active_pass(int) {}
++inline int active_pass() {return 0;}
++inline void begin_pass(int) {}
++inline void declare_metric(Metric,int=-1) {}
++inline void add(Metric,std::uint64_t=1,int=-1) {}
++inline void note_depth(int) {}
++inline void require_output_paths() {}
++template<class Buckets> inline void emit_leaf_sizes(const Buckets&) {}
++inline void dump_jsonl(const std::string&) {}
++inline void dump_jsonl_from_env() {}
++#endif
++} // namespace r86

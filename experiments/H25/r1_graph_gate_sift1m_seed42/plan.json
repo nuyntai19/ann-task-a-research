@@ -1,0 +1,54 @@
+{
+  "study": "H25_R1_NATIVE_PIPELINE_INTERVENTION_PLAN_NOT_RESULTS",
+  "warning": "OFFLINE hindsight plan from H18 first occurrences; no online collision detector, no BUILD/speedup claim.",
+  "capture": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin",
+  "capture_sha256": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95",
+  "base": "/home/tai/ann-task-a/data/sift1m.fbin",
+  "d": 128,
+  "same_capture_and_sample_as_R0b": {
+    "sample": 64,
+    "rank": 8,
+    "seed": 42
+  },
+  "expected_rows": 20784,
+  "patch_counts": {
+    "nearest": 23584,
+    "random": 23584,
+    "hindsight": 22963
+  },
+  "r0b_summary": {
+    "nearest": {
+      "replacements": 23584,
+      "novel_full_union_keys": 19234,
+      "fallback_duplicates": 532,
+      "selected_in_later_baseline": 4350
+    },
+    "random": {
+      "replacements": 23584,
+      "novel_full_union_keys": 20729,
+      "fallback_duplicates": 532,
+      "selected_in_later_baseline": 2855
+    },
+    "hindsight": {
+      "replacements": 22963,
+      "novel_full_union_keys": 22963,
+      "fallback_duplicates": 1153,
+      "selected_in_later_baseline": 0
+    }
+  },
+  "sha256_files": {
+    "expected_rows.bin": "081c40e9880d63ff2015b6145d6d6b980160547e4f58e3cb7836427fef62dd25",
+    "patch_baseline.bin": "1a2b49221bbf5aa5266937c1b9ca4ecf1c37488bf396d8b0fe1ad9543993bf62",
+    "patch_hindsight.bin": "66df10137df2b7c2ceed0a471da5295d82f98178e39779d25a0af0b2725ab693",
+    "patch_nearest.bin": "58a5a60b7c8c8a41b06d9b5d91ebf7847b377f9b864f19c51c0a453c86faee13",
+    "patch_random.bin": "8def8051dde0cfc185acd53e877c440a6157564e1937b4898e5a7b2f9ebf5c55"
+  },
+  "not_measured": [
+    "native replay equality",
+    "HashPrune survival",
+    "final RobustPrune effect",
+    "Recall/QPS",
+    "BUILD time",
+    "algorithm novelty"
+  ]
+}

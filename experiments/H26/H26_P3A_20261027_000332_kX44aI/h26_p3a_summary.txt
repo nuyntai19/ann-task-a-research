@@ -1,0 +1,15 @@
+H26-P3a — SAMPLED TOP-2 SELECTION SUBPHASES — DIAGNOSTIC
+All stage durations are SAMPLE worker elapsed sums (NOT BUILD wall).
+RUNS=2 MOD=64 SAMPLE_LEAVES=1346 / 85529
+SAMPLE_ROWS=486508 / 29995085
+SAMPLED_CANDIDATES=239728848
+SAMPLED_OUTER_SELECTION=0.72779s  SUM_COMPONENT_TIMERS=0.71280s
+TIMER_AND_NONSTAGE_GAP=0.01498s (2.06% of sampled outer selection)
+Q assembly (clear + pack)          0.49864s   69.96% (sample share)
+Top-2 scan                         0.19742s   27.70% (sample share)
+Proposal materialization           0.01674s    2.35% (sample share)
+P0_WHOLE_SELECTION_WORKER=39.282s (this instrumented run)
+PROCESS_WALL_NO_GRAPH=42.130s
+CAVEATS: only sampled leaves have detailed timers; sampling based on leaf content, not random repeated execution.
+Per-row timer overhead may inflate stage durations. No speedup or graph-quality claim.
+Do not extrapolate sample percentages to whole BUILD unless validated across sampling mods/seeds.

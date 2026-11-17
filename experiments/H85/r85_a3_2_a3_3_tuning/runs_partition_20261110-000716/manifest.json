@@ -1,0 +1,63 @@
+{
+  "phase": "partition",
+  "schedule": [
+    [
+      1,
+      "C64_K512_N2"
+    ],
+    [
+      1,
+      "C64_K768_N2"
+    ],
+    [
+      1,
+      "C64_K1024_N1"
+    ],
+    [
+      2,
+      "C64_K1024_N1"
+    ],
+    [
+      2,
+      "C64_K768_N2"
+    ],
+    [
+      2,
+      "C64_K512_N2"
+    ]
+  ],
+  "params": {
+    "C64_K512_N2": [
+      64,
+      64,
+      1.1,
+      512,
+      2
+    ],
+    "C64_K768_N2": [
+      64,
+      64,
+      1.1,
+      768,
+      2
+    ],
+    "C64_K1024_N1": [
+      64,
+      64,
+      1.1,
+      1024,
+      1
+    ]
+  },
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "h17_sha256": "8757b9be9fa3ae1f90febe082001fa60ba22c71ba6b6cdd899e013f6c0bcd500",
+  "a3_runner_sha256": "ab30f4d0bdb4fe81cca6f8095e4b819900c91008344b0809ed000eb03504cf56",
+  "reps": 2,
+  "protocol": "H17-only; 4 physical P cores; original source unmodified",
+  "reference_a3_1": "/home/tai/ann-task-a/experiments/H85/r85_a3_1_capacity_sweep/runs_20261109-233756"
+}

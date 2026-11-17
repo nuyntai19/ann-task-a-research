@@ -1,0 +1,420 @@
+{
+  "kind": "NATIVE_PIPNN_CHECKRECALL_SAVED_GRAPHS",
+  "threads": 1,
+  "query_count": 300,
+  "k": 10,
+  "cut": 1.35,
+  "beams": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "graph_construction_threads": 4,
+  "limitations": [
+    "3 graphs/arm, search 300 queries; exploratory, QPS subject to run order/cache",
+    "no end-to-end build/search benchmark; separate stages",
+    "GT is expected exact for 100K base; validate separately first"
+  ],
+  "summary": {
+    "stock": {
+      "10": {
+        "recall": [
+          0.78899997,
+          0.79533333,
+          0.79133332
+        ],
+        "recall_median": 0.79133332,
+        "qps": [
+          21111.89257812,
+          20901.5546875,
+          21065.9375
+        ],
+        "qps_median": 21065.9375
+      },
+      "20": {
+        "recall": [
+          0.90700001,
+          0.90566665,
+          0.91066664
+        ],
+        "recall_median": 0.90700001,
+        "qps": [
+          14446.69238281,
+          14151.61132812,
+          13333.92578125
+        ],
+        "qps_median": 14151.61132812
+      },
+      "40": {
+        "recall": [
+          0.97333336,
+          0.977,
+          0.97600001
+        ],
+        "recall_median": 0.97600001,
+        "qps": [
+          9427.44042969,
+          9375.87890625,
+          8722.45117188
+        ],
+        "qps_median": 9375.87890625
+      },
+      "80": {
+        "recall": [
+          0.99533331,
+          0.995,
+          0.9946667
+        ],
+        "recall_median": 0.995,
+        "qps": [
+          5564.52050781,
+          5435.96435547,
+          5565.65625
+        ],
+        "qps_median": 5564.52050781
+      },
+      "160": {
+        "recall": [
+          0.99966669,
+          0.99966669,
+          0.99966669
+        ],
+        "recall_median": 0.99966669,
+        "qps": [
+          3352.10498047,
+          3309.21289062,
+          3356.98144531
+        ],
+        "qps_median": 3352.10498047
+      }
+    },
+    "tier": {
+      "10": {
+        "recall": [
+          0.79166669,
+          0.79166669,
+          0.7923333
+        ],
+        "recall_median": 0.79166669,
+        "qps": [
+          20352.78125,
+          18878.609375,
+          20702.50390625
+        ],
+        "qps_median": 20352.78125
+      },
+      "20": {
+        "recall": [
+          0.90833336,
+          0.90833336,
+          0.91299999
+        ],
+        "recall_median": 0.90833336,
+        "qps": [
+          13358.26855469,
+          14841.19824219,
+          14889.81542969
+        ],
+        "qps_median": 14841.19824219
+      },
+      "40": {
+        "recall": [
+          0.97600001,
+          0.97600001,
+          0.97666669
+        ],
+        "recall_median": 0.97600001,
+        "qps": [
+          8254.68457031,
+          9383.796875,
+          9270.13183594
+        ],
+        "qps_median": 9270.13183594
+      },
+      "80": {
+        "recall": [
+          0.99599999,
+          0.99599999,
+          0.9946667
+        ],
+        "recall_median": 0.99599999,
+        "qps": [
+          5019.24072266,
+          5491.78955078,
+          5541.39404297
+        ],
+        "qps_median": 5491.78955078
+      },
+      "160": {
+        "recall": [
+          0.99966669,
+          0.99966669,
+          0.99966669
+        ],
+        "recall_median": 0.99966669,
+        "qps": [
+          3032.50854492,
+          3316.23608398,
+          3343.32617188
+        ],
+        "qps_median": 3316.23608398
+      }
+    }
+  },
+  "runs": [
+    {
+      "tag": "pilot_stock",
+      "variant": "stock",
+      "graph": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/stock.graph",
+      "measurements": [
+        {
+          "beam": 10,
+          "recall": 0.78899997,
+          "qps": 21111.89257812,
+          "avg_cmps": 364.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20,
+          "recall": 0.90700001,
+          "qps": 14446.69238281,
+          "avg_cmps": 539.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40,
+          "recall": 0.97333336,
+          "qps": 9427.44042969,
+          "avg_cmps": 867.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.99533331,
+          "qps": 5564.52050781,
+          "avg_cmps": 1429.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99966669,
+          "qps": 3352.10498047,
+          "avg_cmps": 2194.0,
+          "avg_visited": 150.0
+        }
+      ]
+    },
+    {
+      "tag": "repeat_01_tier",
+      "variant": "tier",
+      "graph": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/01_tier.graph",
+      "measurements": [
+        {
+          "beam": 10,
+          "recall": 0.79166669,
+          "qps": 20352.78125,
+          "avg_cmps": 370.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20,
+          "recall": 0.90833336,
+          "qps": 13358.26855469,
+          "avg_cmps": 541.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40,
+          "recall": 0.97600001,
+          "qps": 8254.68457031,
+          "avg_cmps": 866.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.99599999,
+          "qps": 5019.24072266,
+          "avg_cmps": 1432.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99966669,
+          "qps": 3032.50854492,
+          "avg_cmps": 2201.0,
+          "avg_visited": 151.0
+        }
+      ]
+    },
+    {
+      "tag": "repeat_02_stock",
+      "variant": "stock",
+      "graph": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/02_stock.graph",
+      "measurements": [
+        {
+          "beam": 10,
+          "recall": 0.79533333,
+          "qps": 20901.5546875,
+          "avg_cmps": 366.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20,
+          "recall": 0.90566665,
+          "qps": 14151.61132812,
+          "avg_cmps": 538.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40,
+          "recall": 0.977,
+          "qps": 9375.87890625,
+          "avg_cmps": 865.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.995,
+          "qps": 5435.96435547,
+          "avg_cmps": 1427.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99966669,
+          "qps": 3309.21289062,
+          "avg_cmps": 2199.0,
+          "avg_visited": 151.0
+        }
+      ]
+    },
+    {
+      "tag": "pilot_tier",
+      "variant": "tier",
+      "graph": "/home/tai/ann-task-a/experiments/H70/pilot-sift100k-4t/tier.graph",
+      "measurements": [
+        {
+          "beam": 10,
+          "recall": 0.79166669,
+          "qps": 18878.609375,
+          "avg_cmps": 370.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20,
+          "recall": 0.90833336,
+          "qps": 14841.19824219,
+          "avg_cmps": 541.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40,
+          "recall": 0.97600001,
+          "qps": 9383.796875,
+          "avg_cmps": 866.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.99599999,
+          "qps": 5491.78955078,
+          "avg_cmps": 1432.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99966669,
+          "qps": 3316.23608398,
+          "avg_cmps": 2201.0,
+          "avg_visited": 151.0
+        }
+      ]
+    },
+    {
+      "tag": "repeat_04_tier",
+      "variant": "tier",
+      "graph": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/04_tier.graph",
+      "measurements": [
+        {
+          "beam": 10,
+          "recall": 0.7923333,
+          "qps": 20702.50390625,
+          "avg_cmps": 366.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20,
+          "recall": 0.91299999,
+          "qps": 14889.81542969,
+          "avg_cmps": 542.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40,
+          "recall": 0.97666669,
+          "qps": 9270.13183594,
+          "avg_cmps": 867.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.9946667,
+          "qps": 5541.39404297,
+          "avg_cmps": 1431.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99966669,
+          "qps": 3343.32617188,
+          "avg_cmps": 2194.0,
+          "avg_visited": 150.0
+        }
+      ]
+    },
+    {
+      "tag": "repeat_03_stock",
+      "variant": "stock",
+      "graph": "/home/tai/ann-task-a/experiments/H70/repeats-sift100k-4t-20261104-190948-378600/03_stock.graph",
+      "measurements": [
+        {
+          "beam": 10,
+          "recall": 0.79133332,
+          "qps": 21065.9375,
+          "avg_cmps": 364.0,
+          "avg_visited": 18.0
+        },
+        {
+          "beam": 20,
+          "recall": 0.91066664,
+          "qps": 13333.92578125,
+          "avg_cmps": 540.0,
+          "avg_visited": 28.0
+        },
+        {
+          "beam": 40,
+          "recall": 0.97600001,
+          "qps": 8722.45117188,
+          "avg_cmps": 863.0,
+          "avg_visited": 47.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.9946667,
+          "qps": 5565.65625,
+          "avg_cmps": 1428.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99966669,
+          "qps": 3356.98144531,
+          "avg_cmps": 2190.0,
+          "avg_visited": 150.0
+        }
+      ]
+    }
+  ]
+}

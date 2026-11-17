@@ -1,0 +1,9 @@
+H26-P0 BUILD profiling — DIAGNOSTIC ONLY
+worker stage durations are summed across parallel leaves, not additive BUILD wall.
+total process wall includes graph-writing and any harness overhead.
+mode          n       process_wall_s     dist_worker_s  select_worker_s  merge_worker_s  select_share
+stock       2              50.025            61.945           69.211          14.045       47.65%
+top2        2              42.035            61.623           38.758          13.919       33.91%
+Top2 vs stock median process wall change: -15.97%
+Top2 vs stock median selection worker change: -44.00%
+NO claim about H17 equivalence, graph quality or Pareto before independent graph/search verification.

@@ -1,0 +1,26 @@
+{
+  "study": "H25_R1_FINAL_GRAPH_PATCH_EDGE_PRESENCE",
+  "limitations": "Not a HashPrune decision trace; baseline and variant can differ because of concurrent merge nondeterminism; native paired repeats needed.",
+  "policies": {
+    "nearest": {
+      "patched_events": 23584,
+      "replacement_endpoint_present_in_native_baseline": 4496,
+      "replacement_endpoint_present_in_variant_final": 9720,
+      "replacement_endpoint_absent_baseline_present_variant": 5369,
+      "original_endpoint_present_in_baseline": 18766,
+      "original_endpoint_present_in_variant": 18715,
+      "removed_original_endpoint_baseline_to_variant": 231,
+      "note": "Edge membership in final graph is an association, not proof of survival of the injected proposal: other leaves/reverse merges may also contribute."
+    },
+    "random": {
+      "patched_events": 23584,
+      "replacement_endpoint_present_in_native_baseline": 3418,
+      "replacement_endpoint_present_in_variant_final": 9015,
+      "replacement_endpoint_absent_baseline_present_variant": 5722,
+      "original_endpoint_present_in_baseline": 18766,
+      "original_endpoint_present_in_variant": 18726,
+      "removed_original_endpoint_baseline_to_variant": 192,
+      "note": "Edge membership in final graph is an association, not proof of survival of the injected proposal: other leaves/reverse merges may also contribute."
+    }
+  }
+}

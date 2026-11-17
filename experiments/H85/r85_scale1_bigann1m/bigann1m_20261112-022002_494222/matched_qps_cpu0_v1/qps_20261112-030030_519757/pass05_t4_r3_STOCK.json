@@ -1,0 +1,113 @@
+{
+  "arm": "STOCK",
+  "beam_order": [
+    20,
+    21,
+    24,
+    40,
+    50,
+    80,
+    120,
+    160
+  ],
+  "graph_sha256": "3115fe8010ff67486a0c125fac6c538dc07804e72281a165aec56cf9a5e49215",
+  "log_sha256": "d37851a1f9ff580c363897b8b910618003b29f26aecf35c1df21f20685e23a43",
+  "matched": {
+    "0.89": {
+      "avg_cmps": 866.183518689653,
+      "bracket_beams": [
+        20,
+        21
+      ],
+      "interpolation_weight": 0.5493132787355419,
+      "latency_us": 43.277265123096704
+    },
+    "0.96": {
+      "avg_cmps": 1374.6014416971684,
+      "bracket_beams": [
+        24,
+        40
+      ],
+      "interpolation_weight": 0.9917710452715939,
+      "latency_us": 67.80688589823433
+    },
+    "0.99": {
+      "avg_cmps": 2296.4321528796536,
+      "bracket_beams": [
+        50,
+        80
+      ],
+      "interpolation_weight": 0.9857409133824939,
+      "latency_us": 118.59224088364083
+    },
+    "0.998": {
+      "avg_cmps": 3579.4339303122483,
+      "bracket_beams": [
+        120,
+        160
+      ],
+      "interpolation_weight": 0.8894332720273999,
+      "latency_us": 206.86228701585884
+    }
+  },
+  "rep": 5,
+  "rows": [
+    {
+      "avg_cmps": 853.0,
+      "avg_visited": 27.0,
+      "beam": 20,
+      "qps": 23446.38476562,
+      "recall": 0.88638002
+    },
+    {
+      "avg_cmps": 877.0,
+      "avg_visited": 28.0,
+      "beam": 21,
+      "qps": 22835.48242188,
+      "recall": 0.89297003
+    },
+    {
+      "avg_cmps": 965.0,
+      "avg_visited": 31.0,
+      "beam": 24,
+      "qps": 20852.6640625,
+      "recall": 0.91299999
+    },
+    {
+      "avg_cmps": 1378.0,
+      "avg_visited": 47.0,
+      "beam": 40,
+      "qps": 14712.02734375,
+      "recall": 0.96038997
+    },
+    {
+      "avg_cmps": 1635.0,
+      "avg_visited": 56.0,
+      "beam": 50,
+      "qps": 12250.33789062,
+      "recall": 0.97341001
+    },
+    {
+      "avg_cmps": 2306.0,
+      "avg_visited": 85.0,
+      "beam": 80,
+      "qps": 8394.40917969,
+      "recall": 0.99023998
+    },
+    {
+      "avg_cmps": 3052.0,
+      "avg_visited": 119.0,
+      "beam": 120,
+      "qps": 5965.28808594,
+      "recall": 0.99623001
+    },
+    {
+      "avg_cmps": 3645.0,
+      "avg_visited": 149.0,
+      "beam": 160,
+      "qps": 4722.80664062,
+      "recall": 0.99822003
+    }
+  ],
+  "tag": "t4_r3_STOCK"
+}

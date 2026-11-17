@@ -1,0 +1,117 @@
+{
+  "status": "NO_GO_SCORE_DOES_NOT_BEAT_SIMPLE_BASELINES",
+  "utc": "2026-10-24T17:13:23.112360+00:00",
+  "experiment": "H19-G0 SAMPLE-ONLY; no graph BUILD and no Recall evaluation",
+  "data_source": "H18-R1 SAME-RUN proposal capture + SIFT1M raw fbin; no R1.2/ H18-C1 data mixed",
+  "paths": {
+    "capture": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin",
+    "dataset": "/home/tai/ann-task-a/data/sift1m.fbin",
+    "output": "/home/tai/ann-task-a/experiments/H19/phase4_g01_48samples"
+  },
+  "input_sha256": {
+    "H18_R1_proposals": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95",
+    "SIFT1M_fbin": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+  },
+  "capture": {
+    "n": 1000000,
+    "leaf_count": 85529,
+    "proposal_events": 59990170
+  },
+  "pre_registration": {
+    "seed": 20261024,
+    "anchors": 14,
+    "near_per_anchor": 6,
+    "random_per_anchor": 6,
+    "samples_per_leaf": 48,
+    "pilot_probability": 0.6,
+    "budget_blocks": 20,
+    "score_calibration": "scores do NOT read holdout pairwise exact distances; evaluated after scoring",
+    "budget_definition": "sum of full |A|*|B| rectangle pair counts, not actual wall clock"
+  },
+  "sampling": {
+    "probe_pairs_all": 168,
+    "eligible_pairs": 168,
+    "unique_selected_source_nodes": 63063,
+    "pilot_neighbor_covered_nodes": 63063,
+    "pilot_unique_directed_keys_selected_sources": 1106966,
+    "total_observed_surrogate_hits": 159,
+    "pilot_leaves_total": 51150,
+    "selected_shortlist_sketch_dimensions": [
+      0,
+      1,
+      4,
+      11,
+      20,
+      30,
+      47,
+      52,
+      57,
+      63,
+      74,
+      78,
+      84,
+      123,
+      124,
+      127
+    ]
+  },
+  "pair_budget": 1674100,
+  "ranking": {
+    "directional_score": {
+      "blocks": 22,
+      "full_rectangular_pairs": 1664149,
+      "evaluated_sampled_pairs": 101368,
+      "sampled_hits": 62,
+      "sampled_hit_rate": 0.0006116328624417962,
+      "sampled_hits_per_million_full_pair_budget": 37.25627933556431
+    },
+    "nearest_score": {
+      "blocks": 21,
+      "full_rectangular_pairs": 1674023,
+      "evaluated_sampled_pairs": 96752,
+      "sampled_hits": 87,
+      "sampled_hit_rate": 0.0008992062179593187,
+      "sampled_hits_per_million_full_pair_budget": 51.97061211225891
+    },
+    "overlap_high_score": {
+      "blocks": 13,
+      "full_rectangular_pairs": 1662106,
+      "evaluated_sampled_pairs": 59886,
+      "sampled_hits": 46,
+      "sampled_hit_rate": 0.000768126106268577,
+      "sampled_hits_per_million_full_pair_budget": 27.67573187269645
+    },
+    "overlap_low_score": {
+      "blocks": 15,
+      "full_rectangular_pairs": 1662781,
+      "evaluated_sampled_pairs": 69120,
+      "sampled_hits": 0,
+      "sampled_hit_rate": 0.0,
+      "sampled_hits_per_million_full_pair_budget": 0.0
+    },
+    "radius_score": {
+      "blocks": 18,
+      "full_rectangular_pairs": 1666276,
+      "evaluated_sampled_pairs": 82930,
+      "sampled_hits": 33,
+      "sampled_hit_rate": 0.00039792596165440735,
+      "sampled_hits_per_million_full_pair_budget": 19.804642208133586
+    }
+  },
+  "random_30": {
+    "median_sampled_hit_rate": 0.00023178239156210662,
+    "q10": 6.537543402777779e-05,
+    "q90": 0.0003708235860298826
+  },
+  "notes": [
+    "Primary label: directed cross-block pair not in PILOT proposals and closer than PILOT second-nearest proposed neighbor. Surrogate ONLY, not final graph retention or ANN Recall.",
+    "Candidate block pairs are a cheap sketch-selected search space plus random controls, not exhaustive all block pairs.",
+    "Pilot/holdout split is by leaf. Different leaves can share vertices; source availability in pilot varies.",
+    "Some candidate pair distances were likely computed in other leaves without becoming Top-2 proposals. This audit cannot recover all pairwork from proposal logs.",
+    "Per-leaf proposal sources reconstruct membership for leaves size>=2; empty/singleton leaf memberships are not recoverable.",
+    "Overlap-only/centroid-distance proxies are simple ranking baselines; their failure does not prove novelty of directional proxy.",
+    "Same score-based block budget does NOT simulate what happens when baseline leaves are removed (lost candidate edges), or include pilot/packing/scoring wall-time.",
+    "Outcomes are correlated samples; no p-values, generalization to other seeds/data, degree/recall or algorithm performance claims.",
+    "H19-C1 remains NOT SELECTED even if proxy beats sampled baselines."
+  ]
+}

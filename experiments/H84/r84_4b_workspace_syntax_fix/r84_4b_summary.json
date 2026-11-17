@@ -1,0 +1,15 @@
+{
+  "status": "R84_4B_W_FULL_INSTANTIATION_SYNTAX_PASS",
+  "corrected_header_sha256": "49fd0e1d260d3c8598a532729d050cec8c5bb52069c43493ed13522cc0c857db",
+  "original_header_sha256": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+  "previous_attempt": "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax",
+  "old_error_excerpt": [
+    "/home/tai/ann-task-a/experiments/H84/r84_4_workspace_stage_syntax/W/algorithms/PipNN/pipnn_utils.h:453:42: error: ‘n’ was not declared in this scope"
+  ],
+  "compile_workdir": "/home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN",
+  "compiler_command": "/usr/bin/c++ -I/home/tai/ann-task-a/experiments/H84/r84_4b_workspace_syntax_fix/W/algorithms -DHWY_STATIC_DEFINE -DPARLAY_ELASTIC_PARALLELISM=true -DTOOLCHAIN_MISS_ASM_HWCAP_H -DUSE_DATATYPE_FLOAT_T -DUSE_DISTANCE_EUCLIDEAN -I/home/tai/ann-task-a/src/PiPNN/algorithms/PipNN/../bench -I/home/tai/ann-task-a/src/PiPNN/algorithms/PipNN/../../external/Parallel-KMeans/seeding -I/home/tai/ann-task-a/src/PiPNN/build/_deps/parlaylib-src/include -I/home/tai/ann-task-a/src/PiPNN/algorithms -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src -I/home/tai/ann-task-a/src/PiPNN/build/_deps/abseil-cpp-src -I/home/tai/ann-task-a/src/PiPNN/build/_deps/highway-src -march=native -ffast-math -O3 -DNDEBUG -std=gnu++17 -fPIE -Winvalid-pch -DR70_TWO_TIER=1 -DR71_H17_TOP2=1 -DR84_LEAF_WORKSPACE=1 -fsyntax-only -x c++ /home/tai/ann-task-a/experiments/H84/r84_4b_workspace_syntax_fix/W/r84_4_real_benchmark_instantiation.cc",
+  "note": "No object compilation, linking, graph BUILD, or Recall.",
+  "exit_code": 0,
+  "compiler_log": "/home/tai/ann-task-a/experiments/H84/r84_4b_workspace_syntax_fix/W/compiler.log",
+  "compiler_errors": []
+}

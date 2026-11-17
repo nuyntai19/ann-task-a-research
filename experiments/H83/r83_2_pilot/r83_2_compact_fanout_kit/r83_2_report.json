@@ -1,0 +1,153 @@
+{
+  "phase": "pilot",
+  "source_sha256": "c6af2214f82910ab5ff1f7f2ea0b49ab7bc5927ca91536c1f9fdaea1cc528dd0",
+  "parlay_head": "7cdb4cae8f020525f5eb4ad82e2565d1e38cfbc3",
+  "pipnn_head": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "native_cpp_flags": [
+    "g++",
+    "-std=c++17",
+    "-O3",
+    "-pthread",
+    "-I",
+    "/home/tai/ann-task-a/src/PiPNN/parlaylib/include",
+    "/home/tai/ann-task-a/experiments/H83/r83_2_pilot/r83_2_compact_fanout_kit/r83_compact_fanout.cc",
+    "-o",
+    "/home/tai/ann-task-a/experiments/H83/r83_2_pilot/r83_2_compact_fanout_kit/r83_compact_fanout"
+  ],
+  "clustered": [
+    {
+      "arm": "flat",
+      "label": "clustered_r1_flat",
+      "checksum": "14862446485224118643",
+      "members": 10000000,
+      "populate_s": 0.08416,
+      "grouping_s": 0.0241665,
+      "subtotal_s": 0.108327,
+      "peakRSS_KiB": 132828,
+      "process_wall_s": 0.14
+    },
+    {
+      "arm": "compact",
+      "label": "clustered_r1_compact",
+      "checksum": "14862446485224118643",
+      "members": 10000000,
+      "populate_s": 0.052894,
+      "grouping_s": 0.0345888,
+      "subtotal_s": 0.0874828,
+      "peakRSS_KiB": 74032,
+      "process_wall_s": 0.11
+    },
+    {
+      "arm": "compact",
+      "label": "clustered_r2_compact",
+      "checksum": "14862446485224118643",
+      "members": 10000000,
+      "populate_s": 0.0457471,
+      "grouping_s": 0.031995,
+      "subtotal_s": 0.0777421,
+      "peakRSS_KiB": 74236,
+      "process_wall_s": 0.1
+    },
+    {
+      "arm": "flat",
+      "label": "clustered_r2_flat",
+      "checksum": "14862446485224118643",
+      "members": 10000000,
+      "populate_s": 0.0800666,
+      "grouping_s": 0.0243063,
+      "subtotal_s": 0.104373,
+      "peakRSS_KiB": 132836,
+      "process_wall_s": 0.13
+    },
+    {
+      "arm": "flat",
+      "label": "clustered_r3_flat",
+      "checksum": "14862446485224118643",
+      "members": 10000000,
+      "populate_s": 0.0816945,
+      "grouping_s": 0.0236474,
+      "subtotal_s": 0.105342,
+      "peakRSS_KiB": 132960,
+      "process_wall_s": 0.13
+    },
+    {
+      "arm": "compact",
+      "label": "clustered_r3_compact",
+      "checksum": "14862446485224118643",
+      "members": 10000000,
+      "populate_s": 0.0373494,
+      "grouping_s": 0.0418226,
+      "subtotal_s": 0.0791721,
+      "peakRSS_KiB": 74140,
+      "process_wall_s": 0.11
+    }
+  ],
+  "uniform": [
+    {
+      "arm": "flat",
+      "label": "uniform_r1_flat",
+      "checksum": "11463085200508004275",
+      "members": 10000000,
+      "populate_s": 0.141377,
+      "grouping_s": 0.0440759,
+      "subtotal_s": 0.185453,
+      "peakRSS_KiB": 132628,
+      "process_wall_s": 0.22
+    },
+    {
+      "arm": "compact",
+      "label": "uniform_r1_compact",
+      "checksum": "11463085200508004275",
+      "members": 10000000,
+      "populate_s": 0.0633211,
+      "grouping_s": 0.0334253,
+      "subtotal_s": 0.0967464,
+      "peakRSS_KiB": 74316,
+      "process_wall_s": 0.12
+    },
+    {
+      "arm": "compact",
+      "label": "uniform_r2_compact",
+      "checksum": "11463085200508004275",
+      "members": 10000000,
+      "populate_s": 0.0548127,
+      "grouping_s": 0.0333225,
+      "subtotal_s": 0.0881351,
+      "peakRSS_KiB": 74140,
+      "process_wall_s": 0.11
+    },
+    {
+      "arm": "flat",
+      "label": "uniform_r2_flat",
+      "checksum": "11463085200508004275",
+      "members": 10000000,
+      "populate_s": 0.0878813,
+      "grouping_s": 0.026805,
+      "subtotal_s": 0.114686,
+      "peakRSS_KiB": 132632,
+      "process_wall_s": 0.14
+    },
+    {
+      "arm": "flat",
+      "label": "uniform_r3_flat",
+      "checksum": "11463085200508004275",
+      "members": 10000000,
+      "populate_s": 0.0709064,
+      "grouping_s": 0.0259109,
+      "subtotal_s": 0.0968173,
+      "peakRSS_KiB": 132672,
+      "process_wall_s": 0.13
+    },
+    {
+      "arm": "compact",
+      "label": "uniform_r3_compact",
+      "checksum": "11463085200508004275",
+      "members": 10000000,
+      "populate_s": 0.0496314,
+      "grouping_s": 0.0288277,
+      "subtotal_s": 0.0784591,
+      "peakRSS_KiB": 74128,
+      "process_wall_s": 0.1
+    }
+  ]
+}

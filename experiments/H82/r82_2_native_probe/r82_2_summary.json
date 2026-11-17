@@ -1,0 +1,1181 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_GRAPH_BUILD_NOT_RECALL",
+  "source_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "source_hash_h_git_blob": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+  "parlay_include": "/home/tai/ann-task-a/src/PiPNN/parlaylib/include",
+  "parlay_provenance": "PINNED_FULL_PARLAY_COMMIT",
+  "capture_sha256": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95",
+  "dataset": "SIFT1M 1m x 128 float32",
+  "sample_seed": 20261106,
+  "sampled_leaf_ids": [
+    333,
+    704,
+    1000,
+    1521,
+    1782,
+    2645,
+    3183,
+    3203,
+    3264,
+    3721,
+    4190,
+    4278,
+    5730,
+    6334,
+    7215,
+    7564,
+    8539,
+    9349,
+    9850,
+    10154,
+    10168,
+    10828,
+    11579,
+    11730,
+    12674,
+    13429,
+    14297,
+    14834,
+    17482,
+    17509,
+    17994,
+    18375,
+    20801,
+    22449,
+    22941,
+    25081,
+    25430,
+    26353,
+    26828,
+    27412,
+    27424,
+    27741,
+    28189,
+    30146,
+    30357,
+    30400,
+    30812,
+    31248,
+    31743,
+    33717,
+    35735,
+    36509,
+    36695,
+    36926,
+    37795,
+    37801,
+    37828,
+    37852,
+    40523,
+    40761,
+    41547,
+    42607,
+    44430,
+    45145,
+    45184,
+    46728,
+    46884,
+    47115,
+    47257,
+    47314,
+    47676,
+    47689,
+    48286,
+    48733,
+    49140,
+    50770,
+    51399,
+    51992,
+    52526,
+    53037,
+    53194,
+    53239,
+    53540,
+    54283,
+    54717,
+    56055,
+    56490,
+    57052,
+    57883,
+    58304,
+    59027,
+    59105,
+    59237,
+    59704,
+    59776,
+    61352,
+    61843,
+    61864,
+    62165,
+    62364,
+    62639,
+    62802,
+    63043,
+    65875,
+    65878,
+    66345,
+    66447,
+    67632,
+    68489,
+    69144,
+    70053,
+    70769,
+    71463,
+    72658,
+    73608,
+    74242,
+    75213,
+    75362,
+    75839,
+    78374,
+    78566,
+    80016,
+    80941,
+    81462,
+    82265,
+    84477,
+    85027,
+    85054
+  ],
+  "hash_method": "Original pinned Hash_Family hyperplanes; source-matching per-point float accumulation, 12-bit relative sketches, seed=0",
+  "hash_float_caveat": "Native standalone probe compiled without FMA; not a recorded hash from original build. 1e-6 relative boundary is a heuristic sensitivity flag, NOT rigorous numerical error bound.",
+  "counts": {
+    "rows": 43806,
+    "nominal": 1356,
+    "definite": 1356,
+    "possible": 2714,
+    "sensitive": 1360,
+    "unique_points": 42769
+  },
+  "per_leaf": [
+    {
+      "slot": 0,
+      "rows": 152,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 2,
+      "sensitive": 0
+    },
+    {
+      "slot": 1,
+      "rows": 560,
+      "nominal": 26,
+      "definite": 26,
+      "possible": 38,
+      "sensitive": 12
+    },
+    {
+      "slot": 2,
+      "rows": 357,
+      "nominal": 8,
+      "definite": 8,
+      "possible": 14,
+      "sensitive": 6
+    },
+    {
+      "slot": 3,
+      "rows": 203,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 15,
+      "sensitive": 4
+    },
+    {
+      "slot": 4,
+      "rows": 279,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 13,
+      "sensitive": 8
+    },
+    {
+      "slot": 5,
+      "rows": 143,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 6,
+      "sensitive": 0
+    },
+    {
+      "slot": 6,
+      "rows": 117,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 4,
+      "sensitive": 2
+    },
+    {
+      "slot": 7,
+      "rows": 761,
+      "nominal": 23,
+      "definite": 23,
+      "possible": 83,
+      "sensitive": 60
+    },
+    {
+      "slot": 8,
+      "rows": 295,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 21,
+      "sensitive": 16
+    },
+    {
+      "slot": 9,
+      "rows": 132,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 14,
+      "sensitive": 10
+    },
+    {
+      "slot": 10,
+      "rows": 504,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 9,
+      "sensitive": 0
+    },
+    {
+      "slot": 11,
+      "rows": 258,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 7,
+      "sensitive": 2
+    },
+    {
+      "slot": 12,
+      "rows": 252,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 13,
+      "sensitive": 4
+    },
+    {
+      "slot": 13,
+      "rows": 188,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 14,
+      "sensitive": 8
+    },
+    {
+      "slot": 14,
+      "rows": 204,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 17,
+      "sensitive": 8
+    },
+    {
+      "slot": 15,
+      "rows": 152,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 4,
+      "sensitive": 2
+    },
+    {
+      "slot": 16,
+      "rows": 760,
+      "nominal": 22,
+      "definite": 22,
+      "possible": 52,
+      "sensitive": 30
+    },
+    {
+      "slot": 17,
+      "rows": 125,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 4,
+      "sensitive": 0
+    },
+    {
+      "slot": 18,
+      "rows": 283,
+      "nominal": 8,
+      "definite": 8,
+      "possible": 20,
+      "sensitive": 12
+    },
+    {
+      "slot": 19,
+      "rows": 370,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 7,
+      "sensitive": 4
+    },
+    {
+      "slot": 20,
+      "rows": 233,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 16,
+      "sensitive": 10
+    },
+    {
+      "slot": 21,
+      "rows": 556,
+      "nominal": 22,
+      "definite": 22,
+      "possible": 50,
+      "sensitive": 28
+    },
+    {
+      "slot": 22,
+      "rows": 238,
+      "nominal": 3,
+      "definite": 3,
+      "possible": 7,
+      "sensitive": 4
+    },
+    {
+      "slot": 23,
+      "rows": 227,
+      "nominal": 3,
+      "definite": 3,
+      "possible": 3,
+      "sensitive": 0
+    },
+    {
+      "slot": 24,
+      "rows": 476,
+      "nominal": 15,
+      "definite": 15,
+      "possible": 35,
+      "sensitive": 20
+    },
+    {
+      "slot": 25,
+      "rows": 290,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 12,
+      "sensitive": 6
+    },
+    {
+      "slot": 26,
+      "rows": 185,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 11,
+      "sensitive": 4
+    },
+    {
+      "slot": 27,
+      "rows": 419,
+      "nominal": 30,
+      "definite": 30,
+      "possible": 64,
+      "sensitive": 34
+    },
+    {
+      "slot": 28,
+      "rows": 447,
+      "nominal": 18,
+      "definite": 18,
+      "possible": 20,
+      "sensitive": 2
+    },
+    {
+      "slot": 29,
+      "rows": 177,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 10,
+      "sensitive": 4
+    },
+    {
+      "slot": 30,
+      "rows": 193,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 2,
+      "sensitive": 0
+    },
+    {
+      "slot": 31,
+      "rows": 485,
+      "nominal": 15,
+      "definite": 15,
+      "possible": 29,
+      "sensitive": 14
+    },
+    {
+      "slot": 32,
+      "rows": 998,
+      "nominal": 25,
+      "definite": 25,
+      "possible": 57,
+      "sensitive": 32
+    },
+    {
+      "slot": 33,
+      "rows": 296,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 5,
+      "sensitive": 0
+    },
+    {
+      "slot": 34,
+      "rows": 171,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 12,
+      "sensitive": 6
+    },
+    {
+      "slot": 35,
+      "rows": 450,
+      "nominal": 22,
+      "definite": 22,
+      "possible": 38,
+      "sensitive": 16
+    },
+    {
+      "slot": 36,
+      "rows": 204,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 6,
+      "sensitive": 2
+    },
+    {
+      "slot": 37,
+      "rows": 341,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 4,
+      "sensitive": 0
+    },
+    {
+      "slot": 38,
+      "rows": 898,
+      "nominal": 29,
+      "definite": 29,
+      "possible": 51,
+      "sensitive": 22
+    },
+    {
+      "slot": 39,
+      "rows": 226,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 16,
+      "sensitive": 10
+    },
+    {
+      "slot": 40,
+      "rows": 114,
+      "nominal": 1,
+      "definite": 1,
+      "possible": 1,
+      "sensitive": 0
+    },
+    {
+      "slot": 41,
+      "rows": 373,
+      "nominal": 10,
+      "definite": 10,
+      "possible": 20,
+      "sensitive": 10
+    },
+    {
+      "slot": 42,
+      "rows": 396,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 21,
+      "sensitive": 10
+    },
+    {
+      "slot": 43,
+      "rows": 673,
+      "nominal": 21,
+      "definite": 21,
+      "possible": 27,
+      "sensitive": 6
+    },
+    {
+      "slot": 44,
+      "rows": 113,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 10,
+      "sensitive": 4
+    },
+    {
+      "slot": 45,
+      "rows": 133,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 10,
+      "sensitive": 6
+    },
+    {
+      "slot": 46,
+      "rows": 682,
+      "nominal": 12,
+      "definite": 12,
+      "possible": 38,
+      "sensitive": 26
+    },
+    {
+      "slot": 47,
+      "rows": 188,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 21,
+      "sensitive": 12
+    },
+    {
+      "slot": 48,
+      "rows": 391,
+      "nominal": 17,
+      "definite": 17,
+      "possible": 27,
+      "sensitive": 10
+    },
+    {
+      "slot": 49,
+      "rows": 225,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 12,
+      "sensitive": 6
+    },
+    {
+      "slot": 50,
+      "rows": 205,
+      "nominal": 3,
+      "definite": 3,
+      "possible": 7,
+      "sensitive": 4
+    },
+    {
+      "slot": 51,
+      "rows": 422,
+      "nominal": 21,
+      "definite": 21,
+      "possible": 53,
+      "sensitive": 32
+    },
+    {
+      "slot": 52,
+      "rows": 598,
+      "nominal": 22,
+      "definite": 22,
+      "possible": 48,
+      "sensitive": 26
+    },
+    {
+      "slot": 53,
+      "rows": 369,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 31,
+      "sensitive": 18
+    },
+    {
+      "slot": 54,
+      "rows": 141,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 11,
+      "sensitive": 6
+    },
+    {
+      "slot": 55,
+      "rows": 438,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 15,
+      "sensitive": 6
+    },
+    {
+      "slot": 56,
+      "rows": 624,
+      "nominal": 14,
+      "definite": 14,
+      "possible": 14,
+      "sensitive": 0
+    },
+    {
+      "slot": 57,
+      "rows": 401,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 7,
+      "sensitive": 0
+    },
+    {
+      "slot": 58,
+      "rows": 458,
+      "nominal": 19,
+      "definite": 19,
+      "possible": 37,
+      "sensitive": 18
+    },
+    {
+      "slot": 59,
+      "rows": 292,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 19,
+      "sensitive": 8
+    },
+    {
+      "slot": 60,
+      "rows": 475,
+      "nominal": 34,
+      "definite": 34,
+      "possible": 70,
+      "sensitive": 36
+    },
+    {
+      "slot": 61,
+      "rows": 198,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 9,
+      "sensitive": 4
+    },
+    {
+      "slot": 62,
+      "rows": 103,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 2,
+      "sensitive": 0
+    },
+    {
+      "slot": 63,
+      "rows": 271,
+      "nominal": 3,
+      "definite": 3,
+      "possible": 9,
+      "sensitive": 6
+    },
+    {
+      "slot": 64,
+      "rows": 156,
+      "nominal": 1,
+      "definite": 1,
+      "possible": 3,
+      "sensitive": 2
+    },
+    {
+      "slot": 65,
+      "rows": 756,
+      "nominal": 24,
+      "definite": 24,
+      "possible": 48,
+      "sensitive": 24
+    },
+    {
+      "slot": 66,
+      "rows": 154,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 9,
+      "sensitive": 2
+    },
+    {
+      "slot": 67,
+      "rows": 131,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 10,
+      "sensitive": 6
+    },
+    {
+      "slot": 68,
+      "rows": 108,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 8,
+      "sensitive": 4
+    },
+    {
+      "slot": 69,
+      "rows": 380,
+      "nominal": 16,
+      "definite": 16,
+      "possible": 28,
+      "sensitive": 12
+    },
+    {
+      "slot": 70,
+      "rows": 126,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 11,
+      "sensitive": 4
+    },
+    {
+      "slot": 71,
+      "rows": 201,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 5,
+      "sensitive": 0
+    },
+    {
+      "slot": 72,
+      "rows": 528,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 31,
+      "sensitive": 18
+    },
+    {
+      "slot": 73,
+      "rows": 633,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 19,
+      "sensitive": 6
+    },
+    {
+      "slot": 74,
+      "rows": 201,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 7,
+      "sensitive": 2
+    },
+    {
+      "slot": 75,
+      "rows": 490,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 17,
+      "sensitive": 4
+    },
+    {
+      "slot": 76,
+      "rows": 219,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 23,
+      "sensitive": 12
+    },
+    {
+      "slot": 77,
+      "rows": 215,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 9,
+      "sensitive": 2
+    },
+    {
+      "slot": 78,
+      "rows": 934,
+      "nominal": 21,
+      "definite": 21,
+      "possible": 61,
+      "sensitive": 40
+    },
+    {
+      "slot": 79,
+      "rows": 159,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 10,
+      "sensitive": 6
+    },
+    {
+      "slot": 80,
+      "rows": 460,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 31,
+      "sensitive": 18
+    },
+    {
+      "slot": 81,
+      "rows": 221,
+      "nominal": 12,
+      "definite": 12,
+      "possible": 20,
+      "sensitive": 8
+    },
+    {
+      "slot": 82,
+      "rows": 173,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 7,
+      "sensitive": 2
+    },
+    {
+      "slot": 83,
+      "rows": 1008,
+      "nominal": 39,
+      "definite": 39,
+      "possible": 91,
+      "sensitive": 52
+    },
+    {
+      "slot": 84,
+      "rows": 509,
+      "nominal": 14,
+      "definite": 14,
+      "possible": 18,
+      "sensitive": 4
+    },
+    {
+      "slot": 85,
+      "rows": 174,
+      "nominal": 8,
+      "definite": 8,
+      "possible": 10,
+      "sensitive": 2
+    },
+    {
+      "slot": 86,
+      "rows": 601,
+      "nominal": 17,
+      "definite": 17,
+      "possible": 23,
+      "sensitive": 6
+    },
+    {
+      "slot": 87,
+      "rows": 173,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 2,
+      "sensitive": 0
+    },
+    {
+      "slot": 88,
+      "rows": 559,
+      "nominal": 26,
+      "definite": 26,
+      "possible": 60,
+      "sensitive": 34
+    },
+    {
+      "slot": 89,
+      "rows": 208,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 17,
+      "sensitive": 8
+    },
+    {
+      "slot": 90,
+      "rows": 522,
+      "nominal": 16,
+      "definite": 16,
+      "possible": 32,
+      "sensitive": 16
+    },
+    {
+      "slot": 91,
+      "rows": 192,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 13,
+      "sensitive": 6
+    },
+    {
+      "slot": 92,
+      "rows": 595,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 21,
+      "sensitive": 10
+    },
+    {
+      "slot": 93,
+      "rows": 429,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 29,
+      "sensitive": 16
+    },
+    {
+      "slot": 94,
+      "rows": 395,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 13,
+      "sensitive": 2
+    },
+    {
+      "slot": 95,
+      "rows": 436,
+      "nominal": 14,
+      "definite": 14,
+      "possible": 32,
+      "sensitive": 18
+    },
+    {
+      "slot": 96,
+      "rows": 153,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 21,
+      "sensitive": 14
+    },
+    {
+      "slot": 97,
+      "rows": 202,
+      "nominal": 3,
+      "definite": 3,
+      "possible": 5,
+      "sensitive": 2
+    },
+    {
+      "slot": 98,
+      "rows": 135,
+      "nominal": 1,
+      "definite": 1,
+      "possible": 5,
+      "sensitive": 4
+    },
+    {
+      "slot": 99,
+      "rows": 339,
+      "nominal": 13,
+      "definite": 13,
+      "possible": 17,
+      "sensitive": 4
+    },
+    {
+      "slot": 100,
+      "rows": 366,
+      "nominal": 15,
+      "definite": 15,
+      "possible": 41,
+      "sensitive": 26
+    },
+    {
+      "slot": 101,
+      "rows": 420,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 19,
+      "sensitive": 12
+    },
+    {
+      "slot": 102,
+      "rows": 166,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 8,
+      "sensitive": 2
+    },
+    {
+      "slot": 103,
+      "rows": 567,
+      "nominal": 25,
+      "definite": 25,
+      "possible": 47,
+      "sensitive": 22
+    },
+    {
+      "slot": 104,
+      "rows": 532,
+      "nominal": 15,
+      "definite": 15,
+      "possible": 23,
+      "sensitive": 8
+    },
+    {
+      "slot": 105,
+      "rows": 191,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 18,
+      "sensitive": 12
+    },
+    {
+      "slot": 106,
+      "rows": 125,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 27,
+      "sensitive": 18
+    },
+    {
+      "slot": 107,
+      "rows": 165,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 23,
+      "sensitive": 12
+    },
+    {
+      "slot": 108,
+      "rows": 427,
+      "nominal": 12,
+      "definite": 12,
+      "possible": 26,
+      "sensitive": 14
+    },
+    {
+      "slot": 109,
+      "rows": 348,
+      "nominal": 14,
+      "definite": 14,
+      "possible": 24,
+      "sensitive": 10
+    },
+    {
+      "slot": 110,
+      "rows": 170,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 8,
+      "sensitive": 2
+    },
+    {
+      "slot": 111,
+      "rows": 708,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 25,
+      "sensitive": 16
+    },
+    {
+      "slot": 112,
+      "rows": 344,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 19,
+      "sensitive": 8
+    },
+    {
+      "slot": 113,
+      "rows": 116,
+      "nominal": 7,
+      "definite": 7,
+      "possible": 7,
+      "sensitive": 0
+    },
+    {
+      "slot": 114,
+      "rows": 395,
+      "nominal": 12,
+      "definite": 12,
+      "possible": 18,
+      "sensitive": 6
+    },
+    {
+      "slot": 115,
+      "rows": 213,
+      "nominal": 10,
+      "definite": 10,
+      "possible": 26,
+      "sensitive": 16
+    },
+    {
+      "slot": 116,
+      "rows": 347,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 9,
+      "sensitive": 0
+    },
+    {
+      "slot": 117,
+      "rows": 348,
+      "nominal": 11,
+      "definite": 11,
+      "possible": 29,
+      "sensitive": 18
+    },
+    {
+      "slot": 118,
+      "rows": 290,
+      "nominal": 12,
+      "definite": 12,
+      "possible": 44,
+      "sensitive": 32
+    },
+    {
+      "slot": 119,
+      "rows": 597,
+      "nominal": 20,
+      "definite": 20,
+      "possible": 52,
+      "sensitive": 32
+    },
+    {
+      "slot": 120,
+      "rows": 788,
+      "nominal": 29,
+      "definite": 29,
+      "possible": 51,
+      "sensitive": 22
+    },
+    {
+      "slot": 121,
+      "rows": 177,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 15,
+      "sensitive": 10
+    },
+    {
+      "slot": 122,
+      "rows": 188,
+      "nominal": 5,
+      "definite": 5,
+      "possible": 9,
+      "sensitive": 4
+    },
+    {
+      "slot": 123,
+      "rows": 314,
+      "nominal": 9,
+      "definite": 9,
+      "possible": 15,
+      "sensitive": 6
+    },
+    {
+      "slot": 124,
+      "rows": 139,
+      "nominal": 3,
+      "definite": 3,
+      "possible": 3,
+      "sensitive": 0
+    },
+    {
+      "slot": 125,
+      "rows": 124,
+      "nominal": 2,
+      "definite": 2,
+      "possible": 8,
+      "sensitive": 6
+    },
+    {
+      "slot": 126,
+      "rows": 212,
+      "nominal": 6,
+      "definite": 6,
+      "possible": 20,
+      "sensitive": 14
+    },
+    {
+      "slot": 127,
+      "rows": 266,
+      "nominal": 4,
+      "definite": 4,
+      "possible": 10,
+      "sensitive": 6
+    }
+  ],
+  "nominal_rate": 0.03095466374469251,
+  "conservative_lower_rate": 0.03095466374469251,
+  "conservative_possible_rate": 0.06195498333561612,
+  "candidate_s3_effect_not_measured": true,
+  "data_provenance": "H18 R1 proposals not R26a, no real mutex arrival order or pre-reservoir rejected events."
+}

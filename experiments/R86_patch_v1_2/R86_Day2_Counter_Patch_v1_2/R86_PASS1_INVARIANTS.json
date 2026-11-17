@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "required": [
+    "merge_attempts == 2*proposals (for current singleton forward+reverse merge path)",
+    "merge_attempts == hash_accept + hash_reject + collision_same_id",
+    "merge_attempts == hash_early_break + collision_same_id + collision_diff_id + hash_insert_not_full + hash_replace_full",
+    "hash_accept == hash_insert_not_full + hash_replace_full + hash_diff_collision_rewrite",
+    "hash_reject == hash_early_break + hash_diff_collision_reject",
+    "hash_replace == hash_replace_full + hash_diff_collision_rewrite",
+    "collision_diff_id == hash_diff_collision_rewrite + hash_diff_collision_reject",
+    "hash_same_id_rewrite <= collision_same_id",
+    "hash_compute == merge_attempts - hash_early_break",
+    "per-pass W_L == sum(executed_leaf_size**2)",
+    "per-pass W_pairs == sum(executed_leaf_size*(executed_leaf_size-1)//2)",
+    "per-pass W_P == change in printed cumulative COMPARISONS",
+    "per-pass occupancy JSONL records + final pre_prune stage=0",
+    "histogram node count and weighted sum are self-consistent",
+    "optional per-node u32le degrees histogram exactly matches JSONL histogram"
+  ],
+  "G0": "Patched source stripped of R86_COUNTERS branches must be byte-identical to H70 snapshot for three algorithm headers",
+  "notes": "Counter ON timing is not used to infer performance. G1/G2/G3 must run on user's actual PiPNN binaries."
+}

@@ -1,0 +1,37 @@
+{
+  "audit": "R56_NATIVE_EIGEN_SOURCE_COMPARISON_PASS",
+  "source": {
+    "path": "/home/tai/ann-task-a/src/PiPNN/algorithms/utils/graph.h",
+    "sha256": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e",
+    "git_blob_sha1": "7c5b8c1196a3ad741dfd22fe8f35b72acae2b19f",
+    "matches_pinned_original_blob": true,
+    "source_checks": [
+      "bf16_storage",
+      "full_early_break",
+      "relative_hash",
+      "stored_distance_compare",
+      "stored_distance_convert"
+    ]
+  },
+  "native": {
+    "compiler": "/usr/bin/g++",
+    "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "eigen_include": "/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src",
+    "fixture_cpp_sha256": "2d192d947dd02de593d95f524f462797ed14ebd288b09f4b58a6caa976907fcb",
+    "native_stdout": [
+      "EIGEN_VERSION 3.4.0",
+      "FLOAT32 A=1.00199997 B=1.00100005 BF16 A=1 B=1",
+      "CAP1 AB=101 BA=202",
+      "CAP2 AB=101 BA=202",
+      "R56_NATIVE_EIGEN_BF16_COMPARISON_REPRO_PASS"
+    ],
+    "test_scope": "native Eigen::bfloat16 plus source-equivalent comparison code; NOT direct LSHGraph invocation",
+    "compiled_with_optimization": "-O2"
+  },
+  "interpretation_limits": [
+    "Uses isolated source-equivalent comparator code, not the original compiled LSHGraph class.",
+    "Does not measure any actual SIFT1M candidate collision frequency.",
+    "Does not establish graph correctness impact, recall differences, or algorithm novelty.",
+    "If source blob SHA differs from pinned reference, only relevant source markers are confirmed."
+  ]
+}

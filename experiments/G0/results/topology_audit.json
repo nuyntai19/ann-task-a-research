@@ -1,0 +1,69 @@
+{
+  "dataset": "SIFT1M",
+  "seed": 20261023,
+  "sample_size": 20000,
+  "graphs": {
+    "f15": {
+      "vertices": 1000000,
+      "directed_edges": 17595558,
+      "max_degree": 32,
+      "average_degree": 17.595558,
+      "median_degree": 16.0,
+      "degree_p90": 29.0,
+      "degree_p99": 32.0,
+      "zero_out_degree": 0,
+      "zero_in_degree": 0,
+      "in_degree_p99": 38.0,
+      "graph_bytes": 74382240
+    },
+    "f30": {
+      "vertices": 1000000,
+      "directed_edges": 22788826,
+      "max_degree": 32,
+      "average_degree": 22.788826,
+      "median_degree": 23.0,
+      "degree_p90": 32.0,
+      "degree_p99": 32.0,
+      "zero_out_degree": 0,
+      "zero_in_degree": 0,
+      "in_degree_p99": 51.0,
+      "graph_bytes": 95155312
+    },
+    "f60": {
+      "vertices": 1000000,
+      "directed_edges": 26400462,
+      "max_degree": 32,
+      "average_degree": 26.400462,
+      "median_degree": 29.0,
+      "degree_p90": 32.0,
+      "degree_p99": 32.0,
+      "zero_out_degree": 0,
+      "zero_in_degree": 0,
+      "in_degree_p99": 62.0,
+      "graph_bytes": 109601856
+    }
+  },
+  "comparisons": {
+    "f15_to_f30": {
+      "sample_vertices": 20000,
+      "retention_old_edges": 0.6045402176232132,
+      "new_only_edges_sample": 243614,
+      "old_only_edges_sample": 139014,
+      "changed_vertex_fraction": 0.99965
+    },
+    "f30_to_f60": {
+      "sample_vertices": 20000,
+      "retention_old_edges": 0.6570150726226364,
+      "new_only_edges_sample": 228683,
+      "old_only_edges_sample": 156444,
+      "changed_vertex_fraction": 0.9997
+    },
+    "f15_to_f60": {
+      "sample_vertices": 20000,
+      "retention_old_edges": 0.6441305739278856,
+      "new_only_edges_sample": 301936,
+      "old_only_edges_sample": 125097,
+      "changed_vertex_fraction": 0.9999
+    }
+  }
+}

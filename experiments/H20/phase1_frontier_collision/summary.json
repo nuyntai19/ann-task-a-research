@@ -1,0 +1,110 @@
+{
+  "status": "H20_R1_OBSERVATIONAL_DIAGNOSTIC_COMPLETE_NOT_NOVELTY",
+  "utc": "2026-10-24T18:26:19.206618+00:00",
+  "scope": "H18-R1 one saved SIFT1M graph, deterministic offline W-wide frontier simulation, not real parallel search or native ParlayANN recall",
+  "inputs": {
+    "graph": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/r1_same_run.graph",
+    "base": "/home/tai/ann-task-a/data/sift1m.fbin",
+    "query": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+    "graph_sha256": "9229bf1d98db3583fe7f3f996ce03e9c62edf12f7997114fbab3741c56999196"
+  },
+  "protocol": {
+    "query_ids": [
+      355,
+      531,
+      623,
+      817,
+      1421,
+      1598,
+      1774,
+      2720,
+      3051,
+      3118,
+      3202,
+      5451,
+      5468,
+      5837,
+      6219,
+      6329,
+      6370,
+      6403,
+      6684,
+      7421,
+      7909,
+      8740,
+      9353,
+      9838
+    ],
+    "seed": 20261025,
+    "beam_width_same_for_all": 8,
+    "max_expansions": 192,
+    "entry": 0,
+    "virtual_worker_assignments": [
+      1,
+      2,
+      4
+    ]
+  },
+  "cautions": [
+    "Virtual owners simulate task assignment only; NOT actual simultaneous workers, QPS, synchronization latency or speedup.",
+    "With wave-end global visited dedup, repeat proposal occurrences do NOT imply repeated distance evaluations.",
+    "W-wide fixed-expansion best-first is not native PiPNN/ParlayANN/Speed-ANN/iQAN query implementation.",
+    "P=1/2/4 share IDENTICAL exploration and unique distances by construction; worker-collision changes are NOT causal speedup.",
+    "Only one nondeterministic H18-R1 graph and 24 sampled SIFT queries by default; no independent seeds, GT recall or construction change.",
+    "A positive collision signal cannot establish a novel construction-time predictor or improve Pareto frontier."
+  ],
+  "aggregates_by_virtual_workers": {
+    "1": {
+      "adjacency_occurrences": 117416,
+      "prior_seen_occurrences": 35538,
+      "new_occurrences": 81878,
+      "same_wave_repeat_occurrences": 4931,
+      "unique_new_ids": 79895,
+      "cross_worker_collision_ids": 0,
+      "cross_worker_duplicate_events": 0,
+      "cross_worker_new_collision_ids": 0,
+      "distance_evaluations": 79919,
+      "waves": 600,
+      "expanded_nodes": 4608,
+      "same_wave_repeat_occurrences_fraction": 0.04199598010492608,
+      "cross_worker_duplicate_events_fraction": 0.0,
+      "prior_seen_occurrences_fraction": 0.3026674388499012,
+      "new_candidate_per_adjacency_occurrence": 0.6804438918035021
+    },
+    "2": {
+      "adjacency_occurrences": 117416,
+      "prior_seen_occurrences": 35538,
+      "new_occurrences": 81878,
+      "same_wave_repeat_occurrences": 4931,
+      "unique_new_ids": 79895,
+      "cross_worker_collision_ids": 2694,
+      "cross_worker_duplicate_events": 2935,
+      "cross_worker_new_collision_ids": 1141,
+      "distance_evaluations": 79919,
+      "waves": 600,
+      "expanded_nodes": 4608,
+      "same_wave_repeat_occurrences_fraction": 0.04199598010492608,
+      "cross_worker_duplicate_events_fraction": 0.024996593309259386,
+      "prior_seen_occurrences_fraction": 0.3026674388499012,
+      "new_candidate_per_adjacency_occurrence": 0.6804438918035021
+    },
+    "4": {
+      "adjacency_occurrences": 117416,
+      "prior_seen_occurrences": 35538,
+      "new_occurrences": 81878,
+      "same_wave_repeat_occurrences": 4931,
+      "unique_new_ids": 79895,
+      "cross_worker_collision_ids": 3795,
+      "cross_worker_duplicate_events": 4265,
+      "cross_worker_new_collision_ids": 1649,
+      "distance_evaluations": 79919,
+      "waves": 600,
+      "expanded_nodes": 4608,
+      "same_wave_repeat_occurrences_fraction": 0.04199598010492608,
+      "cross_worker_duplicate_events_fraction": 0.03632384002180282,
+      "prior_seen_occurrences_fraction": 0.3026674388499012,
+      "new_candidate_per_adjacency_occurrence": 0.6804438918035021
+    }
+  },
+  "observed_1_to_4_no_actual_parallelism": "Fraction of extra adjacency proposal occurrences from different virtual owners, not fraction of redundant exact distances; no estimate of build/search speedup."
+}

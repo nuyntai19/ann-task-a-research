@@ -1,0 +1,165 @@
+{
+  "study": "H26_P2B_H18_OFFLINE_LEAF_ID_LOCALITY",
+  "capture_sha256": "13e78697bb4e56b5013ee2df3b6c7cee4daa1cfad0185f56a576448d428ccc95",
+  "samples": 30000,
+  "seed": 42,
+  "total_pair_occurrences": 7289822248,
+  "capture_leaves": 85529,
+  "estimated_global_oracle_redundancy": 0.30260881678888935,
+  "fraction_sampled_occurrences_with_prior_leaf_id": 0.3052,
+  "ideal_serial_leaf_id_window_hit_fraction": {
+    "1": {
+      "ideal_serial_leaf_id_hit_fraction": 0.0032,
+      "sampling_hoeffding_95ci": [
+        0.0,
+        0.011041002756996854
+      ]
+    },
+    "4": {
+      "ideal_serial_leaf_id_hit_fraction": 0.009566666666666666,
+      "sampling_hoeffding_95ci": [
+        0.0017256639096698122,
+        0.01740766942366352
+      ]
+    },
+    "16": {
+      "ideal_serial_leaf_id_hit_fraction": 0.0297,
+      "sampling_hoeffding_95ci": [
+        0.021858997243003147,
+        0.03754100275699686
+      ]
+    },
+    "64": {
+      "ideal_serial_leaf_id_hit_fraction": 0.05806666666666667,
+      "sampling_hoeffding_95ci": [
+        0.050225663909669815,
+        0.06590766942366352
+      ]
+    },
+    "256": {
+      "ideal_serial_leaf_id_hit_fraction": 0.07313333333333333,
+      "sampling_hoeffding_95ci": [
+        0.06529233057633647,
+        0.08097433609033018
+      ]
+    },
+    "1024": {
+      "ideal_serial_leaf_id_hit_fraction": 0.08223333333333334,
+      "sampling_hoeffding_95ci": [
+        0.07439233057633649,
+        0.09007433609033019
+      ]
+    },
+    "4096": {
+      "ideal_serial_leaf_id_hit_fraction": 0.1121,
+      "sampling_hoeffding_95ci": [
+        0.10425899724300315,
+        0.11994100275699686
+      ]
+    },
+    "16384": {
+      "ideal_serial_leaf_id_hit_fraction": 0.20536666666666667,
+      "sampling_hoeffding_95ci": [
+        0.1975256639096698,
+        0.21320766942366354
+      ]
+    },
+    "65536": {
+      "ideal_serial_leaf_id_hit_fraction": 0.3025,
+      "sampling_hoeffding_95ci": [
+        0.29465899724300315,
+        0.31034100275699683
+      ]
+    },
+    "85529": {
+      "ideal_serial_leaf_id_hit_fraction": 0.3052,
+      "sampling_hoeffding_95ci": [
+        0.2973589972430032,
+        0.31304100275699687
+      ]
+    }
+  },
+  "selective_oracle_redundancy_achievable_if_only_multiplicity_ge": {
+    "2": 0.30260881678888935,
+    "3": 0.19449215012222268,
+    "4": 0.12351437234444487,
+    "5": 0.08198937234444487,
+    "8": 0.026688578693651214,
+    "16": 0.0020126115126840325
+  },
+  "prior_leaf_id_gap_quantiles": {
+    "q10": 17.0,
+    "q25": 487.5,
+    "median": 8530.0,
+    "q75": 21283.25,
+    "q90": 38158.5,
+    "q99": 64659.45
+  },
+  "samples_with_prior_occurrence": 9156,
+  "bins": {
+    "2-63": null,
+    "64-127": {
+      "samples": 178,
+      "prior_occurred_fraction": 0.3595505617977528,
+      "within_64_leaf_ids_fraction": 0.03932584269662921,
+      "within_1024_leaf_ids_fraction": 0.06179775280898876,
+      "mean_oracle_redundancy": 0.3093967362225789
+    },
+    "128-255": {
+      "samples": 2286,
+      "prior_occurred_fraction": 0.3311461067366579,
+      "within_64_leaf_ids_fraction": 0.05249343832020997,
+      "within_1024_leaf_ids_fraction": 0.08136482939632546,
+      "mean_oracle_redundancy": 0.32165896066428057
+    },
+    "256-383": {
+      "samples": 3639,
+      "prior_occurred_fraction": 0.32921132179170104,
+      "within_64_leaf_ids_fraction": 0.06292937620225336,
+      "within_1024_leaf_ids_fraction": 0.09645507007419621,
+      "mean_oracle_redundancy": 0.3282137751801683
+    },
+    "384-511": {
+      "samples": 4542,
+      "prior_occurred_fraction": 0.32210479964773225,
+      "within_64_leaf_ids_fraction": 0.07309555261999119,
+      "within_1024_leaf_ids_fraction": 0.0977542932628798,
+      "mean_oracle_redundancy": 0.3143824379249626
+    },
+    "512-767": {
+      "samples": 9932,
+      "prior_occurred_fraction": 0.3076923076923077,
+      "within_64_leaf_ids_fraction": 0.06463954893274265,
+      "within_1024_leaf_ids_fraction": 0.08568264196536447,
+      "mean_oracle_redundancy": 0.3026903387727736
+    },
+    "768-1023": {
+      "samples": 9388,
+      "prior_occurred_fraction": 0.2782275244993609,
+      "within_64_leaf_ids_fraction": 0.04388581167447806,
+      "within_1024_leaf_ids_fraction": 0.06636131231359182,
+      "mean_oracle_redundancy": 0.2826115202446071
+    },
+    "1024-1535": {
+      "samples": 35,
+      "prior_occurred_fraction": 0.17142857142857143,
+      "within_64_leaf_ids_fraction": 0.0,
+      "within_1024_leaf_ids_fraction": 0.02857142857142857,
+      "mean_oracle_redundancy": 0.17448979591836736
+    },
+    "1536+": null
+  },
+  "independent_sample_Hoeffding_halfwidth": 0.007841002756996854,
+  "theoretical_minimum_full_cache_12B_per_unique_pair_gb_decimal": 61.00629315517678,
+  "theoretical_minimum_full_cache_12B_per_unique_pair_gib": 56.816538009025884,
+  "warnings": [
+    "Leaf IDs/capture order are NOT measured execution timestamps or scheduler order: window figures are NOT observed cache-hit rates.",
+    "Window figure assumes perfect pair lookup, zero overhead, infinite capacity while retained, and exact sharing across workers.",
+    "Selective oracle values assume advance knowledge of global pair multiplicities and omit all indexing costs.",
+    "12 bytes per unique key is a lower bound only: 8B unordered pair key plus 4B float distance; no hashing/alignment/memory management.",
+    "Eigen rankUpdate uses optimized batched kernel; pairwise lookup likely destroys arithmetic throughput and incurs synchronization.",
+    "Estimates pertain only to pinned H18 capture; no BUILD-seed or dataset variability.",
+    "Does not demonstrate any real BUILD speedup, graph benefit, Pareto advantage, or ANN research novelty."
+  ],
+  "elapsed_seconds": 9.64
+}

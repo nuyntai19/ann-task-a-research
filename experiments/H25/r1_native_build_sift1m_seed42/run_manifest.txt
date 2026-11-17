@@ -1,0 +1,9 @@
+H25 native R1 pilot. OFFLINE patch-generation time EXCLUDED from BUILD.
+Repo=/home/tai/ann-task-a/src/PiPNN
+Plan=/home/tai/ann-task-a/experiments/H25/r1_graph_gate_sift1m_seed42
+Out=/home/tai/ann-task-a/experiments/H25/r1_native_build_sift1m_seed42
+CPUSET=0,2,4,6 THREADS=4 NQ=1000 REPEATS=3 EFS=100,120,140,160,180,200,240,300
+GitCommit=443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd
+ExecutableSHA256=aeddd7873f37a18ca032a64c87b35e2667a23d591774aa2bd5a72a89233e93ad  /home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN
+SearcherSHA256=9fd81d4551f9e5e33cd6177e568ae03c2df921bca2e1968bb398256e259d817f  /home/tai/ann-task-a/experiments/H25/r1_kit/h25_r1_common_search
+Graph examples: 3 one-run builds; NOT repeated BUILD, NOT a Pareto claim.

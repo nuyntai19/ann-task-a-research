@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "taskset",
+    "-c",
+    "0",
+    "/usr/bin/time",
+    "-f",
+    "R86_C112_PILOT_SEARCH_TIME wall_s=%e peak_rss_kib=%M",
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+    "/home/tai/ann-task-a/experiments/R86/g12_c3_c112_midpoint_pilot_v1_0/r1/index.graph",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+    "384"
+  ],
+  "beam": 384,
+  "binary_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": "726a86f88608e88d7a908a9dd55897cce0079012afea39856e21db75f00c1ceb",
+  "note": "Pilot QPS descriptive, do NOT replace original 3×5 formal Search.",
+  "row": {
+    "avg_cmps": 16564,
+    "avg_visited": 370,
+    "beam": 384,
+    "qps": 1212.44396973,
+    "recall": 0.99084502
+  },
+  "status": "C112_PILOT_SEARCH_PASS",
+  "stderr_sha256": "1a35f65ce1fbfcd090133576a940e411fdd15f5e7675e2be33dc6c5b7c756d93",
+  "stdout_sha256": "712576eac025f9c539a4fc8f3f2c4a71b1a4ad4ca1ebbcf3497f37af781b66af",
+  "variant": "ORIGINAL_V4"
+}

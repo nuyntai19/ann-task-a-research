@@ -1,0 +1,61 @@
+{
+  "runs": [
+    {
+      "sample_mod": 64,
+      "sampled_leaves": 1346,
+      "sampled_rows": 486508,
+      "sampled_candidates": 239728848,
+      "outer_select_ns": 739412993,
+      "pack_ns": 507443779,
+      "selector_ns": 200113640,
+      "emit_ns": 16801274,
+      "leaf_count": 85529,
+      "all_rows": 29995085,
+      "all_selection_ns": 39381639102,
+      "all_dist_ns": 62330259055,
+      "all_merge_ns": 14277541458,
+      "all_proposals": 59990170,
+      "process_wall_no_graph_s": 42.2
+    },
+    {
+      "sample_mod": 64,
+      "sampled_leaves": 1346,
+      "sampled_rows": 486508,
+      "sampled_candidates": 239728848,
+      "outer_select_ns": 716161342,
+      "pack_ns": 489844147,
+      "selector_ns": 194721133,
+      "emit_ns": 16685964,
+      "leaf_count": 85529,
+      "all_rows": 29995085,
+      "all_selection_ns": 39181488508,
+      "all_dist_ns": 62111747076,
+      "all_merge_ns": 14001780217,
+      "all_proposals": 59990170,
+      "process_wall_no_graph_s": 42.06
+    }
+  ],
+  "median": {
+    "sample_mod": 64.0,
+    "sampled_leaves": 1346.0,
+    "sampled_rows": 486508.0,
+    "sampled_candidates": 239728848.0,
+    "outer_select_ns": 727787167.5,
+    "pack_ns": 498643963.0,
+    "selector_ns": 197417386.5,
+    "emit_ns": 16743619.0,
+    "leaf_count": 85529.0,
+    "all_rows": 29995085.0,
+    "all_selection_ns": 39281563805.0,
+    "all_dist_ns": 62221003065.5,
+    "all_merge_ns": 14139660837.5,
+    "all_proposals": 59990170.0,
+    "process_wall_no_graph_s": 42.13
+  },
+  "sample_stage_share": {
+    "pack_ns": 0.6995517498276248,
+    "selector_ns": 0.2769584882600324,
+    "emit_ns": 0.023489761912342786
+  },
+  "instrumentation_gap_fraction": 0.020585962035391342
+}

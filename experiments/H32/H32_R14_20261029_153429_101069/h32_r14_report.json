@@ -1,0 +1,132 @@
+{
+  "status": "PASS_R13_QUERY_PAIRED_AUDIT_READONLY",
+  "source_dirs": {
+    "R11": "/home/tai/ann-task-a/experiments/H32/H32_R11_20261029_150655_461903",
+    "R13": "/home/tai/ann-task-a/experiments/H32/H32_R13_20261029_152450_169052"
+  },
+  "N_QUERY": 10000,
+  "TOP_K": 10,
+  "roles": {
+    "VAMANA": {
+      "strict_missed": 1759,
+      "reachable_missed": 1747,
+      "unreachable_missed": 12,
+      "strict_recall": 0.98241,
+      "tie_aware_recall": 0.98314,
+      "tie_credit_hits": 73,
+      "queries_with_any_strict_miss": 1331,
+      "queries_with_tie_credit": 73,
+      "missed_gt_rank_histogram": {
+        "0": 121,
+        "1": 140,
+        "2": 145,
+        "3": 141,
+        "4": 165,
+        "5": 173,
+        "6": 185,
+        "7": 195,
+        "8": 203,
+        "9": 291
+      },
+      "predictions_csv_sha256": "82028fa7d76ad77b2fe1cddd36524cfa8dc49eeeb792f7b35197b4f6301f1dfc"
+    },
+    "STOCK": {
+      "strict_missed": 979,
+      "reachable_missed": 979,
+      "unreachable_missed": 0,
+      "strict_recall": 0.99021,
+      "tie_aware_recall": 0.99087,
+      "tie_credit_hits": 66,
+      "queries_with_any_strict_miss": 807,
+      "queries_with_tie_credit": 66,
+      "missed_gt_rank_histogram": {
+        "0": 45,
+        "1": 48,
+        "2": 70,
+        "3": 65,
+        "4": 90,
+        "5": 114,
+        "6": 93,
+        "7": 117,
+        "8": 130,
+        "9": 207
+      },
+      "predictions_csv_sha256": "711a4f56a3c177b63258b9ff917cd664b216b69348b6f31d11007fefec8e2ca0"
+    },
+    "TOP2": {
+      "strict_missed": 979,
+      "reachable_missed": 979,
+      "unreachable_missed": 0,
+      "strict_recall": 0.99021,
+      "tie_aware_recall": 0.99087,
+      "tie_credit_hits": 66,
+      "queries_with_any_strict_miss": 807,
+      "queries_with_tie_credit": 66,
+      "missed_gt_rank_histogram": {
+        "0": 45,
+        "1": 48,
+        "2": 70,
+        "3": 65,
+        "4": 90,
+        "5": 114,
+        "6": 93,
+        "7": 117,
+        "8": 130,
+        "9": 207
+      },
+      "predictions_csv_sha256": "711a4f56a3c177b63258b9ff917cd664b216b69348b6f31d11007fefec8e2ca0"
+    }
+  },
+  "pairs": {
+    "STOCK__TOP2": {
+      "queries_same_prediction_order": 10000,
+      "queries_same_prediction_set": 10000,
+      "total_prediction_overlap_ids": 100000,
+      "A_strict_better_queries": 0,
+      "B_strict_better_queries": 0,
+      "strict_ties_queries": 10000,
+      "A_tie_aware_better_queries": 0,
+      "B_tie_aware_better_queries": 0,
+      "tie_aware_ties_queries": 10000,
+      "queries_with_different_strict_gt_hits": 0,
+      "queries_equal_strict_gt_hits_but_different_pred_set": 0,
+      "mean_prediction_overlap_at_10": 10.0
+    },
+    "VAMANA__STOCK": {
+      "queries_same_prediction_order": 8554,
+      "queries_same_prediction_set": 8554,
+      "total_prediction_overlap_ids": 98166,
+      "A_strict_better_queries": 379,
+      "B_strict_better_queries": 975,
+      "strict_ties_queries": 8646,
+      "A_tie_aware_better_queries": 380,
+      "B_tie_aware_better_queries": 969,
+      "tie_aware_ties_queries": 8651,
+      "queries_with_different_strict_gt_hits": 1354,
+      "queries_equal_strict_gt_hits_but_different_pred_set": 92,
+      "mean_prediction_overlap_at_10": 9.8166
+    },
+    "VAMANA__TOP2": {
+      "queries_same_prediction_order": 8554,
+      "queries_same_prediction_set": 8554,
+      "total_prediction_overlap_ids": 98166,
+      "A_strict_better_queries": 379,
+      "B_strict_better_queries": 975,
+      "strict_ties_queries": 8646,
+      "A_tie_aware_better_queries": 380,
+      "B_tie_aware_better_queries": 969,
+      "tie_aware_ties_queries": 8651,
+      "queries_with_different_strict_gt_hits": 1354,
+      "queries_equal_strict_gt_hits_but_different_pred_set": 92,
+      "mean_prediction_overlap_at_10": 9.8166
+    }
+  },
+  "limits": [
+    "Pairwise comparison is descriptive, not matched graph-budget or novel-algorithm evidence.",
+    "R13 diagnostic compiled from same source; not per-query identical to original H31 binary.",
+    "Tie-aware recall uses R13 source-based IDs and native tie rule.",
+    "GT exactness not independently validated.",
+    "No per-expansion search trace; misses cannot be assigned to beam pruning or topology mechanism.",
+    "No BUILD, graph modifications, or new ANN Search in R14."
+  ]
+}

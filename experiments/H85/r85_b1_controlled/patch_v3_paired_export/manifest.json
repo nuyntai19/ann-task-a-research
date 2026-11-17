@@ -1,0 +1,13 @@
+{
+  "source": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/PipNN/pipnn.h",
+  "source_sha256": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288",
+  "upstream_instrumented_v2_sha256": "b9eb57a956fcbabcc58a9705fe6fc8e986bda8a5f1a8bdf57bd0c32dab718387",
+  "instrumented_header_sha256": "1857b1acd8e4af1a6afdec3d8b777ad7faf6b277b53acf2ac6513876b2abe923",
+  "patch_sha256": "de77bf4bafd783c2b06ad0d93f731ad0b8a23ca36a64144d3df13b028d2ebbf0",
+  "mode": "STEP8B_PAIRED_P1_P2_EXPORT_PATCH_ONLY_NO_BUILD",
+  "backend": "H17 Flat, HashSetGraph rejected when env active",
+  "enable_env": "R85_B1_P1_GRAPH_OUTFILE",
+  "requires": "N2, SIFT100K, C64, K512, MSTDeg2, R64, hashbits12, prune_all1",
+  "guard": "exact ordered candidate reservoir state (degree, worst metadata, pid/hash/norm bits) compared before and after P1 ExportToGraph; abort before round2 on change",
+  "note": "Original P2 graph still written through neighbors.h -graph_outfile after build_index; timing includes instrumentation. Does not establish graph or search quality until evaluator runs."
+}

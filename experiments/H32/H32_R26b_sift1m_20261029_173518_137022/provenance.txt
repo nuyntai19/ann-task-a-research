@@ -1,0 +1,18 @@
+R26B: SIFT1M same-candidate-pool FGraft dense-prune=1, spine=0, cap32, alpha1.2.
+R26B binary/source pinned; 1 FGraft build ONLY; PiPNN R26a graph is read-only.
+R26B 4 physical build CPUs=0,2,4,6; 1 search CPU=0; 5 internal search repeats/Q.
+CAVEAT: fg total process time includes 800-base-point exact local-completeness and query/search diagnostics, NOT pure BUILD timing.
+CAVEAT: FG and PiPNN graph arc budgets may differ; no superiority claim until matching.
+a032c2d6cfb2c087d3b8abca028c745186501976
+a48c6a34e5f959190992aa531cc18454cfcc3dd3
+74f0094b6ebf58e2d7cafbb06d339eac766c1b3fd9f8b007efff942cb84c697d  /home/tai/ann-task-a/experiments/H32/H32_R25_pool_ending_20261029_170450_123214/fg_src/fg
+ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8  /home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors
+7e22a4ca2b71bd560560f7e4aa2a1f2dcad46b8f25ae48ca8ea014c17086f9e8  /home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.candidates.i32
+d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef  /home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.graph
+5a0192edc1eb0dd45432403f76b8491f330c41f6e5a9b7ef97ed9683047138eb  /home/tai/ann-task-a/experiments/H32/R26b_kit/h32_r26b_report.py
+2480d64bb0e3ee166dbbb36a135ed070df6fff7f1ce970e7680eb958f6b90865  h32_r26b_paired_pilot.sh
+Hệ thống tập tin    Cỡ  Dùng   Còn %Dùng Gắn vào
+/dev/nvme0n1p5    393G   51G  323G   14% /
+               total        used        free      shared  buff/cache   available
+BNhớ:           13Gi       3.7Gi       4.0Gi        57Mi       6.2Gi       9.8Gi
+Tráo đổi:      4.0Gi          0B       4.0Gi

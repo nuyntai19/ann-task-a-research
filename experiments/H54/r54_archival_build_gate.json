@@ -1,0 +1,82 @@
+{
+  "status": "R54_R26A_ARCHIVED_BUILD_WALL_RSS_GATE_PASS",
+  "kind": "READ_ONLY_SINGLE_DUMP_NODUMP_PROVENANCE_NOT_SPEED_BENCHMARK",
+  "root": "/home/tai/ann-task-a",
+  "graph_pin": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef",
+  "graphs": {
+    "dump": {
+      "n": 1000000,
+      "max_degree": 32,
+      "bytes": 95190528,
+      "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef"
+    },
+    "nodump": {
+      "n": 1000000,
+      "max_degree": 32,
+      "bytes": 95190528,
+      "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef"
+    }
+  },
+  "pool": {
+    "file": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.candidates.i32",
+    "exists": true,
+    "bytes": 640000000,
+    "sha256": "NOT_REHASHED_IN_R54; R51_ALREADY_PINNED_PASS"
+  },
+  "original_top_level_time_log_count": 2,
+  "logs": [
+    {
+      "file": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.time.log",
+      "size_bytes": 1207,
+      "sha256": "f0736533770f4fb569c81cbea608863a0c7baa407db804b5514bee3f855e5c72",
+      "status": "STRICT_GNU_TIME_V_PASS",
+      "reasons": [],
+      "wall_seconds": 50.16,
+      "wall_source_line": 5,
+      "max_rss_kib": 3094936,
+      "max_rss_source_line": 10,
+      "exit_status": 0,
+      "arm_inferred_from_filename": "DUMP"
+    },
+    {
+      "file": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/nodump.time.log",
+      "size_bytes": 1208,
+      "sha256": "971ae489fff5aa5659f5833c377e709ec96775e8e01633eb3a2e50c01471ca2f",
+      "status": "STRICT_GNU_TIME_V_PASS",
+      "reasons": [],
+      "wall_seconds": 47.58,
+      "wall_source_line": 5,
+      "max_rss_kib": 2599924,
+      "max_rss_source_line": 10,
+      "exit_status": 0,
+      "arm_inferred_from_filename": "NODUMP"
+    }
+  ],
+  "errors": [],
+  "interpretation": "Two sequential original PiPNN builds; dump has extra I/O. Do not use as a paired multi-repetition speed test or equate to H17 Top-2.",
+  "historical_search_context_NOT_REMEASURED": {
+    "graph": "R26a original PiPNN pinned graph",
+    "k": 10,
+    "queries": 10000,
+    "Q100_recall": 0.99096,
+    "Q100_mean_comparisons": 2068,
+    "Q160_recall": 0.99667,
+    "Q160_mean_comparisons": 2975
+  },
+  "nodump_build_point": {
+    "wall_seconds": 47.58,
+    "max_rss_kib": 2599924,
+    "max_rss_gib": 2.479481,
+    "log_file": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/nodump.time.log",
+    "log_sha256": "971ae489fff5aa5659f5833c377e709ec96775e8e01633eb3a2e50c01471ca2f",
+    "is_valid_repeat_benchmark": false
+  },
+  "dump_build_point": {
+    "wall_seconds": 50.16,
+    "max_rss_kib": 3094936,
+    "max_rss_gib": 2.951561,
+    "log_file": "/home/tai/ann-task-a/experiments/H32/H32_R26a_pool_20261029_172452_132314/dump.time.log",
+    "log_sha256": "f0736533770f4fb569c81cbea608863a0c7baa407db804b5514bee3f855e5c72",
+    "is_valid_repeat_benchmark": false
+  }
+}

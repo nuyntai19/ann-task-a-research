@@ -1,0 +1,1179 @@
+{
+  "status": "HISTORICAL_RESOURCE_INVENTORY_ONLY",
+  "root": "/home/tai/ann-task-a",
+  "no_build_no_search": true,
+  "no_pipnn_ii_binary_or_benchmark": true,
+  "current_system_meminfo_KiB": {
+    "MemTotal_KiB": 14243372,
+    "MemAvailable_KiB": 10124624,
+    "SwapTotal_KiB": 4194300,
+    "SwapFree_KiB": 4194300
+  },
+  "memory_comment": "Current MemAvailable is NOT historic free RAM during H19 build.",
+  "h19_reported_from_existing_research_record_KiB": {
+    "1_worker": 1714432,
+    "2_workers": 1758336,
+    "4_workers": 1849076
+  },
+  "h19_source_caveat": "Historical R2/R2.1 profiler builds, not H26-P0, not paired against PiPNN II.",
+  "h19_max_reported_peak_to_current_MemTotal_ratio": 0.12982010158830368,
+  "scanned_text_files": 3000,
+  "match_count": 82,
+  "matched_groups": {
+    "H17": 82
+  },
+  "warnings": [
+    "MAX_FILES_LIMIT_REACHED"
+  ],
+  "matches": [
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/instrumented_f30_build.log",
+      "line": 47,
+      "context": "Maximum resident set size (kbytes): 1844664",
+      "numeric_tokens": [
+        {
+          "value": "1844664",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/instrumented_f30_build.log",
+      "line": 48,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/instrumented_f30_build.log",
+      "line": 53,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/bench/perf_monitoring/changesets.txt",
+      "line": 41,
+      "context": "6987550107028   # dynamic loop swapping",
+      "numeric_tokens": [
+        {
+          "value": "6987550107028",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/bench/perf_monitoring/changesets.txt",
+      "line": 42,
+      "context": "69858740ce4c6   # rm dynamic loop swapping,<br/> adjust lhs's micro panel height to fully exploit L1 cache",
+      "numeric_tokens": [
+        {
+          "value": "69858740",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/doc/AsciiQuickReference.txt",
+      "line": 91,
+      "context": "// Of particular note is Eigen's swap function which is highly optimized.",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/doc/AsciiQuickReference.txt",
+      "line": 94,
+      "context": "R.col(j1).swap(mat1.col(j2));      // R(:, [j1 j2]) = R(:, [j2, j1])",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/failtest/CMakeLists.txt",
+      "line": 40,
+      "context": "ei_add_failtest(\"swap_1\")",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/failtest/CMakeLists.txt",
+      "line": 41,
+      "context": "ei_add_failtest(\"swap_2\")",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/test/CMakeLists.txt",
+      "line": 183,
+      "context": "ei_add_test(swap)",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "line": 137,
+      "context": "`swap_layout()` method.  Note that this will also reverse the order of the",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "line": 146,
+      "context": "// Simple layout swap",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "line": 147,
+      "context": "col_major_result = row_major.swap_layout();",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "line": 151,
+      "context": "// Swap the layout and preserve the order of the dimensions",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "line": 153,
+      "context": "col_major_result = row_major.swap_layout().shuffle(shuffle);",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "line": 1738,
+      "context": "Tensor<float, 4, RowMajor> tensor_row_major = tensor.swap_layout();",
+      "numeric_tokens": [
+        {
+          "value": "4",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/test/CMakeLists.txt",
+      "line": 210,
+      "context": "ei_add_test(cxx11_tensor_layout_swap_sycl ${STD_CXX_FLAG})",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/eigen-src/unsupported/test/CMakeLists.txt",
+      "line": 258,
+      "context": "ei_add_test(cxx11_tensor_layout_swap)",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/README.md",
+      "line": 42,
+      "context": "except for swapping `HWY_STATIC_DISPATCH` with `HWY_DYNAMIC_DISPATCH` plus one",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/op_wishlist.md",
+      "line": 106,
+      "context": "*   ~~SwapAdjacentBlocks~~",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2422,
+      "context": "for swapping the two blocks in 256-bit vectors. `D` is `DFromV<V>`.",
+      "numeric_tokens": [
+        {
+          "value": "256",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2598,
+      "context": "swapped.",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2613,
+      "context": "swapped inside 64-bit halves.",
+      "numeric_tokens": [
+        {
+          "value": "64",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2617,
+      "context": "swapped.",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2646,
+      "context": "each lane are swapped.",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2877,
+      "context": "*   <code>V **SwapAdjacentBlocks**(V v)</code>: returns a vector where blocks of",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase1_leaf_profile/build/_deps/highway-src/g3doc/quick_reference.md",
+      "line": 2878,
+      "context": "index `2*i` and `2*i+1` are swapped.",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep1.log",
+      "line": 49,
+      "context": "Maximum resident set size (kbytes): 1976664",
+      "numeric_tokens": [
+        {
+          "value": "1976664",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep1.log",
+      "line": 50,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep1.log",
+      "line": 55,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep2.log",
+      "line": 47,
+      "context": "Maximum resident set size (kbytes): 1846060",
+      "numeric_tokens": [
+        {
+          "value": "1846060",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep2.log",
+      "line": 48,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep2.log",
+      "line": 53,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep3.log",
+      "line": 47,
+      "context": "Maximum resident set size (kbytes): 1848256",
+      "numeric_tokens": [
+        {
+          "value": "1848256",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep3.log",
+      "line": 48,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep3.log",
+      "line": 53,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep1.log",
+      "line": 49,
+      "context": "Maximum resident set size (kbytes): 1976984",
+      "numeric_tokens": [
+        {
+          "value": "1976984",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep1.log",
+      "line": 50,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep1.log",
+      "line": 55,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep2.log",
+      "line": 47,
+      "context": "Maximum resident set size (kbytes): 1844804",
+      "numeric_tokens": [
+        {
+          "value": "1844804",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep2.log",
+      "line": 48,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep2.log",
+      "line": 53,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep3.log",
+      "line": 47,
+      "context": "Maximum resident set size (kbytes): 1848748",
+      "numeric_tokens": [
+        {
+          "value": "1848748",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep3.log",
+      "line": 48,
+      "context": "Average resident set size (kbytes): 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep3.log",
+      "line": 53,
+      "context": "Swaps: 0",
+      "numeric_tokens": [
+        {
+          "value": "0",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2920,
+      "context": "\"command\": \"/usr/bin/c++  -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extens",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "320",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2921,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/test/swap.cpp\",",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2922,
+      "context": "\"output\": \"_deps/eigen-build/test/CMakeFiles/swap_1.dir/swap.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2926,
+      "context": "\"command\": \"/usr/bin/c++  -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extens",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "320",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2927,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/test/swap.cpp\",",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2928,
+      "context": "\"output\": \"_deps/eigen-build/test/CMakeFiles/swap_2.dir/swap.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2932,
+      "context": "\"command\": \"/usr/bin/c++  -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extens",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "320",
+          "unit": "unspecified"
+        },
+        {
+          "value": "3",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "3",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2933,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/test/swap.cpp\",",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2934,
+      "context": "\"output\": \"_deps/eigen-build/test/CMakeFiles/swap_3.dir/swap.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "3",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2938,
+      "context": "\"command\": \"/usr/bin/c++  -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extens",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "320",
+          "unit": "unspecified"
+        },
+        {
+          "value": "4",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "4",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2939,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/test/swap.cpp\",",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 2940,
+      "context": "\"output\": \"_deps/eigen-build/test/CMakeFiles/swap_4.dir/swap.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "4",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6844,
+      "context": "\"command\": \"/usr/bin/c++  -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extens",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6845,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/failtest/swap_1.cpp\",",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6846,
+      "context": "\"output\": \"_deps/eigen-build/failtest/CMakeFiles/swap_1_ok.dir/swap_1.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6850,
+      "context": "\"command\": \"/usr/bin/c++ -DEIGEN_SHOULD_FAIL_TO_BUILD -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wen",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6851,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/failtest/swap_1.cpp\",",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6852,
+      "context": "\"output\": \"_deps/eigen-build/failtest/CMakeFiles/swap_1_ko.dir/swap_1.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6856,
+      "context": "\"command\": \"/usr/bin/c++  -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extens",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6857,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/failtest/swap_2.cpp\",",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6858,
+      "context": "\"output\": \"_deps/eigen-build/failtest/CMakeFiles/swap_2_ok.dir/swap_2.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6862,
+      "context": "\"command\": \"/usr/bin/c++ -DEIGEN_SHOULD_FAIL_TO_BUILD -I/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wen",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "17",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6863,
+      "context": "\"file\": \"/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src/failtest/swap_2.cpp\",",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/compile_commands.json",
+      "line": 6864,
+      "context": "\"output\": \"_deps/eigen-build/failtest/CMakeFiles/swap_2_ko.dir/swap_2.cpp.o\"",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 585,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/test/CMakeFiles/swap.dir",
+      "numeric_tokens": []
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 586,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/test/CMakeFiles/swap_1.dir",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 587,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/test/CMakeFiles/swap_2.dir",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 588,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/test/CMakeFiles/swap_3.dir",
+      "numeric_tokens": [
+        {
+          "value": "3",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 589,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/test/CMakeFiles/swap_4.dir",
+      "numeric_tokens": [
+        {
+          "value": "4",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 1335,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_1_ok.dir",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 1336,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_1_ko.dir",
+      "numeric_tokens": [
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 1337,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_2_ok.dir",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/CMakeFiles/TargetDirectories.txt",
+      "line": 1338,
+      "context": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_2_ko.dir",
+      "numeric_tokens": [
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_1_ko.dir/link.txt",
+      "line": 1,
+      "context": "/usr/bin/c++  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wn",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_1_ok.dir/link.txt",
+      "line": 1,
+      "context": "/usr/bin/c++  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wn",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        },
+        {
+          "value": "1",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_2_ko.dir/link.txt",
+      "line": 1,
+      "context": "/usr/bin/c++  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wn",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    },
+    {
+      "group": "H17",
+      "file": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/build/_deps/eigen-build/failtest/CMakeFiles/swap_2_ok.dir/link.txt",
+      "line": 1,
+      "context": "/usr/bin/c++  -march=native -ffast-math -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wn",
+      "numeric_tokens": [
+        {
+          "value": "03",
+          "unit": "unspecified"
+        },
+        {
+          "value": "11",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        },
+        {
+          "value": "2",
+          "unit": "unspecified"
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    "Do not infer no swap/OOM from this script.",
+    "Do not infer causal bottleneck from RSS/total ratio.",
+    "A closed DiskANN issue #1030 has maintainer comment that PiPNN memory now matches Vamana FP build.",
+    "No PiPNN II direct CPU comparison has been performed."
+  ]
+}

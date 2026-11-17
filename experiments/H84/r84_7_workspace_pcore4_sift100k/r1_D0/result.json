@@ -1,0 +1,45 @@
+{
+  "variant": "D0",
+  "rep": 1,
+  "tag": "r1_D0",
+  "threads": 4,
+  "wall_s": 2.7,
+  "peakRSS_KiB": 346128,
+  "binary_sha256": "7340ce1817f1272d0137bb02ef8dea79756a5fa9252037d29afc3af670f6e48f",
+  "graph": {
+    "vertices": 100000,
+    "maximum_degree": 64,
+    "arcs": 2267604,
+    "graph_bytes": 9470424,
+    "sha256": "71f7d0653408d2aec30de17e5b283e39e85a3eb9c6d8e646a537a900a9fb068d",
+    "self_arcs": 0,
+    "duplicate_neighbors": 0
+  },
+  "phases": {
+    "buckets time": {
+      "count": 2,
+      "values_s": [
+        0.1556,
+        0.1495
+      ],
+      "sum_s": 0.3051
+    },
+    "build leaf time": {
+      "count": 2,
+      "values_s": [
+        1.112,
+        1.1024
+      ],
+      "sum_s": 2.2144
+    },
+    "Final prune time": {
+      "count": 1,
+      "values_s": [
+        0.1373
+      ],
+      "sum_s": 0.1373
+    }
+  },
+  "exit_code": 0,
+  "graph_path": "/home/tai/ann-task-a/experiments/H84/r84_7_workspace_pcore4_sift100k/r1_D0/graph.bin"
+}

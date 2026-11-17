@@ -1,0 +1,8 @@
+R86 v1.1 TESTS — 2026-11-12
+PASS: patch --dry-run against exact H70 source snapshot
+PASS: C++ header compiled and executed with R86_COUNTERS=0 and =1
+PASS: existing Python logging kit 3/3 tests with updated importer and registry
+PASS: synthetic exact LSHGraph::merge_neighbors extracted method ON/OFF same final graph state (305 merge attempts)
+PASS: synthetic accounting invariants including 2 same-ID BF16 rewrites and 1 different-ID collision rewrite
+PASS: synthetic pre-prune occupancy histogram output
+NOT RUN: native PiPNN CMake compile on Ubuntu, OFF 100K equivalence, ON 10K counter gate, large-n sweeps

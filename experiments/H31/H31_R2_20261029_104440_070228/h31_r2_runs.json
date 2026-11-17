@@ -1,0 +1,254 @@
+[
+  {
+    "role": "TOP2",
+    "Q": 120,
+    "cmd": [
+      "taskset",
+      "-c",
+      "0",
+      "/home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors",
+      "-base_path",
+      "/home/tai/ann-task-a/data/sift1m.fbin",
+      "-query_path",
+      "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "-gt_path",
+      "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "-graph_path",
+      "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_top2.graph",
+      "-data_type",
+      "float",
+      "-dist_func",
+      "Euclidian",
+      "-file_type",
+      "bin",
+      "-k",
+      "10",
+      "-Q",
+      "120",
+      "-R",
+      "32",
+      "-L",
+      "64",
+      "-alpha",
+      "1.2",
+      "-verbose"
+    ],
+    "log": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104440_070228/top2_Q120.log",
+    "returncode": 0,
+    "metrics": [
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2191.66
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2139.65
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2186.04
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2188.07
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2177.07
+      }
+    ]
+  },
+  {
+    "role": "VAMANA",
+    "Q": 120,
+    "cmd": [
+      "taskset",
+      "-c",
+      "0",
+      "/home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors",
+      "-base_path",
+      "/home/tai/ann-task-a/data/sift1m.fbin",
+      "-query_path",
+      "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "-gt_path",
+      "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "-graph_path",
+      "/home/tai/ann-task-a/results/vamana_sift1m.graph",
+      "-data_type",
+      "float",
+      "-dist_func",
+      "Euclidian",
+      "-file_type",
+      "bin",
+      "-k",
+      "10",
+      "-Q",
+      "120",
+      "-R",
+      "32",
+      "-L",
+      "64",
+      "-alpha",
+      "1.2",
+      "-verbose"
+    ],
+    "log": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104440_070228/vamana_Q120.log",
+    "returncode": 0,
+    "metrics": [
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.98689,
+        "visited": 134.0,
+        "comparisons": 2409.0,
+        "qps": 2176.87
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.98689,
+        "visited": 134.0,
+        "comparisons": 2409.0,
+        "qps": 2184.0
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.98689,
+        "visited": 134.0,
+        "comparisons": 2409.0,
+        "qps": 2167.98
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.98689,
+        "visited": 134.0,
+        "comparisons": 2409.0,
+        "qps": 2160.09
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.98689,
+        "visited": 134.0,
+        "comparisons": 2409.0,
+        "qps": 2142.3
+      }
+    ]
+  },
+  {
+    "role": "STOCK",
+    "Q": 120,
+    "cmd": [
+      "taskset",
+      "-c",
+      "0",
+      "/home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors",
+      "-base_path",
+      "/home/tai/ann-task-a/data/sift1m.fbin",
+      "-query_path",
+      "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "-gt_path",
+      "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "-graph_path",
+      "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_stock.graph",
+      "-data_type",
+      "float",
+      "-dist_func",
+      "Euclidian",
+      "-file_type",
+      "bin",
+      "-k",
+      "10",
+      "-Q",
+      "120",
+      "-R",
+      "32",
+      "-L",
+      "64",
+      "-alpha",
+      "1.2",
+      "-verbose"
+    ],
+    "log": "/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104440_070228/stock_Q120.log",
+    "returncode": 0,
+    "metrics": [
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2055.88
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2170.56
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2183.96
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2182.54
+      },
+      {
+        "q": 120,
+        "k": 10,
+        "limit": 1000000,
+        "recall": 0.99347,
+        "visited": 137.0,
+        "comparisons": 2375.0,
+        "qps": 2184.32
+      }
+    ]
+  }
+]

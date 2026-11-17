@@ -1,0 +1,197 @@
+{
+  "preflight": {
+    "inventory": "/home/tai/ann-task-a/experiments/H31/H31_R0_20261028_003956/h31_r0_inventory.json",
+    "graphs": {
+      "VAMANA": {
+        "path": "/home/tai/ann-task-a/results/vamana_sift1m.graph",
+        "sha256": "84b2935cb9f25e9ad53044099901c8c1e6cb4de059975882e8d91bca66aa5259",
+        "bytes": 114573392,
+        "edges": null,
+        "max_degree": 32
+      },
+      "STOCK": {
+        "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_stock.graph",
+        "sha256": "ce1cd7c5ae97b79972df2b30235a0844b88a6c8a983ce731ca3afca494d7095d",
+        "bytes": 95174232,
+        "edges": null,
+        "max_degree": 32
+      },
+      "TOP2": {
+        "path": "/home/tai/ann-task-a/experiments/H26/H26_profile_20261026_222107_gcgcqF/r1_top2.graph",
+        "sha256": "73646a2b5655e16939ca804c598818460152803c20f6932e6e9286acd334c5c6",
+        "bytes": 95176264,
+        "edges": null,
+        "max_degree": 32
+      }
+    },
+    "data": {
+      "base": {
+        "n": 1000000,
+        "k_or_d": 128,
+        "bytes": 512000008,
+        "path": "/home/tai/ann-task-a/data/sift1m.fbin"
+      },
+      "queries": {
+        "n": 10000,
+        "k_or_d": 128,
+        "bytes": 5120008,
+        "path": "/home/tai/ann-task-a/data/sift1m_queries.fbin"
+      },
+      "gt": {
+        "n": 10000,
+        "k_or_d": 100,
+        "bytes": 8000008,
+        "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin"
+      }
+    },
+    "binary": "/home/tai/ann-task-a/src/ParlayANN/algorithms/vamana/neighbors",
+    "binary_sha256": "ee6b9c0bec2f32fe00607f3facc73691d2dca2d5158e84e69c226b3cd219c9a8",
+    "parlayann_git_head": "a48c6a34e5f959190992aa531cc18454cfcc3dd3",
+    "host_cpu_affinity_available": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "cpu_selected": 0,
+    "gt_semantic_exactness": "NOT_RECOMPUTED; H31-R0b checked finite ID/distance and nondecreasing rows"
+  },
+  "parameters": {
+    "qs": [
+      100,
+      120,
+      160
+    ],
+    "k": 10,
+    "workers": 1,
+    "cpu": 0,
+    "repeats_per_graph_q": 5,
+    "search_binary_source": "ParlayANN a48c6a3 expected",
+    "search_mode": "Parlay default non-quantized beam search",
+    "graph_budget_matched": false,
+    "note": "Fixed Q != fixed recall; BFS != beam hops; intra-query parallelism NOT TESTED"
+  },
+  "rows": [
+    {
+      "role": "VAMANA",
+      "Q": 100,
+      "repeats": 5,
+      "recall_min": 0.98314,
+      "recall_max": 0.98314,
+      "recall_median": 0.98314,
+      "qps_median": 2426.57,
+      "qps_min": 2339.48,
+      "qps_max": 2502.44,
+      "visited_median": 113.0,
+      "comparisons_median": 2104.0
+    },
+    {
+      "role": "STOCK",
+      "Q": 100,
+      "repeats": 5,
+      "recall_min": 0.99087,
+      "recall_max": 0.99087,
+      "recall_median": 0.99087,
+      "qps_median": 2438.54,
+      "qps_min": 2397.01,
+      "qps_max": 2511.73,
+      "visited_median": 116.0,
+      "comparisons_median": 2070.0
+    },
+    {
+      "role": "TOP2",
+      "Q": 100,
+      "repeats": 5,
+      "recall_min": 0.99087,
+      "recall_max": 0.99087,
+      "recall_median": 0.99087,
+      "qps_median": 2445.2,
+      "qps_min": 2385.47,
+      "qps_max": 2507.36,
+      "visited_median": 116.0,
+      "comparisons_median": 2070.0
+    },
+    {
+      "role": "VAMANA",
+      "Q": 120,
+      "repeats": 5,
+      "recall_min": 0.98689,
+      "recall_max": 0.98689,
+      "recall_median": 0.98689,
+      "qps_median": 2111.17,
+      "qps_min": 2042.01,
+      "qps_max": 2144.75,
+      "visited_median": 134.0,
+      "comparisons_median": 2409.0
+    },
+    {
+      "role": "STOCK",
+      "Q": 120,
+      "repeats": 5,
+      "recall_min": 0.99347,
+      "recall_max": 0.99347,
+      "recall_median": 0.99347,
+      "qps_median": 2093.59,
+      "qps_min": 1918.02,
+      "qps_max": 2142.74,
+      "visited_median": 137.0,
+      "comparisons_median": 2375.0
+    },
+    {
+      "role": "TOP2",
+      "Q": 120,
+      "repeats": 5,
+      "recall_min": 0.99347,
+      "recall_max": 0.99347,
+      "recall_median": 0.99347,
+      "qps_median": 1934.15,
+      "qps_min": 1927.87,
+      "qps_max": 2059.35,
+      "visited_median": 137.0,
+      "comparisons_median": 2375.0
+    },
+    {
+      "role": "VAMANA",
+      "Q": 160,
+      "repeats": 5,
+      "recall_min": 0.99154,
+      "recall_max": 0.99154,
+      "recall_median": 0.99154,
+      "qps_median": 1671.84,
+      "qps_min": 1608.08,
+      "qps_max": 1700.87,
+      "visited_median": 177.0,
+      "comparisons_median": 3000.0
+    },
+    {
+      "role": "STOCK",
+      "Q": 160,
+      "repeats": 5,
+      "recall_min": 0.99653,
+      "recall_max": 0.99653,
+      "recall_median": 0.99653,
+      "qps_median": 1662.64,
+      "qps_min": 1589.56,
+      "qps_max": 1712.71,
+      "visited_median": 180.0,
+      "comparisons_median": 2976.0
+    },
+    {
+      "role": "TOP2",
+      "Q": 160,
+      "repeats": 5,
+      "recall_min": 0.99653,
+      "recall_max": 0.99653,
+      "recall_median": 0.99653,
+      "qps_median": 1655.05,
+      "qps_min": 1617.37,
+      "qps_max": 1695.69,
+      "visited_median": 180.0,
+      "comparisons_median": 2976.0
+    }
+  ]
+}

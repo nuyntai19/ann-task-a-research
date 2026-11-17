@@ -1,0 +1,31 @@
+<!-- GENERATED_BY_ANN_PROJECT_HOME_V1_0. Keep personal notes in 09_MY_NOTES.md. -->
+status	hub_link	target	description
+LINK_CREATED	01_SOURCE/R86_PINNED_SOURCE	/home/tai/ann-task-a/experiments/R86/r86_v1_2_source	Main 2026-11-13 instrumented PiPNN source; never silently edit
+LINK_CREATED	01_SOURCE/PIPNN_CORE_CODE	/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/algorithms/PipNN	Look at pipnn.h / pipnn_utils.h / CMakeLists.txt
+LINK_CREATED	01_SOURCE/H70_HISTORICAL_REFERENCE	/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328	Historical baseline; not the active build source
+LINK_CREATED	02_BINARIES/R86_HW85_FOUR_BINARIES	/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW	Pinned stock_off, stock_on, h17_off, h17_on builds and manifest
+LINK_CREATED	03_DATA_AND_GT/SIFT100K_BASE.fbin	/home/tai/ann-task-a/data/sift100k.fbin	100,000 base vectors; dataset SHA from project runs
+LINK_CREATED	03_DATA_AND_GT/SIFT100K_GT300_CANDIDATE.ibin	/home/tai/ann-task-a/data/sift100k_gt300.ibin	Ground-truth candidate, NOT VERIFIED against query/base yet
+LINK_CREATED	03_DATA_AND_GT/SIFT1M_GT_DIFFERENT_DATASET.ibin	/home/tai/ann-task-a/data/sift1m_gt.ibin	Different dataset GT: do not use for SIFT100K unless independently proven
+LINK_CREATED	04_RUNS_AND_GRAPHS/SIFT100K_A0_A4_20_RUNS	/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd	20 graph runs; runs.csv, build_only_summary.json and per-run folders
+LINK_CREATED	04_RUNS_AND_GRAPHS/SIFT10K_G2_VALIDATION	/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9	10K ON/OFF counter calibration; not the main 100K benchmark
+LINK_CREATED	05_RESULTS_AND_COUNTERS/SIFT100K_POSTBUILD_AUDIT	/home/tai/ann-task-a/experiments/R86/analysis_exports/a0a4_sift100k_postbuild_0jSWm82d	Audit summary and C_WORK_100K_counter_records.csv
+LINK_CREATED	05_RESULTS_AND_COUNTERS/audit_summary.json	/home/tai/ann-task-a/experiments/R86/analysis_exports/a0a4_sift100k_postbuild_0jSWm82d/audit_summary.json	Postbuild verification overview
+LINK_CREATED	05_RESULTS_AND_COUNTERS/C_WORK_100K_counter_records.csv	/home/tai/ann-task-a/experiments/R86/analysis_exports/a0a4_sift100k_postbuild_0jSWm82d/C_WORK_100K_counter_records.csv	Raw per-depth counters for 5 ON arms (upload this file when asked)
+LINK_CREATED	05_RESULTS_AND_COUNTERS/graph_sha_and_off_times.csv	/home/tai/ann-task-a/experiments/R86/analysis_exports/a0a4_sift100k_postbuild_0jSWm82d/graph_sha_and_off_times.csv	Per-run graph SHA and OFF build timing
+LINK_CREATED	05_RESULTS_AND_COUNTERS/runs.csv	/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/runs.csv	20 run IDs, protocol and paths
+LINK_CREATED	05_RESULTS_AND_COUNTERS/build_only_summary.json	/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/build_only_summary.json	A0-A4 build time/RSS and graph SHA stability
+LINK_CREATED	05_RESULTS_AND_COUNTERS/protocol.txt	/home/tai/ann-task-a/experiments/R86/benchmarks/sift100k_a0a4_hw85_7ueCvd/protocol.txt	Actual CPU affinity and command protocol
+LINK_CREATED	06_LOGS/A0_A4_100K_BUILD_LAUNCHER.log	/home/tai/R86_HW85_A0A4_100K_launcher.log	Launcher log; per-run log is inside SIFT100K_A0_A4_20_RUNS/<run_id>/
+LINK_CREATED	06_LOGS/SIFT100K_POSTBUILD_AUDIT.log	/home/tai/R86_A0A4_100K_postbuild_audit.log	Launcher log; per-run log is inside SIFT100K_A0_A4_20_RUNS/<run_id>/
+LINK_CREATED	06_LOGS/HW85_FOUR_BINARY_BUILD.log	/home/tai/R86_HW85_four_build_launcher.log	Launcher log; per-run log is inside SIFT100K_A0_A4_20_RUNS/<run_id>/
+LINK_CREATED	06_LOGS/G2_10K_V1_2.log	/home/tai/R86_HW85_G2_v1_2_launcher.log	Launcher log; per-run log is inside SIFT100K_A0_A4_20_RUNS/<run_id>/
+LINK_CREATED	06_LOGS/HW85_STOCK_CONTROL.log	/home/tai/R86_G1_Highway_R85_launcher.log	Launcher log; per-run log is inside SIFT100K_A0_A4_20_RUNS/<run_id>/
+LINK_CREATED	07_SCRIPTS/R86_HW85_SIFT100K_A0_A4_Build_Counters_v1_0.sh	/home/tai/Downloads/R86_HW85_SIFT100K_A0_A4_Build_Counters_v1_0.sh	Original experiment script in Downloads; do not rewrite
+LINK_CREATED	07_SCRIPTS/R86_HW85_SIFT100K_PostBuild_Audit_v1_0.sh	/home/tai/Downloads/R86_HW85_SIFT100K_PostBuild_Audit_v1_0.sh	Original experiment script in Downloads; do not rewrite
+LINK_CREATED	07_SCRIPTS/R86_HW85_G2_Native10K_Resume_v1_2.sh	/home/tai/Downloads/R86_HW85_G2_Native10K_Resume_v1_2.sh	Original experiment script in Downloads; do not rewrite
+LINK_CREATED	07_SCRIPTS/R86_Highway_R85_Four_Binaries_v1_0.sh	/home/tai/Downloads/R86_Highway_R85_Four_Binaries_v1_0.sh	Original experiment script in Downloads; do not rewrite
+LINK_CREATED	07_SCRIPTS/R86_G1_Highway_R85_OneBinary_Control_v1_0.sh	/home/tai/Downloads/R86_G1_Highway_R85_OneBinary_Control_v1_0.sh	Original experiment script in Downloads; do not rewrite
+LINK_CREATED	08_SEARCH_EVALUATOR/R70_RECALL_RUNNER_CANDIDATE.py	/home/tai/ann-task-a/experiments/H70/tools/R70_recall_kit/r70_run_recall.py	Historical evaluator candidate, NOT yet certified for 100K
+LINK_CREATED	08_SEARCH_EVALUATOR/R71_FACTORIAL_EVALUATOR_CANDIDATE.py	/home/tai/ann-task-a/experiments/H70/tools/R71_factorial_quality_kit/r71_evaluate_12_graphs.py	Historical evaluator candidate, NOT yet certified for 100K
+LINK_CREATED	08_SEARCH_EVALUATOR/PIPNN_NATIVE_GRAPH_IO_AND_SEARCH_CODE	/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/algorithms/PipNN	Reference for native graph loading/search options

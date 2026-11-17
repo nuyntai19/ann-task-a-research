@@ -1,0 +1,31 @@
+{
+  "status": "R84_5_PAIRED_NATIVE_BINARY_BUILD_PASS",
+  "source_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "baseline": "D0=H17+TwoTier",
+  "experimental": "W=grow-only-leaf-workspace",
+  "compile_db": "/home/tai/ann-task-a/src/PiPNN/build/compile_commands.json",
+  "link_file": "/home/tai/ann-task-a/src/PiPNN/build/algorithms/PipNN/CMakeFiles/neighbors-pipnn_FLOAT_T_EUCLIDEAN.dir/link.txt",
+  "build_host": "x86_64",
+  "compiler_version": [
+    "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  ],
+  "variants": {
+    "D0": {
+      "compile_exit": 0,
+      "source_header_sha256": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d",
+      "object_sha256": "083fabdb679f7059f0237091cd3f446aacae7edeca4f36f30e372135b04754bc",
+      "link_exit": 0,
+      "binary_path": "/home/tai/ann-task-a/experiments/H84/r84_5_matched_native_binary/D0/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "binary_sha256": "7340ce1817f1272d0137bb02ef8dea79756a5fa9252037d29afc3af670f6e48f"
+    },
+    "W": {
+      "compile_exit": 0,
+      "source_header_sha256": "49fd0e1d260d3c8598a532729d050cec8c5bb52069c43493ed13522cc0c857db",
+      "object_sha256": "b8f145eae5a0c276274f1ab65a163d8a7890e7e96e09005c3d8e82f8bd222db2",
+      "link_exit": 0,
+      "binary_path": "/home/tai/ann-task-a/experiments/H84/r84_5_matched_native_binary/W/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "binary_sha256": "b79cada58551a8893c1c6fb81fd868ecd521830825ae1eb21ed887e46ec8ef95"
+    }
+  },
+  "note": "native object + link only; not graph BUILD or parity"
+}

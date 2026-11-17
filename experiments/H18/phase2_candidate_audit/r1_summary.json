@@ -1,0 +1,189 @@
+{
+  "status": "AUDIT_COMPLETE_NO_ALGORITHM_SELECTED",
+  "dataset": "TEXMEX SIFT1M Float32 n=1M x 128",
+  "code": "PiPNN 443a328 + H17 top2 + isolated R1 instrumentation",
+  "graph_and_proposals": "SAME NONDETERMINISTIC BUILD",
+  "capture": {
+    "leaves": 85529,
+    "directed_proposal_events": 59990170,
+    "unique_directed_proposal_keys": 24186173,
+    "duplicate_directed_event_fraction": 0.596831,
+    "unique_undirected_candidate_pairs": 19974736,
+    "duplicate_undirected_event_fraction": 0.667033,
+    "warning_undirected": "Undirected repeat includes reciprocal proposals WITHIN a leaf; only directed duplicates measure exact repeated source-to-target events across leaves.",
+    "min_unique_directed_proposals_per_node": 2,
+    "mean_unique_directed_proposals_per_node": 24.1862,
+    "unique_directed_proposals_per_node_percentiles": {
+      "0": 2.0,
+      "1": 9.0,
+      "5": 12.0,
+      "10": 14.0,
+      "25": 19.0,
+      "50": 24.0,
+      "75": 29.0,
+      "90": 34.0,
+      "95": 37.0,
+      "99": 41.0,
+      "100": 54.0
+    }
+  },
+  "final_graph": {
+    "n": 1000000,
+    "max_degree": 32,
+    "directed_edges": 22804365,
+    "unique_undirected_pairs": 15095795,
+    "mean_out_degree": 22.8044,
+    "out_degree_zero_nodes": 0
+  },
+  "cross_stage_comparison": {
+    "final_directed_arcs_with_matching_unordered_leaf_pair": 22804365,
+    "final_arcs_with_matching_unordered_leaf_pair_pct": 100.0,
+    "final_unique_unordered_pairs_with_matching_leaf_pair": 15095795,
+    "distinct_leaf_pairs_not_in_final_graph": 4878941,
+    "candidate_pair_coverage_fraction": 0.755744,
+    "interpretation": "Association, NOT causal tracking through concurrent reservoir; absent final pair may have been dropped by HashPrune, selection competition, or final prune. Reverse arcs are generated per directed leaf proposal."
+  },
+  "node_candidate_groups": {
+    "low_unique_0_3": {
+      "nodes": 40,
+      "mean_final_degree": 11.825,
+      "zero_final_degree_nodes": 0
+    },
+    "medium_unique_4_15": {
+      "nodes": 128919,
+      "mean_final_degree": 18.516,
+      "zero_final_degree_nodes": 0
+    },
+    "high_unique_16_plus": {
+      "nodes": 871041,
+      "mean_final_degree": 23.44,
+      "zero_final_degree_nodes": 0
+    }
+  },
+  "sampled_leaf_diagnostics": {
+    "sampled_leaves": 256,
+    "singleton_proposal_fraction_quantiles": {
+      "0": 0.03116,
+      "10": 0.14146,
+      "25": 0.21279,
+      "50": 0.28161,
+      "75": 0.383,
+      "90": 0.46058,
+      "100": 0.65234
+    },
+    "sampled_low_novelty_leaves": [
+      {
+        "leaf_id": 40434,
+        "proposal_events": 1412,
+        "fraction_globally_singleton_directed": 0.031161473087818695,
+        "mean_global_directed_multiplicity": 14.113314447592067,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8994334277620396
+      },
+      {
+        "leaf_id": 80150,
+        "proposal_events": 1636,
+        "fraction_globally_singleton_directed": 0.03178484107579462,
+        "mean_global_directed_multiplicity": 13.255501222493887,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.9254278728606357
+      },
+      {
+        "leaf_id": 74125,
+        "proposal_events": 1192,
+        "fraction_globally_singleton_directed": 0.031879194630872486,
+        "mean_global_directed_multiplicity": 13.562080536912752,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.9203020134228188
+      },
+      {
+        "leaf_id": 64321,
+        "proposal_events": 964,
+        "fraction_globally_singleton_directed": 0.05186721991701245,
+        "mean_global_directed_multiplicity": 9.970954356846473,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8890041493775933
+      },
+      {
+        "leaf_id": 21327,
+        "proposal_events": 1244,
+        "fraction_globally_singleton_directed": 0.05305466237942122,
+        "mean_global_directed_multiplicity": 10.346463022508038,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8930868167202572
+      },
+      {
+        "leaf_id": 65572,
+        "proposal_events": 456,
+        "fraction_globally_singleton_directed": 0.05701754385964912,
+        "mean_global_directed_multiplicity": 13.708333333333334,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8991228070175439
+      },
+      {
+        "leaf_id": 62995,
+        "proposal_events": 1144,
+        "fraction_globally_singleton_directed": 0.05856643356643357,
+        "mean_global_directed_multiplicity": 10.686188811188812,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8811188811188811
+      },
+      {
+        "leaf_id": 24570,
+        "proposal_events": 1182,
+        "fraction_globally_singleton_directed": 0.06345177664974619,
+        "mean_global_directed_multiplicity": 11.537225042301184,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.9094754653130288
+      },
+      {
+        "leaf_id": 10644,
+        "proposal_events": 1896,
+        "fraction_globally_singleton_directed": 0.06381856540084388,
+        "mean_global_directed_multiplicity": 9.727848101265822,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.9045358649789029
+      },
+      {
+        "leaf_id": 4584,
+        "proposal_events": 1164,
+        "fraction_globally_singleton_directed": 0.06529209621993128,
+        "mean_global_directed_multiplicity": 12.006872852233677,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.9106529209621993
+      },
+      {
+        "leaf_id": 46925,
+        "proposal_events": 804,
+        "fraction_globally_singleton_directed": 0.07213930348258707,
+        "mean_global_directed_multiplicity": 10.213930348258707,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8631840796019901
+      },
+      {
+        "leaf_id": 39733,
+        "proposal_events": 1204,
+        "fraction_globally_singleton_directed": 0.09136212624584718,
+        "mean_global_directed_multiplicity": 10.472591362126245,
+        "fraction_events_whose_pair_appears_in_final_graph": 0.8795681063122923
+      }
+    ],
+    "sampling_policy": "256 uniformly sampled non-empty leaves; fixed RNG seed 20261023",
+    "caution": "Low unique-event fraction does not imply safe skipping: another leaf may supply a later/different update."
+  },
+  "limitations": [
+    "ONLY one instrumented build with random partition; no statistical uncertainty or deterministic replay.",
+    "A unique candidate pair is not necessarily useful; final graph absence does not prove wasted distance work.",
+    "No ablation on candidate acquisition, no algorithmic delta, no proof of ANN novelty or better BUILD.",
+    "Candidate capture mmap adds disk IO/page faults and perturbs build timings; DO NOT compare this run as a speed benchmark.",
+    "Survival is correlation of unordered pairs across stages; no event-level exact merge/prune provenance.",
+    "One final graph cannot demonstrate Recall gains or losses caused by any hypothetical filter.",
+    "The output is 1M only. The BIGANN10M results in H18-C1 are METADATA ONLY and not comparable candidate-output profiles."
+  ],
+  "quality": {
+    "status": "NATIVE_SEARCH_ONE_RUN",
+    "recall_at_10_q135": 0.99453002,
+    "qps_single_noisy_run": 9198.25292969,
+    "reachable_from_node_0": 999999,
+    "n_nodes": 1000000
+  },
+  "provenance": {
+    "original_pipnn_revision": "443a328",
+    "input_sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+    "capture_file": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit/leaf_proposals.bin",
+    "graph_sha256": "9229bf1d98db3583fe7f3f996ce03e9c62edf12f7997114fbab3741c56999196",
+    "phase_dir": "/home/tai/ann-task-a/experiments/H18/phase2_candidate_audit",
+    "original_repo": "ee2048738ad4462f21bdfea4a1cf7c2ac140f72fbd8875d869bc4f613d93db53",
+    "h17_b_source": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520"
+  },
+  "date_utc": "2026-10-23T17:11:08.012461+00:00"
+}

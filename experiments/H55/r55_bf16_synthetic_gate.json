@@ -1,0 +1,54 @@
+{
+  "gate": "R55_SYNTHETIC_BF16_ORDER_COUNTEREXAMPLE_PASS",
+  "source": "https://github.com/ParAlg/PiPNN/blob/443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd/algorithms/utils/graph.h#L738-L835",
+  "source_provenance": "pinned GitHub commit, cited compare rules, not compiled native code",
+  "precision_assumption": "normal positive float32 to bfloat16 RNE",
+  "model_scope": "single-hash bucket, one candidate per merge call",
+  "candidate_A": {
+    "id": 101,
+    "dist_f32": 1.0019999742507935,
+    "dist_bf16": 1.0
+  },
+  "candidate_B": {
+    "id": 202,
+    "dist_f32": 1.0010000467300415,
+    "dist_bf16": 1.0
+  },
+  "exact_float32_reference_winner": 202,
+  "fixture_caps": {
+    "1": {
+      "insertion_AB": [
+        101
+      ],
+      "insertion_BA": [
+        202
+      ],
+      "same_input_multiset": true,
+      "different_survivors": true
+    },
+    "2": {
+      "insertion_AB": [
+        101
+      ],
+      "insertion_BA": [
+        202
+      ],
+      "same_input_multiset": true,
+      "different_survivors": true
+    }
+  },
+  "distinct_bf16_control": {
+    "AB": [
+      404
+    ],
+    "BA": [
+      404
+    ]
+  },
+  "scientific_limitations": [
+    "Does not prove original compiled Eigen C++ behaves identically.",
+    "Does not estimate incidence on actual SIFT1M proposals or R26a graph.",
+    "Does not refute ideal-real-distance HashPrune history-independence theorem.",
+    "This is a correctness/precision research gate, not algorithm novelty or speedup."
+  ]
+}

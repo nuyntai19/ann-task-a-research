@@ -1,0 +1,93 @@
+diff --git a/algorithms/PipNN/pipnn.h b/algorithms/PipNN/pipnn.h
+index ebe6e52..200a996 100644
+--- a/algorithms/PipNN/pipnn.h
++++ b/algorithms/PipNN/pipnn.h
+@@ -436,7 +436,7 @@ struct cluster {
+     std::cout << "Building leaves:" << std::endl;
+      parlay::parallel_for(0, buckets.size(), [&](size_t i) {
+        CHECK(buckets[i].size() <= MAX_CLUSTER_SIZE);
+-       if (buckets[i].size() > 1) RunLeaf(G, Points, buckets[i]);
++       if (buckets[i].size() > 1) RunLeaf(G, Points, buckets[i], i);
+        // Note we can still have some small clusters due to how sampling works.
+      });
+     t.next("build leaf time");
+@@ -452,18 +452,19 @@ struct cluster {
+       std::cout << "# of comparisons during clustering: " << COMPARISONS
+                 << std::endl;
+     }
++    h25_r1::verify();  // FAIL CLOSED before final graph export.
+   }
+ 
+   /*  Leaf code  */
+   void RunLeaf(GraphH &G, PR &Points,
+-               parlay::sequence<uint32_t> &active_indices) {
++               parlay::sequence<uint32_t> &active_indices, size_t h25_leaf_id) {
+     leaf_count++;
+-    EigenKNN(G, Points, active_indices);
++    EigenKNN(G, Points, active_indices, h25_leaf_id);
+   }
+ 
+   void EigenKNN(GraphH &G, PR &Points,
+-                     parlay::sequence<uint32_t> &active_indices) {
+-    eigen_knn(G, active_indices, Points, MST_DEG);
++                     parlay::sequence<uint32_t> &active_indices, size_t h25_leaf_id) {
++    eigen_knn(G, active_indices, Points, MST_DEG, h25_leaf_id);
+   }
+ 
+   size_t SEED = 555;
+diff --git a/algorithms/PipNN/pipnn_utils.h b/algorithms/PipNN/pipnn_utils.h
+index 81b9149..671af7d 100644
+--- a/algorithms/PipNN/pipnn_utils.h
++++ b/algorithms/PipNN/pipnn_utils.h
+@@ -40,6 +40,7 @@
+ #include "hwy/contrib/sort/vqsort-inl.h"
+ #include "hwy/contrib/sort/vqsort.h"
+ #include "hwy/highway.h"
++#include "h25_r1_hook.h"
+ #include <absl/types/span.h>
+ 
+ 
+@@ -435,10 +436,12 @@ void assign_leaders(PR& Points,
+ 
+ 
+ template<typename GraphH, typename PR>
+-void eigen_knn(GraphH &G, parlay::sequence<uint32_t> &active_indices, PR &Points, size_t MST_DEG) {
++void eigen_knn(GraphH &G, parlay::sequence<uint32_t> &active_indices, PR &Points, size_t MST_DEG, size_t h25_leaf_id) {
+   auto N = active_indices.size();
+   eigen_build_distmat(active_indices, Points);
+   float* dist_mat = (float*)get_dist_mat();
++  const bool h25_target = h25_r1::target_leaf(static_cast<uint32_t>(h25_leaf_id));
++  if (h25_target && MST_DEG != 2) h25_r1::fail("MST_DEG must be 2 for this H18 capture");
+ 
+   using indexType = uint32_t;
+   // Step 1: Find all DIRECTED k-NN edges first.
+@@ -461,10 +464,29 @@ void eigen_knn(GraphH &G, parlay::sequence<uint32_t> &active_indices, PR &Points
+     VQPartialSort(Q.data(), Q.data() + Q.size(), limit);
+     
+     uint32_t global_i = active_indices[i];
++    if (h25_target) {
++      if (limit != 2) h25_r1::fail("Local Top2 row must contain 2 candidates");
++      auto h25_first = unpackDouble(Q[0]);
++      auto h25_second = unpackDouble(Q[1]);
++      h25_r1::check_row(static_cast<uint32_t>(h25_leaf_id), global_i,
++                        active_indices[h25_first.second], active_indices[h25_second.second]);
++    }
+     for (size_t j = 0; j < limit; j++) {
+       auto unpacked = unpackDouble(Q[j]);
+       uint32_t global_neighbor = active_indices[unpacked.second];
+       float dist = unpacked.first;
++      if (h25_target) {
++        uint32_t new_neighbor = h25_r1::replacement(static_cast<uint32_t>(h25_leaf_id), global_i, global_neighbor);
++        if (new_neighbor != global_neighbor) {
++          size_t local_new = N;
++          for (size_t candidate = 0; candidate < N; ++candidate)
++            if (active_indices[candidate] == new_neighbor) { local_new = candidate; break; }
++          if (local_new >= N || local_new == i) h25_r1::fail("Replacement is not within original leaf");
++          // Native eigen_build_distmat already computed this pair (upper-triangular access).
++          dist = (i < local_new) ? dist_mat[local_new*N + i] : dist_mat[i*N + local_new];
++          global_neighbor = new_neighbor;
++        }
++      }
+       directed_edges.emplace_back(global_i, global_neighbor, dist);
+     }
+   }

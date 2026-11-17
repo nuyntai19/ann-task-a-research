@@ -1,0 +1,329 @@
+{
+  "study": "H26_P4A_OBSERVED_LEAF_EXECUTION_ENVELOPE_NOT_TRUE_CRITICAL_PATH",
+  "data": {
+    "n": 1000000,
+    "base": "SIFT1M",
+    "expected_leaves": 85529,
+    "threads_4_cpuset": "0,2,4,6"
+  },
+  "runs": [
+    {
+      "run": "r1_1t_on",
+      "round": 1,
+      "threads": 1,
+      "trace": true,
+      "metrics": {
+        "leaf_count": 85529,
+        "rows": 29995085,
+        "proposals": 59990170,
+        "dist_worker_ns": 46118211215,
+        "select_worker_ns": 32999837818,
+        "merge_worker_ns": 11898825246,
+        "trace": 1,
+        "leaf_phase_wall_s": 91.0441,
+        "buckets_wall_s": 26.0118,
+        "final_prune_wall_s": 13.9163,
+        "process_wall_s_includes_csv_flush": 132.05
+      },
+      "trace_summary": {
+        "events": 85529,
+        "worker_thread_tokens_observed": 1,
+        "leaf_envelope_span_s": 91.041782688,
+        "leaf_elapsed_sum_s": 91.01687427899999,
+        "average_concurrent_leaf_calls": 0.9997264068401938,
+        "maximum_concurrent_leaf_calls": 1,
+        "concurrency_time_pct_by_active_leaf_count": {
+          "0": 0.027,
+          "1": 99.973
+        },
+        "leaf_duration_ms_quantiles": {
+          "p50": 0.55329,
+          "p90": 2.75715,
+          "p95": 3.87679,
+          "p99": 5.49709,
+          "p99.9": 8.97091
+        },
+        "max_leaf_elapsed_ms": 81.559951,
+        "longest_one_percent_leaf_share_of_elapsed_sum_pct": 6.266548770414077,
+        "worker_leaf_elapsed_gini": 0.0,
+        "workers": [
+          {
+            "token": 0,
+            "leaf_count": 85529,
+            "elapsed_sum_s": 91.016874279,
+            "first_start_offset_s": 0.0,
+            "last_end_offset_s": 91.041782688
+          }
+        ],
+        "WARNING": "Observed leaf execution envelope and thread tokens, not CPU busy time, true DAG critical path or graph-lock wait. A high concurrency count may include blocked threads."
+      }
+    },
+    {
+      "run": "r1_2t_on",
+      "round": 1,
+      "threads": 2,
+      "trace": true,
+      "metrics": {
+        "leaf_count": 85529,
+        "rows": 29995085,
+        "proposals": 59990170,
+        "dist_worker_ns": 51325911618,
+        "select_worker_ns": 34639707892,
+        "merge_worker_ns": 12304125282,
+        "trace": 1,
+        "leaf_phase_wall_s": 49.2397,
+        "buckets_wall_s": 13.9616,
+        "final_prune_wall_s": 6.8945,
+        "process_wall_s_includes_csv_flush": 70.96000000000001
+      },
+      "trace_summary": {
+        "events": 85529,
+        "worker_thread_tokens_observed": 2,
+        "leaf_envelope_span_s": 49.237297326,
+        "leaf_elapsed_sum_s": 98.269744792,
+        "average_concurrent_leaf_calls": 1.9958395389039394,
+        "maximum_concurrent_leaf_calls": 2,
+        "concurrency_time_pct_by_active_leaf_count": {
+          "0": 0.0,
+          "1": 0.416,
+          "2": 99.584
+        },
+        "leaf_duration_ms_quantiles": {
+          "p50": 0.57739,
+          "p90": 3.01136,
+          "p95": 4.29191,
+          "p99": 6.18161,
+          "p99.9": 10.03616
+        },
+        "max_leaf_elapsed_ms": 86.120722,
+        "longest_one_percent_leaf_share_of_elapsed_sum_pct": 6.463523696376875,
+        "worker_leaf_elapsed_gini": 0.0008613172159870238,
+        "workers": [
+          {
+            "token": 0,
+            "leaf_count": 43364,
+            "elapsed_sum_s": 49.219513819,
+            "first_start_offset_s": 0.0,
+            "last_end_offset_s": 49.237297326
+          },
+          {
+            "token": 1,
+            "leaf_count": 42165,
+            "elapsed_sum_s": 49.050230973,
+            "first_start_offset_s": 0.086150737,
+            "last_end_offset_s": 49.155913144
+          }
+        ],
+        "WARNING": "Observed leaf execution envelope and thread tokens, not CPU busy time, true DAG critical path or graph-lock wait. A high concurrency count may include blocked threads."
+      }
+    },
+    {
+      "run": "r1_4t_off",
+      "round": 1,
+      "threads": 4,
+      "trace": false,
+      "metrics": {
+        "leaf_count": 85529,
+        "rows": 29995085,
+        "proposals": 59990170,
+        "dist_worker_ns": 60622568483,
+        "select_worker_ns": 39661361242,
+        "merge_worker_ns": 13740356806,
+        "trace": 0,
+        "leaf_phase_wall_s": 28.7561,
+        "buckets_wall_s": 9.0797,
+        "final_prune_wall_s": 3.6979,
+        "process_wall_s_includes_csv_flush": 42.31
+      }
+    },
+    {
+      "run": "r1_4t_on",
+      "round": 1,
+      "threads": 4,
+      "trace": true,
+      "metrics": {
+        "leaf_count": 85529,
+        "rows": 29995085,
+        "proposals": 59990170,
+        "dist_worker_ns": 60038457368,
+        "select_worker_ns": 39058796205,
+        "merge_worker_ns": 13651104412,
+        "trace": 1,
+        "leaf_phase_wall_s": 28.3337,
+        "buckets_wall_s": 8.5281,
+        "final_prune_wall_s": 3.6872,
+        "process_wall_s_includes_csv_flush": 41.37
+      },
+      "trace_summary": {
+        "events": 85529,
+        "worker_thread_tokens_observed": 4,
+        "leaf_envelope_span_s": 28.331259455,
+        "leaf_elapsed_sum_s": 112.748357985,
+        "average_concurrent_leaf_calls": 3.979645104167855,
+        "maximum_concurrent_leaf_calls": 4,
+        "concurrency_time_pct_by_active_leaf_count": {
+          "0": 0.0,
+          "1": 0.403,
+          "2": 0.281,
+          "3": 0.266,
+          "4": 99.051
+        },
+        "leaf_duration_ms_quantiles": {
+          "p50": 0.63759,
+          "p90": 3.54615,
+          "p95": 5.0352,
+          "p99": 7.20316,
+          "p99.9": 9.67248
+        },
+        "max_leaf_elapsed_ms": 89.212995,
+        "longest_one_percent_leaf_share_of_elapsed_sum_pct": 6.3886585771460185,
+        "worker_leaf_elapsed_gini": 0.0007716526812884792,
+        "workers": [
+          {
+            "token": 0,
+            "leaf_count": 19114,
+            "elapsed_sum_s": 28.184044719,
+            "first_start_offset_s": 0.0,
+            "last_end_offset_s": 28.196030697
+          },
+          {
+            "token": 1,
+            "leaf_count": 22420,
+            "elapsed_sum_s": 28.204237807,
+            "first_start_offset_s": 0.083582593,
+            "last_end_offset_s": 28.300832486
+          },
+          {
+            "token": 2,
+            "leaf_count": 22129,
+            "elapsed_sum_s": 28.125401529,
+            "first_start_offset_s": 0.083573937,
+            "last_end_offset_s": 28.221204444
+          },
+          {
+            "token": 3,
+            "leaf_count": 21866,
+            "elapsed_sum_s": 28.23467393,
+            "first_start_offset_s": 0.083577905,
+            "last_end_offset_s": 28.331259455
+          }
+        ],
+        "WARNING": "Observed leaf execution envelope and thread tokens, not CPU busy time, true DAG critical path or graph-lock wait. A high concurrency count may include blocked threads."
+      }
+    },
+    {
+      "run": "r2_4t_off",
+      "round": 2,
+      "threads": 4,
+      "trace": false,
+      "metrics": {
+        "leaf_count": 85529,
+        "rows": 29995085,
+        "proposals": 59990170,
+        "dist_worker_ns": 65878653060,
+        "select_worker_ns": 42677634236,
+        "merge_worker_ns": 14394968285,
+        "trace": 0,
+        "leaf_phase_wall_s": 30.8684,
+        "buckets_wall_s": 9.0575,
+        "final_prune_wall_s": 3.9776,
+        "process_wall_s_includes_csv_flush": 44.72
+      }
+    },
+    {
+      "run": "r2_4t_on",
+      "round": 2,
+      "threads": 4,
+      "trace": true,
+      "metrics": {
+        "leaf_count": 85529,
+        "rows": 29995085,
+        "proposals": 59990170,
+        "dist_worker_ns": 60000468442,
+        "select_worker_ns": 39081019545,
+        "merge_worker_ns": 13703627467,
+        "trace": 1,
+        "leaf_phase_wall_s": 28.5187,
+        "buckets_wall_s": 8.8701,
+        "final_prune_wall_s": 10.6209,
+        "process_wall_s_includes_csv_flush": 48.91
+      },
+      "trace_summary": {
+        "events": 85529,
+        "worker_thread_tokens_observed": 4,
+        "leaf_envelope_span_s": 28.51627314,
+        "leaf_elapsed_sum_s": 112.78511545399999,
+        "average_concurrent_leaf_calls": 3.9551141518488064,
+        "maximum_concurrent_leaf_calls": 4,
+        "concurrency_time_pct_by_active_leaf_count": {
+          "0": 0.0,
+          "1": 1.278,
+          "2": 0.219,
+          "3": 0.216,
+          "4": 98.287
+        },
+        "leaf_duration_ms_quantiles": {
+          "p50": 0.6386,
+          "p90": 3.54059,
+          "p95": 5.05083,
+          "p99": 7.19519,
+          "p99.9": 9.1942
+        },
+        "max_leaf_elapsed_ms": 89.598639,
+        "longest_one_percent_leaf_share_of_elapsed_sum_pct": 6.335437310355284,
+        "worker_leaf_elapsed_gini": 0.002667560362809637,
+        "workers": [
+          {
+            "token": 0,
+            "leaf_count": 21041,
+            "elapsed_sum_s": 28.220239128,
+            "first_start_offset_s": 0.0,
+            "last_end_offset_s": 28.233272088
+          },
+          {
+            "token": 1,
+            "leaf_count": 22318,
+            "elapsed_sum_s": 28.421117432,
+            "first_start_offset_s": 0.081396166,
+            "last_end_offset_s": 28.51627314
+          },
+          {
+            "token": 2,
+            "leaf_count": 21587,
+            "elapsed_sum_s": 28.068194058,
+            "first_start_offset_s": 0.081396556,
+            "last_end_offset_s": 28.163134981
+          },
+          {
+            "token": 3,
+            "leaf_count": 20583,
+            "elapsed_sum_s": 28.075564836,
+            "first_start_offset_s": 0.081404953,
+            "last_end_offset_s": 28.170844925
+          }
+        ],
+        "WARNING": "Observed leaf execution envelope and thread tokens, not CPU busy time, true DAG critical path or graph-lock wait. A high concurrency count may include blocked threads."
+      }
+    }
+  ],
+  "paired_4thread_instrumentation_overhead": [
+    {
+      "round": 1,
+      "build_leaf_wall_trace_overhead_pct": -1.4689057278281847,
+      "process_wall_with_csv_flush_pct": -2.221696998345557
+    },
+    {
+      "round": 2,
+      "build_leaf_wall_trace_overhead_pct": -7.611991551230391,
+      "process_wall_with_csv_flush_pct": 9.36940966010733
+    }
+  ],
+  "critical_path_not_proven": [
+    "No dependency DAG edges or true span",
+    "No per-lock acquire latency yet",
+    "Thread elapsed includes scheduler deschedule and blocking",
+    "1t/2t scaling if present has one replication",
+    "CSV flush contributes to process wall on traced runs",
+    "No graph output, Recall/QPS/Pareto not tested"
+  ]
+}

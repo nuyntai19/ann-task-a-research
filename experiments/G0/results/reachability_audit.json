@@ -1,0 +1,38 @@
+{
+  "f15": {
+    "vertices": 1000000,
+    "max_degree": 32,
+    "entry_point": 0,
+    "reachable": 1000000,
+    "unreachable": 0,
+    "reachable_fraction": 1.0,
+    "bfs_hops_p50": 7.0,
+    "bfs_hops_p90": 9.0,
+    "bfs_hops_p99": 10.0,
+    "bfs_hops_max": 13
+  },
+  "f30": {
+    "vertices": 1000000,
+    "max_degree": 32,
+    "entry_point": 0,
+    "reachable": 1000000,
+    "unreachable": 0,
+    "reachable_fraction": 1.0,
+    "bfs_hops_p50": 6.0,
+    "bfs_hops_p90": 8.0,
+    "bfs_hops_p99": 9.0,
+    "bfs_hops_max": 12
+  },
+  "f60": {
+    "vertices": 1000000,
+    "max_degree": 32,
+    "entry_point": 0,
+    "reachable": 1000000,
+    "unreachable": 0,
+    "reachable_fraction": 1.0,
+    "bfs_hops_p50": 6.0,
+    "bfs_hops_p90": 8.0,
+    "bfs_hops_p99": 9.0,
+    "bfs_hops_max": 12
+  }
+}

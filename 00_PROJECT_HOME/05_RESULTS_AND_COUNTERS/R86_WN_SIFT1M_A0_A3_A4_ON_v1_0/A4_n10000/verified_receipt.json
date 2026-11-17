@@ -1,0 +1,78 @@
+{
+  "C": 64,
+  "K": 512,
+  "N": 1,
+  "W_A_total": 656418,
+  "W_L_total": 84105204,
+  "W_P_total": 2696532,
+  "W_pairs_total": 41909300,
+  "arm": "A4",
+  "binary_sha256": "ef707479be221cb7a3c6257298d22f614678878f0a7bfc724dc8b28fabdd21c4",
+  "caveat": "ON timing not OFF BUILD. W(n) work models empirical; historical 1M G1 HOLD not replaced.",
+  "collision_same_id_total": 915231,
+  "counter_rows": 41,
+  "counters_sha256": "b906fe17de98e901eb081dba1c9722f7a89b961711c56af4b3a7ea27f90dd881",
+  "dataset_sha256": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+  "graph_bytes": 474148,
+  "graph_sha256": "6b3e46c6e264f71fb13bba17505579ec9e0a4212e7abf26013c5ef4821c129ea",
+  "hash_moves_total": 1099963,
+  "input_command_json_sha256": "7aa8a6ee8deafc01fc1f4a1d61937b8883641925773923992a12cd442b656334",
+  "leaf_rows": 1252,
+  "leaf_sha256": "4b9136f2b7d98faa2af0f26ebaacd47e3da5604097872c003a6e090970d319f0",
+  "log_sha256": "938003adf84bcfcdcc1c6df44b6a51e6ef7d426196aff06de1f1c5ffa4ed78c5",
+  "merge_attempts_total": 1146416,
+  "n": 10000,
+  "occupancy": {
+    "0": {
+      "full_nodes": 12,
+      "occupied_slots": 198934
+    },
+    "1": {
+      "full_nodes": 12,
+      "occupied_slots": 198934
+    }
+  },
+  "occupancy_sha256": "41e42f46076c47e52ba0194c326e45ca25023274db3db6d9df12df3cd9a63c96",
+  "per_pass": {
+    "0": {
+      "prune_distance_calls": 988396
+    },
+    "1": {
+      "W_A": 656418,
+      "W_L": 84105204,
+      "W_P": 2696532,
+      "W_pairs": 41909300,
+      "collision_diff_id": 32065,
+      "collision_same_id": 915231,
+      "hash_accept": 202842,
+      "hash_bound_compares": 938,
+      "hash_compute": 1146335,
+      "hash_diff_collision_reject": 28262,
+      "hash_diff_collision_rewrite": 3803,
+      "hash_early_break": 81,
+      "hash_full": 938,
+      "hash_insert_not_full": 198934,
+      "hash_lb_compares": 4334022,
+      "hash_moves": 1099963,
+      "hash_reject": 28343,
+      "hash_replace": 3908,
+      "hash_replace_full": 105,
+      "hash_same_id_rewrite": 453184,
+      "hash_slot_writes": 656026,
+      "hash_worst_compares": 87137,
+      "hash_worst_scan": 99255,
+      "leaf_count": 1252,
+      "leaf_size_sum": 286604,
+      "max_depth": 4,
+      "merge_attempts": 1146416,
+      "partial_sort_calls": 0,
+      "proposals": 573208,
+      "top2_q_writes": 0
+    }
+  },
+  "proposals_total": 573208,
+  "prune_distance_calls_total": 988396,
+  "script_version": "R86_WN_SIFT1M_A0_A3_A4_ON_v1_0",
+  "status": "R86_WN_NATIVE_ON_PILOT_OR_RUN_AUDIT_PASS",
+  "top2_q_writes_total": 0
+}

@@ -1,0 +1,897 @@
+[
+  {
+    "target_recall": 0.76,
+    "arms": {
+      "B64": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 514.8901825167906,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.75230998,
+              0.77134001
+            ],
+            "bracket_width_pp": 1.903002999999992
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 517.4632451593345,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.75230998,
+              0.7723
+            ],
+            "bracket_width_pp": 1.9990019999999942
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 515.6634378566171,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.75318998,
+              0.77274001
+            ],
+            "bracket_width_pp": 1.9550029999999996
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          514.8901825167906,
+          515.6634378566171,
+          517.4632451593345
+        ]
+      },
+      "EDGE_R": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 509.7599310712919,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.75014001,
+              0.77029997
+            ],
+            "bracket_width_pp": 2.0159959999999977
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 509.84409859106984,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.75093001,
+              0.7712
+            ],
+            "bracket_width_pp": 2.026998999999996
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 509.7543472812588,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.75015002,
+              0.77029997
+            ],
+            "bracket_width_pp": 2.014994999999997
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          509.7543472812588,
+          509.7599310712919,
+          509.84409859106984
+        ]
+      },
+      "EDGE_ALPHA": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 564.2620865115113,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.74697,
+              0.76745999
+            ],
+            "bracket_width_pp": 2.048998999999996
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 560.603942737539,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.74796999,
+              0.76774001
+            ],
+            "bracket_width_pp": 1.9770020000000055
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 564.3642210002721,
+            "beams": [
+              10,
+              11
+            ],
+            "recall_bracket": [
+              0.74686998,
+              0.76738
+            ],
+            "bracket_width_pp": 2.0510019999999907
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          560.603942737539,
+          564.2620865115113,
+          564.3642210002721
+        ]
+      }
+    },
+    "paired_ratios": {
+      "EDGE_R": {
+        "n": 3,
+        "min_med_max": [
+          0.985275965704736,
+          0.9885407997900341,
+          0.9900362220533669
+        ]
+      },
+      "EDGE_ALPHA": {
+        "n": 3,
+        "min_med_max": [
+          1.083369588046627,
+          1.0944429633135955,
+          1.095888221743499
+        ]
+      }
+    }
+  },
+  {
+    "target_recall": 0.89,
+    "arms": {
+      "B64": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 757.1353241150424,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88642001,
+              0.89284998
+            ],
+            "bracket_width_pp": 0.6429970000000007
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 757.3539771614336,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88786,
+              0.89367998
+            ],
+            "bracket_width_pp": 0.5819980000000058
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 757.2459090566322,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88717997,
+              0.89328003
+            ],
+            "bracket_width_pp": 0.6100059999999963
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          757.1353241150424,
+          757.2459090566322,
+          757.3539771614336
+        ]
+      },
+      "EDGE_R": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 751.1566652016634,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88669997,
+              0.89231998
+            ],
+            "bracket_width_pp": 0.5620010000000009
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 751.174578575455,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88663,
+              0.89235997
+            ],
+            "bracket_width_pp": 0.5729969999999973
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 751.0748380564637,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88673002,
+              0.89234
+            ],
+            "bracket_width_pp": 0.5609980000000014
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          751.0748380564637,
+          751.1566652016634,
+          751.174578575455
+        ]
+      },
+      "EDGE_ALPHA": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 828.9949478284586,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88688999,
+              0.89283001
+            ],
+            "bracket_width_pp": 0.5940019999999935
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 832.8898794140686,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88490999,
+              0.89054
+            ],
+            "bracket_width_pp": 0.5630009999999963
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 829.0656250210438,
+            "beams": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88687003,
+              0.89280999
+            ],
+            "bracket_width_pp": 0.5939960000000077
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          828.9949478284586,
+          829.0656250210438,
+          832.8898794140686
+        ]
+      }
+    },
+    "paired_ratios": {
+      "EDGE_R": {
+        "n": 3,
+        "min_med_max": [
+          0.9918408052610498,
+          0.9918506380472146,
+          0.9921035794752187
+        ]
+      },
+      "EDGE_ALPHA": {
+        "n": 3,
+        "min_med_max": [
+          1.0948433198587812,
+          1.0949098812651588,
+          1.0997365888745232
+        ]
+      }
+    }
+  },
+  {
+    "target_recall": 0.96,
+    "arms": {
+      "B64": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 1202.6534670213398,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95621002,
+              0.96223998
+            ],
+            "bracket_width_pp": 0.6029960000000001
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 1210.631921618833,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95582998,
+              0.96186
+            ],
+            "bracket_width_pp": 0.603002000000008
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 1208.0867373532876,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95581001,
+              0.96192998
+            ],
+            "bracket_width_pp": 0.6119969999999975
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          1202.6534670213398,
+          1208.0867373532876,
+          1210.631921618833
+        ]
+      },
+      "EDGE_R": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 1208.1253498818821,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95494998,
+              0.96126997
+            ],
+            "bracket_width_pp": 0.6319990000000053
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 1206.0099009900987,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95532,
+              0.96138
+            ],
+            "bracket_width_pp": 0.6060000000000065
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 1207.801089269293,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95495999,
+              0.96130002
+            ],
+            "bracket_width_pp": 0.6340030000000052
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          1206.0099009900987,
+          1207.801089269293,
+          1208.1253498818821
+        ]
+      },
+      "EDGE_ALPHA": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 1329.0932912967567,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95594001,
+              0.96215999
+            ],
+            "bracket_width_pp": 0.6219980000000014
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 1325.9458933931421,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95578003,
+              0.96208
+            ],
+            "bracket_width_pp": 0.6299970000000044
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 1328.9328080920382,
+            "beams": [
+              40,
+              44
+            ],
+            "recall_bracket": [
+              0.95595002,
+              0.96221
+            ],
+            "bracket_width_pp": 0.6259980000000054
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          1325.9458933931421,
+          1328.9328080920382,
+          1329.0932912967567
+        ]
+      }
+    },
+    "paired_ratios": {
+      "EDGE_R": {
+        "n": 3,
+        "min_med_max": [
+          0.996182142114216,
+          0.9997635533317579,
+          1.0045498416714291
+        ]
+      },
+      "EDGE_ALPHA": {
+        "n": 3,
+        "min_med_max": [
+          1.0952510583234196,
+          1.1000309555616046,
+          1.1051340454608054
+        ]
+      }
+    }
+  },
+  {
+    "target_recall": 0.99,
+    "arms": {
+      "B64": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 2004.6835726947122,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98856997,
+              0.99243999
+            ],
+            "bracket_width_pp": 0.38700200000000295
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 2024.2087968570302,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98826998,
+              0.99220002
+            ],
+            "bracket_width_pp": 0.3930039999999968
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 2009.107197873638,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98853999,
+              0.99237001
+            ],
+            "bracket_width_pp": 0.38300199999999895
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          2004.6835726947122,
+          2009.107197873638,
+          2024.2087968570302
+        ]
+      },
+      "EDGE_R": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 2006.602090474607,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98842001,
+              0.99208999
+            ],
+            "bracket_width_pp": 0.36699799999999616
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 1994.8345992543004,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98861998,
+              0.99223
+            ],
+            "bracket_width_pp": 0.36100199999999916
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 2007.3316251175488,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98839998,
+              0.99208999
+            ],
+            "bracket_width_pp": 0.36900100000000213
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          1994.8345992543004,
+          2006.602090474607,
+          2007.3316251175488
+        ]
+      },
+      "EDGE_ALPHA": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 2155.4884714360646,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98965001,
+              0.99333
+            ],
+            "bracket_width_pp": 0.36799900000000774
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 2169.8614818652854,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98931998,
+              0.99317998
+            ],
+            "bracket_width_pp": 0.38599999999999746
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 2155.4884714360646,
+            "beams": [
+              80,
+              96
+            ],
+            "recall_bracket": [
+              0.98965001,
+              0.99333
+            ],
+            "bracket_width_pp": 0.36799900000000774
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          2155.4884714360646,
+          2155.4884714360646,
+          2169.8614818652854
+        ]
+      }
+    },
+    "paired_ratios": {
+      "EDGE_R": {
+        "n": 3,
+        "min_med_max": [
+          0.9854885535285003,
+          0.9991162379200232,
+          1.0009570177588256
+        ]
+      },
+      "EDGE_ALPHA": {
+        "n": 3,
+        "min_med_max": [
+          1.0719553660839776,
+          1.0728588667231649,
+          1.0752262854823713
+        ]
+      }
+    }
+  },
+  {
+    "target_recall": 0.998,
+    "arms": {
+      "B64": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 3275.212681818199,
+            "beams": [
+              160,
+              176
+            ],
+            "recall_bracket": [
+              0.99765003,
+              0.99809003
+            ],
+            "bracket_width_pp": 0.043999999999999595
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 3253.4258156280493,
+            "beams": [
+              160,
+              176
+            ],
+            "recall_bracket": [
+              0.99769002,
+              0.99813998
+            ],
+            "bracket_width_pp": 0.04499600000000825
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 3265.613695452195,
+            "beams": [
+              160,
+              176
+            ],
+            "recall_bracket": [
+              0.99763,
+              0.99813002
+            ],
+            "bracket_width_pp": 0.05000199999999344
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          3253.4258156280493,
+          3265.613695452195,
+          3275.212681818199
+        ]
+      },
+      "EDGE_R": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 3239.9482663619146,
+            "beams": [
+              160,
+              176
+            ],
+            "recall_bracket": [
+              0.99760997,
+              0.99809998
+            ],
+            "bracket_width_pp": 0.04900100000000407
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 3227.211629125182,
+            "beams": [
+              160,
+              176
+            ],
+            "recall_bracket": [
+              0.99769002,
+              0.99811
+            ],
+            "bracket_width_pp": 0.04199800000000975
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 3240.8050644051496,
+            "beams": [
+              160,
+              176
+            ],
+            "recall_bracket": [
+              0.99760002,
+              0.99809998
+            ],
+            "bracket_width_pp": 0.0499959999999966
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          3227.211629125182,
+          3239.9482663619146,
+          3240.8050644051496
+        ]
+      },
+      "EDGE_ALPHA": {
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "INTERPOLATED",
+            "comparisons": 3425.221434960437,
+            "beams": [
+              120,
+              160
+            ],
+            "recall_bracket": [
+              0.99611998,
+              0.99811
+            ],
+            "bracket_width_pp": 0.19900200000000368
+          },
+          {
+            "rep": 2,
+            "status": "INTERPOLATED",
+            "comparisons": 3415.7365429334104,
+            "beams": [
+              120,
+              160
+            ],
+            "recall_bracket": [
+              0.99602002,
+              0.99811
+            ],
+            "bracket_width_pp": 0.20899800000000468
+          },
+          {
+            "rep": 3,
+            "status": "INTERPOLATED",
+            "comparisons": 3424.7190481535376,
+            "beams": [
+              120,
+              160
+            ],
+            "recall_bracket": [
+              0.99615002,
+              0.99811
+            ],
+            "bracket_width_pp": 0.19599800000000833
+          }
+        ],
+        "covered_reps": 3,
+        "comparisons_min_med_max": [
+          3415.7365429334104,
+          3424.7190481535376,
+          3425.221434960437
+        ]
+      }
+    },
+    "paired_ratios": {
+      "EDGE_R": {
+        "n": 3,
+        "min_med_max": [
+          0.9892329387791977,
+          0.991942589753562,
+          0.9924030723286117
+        ]
+      },
+      "EDGE_ALPHA": {
+        "n": 3,
+        "min_med_max": [
+          1.045801225054784,
+          1.048721424987566,
+          1.0498891742131296
+        ]
+      }
+    }
+  }
+]

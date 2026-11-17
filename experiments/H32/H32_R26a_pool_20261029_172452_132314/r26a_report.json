@@ -1,0 +1,42 @@
+{
+  "status": "R26A_SOURCE_POOL_GRAPH_GATE_PASS",
+  "n": 1000000,
+  "d": 128,
+  "candidate_c": 160,
+  "nograph_dump_invariance": true,
+  "nodump_graph": {
+    "vertices": 1000000,
+    "header_max_degree": 32,
+    "arcs": 22797630,
+    "graph_bytes": 95190528,
+    "isolated_vertices": 0,
+    "avg_degree": 22.79763,
+    "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef"
+  },
+  "dump_graph": {
+    "vertices": 1000000,
+    "header_max_degree": 32,
+    "arcs": 22797630,
+    "graph_bytes": 95190528,
+    "isolated_vertices": 0,
+    "avg_degree": 22.79763,
+    "sha256": "d497f6d19fff4b7db6436f960d036755e375be92483c03ec0b9ed61968d17bef"
+  },
+  "candidate_dump": {
+    "rows": 1000000,
+    "capacity": 160,
+    "dump_bytes": 640000000,
+    "candidate_slots_populated": 37137323,
+    "mean_candidates": 37.137323,
+    "rows_with_candidates": 1000000,
+    "self_candidate_slots": 0,
+    "sha256": "7e22a4ca2b71bd560560f7e4aa2a1f2dcad46b8f25ae48ca8ea014c17086f9e8"
+  },
+  "limitations": [
+    "single source revision and seed",
+    "two sequential builds, not paired counterbalanced performance benchmark",
+    "no heldout ANN query Recall or QPS",
+    "no matched graph budget or PiPNN II native baseline",
+    "no physical RAM bandwidth bottleneck diagnosis"
+  ]
+}

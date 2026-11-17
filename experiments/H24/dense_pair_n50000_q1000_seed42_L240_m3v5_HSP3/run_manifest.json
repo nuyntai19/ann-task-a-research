@@ -1,0 +1,58 @@
+{
+  "created": "2026-10-26T05:45:49.276221+00:00",
+  "source_revision": "a032c2d6cfb2c087d3b8abca028c745186501976",
+  "dataset": {
+    "n": 50000,
+    "dim": 128,
+    "nq": 1000,
+    "gold_k": 10,
+    "files": {
+      "data": {
+        "path": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_50000_q1000_seed42_l2/X.npy",
+        "bytes": 25600128
+      },
+      "queries": {
+        "path": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_50000_q1000_seed42_l2/Q.npy",
+        "bytes": 512128
+      },
+      "gold": {
+        "path": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_50000_q1000_seed42_l2/gold.npy",
+        "bytes": 40128
+      }
+    }
+  },
+  "parameters": {
+    "mode": "run",
+    "binary": "/home/tai/ann-task-a/experiments/H24/vendor/graft-ann/src/fg",
+    "data": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_50000_q1000_seed42_l2/X.npy",
+    "queries": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_50000_q1000_seed42_l2/Q.npy",
+    "gold": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_50000_q1000_seed42_l2/gold.npy",
+    "metric": "l2",
+    "out": "/home/tai/ann-task-a/experiments/H24/dense_pair_n50000_q1000_seed42_L240_m3v5_HSP3",
+    "L": 240,
+    "m_low": 3,
+    "m_high": 5,
+    "C": 200,
+    "R": 64,
+    "alpha": 1.0,
+    "kmeans": 10,
+    "spine": 3,
+    "spine_s": 0,
+    "spine_cap": 16,
+    "spine_repair": 1,
+    "threads": 4,
+    "ef": [
+      60,
+      100,
+      140,
+      200,
+      300,
+      400,
+      600
+    ],
+    "seeds": [
+      42
+    ]
+  },
+  "build_accounting": "Dense log stages only: leaders+candidates+prune(includes spine)"
+}

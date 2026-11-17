@@ -1,0 +1,38 @@
+{
+  "experiment": "H18-C1 parallel overlap factorization -- phase1 metadata audit",
+  "date_utc": "2026-10-23T14:40:44Z",
+  "piPNN_revision": "443a328",
+  "datasets": {
+    "sift1m": {
+      "status": "AUDIT_COMPLETE",
+      "path": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "n": 1000000,
+      "dimension": 128,
+      "bytes": 512000008,
+      "result_file": "/home/tai/ann-task-a/experiments/H18/phase1_leaf_overlap/sift1m_overlap_summary.json",
+      "rho_estimate": 0.305613
+    },
+    "bigann1m": {
+      "status": "AUDIT_COMPLETE",
+      "path": "/home/tai/ann-task-a/data/bigann1m_prefix.fbin",
+      "n": 1000000,
+      "dimension": 128,
+      "bytes": 512000008,
+      "result_file": "/home/tai/ann-task-a/experiments/H18/phase1_leaf_overlap/bigann1m_overlap_summary.json",
+      "rho_estimate": 0.285709
+    },
+    "sift10m": {
+      "status": "EXPORT_ERROR",
+      "path": "/home/tai/ann-task-a/data/sift10m.fbin",
+      "n": 10000000,
+      "dimension": 128,
+      "bytes": 5120000008,
+      "error": "sift10m: RAM MemAvailable=7.1 GiB < 8.0 GiB guard; do not risk OOM"
+    }
+  },
+  "source_untouched": true,
+  "graph_builds_performed": 0,
+  "prune_executed": false,
+  "scaling_note": "For same-family size scaling compare bigann1m vs sift10m. TEXMEX sift1m is separately reported, not the first 1M of BIGANN.",
+  "caveat": "Audit uses -no_reservoir and skips graph allocation only in isolated copy. These do not affect upstream leaf selection; PiPNN randomization may change specific leaves. This is NOT a 10M BUILD benchmark."
+}

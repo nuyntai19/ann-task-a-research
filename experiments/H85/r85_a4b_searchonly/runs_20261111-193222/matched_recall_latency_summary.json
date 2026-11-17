@@ -1,0 +1,2539 @@
+{
+  "protocol": "interpolate latency (microseconds per query) against measured Recall per graph and temporal pass, aggregate five passes within graph, then 3 graph medians per arm; no extrapolation",
+  "targets": {
+    "0.8": {
+      "STOCK": {
+        "coverage": "3/3",
+        "matched_recall_qps": 32162.141641578986,
+        "matched_recall_latency_us": 31.092456812863706,
+        "matched_recall_cmps": 633.1608526369154,
+        "max_bracket_recall_width": 0.017379990000000012,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              11,
+              12
+            ],
+            "recall_bracket": [
+              0.78279001,
+              0.80017
+            ],
+            "bracket_recall_width": 0.017379990000000012,
+            "interpolated_latency_us": 31.22573910441508,
+            "interpolated_qps": 32024.86245901567,
+            "temporal_latency_us": [
+              31.266803889418078,
+              31.22573910441508,
+              31.29060344259206,
+              31.13240497259048,
+              31.088099786379264
+            ],
+            "temporal_min_us": 31.088099786379264,
+            "temporal_max_us": 31.29060344259206,
+            "interpolated_cmps": 633.7456845487253
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              11,
+              12
+            ],
+            "recall_bracket": [
+              0.78446001,
+              0.80128998
+            ],
+            "bracket_recall_width": 0.016829969999999972,
+            "interpolated_latency_us": 31.053753391483784,
+            "interpolated_qps": 32202.22648751507,
+            "temporal_latency_us": [
+              31.11905516765959,
+              31.053753391483784,
+              31.064707087108943,
+              30.99983473006779,
+              31.026831451402877
+            ],
+            "temporal_min_us": 30.99983473006779,
+            "temporal_max_us": 31.11905516765959,
+            "interpolated_cmps": 632.0838052593084
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              11,
+              12
+            ],
+            "recall_bracket": [
+              0.78329998,
+              0.80058002
+            ],
+            "bracket_recall_width": 0.01728003999999994,
+            "interpolated_latency_us": 31.092456812863706,
+            "interpolated_qps": 32162.141641578986,
+            "temporal_latency_us": [
+              31.053106395827317,
+              31.08034498214896,
+              31.10891356634407,
+              31.153580473977325,
+              31.092456812863706
+            ],
+            "temporal_min_us": 31.053106395827317,
+            "temporal_max_us": 31.153580473977325,
+            "interpolated_cmps": 633.1608526369154
+          }
+        ]
+      },
+      "D0": {
+        "coverage": "3/3",
+        "matched_recall_qps": 32066.080006216765,
+        "matched_recall_latency_us": 31.185601726376483,
+        "matched_recall_cmps": 633.8472203490256,
+        "max_bracket_recall_width": 0.01737999999999995,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              11,
+              12
+            ],
+            "recall_bracket": [
+              0.78345001,
+              0.80080003
+            ],
+            "bracket_recall_width": 0.017350019999999966,
+            "interpolated_latency_us": 31.19740069963879,
+            "interpolated_qps": 32053.95249520189,
+            "temporal_latency_us": [
+              31.27548623056468,
+              31.16643482109904,
+              31.035869717709563,
+              31.21292136980264,
+              31.19740069963879
+            ],
+            "temporal_min_us": 31.035869717709563,
+            "temporal_max_us": 31.27548623056468,
+            "interpolated_cmps": 633.8472203490256
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              11,
+              12
+            ],
+            "recall_bracket": [
+              0.78342003,
+              0.80080003
+            ],
+            "bracket_recall_width": 0.01737999999999995,
+            "interpolated_latency_us": 31.185601726376483,
+            "interpolated_qps": 32066.080006216765,
+            "temporal_latency_us": [
+              31.171902696839336,
+              31.185601726376483,
+              31.27977133334498,
+              31.147918193811734,
+              31.326498561414073
+            ],
+            "temporal_min_us": 31.147918193811734,
+            "temporal_max_us": 31.326498561414073,
+            "interpolated_cmps": 633.8492088607595
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              11,
+              12
+            ],
+            "recall_bracket": [
+              0.78386003,
+              0.80058998
+            ],
+            "bracket_recall_width": 0.016729949999999993,
+            "interpolated_latency_us": 31.16124686512178,
+            "interpolated_qps": 32091.14206271643,
+            "temporal_latency_us": [
+              31.133547560559013,
+              31.16124686512178,
+              31.195948866164237,
+              31.194504796261505,
+              31.158539222574408
+            ],
+            "temporal_min_us": 31.133547560559013,
+            "temporal_max_us": 31.195948866164237,
+            "interpolated_cmps": 633.1183775205544
+          }
+        ]
+      },
+      "C64_K1024_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 35062.19503181152,
+        "matched_recall_latency_us": 28.52074717777115,
+        "matched_recall_cmps": 564.5519796213888,
+        "max_bracket_recall_width": 0.015150010000000047,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              12,
+              13
+            ],
+            "recall_bracket": [
+              0.78878999,
+              0.8039
+            ],
+            "bracket_recall_width": 0.015110009999999896,
+            "interpolated_latency_us": 28.526683049562493,
+            "interpolated_qps": 35054.899241618514,
+            "temporal_latency_us": [
+              28.44539732198581,
+              28.56596280955862,
+              28.527287349323267,
+              28.526683049562493,
+              28.512439793154602
+            ],
+            "temporal_min_us": 28.44539732198581,
+            "temporal_max_us": 28.56596280955862,
+            "interpolated_cmps": 564.5797520981125
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              12,
+              13
+            ],
+            "recall_bracket": [
+              0.78881001,
+              0.80391997
+            ],
+            "bracket_recall_width": 0.015109960000000089,
+            "interpolated_latency_us": 28.52074717777115,
+            "interpolated_qps": 35062.19503181152,
+            "temporal_latency_us": [
+              28.54111183560691,
+              28.466779482706702,
+              28.52074717777115,
+              28.558120585314438,
+              28.495105263365065
+            ],
+            "temporal_min_us": 28.466779482706702,
+            "temporal_max_us": 28.558120585314438,
+            "interpolated_cmps": 564.5519796213888
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              12,
+              13
+            ],
+            "recall_bracket": [
+              0.7888,
+              0.80395001
+            ],
+            "bracket_recall_width": 0.015150010000000047,
+            "interpolated_latency_us": 28.495171840532006,
+            "interpolated_qps": 35093.66448450693,
+            "temporal_latency_us": [
+              28.41896237870362,
+              28.495171840532006,
+              28.45617779507481,
+              28.533792085349702,
+              28.541724623979263
+            ],
+            "temporal_min_us": 28.41896237870362,
+            "temporal_max_us": 28.541724623979263,
+            "interpolated_cmps": 564.5247422278931
+          }
+        ]
+      },
+      "C64_K512_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 34243.46708726325,
+        "matched_recall_latency_us": 29.202650463274697,
+        "matched_recall_cmps": 572.9060918508288,
+        "max_bracket_recall_width": 0.01585000999999997,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              12,
+              13
+            ],
+            "recall_bracket": [
+              0.79228997,
+              0.80684
+            ],
+            "bracket_recall_width": 0.014550029999999992,
+            "interpolated_latency_us": 29.272389853136346,
+            "interpolated_qps": 34161.88445894371,
+            "temporal_latency_us": [
+              29.46533829500631,
+              29.155983349186567,
+              29.293852980380446,
+              29.15938565618806,
+              29.272389853136346
+            ],
+            "temporal_min_us": 29.155983349186567,
+            "temporal_max_us": 29.46533829500631,
+            "interpolated_cmps": 573.1278554064837
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              12,
+              13
+            ],
+            "recall_bracket": [
+              0.79247999,
+              0.80695999
+            ],
+            "bracket_recall_width": 0.014479999999999937,
+            "interpolated_latency_us": 29.202650463274697,
+            "interpolated_qps": 34243.46708726325,
+            "temporal_latency_us": [
+              29.211804837616103,
+              29.360641715430955,
+              29.196186864863307,
+              29.167890679359203,
+              29.202650463274697
+            ],
+            "temporal_min_us": 29.167890679359203,
+            "temporal_max_us": 29.360641715430955,
+            "interpolated_cmps": 572.9060918508288
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              12,
+              13
+            ],
+            "recall_bracket": [
+              0.79233998,
+              0.80818999
+            ],
+            "bracket_recall_width": 0.01585000999999997,
+            "interpolated_latency_us": 29.020950692858897,
+            "interpolated_qps": 34457.8649605048,
+            "temporal_latency_us": [
+              29.018683298761395,
+              29.07960867291187,
+              29.118333833786068,
+              29.01633912554145,
+              29.020950692858897
+            ],
+            "temporal_min_us": 29.01633912554145,
+            "temporal_max_us": 29.118333833786068,
+            "interpolated_cmps": 570.1489159943748
+          }
+        ]
+      },
+      "C64_K1024_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 33453.27982122525,
+        "matched_recall_latency_us": 29.89243522141962,
+        "matched_recall_cmps": 573.1797403993857,
+        "max_bracket_recall_width": 0.019869990000000004,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              15,
+              16
+            ],
+            "recall_bracket": [
+              0.79866999,
+              0.81814998
+            ],
+            "bracket_recall_width": 0.019479990000000003,
+            "interpolated_latency_us": 29.89243522141962,
+            "interpolated_qps": 33453.27982122525,
+            "temporal_latency_us": [
+              29.934293101679454,
+              29.89243522141962,
+              29.922716527665436,
+              29.886656545823666,
+              29.851844871732787
+            ],
+            "temporal_min_us": 29.851844871732787,
+            "temporal_max_us": 29.934293101679454,
+            "interpolated_cmps": 573.2530981792085
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              15,
+              16
+            ],
+            "recall_bracket": [
+              0.79870999,
+              0.81823999
+            ],
+            "bracket_recall_width": 0.019530000000000047,
+            "interpolated_latency_us": 29.868609872427395,
+            "interpolated_qps": 33479.964560490975,
+            "temporal_latency_us": [
+              29.868609872427395,
+              29.777095371085203,
+              29.928643137975676,
+              29.94469818350584,
+              29.800450076839166
+            ],
+            "temporal_min_us": 29.777095371085203,
+            "temporal_max_us": 29.94469818350584,
+            "interpolated_cmps": 573.1797403993857
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              15,
+              16
+            ],
+            "recall_bracket": [
+              0.79878002,
+              0.81865001
+            ],
+            "bracket_recall_width": 0.019869990000000004,
+            "interpolated_latency_us": 29.919484243815802,
+            "interpolated_qps": 33423.03603400833,
+            "temporal_latency_us": [
+              29.818007964189906,
+              29.951233695166483,
+              29.894482582920745,
+              29.919484243815802,
+              29.920487278791438
+            ],
+            "temporal_min_us": 29.818007964189906,
+            "temporal_max_us": 29.951233695166483,
+            "interpolated_cmps": 573.0261379094806
+          }
+        ]
+      },
+      "C64_K512_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 33571.609966888245,
+        "matched_recall_latency_us": 29.787073094984194,
+        "matched_recall_cmps": 576.7047006016735,
+        "max_bracket_recall_width": 0.01322001000000006,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              14,
+              15
+            ],
+            "recall_bracket": [
+              0.79207999,
+              0.8053
+            ],
+            "bracket_recall_width": 0.01322001000000006,
+            "interpolated_latency_us": 29.969351112495083,
+            "interpolated_qps": 33367.4224792632,
+            "temporal_latency_us": [
+              29.890135180135854,
+              29.969351112495083,
+              30.001271003327442,
+              29.881451920680863,
+              30.077979362501434
+            ],
+            "temporal_min_us": 29.881451920680863,
+            "temporal_max_us": 30.077979362501434,
+            "interpolated_cmps": 577.9818517535161
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              14,
+              15
+            ],
+            "recall_bracket": [
+              0.79345,
+              0.80588001
+            ],
+            "bracket_recall_width": 0.012430009999999991,
+            "interpolated_latency_us": 29.761008345245504,
+            "interpolated_qps": 33601.01204903415,
+            "temporal_latency_us": [
+              29.75437294725351,
+              29.761008345245504,
+              29.75902783599476,
+              29.77180881364631,
+              29.820824774283814
+            ],
+            "temporal_min_us": 29.75437294725351,
+            "temporal_max_us": 29.820824774283814,
+            "interpolated_cmps": 575.5390100249317
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              14,
+              15
+            ],
+            "recall_bracket": [
+              0.79231,
+              0.80545002
+            ],
+            "bracket_recall_width": 0.01314002000000003,
+            "interpolated_latency_us": 29.787073094984194,
+            "interpolated_qps": 33571.609966888245,
+            "temporal_latency_us": [
+              29.787073094984194,
+              29.78566549987701,
+              29.82596244937482,
+              29.8510397613655,
+              29.71798463066433
+            ],
+            "temporal_min_us": 29.71798463066433,
+            "temporal_max_us": 29.8510397613655,
+            "interpolated_cmps": 576.7047006016735
+          }
+        ]
+      }
+    },
+    "0.89": {
+      "STOCK": {
+        "coverage": "3/3",
+        "matched_recall_qps": 23537.210338597688,
+        "matched_recall_latency_us": 42.485918493073996,
+        "matched_recall_cmps": 844.2310626003209,
+        "max_bracket_recall_width": 0.00659995999999996,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              20,
+              21
+            ],
+            "recall_bracket": [
+              0.88994002,
+              0.89617002
+            ],
+            "bracket_recall_width": 0.006229999999999958,
+            "interpolated_latency_us": 42.485918493073996,
+            "interpolated_qps": 23537.210338597688,
+            "temporal_latency_us": [
+              42.88740698248951,
+              42.485918493073996,
+              42.4862854782414,
+              42.371644008884914,
+              42.302712945511495
+            ],
+            "temporal_min_us": 42.302712945511495,
+            "temporal_max_us": 42.88740698248951,
+            "interpolated_cmps": 844.2310626003209
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              19,
+              20
+            ],
+            "recall_bracket": [
+              0.88383001,
+              0.89042997
+            ],
+            "bracket_recall_width": 0.00659995999999996,
+            "interpolated_latency_us": 42.222368857918546,
+            "interpolated_qps": 23684.12827250587,
+            "temporal_latency_us": [
+              42.300797633848994,
+              42.0720198784366,
+              42.222368857918546,
+              42.09985811812685,
+              42.24769924336189
+            ],
+            "temporal_min_us": 42.0720198784366,
+            "temporal_max_us": 42.300797633848994,
+            "interpolated_cmps": 842.5016106158218
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              20,
+              21
+            ],
+            "recall_bracket": [
+              0.88897997,
+              0.89521998
+            ],
+            "bracket_recall_width": 0.0062400100000000736,
+            "interpolated_latency_us": 42.58557757695907,
+            "interpolated_qps": 23482.12838472925,
+            "temporal_latency_us": [
+              42.621463624357816,
+              42.648766596324634,
+              42.48024990317214,
+              42.58557757695907,
+              42.513135134295986
+            ],
+            "temporal_min_us": 42.48024990317214,
+            "temporal_max_us": 42.648766596324634,
+            "interpolated_cmps": 848.7597199363464
+          }
+        ]
+      },
+      "D0": {
+        "coverage": "3/3",
+        "matched_recall_qps": 23604.262163488987,
+        "matched_recall_latency_us": 42.36523018909684,
+        "matched_recall_cmps": 845.143100729927,
+        "max_bracket_recall_width": 0.0068700300000000825,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              19,
+              20
+            ],
+            "recall_bracket": [
+              0.88367999,
+              0.89052999
+            ],
+            "bracket_recall_width": 0.006850000000000023,
+            "interpolated_latency_us": 42.354928142508804,
+            "interpolated_qps": 23610.003460172724,
+            "temporal_latency_us": [
+              42.23722591341281,
+              42.31726940783489,
+              42.433525235603184,
+              42.354928142508804,
+              42.40168273254083
+            ],
+            "temporal_min_us": 42.23722591341281,
+            "temporal_max_us": 42.433525235603184,
+            "interpolated_cmps": 845.143100729927
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              19,
+              20
+            ],
+            "recall_bracket": [
+              0.88367999,
+              0.89055002
+            ],
+            "bracket_recall_width": 0.0068700300000000825,
+            "interpolated_latency_us": 42.36523018909684,
+            "interpolated_qps": 23604.262163488987,
+            "temporal_latency_us": [
+              42.36523018909684,
+              42.54628385985577,
+              42.31684000784983,
+              42.324168720962234,
+              42.421597685336515
+            ],
+            "temporal_min_us": 42.31684000784983,
+            "temporal_max_us": 42.54628385985577,
+            "interpolated_cmps": 844.1586019275023
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              20,
+              21
+            ],
+            "recall_bracket": [
+              0.88968998,
+              0.89581001
+            ],
+            "bracket_recall_width": 0.006120030000000054,
+            "interpolated_latency_us": 42.452202173335,
+            "interpolated_qps": 23555.904023940555,
+            "temporal_latency_us": [
+              42.47114140067807,
+              42.4642775880983,
+              42.4260368011032,
+              42.452202173335,
+              42.415026579270226
+            ],
+            "temporal_min_us": 42.415026579270226,
+            "temporal_max_us": 42.47114140067807,
+            "interpolated_cmps": 846.2157587462807
+          }
+        ]
+      },
+      "C64_K1024_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 25638.981454752167,
+        "matched_recall_latency_us": 39.003109455217874,
+        "matched_recall_cmps": 754.9352029950084,
+        "max_bracket_recall_width": 0.006050050000000029,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88748997,
+              0.89349997
+            ],
+            "bracket_recall_width": 0.006010000000000071,
+            "interpolated_latency_us": 38.980629122615454,
+            "interpolated_qps": 25653.767589395535,
+            "temporal_latency_us": [
+              38.856987817824084,
+              38.980629122615454,
+              39.0873111958233,
+              38.94421502190754,
+              39.07662647175043
+            ],
+            "temporal_min_us": 38.856987817824084,
+            "temporal_max_us": 39.0873111958233,
+            "interpolated_cmps": 754.9352029950084
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88748997,
+              0.89354002
+            ],
+            "bracket_recall_width": 0.006050050000000029,
+            "interpolated_latency_us": 39.003109455217874,
+            "interpolated_qps": 25638.981454752167,
+            "temporal_latency_us": [
+              39.0157812887772,
+              39.00253160806127,
+              38.950967169122826,
+              39.16612755897264,
+              39.003109455217874
+            ],
+            "temporal_min_us": 38.950967169122826,
+            "temporal_max_us": 39.16612755897264,
+            "interpolated_cmps": 754.8826736969118
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88744998,
+              0.89349002
+            ],
+            "bracket_recall_width": 0.006040040000000024,
+            "interpolated_latency_us": 39.02095554008185,
+            "interpolated_qps": 25627.255564585346,
+            "temporal_latency_us": [
+              39.02095554008185,
+              39.05939341430974,
+              39.024693999373525,
+              38.9344548594703,
+              38.92345409605579
+            ],
+            "temporal_min_us": 38.92345409605579,
+            "temporal_max_us": 39.05939341430974,
+            "interpolated_cmps": 755.0215329699804
+          }
+        ]
+      },
+      "C64_K512_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 25186.786916692014,
+        "matched_recall_latency_us": 39.70335729236154,
+        "matched_recall_cmps": 762.9838369175629,
+        "max_bracket_recall_width": 0.005630019999999902,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88883001,
+              0.89441001
+            ],
+            "bracket_recall_width": 0.005580000000000029,
+            "interpolated_latency_us": 39.74237684293113,
+            "interpolated_qps": 25162.058221937154,
+            "temporal_latency_us": [
+              39.704672983799085,
+              39.71700082859016,
+              39.80813295024458,
+              39.74237684293113,
+              39.78762937292087
+            ],
+            "temporal_min_us": 39.704672983799085,
+            "temporal_max_us": 39.80813295024458,
+            "interpolated_cmps": 762.9838369175629
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88887,
+              0.89450002
+            ],
+            "bracket_recall_width": 0.005630019999999902,
+            "interpolated_latency_us": 39.70335729236154,
+            "interpolated_qps": 25186.786916692014,
+            "temporal_latency_us": [
+              39.91858529886178,
+              39.8020770777541,
+              39.67243909304803,
+              39.68092130782577,
+              39.70335729236154
+            ],
+            "temporal_min_us": 39.67243909304803,
+            "temporal_max_us": 39.91858529886178,
+            "interpolated_cmps": 763.0141953314552
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              21,
+              22
+            ],
+            "recall_bracket": [
+              0.88840997,
+              0.89372998
+            ],
+            "bracket_recall_width": 0.005320010000000042,
+            "interpolated_latency_us": 39.66643455601673,
+            "interpolated_qps": 25210.231552014215,
+            "temporal_latency_us": [
+              39.64863704778653,
+              39.68480504935591,
+              39.74795224899288,
+              39.66643455601673,
+              39.62568053405945
+            ],
+            "temporal_min_us": 39.62568053405945,
+            "temporal_max_us": 39.74795224899288,
+            "interpolated_cmps": 761.9775451549904
+          }
+        ]
+      },
+      "C64_K1024_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 24145.068328446145,
+        "matched_recall_latency_us": 41.416325122669676,
+        "matched_recall_cmps": 783.8509919748393,
+        "max_bracket_recall_width": 0.005190010000000078,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              24,
+              25
+            ],
+            "recall_bracket": [
+              0.88518,
+              0.89037001
+            ],
+            "bracket_recall_width": 0.005190010000000078,
+            "interpolated_latency_us": 41.416325122669676,
+            "interpolated_qps": 24145.068328446145,
+            "temporal_latency_us": [
+              41.468491988474206,
+              41.37189414381765,
+              41.416325122669676,
+              41.4562096526596,
+              41.26969211848614
+            ],
+            "temporal_min_us": 41.26969211848614,
+            "temporal_max_us": 41.468491988474206,
+            "interpolated_cmps": 783.7167307962796
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              24,
+              25
+            ],
+            "recall_bracket": [
+              0.88516003,
+              0.89033002
+            ],
+            "bracket_recall_width": 0.005169990000000069,
+            "interpolated_latency_us": 41.33602607233937,
+            "interpolated_qps": 24191.972354816302,
+            "temporal_latency_us": [
+              41.278159229726015,
+              41.33602607233937,
+              41.5372259385631,
+              41.29689402629769,
+              41.397883183577065
+            ],
+            "temporal_min_us": 41.278159229726015,
+            "temporal_max_us": 41.5372259385631,
+            "interpolated_cmps": 783.8509919748393
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              24,
+              25
+            ],
+            "recall_bracket": [
+              0.88520002,
+              0.89004999
+            ],
+            "bracket_recall_width": 0.004849969999999981,
+            "interpolated_latency_us": 41.532640107319516,
+            "interpolated_qps": 24077.448421675577,
+            "temporal_latency_us": [
+              41.38857750813687,
+              41.532640107319516,
+              41.922209725812706,
+              41.38532902650022,
+              41.55721917680503
+            ],
+            "temporal_min_us": 41.38532902650022,
+            "temporal_max_us": 41.922209725812706,
+            "interpolated_cmps": 784.8144689554783
+          }
+        ]
+      },
+      "C64_K512_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 24079.12432679714,
+        "matched_recall_latency_us": 41.529749438899714,
+        "matched_recall_cmps": 791.2453773195201,
+        "max_bracket_recall_width": 0.005330029999999986,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              24,
+              25
+            ],
+            "recall_bracket": [
+              0.88852,
+              0.89385003
+            ],
+            "bracket_recall_width": 0.005330029999999986,
+            "interpolated_latency_us": 41.59222359340324,
+            "interpolated_qps": 24042.955956762205,
+            "temporal_latency_us": [
+              41.42538071983153,
+              41.59485711741467,
+              41.53975962607227,
+              41.59222359340324,
+              41.618237238756834
+            ],
+            "temporal_min_us": 41.42538071983153,
+            "temporal_max_us": 41.618237238756834,
+            "interpolated_cmps": 792.5534396616906
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              24,
+              25
+            ],
+            "recall_bracket": [
+              0.88953,
+              0.89433002
+            ],
+            "bracket_recall_width": 0.004800019999999905,
+            "interpolated_latency_us": 41.3419960295074,
+            "interpolated_qps": 24188.478932808684,
+            "temporal_latency_us": [
+              41.34071378442086,
+              41.24110272976225,
+              41.62388379537257,
+              41.3419960295074,
+              41.41007085972463
+            ],
+            "temporal_min_us": 41.24110272976225,
+            "temporal_max_us": 41.62388379537257,
+            "interpolated_cmps": 787.7624926562805
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              24,
+              25
+            ],
+            "recall_bracket": [
+              0.88865,
+              0.89354002
+            ],
+            "bracket_recall_width": 0.004890019999999939,
+            "interpolated_latency_us": 41.529749438899714,
+            "interpolated_qps": 24079.12432679714,
+            "temporal_latency_us": [
+              41.46751259428813,
+              41.532940549282166,
+              41.529749438899714,
+              41.53350689060768,
+              41.50861183961593
+            ],
+            "temporal_min_us": 41.46751259428813,
+            "temporal_max_us": 41.53350689060768,
+            "interpolated_cmps": 791.2453773195201
+          }
+        ]
+      }
+    },
+    "0.96": {
+      "STOCK": {
+        "coverage": "3/3",
+        "matched_recall_qps": 14975.66462268435,
+        "matched_recall_latency_us": 66.77499965412237,
+        "matched_recall_cmps": 1330.657678479712,
+        "max_bracket_recall_width": 0.002570040000000051,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              39,
+              40
+            ],
+            "recall_bracket": [
+              0.95916998,
+              0.96174002
+            ],
+            "bracket_recall_width": 0.002570040000000051,
+            "interpolated_latency_us": 66.69547310857898,
+            "interpolated_qps": 14993.521349972565,
+            "temporal_latency_us": [
+              67.04304123784036,
+              66.69728781409866,
+              66.66608012096061,
+              66.62826719788843,
+              66.69547310857898
+            ],
+            "temporal_min_us": 66.62826719788843,
+            "temporal_max_us": 67.04304123784036,
+            "interpolated_cmps": 1330.657678479712
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              39,
+              40
+            ],
+            "recall_bracket": [
+              0.95929998,
+              0.96155
+            ],
+            "bracket_recall_width": 0.0022500199999999637,
+            "interpolated_latency_us": 66.78775942010252,
+            "interpolated_qps": 14972.80352990864,
+            "temporal_latency_us": [
+              66.80621962026751,
+              66.74998406861258,
+              66.78775942010252,
+              66.57737819645274,
+              66.8406379437939
+            ],
+            "temporal_min_us": 66.57737819645274,
+            "temporal_max_us": 66.8406379437939,
+            "interpolated_cmps": 1330.5779859734569
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              39,
+              40
+            ],
+            "recall_bracket": [
+              0.95914,
+              0.96170002
+            ],
+            "bracket_recall_width": 0.002560019999999996,
+            "interpolated_latency_us": 66.77499965412237,
+            "interpolated_qps": 14975.66462268435,
+            "temporal_latency_us": [
+              67.0107714845205,
+              66.77499965412237,
+              66.8259812403327,
+              66.76646177912792,
+              66.63123321298953
+            ],
+            "temporal_min_us": 66.63123321298953,
+            "temporal_max_us": 67.0107714845205,
+            "interpolated_cmps": 1333.0858508917895
+          }
+        ]
+      },
+      "D0": {
+        "coverage": "3/3",
+        "matched_recall_qps": 14950.20452143859,
+        "matched_recall_latency_us": 66.8887170450411,
+        "matched_recall_cmps": 1333.706078100183,
+        "max_bracket_recall_width": 0.0025500099999999915,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              39,
+              40
+            ],
+            "recall_bracket": [
+              0.95927,
+              0.96173
+            ],
+            "bracket_recall_width": 0.0024600000000000177,
+            "interpolated_latency_us": 66.8887170450411,
+            "interpolated_qps": 14950.20452143859,
+            "temporal_latency_us": [
+              66.94295869571393,
+              66.83202507306343,
+              66.75710329264788,
+              66.8887170450411,
+              66.90038244354211
+            ],
+            "temporal_min_us": 66.75710329264788,
+            "temporal_max_us": 66.94295869571393,
+            "interpolated_cmps": 1333.7926829268292
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              39,
+              40
+            ],
+            "recall_bracket": [
+              0.95929998,
+              0.96168
+            ],
+            "bracket_recall_width": 0.002380019999999927,
+            "interpolated_latency_us": 66.9565631196346,
+            "interpolated_qps": 14935.055704894092,
+            "temporal_latency_us": [
+              67.07402023572088,
+              66.95530506648451,
+              66.9565631196346,
+              66.81696504796909,
+              67.03536126245967
+            ],
+            "temporal_min_us": 66.81696504796909,
+            "temporal_max_us": 67.07402023572088,
+            "interpolated_cmps": 1333.706078100183
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              39,
+              40
+            ],
+            "recall_bracket": [
+              0.95919001,
+              0.96174002
+            ],
+            "bracket_recall_width": 0.0025500099999999915,
+            "interpolated_latency_us": 66.87559710788518,
+            "interpolated_qps": 14953.137515718596,
+            "temporal_latency_us": [
+              66.87559710788518,
+              66.88552194563877,
+              66.85315460831632,
+              66.87708069612991,
+              66.77647917653434
+            ],
+            "temporal_min_us": 66.77647917653434,
+            "temporal_max_us": 66.88552194563877,
+            "interpolated_cmps": 1333.4821824228131
+          }
+        ]
+      },
+      "C64_K1024_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 16090.840922539075,
+        "matched_recall_latency_us": 62.147155938833535,
+        "matched_recall_cmps": 1204.5977513060016,
+        "max_bracket_recall_width": 0.003080010000000022,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              42,
+              44
+            ],
+            "recall_bracket": [
+              0.95908999,
+              0.96217
+            ],
+            "bracket_recall_width": 0.003080010000000022,
+            "interpolated_latency_us": 62.14503721313633,
+            "interpolated_qps": 16091.389511447878,
+            "temporal_latency_us": [
+              62.06021648208665,
+              62.18366298907132,
+              62.14503721313633,
+              62.14183583207949,
+              62.30572205474627
+            ],
+            "temporal_min_us": 62.06021648208665,
+            "temporal_max_us": 62.30572205474627,
+            "interpolated_cmps": 1203.8182733172946
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              42,
+              44
+            ],
+            "recall_bracket": [
+              0.95902997,
+              0.96210998
+            ],
+            "bracket_recall_width": 0.003080010000000022,
+            "interpolated_latency_us": 62.258967350863614,
+            "interpolated_qps": 16061.943243684858,
+            "temporal_latency_us": [
+              62.26715584428064,
+              62.094445825545165,
+              62.01736959971004,
+              62.258967350863614,
+              62.31324943509526
+            ],
+            "temporal_min_us": 62.01736959971004,
+            "temporal_max_us": 62.31324943509526,
+            "interpolated_cmps": 1204.5977513060016
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              42,
+              44
+            ],
+            "recall_bracket": [
+              0.95902002,
+              0.96210003
+            ],
+            "bracket_recall_width": 0.003080010000000022,
+            "interpolated_latency_us": 62.147155938833535,
+            "interpolated_qps": 16090.840922539075,
+            "temporal_latency_us": [
+              62.13715420984229,
+              62.35478984556924,
+              62.147155938833535,
+              62.15828609504648,
+              62.09042182018029
+            ],
+            "temporal_min_us": 62.09042182018029,
+            "temporal_max_us": 62.35478984556924,
+            "interpolated_cmps": 1204.7269716656763
+          }
+        ]
+      },
+      "C64_K512_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 15903.428573596195,
+        "matched_recall_latency_us": 62.87952282567915,
+        "matched_recall_cmps": 1210.5296959619752,
+        "max_bracket_recall_width": 0.0027899700000000305,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              42,
+              44
+            ],
+            "recall_bracket": [
+              0.95951998,
+              0.96206999
+            ],
+            "bracket_recall_width": 0.0025500099999999915,
+            "interpolated_latency_us": 62.87952282567915,
+            "interpolated_qps": 15903.428573596195,
+            "temporal_latency_us": [
+              62.71821821993735,
+              63.00100406525674,
+              62.83152845557609,
+              62.908489268384415,
+              62.87952282567915
+            ],
+            "temporal_min_us": 62.71821821993735,
+            "temporal_max_us": 63.00100406525674,
+            "interpolated_cmps": 1210.5296959619752
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              42,
+              44
+            ],
+            "recall_bracket": [
+              0.95951003,
+              0.96202999
+            ],
+            "bracket_recall_width": 0.0025199599999999878,
+            "interpolated_latency_us": 62.940887726128366,
+            "interpolated_qps": 15887.923353595703,
+            "temporal_latency_us": [
+              63.038656289766486,
+              62.940887726128366,
+              62.92761872670052,
+              63.11033512503432,
+              62.817243373014634
+            ],
+            "temporal_min_us": 62.817243373014634,
+            "temporal_max_us": 63.11033512503432,
+            "interpolated_cmps": 1210.7774250384919
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              42,
+              44
+            ],
+            "recall_bracket": [
+              0.95932001,
+              0.96210998
+            ],
+            "bracket_recall_width": 0.0027899700000000305,
+            "interpolated_latency_us": 62.829924345184246,
+            "interpolated_qps": 15915.982876344931,
+            "temporal_latency_us": [
+              63.008605615143466,
+              62.834804052758436,
+              62.68218851547315,
+              62.69056514223193,
+              62.829924345184246
+            ],
+            "temporal_min_us": 62.68218851547315,
+            "temporal_max_us": 63.008605615143466,
+            "interpolated_cmps": 1210.505338767083
+          }
+        ]
+      },
+      "C64_K1024_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 14839.737649566663,
+        "matched_recall_latency_us": 67.3866360453617,
+        "matched_recall_cmps": 1280.4472,
+        "max_bracket_recall_width": 0.0025500000000000522,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              50,
+              52
+            ],
+            "recall_bracket": [
+              0.95925999,
+              0.96174002
+            ],
+            "bracket_recall_width": 0.0024800300000000775,
+            "interpolated_latency_us": 67.39242779873642,
+            "interpolated_qps": 14838.462311914953,
+            "temporal_latency_us": [
+              67.89316507416616,
+              67.43847720600462,
+              67.39238270492147,
+              67.33349200201494,
+              67.39242779873642
+            ],
+            "temporal_min_us": 67.33349200201494,
+            "temporal_max_us": 67.89316507416616,
+            "interpolated_cmps": 1280.7419507022091
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              50,
+              52
+            ],
+            "recall_bracket": [
+              0.95925999,
+              0.96180999
+            ],
+            "bracket_recall_width": 0.0025500000000000522,
+            "interpolated_latency_us": 67.3866360453617,
+            "interpolated_qps": 14839.737649566663,
+            "temporal_latency_us": [
+              67.32462485438211,
+              67.40948511594131,
+              67.57097858614198,
+              67.31978678229814,
+              67.3866360453617
+            ],
+            "temporal_min_us": 67.31978678229814,
+            "temporal_max_us": 67.57097858614198,
+            "interpolated_cmps": 1280.4472
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              50,
+              52
+            ],
+            "recall_bracket": [
+              0.95977002,
+              0.96223003
+            ],
+            "bracket_recall_width": 0.002460009999999957,
+            "interpolated_latency_us": 66.96726034833915,
+            "interpolated_qps": 14932.67000618461,
+            "temporal_latency_us": [
+              67.01956946111244,
+              66.94625494413864,
+              67.49173180974273,
+              66.8675814208994,
+              66.96726034833915
+            ],
+            "temporal_min_us": 66.8675814208994,
+            "temporal_max_us": 67.49173180974273,
+            "interpolated_cmps": 1273.3655472945227
+          }
+        ]
+      },
+      "C64_K512_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 14919.938324836541,
+        "matched_recall_latency_us": 67.0244057467279,
+        "matched_recall_cmps": 1283.1660231660226,
+        "max_bracket_recall_width": 0.002680010000000066,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              48,
+              50
+            ],
+            "recall_bracket": [
+              0.95850998,
+              0.96118999
+            ],
+            "bracket_recall_width": 0.002680010000000066,
+            "interpolated_latency_us": 67.33105253006728,
+            "interpolated_qps": 14851.988234603063,
+            "temporal_latency_us": [
+              67.3095236884244,
+              67.33829099355833,
+              67.33105253006728,
+              67.57789223208856,
+              67.33029811346397
+            ],
+            "temporal_min_us": 67.3095236884244,
+            "temporal_max_us": 67.57789223208856,
+            "interpolated_cmps": 1289.1270704213782
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              48,
+              50
+            ],
+            "recall_bracket": [
+              0.95883,
+              0.96142
+            ],
+            "bracket_recall_width": 0.0025900000000000922,
+            "interpolated_latency_us": 67.01103851655424,
+            "interpolated_qps": 14922.914524790756,
+            "temporal_latency_us": [
+              67.01103851655424,
+              67.08462165265826,
+              67.10096063221563,
+              66.9699817299107,
+              66.9624319898769
+            ],
+            "temporal_min_us": 66.9624319898769,
+            "temporal_max_us": 67.10096063221563,
+            "interpolated_cmps": 1283.1660231660226
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              48,
+              50
+            ],
+            "recall_bracket": [
+              0.95894003,
+              0.96151
+            ],
+            "bracket_recall_width": 0.0025699699999999215,
+            "interpolated_latency_us": 67.0244057467279,
+            "interpolated_qps": 14919.938324836541,
+            "temporal_latency_us": [
+              66.97204209684172,
+              67.01207424813538,
+              67.12284804918232,
+              67.11093547970674,
+              67.0244057467279
+            ],
+            "temporal_min_us": 66.97204209684172,
+            "temporal_max_us": 67.12284804918232,
+            "interpolated_cmps": 1282.672891123242
+          }
+        ]
+      }
+    },
+    "0.99": {
+      "STOCK": {
+        "coverage": "3/3",
+        "matched_recall_qps": 8842.136522735149,
+        "matched_recall_latency_us": 113.09483827000092,
+        "matched_recall_cmps": 2180.58052631579,
+        "max_bracket_recall_width": 0.0007499999999999174,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              76,
+              78
+            ],
+            "recall_bracket": [
+              0.98978001,
+              0.99053001
+            ],
+            "bracket_recall_width": 0.0007499999999999174,
+            "interpolated_latency_us": 113.71085534794945,
+            "interpolated_qps": 8794.235140875959,
+            "temporal_latency_us": [
+              113.43523990834812,
+              113.71085534794945,
+              113.7617400504959,
+              113.5023625696989,
+              113.7268711818775
+            ],
+            "temporal_min_us": 113.43523990834812,
+            "temporal_max_us": 113.7617400504959,
+            "interpolated_cmps": 2191.199399999998
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              74,
+              76
+            ],
+            "recall_bracket": [
+              0.98939002,
+              0.99001002
+            ],
+            "bracket_recall_width": 0.0006200000000000649,
+            "interpolated_latency_us": 112.80322604506028,
+            "interpolated_qps": 8864.994690848122,
+            "temporal_latency_us": [
+              112.9081545756515,
+              112.74096601623916,
+              112.8135519936169,
+              112.52710345919836,
+              112.80322604506028
+            ],
+            "temporal_min_us": 112.52710345919836,
+            "temporal_max_us": 112.9081545756515,
+            "interpolated_cmps": 2176.27274193548
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              76,
+              78
+            ],
+            "recall_bracket": [
+              0.98997998,
+              0.99054998
+            ],
+            "bracket_recall_width": 0.0005700000000000705,
+            "interpolated_latency_us": 113.09483827000092,
+            "interpolated_qps": 8842.136522735149,
+            "temporal_latency_us": [
+              113.18805648773478,
+              113.09483827000092,
+              113.10334009458211,
+              113.00619915022472,
+              113.03490826440347
+            ],
+            "temporal_min_us": 113.00619915022472,
+            "temporal_max_us": 113.18805648773478,
+            "interpolated_cmps": 2180.58052631579
+          }
+        ]
+      },
+      "D0": {
+        "coverage": "3/3",
+        "matched_recall_qps": 8878.03573157449,
+        "matched_recall_latency_us": 112.63752819145878,
+        "matched_recall_cmps": 2172.9987142857135,
+        "max_bracket_recall_width": 0.0007100100000000387,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              74,
+              76
+            ],
+            "recall_bracket": [
+              0.98944998,
+              0.99013001
+            ],
+            "bracket_recall_width": 0.0006800300000000536,
+            "interpolated_latency_us": 112.78991473500791,
+            "interpolated_qps": 8866.040925285126,
+            "temporal_latency_us": [
+              112.66539980121223,
+              112.80472489365984,
+              112.78991473500791,
+              113.08937292490718,
+              112.49006509739955
+            ],
+            "temporal_min_us": 112.49006509739955,
+            "temporal_max_us": 113.08937292490718,
+            "interpolated_cmps": 2173.396776612796
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              74,
+              76
+            ],
+            "recall_bracket": [
+              0.98944002,
+              0.99014002
+            ],
+            "bracket_recall_width": 0.0007000000000000339,
+            "interpolated_latency_us": 112.63752819145878,
+            "interpolated_qps": 8878.03573157449,
+            "temporal_latency_us": [
+              112.79571485834084,
+              112.85113440497942,
+              112.57352644690476,
+              112.51484474907983,
+              112.63752819145878
+            ],
+            "temporal_min_us": 112.51484474907983,
+            "temporal_max_us": 112.85113440497942,
+            "interpolated_cmps": 2172.9987142857135
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              74,
+              76
+            ],
+            "recall_bracket": [
+              0.98942,
+              0.99013001
+            ],
+            "bracket_recall_width": 0.0007100100000000387,
+            "interpolated_latency_us": 112.48589127265038,
+            "interpolated_qps": 8890.003792352385,
+            "temporal_latency_us": [
+              112.48589127265038,
+              112.65786775949259,
+              112.47950128601504,
+              112.50871660653029,
+              112.24331338000786
+            ],
+            "temporal_min_us": 112.24331338000786,
+            "temporal_max_us": 112.65786775949259,
+            "interpolated_cmps": 2172.7600456331597
+          }
+        ]
+      },
+      "C64_K1024_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 9279.240748363867,
+        "matched_recall_latency_us": 107.7674377805449,
+        "matched_recall_cmps": 2004.7756905839708,
+        "max_bracket_recall_width": 0.0009599899999999106,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              84,
+              88
+            ],
+            "recall_bracket": [
+              0.98979002,
+              0.99075001
+            ],
+            "bracket_recall_width": 0.0009599899999999106,
+            "interpolated_latency_us": 107.7674377805449,
+            "interpolated_qps": 9279.240748363867,
+            "temporal_latency_us": [
+              107.99038497163271,
+              107.74462343765312,
+              107.78932845427846,
+              107.55577502790459,
+              107.7674377805449
+            ],
+            "temporal_min_us": 107.55577502790459,
+            "temporal_max_us": 107.99038497163271,
+            "interpolated_cmps": 2005.0610527192962
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              84,
+              88
+            ],
+            "recall_bracket": [
+              0.98979998,
+              0.99075001
+            ],
+            "bracket_recall_width": 0.0009500299999999351,
+            "interpolated_latency_us": 107.78785592093605,
+            "interpolated_qps": 9277.482991530274,
+            "temporal_latency_us": [
+              107.78785592093605,
+              107.68029725837005,
+              107.58067530159747,
+              107.81069652274907,
+              107.83225997567799
+            ],
+            "temporal_min_us": 107.58067530159747,
+            "temporal_max_us": 107.83225997567799,
+            "interpolated_cmps": 2004.4221761418046
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              84,
+              88
+            ],
+            "recall_bracket": [
+              0.98979998,
+              0.99072999
+            ],
+            "bracket_recall_width": 0.0009300099999999256,
+            "interpolated_latency_us": 107.72215170425267,
+            "interpolated_qps": 9283.141713929595,
+            "temporal_latency_us": [
+              107.64564789410103,
+              107.84059296395725,
+              107.61421531981965,
+              107.76908347722765,
+              107.72215170425267
+            ],
+            "temporal_min_us": 107.61421531981965,
+            "temporal_max_us": 107.84059296395725,
+            "interpolated_cmps": 2004.7756905839708
+          }
+        ]
+      },
+      "C64_K512_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 9121.338899652046,
+        "matched_recall_latency_us": 109.63302767296007,
+        "matched_recall_cmps": 2026.7580243902412,
+        "max_bracket_recall_width": 0.0012299999999999534,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              84,
+              88
+            ],
+            "recall_bracket": [
+              0.98948997,
+              0.99071997
+            ],
+            "bracket_recall_width": 0.0012299999999999534,
+            "interpolated_latency_us": 109.63302767296007,
+            "interpolated_qps": 9121.338899652046,
+            "temporal_latency_us": [
+              109.75187483002912,
+              109.13571716395674,
+              109.63302767296007,
+              109.4924309353174,
+              109.84648647381272
+            ],
+            "temporal_min_us": 109.13571716395674,
+            "temporal_max_us": 109.84648647381272,
+            "interpolated_cmps": 2026.7580243902412
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              84,
+              88
+            ],
+            "recall_bracket": [
+              0.98949999,
+              0.99072999
+            ],
+            "bracket_recall_width": 0.0012299999999999534,
+            "interpolated_latency_us": 109.3313040674947,
+            "interpolated_qps": 9146.511225940001,
+            "temporal_latency_us": [
+              109.1806341697451,
+              109.27448498233427,
+              109.3313040674947,
+              109.4233177536675,
+              109.36391534425313
+            ],
+            "temporal_min_us": 109.1806341697451,
+            "temporal_max_us": 109.4233177536675,
+            "interpolated_cmps": 2026.114463414635
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              84,
+              88
+            ],
+            "recall_bracket": [
+              0.98932999,
+              0.99031001
+            ],
+            "bracket_recall_width": 0.0009800199999999704,
+            "interpolated_latency_us": 110.25050730024525,
+            "interpolated_qps": 9070.253049055817,
+            "temporal_latency_us": [
+              110.52494219629766,
+              110.13705361539516,
+              110.5195489550848,
+              110.21693526442463,
+              110.25050730024525
+            ],
+            "temporal_min_us": 110.13705361539516,
+            "temporal_max_us": 110.52494219629766,
+            "interpolated_cmps": 2045.6425685190113
+          }
+        ]
+      },
+      "C64_K1024_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 8252.861422418215,
+        "matched_recall_latency_us": 121.17009468783552,
+        "matched_recall_cmps": 2122.446054339267,
+        "max_bracket_recall_width": 0.0009400200000000414,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              100,
+              104
+            ],
+            "recall_bracket": [
+              0.98952001,
+              0.99045002
+            ],
+            "bracket_recall_width": 0.0009300100000000366,
+            "interpolated_latency_us": 121.17009468783552,
+            "interpolated_qps": 8252.861422418215,
+            "temporal_latency_us": [
+              121.22890432753819,
+              121.08066909779768,
+              121.11957060508558,
+              121.22151348366303,
+              121.17009468783552
+            ],
+            "temporal_min_us": 121.08066909779768,
+            "temporal_max_us": 121.22890432753819,
+            "interpolated_cmps": 2122.0956656380013
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              100,
+              104
+            ],
+            "recall_bracket": [
+              0.98951,
+              0.99045002
+            ],
+            "bracket_recall_width": 0.0009400200000000414,
+            "interpolated_latency_us": 121.09889807691027,
+            "interpolated_qps": 8257.713454707879,
+            "temporal_latency_us": [
+              121.14285789957287,
+              120.8324722719818,
+              121.19502108797836,
+              120.98745413457002,
+              121.09889807691027
+            ],
+            "temporal_min_us": 120.8324722719818,
+            "temporal_max_us": 121.19502108797836,
+            "interpolated_cmps": 2122.446054339267
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              100,
+              104
+            ],
+            "recall_bracket": [
+              0.98944998,
+              0.99032998
+            ],
+            "bracket_recall_width": 0.0008800000000001029,
+            "interpolated_latency_us": 121.57975095785235,
+            "interpolated_qps": 8225.053860709639,
+            "temporal_latency_us": [
+              121.70720988135682,
+              121.54539849062293,
+              121.46049832882474,
+              121.58185958390051,
+              121.57975095785235
+            ],
+            "temporal_min_us": 121.46049832882474,
+            "temporal_max_us": 121.70720988135682,
+            "interpolated_cmps": 2130.5015454545437
+          }
+        ]
+      },
+      "C64_K512_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 8361.597620940158,
+        "matched_recall_latency_us": 119.59437003948564,
+        "matched_recall_cmps": 2113.8494548853773,
+        "max_bracket_recall_width": 0.0009199899999999817,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              96,
+              100
+            ],
+            "recall_bracket": [
+              0.98957998,
+              0.99049997
+            ],
+            "bracket_recall_width": 0.0009199899999999817,
+            "interpolated_latency_us": 119.59437003948564,
+            "interpolated_qps": 8361.597620940158,
+            "temporal_latency_us": [
+              118.96250523825577,
+              119.7600610098161,
+              119.59437003948564,
+              119.46874780098167,
+              119.69342185670013
+            ],
+            "temporal_min_us": 118.96250523825577,
+            "temporal_max_us": 119.7600610098161,
+            "interpolated_cmps": 2113.8494548853773
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              96,
+              100
+            ],
+            "recall_bracket": [
+              0.98988998,
+              0.99056
+            ],
+            "bracket_recall_width": 0.0006700200000000489,
+            "interpolated_latency_us": 118.34674441741375,
+            "interpolated_qps": 8449.746589335484,
+            "temporal_latency_us": [
+              118.34674441741375,
+              117.88453718488017,
+              118.3636552742372,
+              118.29510900803875,
+              118.47494151247918
+            ],
+            "temporal_min_us": 117.88453718488017,
+            "temporal_max_us": 118.47494151247918,
+            "interpolated_cmps": 2093.016447270234
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              96,
+              100
+            ],
+            "recall_bracket": [
+              0.98957002,
+              0.99037999
+            ],
+            "bracket_recall_width": 0.0008099699999999377,
+            "interpolated_latency_us": 119.76194383702307,
+            "interpolated_qps": 8349.89787207229,
+            "temporal_latency_us": [
+              119.52265422207083,
+              119.88032429945095,
+              119.75749215301096,
+              119.76194383702307,
+              119.87469886893587
+            ],
+            "temporal_min_us": 119.52265422207083,
+            "temporal_max_us": 119.88032429945095,
+            "interpolated_cmps": 2115.9132683926546
+          }
+        ]
+      }
+    },
+    "0.998": {
+      "STOCK": {
+        "coverage": "3/3",
+        "matched_recall_qps": 5064.669577606527,
+        "matched_recall_latency_us": 197.44624692230806,
+        "matched_recall_cmps": 3412.6017597360465,
+        "max_bracket_recall_width": 0.0002000300000000177,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              144,
+              148
+            ],
+            "recall_bracket": [
+              0.99795002,
+              0.99814999
+            ],
+            "bracket_recall_width": 0.00019997000000004928,
+            "interpolated_latency_us": 197.6734186956597,
+            "interpolated_qps": 5058.849118907645,
+            "temporal_latency_us": [
+              197.4968820233725,
+              197.52790533422595,
+              198.2776052024122,
+              197.6734186956597,
+              197.87159627737674
+            ],
+            "temporal_min_us": 197.4968820233725,
+            "temporal_max_us": 198.2776052024122,
+            "interpolated_cmps": 3415.245936890531
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              144,
+              148
+            ],
+            "recall_bracket": [
+              0.99796999,
+              0.99817002
+            ],
+            "bracket_recall_width": 0.0002000300000000177,
+            "interpolated_latency_us": 197.44624692230806,
+            "interpolated_qps": 5064.669577606527,
+            "temporal_latency_us": [
+              197.49134083742229,
+              197.68551322761425,
+              197.14141008626981,
+              197.44624692230806,
+              197.33759320709302
+            ],
+            "temporal_min_us": 197.14141008626981,
+            "temporal_max_us": 197.68551322761425,
+            "interpolated_cmps": 3412.6017597360465
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              140,
+              144
+            ],
+            "recall_bracket": [
+              0.99790001,
+              0.99805999
+            ],
+            "bracket_recall_width": 0.00015998000000005952,
+            "interpolated_latency_us": 195.24049248718424,
+            "interpolated_qps": 5121.888329930539,
+            "temporal_latency_us": [
+              195.52699936467067,
+              195.14412590871754,
+              195.2780010655475,
+              195.24049248718424,
+              195.04359296558417
+            ],
+            "temporal_min_us": 195.04359296558417,
+            "temporal_max_us": 195.52699936467067,
+            "interpolated_cmps": 3377.6261407676016
+          }
+        ]
+      },
+      "D0": {
+        "coverage": "3/3",
+        "matched_recall_qps": 5229.585372865021,
+        "matched_recall_latency_us": 191.2197485461742,
+        "matched_recall_cmps": 3317.293461950713,
+        "max_bracket_recall_width": 0.00014000999999996822,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              136,
+              140
+            ],
+            "recall_bracket": [
+              0.99787998,
+              0.99801999
+            ],
+            "bracket_recall_width": 0.00014000999999996822,
+            "interpolated_latency_us": 190.94290601269438,
+            "interpolated_qps": 5237.167595707993,
+            "temporal_latency_us": [
+              190.7013606390726,
+              190.94290601269438,
+              190.9364408522378,
+              191.8758371720554,
+              191.03054406706136
+            ],
+            "temporal_min_us": 190.7013606390726,
+            "temporal_max_us": 191.8758371720554,
+            "interpolated_cmps": 3312.5768159417307
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              136,
+              140
+            ],
+            "recall_bracket": [
+              0.99787003,
+              0.99800998
+            ],
+            "bracket_recall_width": 0.0001399499999999998,
+            "interpolated_latency_us": 191.2197485461742,
+            "interpolated_qps": 5229.585372865021,
+            "temporal_latency_us": [
+              191.2197485461742,
+              191.067341985363,
+              191.26236874177053,
+              191.09154377162045,
+              191.3935603566311
+            ],
+            "temporal_min_us": 191.067341985363,
+            "temporal_max_us": 191.3935603566311,
+            "interpolated_cmps": 3317.293461950713
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              136,
+              140
+            ],
+            "recall_bracket": [
+              0.99791998,
+              0.99800003
+            ],
+            "bracket_recall_width": 8.004999999999818e-05,
+            "interpolated_latency_us": 191.54517528900567,
+            "interpolated_qps": 5220.700539656966,
+            "temporal_latency_us": [
+              191.68857503390836,
+              191.69482428597559,
+              191.53508585724626,
+              191.54517528900567,
+              191.4223077368453
+            ],
+            "temporal_min_us": 191.4223077368453,
+            "temporal_max_us": 191.69482428597559,
+            "interpolated_cmps": 3319.975640224827
+          }
+        ]
+      },
+      "C64_K1024_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 5106.303832169487,
+        "matched_recall_latency_us": 195.83636870568583,
+        "matched_recall_cmps": 3243.6497695852368,
+        "max_bracket_recall_width": 0.00023001999999994194,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              168,
+              176
+            ],
+            "recall_bracket": [
+              0.99794,
+              0.99817002
+            ],
+            "bracket_recall_width": 0.00023001999999994194,
+            "interpolated_latency_us": 195.80877335576284,
+            "interpolated_qps": 5107.023464076918,
+            "temporal_latency_us": [
+              195.57298002544212,
+              195.7867801707848,
+              195.80877335576284,
+              195.91566504909719,
+              195.91271979402484
+            ],
+            "temporal_min_us": 195.57298002544212,
+            "temporal_max_us": 195.91566504909719,
+            "interpolated_cmps": 3243.6497695852368
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              168,
+              176
+            ],
+            "recall_bracket": [
+              0.99794,
+              0.99817002
+            ],
+            "bracket_recall_width": 0.00023001999999994194,
+            "interpolated_latency_us": 195.83636870568583,
+            "interpolated_qps": 5106.303832169487,
+            "temporal_latency_us": [
+              196.04743735505502,
+              195.83636870568583,
+              195.94708461719972,
+              195.81846702391388,
+              195.83004514814942
+            ],
+            "temporal_min_us": 195.81846702391388,
+            "temporal_max_us": 196.04743735505502,
+            "interpolated_cmps": 3243.6497695852368
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              168,
+              176
+            ],
+            "recall_bracket": [
+              0.99794,
+              0.99817002
+            ],
+            "bracket_recall_width": 0.00023001999999994194,
+            "interpolated_latency_us": 195.9913284431674,
+            "interpolated_qps": 5102.266554053054,
+            "temporal_latency_us": [
+              196.31199526940134,
+              195.9913284431674,
+              195.9952071514727,
+              195.7796472560244,
+              195.950029365901
+            ],
+            "temporal_min_us": 195.7796472560244,
+            "temporal_max_us": 196.31199526940134,
+            "interpolated_cmps": 3244.1280758194775
+          }
+        ]
+      },
+      "C64_K512_N2": {
+        "coverage": "3/3",
+        "matched_recall_qps": 5105.164677369174,
+        "matched_recall_latency_us": 195.88006718626096,
+        "matched_recall_cmps": 3236.711852301521,
+        "max_bracket_recall_width": 0.00028996999999997275,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              168,
+              176
+            ],
+            "recall_bracket": [
+              0.99795002,
+              0.99822998
+            ],
+            "bracket_recall_width": 0.000279959999999968,
+            "interpolated_latency_us": 195.83067653232442,
+            "interpolated_qps": 5106.4522561404565,
+            "temporal_latency_us": [
+              196.91163631207957,
+              195.73351881587277,
+              195.95977142854724,
+              195.83067653232442,
+              195.6629651795612
+            ],
+            "temporal_min_us": 195.6629651795612,
+            "temporal_max_us": 196.91163631207957,
+            "interpolated_cmps": 3232.745177882559
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              168,
+              176
+            ],
+            "recall_bracket": [
+              0.99794,
+              0.99822003
+            ],
+            "bracket_recall_width": 0.0002800299999999867,
+            "interpolated_latency_us": 195.88006718626096,
+            "interpolated_qps": 5105.164677369174,
+            "temporal_latency_us": [
+              196.0626043605326,
+              195.88006718626096,
+              195.81538023122417,
+              195.88978117450918,
+              195.6740890901953
+            ],
+            "temporal_min_us": 195.6740890901953,
+            "temporal_max_us": 196.0626043605326,
+            "interpolated_cmps": 3236.711852301521
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              168,
+              176
+            ],
+            "recall_bracket": [
+              0.99781001,
+              0.99809998
+            ],
+            "bracket_recall_width": 0.00028996999999997275,
+            "interpolated_latency_us": 198.56818849610488,
+            "interpolated_qps": 5036.053395932632,
+            "temporal_latency_us": [
+              198.63951774060106,
+              198.46551033105848,
+              198.56818849610488,
+              198.5890796436611,
+              198.42516502242438
+            ],
+            "temporal_min_us": 198.42516502242438,
+            "temporal_max_us": 198.63951774060106,
+            "interpolated_cmps": 3272.072628202914
+          }
+        ]
+      },
+      "C64_K1024_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 4719.318061768424,
+        "matched_recall_latency_us": 211.89502104151035,
+        "matched_recall_cmps": 3348.003999999996,
+        "max_bracket_recall_width": 0.00026999999999999247,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              192,
+              200
+            ],
+            "recall_bracket": [
+              0.99785,
+              0.99805999
+            ],
+            "bracket_recall_width": 0.00020998999999999324,
+            "interpolated_latency_us": 211.89502104151035,
+            "interpolated_qps": 4719.318061768424,
+            "temporal_latency_us": [
+              211.89502104151035,
+              211.93037950581254,
+              211.97896384812583,
+              211.72194382732874,
+              211.85704856377473
+            ],
+            "temporal_min_us": 211.72194382732874,
+            "temporal_max_us": 211.97896384812583,
+            "interpolated_cmps": 3346.860136196957
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              192,
+              200
+            ],
+            "recall_bracket": [
+              0.99783999,
+              0.99805999
+            ],
+            "bracket_recall_width": 0.00021999999999999797,
+            "interpolated_latency_us": 211.8898482377108,
+            "interpolated_qps": 4719.43327307564,
+            "temporal_latency_us": [
+              211.8898482377108,
+              211.97212050019667,
+              211.77100220759326,
+              211.87752420661994,
+              211.98202395327786
+            ],
+            "temporal_min_us": 211.77100220759326,
+            "temporal_max_us": 211.98202395327786,
+            "interpolated_cmps": 3348.003999999996
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              200,
+              208
+            ],
+            "recall_bracket": [
+              0.99796999,
+              0.99823999
+            ],
+            "bracket_recall_width": 0.00026999999999999247,
+            "interpolated_latency_us": 214.43113073780845,
+            "interpolated_qps": 4663.501967084858,
+            "temporal_latency_us": [
+              214.3313038896708,
+              214.45614107057875,
+              214.67439806120126,
+              214.22152819156773,
+              214.43113073780845
+            ],
+            "temporal_min_us": 214.22152819156773,
+            "temporal_max_us": 214.67439806120126,
+            "interpolated_cmps": 3380.447592592601
+          }
+        ]
+      },
+      "C64_K512_N1": {
+        "coverage": "3/3",
+        "matched_recall_qps": 4736.612183668054,
+        "matched_recall_latency_us": 211.12135873146266,
+        "matched_recall_cmps": 3362.5987411024353,
+        "max_bracket_recall_width": 0.00024002000000000745,
+        "per_graph": [
+          {
+            "rep": 1,
+            "coverage": true,
+            "beam_bracket": [
+              184,
+              192
+            ],
+            "recall_bracket": [
+              0.99783999,
+              0.99800998
+            ],
+            "bracket_recall_width": 0.00016998999999995323,
+            "interpolated_latency_us": 211.12135873146266,
+            "interpolated_qps": 4736.612183668054,
+            "temporal_latency_us": [
+              211.34881795464412,
+              211.12135873146266,
+              211.01912962337124,
+              211.05662755255898,
+              211.1712612356653
+            ],
+            "temporal_min_us": 211.01912962337124,
+            "temporal_max_us": 211.34881795464412,
+            "interpolated_cmps": 3362.5987411024353
+          },
+          {
+            "rep": 2,
+            "coverage": true,
+            "beam_bracket": [
+              184,
+              192
+            ],
+            "recall_bracket": [
+              0.99796999,
+              0.99817997
+            ],
+            "bracket_recall_width": 0.000209980000000054,
+            "interpolated_latency_us": 205.62507539387644,
+            "interpolated_qps": 4863.220101364059,
+            "temporal_latency_us": [
+              205.4254054851119,
+              205.8563439063952,
+              205.39606089058788,
+              205.62507539387644,
+              205.71463836996315
+            ],
+            "temporal_min_us": 205.39606089058788,
+            "temporal_max_us": 205.8563439063952,
+            "interpolated_cmps": 3287.720163825134
+          },
+          {
+            "rep": 3,
+            "coverage": true,
+            "beam_bracket": [
+              192,
+              200
+            ],
+            "recall_bracket": [
+              0.99791998,
+              0.99816
+            ],
+            "bracket_recall_width": 0.00024002000000000745,
+            "interpolated_latency_us": 214.69594910410555,
+            "interpolated_qps": 4657.749734789371,
+            "temporal_latency_us": [
+              214.43365241718408,
+              214.698040750395,
+              214.69594910410555,
+              214.61386959496937,
+              214.78262605460662
+            ],
+            "temporal_min_us": 214.43365241718408,
+            "temporal_max_us": 214.78262605460662,
+            "interpolated_cmps": 3407.671944004649
+          }
+        ]
+      }
+    }
+  },
+  "input_A4_builds": 18,
+  "qps_graph_passes": 90,
+  "beams_quality": 83,
+  "beam_selection": "bracketing beams and nearest neighbors per target"
+}

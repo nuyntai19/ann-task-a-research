@@ -1,0 +1,92 @@
+{
+  "status": "COLLECTED_NOT_G2_PASS",
+  "g2_pass": false,
+  "independent_graph_audit": false,
+  "native_work_counter_invariants_verified": false,
+  "source": "R86 HW85 G2 native SIFT10K",
+  "runs": [
+    {
+      "arm": "stock_off",
+      "source": "v1_0_existing",
+      "P1_buckets": 493,
+      "P2_buckets": 498,
+      "P1_total_points": 222501,
+      "P2_total_points": 230796,
+      "P1_WP_cumulative": 1839487,
+      "P2_WP_cumulative": 3751489,
+      "P2_WP_increment": 1912002,
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "wall_s": "0.99",
+      "peak_rss_KiB": "68908",
+      "output_env_paths": "{}",
+      "output_file_sizes": "{}"
+    },
+    {
+      "arm": "stock_on",
+      "source": "v1_2_resume",
+      "P1_buckets": 493,
+      "P2_buckets": 498,
+      "P1_total_points": 222501,
+      "P2_total_points": 230796,
+      "P1_WP_cumulative": 1839487,
+      "P2_WP_cumulative": 3751489,
+      "P2_WP_increment": 1912002,
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "wall_s": "1.00",
+      "peak_rss_KiB": "69368",
+      "output_env_paths": "{\"R86_COUNTER_OUT\": \"/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9/resume_v1_2_dhrfGf/stock_on/stock_on.counters.jsonl\", \"R86_LEAF_SIZE_OUT\": \"/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9/resume_v1_2_dhrfGf/stock_on/stock_on.leaf_sizes.out\", \"R86_OCCUPANCY_OUT\": \"/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9/resume_v1_2_dhrfGf/stock_on/stock_on.R86_OCCUPANCY_OUT.out\"}",
+      "output_file_sizes": "{\"R86_COUNTER_OUT\": 5292, \"R86_LEAF_SIZE_OUT\": 37668, \"R86_OCCUPANCY_OUT\": 4215}"
+    },
+    {
+      "arm": "h17_off",
+      "source": "v1_2_resume",
+      "P1_buckets": 493,
+      "P2_buckets": 498,
+      "P1_total_points": 222501,
+      "P2_total_points": 230796,
+      "P1_WP_cumulative": 1839487,
+      "P2_WP_cumulative": 3751489,
+      "P2_WP_increment": 1912002,
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "wall_s": "0.79",
+      "peak_rss_KiB": "68948",
+      "output_env_paths": "{}",
+      "output_file_sizes": "{}"
+    },
+    {
+      "arm": "h17_on",
+      "source": "v1_2_resume",
+      "P1_buckets": 493,
+      "P2_buckets": 498,
+      "P1_total_points": 222501,
+      "P2_total_points": 230796,
+      "P1_WP_cumulative": 1839487,
+      "P2_WP_cumulative": 3751489,
+      "P2_WP_increment": 1912002,
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "wall_s": "0.80",
+      "peak_rss_KiB": "69288",
+      "output_env_paths": "{\"R86_COUNTER_OUT\": \"/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9/resume_v1_2_dhrfGf/h17_on/h17_on.counters.jsonl\", \"R86_LEAF_SIZE_OUT\": \"/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9/resume_v1_2_dhrfGf/h17_on/h17_on.leaf_sizes.out\", \"R86_OCCUPANCY_OUT\": \"/home/tai/ann-task-a/experiments/R86/gates/g2_hw85_native10k_JWuLB9/resume_v1_2_dhrfGf/h17_on/h17_on.R86_OCCUPANCY_OUT.out\"}",
+      "output_file_sizes": "{\"R86_COUNTER_OUT\": 5266, \"R86_LEAF_SIZE_OUT\": 37668, \"R86_OCCUPANCY_OUT\": 4215}"
+    }
+  ],
+  "off_on_partition_comparison": {
+    "stock_off_vs_stock_on": {
+      "P1_buckets": true,
+      "P2_buckets": true,
+      "P1_total_points": true,
+      "P2_total_points": true,
+      "P1_WP_cumulative": true,
+      "P2_WP_cumulative": true
+    },
+    "h17_off_vs_h17_on": {
+      "P1_buckets": true,
+      "P2_buckets": true,
+      "P1_total_points": true,
+      "P2_total_points": true,
+      "P1_WP_cumulative": true,
+      "P2_WP_cumulative": true
+    }
+  },
+  "note": "Collector completed. Inspect every output file and independent graph validity before G2 decision."
+}

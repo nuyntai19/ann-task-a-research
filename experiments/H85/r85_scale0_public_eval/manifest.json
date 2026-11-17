@@ -1,0 +1,26 @@
+{
+  "base_n": 10000000,
+  "bytes": {
+    "bigann-10M.gt.ibin": 8000008,
+    "query.public.10K.fbin": 5120008,
+    "query.public.10K.u8bin": 1280008
+  },
+  "dim": 128,
+  "gt_distance_convention_sampled": "squared_L2",
+  "gt_k": 100,
+  "local_base_f32": "/home/tai/ann-task-a/data/sift10m.fbin",
+  "local_base_u8": "/home/tai/ann-task-a/data/bigann10m_u8.u8bin",
+  "note": "Base u8/f32 conversion parity checked on five sample rows, not a full scan.",
+  "protocol": "R85_SCALE0_BIGANN_PUBLIC_QUERY_GT10M_V1",
+  "query_n": 10000,
+  "sha256": {
+    "bigann-10M.gt.ibin": "80a4e35d5dc918e00e55f81e133e333e3b65f4de1426728c8a3ca93ac5ce74df",
+    "query.public.10K.fbin": "a2cb2d182b19db70240ebd4bce3b75b8994ea9927a112d4bf0e955815bdac548",
+    "query.public.10K.u8bin": "eca755831fc9a8004e14886df48b81109a8ed3bfc6b632509c93c0460a30d552"
+  },
+  "sources": {
+    "gt10m": "https://dl.fbaipublicfiles.com/billion-scale-ann-benchmarks/GT_10M/bigann-10M",
+    "query_u8": "https://dl.fbaipublicfiles.com/billion-scale-ann-benchmarks/bigann/query.public.10K.u8bin"
+  },
+  "status": "OFFICIAL_GT_VALID_FOR_FIRST_10M_ONLY; NOT_VALID_FOR_1M_2M_5M"
+}

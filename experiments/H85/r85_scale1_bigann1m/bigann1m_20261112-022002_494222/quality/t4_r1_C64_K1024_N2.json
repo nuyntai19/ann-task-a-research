@@ -1,0 +1,187 @@
+{
+  "tag": "t4_r1_C64_K1024_N2",
+  "graph_sha256": "b8cd82df8b93ca969ab096d3ab9dd519678ee17374ed86451c23fe1ce56b1c91",
+  "evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+  "data_sha256": {
+    "base": "69fb0e488b999c79c0d3919378bb03485fa421434bf9634d385b485a6431eb1e",
+    "query": "a2cb2d182b19db70240ebd4bce3b75b8994ea9927a112d4bf0e955815bdac548",
+    "gt": "f8287eaedb4fb7d77ddbcddcc144ebb284d2a241bf71c1b9a3fdf1238d44b7ac"
+  },
+  "rows": [
+    {
+      "beam": 10,
+      "recall": 0.75474,
+      "qps": 119129.8671875,
+      "avg_cmps": 523.0,
+      "avg_visited": 18.0
+    },
+    {
+      "beam": 11,
+      "recall": 0.77407002,
+      "qps": 115728.6796875,
+      "avg_cmps": 546.0,
+      "avg_visited": 19.0
+    },
+    {
+      "beam": 12,
+      "recall": 0.79135001,
+      "qps": 108920.59375,
+      "avg_cmps": 570.0,
+      "avg_visited": 19.0
+    },
+    {
+      "beam": 20,
+      "recall": 0.88106,
+      "qps": 82018.3046875,
+      "avg_cmps": 763.0,
+      "avg_visited": 27.0
+    },
+    {
+      "beam": 21,
+      "recall": 0.88753998,
+      "qps": 78920.3671875,
+      "avg_cmps": 785.0,
+      "avg_visited": 28.0
+    },
+    {
+      "beam": 22,
+      "recall": 0.89354002,
+      "qps": 77391.59375,
+      "avg_cmps": 807.0,
+      "avg_visited": 29.0
+    },
+    {
+      "beam": 23,
+      "recall": 0.89912999,
+      "qps": 74221.96875,
+      "avg_cmps": 829.0,
+      "avg_visited": 30.0
+    },
+    {
+      "beam": 24,
+      "recall": 0.90732002,
+      "qps": 72441.1953125,
+      "avg_cmps": 863.0,
+      "avg_visited": 32.0
+    },
+    {
+      "beam": 40,
+      "recall": 0.95674998,
+      "qps": 50258.83203125,
+      "avg_cmps": 1231.0,
+      "avg_visited": 47.0
+    },
+    {
+      "beam": 44,
+      "recall": 0.96266001,
+      "qps": 46781.875,
+      "avg_cmps": 1319.0,
+      "avg_visited": 51.0
+    },
+    {
+      "beam": 46,
+      "recall": 0.96531999,
+      "qps": 44960.99609375,
+      "avg_cmps": 1363.0,
+      "avg_visited": 53.0
+    },
+    {
+      "beam": 48,
+      "recall": 0.96805,
+      "qps": 42704.75,
+      "avg_cmps": 1414.0,
+      "avg_visited": 55.0
+    },
+    {
+      "beam": 50,
+      "recall": 0.97030002,
+      "qps": 41870.78515625,
+      "avg_cmps": 1459.0,
+      "avg_visited": 57.0
+    },
+    {
+      "beam": 80,
+      "recall": 0.98843002,
+      "qps": 28794.54492188,
+      "avg_cmps": 2054.0,
+      "avg_visited": 85.0
+    },
+    {
+      "beam": 96,
+      "recall": 0.99214,
+      "qps": 24622.4140625,
+      "avg_cmps": 2299.0,
+      "avg_visited": 100.0
+    },
+    {
+      "beam": 100,
+      "recall": 0.99276,
+      "qps": 24600.91015625,
+      "avg_cmps": 2368.0,
+      "avg_visited": 103.0
+    },
+    {
+      "beam": 104,
+      "recall": 0.99347001,
+      "qps": 22831.41601562,
+      "avg_cmps": 2442.0,
+      "avg_visited": 106.0
+    },
+    {
+      "beam": 108,
+      "recall": 0.99400997,
+      "qps": 22653.390625,
+      "avg_cmps": 2510.0,
+      "avg_visited": 109.0
+    },
+    {
+      "beam": 112,
+      "recall": 0.99445999,
+      "qps": 22506.453125,
+      "avg_cmps": 2581.0,
+      "avg_visited": 113.0
+    },
+    {
+      "beam": 120,
+      "recall": 0.99524999,
+      "qps": 21087.88085938,
+      "avg_cmps": 2717.0,
+      "avg_visited": 119.0
+    },
+    {
+      "beam": 160,
+      "recall": 0.99769998,
+      "qps": 16604.1796875,
+      "avg_cmps": 3250.0,
+      "avg_visited": 149.0
+    },
+    {
+      "beam": 176,
+      "recall": 0.99831998,
+      "qps": 15457.07324219,
+      "avg_cmps": 3465.0,
+      "avg_visited": 159.0
+    },
+    {
+      "beam": 192,
+      "recall": 0.99864,
+      "qps": 14301.42480469,
+      "avg_cmps": 3599.0,
+      "avg_visited": 170.0
+    },
+    {
+      "beam": 224,
+      "recall": 0.99905998,
+      "qps": 13000.95996094,
+      "avg_cmps": 3953.0,
+      "avg_visited": 188.0
+    },
+    {
+      "beam": 256,
+      "recall": 0.99937999,
+      "qps": 11674.75488281,
+      "avg_cmps": 4282.0,
+      "avg_visited": 205.0
+    }
+  ]
+}

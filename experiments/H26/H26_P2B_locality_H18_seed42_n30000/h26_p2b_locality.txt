@@ -1,0 +1,28 @@
+H26-P2b: OFFLINE LEAF-ID REUSE LOCALITY (NOT actual cache hits)
+LEAVES=85,529 SAMPLES=30,000 SEED=42
+ORACLE_REDUNDANT_FRACTION=30.261%
+FRACTION_HAS_EARLIER_LEAF_ID=30.520%
+FULL_CACHE_LOWER_BOUND=61.01 GB (no metadata)
+IDEAL_SERIAL_LEAF_ID_WINDOW (NOT actual temporal locality, not real cache hit rate):
+  W=     1 leaf IDs:   0.320% of ALL pair occurrences
+  W=     4 leaf IDs:   0.957% of ALL pair occurrences
+  W=    16 leaf IDs:   2.970% of ALL pair occurrences
+  W=    64 leaf IDs:   5.807% of ALL pair occurrences
+  W=   256 leaf IDs:   7.313% of ALL pair occurrences
+  W=  1024 leaf IDs:   8.223% of ALL pair occurrences
+  W=  4096 leaf IDs:  11.210% of ALL pair occurrences
+  W= 16384 leaf IDs:  20.537% of ALL pair occurrences
+  W= 65536 leaf IDs:  30.250% of ALL pair occurrences
+  W= 85529 leaf IDs:  30.520% of ALL pair occurrences
+ORACLE selective caching upper bounds (global m known in hindsight):
+  m >=  2:  30.261% of ALL pair occurrences
+  m >=  3:  19.449% of ALL pair occurrences
+  m >=  4:  12.351% of ALL pair occurrences
+  m >=  5:   8.199% of ALL pair occurrences
+  m >=  8:   2.669% of ALL pair occurrences
+  m >= 16:   0.201% of ALL pair occurrences
+GAP_QUANTILES among occurrences with an earlier leaf ID:
+{'q10': 17.0, 'q25': 487.5, 'median': 8530.0, 'q75': 21283.25, 'q90': 38158.5, 'q99': 64659.45}
+IMPORTANT: all window metrics rely on leaf/capture ID order, NOT verified scheduler or wall-clock order.
+No speedup or feasible cache claim; evaluate against optimized Eigen blocked rankUpdate.
+H26P2B_DONE /home/tai/ann-task-a/experiments/H26/H26_P2B_locality_H18_seed42_n30000

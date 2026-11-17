@@ -1,0 +1,49 @@
+{
+  "result": "R25_SAME_POOL_ENDING_COMPARISON_COMPLETE_NOT_SIFT",
+  "n": 2048,
+  "d": 32,
+  "same_pool_sha256": "c09da9fca131e62a3b44b79bac24b58ab551d53f85ab49475dd7e0ad943b4c8c",
+  "local_exact10_anchor_count": 256,
+  "candidate_pool_local_gt10_coverage": 0.348828125,
+  "graphs": {
+    "pipnn_r24": {
+      "arcs": 8341,
+      "graph_bytes": 41564,
+      "max_degree": 16,
+      "avg_degree": 4.07275390625,
+      "degree_p99": 14.529999999999973,
+      "unreachable_from_entry0": 0,
+      "sha256": "e02237f1dc8b8c3bd636e5c886b8a2c9e53b41bff32c940d38856b4d256dfc4f",
+      "local_gt10_edge_coverage": 0.292578125
+    },
+    "fg_nospine": {
+      "arcs": 10118,
+      "graph_bytes": 48672,
+      "max_degree": 16,
+      "avg_degree": 4.9404296875,
+      "degree_p99": 16.0,
+      "unreachable_from_entry0": 0,
+      "sha256": "2fbb0871ec8b6ab914d1f841815c13f5873daae3d7bc1608feb9dbd5efa70c5e",
+      "local_gt10_edge_coverage": 0.352734375
+    },
+    "fg_spine": {
+      "arcs": 10779,
+      "graph_bytes": 51316,
+      "max_degree": 24,
+      "avg_degree": 5.26318359375,
+      "degree_p99": 16.0,
+      "unreachable_from_entry0": 0,
+      "sha256": "ee08b7671cfb1619962e26ea936fa57d2206e036f4899e73c8c1159323df2b4e",
+      "local_gt10_edge_coverage": 0.354296875
+    }
+  },
+  "restrictions": [
+    "synthetic only",
+    "graph budgets may differ",
+    "basepoint local edge top10 is NOT heldout ANN recall",
+    "FGraft own searcher diagnostics cannot be directly compared to PiPNN native query search",
+    "FGraft process wall includes unconditional local completeness check",
+    "single fixed candidate pool, not independent BUILD repetitions",
+    "no algorithm novelty claim"
+  ]
+}

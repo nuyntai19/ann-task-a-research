@@ -1,0 +1,354 @@
+{
+  "experiment": "R83.7",
+  "source_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "base": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "base_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "binary_sha256": {
+    "D0": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+    "E": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f"
+  },
+  "threads": 4,
+  "schedule": [
+    "r1_D0",
+    "r1_E",
+    "r2_E",
+    "r2_D0",
+    "r3_D0",
+    "r3_E"
+  ],
+  "cpu_allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "status": "R83_7_TWO_METRIC_PILOT_SCREEN_GO_RECALL_PENDING",
+  "runs": {
+    "r1_D0": {
+      "variant": "D0",
+      "rep": 1,
+      "tag": "r1_D0",
+      "threads": 4,
+      "binary_sha256": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+      "wall_s": 7.79,
+      "peakRSS_KiB": 346592,
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2263558,
+        "graph_bytes": 9454240,
+        "self_arcs": 0,
+        "duplicate_neighbors": 0,
+        "sha256": "5c3d9cdb0eb661914ca064c58a126d5d8818d76da5f0da39ae030e606ebc02ce"
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "individual_s": [
+            0.5104,
+            0.4718
+          ],
+          "sum_s": 0.9822
+        },
+        "build leaf time": {
+          "count": 2,
+          "individual_s": [
+            3.2888,
+            2.9555
+          ],
+          "sum_s": 6.2443
+        },
+        "Final prune time": {
+          "count": 1,
+          "individual_s": [
+            0.412
+          ],
+          "sum_s": 0.412
+        }
+      },
+      "exit_code": 0
+    },
+    "r1_E": {
+      "variant": "E",
+      "rep": 1,
+      "tag": "r1_E",
+      "threads": 4,
+      "binary_sha256": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f",
+      "wall_s": 7.36,
+      "peakRSS_KiB": 335212,
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2266692,
+        "graph_bytes": 9466776,
+        "self_arcs": 0,
+        "duplicate_neighbors": 0,
+        "sha256": "62e1967c2e6f8bb3f4e5d5351c6493106df24ed9558f7db2743457624312c26b"
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "individual_s": [
+            0.4693,
+            0.4774
+          ],
+          "sum_s": 0.9467
+        },
+        "build leaf time": {
+          "count": 2,
+          "individual_s": [
+            3.0725,
+            2.8348
+          ],
+          "sum_s": 5.9073
+        },
+        "Final prune time": {
+          "count": 1,
+          "individual_s": [
+            0.3741
+          ],
+          "sum_s": 0.3741
+        }
+      },
+      "exit_code": 0
+    },
+    "r2_E": {
+      "variant": "E",
+      "rep": 2,
+      "tag": "r2_E",
+      "threads": 4,
+      "binary_sha256": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f",
+      "wall_s": 7.24,
+      "peakRSS_KiB": 334760,
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267049,
+        "graph_bytes": 9468204,
+        "self_arcs": 0,
+        "duplicate_neighbors": 0,
+        "sha256": "e1505e45d120f50649ed35f1466e3caeb9b7fd374e538a4e3a59f63b0f1b5843"
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "individual_s": [
+            0.4819,
+            0.4525
+          ],
+          "sum_s": 0.9344
+        },
+        "build leaf time": {
+          "count": 2,
+          "individual_s": [
+            2.9408,
+            2.8712
+          ],
+          "sum_s": 5.812
+        },
+        "Final prune time": {
+          "count": 1,
+          "individual_s": [
+            0.3722
+          ],
+          "sum_s": 0.3722
+        }
+      },
+      "exit_code": 0
+    },
+    "r2_D0": {
+      "variant": "D0",
+      "rep": 2,
+      "tag": "r2_D0",
+      "threads": 4,
+      "binary_sha256": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+      "wall_s": 7.5,
+      "peakRSS_KiB": 346452,
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267610,
+        "graph_bytes": 9470448,
+        "self_arcs": 0,
+        "duplicate_neighbors": 0,
+        "sha256": "36ad3c5e6393e04e128712614a4bc035aaafef56ad33fbb0eec7953adeb3a830"
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "individual_s": [
+            0.4711,
+            0.4637
+          ],
+          "sum_s": 0.9348
+        },
+        "build leaf time": {
+          "count": 2,
+          "individual_s": [
+            3.0558,
+            2.9703
+          ],
+          "sum_s": 6.0261
+        },
+        "Final prune time": {
+          "count": 1,
+          "individual_s": [
+            0.4162
+          ],
+          "sum_s": 0.4162
+        }
+      },
+      "exit_code": 0
+    },
+    "r3_D0": {
+      "variant": "D0",
+      "rep": 3,
+      "tag": "r3_D0",
+      "threads": 4,
+      "binary_sha256": "254fe67c42a5568fc78062b51ee65ebcf13d03b6689c2470bc465423f9aad7e6",
+      "wall_s": 7.53,
+      "peakRSS_KiB": 345592,
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267613,
+        "graph_bytes": 9470460,
+        "self_arcs": 0,
+        "duplicate_neighbors": 0,
+        "sha256": "922f93a87a74b6f150216e772ffbcb8f89fa9dfae4235720909c1e9daccb7213"
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "individual_s": [
+            0.476,
+            0.4595
+          ],
+          "sum_s": 0.9355
+        },
+        "build leaf time": {
+          "count": 2,
+          "individual_s": [
+            3.0725,
+            2.9778
+          ],
+          "sum_s": 6.0503
+        },
+        "Final prune time": {
+          "count": 1,
+          "individual_s": [
+            0.4246
+          ],
+          "sum_s": 0.4246
+        }
+      },
+      "exit_code": 0
+    },
+    "r3_E": {
+      "variant": "E",
+      "rep": 3,
+      "tag": "r3_E",
+      "threads": 4,
+      "binary_sha256": "d6ba7dcf7ed4fce1f40b646bc90bcd4cafa9fd668630d9b5a8922ad02e32615f",
+      "wall_s": 7.3,
+      "peakRSS_KiB": 335952,
+      "graph": {
+        "vertices": 100000,
+        "maximum_degree": 64,
+        "arcs": 2267616,
+        "graph_bytes": 9470472,
+        "self_arcs": 0,
+        "duplicate_neighbors": 0,
+        "sha256": "23696402036ce4458e15b1429d628333c82e36f73642771ec500da65a2cc6cc5"
+      },
+      "phases": {
+        "buckets time": {
+          "count": 2,
+          "individual_s": [
+            0.4752,
+            0.4601
+          ],
+          "sum_s": 0.9353
+        },
+        "build leaf time": {
+          "count": 2,
+          "individual_s": [
+            2.9878,
+            2.8829
+          ],
+          "sum_s": 5.8707
+        },
+        "Final prune time": {
+          "count": 1,
+          "individual_s": [
+            0.3777
+          ],
+          "sum_s": 0.3777
+        }
+      },
+      "exit_code": 0
+    }
+  },
+  "created_at_utc": "2026-11-06T06:26:52.653014+00:00",
+  "medians": {
+    "D0": {
+      "wall_s": 7.53,
+      "peakRSS_KiB": 346452,
+      "buckets time": 0.9355,
+      "build leaf time": 6.0503,
+      "Final prune time": 0.4162
+    },
+    "E": {
+      "wall_s": 7.3,
+      "peakRSS_KiB": 335212,
+      "buckets time": 0.9353,
+      "build leaf time": 5.8707,
+      "Final prune time": 0.3741
+    }
+  },
+  "E_over_D0_medians": {
+    "wall_s": 0.9694555112881805,
+    "peakRSS_KiB": 0.9675568332698324
+  },
+  "paired": [
+    {
+      "rep": 1,
+      "wall_E_minus_D0_s": -0.43,
+      "rss_E_minus_D0_KiB": -11380,
+      "wall_E_over_D0": 0.944801,
+      "rss_E_over_D0": 0.967166,
+      "graph_sha_equal": false
+    },
+    {
+      "rep": 2,
+      "wall_E_minus_D0_s": -0.26,
+      "rss_E_minus_D0_KiB": -11692,
+      "wall_E_over_D0": 0.965333,
+      "rss_E_over_D0": 0.966252,
+      "graph_sha_equal": false
+    },
+    {
+      "rep": 3,
+      "wall_E_minus_D0_s": -0.23,
+      "rss_E_minus_D0_KiB": -9640,
+      "wall_E_over_D0": 0.969456,
+      "rss_E_over_D0": 0.972106,
+      "graph_sha_equal": false
+    }
+  ],
+  "paired_win_counts": {
+    "wall": 3,
+    "rss": 3
+  },
+  "verdict": "R83_7_TWO_METRIC_PILOT_SCREEN_GO_RECALL_PENDING",
+  "thresholds": {
+    "wall_ratio_max": 0.97,
+    "rss_ratio_max": 0.98,
+    "minimum_paired_wins_each": 2
+  },
+  "not_claimed": "No heldout Recall, no QPS, no SIFT1M, no algorithmic novelty, no statistical significance; 4-thread graph SHA may differ under concurrency."
+}

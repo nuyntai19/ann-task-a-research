@@ -1,0 +1,105 @@
+==================================================================
+TASK A / H17-BORL READ-ONLY PREFLIGHT
+==================================================================
+2026-10-23T15:00:42+07:00
+Root: /home/tai/ann-task-a
+
+=== 1. CPU + available tools ===
+/home/tai/ann-task-a/.venv/bin/python3
+/usr/bin/git
+/usr/bin/rg
+/usr/bin/perf
+/usr/bin/cmake
+/usr/bin/g++
+/usr/bin/sha256sum
+               total        used        free      shared  buff/cache   available
+BNhớ:           13Gi       7.2Gi       752Mi       147Mi       6.1Gi       6.4Gi
+Tráo đổi:      4.0Gi       304Ki       4.0Gi
+
+=== 2. Git context (no remote URLs or credentials printed) ===
+Root itself is not a Git working tree.
+
+=== 3. Existing G0 artifacts (size only) ===
+-rw-rw-r-- 1 tai tai 634 Oct 23 13:00 /home/tai/ann-task-a/experiments/G0/results/feedback_incremental.json
+-rw-rw-r-- 1 tai tai 928 Oct 23 13:32 /home/tai/ann-task-a/experiments/G0/results/g03/search_b100000_s20261023.csv
+-rw-rw-r-- 1 tai tai 926 Oct 23 13:53 /home/tai/ann-task-a/experiments/G0/results/g03/search_b500000_s20261024.csv
+-rw-rw-r-- 1 tai tai 2.7K Oct 23 13:43 /home/tai/ann-task-a/experiments/G0/results/g03/manifest_b500000_s20261024.json
+-rw-rw-r-- 1 tai tai 310 Oct 23 12:26 /home/tai/ann-task-a/experiments/G0/metadata/baseline_graphs.sha256
+-rw-rw-r-- 1 tai tai 71M Oct 23 11:51 /home/tai/ann-task-a/results/pipnn_static_sift1m_f15_4t.graph
+-rw-rw-r-- 1 tai tai 91M Oct 23 01:27 /home/tai/ann-task-a/results/pipnn_sift1m_4t.graph
+-rw-rw-r-- 1 tai tai 105M Oct 23 11:53 /home/tai/ann-task-a/results/pipnn_static_sift1m_f60_4t.graph
+
+=== 4. BORL / H17 file-name inventory ===
+
+=== 5. BORL / H17 text occurrences (limited; no binary scans) ===
+/home/tai/ann-task-a/experiments/H17/preflight/report.txt:2:TASK A / H17-BORL READ-ONLY PREFLIGHT
+/home/tai/ann-task-a/experiments/H17/preflight/report.txt:32:=== 4. BORL / H17 file-name inventory ===
+/home/tai/ann-task-a/experiments/H17/preflight/report.txt:34:=== 5. BORL / H17 text occurrences (limited; no binary scans) ===
+/home/tai/ann-task-a/src/PiPNN/external/mirage/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp:2:   recognize the extension without flags.  Borland does not know .cxx for
+/home/tai/ann-task-a/src/PiPNN/external/mirage/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp:116:#elif defined(__BORLANDC__) && defined(__CODEGEARC_VERSION__)
+/home/tai/ann-task-a/src/PiPNN/external/mirage/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp:122:#elif defined(__BORLANDC__)
+/home/tai/ann-task-a/src/PiPNN/external/mirage/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:116:#elif defined(__BORLANDC__) && defined(__CODEGEARC_VERSION__)
+/home/tai/ann-task-a/src/PiPNN/external/mirage/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:122:#elif defined(__BORLANDC__)
+/home/tai/ann-task-a/src/PiPNN/external/mirage/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:123:# define COMPILER_ID "Borland"
+
+=== 6. Source repositories / relevant build scripts ===
+src/PiPNN/data_tools/CMakeLists.txt
+src/PiPNN/external/mirage/CMakeLists.txt
+src/PiPNN/external/mirage/README.md
+src/PiPNN/external/hnswlib/CMakeLists.txt
+src/PiPNN/external/hnswlib/README.md
+src/PiPNN/CMakeLists.txt
+src/PiPNN/parlaylib/CMakeLists.txt
+src/PiPNN/parlaylib/analysis/CMakeLists.txt
+src/PiPNN/parlaylib/analysis/README.md
+src/PiPNN/parlaylib/README.md
+src/PiPNN/parlaylib/benchmark/CMakeLists.txt
+src/PiPNN/parlaylib/benchmark/README.md
+src/PiPNN/parlaylib/test/CMakeLists.txt
+src/PiPNN/parlaylib/test/README.md
+src/PiPNN/parlaylib/examples/CMakeLists.txt
+src/PiPNN/parlaylib/examples/README.md
+src/PiPNN/analysis/CMakeLists.txt
+src/PiPNN/README.md
+src/PiPNN/benchmark/CMakeLists.txt
+src/PiPNN/algorithms/mirage/CMakeLists.txt
+src/PiPNN/algorithms/vamanaRange/CMakeLists.txt
+src/PiPNN/algorithms/PipNN/CMakeLists.txt
+src/PiPNN/algorithms/PipNN/README.md
+src/PiPNN/algorithms/PipNN/pipnn.h
+src/PiPNN/algorithms/CMakeLists.txt
+src/PiPNN/algorithms/HCNNG/CMakeLists.txt
+src/PiPNN/algorithms/HNSW/CMakeLists.txt
+src/PiPNN/algorithms/vamana/CMakeLists.txt
+src/PiPNN/algorithms/hnswlib/CMakeLists.txt
+src/PiPNN/algorithms/pyNNDescent/CMakeLists.txt
+src/ParlayANN/CMakeLists.txt
+src/ParlayANN/docs/README.md
+src/ParlayANN/parlaylib/CMakeLists.txt
+src/ParlayANN/parlaylib/analysis/CMakeLists.txt
+src/ParlayANN/parlaylib/analysis/README.md
+src/ParlayANN/parlaylib/README.md
+src/ParlayANN/parlaylib/benchmark/CMakeLists.txt
+src/ParlayANN/parlaylib/benchmark/README.md
+src/ParlayANN/parlaylib/test/CMakeLists.txt
+src/ParlayANN/parlaylib/test/README.md
+src/ParlayANN/parlaylib/examples/CMakeLists.txt
+src/ParlayANN/parlaylib/examples/README.md
+src/ParlayANN/algorithms/vamanaRange/CMakeLists.txt
+src/ParlayANN/algorithms/CMakeLists.txt
+src/ParlayANN/algorithms/HCNNG/CMakeLists.txt
+src/ParlayANN/algorithms/HNSW/CMakeLists.txt
+src/ParlayANN/algorithms/vamana/CMakeLists.txt
+src/ParlayANN/algorithms/pyNNDescent/CMakeLists.txt
+experiments/G0/README_G03.txt
+
+=== 7. Short recap of 500k G0.3 CSV (if available) ===
+rows: 18
+f30 Recall@10= 0.99502 QPS= 1656.29 comparisons= 2606
+f60 Recall@10= 0.99607 QPS= 1618.0 comparisons= 2739
+random_2hop Recall@10= 0.99448 QPS= 1727.67 comparisons= 2623
+oracle_random Recall@10= 0.9951 QPS= 1704.59 comparisons= 2604
+oracle_lowdegree Recall@10= 0.99516 QPS= 1706.48 comparisons= 2607
+oracle_geometry Recall@10= 0.99492 QPS= 1715.55 comparisons= 2591
+
+=== END: no graphs or source files changed ===

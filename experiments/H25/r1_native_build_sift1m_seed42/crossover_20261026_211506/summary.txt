@@ -1,0 +1,26 @@
+H25-R1 crossover: each variant appears once in each order position.
+Only SEARCH timing repeatability. Offline policy cost, BUILD repeatability and edge matching remain OPEN.
+
+ef=140 | recall B/N/R: 0.99372 / 0.99372 / 0.99368
+  nearest: QPS gain by round = +2.64%, +4.12%, +0.33% ; median = +2.64%
+  random : QPS gain by round = +0.14%, +3.70%, +0.68% ; median = +0.68%
+  baseline QPS by round: 1023.90, 1013.21, 1040.37
+ef=160 | recall B/N/R: 0.99518 / 0.99510 / 0.99507
+  nearest: QPS gain by round = -0.02%, -2.85%, -1.12% ; median = -1.12%
+  random : QPS gain by round = +0.09%, +1.55%, +0.36% ; median = +0.36%
+  baseline QPS by round: 940.09, 924.32, 939.43
+ef=180 | recall B/N/R: 0.99621 / 0.99612 / 0.99621
+  nearest: QPS gain by round = -1.97%, -0.33%, -0.76% ; median = -0.76%
+  random : QPS gain by round = -1.70%, -0.98%, +0.10% ; median = -0.98%
+  baseline QPS by round: 858.55, 838.63, 854.49
+ef=200 | recall B/N/R: 0.99678 / 0.99679 / 0.99688
+  nearest: QPS gain by round = -1.18%, +0.48%, -0.38% ; median = -0.38%
+  random : QPS gain by round = -0.65%, -2.39%, +0.85% ; median = -0.65%
+  baseline QPS by round: 784.01, 780.79, 782.22
+
+graph baseline: edges=22788653 bytes=95154620 reachable0=1000000/1000000
+graph nearest: edges=22800345 bytes=95201388 reachable0=1000000/1000000
+graph random: edges=22802093 bytes=95208380 reachable0=999999/1000000
+  WARNING: random graph not fully reachable.
+
+RESULT_FILE /home/tai/ann-task-a/experiments/H25/r1_native_build_sift1m_seed42/crossover_20261026_211506/crossover_summary.json

@@ -1,0 +1,13 @@
+# datasets, graphs, indexes (regenerable; large)
+data/
+*.npy
+*.fbin
+*.graph
+# build artefacts
+*.o
+
+# derived measurement artifacts (large, reproducible from bench/)
+*.vlog
+*.mask
+*.i32
+__pycache__/

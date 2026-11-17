@@ -1,0 +1,22 @@
+{
+  "base_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "batch": 32,
+  "created_utc": "2026-11-11T17:13:39.916283+00:00",
+  "dim": 128,
+  "first300_equal_legacy_queries": true,
+  "gt_bytes": 8000008,
+  "gt_format": "uint32 q,k; uint32 ids[q,k]; float32 squared_L2[q,k]",
+  "gt_sha256": "70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28",
+  "input_base": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "input_queries": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+  "k": 100,
+  "legacy_crosscheck": {
+    "compared_300": 300,
+    "identical_order_rows": 254,
+    "max_float32_dist_abs_delta": 0.0,
+    "mean_top100_id_overlap": 0.9999333333333333
+  },
+  "q": 10000,
+  "queries_sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+  "scope": "Exact SIFT100K GT for existing SIFT1M 10k queries; separate from BIGANN scaling"
+}

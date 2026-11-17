@@ -1,0 +1,852 @@
+[
+  {
+    "target": 0.76,
+    "arms": {
+      "C32": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          516.1285271250592,
+          516.1618875241395,
+          516.1952479232197
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 516.1952479232197,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 12.398999999999994,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 516.1285271250592,
+            "beams": [
+              12,
+              20
+            ],
+            "width_pp": 12.198001000000003,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0051113038529516
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          491.50532750030106,
+          492.0347749806717,
+          492.56422246104245
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 491.50532750030106,
+            "beams": [
+              11,
+              12
+            ],
+            "width_pp": 1.7770060000000032,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 492.56422246104245,
+            "beams": [
+              11,
+              12
+            ],
+            "width_pp": 1.8610000000000015,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 0.9581290796071955
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          512.7481374570447,
+          513.5370436542761,
+          515.8197014238567
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 515.8197014238567,
+            "beams": [
+              10,
+              11
+            ],
+            "width_pp": 2.0079969999999947,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 513.5370436542761,
+            "beams": [
+              10,
+              11
+            ],
+            "width_pp": 1.9029980000000002,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 512.7481374570447,
+            "beams": [
+              10,
+              11
+            ],
+            "width_pp": 2.037,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C96": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": null
+      },
+      "C160": {
+        "n_covered": 0,
+        "n_total": 3,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 3,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": null
+      }
+    }
+  },
+  {
+    "target": 0.89,
+    "arms": {
+      "C32": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          806.3777534676316,
+          806.8354502467064,
+          807.2931470257811
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 806.3777534676316,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 1.043003000000009,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 807.2931470257811,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 1.0369949999999961,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.066960977394708
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          731.7058066809087,
+          732.288840104731,
+          732.8718735285534
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 731.7058066809087,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 5.435996999999992,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 732.8718735285534,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 5.353998999999998,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 0.968380375867812
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          755.1293262708914,
+          756.1995868085327,
+          756.544476235347
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 756.1995868085327,
+            "beams": [
+              21,
+              22
+            ],
+            "width_pp": 0.5609989999999954,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 755.1293262708914,
+            "beams": [
+              21,
+              22
+            ],
+            "width_pp": 0.6030019999999969,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 756.544476235347,
+            "beams": [
+              21,
+              22
+            ],
+            "width_pp": 0.6409939999999947,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C96": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          828.6337446758856,
+          830.4031865727659,
+          832.1726284696462
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 828.6337446758856,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.6170039999999988,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 832.1726284696462,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.58500199999999,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0981270038474926
+      },
+      "C160": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          845.2880326782955,
+          846.1390438399756,
+          848.8562480118577
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 846.1390438399756,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.6260040000000022,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 848.8562480118577,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.591003999999995,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 845.2880326782955,
+            "beams": [
+              20,
+              21
+            ],
+            "width_pp": 0.6250019999999967,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.1189361361740804
+      }
+    }
+  },
+  {
+    "target": 0.96,
+    "arms": {
+      "C32": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1412.4911101188038,
+          1416.5746689834523,
+          1420.658227848101
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1412.4911101188038,
+            "beams": [
+              96,
+              100
+            ],
+            "width_pp": 0.15900100000000306,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1420.658227848101,
+            "beams": [
+              96,
+              100
+            ],
+            "width_pp": 0.15800000000000258,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.176940805367579
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1206.294901646721,
+          1208.2171819218624,
+          1210.1394621970037
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1210.1394621970037,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 2.3580009999999985,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1206.294901646721,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 2.3200039999999977,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0038299669515511
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          1202.5014319727893,
+          1203.6074053367804,
+          1210.6721311475403
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1202.5014319727893,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.5879999999999996,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1203.6074053367804,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.600998999999991,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 1210.6721311475403,
+            "beams": [
+              40,
+              44
+            ],
+            "width_pp": 0.6099999999999994,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C96": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          1311.249916666666,
+          1312.9271995047366,
+          1314.6044823428074
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1314.6044823428074,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 4.644000000000004,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1311.249916666666,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 4.692000000000007,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0908267876080138
+      },
+      "C160": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          1337.8852403009253,
+          1338.2379385290328,
+          1344.3958723129836
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 1338.2379385290328,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 4.664998999999992,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 1344.3958723129836,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 4.652000000000001,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 1337.8852403009253,
+            "beams": [
+              24,
+              40
+            ],
+            "width_pp": 4.733002999999991,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.1118558531588476
+      }
+    }
+  },
+  {
+    "target": 0.99,
+    "arms": {
+      "C32": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": null
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2026.2002776405259,
+          2042.4715931951687,
+          2058.7429087498112
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2026.2002776405259,
+            "beams": [
+              108,
+              112
+            ],
+            "width_pp": 0.08500200000000069,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2058.7429087498112,
+            "beams": [
+              112,
+              120
+            ],
+            "width_pp": 0.12899699999999736,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0184238578371547
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          2002.6200856611501,
+          2005.5221384275135,
+          2011.3539245796758
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2011.3539245796758,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.3789959999999981,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2002.6200856611501,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.3780010000000056,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 2005.5221384275135,
+            "beams": [
+              80,
+              96
+            ],
+            "width_pp": 0.39700200000000185,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C96": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          2173.1126003195495,
+          2174.314271883961,
+          2175.515943448372
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2175.515943448372,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.696997999999994,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2173.1126003195495,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.6829969999999972,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0841636849687402
+      },
+      "C160": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          2224.0222052871923,
+          2226.372205438068,
+          2226.878126553195
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 2226.372205438068,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.6549999999999954,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 2226.878126553195,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.6800049999999955,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 2224.0222052871923,
+            "beams": [
+              50,
+              80
+            ],
+            "width_pp": 1.6560020000000009,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.1101209818524955
+      }
+    }
+  },
+  {
+    "target": 0.998,
+    "arms": {
+      "C32": {
+        "n_covered": 0,
+        "n_total": 2,
+        "comparisons_min_med_max": null,
+        "per_rep": [
+          {
+            "rep": 1,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          },
+          {
+            "rep": 2,
+            "status": "OUTSIDE_MEASURED_RANGE"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": null
+      },
+      "C48": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          3456.7419440419408,
+          3466.0415081204164,
+          3475.3410721988917
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3456.7419440419408,
+            "beams": [
+              224,
+              256
+            ],
+            "width_pp": 0.04900100000000407,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3475.3410721988917,
+            "beams": [
+              224,
+              256
+            ],
+            "width_pp": 0.0509980000000021,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0701219292957682
+      },
+      "C64": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          3222.249999999996,
+          3238.922045454548,
+          3266.3536658533785
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3266.3536658533785,
+            "beams": [
+              160,
+              176
+            ],
+            "width_pp": 0.05000199999999344,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3238.922045454548,
+            "beams": [
+              160,
+              176
+            ],
+            "width_pp": 0.043999999999999595,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 3222.249999999996,
+            "beams": [
+              160,
+              176
+            ],
+            "width_pp": 0.04799999999999249,
+            "status": "INTERPOLATED"
+          }
+        ]
+      },
+      "C96": {
+        "n_covered": 2,
+        "n_total": 2,
+        "comparisons_min_med_max": [
+          3380.3381303233346,
+          3382.1356862987695,
+          3383.9332422742045
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3383.9332422742045,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.1639959999999996,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3380.3381303233346,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.17399800000000853,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0442164519041777
+      },
+      "C160": {
+        "n_covered": 3,
+        "n_total": 3,
+        "comparisons_min_med_max": [
+          3441.135497005981,
+          3467.9172784702077,
+          3490.339601229227
+        ],
+        "per_rep": [
+          {
+            "rep": 1,
+            "comparisons": 3490.339601229227,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.1779969999999964,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 2,
+            "comparisons": 3467.9172784702077,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.1639959999999996,
+            "status": "INTERPOLATED"
+          },
+          {
+            "rep": 3,
+            "comparisons": 3441.135497005981,
+            "beams": [
+              120,
+              160
+            ],
+            "width_pp": 0.16700000000000603,
+            "status": "INTERPOLATED"
+          }
+        ],
+        "ratio_of_arm_median_to_C64": 1.0707010634408531
+      }
+    }
+  }
+]

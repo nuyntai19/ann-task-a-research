@@ -1,0 +1,10 @@
+H31-R2 SAME SEARCHER SIFT1M 10k queries, single worker, fixed Q=... (no BUILD)
+SOURCE_SHA256_MATCH_H31_R0=PASS for all graphs; SIFT1M n,d and GT header/length pass
+GRAPH BUDGETS DIFFER: Vamana ~114.57MB, PiPNN ~95.17MB; NOT MATCHED PARETO PROOF
+Q      ROLE      RECALL@10       QPS_MED5      VISITED_MED5     CMP_MED5      RECALL_RANGE
+120    VAMANA   0.986890        2185.31       134.00           2409.00       0.986890..0.986890
+120    STOCK    0.993470        2185.38       137.00           2375.00       0.993470..0.993470
+120    TOP2     0.993470        2185.01       137.00           2375.00       0.993470..0.993470
+NOTE: matched Recall and graph bytes not enforced; no claims of algorithmic novelty.
+NO NEW BUILD, NO GRAPH MODIFICATION, NO INTRA-QUERY PARALLEL MEASUREMENT.
+H31R2_DONE=/home/tai/ann-task-a/experiments/H31/H31_R2_20261029_104324_359107

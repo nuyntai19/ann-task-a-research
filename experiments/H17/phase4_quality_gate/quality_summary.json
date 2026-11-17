@@ -1,0 +1,64 @@
+{
+  "status": "PASS_TOPOLOGY_AND_NATIVE_SEARCH_EXECUTED",
+  "scope": "SIFT1M, k=10 Q=135, same native ParlayANN checkRecall, 4 pinned CPU threads, 1 search run/graph",
+  "result": {
+    "original_f30": {
+      "path": "/home/tai/ann-task-a/results/pipnn_sift1m_4t.graph",
+      "bytes": 95155312,
+      "n": 1000000,
+      "max_degree": 32,
+      "edges": 22788826,
+      "mean_degree": 22.78883,
+      "reachable_from_0": 1000000,
+      "total_nodes": 1000000,
+      "self_edges_in_reachable": 0,
+      "recall_at_10_q135": 0.99470001,
+      "qps_one_run": 9170.55957031,
+      "avg_cmps": 2547,
+      "avg_visited": 141,
+      "queries": 10000
+    },
+    "A_VQPartialSort": {
+      "path": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/A_rep1.graph",
+      "bytes": 95161404,
+      "n": 1000000,
+      "max_degree": 32,
+      "edges": 22790349,
+      "mean_degree": 22.79035,
+      "reachable_from_0": 1000000,
+      "total_nodes": 1000000,
+      "self_edges_in_reachable": 0,
+      "recall_at_10_q135": 0.99453002,
+      "qps_one_run": 8805.70800781,
+      "avg_cmps": 2549,
+      "avg_visited": 141,
+      "queries": 10000
+    },
+    "B_top2": {
+      "path": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/B_rep1.graph",
+      "bytes": 95205672,
+      "n": 1000000,
+      "max_degree": 32,
+      "edges": 22801416,
+      "mean_degree": 22.80142,
+      "reachable_from_0": 1000000,
+      "total_nodes": 1000000,
+      "self_edges_in_reachable": 0,
+      "recall_at_10_q135": 0.99449003,
+      "qps_one_run": 9057.23242188,
+      "avg_cmps": 2533,
+      "avg_visited": 139,
+      "queries": 10000
+    }
+  },
+  "B_vs_A": {
+    "recall_absolute_delta": -3.999e-05,
+    "recall_percentage_points": -0.003999,
+    "B_full_reachability": true
+  },
+  "cautions": [
+    "Single A/B graph each; PiPNN build nondeterministic",
+    "Single QPS run each; QPS is noisy; do not claim a stable QPS improvement",
+    "Top-2 scan is an established engineering optimization, not novel research"
+  ]
+}

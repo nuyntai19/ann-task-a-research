@@ -1,0 +1,63 @@
+{
+  "selection": {
+    "target_arcs": 23848958,
+    "tolerance": 0.01,
+    "R": {
+      "value": 35,
+      "arcs": 23880035,
+      "edge_delta_pct": 0.13030757989509478,
+      "pilot_tag": "EDGE_R_35"
+    },
+    "alpha": {
+      "value": 1.071875,
+      "arcs": 23823438,
+      "edge_delta_pct": -0.10700677153274718,
+      "pilot_tag": "EDGE_ALPHA_1p071875"
+    },
+    "source": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/runs_20261109-215545",
+    "calibration_pilot_count": 7,
+    "status": "READY"
+  },
+  "schedule": [
+    [
+      1,
+      "B64"
+    ],
+    [
+      1,
+      "EDGE_R"
+    ],
+    [
+      1,
+      "EDGE_ALPHA"
+    ],
+    [
+      2,
+      "EDGE_R"
+    ],
+    [
+      2,
+      "EDGE_ALPHA"
+    ],
+    [
+      2,
+      "B64"
+    ],
+    [
+      3,
+      "EDGE_ALPHA"
+    ],
+    [
+      3,
+      "B64"
+    ],
+    [
+      3,
+      "EDGE_R"
+    ]
+  ],
+  "H17_sha256": "8757b9be9fa3ae1f90febe082001fa60ba22c71ba6b6cdd899e013f6c0bcd500",
+  "run_started_utc": "2026-11-09T15:45:26.929278+00:00",
+  "source_a1": "/home/tai/ann-task-a/experiments/H85/r85_a1_capacity_ablation/runs_20261109-215545",
+  "note": "R and alpha controls each calibrated to B64 edge count in separate single-run pilots"
+}

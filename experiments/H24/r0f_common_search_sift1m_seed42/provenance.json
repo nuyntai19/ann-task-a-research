@@ -1,0 +1,39 @@
+{
+  "baseline_revision": "a032c2d6cfb2c087d3b8abca028c745186501976",
+  "input": {
+    "base_id_alignment": "full_identity_proved",
+    "X_query_equality": "verified_all_values",
+    "sample_manifest_sha256": "92c373bc28633a902dc54dc064981b7c855031dfe6508878805ca676bc2fa46a",
+    "gold_sha256": "f675d8b3df3c4c0541d88881bec589f505c5655cd4159a7b203fe48ce13d8b14"
+  },
+  "piPNN": {
+    "path": "/home/tai/ann-task-a/results/pipnn_sift1m_4t.graph",
+    "bytes": 95155312,
+    "directed_edges": 22788826,
+    "mean_degree": 22.788826,
+    "max_degree": 32,
+    "sha256": "9d1393a66699b54fe57fc14eb269804e5b0a9016ec0676fc0034d152acdd7753"
+  },
+  "sample_dir": "/home/tai/ann-task-a/experiments/H24/datasets/sift_subset_1000000_q1000_seed42_l2",
+  "shared_ef": [
+    60,
+    100,
+    140,
+    200,
+    300,
+    400
+  ],
+  "entry1": [
+    0
+  ],
+  "entry8": [
+    0,
+    12345,
+    234567,
+    345678,
+    456789,
+    567890,
+    678901,
+    789012
+  ]
+}

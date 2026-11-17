@@ -1,0 +1,40 @@
+{
+  "experiment": "H18-C1 native uint8 10M low-RAM audit",
+  "phase": "metadata_only",
+  "date_utc": "2026-10-23T15:22:18Z",
+  "source_revision": "443a328",
+  "source": "/home/tai/ann-task-a/data/bigann_first10m.u8bin",
+  "original_code_untouched": true,
+  "original_graphs_untouched": true,
+  "annotation": "10M BIGANN native uint8 data. All 10M real vectors. No ANN BUILD or graph pruning.",
+  "datasets": {
+    "bigann1m_u8": {
+      "status": "AUDIT_COMPLETE",
+      "n": 1000000,
+      "input": "/home/tai/ann-task-a/data/bigann1m_u8.u8bin",
+      "dtype": "uint8",
+      "result_file": "/home/tai/ann-task-a/experiments/H18/phase1_leaf_overlap/bigann1m_u8_overlap_summary.json",
+      "rho_estimate": 0.285709,
+      "confidence_interval": [
+        0.277408,
+        0.294011
+      ],
+      "leaf_count": 80591,
+      "pair_events": 7588409350
+    },
+    "bigann10m_u8": {
+      "status": "AUDIT_COMPLETE",
+      "n": 10000000,
+      "input": "/home/tai/ann-task-a/data/bigann10m_u8.u8bin",
+      "dtype": "uint8",
+      "result_file": "/home/tai/ann-task-a/experiments/H18/phase1_leaf_overlap/bigann10m_u8_overlap_summary.json",
+      "rho_estimate": 0.186223,
+      "confidence_interval": [
+        0.178921,
+        0.193525
+      ],
+      "leaf_count": 990624,
+      "pair_events": 64285768792
+    }
+  }
+}
