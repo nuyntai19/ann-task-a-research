@@ -1,0 +1,20 @@
+{
+  "title": "R90 isolated A5 source-only prototype",
+  "source": "ParAlg/PiPNN",
+  "upstream_commit": "443a328dc71a3b7be753d52ca2b3c9a4ba77f3fd",
+  "repo": "nuyntai19/ann-task-a-research",
+  "branch": "research/r90-a5-stock-gated-v0",
+  "mode": "source-only-uncompiled",
+  "modified_files": [
+    "algorithms/PipNN/pipnn.h",
+    "algorithms/PipNN/CMakeLists.txt"
+  ],
+  "untouched_files": [
+    "algorithms/PipNN/pipnn_utils.h",
+    "algorithms/PipNN/neighbors.h"
+  ],
+  "source_test": "Anchor-unique patch, native C++ build NOT RUN",
+  "native_build": "NOT_RUN",
+  "real_graph_parity": "NOT_RUN",
+  "search_recall_qps": "NOT_RUN"
+}
