@@ -1,0 +1,1957 @@
+{
+  "beam_csv": "10,20,40,64,68,72,76,80,84,88,92,96,104,112,120,128,132,136,140,144,148,152,156,160",
+  "k": 10,
+  "not_graph_build": true,
+  "nqueries": 10000,
+  "reps_per_graph": 2,
+  "runs": [
+    {
+      "arm": "ctrl",
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/ctrl_build1_search1.stdout",
+      "log_sha": "47737ff3eea8b9a63cfedaaa2ec43c72df89a8b1bafe3a8b6e5a0782bac2dcec",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35046.6484375,
+          "recall": 0.76380002
+        },
+        "104": {
+          "avg_cmps": 2718.0,
+          "avg_visited": 110.0,
+          "qps": 6735.14941406,
+          "recall": 0.99545002
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6348.27099609,
+          "recall": 0.99621999
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5981.34765625,
+          "recall": 0.99694002
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5656.64941406,
+          "recall": 0.99746001
+        },
+        "132": {
+          "avg_cmps": 3180.0,
+          "avg_visited": 134.0,
+          "qps": 5483.11767578,
+          "recall": 0.99772
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5328.47070312,
+          "recall": 0.99791002
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5222.61083984,
+          "recall": 0.99801999
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5065.74072266,
+          "recall": 0.99809998
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4958.81982422,
+          "recall": 0.99827999
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4853.81982422,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4757.24951172,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4656.32617188,
+          "recall": 0.99857998
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23454.19335938,
+          "recall": 0.89055997
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14705.64550781,
+          "recall": 0.96165001
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10228.55761719,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9643.81542969,
+          "recall": 0.98724002
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9232.50976562,
+          "recall": 0.98887002
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8836.53710938,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8446.08886719,
+          "recall": 0.99138999
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8103.87207031,
+          "recall": 0.99230999
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7794.46337891,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7467.94238281,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7183.18554688,
+          "recall": 0.99457997
+        }
+      },
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/fast_build1_search1.stdout",
+      "log_sha": "f34456245b8dee7c3b11efd5a0e0947dfaad54fb35ad6bd3d250454784b13077",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 34905.4765625,
+          "recall": 0.76378
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6764.56347656,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6366.44189453,
+          "recall": 0.99619001
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 6005.45068359,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5659.64892578,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5486.12841797,
+          "recall": 0.99769998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5334.80419922,
+          "recall": 0.99789
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5223.24121094,
+          "recall": 0.99800998
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5075.58056641,
+          "recall": 0.99809003
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4966.15039062,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4858.97753906,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4763.52880859,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4662.74169922,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23407.96679688,
+          "recall": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14669.05859375,
+          "recall": 0.96166998
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10235.45605469,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9653.8046875,
+          "recall": 0.98724997
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9212.87890625,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8817.09082031,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8446.29492188,
+          "recall": 0.99138999
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8098.55664062,
+          "recall": 0.99229002
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7779.79492188,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7482.63867188,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7213.91455078,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/fast_build2_search1.stdout",
+      "log_sha": "f28035c6eaddbf94df263a8724e6545d5a21ba0db941bf19445fd9bc24141bce",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35013.8828125,
+          "recall": 0.76380002
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6764.92529297,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6345.515625,
+          "recall": 0.99619001
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5997.84326172,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5662.51416016,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5483.09033203,
+          "recall": 0.99769998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5342.83349609,
+          "recall": 0.99789
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5182.73828125,
+          "recall": 0.99800998
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5073.83447266,
+          "recall": 0.99809003
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4981.48876953,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4856.37304688,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4694.92138672,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4672.66113281,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23471.47851562,
+          "recall": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14692.55175781,
+          "recall": 0.96166998
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10208.18554688,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9628.08691406,
+          "recall": 0.98724997
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9241.3671875,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8826.87304688,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8439.65820312,
+          "recall": 0.9914
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8096.52978516,
+          "recall": 0.99229002
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7775.50537109,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7474.59570312,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7213.03466797,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 1
+    },
+    {
+      "arm": "ctrl",
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/ctrl_build2_search1.stdout",
+      "log_sha": "d39eca2d8798fc63e221cc168e13033a263c212b137606337404bf11fa082b74",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35015.4765625,
+          "recall": 0.76384997
+        },
+        "104": {
+          "avg_cmps": 2718.0,
+          "avg_visited": 110.0,
+          "qps": 6759.33740234,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6354.95605469,
+          "recall": 0.99618
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5982.53222656,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5661.98193359,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5479.0078125,
+          "recall": 0.99765998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5333.17724609,
+          "recall": 0.99787998
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5212.03320312,
+          "recall": 0.99800003
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5076.82763672,
+          "recall": 0.99811
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4968.94384766,
+          "recall": 0.99827999
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4854.29589844,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4753.28076172,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4659.97509766,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23455.45703125,
+          "recall": 0.89052999
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14665.93945312,
+          "recall": 0.96168
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10224.50976562,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9640.13378906,
+          "recall": 0.98724997
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9203.83984375,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8811.75976562,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8432.62695312,
+          "recall": 0.99141997
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8092.01611328,
+          "recall": 0.99229997
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7781.74414062,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7458.49560547,
+          "recall": 0.99387002
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7189.86376953,
+          "recall": 0.9946
+        }
+      },
+      "search_rep": 1
+    },
+    {
+      "arm": "ctrl",
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/ctrl_build3_search1.stdout",
+      "log_sha": "b402aa94af04ec314f79f772258f76925e6d476e75cd95cdcec36b8ecca05cdf",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 34959.2890625,
+          "recall": 0.76384002
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6742.97900391,
+          "recall": 0.99544001
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6344.19921875,
+          "recall": 0.99620003
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5978.3515625,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5658.59228516,
+          "recall": 0.99746001
+        },
+        "132": {
+          "avg_cmps": 3180.0,
+          "avg_visited": 134.0,
+          "qps": 5471.2109375,
+          "recall": 0.99769002
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5334.07568359,
+          "recall": 0.99790001
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5210.92773438,
+          "recall": 0.99801999
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5072.37011719,
+          "recall": 0.99812001
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4972.08154297,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4866.72949219,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4763.23144531,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4654.92382812,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23486.9140625,
+          "recall": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14710.72753906,
+          "recall": 0.96173
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10239.17675781,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9592.51855469,
+          "recall": 0.98724002
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9156.6875,
+          "recall": 0.98887002
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8755.52539062,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8386.02636719,
+          "recall": 0.99141997
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8021.54296875,
+          "recall": 0.99229997
+        },
+        "88": {
+          "avg_cmps": 2461.0,
+          "avg_visited": 95.0,
+          "qps": 7726.91210938,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7411.71679688,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7155.86035156,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/fast_build3_search1.stdout",
+      "log_sha": "7d7c186a221c308776573c527c558b826f10d125e9cf002aa9acebcea46d0f1d",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35050.2109375,
+          "recall": 0.76378
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6751.67480469,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6356.0546875,
+          "recall": 0.99619001
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5994.38085938,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5673.04785156,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5474.77197266,
+          "recall": 0.99769998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5332.66210938,
+          "recall": 0.99790001
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5217.60839844,
+          "recall": 0.99800998
+        },
+        "144": {
+          "avg_cmps": 3402.0,
+          "avg_visited": 144.0,
+          "qps": 5074.62988281,
+          "recall": 0.99809003
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4926.68798828,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4817.21582031,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4724.43994141,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4633.12597656,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23521.0,
+          "recall": 0.89056998
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14717.87304688,
+          "recall": 0.96166003
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10237.27929688,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9649.36132812,
+          "recall": 0.98724002
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9214.11035156,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8822.51953125,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8448.10058594,
+          "recall": 0.99138999
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8115.44042969,
+          "recall": 0.99229002
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7770.78027344,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7478.60400391,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7214.26806641,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/fast_build1_search2.stdout",
+      "log_sha": "57349d6c9ddfe760a759e6eb71988fc64e7b86c1f3ebdecd39dc7889f864f04e",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35062.7421875,
+          "recall": 0.76378
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6731.19189453,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6332.66894531,
+          "recall": 0.99619001
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5992.94042969,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5649.69873047,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5479.64111328,
+          "recall": 0.99769998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5299.63037109,
+          "recall": 0.99789
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5171.97070312,
+          "recall": 0.99800998
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5036.99902344,
+          "recall": 0.99809003
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4919.69091797,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4812.79931641,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4744.7265625,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4655.01660156,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23164.07421875,
+          "recall": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14515.00976562,
+          "recall": 0.96166998
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10206.1328125,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9616.66992188,
+          "recall": 0.98724997
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9199.78417969,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8801.44628906,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8421.57714844,
+          "recall": 0.99138999
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8071.08349609,
+          "recall": 0.99229002
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7768.96337891,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7448.74560547,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7202.06884766,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 2
+    },
+    {
+      "arm": "ctrl",
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/ctrl_build1_search2.stdout",
+      "log_sha": "0b637609340a32e4973123f1f161a18ea8eda28d31d821ea52078ca9fc22570d",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35005.1796875,
+          "recall": 0.76380002
+        },
+        "104": {
+          "avg_cmps": 2718.0,
+          "avg_visited": 110.0,
+          "qps": 6752.57324219,
+          "recall": 0.99545002
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6357.17822266,
+          "recall": 0.99621999
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5996.30761719,
+          "recall": 0.99694002
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5673.47900391,
+          "recall": 0.99746001
+        },
+        "132": {
+          "avg_cmps": 3180.0,
+          "avg_visited": 134.0,
+          "qps": 5489.39941406,
+          "recall": 0.99772
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5342.52539062,
+          "recall": 0.99791002
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5219.19287109,
+          "recall": 0.99801999
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5077.38964844,
+          "recall": 0.99809998
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4963.94189453,
+          "recall": 0.99827999
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4861.1484375,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4767.29833984,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4668.74755859,
+          "recall": 0.99857998
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23521.7734375,
+          "recall": 0.89055997
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14678.44628906,
+          "recall": 0.96165001
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10192.58886719,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9625.96386719,
+          "recall": 0.98724002
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9184.65917969,
+          "recall": 0.98887002
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8771.04492188,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8440.20703125,
+          "recall": 0.99138999
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8075.53564453,
+          "recall": 0.99230999
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7751.31298828,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7483.36083984,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7211.38037109,
+          "recall": 0.99457997
+        }
+      },
+      "search_rep": 2
+    },
+    {
+      "arm": "ctrl",
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/ctrl_build2_search2.stdout",
+      "log_sha": "06f5a4fee317eda3fe84fbec06adadeccf97ce777e0622927f37f9041e700e54",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 34994.15625,
+          "recall": 0.76384997
+        },
+        "104": {
+          "avg_cmps": 2718.0,
+          "avg_visited": 110.0,
+          "qps": 6730.45800781,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6330.23193359,
+          "recall": 0.99618
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5973.78369141,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5659.65576172,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5469.77099609,
+          "recall": 0.99765998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5337.01367188,
+          "recall": 0.99787998
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5212.71533203,
+          "recall": 0.99800003
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5071.3125,
+          "recall": 0.99811
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4958.25927734,
+          "recall": 0.99827999
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4840.96191406,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4752.69140625,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4658.43652344,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23094.20898438,
+          "recall": 0.89052999
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14672.8046875,
+          "recall": 0.96168
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10144.97167969,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9576.6640625,
+          "recall": 0.98724997
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9176.53417969,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8771.15332031,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8396.9609375,
+          "recall": 0.99141997
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8042.61914062,
+          "recall": 0.99229997
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7759.60742188,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7455.23681641,
+          "recall": 0.99387002
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7170.28369141,
+          "recall": 0.9946
+        }
+      },
+      "search_rep": 2
+    },
+    {
+      "arm": "fast",
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/fast_build2_search2.stdout",
+      "log_sha": "9f4fcca77a4beef618518e93740cef76f56ccf002431d32bef78534d5441e703",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 34915.34765625,
+          "recall": 0.76380002
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6734.93164062,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6339.48583984,
+          "recall": 0.99619001
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5964.84326172,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5660.35058594,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5472.05175781,
+          "recall": 0.99769998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5327.19091797,
+          "recall": 0.99789
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5211.68847656,
+          "recall": 0.99800998
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5066.04101562,
+          "recall": 0.99809003
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4955.22216797,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4856.98339844,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4766.41210938,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4664.30078125,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23495.74414062,
+          "recall": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14659.76953125,
+          "recall": 0.96166998
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10170.921875,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9636.05664062,
+          "recall": 0.98724997
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9198.28613281,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8832.38476562,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8455.40136719,
+          "recall": 0.9914
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8089.67919922,
+          "recall": 0.99229002
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7782.19238281,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7463.37158203,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7198.29931641,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 2
+    },
+    {
+      "arm": "fast",
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/fast_build3_search2.stdout",
+      "log_sha": "3bc587129b31f6da98f0fb59f175634fe1b36730688a7c5715fae38b8297b651",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 35278.34765625,
+          "recall": 0.76378
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6749.94775391,
+          "recall": 0.99545997
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6343.88574219,
+          "recall": 0.99619001
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5978.83007812,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5668.63525391,
+          "recall": 0.99743998
+        },
+        "132": {
+          "avg_cmps": 3179.0,
+          "avg_visited": 134.0,
+          "qps": 5481.26611328,
+          "recall": 0.99769998
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5314.86914062,
+          "recall": 0.99790001
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5219.12207031,
+          "recall": 0.99800998
+        },
+        "144": {
+          "avg_cmps": 3402.0,
+          "avg_visited": 144.0,
+          "qps": 5071.14306641,
+          "recall": 0.99809003
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4964.22021484,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4851.07910156,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4759.72460938,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4660.50097656,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23423.921875,
+          "recall": 0.89056998
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14660.82226562,
+          "recall": 0.96166003
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10199.0859375,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9606.02832031,
+          "recall": 0.98724002
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9194.56542969,
+          "recall": 0.98887998
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8772.28417969,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8411.3203125,
+          "recall": 0.99138999
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8045.05224609,
+          "recall": 0.99229002
+        },
+        "88": {
+          "avg_cmps": 2460.0,
+          "avg_visited": 95.0,
+          "qps": 7751.51708984,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7490.65917969,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7200.17578125,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 2
+    },
+    {
+      "arm": "ctrl",
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_d7_sift1m_matched_recall_6graph_v1/logs/ctrl_build3_search2.stdout",
+      "log_sha": "b1d29a17c33cdb29b5b8abea6216281891ff210a27e47561138c06c4dca7c012",
+      "max_anchor_recall_delta": 0.0,
+      "metrics": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 34976.1640625,
+          "recall": 0.76384002
+        },
+        "104": {
+          "avg_cmps": 2719.0,
+          "avg_visited": 110.0,
+          "qps": 6745.40820312,
+          "recall": 0.99544001
+        },
+        "112": {
+          "avg_cmps": 2878.0,
+          "avg_visited": 116.0,
+          "qps": 6346.42578125,
+          "recall": 0.99620003
+        },
+        "120": {
+          "avg_cmps": 3039.0,
+          "avg_visited": 123.0,
+          "qps": 5990.98730469,
+          "recall": 0.99694997
+        },
+        "128": {
+          "avg_cmps": 3194.0,
+          "avg_visited": 130.0,
+          "qps": 5663.18408203,
+          "recall": 0.99746001
+        },
+        "132": {
+          "avg_cmps": 3180.0,
+          "avg_visited": 134.0,
+          "qps": 5478.63867188,
+          "recall": 0.99769002
+        },
+        "136": {
+          "avg_cmps": 3256.0,
+          "avg_visited": 137.0,
+          "qps": 5326.66015625,
+          "recall": 0.99790001
+        },
+        "140": {
+          "avg_cmps": 3322.0,
+          "avg_visited": 140.0,
+          "qps": 5222.25683594,
+          "recall": 0.99801999
+        },
+        "144": {
+          "avg_cmps": 3403.0,
+          "avg_visited": 144.0,
+          "qps": 5065.8203125,
+          "recall": 0.99812001
+        },
+        "148": {
+          "avg_cmps": 3468.0,
+          "avg_visited": 147.0,
+          "qps": 4963.00097656,
+          "recall": 0.99829
+        },
+        "152": {
+          "avg_cmps": 3537.0,
+          "avg_visited": 150.0,
+          "qps": 4855.0546875,
+          "recall": 0.99838001
+        },
+        "156": {
+          "avg_cmps": 3600.0,
+          "avg_visited": 153.0,
+          "qps": 4757.27197266,
+          "recall": 0.99845999
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4657.32763672,
+          "recall": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 23427.76367188,
+          "recall": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 14657.23339844,
+          "recall": 0.96173
+        },
+        "64": {
+          "avg_cmps": 1967.0,
+          "avg_visited": 72.0,
+          "qps": 10187.33496094,
+          "recall": 0.98501003
+        },
+        "68": {
+          "avg_cmps": 1995.0,
+          "avg_visited": 76.0,
+          "qps": 9625.9453125,
+          "recall": 0.98724002
+        },
+        "72": {
+          "avg_cmps": 2092.0,
+          "avg_visited": 80.0,
+          "qps": 9224.20800781,
+          "recall": 0.98887002
+        },
+        "76": {
+          "avg_cmps": 2182.0,
+          "avg_visited": 83.0,
+          "qps": 8762.66796875,
+          "recall": 0.99014002
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 8428.19921875,
+          "recall": 0.99141997
+        },
+        "84": {
+          "avg_cmps": 2368.0,
+          "avg_visited": 91.0,
+          "qps": 8069.54638672,
+          "recall": 0.99229997
+        },
+        "88": {
+          "avg_cmps": 2461.0,
+          "avg_visited": 95.0,
+          "qps": 7774.77392578,
+          "recall": 0.99315
+        },
+        "92": {
+          "avg_cmps": 2470.0,
+          "avg_visited": 99.0,
+          "qps": 7463.28808594,
+          "recall": 0.99388999
+        },
+        "96": {
+          "avg_cmps": 2556.0,
+          "avg_visited": 103.0,
+          "qps": 7202.77441406,
+          "recall": 0.99458998
+        }
+      },
+      "search_rep": 2
+    }
+  ],
+  "script_sha": "caf1cc15862ed990accf0b2921802ad5ea39489185119e07332a95c702ca8612",
+  "search": {
+    "OMP_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "1",
+    "cpu": "0"
+  },
+  "source": {
+    "beams": [
+      10,
+      20,
+      40,
+      64,
+      68,
+      72,
+      76,
+      80,
+      84,
+      88,
+      92,
+      96,
+      104,
+      112,
+      120,
+      128,
+      132,
+      136,
+      140,
+      144,
+      148,
+      152,
+      156,
+      160
+    ],
+    "d6_manifest_sha": "d7886d4f562b2039ee2d35049838117592ed5b86f016ae086087c40540a224f5",
+    "d6_script_sha": "c8fbb9e2dc531cdb6cffb755ab98db558df8b5633c03a38dda0f2c1da4af1c8b",
+    "d6_work_summary_sha": "6cb5ba174c5c8c3b2bc7634532b9003de387d6c93cf78307ec15345b71977743",
+    "dynamic_evaluator_cpp_sha": "1b87d0b6d102463d7f26b69eb19e2207a9e6684029225dc0c9638b46df74fc4f",
+    "dynamic_evaluator_elf_sha": "93bf07d585def40d3cd1723476964a5d6ddfa85b99081f42a43a05b61063dc73",
+    "dynamic_evaluator_manifest_sha": "34449862a260234168451fef4ceb9a9e9bf90319e3f9f144f0ab58a62edf3e3d",
+    "graph_sha": {
+      "ctrl_r1": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "ctrl_r2": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "ctrl_r3": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "fast_r1": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "fast_r2": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "fast_r3": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd"
+    },
+    "p312_manifest_sha": "6d601697e7c7842a26056a90862d19433efcb2c16f8888491b7d21b9919f3fd7",
+    "p312_script_sha": "6ed9c4d4c869feff6de4c38fe02f3df59b3e63c770aae7f24c10e94341e31671",
+    "p312_sources": {
+      "beams": [
+        10,
+        20,
+        40,
+        80,
+        160
+      ],
+      "data_sha": {
+        "base": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+        "evaluator": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+        "gt": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13",
+        "query": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+      },
+      "graph_sha": {
+        "ctrl_r1": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+        "ctrl_r2": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+        "ctrl_r3": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+        "fast_r1": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+        "fast_r2": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+        "fast_r3": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd"
+      },
+      "k": 10,
+      "nqueries": 10000,
+      "p311_build_audit": "9c8547c73f43e0e9473f5362f7edcf9d96062628d31cbac0126de66cb3d4ac1f",
+      "p311_manifest": "36a906b5dc30200308c00bf220864e76ca47f42aa8f43fbc3cd3c0ffd8610cca",
+      "p311_script": "09a2399ffdb525905cb36e2c2ac8fbeabf13779e58ba844222e00ad0d9871af4",
+      "search_repeats": [
+        1,
+        2
+      ]
+    },
+    "p312_summary_sha": "9ec1e6906b25e0f6850e0cd0f505b804243948c0d62b6e39b954ab3318b2ef44",
+    "targets": [
+      0.99,
+      0.998
+    ]
+  },
+  "status": "COMPLETE_NATIVE_12_SEARCH_RUNS_24_BEAMS"
+}
