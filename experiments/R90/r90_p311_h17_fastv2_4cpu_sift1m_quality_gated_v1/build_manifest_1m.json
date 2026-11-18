@@ -1,0 +1,181 @@
+{
+  "affinity": "0,2,4,6",
+  "n": 1000000,
+  "no_cross_arm_graph_sha_parity_gate": true,
+  "prior_evidence": {
+    "MemAvailable_KiB_preflight": 28016388,
+    "diff_sha": "2756f4f059d73800e76c44ed7e3a84d1b4eaa8a69ec26fe7d0027edd91c77fe2",
+    "free_disk_bytes_preflight": 61854003200,
+    "p39_sha": "f42ea9732560e646481f51f9f3458da1f7d2bd1dd3c7e5b2965cee363903e7d6",
+    "screen_status": "QUALITY_RECALL_SCREEN_NO_LARGE_DROP_300Q",
+    "search_beams": [
+      10,
+      20,
+      40,
+      80,
+      160
+    ],
+    "search_manifest_sha": "d9fbe241069fb7d79bc324ba650b6ac179ef6644357215f9285be57311e21ebd",
+    "search_queries": 300,
+    "search_reps": 2,
+    "search_screen_sha": "69bfc83ca522a35d6719ec91fcfb279826830ae9639a13eca2cef424b718899e",
+    "search_script_sha": "3cf86b23bc8aa1eb89df9ec40be45ebf796844c47100a3c8716a7e9e9e6ca5d4",
+    "source": {
+      "ELF": {
+        "ctrl": "92c22ad5d9d9022860725329ff097784e7c8a649460d03dd343cdb6adb90363e",
+        "fast": "ab4a0c678b3a71b2896d6f4d4339131705a1758b0c5398ed8ac32dd656cd7e91"
+      },
+      "H17_utils_sha": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520",
+      "OMP_NUM_THREADS": 4,
+      "P38_prior_manifest_sha": "38971191f98b4c41398c13ebfe7d17e67a342511de3a60af4cd1e4298478ddb0",
+      "PARLAY_NUM_THREADS": 4,
+      "affinity": "0,2,4,6",
+      "base_sha": {
+        "100000": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+        "1000000": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+      },
+      "scripts": {
+        "P38": "6d4c8728fc7a4df449c2ffb68b6471c516270fd91b11fb7e18240c3e7a911515",
+        "P39": "f42ea9732560e646481f51f9f3458da1f7d2bd1dd3c7e5b2965cee363903e7d6"
+      },
+      "topology_cores": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "within_4cpu_100k_gains": [
+      10.866712724942357,
+      10.80438630446716,
+      9.201699157620808
+    ],
+    "within_arm_audit_sha": "83a4d782f9430cb81678a55389683d2b79cb8043b9163fd08a87d44b1b75f1bf"
+  },
+  "quality_state": "SIFT100K_300Q_SCREEN_PASS__SIFT1M_QUALITY_NOT_TESTED",
+  "runs": [
+    {
+      "arcs": 26040665,
+      "arm": "ctrl",
+      "cpu_percent": 396.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/graphs/1000000_ctrl_r1.graph",
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "involuntary_context_switches": 1486,
+      "n": 1000000,
+      "peak_rss_kib": 2788356,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_ctrl_r1.stdout",
+      "stdout_sha": "7a06a53ba88958696e80bbfd7f59aa79fc163799de745616e2fc9fc7f819f880",
+      "system_s": 1.17,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_ctrl_r1.time",
+      "timefile_sha": "d5dedb26351a475b3fa4974806ee55ed82867d739755c6a6995539eef60d98bd",
+      "user_s": 139.69,
+      "wall_s": 35.58404725799846
+    },
+    {
+      "arcs": 26040692,
+      "arm": "fast",
+      "cpu_percent": 396.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/graphs/1000000_fast_r1.graph",
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "involuntary_context_switches": 1298,
+      "n": 1000000,
+      "peak_rss_kib": 2797168,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_fast_r1.stdout",
+      "stdout_sha": "ab216736d98e44312a67ada7e20accc0baea3807c27b23a500a12b26a64530bc",
+      "system_s": 0.75,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_fast_r1.time",
+      "timefile_sha": "ae004d942b84f012c5d15a4e69d678ecede85e83e1b4fa605203e2a261e56a55",
+      "user_s": 128.84,
+      "wall_s": 32.72050414399928
+    },
+    {
+      "arcs": 26040695,
+      "arm": "fast",
+      "cpu_percent": 396.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/graphs/1000000_fast_r2.graph",
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "involuntary_context_switches": 1271,
+      "n": 1000000,
+      "peak_rss_kib": 2810392,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_fast_r2.stdout",
+      "stdout_sha": "7724e8658811d52a13efbd51c40773513ee4c05dfb3166c6ccf00afd232dba45",
+      "system_s": 0.74,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_fast_r2.time",
+      "timefile_sha": "6d552d27ac1b8622dbab41e21fbae874887992351c2021bbe9f7bba5b663a3aa",
+      "user_s": 128.93,
+      "wall_s": 32.74135526399914
+    },
+    {
+      "arcs": 26040671,
+      "arm": "ctrl",
+      "cpu_percent": 396.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/graphs/1000000_ctrl_r2.graph",
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "involuntary_context_switches": 1356,
+      "n": 1000000,
+      "peak_rss_kib": 2792416,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_ctrl_r2.stdout",
+      "stdout_sha": "2eed5ac2d3a80aad3e6ded5e8effe6b51c43ecd49f5c67a8d2147dfa3e96258b",
+      "system_s": 0.75,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_ctrl_r2.time",
+      "timefile_sha": "790cfca9139830bb181b68f8ad81e836baa12ca994a4ad8785485a1c97d84e28",
+      "user_s": 139.61,
+      "wall_s": 35.43561300000147
+    },
+    {
+      "arcs": 26040695,
+      "arm": "ctrl",
+      "cpu_percent": 397.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/graphs/1000000_ctrl_r3.graph",
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "involuntary_context_switches": 1311,
+      "n": 1000000,
+      "peak_rss_kib": 2804684,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_ctrl_r3.stdout",
+      "stdout_sha": "3a8f9a2b13a4cd66d7b67b3d6b627240e5a68ea060ec3b17e5fff1216bebe3c2",
+      "system_s": 0.76,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_ctrl_r3.time",
+      "timefile_sha": "a6dd3a12d8f2976dd535dacf0f493a48e940dfcfb776cc561690b1199b91dbdf",
+      "user_s": 139.36,
+      "wall_s": 35.29087932599941
+    },
+    {
+      "arcs": 26040664,
+      "arm": "fast",
+      "cpu_percent": 396.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/graphs/1000000_fast_r3.graph",
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "involuntary_context_switches": 1205,
+      "n": 1000000,
+      "peak_rss_kib": 2789440,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_fast_r3.stdout",
+      "stdout_sha": "88223ebd8fc29e9013c623abe638bd3b0f5dd5eb9e003985e71b846ce5fc3e07",
+      "system_s": 0.73,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p311_h17_fastv2_4cpu_sift1m_quality_gated_v1/logs/1000000_fast_r3.time",
+      "timefile_sha": "a7d86297672ab2c2985134a90ab15607e9d42cee5c2d3a74945174f1de5f53a8",
+      "user_s": 128.84,
+      "wall_s": 32.69940424000015
+    }
+  ],
+  "script_sha": "09a2399ffdb525905cb36e2c2ac8fbeabf13779e58ba844222e00ad0d9871af4",
+  "status": "SIX_1M_BUILDS_COMPLETE_QUALITY_PENDING",
+  "threads": 4
+}

@@ -1,0 +1,59 @@
+{
+  "ctrl_peak_rss_mean_KiB": 2795152,
+  "ctrl_wall_mean_s": 35.43684652799978,
+  "fast_gain_mean_paired_pct": 7.664567186775414,
+  "fast_gains_each_pair_pct": [
+    8.047266499050432,
+    7.603248562405895,
+    7.343186498869914
+  ],
+  "fast_peak_rss_mean_KiB": 2799000,
+  "fast_wall_mean_s": 32.72042121599952,
+  "graph_parity_expected": false,
+  "limitations": [
+    "Different graph SHA across 4CPU builds is a measured variable, NOT ignored",
+    "This audit is BUILD timing+RSS+graph multiset only, NOT native Search",
+    "Previously passed SIFT100K 300-query screen is exploratory only"
+  ],
+  "pairs_graph_diff": [
+    {
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "ctrl_graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "different_vertices": 12116,
+      "fast_graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "gained_arcs": 12731,
+      "lost_arcs": 12704,
+      "order_only_vertices": 0,
+      "rep": 1
+    },
+    {
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "ctrl_graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "different_vertices": 9982,
+      "fast_graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "gained_arcs": 10629,
+      "lost_arcs": 10605,
+      "order_only_vertices": 0,
+      "rep": 2
+    },
+    {
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "ctrl_graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "different_vertices": 15551,
+      "fast_graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "gained_arcs": 16343,
+      "lost_arcs": 16374,
+      "order_only_vertices": 0,
+      "rep": 3
+    }
+  ],
+  "prior_300Q_100K_search_screen": "NO_LARGE_DROP__NOT_FORMAL_NONINFERIORITY",
+  "requirements_for_quality_claim": [
+    "Use pinned SIFT1M 10k heldout queries and exact GT",
+    "Run native Search on all six graphs with identical beam list",
+    "Compare Recall@10 and QPS at fixed and matched Recall across graph builds",
+    "No conclusion that Fast 4CPU changes no edges or Recall at 10M"
+  ],
+  "source_manifest_sha": "36a906b5dc30200308c00bf220864e76ca47f42aa8f43fbc3cd3c0ffd8610cca",
+  "status": "PASS_NATIVE_4CPU_1M_BUILD_EVIDENCE__SEARCH_QUALITY_UNTESTED"
+}

@@ -1,0 +1,128 @@
+{
+  "arc_instances_added_ctrl_to_fast": 133,
+  "arc_instances_removed_ctrl_to_fast": 131,
+  "arcs_ctrl": 1827173,
+  "arcs_fast": 1827175,
+  "classification": "EDGE_MULTISET_DIFFERENCE",
+  "degree_changed_vertices": 56,
+  "different_neighbor_multiset_vertices": 104,
+  "duplicate_neighbor_rows_ctrl": 0,
+  "duplicate_neighbor_rows_fast": 0,
+  "evidence_sha": {
+    "ctrl": {
+      "graph_sha": "292e757f22f3307b9746693c20081d82367f99d18db93324d0d865666ca32c59",
+      "stdout_sha": "fa1766649cef12fd6745e4f1cbb6cbe86764a092dd155282abe02c8382973281",
+      "timefile_sha": "0df6791916c73a8c974df7d9228cadd61fa0a291a13e0fdb3539d65853bd2bb2"
+    },
+    "fast": {
+      "graph_sha": "f383b05bcc4bc097ef18315f468b104b1e45395736fe3140d79708d1af445c1c",
+      "stdout_sha": "d5c8470c3e75dbd2ccbb6f53ebca0266efa908d8de4cc6479ec4c8fbe691ad17",
+      "timefile_sha": "c9bf76830ec3aa37143495f82c5703d1cd453c89cfd9f077c2b8abaffc222053"
+    }
+  },
+  "interpretation": "Only adjacency comparison; does not measure Recall, QPS or explain concurrency causality.",
+  "max_degree": 64,
+  "n": 100000,
+  "normalized_sorted_rows_equal": false,
+  "normalized_sorted_rows_sha_ctrl": "dbb451856928b5fccead2eed4b321f278a4bceb716a7c4dcf6110e85520a0b14",
+  "normalized_sorted_rows_sha_fast": "22357d2aa187cdb0e1fb2cb80f52be0583fa007ae122bbfb31e9d0fc56336332",
+  "order_only_vertices": 0,
+  "same_multiset_vertices": 99896,
+  "same_sequence_vertices": 99896,
+  "sample_different_vertices": [
+    {
+      "ctrl_degree": 14,
+      "ctrl_lost_neighbor_ids": [],
+      "fast_degree": 15,
+      "fast_gained_neighbor_ids": [
+        20236
+      ],
+      "vertex": 1630
+    },
+    {
+      "ctrl_degree": 33,
+      "ctrl_lost_neighbor_ids": [
+        903
+      ],
+      "fast_degree": 34,
+      "fast_gained_neighbor_ids": [
+        872,
+        16478
+      ],
+      "vertex": 1791
+    },
+    {
+      "ctrl_degree": 17,
+      "ctrl_lost_neighbor_ids": [
+        74207
+      ],
+      "fast_degree": 17,
+      "fast_gained_neighbor_ids": [
+        73835
+      ],
+      "vertex": 2784
+    },
+    {
+      "ctrl_degree": 23,
+      "ctrl_lost_neighbor_ids": [],
+      "fast_degree": 24,
+      "fast_gained_neighbor_ids": [
+        90772
+      ],
+      "vertex": 3717
+    },
+    {
+      "ctrl_degree": 15,
+      "ctrl_lost_neighbor_ids": [
+        9560,
+        20779,
+        54353,
+        61043
+      ],
+      "fast_degree": 14,
+      "fast_gained_neighbor_ids": [
+        14423,
+        79430,
+        98956
+      ],
+      "vertex": 4662
+    },
+    {
+      "ctrl_degree": 32,
+      "ctrl_lost_neighbor_ids": [
+        2495,
+        99524
+      ],
+      "fast_degree": 31,
+      "fast_gained_neighbor_ids": [
+        1930
+      ],
+      "vertex": 7631
+    },
+    {
+      "ctrl_degree": 9,
+      "ctrl_lost_neighbor_ids": [
+        87389
+      ],
+      "fast_degree": 9,
+      "fast_gained_neighbor_ids": [
+        88513
+      ],
+      "vertex": 8003
+    },
+    {
+      "ctrl_degree": 12,
+      "ctrl_lost_neighbor_ids": [
+        54342
+      ],
+      "fast_degree": 12,
+      "fast_gained_neighbor_ids": [
+        28732
+      ],
+      "vertex": 9958
+    }
+  ],
+  "source_root": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1",
+  "unique_edge_set_added": 133,
+  "unique_edge_set_removed": 131
+}

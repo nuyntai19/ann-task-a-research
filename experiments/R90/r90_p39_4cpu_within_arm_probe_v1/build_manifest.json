@@ -1,0 +1,115 @@
+{
+  "notes": "Two additional 4CPU runs per arm, 100K, same binaries and flags. Parity is OBSERVED not enforced.",
+  "old_graph_diff_report_sha": "3be5a4cfa09db927049bd14341e48cd7a97fddc0cb1840453f07996ce5b4fda7",
+  "original_p39_sha": "f42ea9732560e646481f51f9f3458da1f7d2bd1dd3c7e5b2965cee363903e7d6",
+  "original_progress_sha": "f8238e9ce2448869c06884f1c130b2d0e66dc3d8d6a6e66cd4d0404100f2b454",
+  "phase": "COMPLETE_4_BUILDS_PENDING_SEMANTIC_AUDIT",
+  "runs": [
+    {
+      "arm": "fast",
+      "cpu_percent": 389.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/graphs/100000_fast_r2.graph",
+      "graph_sha": "f2a9141c38fc19371bf5a4ba3404931f4da79b6d4a843c3874bc10938e7aab38",
+      "involuntary_context_switches": 123,
+      "n": 100000,
+      "peak_rss_kib": 414796,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_fast_r2.stdout",
+      "stdout_sha": "85c375cfbcb4d40cafd5f97e839ee0fb499ebf42d93e8ca20bd6ca7df6e654a9",
+      "system_s": 0.1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_fast_r2.time",
+      "timefile_sha": "7d15adc1e2154079869fa0c7dced4934f7f63445f4640291eb0e2a51b41bcff3",
+      "user_s": 9.4,
+      "wall_s": 2.4714091410023684
+    },
+    {
+      "arm": "ctrl",
+      "cpu_percent": 390.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/graphs/100000_ctrl_r2.graph",
+      "graph_sha": "6fe3c1f8c119972c36a426cc878d0a6b9c61d04a97e75284569452be68fc16de",
+      "involuntary_context_switches": 114,
+      "n": 100000,
+      "peak_rss_kib": 414964,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_ctrl_r2.stdout",
+      "stdout_sha": "139f2f63263a4737cf4d4ec41b424e3850ef9bd16877c66825972937f0ff704e",
+      "system_s": 0.13,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_ctrl_r2.time",
+      "timefile_sha": "9c0492ce96e0946fbabe7865d367632f194137d40a1e4cfb135fb89e76b65074",
+      "user_s": 10.52,
+      "wall_s": 2.770774299999175
+    },
+    {
+      "arm": "ctrl",
+      "cpu_percent": 391.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/graphs/100000_ctrl_r3.graph",
+      "graph_sha": "7bf3164ee98d9cb1c4600a3e27b5dc06a6b9747e62a7ac6e37e655f49075f700",
+      "involuntary_context_switches": 111,
+      "n": 100000,
+      "peak_rss_kib": 413760,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_ctrl_r3.stdout",
+      "stdout_sha": "73111dbaecf0389854d87bb70ed72e90338767e6027f94a87de983aefaa07b80",
+      "system_s": 0.11,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_ctrl_r3.time",
+      "timefile_sha": "e0f81b9934b094dac45e7c87a23f24b0d2ee04ba80757f0b2aae0c30f74ca75b",
+      "user_s": 10.5,
+      "wall_s": 2.7208375400005025
+    },
+    {
+      "arm": "fast",
+      "cpu_percent": 390.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/graphs/100000_fast_r3.graph",
+      "graph_sha": "0e60496773566fc18103598f0b90210b8695e32418b062a78e46950b71745776",
+      "involuntary_context_switches": 110,
+      "n": 100000,
+      "peak_rss_kib": 415176,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_fast_r3.stdout",
+      "stdout_sha": "b60a533a9b9e7f715a7f680c6e4df435c165ca1756c237911d2d62b2fbe9856f",
+      "system_s": 0.11,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/logs/100000_fast_r3.time",
+      "timefile_sha": "cba6cdc52c8630722f5dcb02bf27f71558186bee38d5bfc855b67c9a4fd6638c",
+      "user_s": 9.36,
+      "wall_s": 2.4704742550020455
+    }
+  ],
+  "script_sha": "d3e352bef37cd8a5c1dcfe16a8d6cf4c8aaecf3903b072ee5c7d2805ab7bbd60",
+  "semantic_diff_sha": "2756f4f059d73800e76c44ed7e3a84d1b4eaa8a69ec26fe7d0027edd91c77fe2",
+  "source": {
+    "ELF": {
+      "ctrl": "92c22ad5d9d9022860725329ff097784e7c8a649460d03dd343cdb6adb90363e",
+      "fast": "ab4a0c678b3a71b2896d6f4d4339131705a1758b0c5398ed8ac32dd656cd7e91"
+    },
+    "H17_utils_sha": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520",
+    "OMP_NUM_THREADS": 4,
+    "P38_prior_manifest_sha": "38971191f98b4c41398c13ebfe7d17e67a342511de3a60af4cd1e4298478ddb0",
+    "PARLAY_NUM_THREADS": 4,
+    "affinity": "0,2,4,6",
+    "base_sha": {
+      "100000": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12"
+    },
+    "scripts": {
+      "P38": "6d4c8728fc7a4df449c2ffb68b6471c516270fd91b11fb7e18240c3e7a911515",
+      "P39": "f42ea9732560e646481f51f9f3458da1f7d2bd1dd3c7e5b2965cee363903e7d6"
+    },
+    "topology_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  }
+}

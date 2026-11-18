@@ -1,0 +1,224 @@
+{
+  "arm_source": {
+    "ctrl": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "algorithms/PipNN/pipnn_utils.h": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520"
+    },
+    "fast": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "algorithms/PipNN/pipnn_utils.h": "4d40034dec22113e0ddb95d4770d6cafa5ae3ac6b63e188462a6f87247ebda82"
+    }
+  },
+  "elf_sha": {
+    "ctrl": "92c22ad5d9d9022860725329ff097784e7c8a649460d03dd343cdb6adb90363e",
+    "fast": "ab4a0c678b3a71b2896d6f4d4339131705a1758b0c5398ed8ac32dd656cd7e91"
+  },
+  "prefix_sha": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+  "runs": [
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/10000_ctrl_r1.graph",
+      "graph_bytes": 460516,
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/10000_ctrl_r1.stdout",
+      "stdout_sha": "11442356080762a80671fbbb922987540ef9f24db65ee1372e8a52a0d7d1bbee",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/10000_ctrl_r1.time",
+      "timefile_sha": "b9876ea09305b528edf1e65b4dbaab770159df8ee0fbb9fdd8ee922a33468ad7",
+      "wall_s": 0.8160165429999324
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/10000_fast_r1.graph",
+      "graph_bytes": 460516,
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/10000_fast_r1.stdout",
+      "stdout_sha": "843fc1d6d7312c0917ed4a8c2eabc7406ccc66042182e1559bcef8950b597834",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/10000_fast_r1.time",
+      "timefile_sha": "e0c05a5d2c66f4462c530c0be8016848180578bba8eb5417c6a4bbfb685fac79",
+      "wall_s": 0.7152136249987961
+    },
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/100000_ctrl_r1.graph",
+      "graph_bytes": 7708716,
+      "graph_sha": "8e42cae1fd72ceb2dd626a69cdffdc53604636c1debf84c887b52de6e8a1cc0e",
+      "n": 100000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_ctrl_r1.stdout",
+      "stdout_sha": "0d41ca139c564f93303c10f8c55a95bfc9f865e8ea680a4df3a1a18f628fa6e5",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_ctrl_r1.time",
+      "timefile_sha": "6698cb82f67905c719e8c86ff1000a6ee82e528dfc13c6184e0887600df72e1a",
+      "wall_s": 10.387370898999507
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/100000_fast_r1.graph",
+      "graph_bytes": 7708716,
+      "graph_sha": "8e42cae1fd72ceb2dd626a69cdffdc53604636c1debf84c887b52de6e8a1cc0e",
+      "n": 100000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_fast_r1.stdout",
+      "stdout_sha": "8f319dc6989f537ab151386b20ae4e6359e126a480f07f6e98aed5c1d094c226",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_fast_r1.time",
+      "timefile_sha": "8df07fcbb99d920ff0ed6ad7f3fb9fcfa64456fe3b474a711e78d2b314165db5",
+      "wall_s": 9.233791663000375
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/100000_fast_r2.graph",
+      "graph_bytes": 7708716,
+      "graph_sha": "8e42cae1fd72ceb2dd626a69cdffdc53604636c1debf84c887b52de6e8a1cc0e",
+      "n": 100000,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_fast_r2.stdout",
+      "stdout_sha": "e1910f78d11adae7f8f6616ca1c89d636be5be05ad8b958e0b07660e6b86c246",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_fast_r2.time",
+      "timefile_sha": "93f24e8319199e68590db746b7324f0a32adf7d3fd63fc9204fbce916faffd4d",
+      "wall_s": 9.184842164000656
+    },
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/100000_ctrl_r2.graph",
+      "graph_bytes": 7708716,
+      "graph_sha": "8e42cae1fd72ceb2dd626a69cdffdc53604636c1debf84c887b52de6e8a1cc0e",
+      "n": 100000,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_ctrl_r2.stdout",
+      "stdout_sha": "1e0bbc7323ece342b52a99df50b3788a039a97d8a917ca19136ed7449f6d9418",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_ctrl_r2.time",
+      "timefile_sha": "7a0a3f72c72611c7c37f2e22418d31696d6db66858a2cebb8149c1b6ef05a02a",
+      "wall_s": 10.338958407999598
+    },
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/100000_ctrl_r3.graph",
+      "graph_bytes": 7708716,
+      "graph_sha": "8e42cae1fd72ceb2dd626a69cdffdc53604636c1debf84c887b52de6e8a1cc0e",
+      "n": 100000,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_ctrl_r3.stdout",
+      "stdout_sha": "036b133886069d2a6c3416c1f80a70026355ed66620bc8f4ade426c5490a2912",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_ctrl_r3.time",
+      "timefile_sha": "a6defd36d7d7d6395b2463abc2ed0ed78b1a0835551546cd13d1fc183dd8010a",
+      "wall_s": 10.435433585000283
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/100000_fast_r3.graph",
+      "graph_bytes": 7708716,
+      "graph_sha": "8e42cae1fd72ceb2dd626a69cdffdc53604636c1debf84c887b52de6e8a1cc0e",
+      "n": 100000,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_fast_r3.stdout",
+      "stdout_sha": "364cdeb4837301815b45cd63132d876b619c9d73e5060490244b2d907b21bd0f",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/100000_fast_r3.time",
+      "timefile_sha": "cb442dc1960907b66228010502ba42014301a4d9b967cba280ca0dba037f9317",
+      "wall_s": 9.238883022999289
+    },
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/1000000_ctrl_r1.graph",
+      "graph_bytes": 108162932,
+      "graph_sha": "149711956a3c738bd183f7f78a5a269df4584caf99fc889d4fc08e8415d5cd8e",
+      "n": 1000000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_ctrl_r1.stdout",
+      "stdout_sha": "33c897f592e97a6124c6bc51fd14549cd330a4a47ef9649da6b35d1de78a42db",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_ctrl_r1.time",
+      "timefile_sha": "07afc00511cc11405bca7407c33e544d8627e4b38311d9b02c40e0d4396013d3",
+      "wall_s": 135.60504864999893
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/1000000_fast_r1.graph",
+      "graph_bytes": 108162932,
+      "graph_sha": "149711956a3c738bd183f7f78a5a269df4584caf99fc889d4fc08e8415d5cd8e",
+      "n": 1000000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_fast_r1.stdout",
+      "stdout_sha": "6c009d4911a5bfd2e2306ee018b6100749a007b913ab41f9baf4de206933d1e1",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_fast_r1.time",
+      "timefile_sha": "83813e2074d1a1b037c11ec0c733214bd2e168aa8f27da059dfa33f7bce54a9d",
+      "wall_s": 125.01301703900026
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/1000000_fast_r2.graph",
+      "graph_bytes": 108162932,
+      "graph_sha": "149711956a3c738bd183f7f78a5a269df4584caf99fc889d4fc08e8415d5cd8e",
+      "n": 1000000,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_fast_r2.stdout",
+      "stdout_sha": "cf3de14f12e03d1936a4454c2f41cbe322ac0ef22f1b9f59b289e334e620900a",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_fast_r2.time",
+      "timefile_sha": "bffdc5d16f8c0985dd8e89ebd6483de22cd5cb1b1dcfc8c35ca5276334ae2b23",
+      "wall_s": 124.7144323270004
+    },
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/1000000_ctrl_r2.graph",
+      "graph_bytes": 108162932,
+      "graph_sha": "149711956a3c738bd183f7f78a5a269df4584caf99fc889d4fc08e8415d5cd8e",
+      "n": 1000000,
+      "rep": 2,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_ctrl_r2.stdout",
+      "stdout_sha": "6944af5d7f0b1135c5a653fa27a0252db122ba80f5f5c7c452c285c850c5bbcf",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_ctrl_r2.time",
+      "timefile_sha": "d6fd2d6f8af34fa01040e2170d9c1f020435849be86715785bdeac27065a7ea2",
+      "wall_s": 135.397537836001
+    },
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/1000000_ctrl_r3.graph",
+      "graph_bytes": 108162932,
+      "graph_sha": "149711956a3c738bd183f7f78a5a269df4584caf99fc889d4fc08e8415d5cd8e",
+      "n": 1000000,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_ctrl_r3.stdout",
+      "stdout_sha": "80c11e403f6aadc98454a262ad4dfa57ecfbb734eb36a941ef541fd923a1dc87",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_ctrl_r3.time",
+      "timefile_sha": "29a08c06820082ce29edf4dcb258c3ca8c27610866084caceba2ede5d279101b",
+      "wall_s": 135.47996185599914
+    },
+    {
+      "arm": "fast",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/graphs/1000000_fast_r3.graph",
+      "graph_bytes": 108162932,
+      "graph_sha": "149711956a3c738bd183f7f78a5a269df4584caf99fc889d4fc08e8415d5cd8e",
+      "n": 1000000,
+      "rep": 3,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_fast_r3.stdout",
+      "stdout_sha": "90c4b1d2f1877cfcb87b08a97d2089c144b57737c5300e0e1d14866a9391e283",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_top2_prefilter_native_v2/logs/1000000_fast_r3.time",
+      "timefile_sha": "dbe91624842512b7d7de58dced6e88cd9e41c46f62ad6e1f4dd999d4f9dfaf3e",
+      "wall_s": 124.82838764400003
+    }
+  ],
+  "scope": "H17 C160 N2 1CPU, strict float cutoff rejection only (no matrix mirroring). Packed-double exact fallback, no dynamic D6 counters yet.",
+  "script_sha": "6d4c8728fc7a4df449c2ffb68b6471c516270fd91b11fb7e18240c3e7a911515",
+  "source": {
+    "H17_root": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/PiPNN-top2",
+    "base_sha": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "cpu": 0,
+    "deps": {
+      "ABSEIL-CPP": "bc257a88f7c1939f24e0379f14a3589e926c950c",
+      "EIGEN": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "GOOGLEBENCHMARK": "d886e3177c5dc48f150fbfbf142be6e724a032a4",
+      "HIGHWAY": "6bc2d47793bae9c521fb4150936669647700765d",
+      "PARLAYLIB": "51017699dcc421f80479cdb238d3092233ad0d26"
+    },
+    "patched_utils_sha": "4d40034dec22113e0ddb95d4770d6cafa5ae3ac6b63e188462a6f87247ebda82",
+    "source_hashes": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "algorithms/PipNN/pipnn_utils.h": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520"
+    }
+  },
+  "status": "PASS_1M_3PAIRS"
+}

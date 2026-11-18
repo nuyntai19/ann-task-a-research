@@ -1,0 +1,669 @@
+{
+  "initial_diff": {
+    "arc_instances_added": 133,
+    "arc_instances_removed": 131,
+    "arcs_ctrl": 1827173,
+    "arcs_fast": 1827175,
+    "changed_multiset_vertices": 104,
+    "unique_edge_set_added": 133,
+    "unique_edge_set_removed": 131
+  },
+  "input_graph_sha": {
+    "ctrl_r1": "292e757f22f3307b9746693c20081d82367f99d18db93324d0d865666ca32c59",
+    "ctrl_r2": "6fe3c1f8c119972c36a426cc878d0a6b9c61d04a97e75284569452be68fc16de",
+    "ctrl_r3": "7bf3164ee98d9cb1c4600a3e27b5dc06a6b9747e62a7ac6e37e655f49075f700",
+    "fast_r1": "f383b05bcc4bc097ef18315f468b104b1e45395736fe3140d79708d1af445c1c",
+    "fast_r2": "f2a9141c38fc19371bf5a4ba3404931f4da79b6d4a843c3874bc10938e7aab38",
+    "fast_r3": "0e60496773566fc18103598f0b90210b8695e32418b062a78e46950b71745776"
+  },
+  "mean_paired_fast_pct_reduction": 10.290932729010109,
+  "paired_fast_pct_reduction": [
+    10.866712724942357,
+    10.80438630446716,
+    9.201699157620808
+  ],
+  "pairs": {
+    "ctrl_r1__vs__ctrl_r2": {
+      "arc_instances_added_ctrl_to_fast": 116,
+      "arc_instances_removed_ctrl_to_fast": 112,
+      "arcs_ctrl": 1827173,
+      "arcs_fast": 1827177,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 85,
+      "normalized_sorted_rows_sha_ctrl": "dbb451856928b5fccead2eed4b321f278a4bceb716a7c4dcf6110e85520a0b14",
+      "normalized_sorted_rows_sha_fast": "85ff3d5ea9f2063004f16cbe7b8b90aab18487f4549cfce4c1818149d8b44cf1",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 33,
+          "ctrl_lost_neighbor_ids": [
+            903
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            872,
+            16478
+          ],
+          "vertex": 1791
+        },
+        {
+          "ctrl_degree": 35,
+          "ctrl_lost_neighbor_ids": [
+            12819
+          ],
+          "fast_degree": 35,
+          "fast_gained_neighbor_ids": [
+            14761
+          ],
+          "vertex": 2755
+        },
+        {
+          "ctrl_degree": 17,
+          "ctrl_lost_neighbor_ids": [
+            74207
+          ],
+          "fast_degree": 17,
+          "fast_gained_neighbor_ids": [
+            73835
+          ],
+          "vertex": 2784
+        },
+        {
+          "ctrl_degree": 23,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 24,
+          "fast_gained_neighbor_ids": [
+            90772
+          ],
+          "vertex": 3717
+        },
+        {
+          "ctrl_degree": 36,
+          "ctrl_lost_neighbor_ids": [
+            84960,
+            85385
+          ],
+          "fast_degree": 35,
+          "fast_gained_neighbor_ids": [
+            84532
+          ],
+          "vertex": 3768
+        }
+      ],
+      "unique_edge_set_added": 116,
+      "unique_edge_set_removed": 112
+    },
+    "ctrl_r1__vs__ctrl_r3": {
+      "arc_instances_added_ctrl_to_fast": 126,
+      "arc_instances_removed_ctrl_to_fast": 140,
+      "arcs_ctrl": 1827173,
+      "arcs_fast": 1827159,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 100,
+      "normalized_sorted_rows_sha_ctrl": "dbb451856928b5fccead2eed4b321f278a4bceb716a7c4dcf6110e85520a0b14",
+      "normalized_sorted_rows_sha_fast": "df9c14d2da835df44a85594aa67dd42987d8f06bbe6a66ef6eb62ee0dd990550",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [
+            1993,
+            14339
+          ],
+          "fast_degree": 20,
+          "fast_gained_neighbor_ids": [
+            10348,
+            15335
+          ],
+          "vertex": 492
+        },
+        {
+          "ctrl_degree": 14,
+          "ctrl_lost_neighbor_ids": [
+            34029
+          ],
+          "fast_degree": 14,
+          "fast_gained_neighbor_ids": [
+            55176
+          ],
+          "vertex": 716
+        },
+        {
+          "ctrl_degree": 35,
+          "ctrl_lost_neighbor_ids": [
+            20522
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [],
+          "vertex": 3065
+        },
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 21,
+          "fast_gained_neighbor_ids": [
+            5248
+          ],
+          "vertex": 3372
+        },
+        {
+          "ctrl_degree": 25,
+          "ctrl_lost_neighbor_ids": [
+            98175
+          ],
+          "fast_degree": 25,
+          "fast_gained_neighbor_ids": [
+            97214
+          ],
+          "vertex": 4340
+        }
+      ],
+      "unique_edge_set_added": 126,
+      "unique_edge_set_removed": 140
+    },
+    "ctrl_r1__vs__fast_r1": {
+      "arc_instances_added_ctrl_to_fast": 133,
+      "arc_instances_removed_ctrl_to_fast": 131,
+      "arcs_ctrl": 1827173,
+      "arcs_fast": 1827175,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 104,
+      "normalized_sorted_rows_sha_ctrl": "dbb451856928b5fccead2eed4b321f278a4bceb716a7c4dcf6110e85520a0b14",
+      "normalized_sorted_rows_sha_fast": "22357d2aa187cdb0e1fb2cb80f52be0583fa007ae122bbfb31e9d0fc56336332",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 14,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 15,
+          "fast_gained_neighbor_ids": [
+            20236
+          ],
+          "vertex": 1630
+        },
+        {
+          "ctrl_degree": 33,
+          "ctrl_lost_neighbor_ids": [
+            903
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            872,
+            16478
+          ],
+          "vertex": 1791
+        },
+        {
+          "ctrl_degree": 17,
+          "ctrl_lost_neighbor_ids": [
+            74207
+          ],
+          "fast_degree": 17,
+          "fast_gained_neighbor_ids": [
+            73835
+          ],
+          "vertex": 2784
+        },
+        {
+          "ctrl_degree": 23,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 24,
+          "fast_gained_neighbor_ids": [
+            90772
+          ],
+          "vertex": 3717
+        },
+        {
+          "ctrl_degree": 15,
+          "ctrl_lost_neighbor_ids": [
+            9560,
+            20779,
+            54353,
+            61043
+          ],
+          "fast_degree": 14,
+          "fast_gained_neighbor_ids": [
+            14423,
+            79430,
+            98956
+          ],
+          "vertex": 4662
+        }
+      ],
+      "unique_edge_set_added": 133,
+      "unique_edge_set_removed": 131
+    },
+    "ctrl_r2__vs__ctrl_r3": {
+      "arc_instances_added_ctrl_to_fast": 186,
+      "arc_instances_removed_ctrl_to_fast": 204,
+      "arcs_ctrl": 1827177,
+      "arcs_fast": 1827159,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 159,
+      "normalized_sorted_rows_sha_ctrl": "85ff3d5ea9f2063004f16cbe7b8b90aab18487f4549cfce4c1818149d8b44cf1",
+      "normalized_sorted_rows_sha_fast": "df9c14d2da835df44a85594aa67dd42987d8f06bbe6a66ef6eb62ee0dd990550",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [
+            1993,
+            14339
+          ],
+          "fast_degree": 20,
+          "fast_gained_neighbor_ids": [
+            10348,
+            15335
+          ],
+          "vertex": 492
+        },
+        {
+          "ctrl_degree": 14,
+          "ctrl_lost_neighbor_ids": [
+            34029
+          ],
+          "fast_degree": 14,
+          "fast_gained_neighbor_ids": [
+            55176
+          ],
+          "vertex": 716
+        },
+        {
+          "ctrl_degree": 34,
+          "ctrl_lost_neighbor_ids": [
+            872,
+            16478
+          ],
+          "fast_degree": 33,
+          "fast_gained_neighbor_ids": [
+            903
+          ],
+          "vertex": 1791
+        },
+        {
+          "ctrl_degree": 35,
+          "ctrl_lost_neighbor_ids": [
+            14761
+          ],
+          "fast_degree": 35,
+          "fast_gained_neighbor_ids": [
+            12819
+          ],
+          "vertex": 2755
+        },
+        {
+          "ctrl_degree": 17,
+          "ctrl_lost_neighbor_ids": [
+            73835
+          ],
+          "fast_degree": 17,
+          "fast_gained_neighbor_ids": [
+            74207
+          ],
+          "vertex": 2784
+        }
+      ],
+      "unique_edge_set_added": 186,
+      "unique_edge_set_removed": 204
+    },
+    "ctrl_r2__vs__fast_r2": {
+      "arc_instances_added_ctrl_to_fast": 187,
+      "arc_instances_removed_ctrl_to_fast": 191,
+      "arcs_ctrl": 1827177,
+      "arcs_fast": 1827173,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 137,
+      "normalized_sorted_rows_sha_ctrl": "85ff3d5ea9f2063004f16cbe7b8b90aab18487f4549cfce4c1818149d8b44cf1",
+      "normalized_sorted_rows_sha_fast": "34b14e226cf5c1298cb3ac40061ab478303858c3cd44f9176fba8b074f62da2d",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 50,
+          "ctrl_lost_neighbor_ids": [
+            21569
+          ],
+          "fast_degree": 50,
+          "fast_gained_neighbor_ids": [
+            20977
+          ],
+          "vertex": 1508
+        },
+        {
+          "ctrl_degree": 14,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 15,
+          "fast_gained_neighbor_ids": [
+            20236
+          ],
+          "vertex": 1630
+        },
+        {
+          "ctrl_degree": 35,
+          "ctrl_lost_neighbor_ids": [
+            14761
+          ],
+          "fast_degree": 35,
+          "fast_gained_neighbor_ids": [
+            12819
+          ],
+          "vertex": 2755
+        },
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 21,
+          "fast_gained_neighbor_ids": [
+            5248
+          ],
+          "vertex": 3372
+        },
+        {
+          "ctrl_degree": 48,
+          "ctrl_lost_neighbor_ids": [
+            44675
+          ],
+          "fast_degree": 48,
+          "fast_gained_neighbor_ids": [
+            44481
+          ],
+          "vertex": 3609
+        }
+      ],
+      "unique_edge_set_added": 187,
+      "unique_edge_set_removed": 191
+    },
+    "ctrl_r3__vs__fast_r3": {
+      "arc_instances_added_ctrl_to_fast": 284,
+      "arc_instances_removed_ctrl_to_fast": 256,
+      "arcs_ctrl": 1827159,
+      "arcs_fast": 1827187,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 224,
+      "normalized_sorted_rows_sha_ctrl": "df9c14d2da835df44a85594aa67dd42987d8f06bbe6a66ef6eb62ee0dd990550",
+      "normalized_sorted_rows_sha_fast": "a9116d7896d70279d3e05952537ef9e5a2f1d2ffb4c5f4bf748f13ae78a73c2f",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 26,
+          "ctrl_lost_neighbor_ids": [
+            71083
+          ],
+          "fast_degree": 26,
+          "fast_gained_neighbor_ids": [
+            73950
+          ],
+          "vertex": 127
+        },
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [
+            10348,
+            15335
+          ],
+          "fast_degree": 20,
+          "fast_gained_neighbor_ids": [
+            1993,
+            14339
+          ],
+          "vertex": 492
+        },
+        {
+          "ctrl_degree": 14,
+          "ctrl_lost_neighbor_ids": [
+            55176
+          ],
+          "fast_degree": 14,
+          "fast_gained_neighbor_ids": [
+            34029
+          ],
+          "vertex": 716
+        },
+        {
+          "ctrl_degree": 14,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 15,
+          "fast_gained_neighbor_ids": [
+            20236
+          ],
+          "vertex": 1630
+        },
+        {
+          "ctrl_degree": 33,
+          "ctrl_lost_neighbor_ids": [
+            903
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            872,
+            16478
+          ],
+          "vertex": 1791
+        }
+      ],
+      "unique_edge_set_added": 284,
+      "unique_edge_set_removed": 256
+    },
+    "fast_r1__vs__fast_r2": {
+      "arc_instances_added_ctrl_to_fast": 78,
+      "arc_instances_removed_ctrl_to_fast": 80,
+      "arcs_ctrl": 1827175,
+      "arcs_fast": 1827173,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 58,
+      "normalized_sorted_rows_sha_ctrl": "22357d2aa187cdb0e1fb2cb80f52be0583fa007ae122bbfb31e9d0fc56336332",
+      "normalized_sorted_rows_sha_fast": "34b14e226cf5c1298cb3ac40061ab478303858c3cd44f9176fba8b074f62da2d",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 50,
+          "ctrl_lost_neighbor_ids": [
+            21569
+          ],
+          "fast_degree": 50,
+          "fast_gained_neighbor_ids": [
+            20977
+          ],
+          "vertex": 1508
+        },
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 21,
+          "fast_gained_neighbor_ids": [
+            5248
+          ],
+          "vertex": 3372
+        },
+        {
+          "ctrl_degree": 48,
+          "ctrl_lost_neighbor_ids": [
+            44675
+          ],
+          "fast_degree": 48,
+          "fast_gained_neighbor_ids": [
+            44481
+          ],
+          "vertex": 3609
+        },
+        {
+          "ctrl_degree": 21,
+          "ctrl_lost_neighbor_ids": [
+            9546,
+            17088,
+            27496
+          ],
+          "fast_degree": 20,
+          "fast_gained_neighbor_ids": [
+            9522,
+            51819
+          ],
+          "vertex": 4694
+        },
+        {
+          "ctrl_degree": 15,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 16,
+          "fast_gained_neighbor_ids": [
+            20637
+          ],
+          "vertex": 7033
+        }
+      ],
+      "unique_edge_set_added": 78,
+      "unique_edge_set_removed": 80
+    },
+    "fast_r1__vs__fast_r3": {
+      "arc_instances_added_ctrl_to_fast": 122,
+      "arc_instances_removed_ctrl_to_fast": 110,
+      "arcs_ctrl": 1827175,
+      "arcs_fast": 1827187,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 98,
+      "normalized_sorted_rows_sha_ctrl": "22357d2aa187cdb0e1fb2cb80f52be0583fa007ae122bbfb31e9d0fc56336332",
+      "normalized_sorted_rows_sha_fast": "a9116d7896d70279d3e05952537ef9e5a2f1d2ffb4c5f4bf748f13ae78a73c2f",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 26,
+          "ctrl_lost_neighbor_ids": [
+            71083
+          ],
+          "fast_degree": 26,
+          "fast_gained_neighbor_ids": [
+            73950
+          ],
+          "vertex": 127
+        },
+        {
+          "ctrl_degree": 35,
+          "ctrl_lost_neighbor_ids": [
+            12819
+          ],
+          "fast_degree": 35,
+          "fast_gained_neighbor_ids": [
+            14761
+          ],
+          "vertex": 2755
+        },
+        {
+          "ctrl_degree": 34,
+          "ctrl_lost_neighbor_ids": [
+            33685
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            32906
+          ],
+          "vertex": 2847
+        },
+        {
+          "ctrl_degree": 34,
+          "ctrl_lost_neighbor_ids": [
+            64013
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            65521
+          ],
+          "vertex": 3150
+        },
+        {
+          "ctrl_degree": 20,
+          "ctrl_lost_neighbor_ids": [],
+          "fast_degree": 21,
+          "fast_gained_neighbor_ids": [
+            5248
+          ],
+          "vertex": 3372
+        }
+      ],
+      "unique_edge_set_added": 122,
+      "unique_edge_set_removed": 110
+    },
+    "fast_r2__vs__fast_r3": {
+      "arc_instances_added_ctrl_to_fast": 166,
+      "arc_instances_removed_ctrl_to_fast": 152,
+      "arcs_ctrl": 1827173,
+      "arcs_fast": 1827187,
+      "classification": "EDGE_MULTISET_DIFFERENCE",
+      "different_neighbor_multiset_vertices": 134,
+      "normalized_sorted_rows_sha_ctrl": "34b14e226cf5c1298cb3ac40061ab478303858c3cd44f9176fba8b074f62da2d",
+      "normalized_sorted_rows_sha_fast": "a9116d7896d70279d3e05952537ef9e5a2f1d2ffb4c5f4bf748f13ae78a73c2f",
+      "order_only_vertices": 0,
+      "sample_different_vertices": [
+        {
+          "ctrl_degree": 26,
+          "ctrl_lost_neighbor_ids": [
+            71083
+          ],
+          "fast_degree": 26,
+          "fast_gained_neighbor_ids": [
+            73950
+          ],
+          "vertex": 127
+        },
+        {
+          "ctrl_degree": 50,
+          "ctrl_lost_neighbor_ids": [
+            20977
+          ],
+          "fast_degree": 50,
+          "fast_gained_neighbor_ids": [
+            21569
+          ],
+          "vertex": 1508
+        },
+        {
+          "ctrl_degree": 35,
+          "ctrl_lost_neighbor_ids": [
+            12819
+          ],
+          "fast_degree": 35,
+          "fast_gained_neighbor_ids": [
+            14761
+          ],
+          "vertex": 2755
+        },
+        {
+          "ctrl_degree": 34,
+          "ctrl_lost_neighbor_ids": [
+            33685
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            32906
+          ],
+          "vertex": 2847
+        },
+        {
+          "ctrl_degree": 34,
+          "ctrl_lost_neighbor_ids": [
+            64013
+          ],
+          "fast_degree": 34,
+          "fast_gained_neighbor_ids": [
+            65521
+          ],
+          "vertex": 3150
+        }
+      ],
+      "unique_edge_set_added": 166,
+      "unique_edge_set_removed": 152
+    }
+  },
+  "scope_note": "This is GRAPH consistency under schedule variations, not Recall or QPS. Nonzero edge difference requires matched Search assessment.",
+  "status": "ANALYZED_4CPU_GRAPH_VARIABILITY__NOT_SEARCH_QUALITY",
+  "wall_by_arm": {
+    "ctrl": [
+      2.7705495270020037,
+      2.770774299999175,
+      2.7208375400005025
+    ],
+    "fast": [
+      2.4694818690004467,
+      2.4714091410023684,
+      2.4704742550020455
+    ]
+  },
+  "within_arm_100k_graph_varies": true
+}

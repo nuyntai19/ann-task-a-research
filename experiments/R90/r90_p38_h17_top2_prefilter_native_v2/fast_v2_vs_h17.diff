@@ -1,0 +1,26 @@
+--- experiments/R90/r90_p38_h17_top2_prefilter_native_v2/source/ctrl/algorithms/PipNN/pipnn_utils.h	2026-10-23 19:27:42.836036641 +0700
++++ experiments/R90/r90_p38_h17_top2_prefilter_native_v2/source/fast/algorithms/PipNN/pipnn_utils.h	2026-11-18 16:57:07.839181195 +0700
+@@ -467,15 +467,23 @@
+       double first = std::numeric_limits<double>::infinity();
+       double second = std::numeric_limits<double>::infinity();
+       size_t count = 0;
++      // R90-P3.8v2: cache raw FP32 value of second packed distance.
++      float r90_second_cutoff = std::numeric_limits<float>::infinity();
+       for (indexType j = 0; j < N; ++j) {
+         if (i == j) continue;
+         float dist_ij = (i < j) ? dist_mat[j * N + i] : dist_mat[i * N + j];
++        // Strict FP32 rejection is safe: distinct IEEE float values have
++        // much wider spacing than 11 low mantissa bits of packed double.
++        // Equality, negative/positive zero, NaN and inf use packed fallback.
++        if (count == 2 && dist_ij > r90_second_cutoff) continue;
+         double d = packFloatAndInt(dist_ij, j);
+         if (count == 0 || d < first) {
+           second = first;
+           first = d;
++          r90_second_cutoff = static_cast<float>(second);
+         } else if (count == 1 || d < second) {
+           second = d;
++          r90_second_cutoff = static_cast<float>(second);
+         }
+         if (count < 2) ++count;
+       }

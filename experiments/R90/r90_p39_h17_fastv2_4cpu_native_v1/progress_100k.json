@@ -1,0 +1,77 @@
+{
+  "phase": "RUNNING_100K",
+  "runs": [
+    {
+      "arm": "ctrl",
+      "cpu_percent": 392.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1/graphs/100000_ctrl_r1.graph",
+      "graph_sha": "292e757f22f3307b9746693c20081d82367f99d18db93324d0d865666ca32c59",
+      "involuntary_context_switches": 275,
+      "n": 100000,
+      "peak_rss_kib": 412904,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1/logs/100000_ctrl_r1.stdout",
+      "stdout_sha": "fa1766649cef12fd6745e4f1cbb6cbe86764a092dd155282abe02c8382973281",
+      "system_s": 0.14,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1/logs/100000_ctrl_r1.time",
+      "timefile_sha": "0df6791916c73a8c974df7d9228cadd61fa0a291a13e0fdb3539d65853bd2bb2",
+      "user_s": 10.59,
+      "wall_s": 2.7705495270020037
+    },
+    {
+      "arm": "fast",
+      "cpu_percent": 390.0,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1/graphs/100000_fast_r1.graph",
+      "graph_sha": "f383b05bcc4bc097ef18315f468b104b1e45395736fe3140d79708d1af445c1c",
+      "involuntary_context_switches": 298,
+      "n": 100000,
+      "peak_rss_kib": 415444,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1/logs/100000_fast_r1.stdout",
+      "stdout_sha": "d5c8470c3e75dbd2ccbb6f53ebca0266efa908d8de4cc6479ec4c8fbe691ad17",
+      "system_s": 0.12,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p39_h17_fastv2_4cpu_native_v1/logs/100000_fast_r1.time",
+      "timefile_sha": "c9bf76830ec3aa37143495f82c5703d1cd453c89cfd9f077c2b8abaffc222053",
+      "user_s": 9.4,
+      "wall_s": 2.4694818690004467
+    }
+  ],
+  "scope": "4 threads CPU0,2,4,6; graph parity per pair required",
+  "script_sha": "f42ea9732560e646481f51f9f3458da1f7d2bd1dd3c7e5b2965cee363903e7d6",
+  "source": {
+    "ELF": {
+      "ctrl": "92c22ad5d9d9022860725329ff097784e7c8a649460d03dd343cdb6adb90363e",
+      "fast": "ab4a0c678b3a71b2896d6f4d4339131705a1758b0c5398ed8ac32dd656cd7e91"
+    },
+    "H17_utils_sha": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520",
+    "OMP_NUM_THREADS": 4,
+    "P38_prior_manifest_sha": "38971191f98b4c41398c13ebfe7d17e67a342511de3a60af4cd1e4298478ddb0",
+    "PARLAY_NUM_THREADS": 4,
+    "affinity": "0,2,4,6",
+    "base_sha": {
+      "100000": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12"
+    },
+    "scripts": {
+      "P38": "6d4c8728fc7a4df449c2ffb68b6471c516270fd91b11fb7e18240c3e7a911515",
+      "P39": "f42ea9732560e646481f51f9f3458da1f7d2bd1dd3c7e5b2965cee363903e7d6"
+    },
+    "topology_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  }
+}
