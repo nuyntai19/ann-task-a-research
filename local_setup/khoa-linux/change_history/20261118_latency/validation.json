@@ -1,0 +1,54 @@
+{
+  "utc": "2026-11-18T09:51:45.226227+00:00",
+  "status": "LATENCY_LOGGING_VALIDATED",
+  "native_evaluator_build": {
+    "stock_off": "PASS",
+    "h17_on": "PASS"
+  },
+  "unit_tests": {
+    "passed": 4,
+    "checks": "known percentiles, malformed/incomplete CSV rejection, native source unchanged except two query timers, upstream layout rejection"
+  },
+  "baseline_search_parity": "PASS: identical Recall and average distance comparisons across five beams on the same graph",
+  "sift10k_runs": [
+    {
+      "run": "runs/sift-stock_off-gez_znjd",
+      "status": "PASS",
+      "csv_rows": 160,
+      "threads": 4,
+      "beams": [
+        10,
+        20,
+        40,
+        80,
+        160
+      ],
+      "base_rows": 10000,
+      "all_aggregates_independently_verified": true
+    },
+    {
+      "run": "runs/sift-h17_on-1yyqbgrz",
+      "status": "PASS",
+      "csv_rows": 160,
+      "threads": 4,
+      "beams": [
+        10,
+        20,
+        40,
+        80,
+        160
+      ],
+      "base_rows": 10000,
+      "all_aggregates_independently_verified": true
+    }
+  ],
+  "standalone_four_argument_cli": "PASS",
+  "single_thread_search_and_csv": "PASS: same Recall and work counts as four threads",
+  "refuse_csv_overwrite": "PASS: existing bytes unchanged",
+  "original_reference_files_unchanged": true,
+  "unit": "microseconds",
+  "scope": "per-query processing time excluding scheduler queue wait and file I/O",
+  "default_query_count": 32,
+  "percentile_method": "linear",
+  "limitations": "One measurement per query per beam; no warmup/repetitions; 32 queries are a functional check, not a stable tail-latency benchmark."
+}

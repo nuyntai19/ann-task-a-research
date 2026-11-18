@@ -1,0 +1,11 @@
+Data: detected 2048 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 2048 points with max degree 64
+Total edges read from file: 48392
+LOCAL_RECALL_ROW beam=10 recall=0.71562499 qps=31189.08398438 avg_cmps=530
+LOCAL_RECALL_ROW beam=20 recall=0.85000002 qps=55944.05859375 avg_cmps=841
+LOCAL_RECALL_ROW beam=40 recall=0.94375002 qps=37735.84765625 avg_cmps=1382
+LOCAL_RECALL_ROW beam=80 recall=0.99687499 qps=32786.88671875 avg_cmps=1995
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=26755.85156250 avg_cmps=2220
+LOCAL_RECALL_EVAL_PASS

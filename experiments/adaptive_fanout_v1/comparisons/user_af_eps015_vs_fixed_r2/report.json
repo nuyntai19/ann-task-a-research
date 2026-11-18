@@ -1,0 +1,478 @@
+{
+  "status": "PASS",
+  "protocol": {
+    "utc": "2026-11-18T14:01:04.455906+00:00",
+    "fixed_run": "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift1m_h17_on_q10000_t4_r2",
+    "adaptive_run": "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/af_eps015_sift1m_r1",
+    "rows": 1000000,
+    "queries": 10000,
+    "threads": 4,
+    "cpu_affinity": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "targets": [
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.997,
+      0.999
+    ],
+    "repetitions": 6,
+    "evaluator": "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/build/local_graph_recall",
+    "evaluator_sha256": "6cc45c2604bf4f7f8fff2d009f8b0c6f5baa12fe6a3b682def7717d6cf622f73",
+    "data_sha256": {
+      "base.fbin": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+      "query.fbin": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+      "gt.ibin": "fd8966982188cb34bad74ddcb3b7e7d3daba6d13a21c0267cbc65dcc5a55992b"
+    },
+    "graph_sha256": {
+      "fixed": "a94cc0b5067a913de4c0877772a422df23c614a21a51ad8d15992a8f596a7552",
+      "adaptive": "c272f6f97e01714310cac47a24f814982feac839b381e35303e89c11aaa1e314"
+    },
+    "common_build_parameters": {
+      "-num_clusters": "1",
+      "-cluster_size": "256",
+      "-top_level_leaders": "100",
+      "-fanout_scheme": "10,3,1",
+      "-mst_deg": "2",
+      "-prune": "1",
+      "-prune_all": "1",
+      "-prune_degree": "64",
+      "-table_size": "160",
+      "-hash_bits": "12",
+      "-alpha": "1.1",
+      "-k": "0"
+    },
+    "measurement": "Same evaluator and CPU affinity; search only on frozen saved graphs; counterbalanced methods and beam order; one warmup pass per graph",
+    "matching": "Measured integer beam search for smallest beam found meeting each target; adjacent lower beam checked; report achieved Recall, no interpolated timing",
+    "latency": "Per-query service microseconds excluding scheduler queue wait and file I/O",
+    "historical_build_time_caveat": "Original fixed uses R86_COUNTERS ON; adaptive uses R86_COUNTERS OFF plus AF telemetry; different execution times of day. Historical build durations are descriptive, not controlled speedup.",
+    "status": "COMPLETE"
+  },
+  "matched_recall": [
+    {
+      "target_recall": 0.95,
+      "fixed": {
+        "beam": 41,
+        "recall": 0.95098,
+        "recall_overshoot_pp": 0.09800000000000919,
+        "qps": 37284.20703125,
+        "qps_range": [
+          35073.4453125,
+          39782.62890625
+        ],
+        "latency_mean_us": 107.18059265,
+        "latency_mean_us_range": [
+          100.25336560000001,
+          113.54111259999999
+        ],
+        "latency_p50_us": 106.63300000000001,
+        "latency_p50_us_range": [
+          100.096,
+          111.88050000000001
+        ],
+        "latency_p95_us": 147.989625,
+        "latency_p95_us_range": [
+          135.1597,
+          161.17415
+        ],
+        "latency_p99_us": 170.06341500000002,
+        "latency_p99_us_range": [
+          150.76005999999998,
+          191.16616000000002
+        ]
+      },
+      "adaptive": {
+        "beam": 43,
+        "recall": 0.95177,
+        "recall_overshoot_pp": 0.17700000000000493,
+        "qps": 36247.6328125,
+        "qps_range": [
+          33755.16015625,
+          38874.05078125
+        ],
+        "latency_mean_us": 110.1805923,
+        "latency_mean_us_range": [
+          102.55276620000001,
+          118.14361279999999
+        ],
+        "latency_p50_us": 109.66675,
+        "latency_p50_us_range": [
+          102.48500000000001,
+          115.90100000000001
+        ],
+        "latency_p95_us": 151.977175,
+        "latency_p95_us_range": [
+          139.51415,
+          170.06429999999997
+        ],
+        "latency_p99_us": 174.94045500000004,
+        "latency_p99_us_range": [
+          155.14843000000002,
+          203.07305
+        ]
+      },
+      "qps_change_percent": -2.7801964995022965,
+      "mean_latency_change_percent": 2.7990138660611397
+    },
+    {
+      "target_recall": 0.98,
+      "fixed": {
+        "beam": 67,
+        "recall": 0.98004,
+        "recall_overshoot_pp": 0.004000000000004,
+        "qps": 24972.66699219,
+        "qps_range": [
+          23392.578125,
+          26365.88476562
+        ],
+        "latency_mean_us": 160.08366685,
+        "latency_mean_us_range": [
+          151.3819767,
+          170.6143454
+        ],
+        "latency_p50_us": 160.406,
+        "latency_p50_us_range": [
+          152.9615,
+          170.462
+        ],
+        "latency_p95_us": 218.72719999999998,
+        "latency_p95_us_range": [
+          201.51074999999997,
+          241.08185
+        ],
+        "latency_p99_us": 247.54265000000015,
+        "latency_p99_us_range": [
+          219.89008,
+          281.3972800000001
+        ]
+      },
+      "adaptive": {
+        "beam": 70,
+        "recall": 0.98041,
+        "recall_overshoot_pp": 0.041000000000002146,
+        "qps": 24876.82714844,
+        "qps_range": [
+          23143.05859375,
+          25779.30859375
+        ],
+        "latency_mean_us": 160.55979230000003,
+        "latency_mean_us_range": [
+          154.7589034,
+          172.51989930000002
+        ],
+        "latency_p50_us": 161.20925,
+        "latency_p50_us_range": [
+          156.345,
+          171.21050000000002
+        ],
+        "latency_p95_us": 219.34855,
+        "latency_p95_us_range": [
+          206.94184999999996,
+          245.0771499999999
+        ],
+        "latency_p99_us": 247.54174000000006,
+        "latency_p99_us_range": [
+          225.84906,
+          283.87548000000004
+        ]
+      },
+      "qps_change_percent": -0.3837789683415638,
+      "mean_latency_change_percent": 0.29742287852900784
+    },
+    {
+      "target_recall": 0.99,
+      "fixed": {
+        "beam": 93,
+        "recall": 0.99028,
+        "recall_overshoot_pp": 0.028000000000005798,
+        "qps": 19157.55078125,
+        "qps_range": [
+          17984.4140625,
+          19963.90429688
+        ],
+        "latency_mean_us": 208.40969950000002,
+        "latency_mean_us_range": [
+          199.98218390000002,
+          221.91580580000002
+        ],
+        "latency_p50_us": 210.23475,
+        "latency_p50_us_range": [
+          202.87900000000002,
+          221.3775
+        ],
+        "latency_p95_us": 283.34802499999995,
+        "latency_p95_us_range": [
+          264.67404999999997,
+          312.04305
+        ],
+        "latency_p99_us": 318.370005,
+        "latency_p99_us_range": [
+          289.16210000000007,
+          361.5281200000001
+        ]
+      },
+      "adaptive": {
+        "beam": 96,
+        "recall": 0.99002,
+        "recall_overshoot_pp": 0.002000000000002,
+        "qps": 18698.93066406,
+        "qps_range": [
+          17833.1640625,
+          19673.84765625
+        ],
+        "latency_mean_us": 213.62422235,
+        "latency_mean_us_range": [
+          202.6542039,
+          223.5657745
+        ],
+        "latency_p50_us": 215.81425000000002,
+        "latency_p50_us_range": [
+          206.265,
+          223.84550000000002
+        ],
+        "latency_p95_us": 289.9367,
+        "latency_p95_us_range": [
+          271.16625,
+          315.56614999999994
+        ],
+        "latency_p99_us": 326.38719500000013,
+        "latency_p99_us_range": [
+          295.27148000000005,
+          362.20496000000014
+        ]
+      },
+      "qps_change_percent": -2.393939196229944,
+      "mean_latency_change_percent": 2.502053821156247
+    },
+    {
+      "target_recall": 0.995,
+      "fixed": {
+        "beam": 125,
+        "recall": 0.99504,
+        "recall_overshoot_pp": 0.004000000000004,
+        "qps": 14842.47900391,
+        "qps_range": [
+          13955.44824219,
+          15649.84375
+        ],
+        "latency_mean_us": 269.2097212,
+        "latency_mean_us_range": [
+          254.86191270000003,
+          285.7385284
+        ],
+        "latency_p50_us": 274.64575,
+        "latency_p50_us_range": [
+          261.1145,
+          290.217
+        ],
+        "latency_p95_us": 366.6843,
+        "latency_p95_us_range": [
+          340.9316,
+          398.50149999999996
+        ],
+        "latency_p99_us": 411.66627000000005,
+        "latency_p99_us_range": [
+          372.1715300000001,
+          464.5915200000003
+        ]
+      },
+      "adaptive": {
+        "beam": 131,
+        "recall": 0.99505,
+        "recall_overshoot_pp": 0.004999999999999449,
+        "qps": 13682.966308595,
+        "qps_range": [
+          11851.86621094,
+          14976.87597656
+        ],
+        "latency_mean_us": 291.66061245000003,
+        "latency_mean_us_range": [
+          266.3233266,
+          335.80652569999995
+        ],
+        "latency_p50_us": 283.93875,
+        "latency_p50_us_range": [
+          261.401,
+          301.7155
+        ],
+        "latency_p95_us": 386.0687999999999,
+        "latency_p95_us_range": [
+          354.16114999999985,
+          418.779
+        ],
+        "latency_p99_us": 476.7818050000002,
+        "latency_p99_us_range": [
+          392.35285000000005,
+          3304.0273300000003
+        ]
+      },
+      "qps_change_percent": -7.812122860403214,
+      "mean_latency_change_percent": 8.339554437308362
+    },
+    {
+      "target_recall": 0.997,
+      "fixed": {
+        "beam": 152,
+        "recall": 0.99701,
+        "recall_overshoot_pp": 0.000999999999995449,
+        "qps": 12521.81591797,
+        "qps_range": [
+          11779.65917969,
+          12946.44140625
+        ],
+        "latency_mean_us": 319.0439666,
+        "latency_mean_us_range": [
+          308.14584690000004,
+          338.77862170000003
+        ],
+        "latency_p50_us": 329.50425,
+        "latency_p50_us_range": [
+          320.2075,
+          347.16499999999996
+        ],
+        "latency_p95_us": 441.328675,
+        "latency_p95_us_range": [
+          417.01785,
+          477.1486499999999
+        ],
+        "latency_p99_us": 495.51018000000005,
+        "latency_p99_us_range": [
+          455.38731000000007,
+          549.1203500000003
+        ]
+      },
+      "adaptive": {
+        "beam": 158,
+        "recall": 0.997,
+        "recall_overshoot_pp": 0.0,
+        "qps": 11533.109375,
+        "qps_range": [
+          10663.52734375,
+          12795.3984375
+        ],
+        "latency_mean_us": 345.79418275,
+        "latency_mean_us_range": [
+          312.0187358,
+          373.7086259
+        ],
+        "latency_p50_us": 346.74525,
+        "latency_p50_us_range": [
+          324.36400000000003,
+          356.165
+        ],
+        "latency_p95_us": 488.6208999999999,
+        "latency_p95_us_range": [
+          426.4422,
+          500.39794999999987
+        ],
+        "latency_p99_us": 561.6768750000001,
+        "latency_p99_us_range": [
+          466.40410000000014,
+          669.2329800000143
+        ]
+      },
+      "qps_change_percent": -7.895871888286676,
+      "mean_latency_change_percent": 8.384492092131612
+    },
+    {
+      "target_recall": 0.999,
+      "fixed": {
+        "beam": 232,
+        "recall": 0.999,
+        "recall_overshoot_pp": 0.0,
+        "qps": 8735.88671875,
+        "qps_range": [
+          8218.89941406,
+          9224.87109375
+        ],
+        "latency_mean_us": 457.7652723,
+        "latency_mean_us_range": [
+          432.7400465,
+          485.75811550000003
+        ],
+        "latency_p50_us": 487.529,
+        "latency_p50_us_range": [
+          463.818,
+          514.6990000000001
+        ],
+        "latency_p95_us": 668.4900250000001,
+        "latency_p95_us_range": [
+          621.3802,
+          721.9535
+        ],
+        "latency_p99_us": 749.1770300000002,
+        "latency_p99_us_range": [
+          688.5016400000003,
+          820.2804
+        ]
+      },
+      "adaptive": {
+        "beam": 236,
+        "recall": 0.99902,
+        "recall_overshoot_pp": 0.002000000000002,
+        "qps": 8678.076171875,
+        "qps_range": [
+          7936.77929688,
+          9213.86425781
+        ],
+        "latency_mean_us": 459.9655212,
+        "latency_mean_us_range": [
+          432.5638029,
+          502.275717
+        ],
+        "latency_p50_us": 490.07425,
+        "latency_p50_us_range": [
+          463.88100000000003,
+          530.4765
+        ],
+        "latency_p95_us": 672.405225,
+        "latency_p95_us_range": [
+          622.49895,
+          747.7241499999999
+        ],
+        "latency_p99_us": 758.0045550000001,
+        "latency_p99_us_range": [
+          689.8823400000001,
+          858.8294900000001
+        ]
+      },
+      "qps_change_percent": -0.6617593466604843,
+      "mean_latency_change_percent": 0.4806500259281421
+    }
+  ],
+  "structure": {
+    "directed_proposals": {
+      "fixed": 59999964,
+      "adaptive": 54574146,
+      "reduction_percent": 9.043035425821255
+    },
+    "graph_edges": {
+      "fixed": 23475273,
+      "adaptive": 22956179,
+      "reduction_percent": 2.2112373304455257
+    },
+    "leaf_squared_work": {
+      "fixed": 4688301660,
+      "adaptive": 4261528133,
+      "reduction_percent": 9.102945116377171
+    },
+    "historical_build_seconds": {
+      "fixed": 20.119497223999133,
+      "adaptive": 22.75,
+      "controlled_comparison": false
+    }
+  },
+  "graphs_unchanged": true,
+  "same_beam_is_not_same_quality": true,
+  "limits": [
+    "Two specific user graphs, not a multi-seed algorithm superiority claim.",
+    "Recall targets use minimum integer beams found in measured brackets; achieved Recall is displayed.",
+    "Six search repetitions default, core affinity controlled, OS/thermal load not exclusively isolated.",
+    "Performance numbers are fresh common-evaluator measurements, not the original afternoon throughput."
+  ]
+}

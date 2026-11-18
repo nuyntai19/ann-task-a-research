@@ -1,0 +1,191 @@
+{
+  "status": "COMPLETE",
+  "selected": {
+    "name": "eps0.15_min1",
+    "epsilon": 0.15,
+    "min_fanout": 1,
+    "delta_recall": {
+      "80": -0.0017999999999999995,
+      "100": -0.0006999999999999999,
+      "120": -0.0012999999999999997,
+      "140": -0.0014999999999999998,
+      "160": -0.0010999999999999996
+    },
+    "proposal_reduction": 0.09043035425821255,
+    "accepted": true
+  },
+  "calibration_pass": true,
+  "holdout_noninferiority_pass": false,
+  "empirical_accept": false,
+  "comparison": {
+    "build_seconds": {
+      "fixed_median": 19.63,
+      "adaptive_median": 20.55,
+      "reduction_fraction": -0.046867040244523706
+    },
+    "peak_rss_kib": {
+      "fixed_median": 2752312.0,
+      "adaptive_median": 2734260.0,
+      "reduction_fraction": 0.006558849432767744
+    },
+    "directed_proposals": {
+      "fixed_median": 59999972.0,
+      "adaptive_median": 54588392.0,
+      "reduction_fraction": 0.09019304209008627
+    },
+    "leaf_squared_work": {
+      "fixed_median": 4688301660.0,
+      "adaptive_median": 4261528133.0,
+      "reduction_fraction": 0.0910294511637717
+    },
+    "leaf_points": {
+      "fixed_median": 29999991.0,
+      "adaptive_median": 27294199.0,
+      "reduction_fraction": 0.09019309372459483
+    },
+    "graph_edges": {
+      "fixed_median": 23475264.0,
+      "adaptive_median": 22959812.0,
+      "reduction_fraction": 0.02195723975670727
+    },
+    "reservoir_occupied_slots": {
+      "fixed_median": 47058427.0,
+      "adaptive_median": 45085594.0,
+      "reduction_fraction": 0.041923054504138024
+    }
+  },
+  "holdout": {
+    "40": {
+      "fixed_recall": 0.9501777777777779,
+      "adaptive_recall": 0.9470592592592594,
+      "mean_delta": -0.0031185185185185183,
+      "ci95": [
+        -0.004515092592592592,
+        -0.0016885185185185202
+      ],
+      "familywise_one_sided_lower": -0.0047708148148148145
+    },
+    "60": {
+      "fixed_recall": 0.9749444444444444,
+      "adaptive_recall": 0.9736481481481482,
+      "mean_delta": -0.0012962962962962958,
+      "ci95": [
+        -0.002344537037037037,
+        -0.0002665740740740743
+      ],
+      "familywise_one_sided_lower": -0.0025518888888888883
+    },
+    "80": {
+      "fixed_recall": 0.986262962962963,
+      "adaptive_recall": 0.9852333333333334,
+      "mean_delta": -0.0010296296296296295,
+      "ci95": [
+        -0.0018334259259259254,
+        -0.00021101851851851894
+      ],
+      "familywise_one_sided_lower": -0.0020185555555555556
+    },
+    "100": {
+      "fixed_recall": 0.9912703703703705,
+      "adaptive_recall": 0.9909777777777778,
+      "mean_delta": -0.00029259259259259245,
+      "ci95": [
+        -0.0008963888888888887,
+        0.000356111111111108
+      ],
+      "familywise_one_sided_lower": -0.0010037037037037035
+    },
+    "120": {
+      "fixed_recall": 0.9941407407407405,
+      "adaptive_recall": 0.9940666666666665,
+      "mean_delta": -7.407407407407405e-05,
+      "ci95": [
+        -0.0007000925925925925,
+        0.0005185185185185184
+      ],
+      "familywise_one_sided_lower": -0.000822296296296296
+    },
+    "140": {
+      "fixed_recall": 0.9961074074074074,
+      "adaptive_recall": 0.9959814814814815,
+      "mean_delta": -0.00012592592592592587,
+      "ci95": [
+        -0.0006037037037037036,
+        0.0003112037037037032
+      ],
+      "familywise_one_sided_lower": -0.0007111111111111109
+    },
+    "160": {
+      "fixed_recall": 0.997311111111111,
+      "adaptive_recall": 0.9971814814814814,
+      "mean_delta": -0.00012962962962962958,
+      "ci95": [
+        -0.0004888888888888887,
+        0.0002224999999999985
+      ],
+      "familywise_one_sided_lower": -0.0005777777777777775
+    },
+    "240": {
+      "fixed_recall": 0.999,
+      "adaptive_recall": 0.9990518518518519,
+      "mean_delta": 5.1851851851851857e-05,
+      "ci95": [
+        -0.0001999999999999999,
+        0.0002926851851851846
+      ],
+      "familywise_one_sided_lower": -0.0002444444444444443
+    }
+  },
+  "matched_recall": {
+    "0.95": {
+      "fixed": {
+        "beam": 40,
+        "holdout_recall": 0.9501777777777779,
+        "full_batch_qps_median": 41873.59375,
+        "holdout_latency_mean_us": 105.97871396296297,
+        "holdout_latency_p95_us": 176.70465
+      },
+      "adaptive": {
+        "beam": 60,
+        "holdout_recall": 0.9736481481481482,
+        "full_batch_qps_median": 27362.25,
+        "holdout_latency_mean_us": 162.054601,
+        "holdout_latency_p95_us": 306.4198
+      }
+    },
+    "0.99": {
+      "fixed": {
+        "beam": 100,
+        "holdout_recall": 0.9912703703703705,
+        "full_batch_qps_median": 19965.37890625,
+        "holdout_latency_mean_us": 201.824935962963,
+        "holdout_latency_p95_us": 282.36115
+      },
+      "adaptive": {
+        "beam": 100,
+        "holdout_recall": 0.9909777777777778,
+        "full_batch_qps_median": 18787.4921875,
+        "holdout_latency_mean_us": 222.31765270370371,
+        "holdout_latency_p95_us": 370.94965
+      }
+    }
+  },
+  "fixed_runs": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s556",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s557"
+  ],
+  "adaptive_runs": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min1_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min1_s556",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min1_s557"
+  ],
+  "protected_originals_unchanged": 232,
+  "limitations": [
+    "One SIFT dataset; empirical evidence, no universal quality guarantee.",
+    "Three build seeds by default; CPU is not isolated from other applications.",
+    "Assignment buffer reserves original maximum; fixed reservoir capacity is unchanged.",
+    "Per-query latency has no queue wait and no warmup/repetition protocol.",
+    "Noninferiority permits the predeclared absolute Recall tolerance; this is not exact equality."
+  ]
+}

@@ -1,0 +1,58 @@
+--- before/run.py
++++ after/run.py
+@@ -247,18 +247,18 @@
+             raise ValueError("Invalid search metrics")
+         latencies = read_latency(latency_csv, data_manifest["query_rows"],
+                                  [row["beam"] for row in summary["search"]])
+-        latency_lines = []
++        latency_fields = {}
+         for row in summary["search"]:
+             row["latency_us"] = latencies[row["beam"]]
+             stats = row["latency_us"]
+-            latency_lines.append(
+-                f"LOCAL_LATENCY_ROW beam={row['beam']} queries={stats['query_count']} "
+-                + " ".join(f"{name}_us={stats[name]:.6f}" for name in
+-                           ("mean", "p50", "p95", "p99", "min", "max")))
+-        latency_log = "\n".join(latency_lines) + "\n"
+-        with (out / "search.log").open("a") as log:
+-            log.write(latency_log)
+-        search_log += latency_log
++            latency_fields[row["beam"]] = " ".join(
++                f"latency_{name}_us={stats[name]:.6f}" for name in ("mean", "p50", "p95", "p99"))
++        search_log = re.sub(
++            r"(?m)^LOCAL_RECALL_ROW beam=(\d+)[^\n]*$",
++            lambda match: match.group(0) + " " + latency_fields[int(match.group(1))],
++            search_log,
++        )
++        (out / "search.log").write_text(search_log)
+         summary["status"] = "LOCAL_FUNCTIONAL_CHECK_PASS"
+         print(search_log, end="")
+         print(f"LOCAL_FUNCTIONAL_CHECK_PASS summary={out / 'summary.json'}")
+--- before/README.md
++++ after/README.md
+@@ -115,7 +115,9 @@
+   tại mỗi beam. Đơn vị microsecond (1.000 microsecond = 1 millisecond).
+ - `summary.json`: mỗi phần tử `search` có `latency_us` gồm `query_count`,
+   `mean`, `p50`, `p95`, `p99`, `min`, `max`.
+-- `search.log`: các dòng `LOCAL_LATENCY_ROW` ghi thống kê tương ứng.
++- `search.log`: mỗi dòng `LOCAL_RECALL_ROW` ghi cùng lúc `beam`, `recall`,
++  `qps`, `avg_cmps`, `latency_mean_us`, `latency_p50_us`, `latency_p95_us`,
++  `latency_p99_us`. Nhờ đó có thể đọc đầy đủ kết quả của một beam trên một dòng.
+ 
+ Thời gian được đo bằng `std::chrono::steady_clock` ngay trong callback xử lý
+ query của `qsearchAll` native, gồm tìm kiếm và tạo kết quả cho query đó.
+--- before/CHANGES.md
++++ after/CHANGES.md
+@@ -74,3 +74,12 @@
+ - Mọi chỉnh sửa vẫn nằm trong `local_setup/khoa-linux/`; mã R86 gốc giữ nguyên.
+ - Chi tiết compile, so sánh baseline và chạy SIFT nằm trong
+   `change_history/20261118_latency/validation.json` khi kiểm tra hoàn tất.
++
++## Gộp kết quả từng beam trong search.log — 2026-11-18
++
++- Theo yêu cầu, `run.py` ghi Recall/QPS và latency mean/p50/p95/p99 vào cùng
++  một dòng `LOCAL_RECALL_ROW` cho mỗi beam, thay vì các dòng latency riêng.
++- CSV raw và các thống kê trong `summary.json` tiếp tục được lưu như trước.
++- Các field latency trong log đều có hậu tố `_us` để chỉ rõ đơn vị microsecond.
++- Bản sao trước sửa, patch và kết quả kiểm tra được lưu tại
++  `change_history/20261118_search_log_rows/`.

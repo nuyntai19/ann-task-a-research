@@ -1,0 +1,12 @@
+{
+  "status": "PROVIDED_SIFT_GT_REUSE_VALIDATED",
+  "utc": "2026-11-18T11:12:22.834550+00:00",
+  "unit_tests_passed": 5,
+  "full_base_10000_query_preparation": "PASS: reused_existing",
+  "native_full_10000_query_search": "PASS: five beams on previously built SIFT1M graph",
+  "subset_10000_base_32_query_preparation": "PASS: exact_recomputed",
+  "source_gt_unchanged": true,
+  "full_validation": "full_query_validation.json",
+  "subset_data": "local_setup/khoa-linux/data/sift-n10000-q32-2jzu56i2",
+  "validation_scope": "All provided IDs retained; neighbor distances checked for all queries; exhaustive nearest-neighbor validation only for sample queries 0/5000/9999"
+}

@@ -1,0 +1,17 @@
+Data: detected 10000 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 10000 points with max degree 64
+Total edges read from file: 123482
+LOCAL_RECALL_ROW beam=10 recall=0.86250001 qps=31589.33789062 avg_cmps=241
+LOCAL_RECALL_ROW beam=20 recall=0.96875000 qps=70021.88281250 avg_cmps=357
+LOCAL_RECALL_ROW beam=40 recall=0.99687499 qps=52117.26171875 avg_cmps=573
+LOCAL_RECALL_ROW beam=80 recall=1.00000000 qps=35164.83593750 avg_cmps=887
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=29629.63085938 avg_cmps=1151
+LOCAL_LATENCY_CSV=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift-h17_on-1yyqbgrz/query_latency.csv
+LOCAL_RECALL_EVAL_PASS
+LOCAL_LATENCY_ROW beam=10 queries=32 mean_us=68.555094 p50_us=18.490000 p95_us=428.776300 p99_us=544.026580 min_us=8.507000 max_us=576.385000
+LOCAL_LATENCY_ROW beam=20 queries=32 mean_us=42.726344 p50_us=32.530000 p95_us=94.521300 p99_us=155.808370 min_us=17.513000 max_us=168.138000
+LOCAL_LATENCY_ROW beam=40 queries=32 mean_us=56.861406 p50_us=45.061500 p95_us=148.952600 p99_us=226.085400 min_us=22.845000 max_us=229.390000
+LOCAL_LATENCY_ROW beam=80 queries=32 mean_us=86.656406 p50_us=62.600000 p95_us=253.710200 p99_us=315.749450 min_us=44.381000 max_us=320.277000
+LOCAL_LATENCY_ROW beam=160 queries=32 mean_us=105.717875 p50_us=93.246000 p95_us=208.044150 p99_us=269.155070 min_us=27.406000 max_us=285.524000

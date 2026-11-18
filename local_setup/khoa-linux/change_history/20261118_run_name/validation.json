@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-18T10:29:04.560857+00:00",
+  "named_run": "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/validation_sift10k_h17_on_run_name_v1",
+  "dataset_rows": 10000,
+  "queries": 32,
+  "variant": "h17_on",
+  "checks": {
+    "exact_folder_name_no_suffix": "PASS",
+    "graph_search_latency_and_counter_outputs": "PASS",
+    "summary_records_run_name": "PASS",
+    "existing_name_rejected_before_dependency_or_GT_work": "PASS",
+    "existing_results_byte_identical_after_rejection": "PASS",
+    "invalid_names_rejected": 10,
+    "prepare_only_incompatible": "PASS"
+  },
+  "duplicate_error": "ERROR: Run directory already exists: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/validation_sift10k_h17_on_run_name_v1; choose another --run-name"
+}

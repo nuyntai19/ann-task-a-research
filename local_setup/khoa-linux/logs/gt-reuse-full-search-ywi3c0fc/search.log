@@ -1,0 +1,12 @@
+Data: detected 1000000 points with dimension 128
+Data: detected 10000 points with dimension 128
+Ground truth: detected 10000 points with num results 100
+Graph: detected 1000000 points with max degree 64
+Total edges read from file: 23475261
+LOCAL_RECALL_ROW beam=10 recall=0.73536998 qps=74644.14062500 avg_cmps=539
+LOCAL_RECALL_ROW beam=20 recall=0.86835998 qps=47542.75390625 avg_cmps=781
+LOCAL_RECALL_ROW beam=40 recall=0.94933999 qps=31729.81445312 avg_cmps=1249
+LOCAL_RECALL_ROW beam=80 recall=0.98636001 qps=17798.05859375 avg_cmps=2089
+LOCAL_RECALL_ROW beam=160 recall=0.99739999 qps=10154.28417969 avg_cmps=3395
+LOCAL_LATENCY_CSV=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/logs/gt-reuse-full-search-ywi3c0fc/query_latency.csv
+LOCAL_RECALL_EVAL_PASS

@@ -1,0 +1,12 @@
+Data: detected 1000000 points with dimension 128
+Data: detected 10000 points with dimension 128
+Ground truth: detected 10000 points with num results 100
+Graph: detected 1000000 points with max degree 64
+Total edges read from file: 23475273
+LOCAL_RECALL_ROW beam=80 recall=0.98637998 qps=23214.24414062 avg_cmps=2089 latency_mean_us=171.809737 latency_p50_us=169.852500 latency_p95_us=244.140550 latency_p99_us=318.472290
+LOCAL_RECALL_ROW beam=100 recall=0.99145001 qps=19427.17187500 avg_cmps=2425 latency_mean_us=205.586902 latency_p50_us=205.958500 latency_p95_us=288.717650 latency_p99_us=357.353320
+LOCAL_RECALL_ROW beam=120 recall=0.99453002 qps=16677.53515625 avg_cmps=2809 latency_mean_us=239.291259 latency_p50_us=241.997000 latency_p95_us=335.972100 latency_p99_us=412.497460
+LOCAL_RECALL_ROW beam=140 recall=0.99629003 qps=13537.55175781 avg_cmps=3083 latency_mean_us=294.766169 latency_p50_us=293.022500 latency_p95_us=455.102850 latency_p99_us=575.912210
+LOCAL_RECALL_ROW beam=160 recall=0.99739999 qps=12857.56933594 avg_cmps=3395 latency_mean_us=310.484623 latency_p50_us=315.732500 latency_p95_us=453.947500 latency_p99_us=587.222550
+LOCAL_LATENCY_CSV=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift1m_h17_on_q10000_t4_r2/query_latency.csv
+LOCAL_RECALL_EVAL_PASS

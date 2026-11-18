@@ -1,0 +1,24 @@
+Data: detected 1000000 points with dimension 128
+Data: detected 10000 points with dimension 128
+Ground truth: detected 10000 points with num results 100
+Graph: detected 1000000 points with max degree 64
+Total edges read from file: 15557485
+AF_GRAPH_REACHABLE=1000000
+LOCAL_RECALL_ROW beam=40 recall=0.89055002 qps=53637.99609375 avg_cmps=907
+LOCAL_RECALL_ROW beam=60 recall=0.93396002 qps=36961.74218750 avg_cmps=1210
+LOCAL_RECALL_ROW beam=80 recall=0.95771003 qps=31941.43164062 avg_cmps=1491
+LOCAL_RECALL_ROW beam=100 recall=0.97004998 qps=26664.96093750 avg_cmps=1744
+LOCAL_RECALL_ROW beam=120 recall=0.97773999 qps=22923.05664062 avg_cmps=2010
+LOCAL_RECALL_ROW beam=140 recall=0.98304999 qps=20208.91992188 avg_cmps=2225
+LOCAL_RECALL_ROW beam=160 recall=0.98667997 qps=17405.74414062 avg_cmps=2452
+LOCAL_RECALL_ROW beam=240 recall=0.99422997 qps=13105.23242188 avg_cmps=3158
+LOCAL_LATENCY_CSV=/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__eps0.01_min1_s555/query_metrics.csv
+LOCAL_RECALL_EVAL_PASS
+AF_SEARCH beam=40 recall=0.89055002 qps=53637.99609375 latency_mean_us=74.317353 latency_p50_us=73.021500 latency_p95_us=100.614400 latency_p99_us=120.224510
+AF_SEARCH beam=60 recall=0.93396002 qps=36961.74218750 latency_mean_us=107.850384 latency_p50_us=103.766500 latency_p95_us=164.322150 latency_p99_us=197.345160
+AF_SEARCH beam=80 recall=0.95771003 qps=31941.43164062 latency_mean_us=124.744448 latency_p50_us=124.950500 latency_p95_us=164.536850 latency_p99_us=184.734010
+AF_SEARCH beam=100 recall=0.97004998 qps=26664.96093750 latency_mean_us=149.379481 latency_p50_us=151.057000 latency_p95_us=194.520300 latency_p99_us=221.817930
+AF_SEARCH beam=120 recall=0.97773999 qps=22923.05664062 latency_mean_us=174.088483 latency_p50_us=177.326500 latency_p95_us=227.136350 latency_p99_us=254.533380
+AF_SEARCH beam=140 recall=0.98304999 qps=20208.91992188 latency_mean_us=197.583765 latency_p50_us=204.189500 latency_p95_us=259.175950 latency_p99_us=283.298160
+AF_SEARCH beam=160 recall=0.98667997 qps=17405.74414062 latency_mean_us=229.219939 latency_p50_us=234.925500 latency_p95_us=314.785350 latency_p99_us=398.988750
+AF_SEARCH beam=240 recall=0.99422997 qps=13105.23242188 latency_mean_us=304.661933 latency_p50_us=328.135500 latency_p95_us=437.803350 latency_p99_us=484.119630

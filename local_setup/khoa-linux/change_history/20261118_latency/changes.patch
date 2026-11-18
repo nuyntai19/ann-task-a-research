@@ -1,0 +1,455 @@
+--- before/CMakeLists.txt
++++ after/CMakeLists.txt
+@@ -46,6 +46,22 @@
+ # Reuse the original targets, feature definitions and precompiled header.
+ add_subdirectory("${ANN_SOURCE}/algorithms/PipNN" "algorithms/PipNN")
+ 
++find_package(Python3 COMPONENTS Interpreter REQUIRED)
++set(LATENCY_HEADERS "${CMAKE_CURRENT_BINARY_DIR}/generated/local_latency")
++set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
++  "${CMAKE_CURRENT_SOURCE_DIR}/instrument_latency.py"
++  "${ANN_SOURCE}/algorithms/utils/beamSearch.h"
++  "${ANN_SOURCE}/algorithms/utils/check_nn_recall.h")
++execute_process(
++  COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/instrument_latency.py"
++    --source "${ANN_SOURCE}/algorithms/utils" --output "${LATENCY_HEADERS}"
++  RESULT_VARIABLE LATENCY_PATCH_RESULT)
++if(NOT LATENCY_PATCH_RESULT EQUAL 0)
++  message(FATAL_ERROR "Failed to instrument the native query loop for latency")
++endif()
+ add_executable(local_graph_recall evaluate.cc)
++target_include_directories(local_graph_recall PRIVATE
++  "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_BINARY_DIR}/generated"
++  "${ANN_SOURCE}/algorithms/utils")
+ target_link_libraries(local_graph_recall PRIVATE parlay ParlayANN Eigen3::Eigen
+   absl::synchronization absl::flat_hash_set absl::span hwy hwy_contrib)
+--- before/evaluate.cc
++++ after/evaluate.cc
+@@ -2,16 +2,18 @@
+ // Unlike the archival R70/R72 executables, it accepts variable dataset sizes.
+ #include <cmath>
+ #include <cstdint>
++#include <filesystem>
++#include <fstream>
+ #include <iomanip>
+ #include <iostream>
+ #include <stdexcept>
+ #include "utils/euclidian_point.h"
+ #include "utils/point_range.h"
+-#include "utils/check_nn_recall.h"
++#include "local_latency/check_nn_recall.h"
+ 
+ int main(int argc, char** argv) {
+-  if (argc != 5) {
+-    std::cerr << "Usage: local_graph_recall GRAPH BASE.fbin QUERIES.fbin GT.ibin\n";
++  if (argc != 5 && argc != 6) {
++    std::cerr << "Usage: local_graph_recall GRAPH BASE.fbin QUERIES.fbin GT.ibin [LATENCY.csv]\n";
+     return 2;
+   }
+   try {
+@@ -26,18 +28,30 @@
+         gt.dimension() < 10 || graph.size() != base.size() || graph.max_degree() != 64) {
+       throw std::runtime_error("Graph/base/query/GT shape mismatch");
+     }
++    const std::filesystem::path latency_path = argc == 6 ? argv[5] : "query_latency.csv";
++    if (std::filesystem::exists(latency_path)) {
++      throw std::runtime_error("Refusing to overwrite existing latency CSV");
++    }
++    std::ofstream latency_csv(latency_path);
++    if (!latency_csv) throw std::runtime_error("Cannot create latency CSV");
++    latency_csv << "beam,query_id,latency_us\n";
+     std::cout << std::fixed << std::setprecision(8);
+     for (long beam : {10L, 20L, 40L, 80L, 160L}) {
+       QueryParams qp(10L, beam, 1.35, static_cast<long>(graph.size()), graph.max_degree());
++      local_latency::begin(queries.size());
+       auto result = checkRecall<PR, PR, PR, Id>(
+           graph, base, queries, base, queries, base, queries, gt,
+           false, 0u, 10L, qp, false);
++      local_latency::write(latency_csv, beam);
+       if (!std::isfinite(result.recall) || !std::isfinite(result.QPS)) {
+         throw std::runtime_error("Nonfinite search result");
+       }
+       std::cout << "LOCAL_RECALL_ROW beam=" << beam << " recall=" << result.recall
+                 << " qps=" << result.QPS << " avg_cmps=" << result.avg_cmps << '\n';
+     }
++    latency_csv.flush();
++    if (!latency_csv) throw std::runtime_error("Failed to flush latency CSV");
++    std::cout << "LOCAL_LATENCY_CSV=" << latency_path.string() << '\n';
+     std::cout << "LOCAL_RECALL_EVAL_PASS\n";
+     return 0;
+   } catch (const std::exception& error) {
+--- before/run.py
++++ after/run.py
+@@ -1,6 +1,7 @@
+ #!/usr/bin/env python3
+ """Prepare local data, build an R86 graph, audit it, and run native search."""
+ import argparse
++import csv
+ from datetime import datetime, timezone
+ import hashlib
+ import json
+@@ -130,6 +131,31 @@
+             "isolated_nodes": int(np.count_nonzero(degrees == 0)), "sha256": sha256(path)}
+ 
+ 
++def read_latency(path, query_count, beams):
++    samples = {beam: {} for beam in beams}
++    with path.open(newline="") as stream:
++        reader = csv.DictReader(stream)
++        if reader.fieldnames != ["beam", "query_id", "latency_us"]:
++            raise ValueError("Invalid latency CSV header; rebuild the evaluator")
++        for row in reader:
++            beam, query_id, value = int(row["beam"]), int(row["query_id"]), float(row["latency_us"])
++            if beam not in samples or not 0 <= query_id < query_count:
++                raise ValueError("Unexpected beam or query ID in latency CSV")
++            if query_id in samples[beam] or not np.isfinite(value) or value <= 0:
++                raise ValueError("Duplicate query or invalid latency sample")
++            samples[beam][query_id] = value
++    result = {}
++    for beam, values in samples.items():
++        if len(values) != query_count:
++            raise ValueError(f"Incomplete latency samples for beam {beam}")
++        data = np.array(list(values.values()), dtype=np.float64)
++        p50, p95, p99 = np.percentile(data, [50, 95, 99])
++        result[beam] = {"query_count": query_count, "mean": float(data.mean()),
++                        "p50": float(p50), "p95": float(p95), "p99": float(p99),
++                        "min": float(data.min()), "max": float(data.max())}
++    return result
++
++
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument("--dataset", choices=["synthetic", "sift"], default="synthetic")
+@@ -174,6 +200,9 @@
+                "data_manifest": data_manifest, "command": command,
+                "binary_sha256": sha256(binary), "evaluator_sha256": sha256(evaluator),
+                "deps_lock_sha256": sha256(HERE / "deps.lock.json"),
++               "local_source_sha256": {name: sha256(HERE / name) for name in
++                                       ("evaluate.cc", "latency_probe.h", "instrument_latency.py",
++                                        "run.py", "CMakeLists.txt")},
+                "source_sha256": {str(p.relative_to(REPO)): sha256(p)
+                                   for p in (SOURCE / "algorithms").rglob("*") if p.is_file()}}
+     def save():
+@@ -195,9 +224,16 @@
+             if not records:
+                 raise ValueError("Counter file contains no records")
+             summary["counter_records"] = len(records)
++        latency_csv = out / "query_latency.csv"
+         search_command = [str(evaluator), str(graph), str(data / "base.fbin"),
+-                          str(data / "query.fbin"), str(data / "gt.ibin")]
++                          str(data / "query.fbin"), str(data / "gt.ibin"), str(latency_csv)]
+         summary["search_command"] = search_command
++        summary["latency_measurement"] = {
++            "unit": "microseconds", "scope": "per_query_service_time",
++            "clock": "std::chrono::steady_clock", "includes_queue_wait": False,
++            "includes_file_io": False, "percentile_method": "linear", "csv": str(latency_csv),
++            "note": "Concurrent query processing time; QPS includes timer overhead. No warmup or repetitions.",
++        }
+         with (out / "search.log").open("w") as log:
+             subprocess.run(search_command, env=env, cwd=out, stdout=log, stderr=subprocess.STDOUT,
+                            check=True, timeout=args.timeout)
+@@ -209,6 +245,20 @@
+                              for b, r, q in rows]
+         if any(not 0 <= row["recall_at_10"] <= 1 or row["qps"] <= 0 for row in summary["search"]):
+             raise ValueError("Invalid search metrics")
++        latencies = read_latency(latency_csv, data_manifest["query_rows"],
++                                 [row["beam"] for row in summary["search"]])
++        latency_lines = []
++        for row in summary["search"]:
++            row["latency_us"] = latencies[row["beam"]]
++            stats = row["latency_us"]
++            latency_lines.append(
++                f"LOCAL_LATENCY_ROW beam={row['beam']} queries={stats['query_count']} "
++                + " ".join(f"{name}_us={stats[name]:.6f}" for name in
++                           ("mean", "p50", "p95", "p99", "min", "max")))
++        latency_log = "\n".join(latency_lines) + "\n"
++        with (out / "search.log").open("a") as log:
++            log.write(latency_log)
++        search_log += latency_log
+         summary["status"] = "LOCAL_FUNCTIONAL_CHECK_PASS"
+         print(search_log, end="")
+         print(f"LOCAL_FUNCTIONAL_CHECK_PASS summary={out / 'summary.json'}")
+--- before/README.md
++++ after/README.md
+@@ -94,12 +94,51 @@
+ | `build/stock_off/`, `build/h17_on/` | Build độc lập; có `compile_commands.json` |
+ | `logs/setup-*.log` | Log tải thư viện, configure, compile và smoke |
+ | `data/` | Dữ liệu kiểm tra cùng GT và manifest có SHA256 |
+-| `runs/` | Graph, log build/search, counters và `summary.json` của từng lần chạy |
++| `runs/` | Graph, log build/search, `query_latency.csv`, counters và `summary.json` của từng lần chạy |
+ 
+ `deps/`, `build/`, `logs/`, `data/`, `runs/` được bỏ qua bởi Git nhưng vẫn lưu
+ trên ổ đĩa. Mỗi run ghi lệnh, binary/source SHA256, số thread, dataset, graph
+ audit và Recall@10/QPS trong `summary.json`. H17 ON kiểm tra các file counters
+ có nội dung và JSON hợp lệ; không thay thế bài kiểm toán counter của R86.
++
++## Latency tìm kiếm
++
++Từ lần cập nhật latency, vẫn dùng lệnh chạy cũ:
++
++```bash
++python3 local_setup/khoa-linux/run.py --dataset sift
++```
++
++Mỗi run lưu thêm:
++
++- `query_latency.csv`: cột `beam,query_id,latency_us`; một số đo cho mỗi query
++  tại mỗi beam. Đơn vị microsecond (1.000 microsecond = 1 millisecond).
++- `summary.json`: mỗi phần tử `search` có `latency_us` gồm `query_count`,
++  `mean`, `p50`, `p95`, `p99`, `min`, `max`.
++- `search.log`: các dòng `LOCAL_LATENCY_ROW` ghi thống kê tương ứng.
++
++Thời gian được đo bằng `std::chrono::steady_clock` ngay trong callback xử lý
++query của `qsearchAll` native, gồm tìm kiếm và tạo kết quả cho query đó.
++Nó không gồm chờ scheduler, tải graph/dataset, tính Recall/ground truth hoặc
++ghi CSV. Các query vẫn chạy song song theo `--threads`, nên đây là thời gian
++xử lý từng query dưới mức đồng thời đó. QPS vẫn đo cả batch và có thêm chi phí
++nhỏ của bộ đếm giờ; không được suy latency từng query từ `1/QPS`.
++
++Percentile dùng nội suy tuyến tính của NumPy trên các số đo thực tế. Mặc định
++chỉ 32 queries, mỗi query chạy một lần cho mỗi beam, chưa có warmup/repetition;
++p95/p99 của bài kiểm tra nhỏ này chưa phải benchmark latency ổn định. Có thể
++tăng `--queries` khi cần tập mẫu lớn hơn.
++
++Mã gốc không bị sửa: CMake tạo bản header có timer trong
++`build/<variant>/generated/local_latency/` dành riêng cho evaluator. Cần build
++lại evaluator một lần sau cập nhật này; hai bản trên máy hiện tại đã được
++kiểm tra theo hồ sơ trong `change_history/20261118_latency/`.
++
++Kiểm tra aggregation và instrumentation:
++
++```bash
++python3 local_setup/khoa-linux/test_latency.py
++```
+ 
+ ## Phạm vi kiểm tra
+ 
+--- before/CHANGES.md
++++ after/CHANGES.md
+@@ -53,3 +53,24 @@
+ Phiên Codex ban đầu không phân giải được `github.com`, vì thế lần tải
+ ParlayLib đầu tiên dừng trước compile. Xem `validation.json` cho trạng thái
+ kiểm tra cụ thể và log. Khi mạng sẵn sàng, chạy lại `setup.sh` để tiếp tục.
++
++## Bổ sung log latency tìm kiếm — 2026-11-18
++
++- Bản sao các file cục bộ trước khi sửa nằm ở
++  `change_history/20261118_latency/before/`, kèm SHA256 và kết quả search baseline.
++- `instrument_latency.py` tạo bản sao header native trong build và chỉ chèn
++  timer vào hai callback query của `qsearchAll` (start cố định và random).
++  Script dừng với lỗi nếu source gốc đổi cấu trúc không khớp điểm chèn.
++- `latency_probe.h` dùng steady clock để đo thời gian từng query; mỗi worker
++  ghi vào ô riêng; CSV được ghi sau khi mọi query hoàn tất.
++- `evaluate.cc` dùng header được instrument, ghi raw CSV cho cả năm beam;
++  có tham số cuối tùy chọn `[LATENCY.csv]`, mặc định `query_latency.csv`,
++  từ chối ghi đè file đã có.
++- `run.py` giữ lệnh CLI cũ, truyền đường dẫn CSV riêng mỗi run, xác minh đủ
++  query/beam và tính mean/p50/p95/p99/min/max bằng NumPy; lưu vào
++  `summary.json` và `search.log`. Manifest ghi thêm SHA256 của mã cục bộ.
++- `test_latency.py` kiểm tra percentile trên tập biết trước, dữ liệu sai/thiếu,
++  và xác nhận instrumentation không đổi mã native ngoài hai timer.
++- Mọi chỉnh sửa vẫn nằm trong `local_setup/khoa-linux/`; mã R86 gốc giữ nguyên.
++- Chi tiết compile, so sánh baseline và chạy SIFT nằm trong
++  `change_history/20261118_latency/validation.json` khi kiểm tra hoàn tất.
+--- before/validation.json
++++ after/validation.json
+@@ -1,5 +1,5 @@
+ {
+-  "status": "PREPARATION_PASS_NATIVE_BUILD_BLOCKED",
++  "status": "LOCAL_SIFT10K_LATENCY_PASS",
+   "checks": {
+     "original_reference_files_unchanged": true,
+     "sift-n10000-q32-_9e2e252": {
+@@ -33,18 +33,20 @@
+         "duplicate"
+       ]
+     },
+-    "truncated_matrix_rejected": true
++    "truncated_matrix_rejected": true,
++    "latency_logging": "PASS: per-query CSV, independent statistics, baseline parity, single-thread and four-thread search"
+   },
+   "syntax_checks": {
+     "bash": "PASS",
+     "python_compile": "PASS"
+   },
+   "cmake_compiler_detection": "PASS GNU 13.3.0",
+-  "dependency_fetch": "BLOCKED: Could not resolve host: github.com",
++  "dependency_fetch": "DEPENDENCIES_VERIFIED: all four pinned commits present locally",
+   "dependency_fetch_log": "logs/setup-9AjTywQ8.log",
+-  "native_compile": "NOT_RUN: dependencies unavailable",
+-  "native_primitive_test": "NOT_RUN",
+-  "graph_build": "NOT_RUN",
+-  "native_search": "NOT_RUN",
+-  "next_command": "bash local_setup/khoa-linux/setup.sh"
++  "native_compile": "PASS: stock_off and h17_on",
++  "native_primitive_test": "PASS: both variants in logs/setup-0DETpE7I.log",
++  "graph_build": "PASS: SIFT10K stock_off and h17_on",
++  "native_search": "PASS: both variants, five beams each",
++  "next_command": "python3 local_setup/khoa-linux/run.py --dataset sift",
++  "latency_validation": "change_history/20261118_latency/validation.json"
+ }
+--- /dev/null
++++ after/latency_probe.h
+@@ -0,0 +1,48 @@
++#pragma once
++
++#include <chrono>
++#include <cstddef>
++#include <fstream>
++#include <iomanip>
++#include <stdexcept>
++#include <vector>
++
++namespace local_latency {
++// Each parallel worker writes one distinct element. The caller starts/ends
++// collection outside qsearchAll, after Parlay has joined all workers.
++inline std::vector<double> query_us;
++inline bool collecting = false;
++
++inline void begin(std::size_t count) {
++  if (collecting) throw std::runtime_error("Latency collection already active");
++  query_us.assign(count, -1.0);
++  collecting = true;
++}
++
++class QueryTimer {
++  using Clock = std::chrono::steady_clock;
++  std::size_t id_;
++  Clock::time_point start_;
++
++ public:
++  explicit QueryTimer(std::size_t id) : id_(id), start_(Clock::now()) {}
++  QueryTimer(const QueryTimer&) = delete;
++  QueryTimer& operator=(const QueryTimer&) = delete;
++  ~QueryTimer() {
++    if (collecting) {
++      query_us[id_] = std::chrono::duration<double, std::micro>(Clock::now() - start_).count();
++    }
++  }
++};
++
++inline void write(std::ostream& output, long beam) {
++  if (!collecting) throw std::runtime_error("Latency collection not active");
++  collecting = false;
++  output << std::setprecision(17);
++  for (std::size_t i = 0; i < query_us.size(); ++i) {
++    if (query_us[i] <= 0.0) throw std::runtime_error("Missing or nonpositive query latency");
++    output << beam << ',' << i << ',' << query_us[i] << '\n';
++  }
++  if (!output) throw std::runtime_error("Failed to write query latency CSV");
++}
++}  // namespace local_latency
+--- /dev/null
++++ after/instrument_latency.py
+@@ -0,0 +1,39 @@
++#!/usr/bin/env python3
++"""Generate local native headers with timers around the two qsearchAll query callbacks."""
++import argparse
++import hashlib
++from pathlib import Path
++
++
++def instrument(source):
++    # Patch only qsearchAll; keep the query algorithm, results and parallel
++    # scheduler unchanged. Fail if an upstream edit invalidates these anchors.
++    start = source.index("\nqsearchAll(const PointRange &Query_Points,")
++    end_marker = "\n  return all_neighbors;\n}"
++    end = source.index(end_marker, start) + len(end_marker)
++    original = source[start:end]
++    needle = "    parlay::parallel_for(0, Query_Points.size(), [&](size_t i) {\n"
++    if original.count(needle) != 2:
++        raise ValueError("Expected exactly two native qsearchAll query callbacks")
++    replacement = original.replace(needle, needle + "      local_latency::QueryTimer query_timer(i);\n")
++    return '#include "latency_probe.h"\n' + source[:start] + replacement + source[end:]
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("--source", required=True, type=Path)
++    parser.add_argument("--output", required=True, type=Path)
++    args = parser.parse_args()
++    args.output.mkdir(parents=True, exist_ok=True)
++    for name in ("beamSearch.h", "check_nn_recall.h"):
++        original = (args.source / name).read_text()
++        content = instrument(original) if name == "beamSearch.h" else original
++        header = ("// Generated by instrument_latency.py from native R86. Original SHA256: "
++                  + hashlib.sha256(original.encode()).hexdigest() + "\n")
++        target = args.output / name
++        if not target.exists() or target.read_text() != header + content:
++            target.write_text(header + content)
++
++
++if __name__ == "__main__":
++    main()
+--- /dev/null
++++ after/test_latency.py
+@@ -0,0 +1,69 @@
++"""Checks for measured latency aggregation and native-source preservation."""
++import csv
++from pathlib import Path
++import tempfile
++import unittest
++
++from instrument_latency import instrument
++from run import read_latency
++
++HERE = Path(__file__).resolve().parent
++
++
++class LatencyTests(unittest.TestCase):
++    def parse(self, rows, count=4, beams=(10,), header=("beam", "query_id", "latency_us")):
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "latency.csv"
++            with path.open("w", newline="") as stream:
++                writer = csv.writer(stream)
++                writer.writerow(header)
++                writer.writerows(rows)
++            return read_latency(path, count, beams)
++
++    def test_known_percentiles_and_beam_grouping(self):
++        rows = [(beam, query, value * scale) for query, value in enumerate((10, 20, 30, 40))
++                for beam, scale in ((10, 1), (20, 2))]
++        result = self.parse(rows, beams=(10, 20))
++        for beam, scale in ((10, 1), (20, 2)):
++            self.assertEqual(result[beam]["query_count"], 4)
++            for name, expected in {"mean": 25, "min": 10, "max": 40,
++                                   "p50": 25, "p95": 38.5, "p99": 39.7}.items():
++                self.assertAlmostEqual(result[beam][name], expected * scale)
++
++    def test_invalid_or_incomplete_samples_rejected(self):
++        valid = [(10, i, 10 + i) for i in range(4)]
++        cases = {
++            "missing": valid[:-1], "duplicate": valid + [valid[0]],
++            "wrong_beam": [(20, 0, 10)] + valid[1:],
++            "bad_query": [(10, -1, 10)] + valid[1:],
++            "zero": [(10, 0, 0)] + valid[1:],
++            "negative": [(10, 0, -10)] + valid[1:],
++            "nan": [(10, 0, "nan")] + valid[1:],
++            "infinity": [(10, 0, "inf")] + valid[1:],
++        }
++        for label, rows in cases.items():
++            with self.subTest(case=label), self.assertRaises(ValueError):
++                self.parse(rows)
++        with self.assertRaises(ValueError):
++            self.parse(valid, header=("query_id", "latency_us"))
++
++    def test_timers_are_only_changes_to_native_query_code(self):
++        native = (HERE.parent.parent / "experiments/R86/r86_v1_2_source/algorithms/utils/beamSearch.h").read_text()
++        patched = instrument(native)
++        timer_line = "      local_latency::QueryTimer query_timer(i);\n"
++        self.assertEqual(patched.count(timer_line), 2)
++        restored = patched.removeprefix('#include "latency_probe.h"\n').replace(timer_line, "")
++        self.assertEqual(restored, native)
++
++    def test_unexpected_upstream_query_layout_rejected(self):
++        native = (HERE.parent.parent / "experiments/R86/r86_v1_2_source/algorithms/utils/beamSearch.h").read_text()
++        start = native.index("\nqsearchAll(const PointRange &Query_Points,")
++        changed = native[:start] + native[start:].replace(
++            "    parlay::parallel_for(0, Query_Points.size(), [&](size_t i) {\n",
++            "    parlay::parallel_for(0, Query_Points.size(), [&](size_t query_id) {\n", 1)
++        with self.assertRaises(ValueError):
++            instrument(changed)
++
++
++if __name__ == "__main__":
++    unittest.main()

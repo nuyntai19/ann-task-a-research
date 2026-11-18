@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-18T09:57:06.016709+00:00",
+  "dataset": "SIFT10K",
+  "queries": 32,
+  "threads": 4,
+  "search_log": "runs/sift-stock_off-7rioziez/search.log",
+  "beam_rows": 5,
+  "checks": [
+    "one combined row per beam",
+    "Recall/QPS match summary.json",
+    "all latency fields match summary.json to logged precision",
+    "full build and native search completed"
+  ],
+  "beam40_example": "LOCAL_RECALL_ROW beam=40 recall=0.99687499 qps=58500.91796875 avg_cmps=573 latency_mean_us=53.706156 latency_p50_us=40.602500 latency_p95_us=142.105600 latency_p99_us=191.287200"
+}

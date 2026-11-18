@@ -1,0 +1,927 @@
+Setup log: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/logs/setup-5xA1UFN7.log
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+From https://github.com/cmuparlay/parlaylib
+ * branch            51017699dcc421f80479cdb238d3092233ad0d26 -> FETCH_HEAD
+HEAD is now at 5101769 Update CI Images (#90)
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+From https://gitlab.com/libeigen/eigen
+ * branch            3147391d946bb4b6c68edd901f2add6ac1f31f8c -> FETCH_HEAD
+HEAD is now at 3147391 Change version to 3.4.0.
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+From https://github.com/abseil/abseil-cpp
+ * branch            bc257a88f7c1939f24e0379f14a3589e926c950c -> FETCH_HEAD
+HEAD is now at bc257a8 Apply LTS transformations for 20250512 LTS branch (#1886)
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+From https://github.com/google/highway
+ * branch            6bc2d47793bae9c521fb4150936669647700765d -> FETCH_HEAD
+HEAD is now at 6bc2d47 Merge pull request #3528 from johnplatts:hwy_sve_mul_by_pow2_103026
+DEPENDENCIES_VERIFIED
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- PARLAY VERSION 2.3.3
+-- ---------------------------- General configuration -----------------------------
+-- CMake Generator:                Unix Makefiles
+-- Compiler:                       GNU 13.3.0
+-- Build type:                     Release
+-- CMAKE_CXX_FLAGS:                
+-- CMAKE_CXX_FLAGS_DEBUG:          -g
+-- CMAKE_CXX_FLAGS_RELEASE:        -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG -fno-omit-frame-pointer
+-- CMAKE_EXE_LINKER_FLAGS          
+-- CMAKE_INSTALL_PREFIX:           /usr/local
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- -------------------------------- Library options ------------------------------
+-- Using Parlay scheduler. Switch with -DPARLAY_{CILKPLUS,OPENCILK,OPENMP,TBB}=On
+-- Elastic parallelism enabled. Disable with -DPARLAY_ELASTIC_PARALLELISM=Off
+-- ------------------------------- Static Analysis --------------------------------
+-- cppcheck:                     Disabled (enable with -DENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DENABLE_IWYU=On)
+-- ---------------------------------- Unit Tests ----------------------------------
+-- testing: Disabled (enable with -DPARLAY_TEST=On)
+-- ---------------------------------- Benchmarks ----------------------------------
+-- benchmarks: Disabled (enable with -DPARLAY_BENCHMARK=On)
+-- ----------------------------------- Examples -----------------------------------
+-- examples: Disabled (enable with -DPARLAY_EXAMPLES=On)
+-- example data: Off (add -DPARLAY_EXAMPLE_DATA=On to download)
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17 - Success
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20 - Failed
+CMake Deprecation Warning at deps/highway/CMakeLists.txt:28 (cmake_policy):
+  The OLD behavior for policy CMP0111 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test ATOMICS_LOCK_FREE_INSTRUCTIONS
+-- Performing Test ATOMICS_LOCK_FREE_INSTRUCTIONS - Success
+-- Performing Test HWY_EMSCRIPTEN
+-- Performing Test HWY_EMSCRIPTEN - Failed
+-- Performing Test HWY_RISCV
+-- Performing Test HWY_RISCV - Failed
+-- Looking for sys/auxv.h
+-- Looking for sys/auxv.h - found
+-- Looking for asm/hwcap.h
+-- Looking for asm/hwcap.h - not found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Configured Target: neighbors-pipnn_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_INT8_T_MIPS with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_UINT8_T_MIPS with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configuring done (1.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/build/stock_off
+[  0%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_log_severity.dir/log_severity.cc.o
+[  1%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/abort.cc.o
+[  3%] Linking CXX static library libabsl_log_severity.a
+[  3%] Built target absl_log_severity
+[  5%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_spinlock_wait.dir/internal/spinlock_wait.cc.o
+[  5%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/aligned_allocator.cc.o
+[  5%] Linking CXX static library libabsl_spinlock_wait.a
+[  5%] Built target absl_spinlock_wait
+[  5%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_fixed.cc.o
+[  5%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/nanobenchmark.cc.o
+[  5%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_format.cc.o
+[  5%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/os_rng.cc.o
+[  5%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_if.cc.o
+[  6%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/per_target.cc.o
+[  8%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_impl.cc.o
+[  8%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_info.cc.o
+[  8%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_libc.cc.o
+[ 10%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_lookup.cc.o
+[ 10%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_posix.cc.o
+[ 10%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/zone_info_source.cc.o
+[ 11%] Linking CXX static library libabsl_time_zone.a
+[ 11%] Built target absl_time_zone
+[ 11%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o
+[ 13%] Linking CXX static library libabsl_utf8_for_code_point.a
+[ 13%] Built target absl_utf8_for_code_point
+[ 13%] Building CXX object deps/abseil-cpp/absl/profiling/CMakeFiles/absl_exponential_biased.dir/internal/exponential_biased.cc.o
+[ 13%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/perf_counters.cc.o
+[ 15%] Linking CXX static library libabsl_exponential_biased.a
+[ 15%] Built target absl_exponential_biased
+[ 15%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_civil_time.dir/internal/cctz/src/civil_time_detail.cc.o
+[ 15%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/print.cc.o
+[ 15%] Linking CXX static library libabsl_civil_time.a
+[ 15%] Built target absl_civil_time
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/profiler.cc.o
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/stats.cc.o
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/targets.cc.o
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/timer.cc.o
+[ 16%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_raw_logging_internal.dir/internal/raw_logging.cc.o
+[ 18%] Linking CXX static library libabsl_raw_logging_internal.a
+[ 18%] Built target absl_raw_logging_internal
+[ 20%] Linking CXX static library libhwy.a
+[ 20%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/cycleclock.cc.o
+[ 20%] Built target hwy
+[ 21%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_throw_delegate.dir/internal/throw_delegate.cc.o
+[ 21%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/spinlock.cc.o
+[ 21%] Linking CXX static library libabsl_throw_delegate.a
+[ 21%] Built target absl_throw_delegate
+[ 21%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/sysinfo.cc.o
+[ 21%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.o
+[ 23%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.o
+[ 25%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/thread_identity.cc.o
+[ 25%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.o
+[ 25%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/unscaledcycleclock.cc.o
+[ 25%] Linking CXX static library libabsl_debugging_internal.a
+[ 25%] Built target absl_debugging_internal
+[ 25%] Linking CXX static library libabsl_base.a
+[ 26%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cordz_functions.dir/internal/cordz_functions.cc.o
+[ 26%] Built target absl_base
+[ 26%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f16a.cc.o
+[ 26%] Linking CXX static library libabsl_cordz_functions.a
+[ 26%] Built target absl_cordz_functions
+[ 26%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_malloc_internal.dir/internal/low_level_alloc.cc.o
+[ 26%] Linking CXX static library libabsl_malloc_internal.a
+[ 26%] Built target absl_malloc_internal
+[ 26%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_tracing_internal.dir/internal/tracing.cc.o
+[ 26%] Linking CXX static library libabsl_tracing_internal.a
+[ 26%] Built target absl_tracing_internal
+[ 26%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.o
+[ 26%] Linking CXX static library libabsl_stacktrace.a
+[ 26%] Built target absl_stacktrace
+[ 26%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/ostringstream.cc.o
+[ 26%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/utf8.cc.o
+[ 28%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/escaping.cc.o
+[ 28%] Linking CXX static library libabsl_strings_internal.a
+[ 28%] Built target absl_strings_internal
+[ 30%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_decode_rust_punycode.dir/internal/decode_rust_punycode.cc.o
+[ 30%] Linking CXX static library libabsl_decode_rust_punycode.a
+[ 30%] Built target absl_decode_rust_punycode
+[ 30%] Building CXX object deps/abseil-cpp/absl/numeric/CMakeFiles/absl_int128.dir/int128.cc.o
+[ 30%] Linking CXX static library libabsl_int128.a
+[ 30%] Built target absl_int128
+[ 30%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_string_view.dir/string_view.cc.o
+[ 30%] Linking CXX static library libabsl_string_view.a
+[ 30%] Built target absl_string_view
+[ 30%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_graphcycles_internal.dir/internal/graphcycles.cc.o
+[ 30%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f16d.cc.o
+[ 30%] Linking CXX static library libabsl_graphcycles_internal.a
+[ 30%] Built target absl_graphcycles_internal
+[ 30%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_cpu_detect.dir/internal/cpu_detect.cc.o
+[ 30%] Linking CXX static library libabsl_crc_cpu_detect.a
+[ 30%] Built target absl_crc_cpu_detect
+[ 31%] Building CXX object deps/abseil-cpp/absl/hash/CMakeFiles/absl_city.dir/internal/city.cc.o
+[ 31%] Linking CXX static library libabsl_city.a
+[ 31%] Built target absl_city
+[ 33%] Building CXX object deps/abseil-cpp/absl/hash/CMakeFiles/absl_low_level_hash.dir/internal/low_level_hash.cc.o
+[ 33%] Linking CXX static library libabsl_low_level_hash.a
+[ 33%] Built target absl_low_level_hash
+[ 35%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_rust.dir/internal/demangle_rust.cc.o
+[ 35%] Linking CXX static library libabsl_demangle_rust.a
+[ 35%] Built target absl_demangle_rust
+[ 36%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/ascii.cc.o
+[ 36%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/charconv.cc.o
+[ 36%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/escaping.cc.o
+[ 38%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_bigint.cc.o
+[ 40%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f32a.cc.o
+[ 40%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_parse.cc.o
+[ 40%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/damerau_levenshtein_distance.cc.o
+[ 40%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/memutil.cc.o
+[ 41%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/stringify_sink.cc.o
+[ 41%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/match.cc.o
+[ 41%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/numbers.cc.o
+[ 43%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/str_cat.cc.o
+[ 43%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/str_replace.cc.o
+[ 43%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f32d.cc.o
+[ 43%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/str_split.cc.o
+[ 43%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/substitute.cc.o
+[ 45%] Linking CXX static library libabsl_strings.a
+[ 45%] Built target absl_strings
+[ 46%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_internal.dir/internal/crc.cc.o
+[ 46%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_internal.dir/internal/crc_x86_arm_combined.cc.o
+[ 46%] Linking CXX static library libabsl_crc_internal.a
+[ 46%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f64a.cc.o
+[ 46%] Built target absl_crc_internal
+[ 48%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/arg.cc.o
+[ 48%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/bind.cc.o
+[ 48%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/extension.cc.o
+[ 48%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/float_conversion.cc.o
+[ 50%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/output.cc.o
+[ 50%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/parser.cc.o
+[ 51%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f64d.cc.o
+[ 51%] Linking CXX static library libabsl_str_format_internal.a
+[ 51%] Built target absl_str_format_internal
+[ 53%] Building CXX object deps/abseil-cpp/absl/hash/CMakeFiles/absl_hash.dir/internal/hash.cc.o
+[ 53%] Linking CXX static library libabsl_hash.a
+[ 53%] Built target absl_hash
+[ 53%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.o
+[ 53%] Linking CXX static library libabsl_demangle_internal.a
+[ 53%] Built target absl_demangle_internal
+[ 53%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/civil_time.cc.o
+[ 53%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/clock.cc.o
+[ 55%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/duration.cc.o
+[ 55%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i16a.cc.o
+[ 55%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/format.cc.o
+[ 55%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/time.cc.o
+[ 56%] Linking CXX static library libabsl_time.a
+[ 56%] Built target absl_time
+[ 56%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/crc32c.cc.o
+[ 56%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/internal/crc_memcpy_fallback.cc.o
+[ 58%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/internal/crc_memcpy_x86_arm_combined.cc.o
+[ 58%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i16d.cc.o
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc: In function ‘void absl::lts_20250512::crc_internal::{anonymous}::LargeTailCopy(absl::lts_20250512::crc32c_t*, char**, const char**, size_t, size_t)’:
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc:97:31: warning: ignoring attributes on template argument ‘absl::lts_20250512::crc_internal::V128’ {aka ‘__m128i’} [-Wignored-attributes]
+   97 |   std::array<V128, vec_regions> data;
+      |                               ^
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc: In member function ‘absl::lts_20250512::crc32c_t absl::lts_20250512::crc_internal::AcceleratedCrcMemcpyEngine<vec_regions, int_regions>::Compute(void*, const void*, std::size_t, absl::lts_20250512::crc32c_t) const’:
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc:245:31: warning: ignoring attributes on template argument ‘absl::lts_20250512::crc_internal::V128’ {aka ‘__m128i’} [-Wignored-attributes]
+  245 |   std::array<V128, vec_regions> vec_data;
+      |                               ^
+[ 58%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/internal/crc_non_temporal_memcpy.cc.o
+[ 58%] Linking CXX static library libabsl_crc32c.a
+[ 58%] Built target absl_crc32c
+[ 58%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.o
+[ 60%] Linking CXX static library libabsl_symbolize.a
+[ 60%] Built target absl_symbolize
+[ 61%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_kernel_timeout_internal.dir/internal/kernel_timeout.cc.o
+[ 61%] Linking CXX static library libabsl_kernel_timeout_internal.a
+[ 61%] Built target absl_kernel_timeout_internal
+[ 61%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_cord_state.dir/internal/crc_cord_state.cc.o
+[ 63%] Linking CXX static library libabsl_crc_cord_state.a
+[ 63%] Built target absl_crc_cord_state
+[ 63%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i32a.cc.o
+[ 65%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i32d.cc.o
+[ 65%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i64a.cc.o
+[ 65%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i64d.cc.o
+[ 66%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u16a.cc.o
+[ 66%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u16d.cc.o
+[ 66%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u32a.cc.o
+[ 66%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u32d.cc.o
+[ 68%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u64a.cc.o
+[ 68%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u64d.cc.o
+[ 68%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_128a.cc.o
+[ 70%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_128d.cc.o
+[ 70%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f16a.cc.o
+[ 70%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f16d.cc.o
+[ 70%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f32a.cc.o
+[ 71%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f32d.cc.o
+[ 71%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f64a.cc.o
+[ 71%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/barrier.cc.o
+[ 71%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/blocking_counter.cc.o
+[ 71%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/create_thread_identity.cc.o
+[ 73%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/futex_waiter.cc.o
+[ 73%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/per_thread_sem.cc.o
+[ 73%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/pthread_waiter.cc.o
+[ 75%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/sem_waiter.cc.o
+[ 75%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/stdcpp_waiter.cc.o
+[ 75%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/waiter_base.cc.o
+[ 75%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/win32_waiter.cc.o
+[ 76%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/notification.cc.o
+[ 76%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/mutex.cc.o
+[ 76%] Linking CXX static library libabsl_synchronization.a
+[ 76%] Built target absl_synchronization
+[ 78%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_internal.cc.o
+[ 78%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_btree.cc.o
+[ 78%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f64d.cc.o
+[ 78%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_btree_navigator.cc.o
+[ 78%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_btree_reader.cc.o
+[ 80%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_crc.cc.o
+[ 80%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_consume.cc.o
+[ 80%] Linking CXX static library libabsl_cord_internal.a
+[ 80%] Built target absl_cord_internal
+[ 80%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cordz_handle.dir/internal/cordz_handle.cc.o
+[ 80%] Linking CXX static library libabsl_cordz_handle.a
+[ 80%] Built target absl_cordz_handle
+[ 81%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_have.cc.o
+[ 81%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i16a.cc.o
+[ 81%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i16d.cc.o
+[ 81%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i32a.cc.o
+[ 83%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i32d.cc.o
+[ 83%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i64a.cc.o
+[ 83%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i64d.cc.o
+[ 85%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv128a.cc.o
+[ 85%] Building CXX object deps/abseil-cpp/absl/container/CMakeFiles/absl_hashtablez_sampler.dir/internal/hashtablez_sampler.cc.o
+[ 86%] Building CXX object deps/abseil-cpp/absl/container/CMakeFiles/absl_hashtablez_sampler.dir/internal/hashtablez_sampler_force_weak_definition.cc.o
+[ 86%] Linking CXX static library libabsl_hashtablez_sampler.a
+[ 86%] Built target absl_hashtablez_sampler
+[ 86%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv128d.cc.o
+[ 86%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv64a.cc.o
+[ 88%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv64d.cc.o
+[ 88%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u16a.cc.o
+[ 88%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u16d.cc.o
+[ 88%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u32a.cc.o
+[ 90%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u32d.cc.o
+[ 90%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u64a.cc.o
+[ 90%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u64d.cc.o
+[ 91%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/coder/range_coder.cc.o
+[ 91%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/iguana/ans.cc.o
+[ 91%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/iguana/iguana.cc.o
+[ 91%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/hash/phast.cc.o
+[ 93%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/hash/shardmul.cc.o
+[ 93%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/hash/cuckoo2x2.cc.o
+[ 93%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/image/image.cc.o
+[ 95%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort.cc.o
+[ 95%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort.cc.o
+[ 95%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/thread_pool/thread_pool.cc.o
+[ 95%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/thread_pool/topology.cc.o
+[ 96%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cordz_info.dir/internal/cordz_info.cc.o
+[ 96%] Linking CXX static library libabsl_cordz_info.a
+[ 96%] Built target absl_cordz_info
+[ 98%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord.dir/cord.cc.o
+[ 98%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord.dir/cord_analysis.cc.o
+[ 98%] Linking CXX static library libabsl_cord.a
+[ 98%] Built target absl_cord
+[ 98%] Building CXX object deps/abseil-cpp/absl/container/CMakeFiles/absl_raw_hash_set.dir/internal/raw_hash_set.cc.o
+[100%] Linking CXX static library libhwy_contrib.a
+[100%] Built target hwy_contrib
+[100%] Linking CXX static library libabsl_raw_hash_set.a
+[100%] Built target absl_raw_hash_set
+[100%] Building CXX object algorithms/PipNN/CMakeFiles/neighbors-pipnn_FLOAT_T_EUCLIDEAN.dir/cmake_pch.hxx.gch
+[100%] Building CXX object algorithms/PipNN/CMakeFiles/neighbors-pipnn_FLOAT_T_EUCLIDEAN.dir/home/khoa/research/PiPNN/ann-task-a-research/experiments/R86/r86_v1_2_source/algorithms/bench/neighborsTime.C.o
+[100%] Linking CXX executable neighbors-pipnn_FLOAT_T_EUCLIDEAN
+[100%] Built target neighbors-pipnn_FLOAT_T_EUCLIDEAN
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 21%] Built target absl_base
+[ 47%] Built target hwy_contrib
+[ 49%] Built target absl_throw_delegate
+[ 49%] Built target absl_tracing_internal
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 52%] Built target absl_int128
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_crc_cpu_detect
+[ 55%] Built target absl_low_level_hash
+[ 57%] Built target absl_city
+[ 57%] Built target absl_malloc_internal
+[ 59%] Built target absl_cordz_functions
+[ 60%] Built target absl_demangle_rust
+[ 60%] Built target absl_stacktrace
+[ 60%] Built target absl_graphcycles_internal
+[ 68%] Built target absl_strings
+[ 70%] Built target absl_crc_internal
+[ 70%] Built target absl_demangle_internal
+[ 73%] Built target absl_time
+[ 77%] Built target absl_str_format_internal
+[ 78%] Built target absl_hash
+[ 80%] Built target absl_symbolize
+[ 81%] Built target absl_kernel_timeout_internal
+[ 83%] Built target absl_crc32c
+[ 88%] Built target absl_synchronization
+[ 90%] Built target absl_crc_cord_state
+[ 91%] Built target absl_hashtablez_sampler
+[ 91%] Built target absl_cordz_handle
+[ 95%] Built target absl_cord_internal
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[ 98%] Building CXX object CMakeFiles/local_graph_recall.dir/evaluate.cc.o
+[100%] Linking CXX executable local_graph_recall
+[100%] Built target local_graph_recall
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 45%] Built target hwy_contrib
+[ 47%] Built target absl_base
+[ 49%] Built target absl_throw_delegate
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_int128
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_crc_cpu_detect
+[ 55%] Built target absl_city
+[ 57%] Built target absl_low_level_hash
+[ 59%] Built target absl_cordz_functions
+[ 59%] Built target absl_tracing_internal
+[ 59%] Built target absl_malloc_internal
+[ 59%] Built target absl_stacktrace
+[ 60%] Built target absl_demangle_rust
+[ 60%] Built target absl_graphcycles_internal
+[ 68%] Built target absl_strings
+[ 68%] Built target absl_demangle_internal
+[ 70%] Built target absl_crc_internal
+[ 73%] Built target absl_time
+[ 77%] Built target absl_str_format_internal
+[ 78%] Built target absl_hash
+[ 80%] Built target absl_symbolize
+[ 81%] Built target absl_kernel_timeout_internal
+[ 83%] Built target absl_crc32c
+[ 88%] Built target absl_synchronization
+[ 90%] Built target absl_crc_cord_state
+[ 91%] Built target absl_hashtablez_sampler
+[ 91%] Built target absl_cordz_handle
+[ 95%] Built target absl_cord_internal
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[100%] Building CXX object algorithms/PipNN/CMakeFiles/r70_native_tests.dir/r70_native_tests.cc.o
+[100%] Linking CXX executable r70_native_tests
+[100%] Built target r70_native_tests
+Allocate = 1
+allocating LSH graph
+Allocating: 164864 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+R70_MIXED_FINAL_ROW_PARITY_PASS promoted=50 unpromoted=78
+R70_SAME_SOURCE_LOCK_STRESS_PASS (structural-only, nondeterministic order)
+R70_NATIVE_PARITY_PASS nodes=128 promoted=50
+R70_TEST_NOT_FULL_BUILD_NOT_QUERY_RECALL
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- PARLAY VERSION 2.3.3
+-- ---------------------------- General configuration -----------------------------
+-- CMake Generator:                Unix Makefiles
+-- Compiler:                       GNU 13.3.0
+-- Build type:                     Release
+-- CMAKE_CXX_FLAGS:                
+-- CMAKE_CXX_FLAGS_DEBUG:          -g
+-- CMAKE_CXX_FLAGS_RELEASE:        -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG -fno-omit-frame-pointer
+-- CMAKE_EXE_LINKER_FLAGS          
+-- CMAKE_INSTALL_PREFIX:           /usr/local
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- -------------------------------- Library options ------------------------------
+-- Using Parlay scheduler. Switch with -DPARLAY_{CILKPLUS,OPENCILK,OPENMP,TBB}=On
+-- Elastic parallelism enabled. Disable with -DPARLAY_ELASTIC_PARALLELISM=Off
+-- ------------------------------- Static Analysis --------------------------------
+-- cppcheck:                     Disabled (enable with -DENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DENABLE_IWYU=On)
+-- ---------------------------------- Unit Tests ----------------------------------
+-- testing: Disabled (enable with -DPARLAY_TEST=On)
+-- ---------------------------------- Benchmarks ----------------------------------
+-- benchmarks: Disabled (enable with -DPARLAY_BENCHMARK=On)
+-- ----------------------------------- Examples -----------------------------------
+-- examples: Disabled (enable with -DPARLAY_EXAMPLES=On)
+-- example data: Off (add -DPARLAY_EXAMPLE_DATA=On to download)
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17 - Success
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20 - Failed
+CMake Deprecation Warning at deps/highway/CMakeLists.txt:28 (cmake_policy):
+  The OLD behavior for policy CMP0111 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test ATOMICS_LOCK_FREE_INSTRUCTIONS
+-- Performing Test ATOMICS_LOCK_FREE_INSTRUCTIONS - Success
+-- Performing Test HWY_EMSCRIPTEN
+-- Performing Test HWY_EMSCRIPTEN - Failed
+-- Performing Test HWY_RISCV
+-- Performing Test HWY_RISCV - Failed
+-- Looking for sys/auxv.h
+-- Looking for sys/auxv.h - found
+-- Looking for asm/hwcap.h
+-- Looking for asm/hwcap.h - not found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Configured Target: neighbors-pipnn_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_INT8_T_MIPS with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_UINT8_T_MIPS with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configuring done (0.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/build/h17_on
+[  0%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_log_severity.dir/log_severity.cc.o
+[  1%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/abort.cc.o
+[  3%] Linking CXX static library libabsl_log_severity.a
+[  3%] Built target absl_log_severity
+[  5%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_spinlock_wait.dir/internal/spinlock_wait.cc.o
+[  5%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/aligned_allocator.cc.o
+[  5%] Linking CXX static library libabsl_spinlock_wait.a
+[  5%] Built target absl_spinlock_wait
+[  5%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_fixed.cc.o
+[  5%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/nanobenchmark.cc.o
+[  5%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_format.cc.o
+[  5%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/os_rng.cc.o
+[  5%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_if.cc.o
+[  6%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/per_target.cc.o
+[  8%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_impl.cc.o
+[  8%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_info.cc.o
+[  8%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_libc.cc.o
+[ 10%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_lookup.cc.o
+[ 10%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/time_zone_posix.cc.o
+[ 10%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time_zone.dir/internal/cctz/src/zone_info_source.cc.o
+[ 11%] Linking CXX static library libabsl_time_zone.a
+[ 11%] Built target absl_time_zone
+[ 11%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o
+[ 13%] Linking CXX static library libabsl_utf8_for_code_point.a
+[ 13%] Built target absl_utf8_for_code_point
+[ 13%] Building CXX object deps/abseil-cpp/absl/profiling/CMakeFiles/absl_exponential_biased.dir/internal/exponential_biased.cc.o
+[ 13%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/perf_counters.cc.o
+[ 15%] Linking CXX static library libabsl_exponential_biased.a
+[ 15%] Built target absl_exponential_biased
+[ 15%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_civil_time.dir/internal/cctz/src/civil_time_detail.cc.o
+[ 15%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/print.cc.o
+[ 15%] Linking CXX static library libabsl_civil_time.a
+[ 15%] Built target absl_civil_time
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/profiler.cc.o
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/stats.cc.o
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/targets.cc.o
+[ 16%] Building CXX object deps/highway/CMakeFiles/hwy.dir/hwy/timer.cc.o
+[ 16%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_raw_logging_internal.dir/internal/raw_logging.cc.o
+[ 18%] Linking CXX static library libabsl_raw_logging_internal.a
+[ 18%] Built target absl_raw_logging_internal
+[ 18%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/cycleclock.cc.o
+[ 20%] Linking CXX static library libhwy.a
+[ 20%] Built target hwy
+[ 21%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_throw_delegate.dir/internal/throw_delegate.cc.o
+[ 21%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/spinlock.cc.o
+[ 21%] Linking CXX static library libabsl_throw_delegate.a
+[ 21%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/sysinfo.cc.o
+[ 21%] Built target absl_throw_delegate
+[ 21%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.o
+[ 23%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.o
+[ 25%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/thread_identity.cc.o
+[ 25%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.o
+[ 25%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_base.dir/internal/unscaledcycleclock.cc.o
+[ 25%] Linking CXX static library libabsl_base.a
+[ 25%] Linking CXX static library libabsl_debugging_internal.a
+[ 25%] Built target absl_base
+[ 25%] Built target absl_debugging_internal
+[ 26%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cordz_functions.dir/internal/cordz_functions.cc.o
+[ 26%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f16a.cc.o
+[ 26%] Linking CXX static library libabsl_cordz_functions.a
+[ 26%] Built target absl_cordz_functions
+[ 26%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_malloc_internal.dir/internal/low_level_alloc.cc.o
+[ 26%] Linking CXX static library libabsl_malloc_internal.a
+[ 26%] Built target absl_malloc_internal
+[ 26%] Building CXX object deps/abseil-cpp/absl/base/CMakeFiles/absl_tracing_internal.dir/internal/tracing.cc.o
+[ 26%] Linking CXX static library libabsl_tracing_internal.a
+[ 26%] Built target absl_tracing_internal
+[ 26%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.o
+[ 26%] Linking CXX static library libabsl_stacktrace.a
+[ 26%] Built target absl_stacktrace
+[ 26%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/ostringstream.cc.o
+[ 26%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/utf8.cc.o
+[ 28%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings_internal.dir/internal/escaping.cc.o
+[ 28%] Linking CXX static library libabsl_strings_internal.a
+[ 28%] Built target absl_strings_internal
+[ 30%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_decode_rust_punycode.dir/internal/decode_rust_punycode.cc.o
+[ 30%] Linking CXX static library libabsl_decode_rust_punycode.a
+[ 30%] Built target absl_decode_rust_punycode
+[ 30%] Building CXX object deps/abseil-cpp/absl/numeric/CMakeFiles/absl_int128.dir/int128.cc.o
+[ 30%] Linking CXX static library libabsl_int128.a
+[ 30%] Built target absl_int128
+[ 30%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_string_view.dir/string_view.cc.o
+[ 30%] Linking CXX static library libabsl_string_view.a
+[ 30%] Built target absl_string_view
+[ 30%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_graphcycles_internal.dir/internal/graphcycles.cc.o
+[ 30%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f16d.cc.o
+[ 30%] Linking CXX static library libabsl_graphcycles_internal.a
+[ 30%] Built target absl_graphcycles_internal
+[ 30%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_cpu_detect.dir/internal/cpu_detect.cc.o
+[ 30%] Linking CXX static library libabsl_crc_cpu_detect.a
+[ 30%] Built target absl_crc_cpu_detect
+[ 31%] Building CXX object deps/abseil-cpp/absl/hash/CMakeFiles/absl_city.dir/internal/city.cc.o
+[ 31%] Linking CXX static library libabsl_city.a
+[ 31%] Built target absl_city
+[ 33%] Building CXX object deps/abseil-cpp/absl/hash/CMakeFiles/absl_low_level_hash.dir/internal/low_level_hash.cc.o
+[ 33%] Linking CXX static library libabsl_low_level_hash.a
+[ 33%] Built target absl_low_level_hash
+[ 35%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f32a.cc.o
+[ 35%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f32d.cc.o
+[ 35%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f64a.cc.o
+[ 36%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_f64d.cc.o
+[ 36%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i16a.cc.o
+[ 36%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i16d.cc.o
+[ 36%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i32a.cc.o
+[ 38%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i32d.cc.o
+[ 38%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i64a.cc.o
+[ 38%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_i64d.cc.o
+[ 40%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u16a.cc.o
+[ 40%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u16d.cc.o
+[ 40%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u32a.cc.o
+[ 40%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u32d.cc.o
+[ 41%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u64a.cc.o
+[ 41%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort_u64d.cc.o
+[ 41%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_128a.cc.o
+[ 43%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_128d.cc.o
+[ 43%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f16a.cc.o
+[ 43%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f16d.cc.o
+[ 43%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f32a.cc.o
+[ 45%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f32d.cc.o
+[ 45%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f64a.cc.o
+[ 45%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_f64d.cc.o
+[ 46%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_have.cc.o
+[ 46%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i16a.cc.o
+[ 46%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i16d.cc.o
+[ 46%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i32a.cc.o
+[ 48%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i32d.cc.o
+[ 48%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i64a.cc.o
+[ 48%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_i64d.cc.o
+[ 50%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv128a.cc.o
+[ 50%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv128d.cc.o
+[ 50%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv64a.cc.o
+[ 51%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_kv64d.cc.o
+[ 51%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u16a.cc.o
+[ 51%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u16d.cc.o
+[ 51%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u32a.cc.o
+[ 53%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u32d.cc.o
+[ 53%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u64a.cc.o
+[ 53%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort_u64d.cc.o
+[ 55%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/coder/range_coder.cc.o
+[ 55%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/iguana/ans.cc.o
+[ 55%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/iguana/iguana.cc.o
+[ 55%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/hash/phast.cc.o
+[ 56%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/hash/shardmul.cc.o
+[ 56%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/hash/cuckoo2x2.cc.o
+[ 56%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/image/image.cc.o
+[ 58%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_rust.dir/internal/demangle_rust.cc.o
+[ 58%] Linking CXX static library libabsl_demangle_rust.a
+[ 58%] Built target absl_demangle_rust
+[ 60%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/ascii.cc.o
+[ 60%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/charconv.cc.o
+[ 60%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/escaping.cc.o
+[ 61%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_bigint.cc.o
+[ 61%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/charconv_parse.cc.o
+[ 61%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/damerau_levenshtein_distance.cc.o
+[ 61%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/memutil.cc.o
+[ 63%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/internal/stringify_sink.cc.o
+[ 63%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/match.cc.o
+[ 63%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/numbers.cc.o
+[ 65%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/str_cat.cc.o
+[ 65%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/str_replace.cc.o
+[ 65%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/str_split.cc.o
+[ 65%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_strings.dir/substitute.cc.o
+[ 66%] Linking CXX static library libabsl_strings.a
+[ 66%] Built target absl_strings
+[ 68%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_internal.dir/internal/crc.cc.o
+[ 68%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_internal.dir/internal/crc_x86_arm_combined.cc.o
+[ 70%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqargsort.cc.o
+[ 70%] Linking CXX static library libabsl_crc_internal.a
+[ 70%] Built target absl_crc_internal
+[ 71%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/arg.cc.o
+[ 71%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/sort/vqsort.cc.o
+[ 71%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/bind.cc.o
+[ 71%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/thread_pool/thread_pool.cc.o
+[ 71%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/extension.cc.o
+[ 71%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/float_conversion.cc.o
+[ 71%] Building CXX object deps/highway/CMakeFiles/hwy_contrib.dir/hwy/contrib/thread_pool/topology.cc.o
+[ 73%] Linking CXX static library libhwy_contrib.a
+[ 73%] Built target hwy_contrib
+[ 75%] Building CXX object deps/abseil-cpp/absl/hash/CMakeFiles/absl_hash.dir/internal/hash.cc.o
+[ 76%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/output.cc.o
+[ 76%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_str_format_internal.dir/internal/str_format/parser.cc.o
+[ 76%] Linking CXX static library libabsl_hash.a
+[ 76%] Built target absl_hash
+[ 76%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.o
+[ 76%] Linking CXX static library libabsl_str_format_internal.a
+[ 76%] Built target absl_str_format_internal
+[ 76%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/civil_time.cc.o
+[ 76%] Linking CXX static library libabsl_demangle_internal.a
+[ 76%] Built target absl_demangle_internal
+[ 76%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/crc32c.cc.o
+[ 76%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/clock.cc.o
+[ 78%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/duration.cc.o
+[ 78%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/internal/crc_memcpy_fallback.cc.o
+[ 78%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/format.cc.o
+[ 80%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/internal/crc_memcpy_x86_arm_combined.cc.o
+[ 80%] Building CXX object deps/abseil-cpp/absl/time/CMakeFiles/absl_time.dir/time.cc.o
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc: In function ‘void absl::lts_20250512::crc_internal::{anonymous}::LargeTailCopy(absl::lts_20250512::crc32c_t*, char**, const char**, size_t, size_t)’:
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc:97:31: warning: ignoring attributes on template argument ‘absl::lts_20250512::crc_internal::V128’ {aka ‘__m128i’} [-Wignored-attributes]
+   97 |   std::array<V128, vec_regions> data;
+      |                               ^
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc: In member function ‘absl::lts_20250512::crc32c_t absl::lts_20250512::crc_internal::AcceleratedCrcMemcpyEngine<vec_regions, int_regions>::Compute(void*, const void*, std::size_t, absl::lts_20250512::crc32c_t) const’:
+/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/abseil-cpp/absl/crc/internal/crc_memcpy_x86_arm_combined.cc:245:31: warning: ignoring attributes on template argument ‘absl::lts_20250512::crc_internal::V128’ {aka ‘__m128i’} [-Wignored-attributes]
+  245 |   std::array<V128, vec_regions> vec_data;
+      |                               ^
+[ 81%] Linking CXX static library libabsl_time.a
+[ 81%] Built target absl_time
+[ 81%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc32c.dir/internal/crc_non_temporal_memcpy.cc.o
+[ 81%] Building CXX object deps/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.o
+[ 83%] Linking CXX static library libabsl_symbolize.a
+[ 83%] Built target absl_symbolize
+[ 83%] Linking CXX static library libabsl_crc32c.a
+[ 85%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_kernel_timeout_internal.dir/internal/kernel_timeout.cc.o
+[ 85%] Built target absl_crc32c
+[ 85%] Building CXX object deps/abseil-cpp/absl/crc/CMakeFiles/absl_crc_cord_state.dir/internal/crc_cord_state.cc.o
+[ 85%] Linking CXX static library libabsl_kernel_timeout_internal.a
+[ 85%] Built target absl_kernel_timeout_internal
+[ 85%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/barrier.cc.o
+[ 85%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/blocking_counter.cc.o
+[ 86%] Linking CXX static library libabsl_crc_cord_state.a
+[ 86%] Built target absl_crc_cord_state
+[ 86%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/create_thread_identity.cc.o
+[ 88%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/futex_waiter.cc.o
+[ 88%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/per_thread_sem.cc.o
+[ 88%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/pthread_waiter.cc.o
+[ 90%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/sem_waiter.cc.o
+[ 91%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_internal.cc.o
+[ 91%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/stdcpp_waiter.cc.o
+[ 91%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/waiter_base.cc.o
+[ 91%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_btree.cc.o
+[ 91%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/internal/win32_waiter.cc.o
+[ 93%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/notification.cc.o
+[ 93%] Building CXX object deps/abseil-cpp/absl/synchronization/CMakeFiles/absl_synchronization.dir/mutex.cc.o
+[ 93%] Linking CXX static library libabsl_synchronization.a
+[ 93%] Built target absl_synchronization
+[ 93%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_btree_navigator.cc.o
+[ 93%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_btree_reader.cc.o
+[ 95%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_crc.cc.o
+[ 95%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord_internal.dir/internal/cord_rep_consume.cc.o
+[ 95%] Building CXX object deps/abseil-cpp/absl/container/CMakeFiles/absl_hashtablez_sampler.dir/internal/hashtablez_sampler.cc.o
+[ 95%] Linking CXX static library libabsl_cord_internal.a
+[ 95%] Built target absl_cord_internal
+[ 95%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cordz_handle.dir/internal/cordz_handle.cc.o
+[ 96%] Building CXX object deps/abseil-cpp/absl/container/CMakeFiles/absl_hashtablez_sampler.dir/internal/hashtablez_sampler_force_weak_definition.cc.o
+[ 96%] Linking CXX static library libabsl_cordz_handle.a
+[ 96%] Built target absl_cordz_handle
+[ 96%] Linking CXX static library libabsl_hashtablez_sampler.a
+[ 98%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cordz_info.dir/internal/cordz_info.cc.o
+[ 98%] Built target absl_hashtablez_sampler
+[ 98%] Linking CXX static library libabsl_cordz_info.a
+[ 98%] Built target absl_cordz_info
+[ 98%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord.dir/cord_analysis.cc.o
+[100%] Building CXX object deps/abseil-cpp/absl/strings/CMakeFiles/absl_cord.dir/cord.cc.o
+[100%] Linking CXX static library libabsl_cord.a
+[100%] Built target absl_cord
+[100%] Building CXX object deps/abseil-cpp/absl/container/CMakeFiles/absl_raw_hash_set.dir/internal/raw_hash_set.cc.o
+[100%] Linking CXX static library libabsl_raw_hash_set.a
+[100%] Built target absl_raw_hash_set
+[100%] Building CXX object algorithms/PipNN/CMakeFiles/neighbors-pipnn_FLOAT_T_EUCLIDEAN.dir/cmake_pch.hxx.gch
+[100%] Building CXX object algorithms/PipNN/CMakeFiles/neighbors-pipnn_FLOAT_T_EUCLIDEAN.dir/home/khoa/research/PiPNN/ann-task-a-research/experiments/R86/r86_v1_2_source/algorithms/bench/neighborsTime.C.o
+[100%] Linking CXX executable neighbors-pipnn_FLOAT_T_EUCLIDEAN
+[100%] Built target neighbors-pipnn_FLOAT_T_EUCLIDEAN
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 21%] Built target absl_base
+[ 22%] Built target absl_throw_delegate
+[ 49%] Built target hwy_contrib
+[ 49%] Built target absl_tracing_internal
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_int128
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_crc_cpu_detect
+[ 55%] Built target absl_city
+[ 57%] Built target absl_low_level_hash
+[ 59%] Built target absl_cordz_functions
+[ 59%] Built target absl_malloc_internal
+[ 59%] Built target absl_stacktrace
+[ 60%] Built target absl_demangle_rust
+[ 60%] Built target absl_graphcycles_internal
+[ 68%] Built target absl_strings
+[ 70%] Built target absl_demangle_internal
+[ 70%] Built target absl_crc_internal
+[ 73%] Built target absl_time
+[ 77%] Built target absl_str_format_internal
+[ 78%] Built target absl_hash
+[ 80%] Built target absl_symbolize
+[ 81%] Built target absl_kernel_timeout_internal
+[ 83%] Built target absl_crc32c
+[ 85%] Built target absl_crc_cord_state
+[ 90%] Built target absl_synchronization
+[ 93%] Built target absl_cord_internal
+[ 95%] Built target absl_hashtablez_sampler
+[ 95%] Built target absl_cordz_handle
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[ 98%] Building CXX object CMakeFiles/local_graph_recall.dir/evaluate.cc.o
+[100%] Linking CXX executable local_graph_recall
+[100%] Built target local_graph_recall
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 45%] Built target hwy_contrib
+[ 47%] Built target absl_base
+[ 49%] Built target absl_throw_delegate
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_int128
+[ 54%] Built target absl_crc_cpu_detect
+[ 54%] Built target absl_string_view
+[ 55%] Built target absl_city
+[ 57%] Built target absl_low_level_hash
+[ 57%] Built target absl_malloc_internal
+[ 59%] Built target absl_cordz_functions
+[ 59%] Built target absl_stacktrace
+[ 59%] Built target absl_tracing_internal
+[ 60%] Built target absl_demangle_rust
+[ 68%] Built target absl_strings
+[ 68%] Built target absl_graphcycles_internal
+[ 70%] Built target absl_crc_internal
+[ 73%] Built target absl_str_format_internal
+[ 75%] Built target absl_hash
+[ 75%] Built target absl_demangle_internal
+[ 78%] Built target absl_time
+[ 80%] Built target absl_crc32c
+[ 81%] Built target absl_symbolize
+[ 83%] Built target absl_kernel_timeout_internal
+[ 85%] Built target absl_crc_cord_state
+[ 90%] Built target absl_synchronization
+[ 93%] Built target absl_cord_internal
+[ 95%] Built target absl_hashtablez_sampler
+[ 95%] Built target absl_cordz_handle
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[100%] Building CXX object algorithms/PipNN/CMakeFiles/r70_native_tests.dir/r70_native_tests.cc.o
+[100%] Linking CXX executable r70_native_tests
+[100%] Built target r70_native_tests
+Allocate = 1
+allocating LSH graph
+Allocating: 164864 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+R70_MIXED_FINAL_ROW_PARITY_PASS promoted=50 unpromoted=78
+R70_SAME_SOURCE_LOCK_STRESS_PASS (structural-only, nondeterministic order)
+R70_NATIVE_PARITY_PASS nodes=128 promoted=50
+R70_TEST_NOT_FULL_BUILD_NOT_QUERY_RECALL
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+DEPENDENCIES_VERIFIED
+DATA_READY=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/synthetic-n2048-q32-efnw9c0b
+RUN_DIR=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-stock_off-tjin9i9t
+Data: detected 2048 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 2048 points with max degree 64
+Total edges read from file: 48393
+LOCAL_RECALL_ROW beam=10 recall=0.72187501 qps=36613.27343750 avg_cmps=527
+LOCAL_RECALL_ROW beam=20 recall=0.85937500 qps=54514.48046875 avg_cmps=842
+LOCAL_RECALL_ROW beam=40 recall=0.94687498 qps=33790.91796875 avg_cmps=1384
+LOCAL_RECALL_ROW beam=80 recall=0.99687499 qps=29197.08203125 avg_cmps=1992
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=19753.08593750 avg_cmps=2223
+LOCAL_RECALL_EVAL_PASS
+LOCAL_FUNCTIONAL_CHECK_PASS summary=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-stock_off-tjin9i9t/summary.json
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+DEPENDENCIES_VERIFIED
+DATA_READY=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/synthetic-n2048-q32-ewpuy6j9
+RUN_DIR=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-h17_on-h5idpyb_
+Data: detected 2048 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 2048 points with max degree 64
+Total edges read from file: 48412
+LOCAL_RECALL_ROW beam=10 recall=0.72500002 qps=26733.50000000 avg_cmps=527
+LOCAL_RECALL_ROW beam=20 recall=0.83749998 qps=67940.55468750 avg_cmps=830
+LOCAL_RECALL_ROW beam=40 recall=0.95625001 qps=35242.29296875 avg_cmps=1384
+LOCAL_RECALL_ROW beam=80 recall=0.99687499 qps=25216.70703125 avg_cmps=1994
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=21843.00390625 avg_cmps=2222
+LOCAL_RECALL_EVAL_PASS
+LOCAL_FUNCTIONAL_CHECK_PASS summary=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-h17_on-h5idpyb_/summary.json
+LOCAL_SETUP_AND_SMOKE_PASS

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "no_run_directories_created": true,
+  "checks": [
+    {
+      "script": "run.py",
+      "arguments": [
+        "--run-name",
+        "../escape"
+      ],
+      "rejected": true
+    },
+    {
+      "script": "campaign.py",
+      "arguments": [
+        "--run-name",
+        "../escape"
+      ],
+      "rejected": true
+    },
+    {
+      "script": "refine.py",
+      "arguments": [
+        "--run-name",
+        "safe_name",
+        "--baseline-prefix",
+        "../escape"
+      ],
+      "rejected": true
+    },
+    {
+      "script": "run.py",
+      "arguments": [
+        "--run-name",
+        "safe_name",
+        "--beams",
+        "80,80"
+      ],
+      "rejected": true
+    },
+    {
+      "script": "campaign.py",
+      "arguments": [
+        "--run-name",
+        "safe_name",
+        "--repeats",
+        "0"
+      ],
+      "rejected": true
+    },
+    {
+      "script": "refine.py",
+      "arguments": [
+        "--run-name",
+        "safe_name",
+        "--calibration-queries",
+        "10000"
+      ],
+      "rejected": true
+    }
+  ]
+}

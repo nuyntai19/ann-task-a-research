@@ -1,0 +1,50 @@
+{
+  "status": "PREPARATION_PASS_NATIVE_BUILD_BLOCKED",
+  "checks": {
+    "original_reference_files_unchanged": true,
+    "sift-n10000-q32-_9e2e252": {
+      "rows": 10000,
+      "queries": 32,
+      "dimension": 128,
+      "all_file_hashes": "PASS",
+      "independent_exact_gt_queries": [
+        0,
+        16,
+        31
+      ]
+    },
+    "synthetic-n2048-q32-ess_5zzi": {
+      "rows": 2048,
+      "queries": 32,
+      "dimension": 128,
+      "all_file_hashes": "PASS",
+      "independent_exact_gt_queries": [
+        0,
+        16,
+        31
+      ]
+    },
+    "graph_audit_valid_and_corrupt_fixtures": {
+      "valid": "PASS",
+      "rejected": [
+        "truncated",
+        "bad_id",
+        "self_edge",
+        "duplicate"
+      ]
+    },
+    "truncated_matrix_rejected": true
+  },
+  "syntax_checks": {
+    "bash": "PASS",
+    "python_compile": "PASS"
+  },
+  "cmake_compiler_detection": "PASS GNU 13.3.0",
+  "dependency_fetch": "BLOCKED: Could not resolve host: github.com",
+  "dependency_fetch_log": "logs/setup-9AjTywQ8.log",
+  "native_compile": "NOT_RUN: dependencies unavailable",
+  "native_primitive_test": "NOT_RUN",
+  "graph_build": "NOT_RUN",
+  "native_search": "NOT_RUN",
+  "next_command": "bash local_setup/khoa-linux/setup.sh"
+}

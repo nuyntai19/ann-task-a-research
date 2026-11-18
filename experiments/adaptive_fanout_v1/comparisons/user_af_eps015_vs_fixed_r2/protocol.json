@@ -1,0 +1,53 @@
+{
+  "utc": "2026-11-18T14:01:04.455906+00:00",
+  "fixed_run": "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift1m_h17_on_q10000_t4_r2",
+  "adaptive_run": "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/af_eps015_sift1m_r1",
+  "rows": 1000000,
+  "queries": 10000,
+  "threads": 4,
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "targets": [
+    0.95,
+    0.98,
+    0.99,
+    0.995,
+    0.997,
+    0.999
+  ],
+  "repetitions": 6,
+  "evaluator": "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/build/local_graph_recall",
+  "evaluator_sha256": "6cc45c2604bf4f7f8fff2d009f8b0c6f5baa12fe6a3b682def7717d6cf622f73",
+  "data_sha256": {
+    "base.fbin": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+    "query.fbin": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+    "gt.ibin": "fd8966982188cb34bad74ddcb3b7e7d3daba6d13a21c0267cbc65dcc5a55992b"
+  },
+  "graph_sha256": {
+    "fixed": "a94cc0b5067a913de4c0877772a422df23c614a21a51ad8d15992a8f596a7552",
+    "adaptive": "c272f6f97e01714310cac47a24f814982feac839b381e35303e89c11aaa1e314"
+  },
+  "common_build_parameters": {
+    "-num_clusters": "1",
+    "-cluster_size": "256",
+    "-top_level_leaders": "100",
+    "-fanout_scheme": "10,3,1",
+    "-mst_deg": "2",
+    "-prune": "1",
+    "-prune_all": "1",
+    "-prune_degree": "64",
+    "-table_size": "160",
+    "-hash_bits": "12",
+    "-alpha": "1.1",
+    "-k": "0"
+  },
+  "measurement": "Same evaluator and CPU affinity; search only on frozen saved graphs; counterbalanced methods and beam order; one warmup pass per graph",
+  "matching": "Measured integer beam search for smallest beam found meeting each target; adjacent lower beam checked; report achieved Recall, no interpolated timing",
+  "latency": "Per-query service microseconds excluding scheduler queue wait and file I/O",
+  "historical_build_time_caveat": "Original fixed uses R86_COUNTERS ON; adaptive uses R86_COUNTERS OFF plus AF telemetry; different execution times of day. Historical build durations are descriptive, not controlled speedup.",
+  "status": "COMPLETE"
+}

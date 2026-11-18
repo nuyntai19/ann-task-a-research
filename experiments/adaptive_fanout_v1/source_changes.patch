@@ -1,0 +1,133 @@
+--- original/algorithms/PipNN/pipnn.h
++++ adaptive/algorithms/PipNN/pipnn.h
+@@ -76,15 +76,15 @@
+       fanout = fanout_scheme[depth];
+     }
+     fanout = std::min<int>(fanout, (int)num_leaders);
+-#if defined(R86_COUNTERS) && R86_COUNTERS
+-    r86::add(r86::Metric::W_A, static_cast<std::uint64_t>(ids.size()) * fanout, depth);
+-#endif
+ 
+     int granularity = 5000;
+     parlay::sequence<std::pair<uint32_t, uint32_t>> flat(ids.size() * fanout);
+     parlay::internal::timer t;
+     t.start();
+-    assign_leaders(Points, ids, leaders, fanout, flat, granularity);
++    assign_leaders(Points, ids, leaders, fanout, flat, granularity, depth);
++#if defined(R86_COUNTERS) && R86_COUNTERS
++    r86::add(r86::Metric::W_A, static_cast<std::uint64_t>(flat.size()), depth);
++#endif
+     if (depth == 0) {
+       t.next("first level assign time");
+     }
+@@ -486,6 +486,7 @@
+     r86::add(r86::Metric::W_L, s*s);
+     r86::add(r86::Metric::W_pairs, s*(s-1)/2);
+ #endif
++    af::record_leaf(active_indices.size());
+     leaf_count++;
+     EigenKNN(G, Points, active_indices);
+   }
+@@ -540,6 +541,7 @@
+     r86::emit_reservoir_occupancy(graph, Points.size(), 0); // pre-prune final snapshot
+ #endif
+ 
++    af::record_reservoir(graph, Points.size());
+     graph.finalize();
+ 
+     //create LSH table
+@@ -620,6 +622,7 @@
+     r86::require_output_paths();
+ #endif
+     cluster<GraphH, Point, PointRange, indexType> C;
++    C.SEED = af::config().seed;
+     C.MST_DEG = MSTDeg;
+     C.ALPHA = alpha;
+     C.MAX_CLUSTER_SIZE = cluster_size;
+@@ -666,6 +669,7 @@
+ #if defined(R86_COUNTERS) && R86_COUNTERS
+     r86::dump_jsonl_from_env();
+ #endif
++    af::dump();
+     std::cout << "Average distance traversed: " << (dist_traversed.load() / Points.size()) << std::endl;
+   }
+ };
+--- original/algorithms/PipNN/pipnn_utils.h
++++ adaptive/algorithms/PipNN/pipnn_utils.h
+@@ -21,6 +21,7 @@
+ // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+ #pragma once
++#include "adaptive_fanout.h"
+ 
+ #include <math.h>
+ 
+@@ -346,11 +347,15 @@
+                     const Bucket& leaders,
+                     size_t fanout,
+                     parlay::sequence<std::pair<uint32_t,uint32_t>>& flat,
+-                    int granularity) {
++                    int granularity, int depth) {
+   using coord_type = typename PR::Point::T;
+   const size_t N   = ids.size();
+   const size_t M   = leaders.size();
+   const size_t dim = Points.dimension();
++
++  const bool adaptive = af::eligible(depth, fanout);
++  if (adaptive && !PR::Point::is_metric()) throw std::runtime_error("Adaptive fanout requires L2");
++  parlay::sequence<uint16_t> retained(adaptive ? N : 0);
+ 
+   //assert(M   <= kMaxLeaderSize);
+   //assert(dim <= kMaxDimension);
+@@ -415,6 +420,7 @@
+ 
+     std::vector<double> cc;
+     cc.resize(M);
++    std::vector<float> nearest(fanout);
+     for (size_t ti = 0; ti < T; ++ti) {
+       float* row = reinterpret_cast<float*>(get_tile_dist_mat()) + ti * M;
+       for (size_t j =0; j < M; ++j) {
+@@ -422,8 +428,14 @@
+       }
+       double* cd = (double*)cc.data();
+       VQPartialSort(cd, cd + cc.size(), fanout);
++      size_t keep = fanout;
++      if (adaptive) {
++        for (size_t fn = 0; fn < fanout; ++fn) nearest[fn] = unpackDouble(cd[fn]).first;
++        keep = af::choose_count(nearest.data(), fanout, af::config().epsilon, af::config().min_fanout);
++        retained[start + ti] = static_cast<uint16_t>(keep);
++      }
+       std::pair<float, uint32_t>* pairs = (std::pair<float, uint32_t>*)cd;
+-      for (size_t fn = 0; fn < fanout; ++fn) {
++      for (size_t fn = 0; fn < keep; ++fn) {
+         double d = cd[fn];
+         pairs[fn] = unpackDouble(d);
+         flat[(start + ti)*fanout + fn] = std::make_pair(pairs[fn].second, ids[start + ti]);
+@@ -442,6 +454,19 @@
+     );
+   }
+ 
++  std::vector<std::uint64_t> histogram(fanout + 1, 0);
++  if (adaptive) {
++    size_t write = 0;
++    for (size_t i = 0; i < N; ++i) {
++      const size_t keep = retained[i];
++      ++histogram[keep];
++      for (size_t j = 0; j < keep; ++j) flat[write++] = flat[i * fanout + j];
++    }
++    flat.resize(write);
++  } else {
++    histogram[fanout] = N;
++  }
++  af::record_assignment(depth, N, M, fanout, histogram);
+   _mm_free(Lmat);
+ }
+ 
+@@ -522,6 +547,7 @@
+ #if defined(R86_COUNTERS) && R86_COUNTERS
+   r86::add(r86::Metric::proposals, directed_edges.size());
+ #endif
++  af::record_proposals(directed_edges.size());
+   // the problem with this approach is that we only merge one neighbor at a time.
+   for (const auto& edge : directed_edges) {
+     uint32_t u = std::get<0>(edge);

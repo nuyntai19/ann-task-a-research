@@ -1,0 +1,40 @@
+Vary degree = 0
+Data: detected 2048 points with dimension 128
+Parlay time: SketchHash construction time: 0.0005
+Size of SketchHash (bytes): 104448
+R70_RESERVOIR_VARIANT=STOCK_FLAT_C160
+R71_SELECTION_VARIANT=STOCK_HIGHWAY
+Allocate = 0
+Set MSTDeg to: 2 fanout: 1
+Sizeof indexType = 4
+Fanout scheme: 10 3 1 
+Allocating: 2637824 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 0.0020
+Parlay time: buckets time: 0.0059
+buckets size (bytes): 192124
+Total buckets: 401
+Total points: 46427
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 0.0560
+Built cluster 0 of 1
+Leaf count: 401
+# of comparisons during clustering: 406180
+Allocating graph, prune_degree = 64
+Average table size: 34
+Parlay time: Final prune time: 0.0032
+Average distance traversed: 32
+Writing graph to /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-stock_off-tjin9i9t/index.graph
+Writing graph with 2048 points and max degree 64
+PiPNN graph built with 2048 points and parameters Trees = 1
+Graph has average degree 23.63 and maximum degree 64
+Graph built in 0.06614 seconds
+Parlay time: 0.0665

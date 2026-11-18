@@ -1,0 +1,55 @@
+{
+  "utc": "2026-11-18T11:49:26.630700+00:00",
+  "rows": 1000000,
+  "queries": 10000,
+  "calibration_query_ids": [
+    0,
+    999
+  ],
+  "holdout_query_ids": [
+    1000,
+    9999
+  ],
+  "seed_start": 555,
+  "build_repeats": 3,
+  "threads": 4,
+  "beams": [
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160,
+    240
+  ],
+  "recall_tolerance_absolute": 0.002,
+  "minimum_proposal_reduction": 0.05,
+  "selection": "On calibration queries only: keep all protected beams within tolerance; choose fewest directed proposals, not fastest noisy time",
+  "protected_beams": [
+    80,
+    100,
+    120,
+    140,
+    160
+  ],
+  "holdout_test": "Paired hierarchical bootstrap of build pairs and query IDs; 2000 draws; Bonferroni one-sided lower bound, family alpha=.05",
+  "no_GT_during_build": true,
+  "timing_counters": "R86_COUNTERS=OFF; lightweight AF telemetry enabled equally in both modes",
+  "status": "COMPLETE",
+  "completed_runs": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.1_min2_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min1_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min2_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.2_min1_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.2_min2_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min1_s556",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min1_s557"
+  ],
+  "refinement_design": "refinement_protocol.json",
+  "fixed_runs_reused": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s556",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s557"
+  ]
+}

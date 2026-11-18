@@ -1,0 +1,39 @@
+{
+  "cpu_model": "12th Gen Intel(R) Core(TM) i5-12450H",
+  "allowed_logical_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "dependency_lock": {
+    "parlaylib": {
+      "url": "https://github.com/cmuparlay/parlaylib.git",
+      "commit": "51017699dcc421f80479cdb238d3092233ad0d26"
+    },
+    "eigen": {
+      "url": "https://gitlab.com/libeigen/eigen.git",
+      "commit": "3147391d946bb4b6c68edd901f2add6ac1f31f8c"
+    },
+    "abseil-cpp": {
+      "url": "https://github.com/abseil/abseil-cpp.git",
+      "commit": "bc257a88f7c1939f24e0379f14a3589e926c950c"
+    },
+    "highway": {
+      "url": "https://github.com/google/highway.git",
+      "commit": "6bc2d47793bae9c521fb4150936669647700765d"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+DEPENDENCIES_VERIFIED
+DATA_READY=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/sift-n1000000-q100-rdn_fzr8
+RUN_DIR=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift-h17_on-icl3mk24
+Data: detected 1000000 points with dimension 128
+Data: detected 100 points with dimension 128
+Ground truth: detected 100 points with num results 100
+Graph: detected 1000000 points with max degree 64
+Total edges read from file: 23475261
+LOCAL_RECALL_ROW beam=10 recall=0.75900000 qps=52356.01953125 avg_cmps=526 latency_mean_us=60.538420 latency_p50_us=41.340500 latency_p95_us=79.436750 latency_p99_us=531.962390
+LOCAL_RECALL_ROW beam=20 recall=0.89499998 qps=54674.68750000 avg_cmps=771 latency_mean_us=67.325550 latency_p50_us=60.010000 latency_p95_us=113.193700 latency_p99_us=160.371200
+LOCAL_RECALL_ROW beam=40 recall=0.95899999 qps=37119.52343750 avg_cmps=1217 latency_mean_us=98.552770 latency_p50_us=94.581500 latency_p95_us=147.191550 latency_p99_us=210.542070
+LOCAL_RECALL_ROW beam=80 recall=0.99100000 qps=21934.63476562 avg_cmps=2036 latency_mean_us=166.720230 latency_p50_us=158.436000 latency_p95_us=256.451850 latency_p99_us=373.752840
+LOCAL_RECALL_ROW beam=160 recall=0.99800003 qps=12042.38964844 avg_cmps=3269 latency_mean_us=313.892710 latency_p50_us=307.255500 latency_p95_us=518.495250 latency_p99_us=549.668580
+LOCAL_LATENCY_CSV=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift-h17_on-icl3mk24/query_latency.csv
+LOCAL_RECALL_EVAL_PASS
+LOCAL_FUNCTIONAL_CHECK_PASS summary=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift-h17_on-icl3mk24/summary.json

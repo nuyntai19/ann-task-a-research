@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "protected_original_files": 232,
+  "runs_validated": 20,
+  "checks": [
+    "per-bucket counts and histograms",
+    "no zero or out-of-cap fanout",
+    "root preserved at min_depth1",
+    "summary matches bucket trace",
+    "actual proposal bounds",
+    "graph SHA256",
+    "complete per-query metrics and aggregate Recall parity"
+  ],
+  "runs": [
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.15_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.15_min1_s556",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.15_min1_s557",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.15_min2_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.1_min2_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.2_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_refined_v1__eps0.2_min2_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.01_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.03_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.03_min2_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.05_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.1_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.1_min1_s556",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0.1_min1_s557",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__eps0_min1_s555",
+      "mode": "adaptive",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__fixed_s555",
+      "mode": "fixed",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__fixed_s556",
+      "mode": "fixed",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "sift1m_lower_depth_v1__fixed_s557",
+      "mode": "fixed",
+      "rows": 1000000,
+      "queries": 10000
+    },
+    {
+      "run": "validation_adaptive_10k",
+      "mode": "adaptive",
+      "rows": 10000,
+      "queries": 128
+    },
+    {
+      "run": "validation_fixed_10k",
+      "mode": "fixed",
+      "rows": 10000,
+      "queries": 128
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "FULL_QUERY_EXISTING_GT_SEARCH_PASS",
+  "purpose": "Validate reused GT conversion with native evaluator on existing SIFT1M graph; no new graph build",
+  "data": "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/sift-n1000000-q10000-r7lxr35h",
+  "gt_source": {
+    "mode": "reused_existing",
+    "source": "/home/khoa/research/PiPNN/ann-task-a-research/data/sift_groundtruth.ivecs",
+    "source_sha256": "2b71de0a8d5a83e6a84eec3e23fb8b611d8801dd9b3a6cd62f070ab65ea65f4f",
+    "exact_sample_queries": [
+      0,
+      5000,
+      9999
+    ],
+    "all_query_neighbor_distances_sorted": true,
+    "validation_scope": "sample-based; not a full GT recertification"
+  },
+  "all_10000x100_ids_preserved": true,
+  "native_gt_bytes": 8000008,
+  "search_command": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/build/h17_on/local_graph_recall",
+    "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/sift-h17_on-icl3mk24/index.graph",
+    "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/sift-n1000000-q10000-r7lxr35h/base.fbin",
+    "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/sift-n1000000-q10000-r7lxr35h/query.fbin",
+    "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/sift-n1000000-q10000-r7lxr35h/gt.ibin",
+    "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/logs/gt-reuse-full-search-ywi3c0fc/query_latency.csv"
+  ],
+  "threads": 4,
+  "elapsed_seconds": 3.07211279799958,
+  "search_log": "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/logs/gt-reuse-full-search-ywi3c0fc/search.log",
+  "latency_rows": 50000,
+  "search": [
+    {
+      "beam": 10,
+      "recall_at_10": 0.73536998,
+      "qps": 74644.140625
+    },
+    {
+      "beam": 20,
+      "recall_at_10": 0.86835998,
+      "qps": 47542.75390625
+    },
+    {
+      "beam": 40,
+      "recall_at_10": 0.94933999,
+      "qps": 31729.81445312
+    },
+    {
+      "beam": 80,
+      "recall_at_10": 0.98636001,
+      "qps": 17798.05859375
+    },
+    {
+      "beam": 160,
+      "recall_at_10": 0.99739999,
+      "qps": 10154.28417969
+    }
+  ]
+}

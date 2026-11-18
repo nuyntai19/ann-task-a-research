@@ -1,0 +1,191 @@
+{
+  "status": "COMPLETE",
+  "selected": {
+    "name": "eps0.1_min1",
+    "epsilon": 0.1,
+    "min_fanout": 1,
+    "delta_recall": {
+      "80": -0.0031999999999999993,
+      "100": -0.0019999999999999996,
+      "120": -0.0015999999999999996,
+      "140": -0.0019999999999999996,
+      "160": -0.0014999999999999996
+    },
+    "proposal_reduction": 0.17705547289995038,
+    "accepted": false
+  },
+  "calibration_pass": false,
+  "holdout_noninferiority_pass": false,
+  "empirical_accept": false,
+  "comparison": {
+    "build_seconds": {
+      "fixed_median": 19.63,
+      "adaptive_median": 17.47,
+      "reduction_fraction": 0.11003565970453388
+    },
+    "peak_rss_kib": {
+      "fixed_median": 2752312.0,
+      "adaptive_median": 2704560.0,
+      "reduction_fraction": 0.017349777205491246
+    },
+    "directed_proposals": {
+      "fixed_median": 59999972.0,
+      "adaptive_median": 49408922.0,
+      "reduction_fraction": 0.1765175823748718
+    },
+    "leaf_squared_work": {
+      "fixed_median": 4688301660.0,
+      "adaptive_median": 3861860609.0,
+      "reduction_fraction": 0.1762772771323763
+    },
+    "leaf_points": {
+      "fixed_median": 29999991.0,
+      "adaptive_median": 24704465.0,
+      "reduction_fraction": 0.17651758628860925
+    },
+    "graph_edges": {
+      "fixed_median": 23475264.0,
+      "adaptive_median": 22174563.0,
+      "reduction_fraction": 0.05540730021183149
+    },
+    "reservoir_occupied_slots": {
+      "fixed_median": 47058427.0,
+      "adaptive_median": 42545399.0,
+      "reduction_fraction": 0.09590265309973067
+    }
+  },
+  "holdout": {
+    "40": {
+      "fixed_recall": 0.9501777777777779,
+      "adaptive_recall": 0.9430703703703704,
+      "mean_delta": -0.007107407407407405,
+      "ci95": [
+        -0.008644444444444442,
+        -0.005640648148148146
+      ],
+      "familywise_one_sided_lower": -0.008992666666666664
+    },
+    "60": {
+      "fixed_recall": 0.9749444444444444,
+      "adaptive_recall": 0.9711777777777777,
+      "mean_delta": -0.0037666666666666656,
+      "ci95": [
+        -0.004770833333333333,
+        -0.002755277777777778
+      ],
+      "familywise_one_sided_lower": -0.004985407407407405
+    },
+    "80": {
+      "fixed_recall": 0.986262962962963,
+      "adaptive_recall": 0.9837444444444445,
+      "mean_delta": -0.002518518518518518,
+      "ci95": [
+        -0.0032408333333333325,
+        -0.0017961111111111116
+      ],
+      "familywise_one_sided_lower": -0.003377888888888888
+    },
+    "100": {
+      "fixed_recall": 0.9912703703703705,
+      "adaptive_recall": 0.9899740740740739,
+      "mean_delta": -0.001296296296296296,
+      "ci95": [
+        -0.0019296296296296288,
+        -0.0006962962962962961
+      ],
+      "familywise_one_sided_lower": -0.002055555555555555
+    },
+    "120": {
+      "fixed_recall": 0.9941407407407405,
+      "adaptive_recall": 0.9932962962962963,
+      "mean_delta": -0.0008444444444444442,
+      "ci95": [
+        -0.0014000925925925925,
+        -0.0002629629629629629
+      ],
+      "familywise_one_sided_lower": -0.0015001111111111105
+    },
+    "140": {
+      "fixed_recall": 0.9961074074074074,
+      "adaptive_recall": 0.995414814814815,
+      "mean_delta": -0.0006925925925925924,
+      "ci95": [
+        -0.001107407407407407,
+        -0.0002888888888888889
+      ],
+      "familywise_one_sided_lower": -0.0011777777777777776
+    },
+    "160": {
+      "fixed_recall": 0.997311111111111,
+      "adaptive_recall": 0.9968037037037036,
+      "mean_delta": -0.0005074074074074073,
+      "ci95": [
+        -0.000855648148148148,
+        -0.00017777777777777773
+      ],
+      "familywise_one_sided_lower": -0.0009296666666666665
+    },
+    "240": {
+      "fixed_recall": 0.999,
+      "adaptive_recall": 0.9989148148148149,
+      "mean_delta": -8.518518518518516e-05,
+      "ci95": [
+        -0.0003037037037037036,
+        0.0001446296296296286
+      ],
+      "familywise_one_sided_lower": -0.00035185185185185184
+    }
+  },
+  "matched_recall": {
+    "0.95": {
+      "fixed": {
+        "beam": 40,
+        "holdout_recall": 0.9501777777777779,
+        "full_batch_qps_median": 41873.59375,
+        "holdout_latency_mean_us": 105.97871396296297,
+        "holdout_latency_p95_us": 176.70465
+      },
+      "adaptive": {
+        "beam": 60,
+        "holdout_recall": 0.9711777777777777,
+        "full_batch_qps_median": 32399.578125,
+        "holdout_latency_mean_us": 122.73038622222224,
+        "holdout_latency_p95_us": 167.6271
+      }
+    },
+    "0.99": {
+      "fixed": {
+        "beam": 100,
+        "holdout_recall": 0.9912703703703705,
+        "full_batch_qps_median": 19965.37890625,
+        "holdout_latency_mean_us": 201.824935962963,
+        "holdout_latency_p95_us": 282.36115
+      },
+      "adaptive": {
+        "beam": 120,
+        "holdout_recall": 0.9932962962962963,
+        "full_batch_qps_median": 18322.23242188,
+        "holdout_latency_mean_us": 232.13260648148147,
+        "holdout_latency_p95_us": 348.64599999999996
+      }
+    }
+  },
+  "fixed_runs": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s556",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__fixed_s557"
+  ],
+  "adaptive_runs": [
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__eps0.1_min1_s555",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__eps0.1_min1_s556",
+    "/home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_v1__eps0.1_min1_s557"
+  ],
+  "protected_originals_unchanged": 232,
+  "limitations": [
+    "One SIFT dataset; empirical evidence, no universal quality guarantee.",
+    "Three build seeds by default; CPU is not isolated from other applications.",
+    "Assignment buffer reserves original maximum; fixed reservoir capacity is unchanged.",
+    "Per-query latency has no queue wait and no warmup/repetition protocol.",
+    "Noninferiority permits the predeclared absolute Recall tolerance; this is not exact equality."
+  ]
+}

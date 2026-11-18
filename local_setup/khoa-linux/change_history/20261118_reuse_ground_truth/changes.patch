@@ -1,0 +1,340 @@
+--- before/run.py
++++ after/run.py
+@@ -18,6 +18,7 @@
+ for key in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS"):
+     os.environ[key] = "1"
+ import numpy as np
++from ground_truth import load_gt_ids, reuse_gt
+ 
+ HERE = Path(__file__).resolve().parent
+ REPO = HERE.parent.parent
+@@ -62,6 +63,8 @@
+     nq = args.queries
+     if n < 256 or nq < 1:
+         raise ValueError("Use at least 256 base vectors and one query")
++    source_gt = None
++    provided_ids = None
+     if args.dataset == "synthetic":
+         rng = np.random.default_rng(20261118)
+         base = rng.normal(size=(n, 128)).astype("<f4")
+@@ -83,6 +86,14 @@
+         base, queries = np.array(full_base[:n]), np.array(full_query[:nq])
+         origin = {"kind": "SIFT prefix subset", "base": str(source_base), "query": str(source_query),
+                   "source_base_shape": list(full_base.shape), "source_query_shape": list(full_query.shape)}
++        # Full-base GT is valid for any prefix of its queries, but cannot be
++        # reused for a smaller base: nearest IDs must then be computed anew.
++        if n == len(full_base):
++            source_gt = next((data_root / name for name in
++                              ("sift_groundtruth.ivecs", "sift_groundtruth.ibin")
++                              if (data_root / name).is_file()), None)
++            if source_gt is not None:
++                provided_ids = load_gt_ids(source_gt, len(full_query), len(full_base))
+     # Each invocation keeps its own inputs and matching exact GT. Never reuse
+     # the SIFT1M GT for a smaller base or replace files from the PipeANN project.
+     data_parent = HERE / "data"
+@@ -90,24 +101,35 @@
+     data = Path(tempfile.mkdtemp(prefix=f"{args.dataset}-n{n}-q{nq}-", dir=data_parent))
+     write_matrix(data / "base.fbin", base)
+     write_matrix(data / "query.fbin", queries)
+-    k = min(100, n)
+-    ids = np.empty((nq, k), dtype="<u4")
+-    distances = np.empty((nq, k), dtype="<f4")
+-    # Float64 direct differences avoid cancellation and make SIFT integer ties
+-    # exact. Process one query at a time to keep temporary memory bounded.
+-    base64 = base.astype(np.float64)
+-    for i, query in enumerate(queries):
+-        delta = base64 - query.astype(np.float64)
+-        dists = np.einsum("ij,ij->i", delta, delta)
+-        order = np.argsort(dists, kind="stable")[:k]
+-        ids[i] = order
+-        distances[i] = dists[order]
++    if source_gt is not None:
++        print(f"GT_MODE=REUSE_EXISTING source={source_gt}", flush=True)
++        ids, distances, gt_validation = reuse_gt(base, queries, provided_ids)
++        k = ids.shape[1]
++        gt_info = {"mode": "reused_existing", "source": str(source_gt),
++                   "source_sha256": sha256(source_gt), **gt_validation}
++        print(f"GT_REUSE_VALIDATED sample_queries={gt_validation['exact_sample_queries']}", flush=True)
++    else:
++        print("GT_MODE=EXACT_RECOMPUTE (synthetic/subset or no compatible provided GT)", flush=True)
++        k = min(100, n)
++        ids = np.empty((nq, k), dtype="<u4")
++        distances = np.empty((nq, k), dtype="<f4")
++        # Float64 direct differences avoid cancellation and make SIFT integer
++        # ties exact. Recompute on the actual subset, not the original base.
++        base64 = base.astype(np.float64)
++        for i, query in enumerate(queries):
++            delta = base64 - query.astype(np.float64)
++            dists = np.einsum("ij,ij->i", delta, delta)
++            order = np.argsort(dists, kind="stable")[:k]
++            ids[i] = order
++            distances[i] = dists[order]
++        gt_info = {"mode": "exact_recomputed", "base_rows": n}
+     with (data / "gt.ibin").open("xb") as stream:
+         stream.write(struct.pack("<II", nq, k))
+         ids.tofile(stream)
+         distances.tofile(stream)
+     manifest = {"base_rows": n, "query_rows": nq, "dimension": base.shape[1], "gt_k": k,
+-                "origin": origin, "purpose": "LOCAL_FUNCTIONAL_CHECK_NOT_ARCHIVAL_BENCHMARK",
++                "origin": origin, "ground_truth": gt_info,
++                "purpose": "LOCAL_FUNCTIONAL_CHECK_NOT_ARCHIVAL_BENCHMARK",
+                 "sha256": {p.name: sha256(p) for p in data.iterdir()}}
+     (data / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+     print(f"DATA_READY={data}", flush=True)
+@@ -224,7 +246,7 @@
+                "binary_sha256": sha256(binary), "evaluator_sha256": sha256(evaluator),
+                "deps_lock_sha256": sha256(HERE / "deps.lock.json"),
+                "local_source_sha256": {name: sha256(HERE / name) for name in
+-                                       ("evaluate.cc", "latency_probe.h", "instrument_latency.py",
++                                       ("evaluate.cc", "latency_probe.h", "instrument_latency.py", "ground_truth.py",
+                                         "run.py", "CMakeLists.txt")},
+                "source_sha256": {str(p.relative_to(REPO)): sha256(p)
+                                   for p in (SOURCE / "algorithms").rglob("*") if p.is_file()}}
+--- before/README.md
++++ after/README.md
+@@ -71,8 +71,35 @@
+ 
+ `--sift-dir` cần có `sift_base.fbin` và `sift_query.fbin`: header hai số uint32
+ little-endian `(n, d)`, tiếp theo là `n*d` float32. Runner kiểm tra kích thước
+-file trước khi đọc. GT local có header `(n_queries, 100)`, tiếp theo là IDs
+-uint32 rồi khoảng cách bình phương float32, theo định dạng native của PiPNN.
++file trước khi đọc. GT local có header `(n_queries, k)` (thường k=100), tiếp
++theo là IDs uint32 rồi khoảng cách bình phương float32 theo định dạng native.
++
++### Ground truth đã có trong data
++
++Khi dùng **toàn bộ base** trong `sift_base.fbin`, runner tự tìm
++`sift_groundtruth.ivecs` hoặc `sift_groundtruth.ibin` trong `--sift-dir` để
++tái sử dụng. Có thể chạy toàn bộ query hoặc một prefix (`--queries 100`):
++GT sẽ lấy đúng các hàng query đó. Trên máy này, `data/sift_groundtruth.ivecs`
++có 10.000 hàng × 100 neighbor IDs cho base SIFT1M.
++
++Script kiểm tra kích thước, số query, phạm vi/độ trùng ID, thứ tự khoảng cách,
++và đối chiếu exact top-k trên ba query mẫu (đầu/giữa/cuối phần được chọn).
++Đây là kiểm chứng mẫu, không chứng nhận lại toàn bộ GT. Với `.ivecs`, script
++chuyển IDs sang định dạng PiPNN và tính khoảng cách tới các ID đã có để ghi
++payload native; không tìm lại top-100 trên một triệu base cho mọi query.
++
++Log in `GT_MODE=REUSE_EXISTING` khi dùng GT có sẵn. Khi chạy tập con base như
++SIFT10K/100K từ file base SIFT1M, GT của SIFT1M không còn đúng và script sẽ
++tính lại, in `GT_MODE=EXACT_RECOMPUTE`. Synthetic hoặc thiếu GT tương thích
++cũng dùng nhánh tính lại. `data/.../manifest.json` ghi mode, nguồn GT, SHA256
++và phạm vi kiểm chứng; metadata này cũng nằm trong summary của run.
++
++`sift_groundtruth.ibin` chấp nhận dạng IDs-only hoặc IDs + distances. Runner
++tính lại khoảng cách của các ID được cung cấp thay vì tin payload distance
++cũ. GT không hợp lệ sẽ báo lỗi, không âm thầm dùng dữ liệu sai.
++
++Nếu một tiến trình cũ vẫn đang tính GT, mã mới chỉ có tác dụng khi khởi chạy
++lại script; việc sửa file Python không thay đổi tiến trình đã chạy.
+ 
+ Chỉ chuẩn bị dữ liệu, chưa cần binary:
+ 
+@@ -164,6 +191,7 @@
+ 
+ ```bash
+ python3 local_setup/khoa-linux/test_latency.py
++python3 local_setup/khoa-linux/test_ground_truth.py
+ ```
+ 
+ ## Phạm vi kiểm tra
+--- before/CHANGES.md
++++ after/CHANGES.md
+@@ -95,3 +95,19 @@
+ - README thêm lệnh SIFT1M có tên theo biến thể, số query, thread và lần lặp.
+ - Bản sao trước sửa, patch và kết quả kiểm tra được lưu tại
+   `change_history/20261118_run_name/`.
++
++## Tái sử dụng ground truth SIFT đã tải — 2026-11-18
++
++- Trước đây `prepare()` luôn tính exact GT mới, kể cả khi dùng toàn bộ SIFT1M
++  và đã có `data/sift_groundtruth.ivecs`. Bổ sung tự nhận diện GT có sẵn cho
++  trường hợp giữ nguyên toàn bộ base; các tập con base vẫn tính lại GT đúng.
++- `ground_truth.py` đọc `.ivecs` và `.ibin`, kiểm tra shape/IDs, chọn prefix
++  query, tính distance payload cho các ID đã biết, đối chiếu exact top-k cho
++  ba query mẫu theo khoảng cách thực (cho phép tie ở biên top-k).
++- `run.py` in GT mode trước khi xử lý, ghi nguồn/mode/checksum/kiểm chứng vào
++  data manifest; bổ sung SHA256 của module mới trong provenance của run.
++- Không ghi đè hoặc thay đổi file ground truth nguồn trong `data/`.
++- `test_ground_truth.py` kiểm tra hai định dạng, query prefix, file hỏng,
++  query/GT không khớp, neighbor trùng/sai và tie ở biên.
++- Bản sao trước sửa, patch và hồ sơ kiểm tra được lưu tại
++  `change_history/20261118_reuse_ground_truth/`.
+--- before/validation.json
++++ after/validation.json
+@@ -48,5 +48,9 @@
+   "graph_build": "PASS: SIFT10K stock_off and h17_on",
+   "native_search": "PASS: both variants, five beams each",
+   "next_command": "python3 local_setup/khoa-linux/run.py --dataset sift",
+-  "latency_validation": "change_history/20261118_latency/validation.json"
++  "latency_validation": "change_history/20261118_latency/validation.json",
++  "provided_ground_truth_reuse": {
++    "status": "PASS",
++    "details": "change_history/20261118_reuse_ground_truth/validation.json"
++  }
+ }
+--- /dev/null
++++ after/ground_truth.py
+@@ -0,0 +1,74 @@
++"""Read provided SIFT GT and convert it to the native PiPNN representation."""
++from pathlib import Path
++import struct
++
++import numpy as np
++
++
++def load_gt_ids(path, source_query_count, base_count):
++    path = Path(path)
++    if path.suffix == ".ivecs":
++        if path.stat().st_size < 4 or path.stat().st_size % 4:
++            raise ValueError(f"Invalid ivecs ground truth size: {path}")
++        raw = np.memmap(path, dtype="<i4", mode="r")
++        width = int(raw[0])
++        if width < 10 or width > base_count or raw.size % (width + 1):
++            raise ValueError(f"Invalid ivecs ground truth width/size: {path}")
++        rows = raw.reshape(-1, width + 1)
++        if len(rows) != source_query_count or not np.all(rows[:, 0] == width):
++            raise ValueError(f"Ground truth row count/width differs from source queries: {path}")
++        ids = rows[:, 1:]
++    elif path.suffix == ".ibin":
++        with path.open("rb") as stream:
++            header = stream.read(8)
++        if len(header) != 8:
++            raise ValueError(f"Truncated ground truth header: {path}")
++        rows, width = struct.unpack("<II", header)
++        if rows != source_query_count or not 10 <= width <= base_count:
++            raise ValueError(f"Ground truth shape differs from source dataset: {path}")
++        if path.stat().st_size not in (8 + rows * width * 4, 8 + rows * width * 8):
++            raise ValueError(f"Invalid ibin ground truth size: {path}")
++        ids = np.memmap(path, dtype="<u4", mode="r", offset=8, shape=(rows, width))
++    else:
++        raise ValueError(f"Unsupported ground truth format: {path}")
++    if np.any(ids < 0) or np.any(ids >= base_count):
++        raise ValueError(f"Ground truth has IDs outside the base dataset: {path}")
++    return ids
++
++
++def reuse_gt(base, queries, provided_ids):
++    if len(queries) > len(provided_ids):
++        raise ValueError("Not enough provided ground truth rows")
++    width = min(100, provided_ids.shape[1])
++    ids = np.array(provided_ids[:len(queries), :width], dtype="<u4")
++    if np.any(np.diff(np.sort(ids, axis=1), axis=1) == 0):
++        raise ValueError("Ground truth has duplicate neighbor IDs")
++    distances = np.empty(ids.shape, dtype="<f4")
++    # Compute only the distances to the known neighbor IDs (100/query), not
++    # distances to the complete million-vector base. Bound temporary RAM.
++    for start in range(0, len(queries), 32):
++        end = min(start + 32, len(queries))
++        delta = (np.asarray(base[ids[start:end]], dtype=np.float64)
++                 - np.asarray(queries[start:end], dtype=np.float64)[:, None, :])
++        values = np.einsum("qkd,qkd->qk", delta, delta)
++        if not np.isfinite(values).all() or np.any(np.diff(values, axis=1) < 0):
++            raise ValueError("Provided ground truth is not distance-sorted for these base/query vectors")
++        distances[start:end] = values
++    # Check only three queries against the full base to catch mismatched files
++    # or query order. Keep the full-GT validation explicitly sample-based.
++    checked = sorted({0, len(queries) // 2, len(queries) - 1})
++    for q in checked:
++        all_distances = np.empty(len(base), dtype=np.float64)
++        query = np.asarray(queries[q], dtype=np.float64)
++        for start in range(0, len(base), 8192):
++            end = min(start + 8192, len(base))
++            delta = np.asarray(base[start:end], dtype=np.float64) - query
++            all_distances[start:end] = np.einsum("ij,ij->i", delta, delta)
++        threshold = np.partition(all_distances, width - 1)[width - 1]
++        required = np.flatnonzero(all_distances < threshold)
++        if (np.any(all_distances[ids[q]] > threshold)
++                or not np.isin(required, ids[q]).all()):
++            raise ValueError(f"Provided ground truth does not match full base/query at query {q}")
++    return ids, distances, {"exact_sample_queries": checked,
++                            "all_query_neighbor_distances_sorted": True,
++                            "validation_scope": "sample-based; not a full GT recertification"}
+--- /dev/null
++++ after/test_ground_truth.py
+@@ -0,0 +1,85 @@
++"""Validate provided GT parsing, native conversion, and mismatch detection."""
++from pathlib import Path
++import struct
++import tempfile
++import unittest
++
++import numpy as np
++
++from ground_truth import load_gt_ids, reuse_gt
++
++
++class GroundTruthTests(unittest.TestCase):
++    def setUp(self):
++        self.temp = tempfile.TemporaryDirectory()
++        self.addCleanup(self.temp.cleanup)
++        self.path = Path(self.temp.name)
++        self.base = np.arange(32, dtype=np.float32).reshape(-1, 1)
++        self.queries = np.array([[3.25], [10.25], [25.25]], dtype=np.float32)
++        dists = (self.base[None, :, 0] - self.queries[:, 0, None]) ** 2
++        self.ids = np.argsort(dists, axis=1, kind="stable")[:, :10].astype("<u4")
++
++    def ivecs(self):
++        path = self.path / "gt.ivecs"
++        rows = np.column_stack((np.full(3, 10), self.ids)).astype("<i4")
++        rows.tofile(path)
++        return path
++
++    def test_ivecs_reuse_and_query_prefix(self):
++        loaded = load_gt_ids(self.ivecs(), 3, 32)
++        ids, dists, validation = reuse_gt(self.base, self.queries[:2], loaded)
++        np.testing.assert_array_equal(ids, self.ids[:2])
++        np.testing.assert_array_equal(dists, (self.base[ids, 0] - self.queries[:2]) ** 2)
++        self.assertEqual(validation["exact_sample_queries"], [0, 1])
++
++    def test_ibin_with_and_without_distance_payload(self):
++        for include_distances in (False, True):
++            with self.subTest(include_distances=include_distances):
++                path = self.path / "gt.ibin"
++                with path.open("wb") as stream:
++                    stream.write(struct.pack("<II", 3, 10))
++                    self.ids.tofile(stream)
++                    if include_distances:
++                        np.zeros((3, 10), dtype="<f4").tofile(stream)
++                np.testing.assert_array_equal(load_gt_ids(path, 3, 32), self.ids)
++
++    def test_bad_shape_ids_and_truncated_files_rejected(self):
++        path = self.ivecs()
++        with self.assertRaises(ValueError):
++            load_gt_ids(path, 4, 32)
++        rows = np.fromfile(path, dtype="<i4").reshape(3, 11)
++        for bad in (-1, 32):
++            with self.subTest(bad_id=bad):
++                changed = rows.copy()
++                changed[0, 1] = bad
++                changed.tofile(path)
++                with self.assertRaises(ValueError):
++                    load_gt_ids(path, 3, 32)
++        path.write_bytes(b"abc")
++        with self.assertRaises(ValueError):
++            load_gt_ids(path, 3, 32)
++
++    def test_wrong_query_order_duplicate_and_wrong_nearest_ids_rejected(self):
++        with self.assertRaises(ValueError):
++            reuse_gt(self.base, self.queries[::-1], self.ids)
++        duplicate = self.ids.copy()
++        duplicate[0, 1] = duplicate[0, 0]
++        with self.assertRaises(ValueError):
++            reuse_gt(self.base, self.queries, duplicate)
++        # Distance-sorted but incorrect neighbors: exact sample check must fail.
++        with self.assertRaises(ValueError):
++            reuse_gt(self.base, np.array([[0.0]], dtype=np.float32),
++                     np.arange(10, 20, dtype="<u4").reshape(1, 10))
++
++    def test_equivalent_boundary_ties_accepted(self):
++        base = np.arange(-15, 17, dtype=np.float32).reshape(-1, 1)
++        query = np.array([[0.0]], dtype=np.float32)
++        ids = np.argsort(base[:, 0] ** 2, kind="stable")[:10].astype("<u4")
++        self.assertEqual(base[ids[-1], 0], -5)
++        ids[-1] = np.flatnonzero(base[:, 0] == 5)[0]
++        reused, _, _ = reuse_gt(base, query, ids.reshape(1, 10))
++        np.testing.assert_array_equal(reused[0], ids)
++
++
++if __name__ == "__main__":
++    unittest.main()

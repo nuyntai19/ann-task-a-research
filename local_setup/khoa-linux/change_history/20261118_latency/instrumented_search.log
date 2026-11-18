@@ -1,0 +1,12 @@
+Data: detected 2048 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 2048 points with max degree 64
+Total edges read from file: 48396
+LOCAL_RECALL_ROW beam=10 recall=0.72187501 qps=34042.55468750 avg_cmps=529
+LOCAL_RECALL_ROW beam=20 recall=0.83437502 qps=60952.38281250 avg_cmps=826
+LOCAL_RECALL_ROW beam=40 recall=0.95312500 qps=43478.26171875 avg_cmps=1386
+LOCAL_RECALL_ROW beam=80 recall=0.99687499 qps=32921.80859375 avg_cmps=1991
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=25869.03906250 avg_cmps=2222
+LOCAL_LATENCY_CSV=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/change_history/20261118_latency/baseline_with_latency.csv
+LOCAL_RECALL_EVAL_PASS

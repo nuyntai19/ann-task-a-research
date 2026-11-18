@@ -1,0 +1,52 @@
+{
+  "status": "LOCAL_SIFT10K_LATENCY_PASS",
+  "checks": {
+    "original_reference_files_unchanged": true,
+    "sift-n10000-q32-_9e2e252": {
+      "rows": 10000,
+      "queries": 32,
+      "dimension": 128,
+      "all_file_hashes": "PASS",
+      "independent_exact_gt_queries": [
+        0,
+        16,
+        31
+      ]
+    },
+    "synthetic-n2048-q32-ess_5zzi": {
+      "rows": 2048,
+      "queries": 32,
+      "dimension": 128,
+      "all_file_hashes": "PASS",
+      "independent_exact_gt_queries": [
+        0,
+        16,
+        31
+      ]
+    },
+    "graph_audit_valid_and_corrupt_fixtures": {
+      "valid": "PASS",
+      "rejected": [
+        "truncated",
+        "bad_id",
+        "self_edge",
+        "duplicate"
+      ]
+    },
+    "truncated_matrix_rejected": true,
+    "latency_logging": "PASS: per-query CSV, independent statistics, baseline parity, single-thread and four-thread search"
+  },
+  "syntax_checks": {
+    "bash": "PASS",
+    "python_compile": "PASS"
+  },
+  "cmake_compiler_detection": "PASS GNU 13.3.0",
+  "dependency_fetch": "DEPENDENCIES_VERIFIED: all four pinned commits present locally",
+  "dependency_fetch_log": "logs/setup-9AjTywQ8.log",
+  "native_compile": "PASS: stock_off and h17_on",
+  "native_primitive_test": "PASS: both variants in logs/setup-0DETpE7I.log",
+  "graph_build": "PASS: SIFT10K stock_off and h17_on",
+  "native_search": "PASS: both variants, five beams each",
+  "next_command": "python3 local_setup/khoa-linux/run.py --dataset sift",
+  "latency_validation": "change_history/20261118_latency/validation.json"
+}

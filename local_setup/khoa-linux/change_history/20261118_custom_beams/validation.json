@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-18T11:19:58.251166+00:00",
+  "build": {
+    "stock_off": "PASS",
+    "h17_on": "PASS"
+  },
+  "custom_beams": [
+    10,
+    20,
+    40,
+    80,
+    100,
+    120,
+    140,
+    160
+  ],
+  "sift10k_run": "/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/validation_sift10k_h17_on_custom_beams_v1",
+  "native_rows": 8,
+  "latency_csv_rows": 256,
+  "checks": {
+    "all_requested_beams_in_log_csv_summary": "PASS",
+    "full_native_build_and_search": "PASS SIFT10K H17 ON",
+    "legacy_cli_default_five_beams": "PASS: Recall and work counts unchanged on same stock graph",
+    "custom_beam_order": "PASS 160,80",
+    "invalid_native_beams_rejected": 5,
+    "invalid_python_arguments_rejected": 9
+  }
+}

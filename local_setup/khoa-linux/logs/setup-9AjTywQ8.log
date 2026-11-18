@@ -1,0 +1,5 @@
+Setup log: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/logs/setup-9AjTywQ8.log
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+fatal: unable to access 'https://github.com/cmuparlay/parlaylib.git/': Could not resolve host: github.com
+Dependency setup failed: Command '['git', '-C', '/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/deps/parlaylib', 'fetch', '--depth', '1', 'origin', '51017699dcc421f80479cdb238d3092233ad0d26']' returned non-zero exit status 128.
+If DNS/network is blocked in Codex, run setup.sh in your normal terminal.

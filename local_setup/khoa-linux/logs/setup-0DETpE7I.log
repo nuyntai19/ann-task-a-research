@@ -1,0 +1,409 @@
+Setup log: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/logs/setup-0DETpE7I.log
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+DEPENDENCIES_VERIFIED
+-- PARLAY VERSION 2.3.3
+-- ---------------------------- General configuration -----------------------------
+-- CMake Generator:                Unix Makefiles
+-- Compiler:                       GNU 13.3.0
+-- Build type:                     Release
+-- CMAKE_CXX_FLAGS:                
+-- CMAKE_CXX_FLAGS_DEBUG:          -g
+-- CMAKE_CXX_FLAGS_RELEASE:        -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG -fno-omit-frame-pointer
+-- CMAKE_EXE_LINKER_FLAGS          
+-- CMAKE_INSTALL_PREFIX:           /usr/local
+-- -------------------------------- Library options ------------------------------
+-- Using Parlay scheduler. Switch with -DPARLAY_{CILKPLUS,OPENCILK,OPENMP,TBB}=On
+-- Elastic parallelism enabled. Disable with -DPARLAY_ELASTIC_PARALLELISM=Off
+-- ------------------------------- Static Analysis --------------------------------
+-- cppcheck:                     Disabled (enable with -DENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DENABLE_IWYU=On)
+-- ---------------------------------- Unit Tests ----------------------------------
+-- testing: Disabled (enable with -DPARLAY_TEST=On)
+-- ---------------------------------- Benchmarks ----------------------------------
+-- benchmarks: Disabled (enable with -DPARLAY_BENCHMARK=On)
+-- ----------------------------------- Examples -----------------------------------
+-- examples: Disabled (enable with -DPARLAY_EXAMPLES=On)
+-- example data: Off (add -DPARLAY_EXAMPLE_DATA=On to download)
+CMake Deprecation Warning at deps/highway/CMakeLists.txt:28 (cmake_policy):
+  The OLD behavior for policy CMP0111 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Configured Target: neighbors-pipnn_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_INT8_T_MIPS with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_UINT8_T_MIPS with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/build/stock_off
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[ 10%] Built target absl_spinlock_wait
+[ 15%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 20%] Built target absl_raw_logging_internal
+[ 21%] Built target absl_base
+[ 31%] Built target absl_throw_delegate
+[ 50%] Built target hwy_contrib
+[ 50%] Built target absl_tracing_internal
+[ 51%] Built target absl_debugging_internal
+[ 55%] Built target absl_decode_rust_punycode
+[ 55%] Built target absl_strings_internal
+[ 55%] Built target absl_string_view
+[ 55%] Built target absl_int128
+[ 56%] Built target absl_city
+[ 56%] Built target absl_crc_cpu_detect
+[ 60%] Built target absl_low_level_hash
+[ 60%] Built target absl_cordz_functions
+[ 60%] Built target absl_stacktrace
+[ 60%] Built target absl_malloc_internal
+[ 61%] Built target absl_demangle_rust
+[ 61%] Built target absl_graphcycles_internal
+[ 70%] Built target absl_strings
+[ 70%] Built target absl_demangle_internal
+[ 71%] Built target absl_crc_internal
+[ 75%] Built target absl_time
+[ 78%] Built target absl_str_format_internal
+[ 80%] Built target absl_symbolize
+[ 81%] Built target absl_hash
+[ 83%] Built target absl_kernel_timeout_internal
+[ 85%] Built target absl_crc32c
+[ 86%] Built target absl_crc_cord_state
+[ 91%] Built target absl_synchronization
+[ 95%] Built target absl_cord_internal
+[ 96%] Built target absl_hashtablez_sampler
+[ 96%] Built target absl_cordz_handle
+[ 98%] Built target absl_cordz_info
+[100%] Built target absl_cord
+[100%] Built target absl_raw_hash_set
+[100%] Built target neighbors-pipnn_FLOAT_T_EUCLIDEAN
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 45%] Built target hwy_contrib
+[ 47%] Built target absl_base
+[ 49%] Built target absl_throw_delegate
+[ 52%] Built target absl_strings_internal
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_int128
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_crc_cpu_detect
+[ 55%] Built target absl_city
+[ 57%] Built target absl_low_level_hash
+[ 59%] Built target absl_cordz_functions
+[ 59%] Built target absl_malloc_internal
+[ 59%] Built target absl_tracing_internal
+[ 59%] Built target absl_stacktrace
+[ 60%] Built target absl_demangle_rust
+[ 60%] Built target absl_graphcycles_internal
+[ 68%] Built target absl_strings
+[ 70%] Built target absl_demangle_internal
+[ 70%] Built target absl_crc_internal
+[ 73%] Built target absl_str_format_internal
+[ 77%] Built target absl_time
+[ 78%] Built target absl_hash
+[ 80%] Built target absl_symbolize
+[ 81%] Built target absl_kernel_timeout_internal
+[ 83%] Built target absl_crc32c
+[ 88%] Built target absl_synchronization
+[ 90%] Built target absl_crc_cord_state
+[ 91%] Built target absl_hashtablez_sampler
+[ 91%] Built target absl_cordz_handle
+[ 95%] Built target absl_cord_internal
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[100%] Built target local_graph_recall
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 45%] Built target hwy_contrib
+[ 47%] Built target absl_base
+[ 49%] Built target absl_throw_delegate
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_int128
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_crc_cpu_detect
+[ 55%] Built target absl_city
+[ 57%] Built target absl_low_level_hash
+[ 59%] Built target absl_cordz_functions
+[ 59%] Built target absl_malloc_internal
+[ 59%] Built target absl_tracing_internal
+[ 59%] Built target absl_stacktrace
+[ 60%] Built target absl_demangle_rust
+[ 68%] Built target absl_strings
+[ 68%] Built target absl_graphcycles_internal
+[ 70%] Built target absl_crc_internal
+[ 73%] Built target absl_str_format_internal
+[ 75%] Built target absl_hash
+[ 75%] Built target absl_demangle_internal
+[ 78%] Built target absl_time
+[ 80%] Built target absl_crc32c
+[ 81%] Built target absl_symbolize
+[ 83%] Built target absl_kernel_timeout_internal
+[ 85%] Built target absl_crc_cord_state
+[ 90%] Built target absl_synchronization
+[ 93%] Built target absl_cord_internal
+[ 95%] Built target absl_hashtablez_sampler
+[ 95%] Built target absl_cordz_handle
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[100%] Built target r70_native_tests
+Allocate = 1
+allocating LSH graph
+Allocating: 164864 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+R70_MIXED_FINAL_ROW_PARITY_PASS promoted=50 unpromoted=78
+R70_SAME_SOURCE_LOCK_STRESS_PASS (structural-only, nondeterministic order)
+R70_NATIVE_PARITY_PASS nodes=128 promoted=50
+R70_TEST_NOT_FULL_BUILD_NOT_QUERY_RECALL
+-- PARLAY VERSION 2.3.3
+-- ---------------------------- General configuration -----------------------------
+-- CMake Generator:                Unix Makefiles
+-- Compiler:                       GNU 13.3.0
+-- Build type:                     Release
+-- CMAKE_CXX_FLAGS:                
+-- CMAKE_CXX_FLAGS_DEBUG:          -g
+-- CMAKE_CXX_FLAGS_RELEASE:        -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG -fno-omit-frame-pointer
+-- CMAKE_EXE_LINKER_FLAGS          
+-- CMAKE_INSTALL_PREFIX:           /usr/local
+-- -------------------------------- Library options ------------------------------
+-- Using Parlay scheduler. Switch with -DPARLAY_{CILKPLUS,OPENCILK,OPENMP,TBB}=On
+-- Elastic parallelism enabled. Disable with -DPARLAY_ELASTIC_PARALLELISM=Off
+-- ------------------------------- Static Analysis --------------------------------
+-- cppcheck:                     Disabled (enable with -DENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DENABLE_IWYU=On)
+-- ---------------------------------- Unit Tests ----------------------------------
+-- testing: Disabled (enable with -DPARLAY_TEST=On)
+-- ---------------------------------- Benchmarks ----------------------------------
+-- benchmarks: Disabled (enable with -DPARLAY_BENCHMARK=On)
+-- ----------------------------------- Examples -----------------------------------
+-- examples: Disabled (enable with -DPARLAY_EXAMPLES=On)
+-- example data: Off (add -DPARLAY_EXAMPLE_DATA=On to download)
+CMake Deprecation Warning at deps/highway/CMakeLists.txt:28 (cmake_policy):
+  The OLD behavior for policy CMP0111 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Configured Target: neighbors-pipnn_INT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_INT8_T_MIPS with Definitions: USE_DATATYPE_INT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_UINT8_T_EUCLIDEAN with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_UINT8_T_MIPS with Definitions: USE_DATATYPE_UINT8_T, USE_DISTANCE_MIPS
+-- Configured Target: neighbors-pipnn_FLOAT_T_EUCLIDEAN with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_EUCLIDEAN
+-- Configured Target: neighbors-pipnn_FLOAT_T_MIPS with Definitions: USE_DATATYPE_FLOAT_T, USE_DISTANCE_MIPS
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/build/h17_on
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[ 10%] Built target absl_spinlock_wait
+[ 15%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 20%] Built target absl_raw_logging_internal
+[ 21%] Built target absl_base
+[ 23%] Built target absl_throw_delegate
+[ 50%] Built target hwy_contrib
+[ 50%] Built target absl_tracing_internal
+[ 51%] Built target absl_debugging_internal
+[ 53%] Built target absl_strings_internal
+[ 55%] Built target absl_decode_rust_punycode
+[ 55%] Built target absl_int128
+[ 55%] Built target absl_string_view
+[ 55%] Built target absl_crc_cpu_detect
+[ 56%] Built target absl_city
+[ 58%] Built target absl_low_level_hash
+[ 60%] Built target absl_cordz_functions
+[ 60%] Built target absl_malloc_internal
+[ 60%] Built target absl_stacktrace
+[ 61%] Built target absl_demangle_rust
+[ 61%] Built target absl_graphcycles_internal
+[ 70%] Built target absl_strings
+[ 70%] Built target absl_demangle_internal
+[ 71%] Built target absl_crc_internal
+[ 75%] Built target absl_time
+[ 78%] Built target absl_str_format_internal
+[ 80%] Built target absl_hash
+[ 81%] Built target absl_symbolize
+[ 83%] Built target absl_kernel_timeout_internal
+[ 85%] Built target absl_crc32c
+[ 90%] Built target absl_synchronization
+[ 91%] Built target absl_crc_cord_state
+[ 93%] Built target absl_hashtablez_sampler
+[ 93%] Built target absl_cordz_handle
+[ 96%] Built target absl_cord_internal
+[ 98%] Built target absl_cordz_info
+[100%] Built target absl_cord
+[100%] Built target absl_raw_hash_set
+[100%] Built target neighbors-pipnn_FLOAT_T_EUCLIDEAN
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 45%] Built target hwy_contrib
+[ 47%] Built target absl_base
+[ 49%] Built target absl_throw_delegate
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_int128
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_crc_cpu_detect
+[ 55%] Built target absl_city
+[ 57%] Built target absl_low_level_hash
+[ 59%] Built target absl_cordz_functions
+[ 59%] Built target absl_malloc_internal
+[ 59%] Built target absl_tracing_internal
+[ 59%] Built target absl_stacktrace
+[ 60%] Built target absl_demangle_rust
+[ 68%] Built target absl_strings
+[ 68%] Built target absl_graphcycles_internal
+[ 70%] Built target absl_crc_internal
+[ 73%] Built target absl_str_format_internal
+[ 73%] Built target absl_demangle_internal
+[ 75%] Built target absl_hash
+[ 78%] Built target absl_time
+[ 80%] Built target absl_crc32c
+[ 81%] Built target absl_symbolize
+[ 83%] Built target absl_kernel_timeout_internal
+[ 85%] Built target absl_crc_cord_state
+[ 90%] Built target absl_synchronization
+[ 91%] Built target absl_hashtablez_sampler
+[ 95%] Built target absl_cord_internal
+[ 95%] Built target absl_cordz_handle
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[100%] Built target local_graph_recall
+[  1%] Built target absl_log_severity
+[  8%] Built target hwy
+[  9%] Built target absl_spinlock_wait
+[ 14%] Built target absl_time_zone
+[ 16%] Built target absl_utf8_for_code_point
+[ 18%] Built target absl_exponential_biased
+[ 18%] Built target absl_civil_time
+[ 19%] Built target absl_raw_logging_internal
+[ 45%] Built target hwy_contrib
+[ 47%] Built target absl_base
+[ 49%] Built target absl_throw_delegate
+[ 50%] Built target absl_debugging_internal
+[ 52%] Built target absl_strings_internal
+[ 54%] Built target absl_decode_rust_punycode
+[ 54%] Built target absl_string_view
+[ 54%] Built target absl_int128
+[ 55%] Built target absl_city
+[ 55%] Built target absl_crc_cpu_detect
+[ 57%] Built target absl_cordz_functions
+[ 59%] Built target absl_low_level_hash
+[ 59%] Built target absl_malloc_internal
+[ 59%] Built target absl_tracing_internal
+[ 60%] Built target absl_demangle_rust
+[ 60%] Built target absl_stacktrace
+[ 60%] Built target absl_graphcycles_internal
+[ 68%] Built target absl_strings
+[ 70%] Built target absl_crc_internal
+[ 70%] Built target absl_demangle_internal
+[ 75%] Built target absl_str_format_internal
+[ 77%] Built target absl_time
+[ 78%] Built target absl_hash
+[ 80%] Built target absl_symbolize
+[ 81%] Built target absl_kernel_timeout_internal
+[ 83%] Built target absl_crc32c
+[ 88%] Built target absl_synchronization
+[ 90%] Built target absl_crc_cord_state
+[ 91%] Built target absl_hashtablez_sampler
+[ 91%] Built target absl_cordz_handle
+[ 95%] Built target absl_cord_internal
+[ 96%] Built target absl_cordz_info
+[ 98%] Built target absl_cord
+[ 98%] Built target absl_raw_hash_set
+[100%] Built target r70_native_tests
+Allocate = 1
+allocating LSH graph
+Allocating: 164864 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+R70_MIXED_FINAL_ROW_PARITY_PASS promoted=50 unpromoted=78
+R70_SAME_SOURCE_LOCK_STRESS_PASS (structural-only, nondeterministic order)
+R70_NATIVE_PARITY_PASS nodes=128 promoted=50
+R70_TEST_NOT_FULL_BUILD_NOT_QUERY_RECALL
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+DEPENDENCIES_VERIFIED
+DATA_READY=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/synthetic-n2048-q32-tr_cdkyg
+RUN_DIR=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-stock_off-twftk_xq
+Data: detected 2048 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 2048 points with max degree 64
+Total edges read from file: 48396
+LOCAL_RECALL_ROW beam=10 recall=0.72187501 qps=33898.30468750 avg_cmps=529
+LOCAL_RECALL_ROW beam=20 recall=0.83437502 qps=66666.67187500 avg_cmps=826
+LOCAL_RECALL_ROW beam=40 recall=0.95312500 qps=40201.00390625 avg_cmps=1386
+LOCAL_RECALL_ROW beam=80 recall=0.99687499 qps=32032.03125000 avg_cmps=1991
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=26272.57812500 avg_cmps=2222
+LOCAL_RECALL_EVAL_PASS
+LOCAL_FUNCTIONAL_CHECK_PASS summary=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-stock_off-twftk_xq/summary.json
+Dependency: parlaylib @ 51017699dcc421f80479cdb238d3092233ad0d26
+Dependency: eigen @ 3147391d946bb4b6c68edd901f2add6ac1f31f8c
+Dependency: abseil-cpp @ bc257a88f7c1939f24e0379f14a3589e926c950c
+Dependency: highway @ 6bc2d47793bae9c521fb4150936669647700765d
+DEPENDENCIES_VERIFIED
+DATA_READY=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/data/synthetic-n2048-q32-8uu95szp
+RUN_DIR=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-h17_on-9xpx2e3c
+Data: detected 2048 points with dimension 128
+Data: detected 32 points with dimension 128
+Ground truth: detected 32 points with num results 100
+Graph: detected 2048 points with max degree 64
+Total edges read from file: 48392
+LOCAL_RECALL_ROW beam=10 recall=0.71562499 qps=31189.08398438 avg_cmps=530
+LOCAL_RECALL_ROW beam=20 recall=0.85000002 qps=55944.05859375 avg_cmps=841
+LOCAL_RECALL_ROW beam=40 recall=0.94375002 qps=37735.84765625 avg_cmps=1382
+LOCAL_RECALL_ROW beam=80 recall=0.99687499 qps=32786.88671875 avg_cmps=1995
+LOCAL_RECALL_ROW beam=160 recall=1.00000000 qps=26755.85156250 avg_cmps=2220
+LOCAL_RECALL_EVAL_PASS
+LOCAL_FUNCTIONAL_CHECK_PASS summary=/home/khoa/research/PiPNN/ann-task-a-research/local_setup/khoa-linux/runs/synthetic-h17_on-9xpx2e3c/summary.json
+LOCAL_SETUP_AND_SMOKE_PASS

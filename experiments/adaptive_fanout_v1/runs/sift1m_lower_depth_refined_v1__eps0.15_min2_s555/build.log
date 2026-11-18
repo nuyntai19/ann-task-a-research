@@ -1,0 +1,40 @@
+Vary degree = 0
+Data: detected 1000000 points with dimension 128
+Parlay time: SketchHash construction time: 0.0364
+Size of SketchHash (bytes): 48006144
+R70_RESERVOIR_VARIANT=STOCK_FLAT_C160
+R71_SELECTION_VARIANT=H17_PACKED_TOP2
+Allocate = 0
+Set MSTDeg to: 2 fanout: 1
+Sizeof indexType = 4
+Fanout scheme: 10 3 1 
+Allocating: 1288000000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 0.2399
+Parlay time: buckets time: 9.7343
+buckets size (bytes): 116580800
+Total buckets: 229221
+Total points: 28228316
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 7.5157
+Built cluster 0 of 1
+Leaf count: 229219
+# of comparisons during clustering: 4869595670
+Allocating graph, prune_degree = 64
+Average table size: 45
+Parlay time: Final prune time: 2.8338
+Average distance traversed: 45
+Writing graph to /home/khoa/research/PiPNN/ann-task-a-research/experiments/adaptive_fanout_v1/runs/sift1m_lower_depth_refined_v1__eps0.15_min2_s555/index.graph
+Writing graph with 1000000 points and max degree 64
+PiPNN graph built with 1000000 points and parameters Trees = 1
+Graph has average degree 23.13 and maximum degree 64
+Graph built in 20.24 seconds
+Parlay time: 20.3586
