@@ -1,0 +1,25 @@
+[
+  {
+    "candidate_scans": 274608788,
+    "ctrl_first_assignments": 3395999,
+    "ctrl_fp32_checks": 0,
+    "ctrl_pack_calls": 274608788,
+    "ctrl_packed_comparisons": 545150665,
+    "ctrl_second_assignments": 5954977,
+    "ctrl_top2_value_assignments": 9350976,
+    "ctrl_value_comparisons": 545150665,
+    "fast_cutoff_assignments": 5954977,
+    "fast_early_rejects": 268653491,
+    "fast_first_assignments": 3395999,
+    "fast_fp32_checks": 273702194,
+    "fast_pack_calls": 5955297,
+    "fast_packed_comparisons": 7843683,
+    "fast_second_assignments": 5954977,
+    "fast_top2_value_assignments": 15305953,
+    "fast_value_comparisons": 281545877,
+    "leaf_calls": 991,
+    "n": 10000,
+    "note": "Program-level executed counts; lower_triangle_pairs_theoretical is analytical leaf work proxy, not measured GEMM flops.",
+    "pack_calls_reduced_pct": 97.83135236007087
+  }
+]

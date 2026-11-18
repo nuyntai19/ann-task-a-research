@@ -1,0 +1,86 @@
+{
+  "data_10k_sha": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+  "diagnostic_elf_sha": {
+    "ctrl": "ae15c49ddce48bd526e873354288d80fb2a1aadcf9b5a27c0d862312fa2ce627",
+    "fast": "211a3b7440727747c3161aeb0d9f80bc9e19bbc3222072a1653b3af59734bc9e"
+  },
+  "frozen_manifest_sha": "38971191f98b4c41398c13ebfe7d17e67a342511de3a60af4cd1e4298478ddb0",
+  "p38_script_sha": "6d4c8728fc7a4df449c2ffb68b6471c516270fd91b11fb7e18240c3e7a911515",
+  "runs": [
+    {
+      "arm": "ctrl",
+      "counts": {
+        "candidates": 274608788,
+        "count_increments": 906594,
+        "cutoff_assignments": 0,
+        "early_rejects": 0,
+        "first_assignments": 3395999,
+        "first_branch_hits": 3395999,
+        "fp32_checks": 0,
+        "leaf_calls": 991,
+        "leaf_point_visits": 453297,
+        "lower_triangle_pairs_theoretical": 137304394,
+        "pack_calls": 274608788,
+        "packed_comparisons": 545150665,
+        "packed_first_checks": 274155491,
+        "packed_second_checks": 270995174,
+        "second_assignments": 5954977,
+        "second_branch_hits": 2558978,
+        "top2_value_assignments": 9350976,
+        "value_comparisons": 545150665
+      },
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_d6_h17_fastv2_top2_exact_counters_v1/graphs/10000_ctrl_r1.graph",
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_d6_h17_fastv2_top2_exact_counters_v1/logs/10000_ctrl_r1.stdout",
+      "stdout_sha": "ab0ca9df27552829619153c45870e1e6c40e38b7430d7cc02a024c3cd212ce90",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_d6_h17_fastv2_top2_exact_counters_v1/logs/10000_ctrl_r1.time",
+      "timefile_sha": "3528befd527e64864ab717b2c7423e8c85705f097ca12dd276f2d28a2d959c03"
+    },
+    {
+      "arm": "fast",
+      "counts": {
+        "candidates": 274608788,
+        "count_increments": 906594,
+        "cutoff_assignments": 5954977,
+        "early_rejects": 268653491,
+        "first_assignments": 3395999,
+        "first_branch_hits": 3395999,
+        "fp32_checks": 273702194,
+        "leaf_calls": 991,
+        "leaf_point_visits": 453297,
+        "lower_triangle_pairs_theoretical": 137304394,
+        "pack_calls": 5955297,
+        "packed_comparisons": 7843683,
+        "packed_first_checks": 5502000,
+        "packed_second_checks": 2341683,
+        "second_assignments": 5954977,
+        "second_branch_hits": 2558978,
+        "top2_value_assignments": 15305953,
+        "value_comparisons": 281545877
+      },
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_d6_h17_fastv2_top2_exact_counters_v1/graphs/10000_fast_r1.graph",
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_d6_h17_fastv2_top2_exact_counters_v1/logs/10000_fast_r1.stdout",
+      "stdout_sha": "74bedb5b389bb3c74466e8f58edd9450248e8bc5c971572e6957080e84555f8c",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_d6_h17_fastv2_top2_exact_counters_v1/logs/10000_fast_r1.time",
+      "timefile_sha": "e6ead551322334173380f8d38d534ca8772018f530293eac7b6d06fb8371f74d"
+    }
+  ],
+  "scope": "D6 diagnostic only, one CPU0, H17 C160 K1024 N2. Local leaf counters; NOT comparable wall time.",
+  "script_sha": "c8fbb9e2dc531cdb6cffb755ab98db558df8b5633c03a38dda0f2c1da4af1c8b",
+  "source_hashes": {
+    "ctrl": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "a2aa3f440017176d894a48eea6858952564569b0dded0b212234969e60391d55",
+      "algorithms/PipNN/pipnn_utils.h": "72663ad75da8533de6e466355a0997b6a580609c5b669d7e2460eca4a1a028e8"
+    },
+    "fast": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "65b87629013ecf811652882425d92c6ee8145378b32c63d9fc61edd20c7bc0fc",
+      "algorithms/PipNN/pipnn_utils.h": "380530713c0dcba189a0a0c76e8ef0eef572f735da5c80e5fb9fb56b9db185aa"
+    }
+  },
+  "status": "PASS_10K"
+}

@@ -1,0 +1,511 @@
+{
+  "audit": "PASS_12_NATIVE_SEARCH_RUNS_10KQ_5_BEAMS",
+  "beams": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "by_beam": [
+    {
+      "beam": 10,
+      "ctrl": {
+        "mean_cmps": 584.0,
+        "mean_latency_proxy_us": 32.85903349038539,
+        "mean_qps": 30433.634440105,
+        "mean_recall": 0.7638300033333333,
+        "mean_visited": 19.0,
+        "recall_max": 0.76384997,
+        "recall_min": 0.76380002
+      },
+      "fast": {
+        "mean_cmps": 584.0,
+        "mean_latency_proxy_us": 32.883560129255116,
+        "mean_qps": 30410.938476565,
+        "mean_recall": 0.7637866733333334,
+        "mean_visited": 19.0,
+        "recall_max": 0.76380002,
+        "recall_min": 0.76378
+      },
+      "fast_minus_ctrl_mean_recall": -4.332999999989706e-05,
+      "fast_minus_ctrl_mean_recall_pp": -0.004332999999989706,
+      "fast_over_ctrl_mean_qps_ratio": 0.9992542473497646,
+      "paired_graph_build_recall_deltas": [
+        -2.0020000000009475e-05,
+        -4.99499999999653e-05,
+        -6.0019999999938456e-05
+      ]
+    },
+    {
+      "beam": 20,
+      "ctrl": {
+        "mean_cmps": 847.0,
+        "mean_latency_proxy_us": 48.485030273049595,
+        "mean_qps": 20624.930989585,
+        "mean_recall": 0.89054332,
+        "mean_visited": 29.0,
+        "recall_max": 0.89055997,
+        "recall_min": 0.89052999
+      },
+      "fast": {
+        "mean_cmps": 847.0,
+        "mean_latency_proxy_us": 48.78534121011093,
+        "mean_qps": 20498.164062501666,
+        "mean_recall": 0.8905499933333333,
+        "mean_visited": 29.0,
+        "recall_max": 0.89056998,
+        "recall_min": 0.89054
+      },
+      "fast_minus_ctrl_mean_recall": 6.673333333262477e-06,
+      "fast_minus_ctrl_mean_recall_pp": 0.0006673333333262477,
+      "fast_over_ctrl_mean_qps_ratio": 0.9938537041822179,
+      "paired_graph_build_recall_deltas": [
+        -1.996999999998028e-05,
+        1.0010000000004737e-05,
+        2.997999999998502e-05
+      ]
+    },
+    {
+      "beam": 40,
+      "ctrl": {
+        "mean_cmps": 1357.0,
+        "mean_latency_proxy_us": 77.81743801998051,
+        "mean_qps": 12850.595703125,
+        "mean_recall": 0.96168667,
+        "mean_visited": 48.0,
+        "recall_max": 0.96173,
+        "recall_min": 0.96165001
+      },
+      "fast": {
+        "mean_cmps": 1357.0,
+        "mean_latency_proxy_us": 77.86401814648606,
+        "mean_qps": 12842.912109375,
+        "mean_recall": 0.9616666633333334,
+        "mean_visited": 48.0,
+        "recall_max": 0.96166998,
+        "recall_min": 0.96166003
+      },
+      "fast_minus_ctrl_mean_recall": -2.0006666666572137e-05,
+      "fast_minus_ctrl_mean_recall_pp": -0.0020006666666572137,
+      "fast_over_ctrl_mean_qps_ratio": 0.9994020826794721,
+      "paired_graph_build_recall_deltas": [
+        1.996999999998028e-05,
+        -1.0019999999943963e-05,
+        -6.996999999997477e-05
+      ]
+    },
+    {
+      "beam": 80,
+      "ctrl": {
+        "mean_cmps": 2278.0,
+        "mean_latency_proxy_us": 133.80224461560843,
+        "mean_qps": 7473.905110676667,
+        "mean_recall": 0.9914099766666667,
+        "mean_visited": 87.0,
+        "recall_max": 0.99141997,
+        "recall_min": 0.99138999
+      },
+      "fast": {
+        "mean_cmps": 2278.0,
+        "mean_latency_proxy_us": 133.6201295215291,
+        "mean_qps": 7483.982014975,
+        "mean_recall": 0.9913933266666667,
+        "mean_visited": 87.0,
+        "recall_max": 0.9914,
+        "recall_min": 0.99138999
+      },
+      "fast_minus_ctrl_mean_recall": -1.6650000000062448e-05,
+      "fast_minus_ctrl_mean_recall_pp": -0.0016650000000062448,
+      "fast_over_ctrl_mean_qps_ratio": 1.0013482783296161,
+      "paired_graph_build_recall_deltas": [
+        0.0,
+        -1.9970000000091304e-05,
+        -2.997999999998502e-05
+      ]
+    },
+    {
+      "beam": 160,
+      "ctrl": {
+        "mean_cmps": 3668.0,
+        "mean_latency_proxy_us": 238.27444285413276,
+        "mean_qps": 4196.871256508333,
+        "mean_recall": 0.9985866533333334,
+        "mean_visited": 156.0,
+        "recall_max": 0.99858999,
+        "recall_min": 0.99857998
+      },
+      "fast": {
+        "mean_cmps": 3668.0,
+        "mean_latency_proxy_us": 238.11474723385547,
+        "mean_qps": 4199.666748046667,
+        "mean_recall": 0.99858999,
+        "mean_visited": 156.0,
+        "recall_max": 0.99858999,
+        "recall_min": 0.99858999
+      },
+      "fast_minus_ctrl_mean_recall": 3.3366666666312383e-06,
+      "fast_minus_ctrl_mean_recall_pp": 0.00033366666666312383,
+      "fast_over_ctrl_mean_qps_ratio": 1.0006660894193498,
+      "paired_graph_build_recall_deltas": [
+        1.0010000000004737e-05,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "dataset": "SIFT1M",
+  "graph_build_threads": 4,
+  "independent_graphs_per_arm": 3,
+  "k": 10,
+  "limitations": [
+    "Graph H17 itself changes with four BUILD threads; do not demand byte SHA parity",
+    "Do not count two SEARCH repeats as six independent graph builds",
+    "Fixed beam is not matched-Recall latency; QPS is workload/CPU/cache sensitive",
+    "An exploratory 0.001 Recall warning threshold is NOT a formal equivalence test",
+    "No computation/assignment D6 counters; no claim about 10M or dataset generality"
+  ],
+  "not_formal_noninferiority": true,
+  "not_matched_recall_latency": true,
+  "per_graph_beam": [
+    {
+      "arm": "ctrl",
+      "avg_cmps": 584.0,
+      "avg_visited": 19.0,
+      "beam": 10,
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "qps_median_repeated_search": 30452.26269531,
+      "recall_at10": 0.76380002
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 584.0,
+      "avg_visited": 19.0,
+      "beam": 10,
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "qps_median_repeated_search": 30259.27246094,
+      "recall_at10": 0.76384997
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 584.0,
+      "avg_visited": 19.0,
+      "beam": 10,
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "qps_median_repeated_search": 30589.368164065,
+      "recall_at10": 0.76384002
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 584.0,
+      "avg_visited": 19.0,
+      "beam": 10,
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "qps_median_repeated_search": 30422.250976565,
+      "recall_at10": 0.76378
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 584.0,
+      "avg_visited": 19.0,
+      "beam": 10,
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "qps_median_repeated_search": 30571.1953125,
+      "recall_at10": 0.76380002
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 584.0,
+      "avg_visited": 19.0,
+      "beam": 10,
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "qps_median_repeated_search": 30239.36914063,
+      "recall_at10": 0.76378
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 847.0,
+      "avg_visited": 29.0,
+      "beam": 20,
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "qps_median_repeated_search": 20607.1875,
+      "recall_at10": 0.89055997
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 847.0,
+      "avg_visited": 29.0,
+      "beam": 20,
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "qps_median_repeated_search": 20629.19726563,
+      "recall_at10": 0.89052999
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 847.0,
+      "avg_visited": 29.0,
+      "beam": 20,
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "qps_median_repeated_search": 20638.408203125,
+      "recall_at10": 0.89054
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 847.0,
+      "avg_visited": 29.0,
+      "beam": 20,
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "qps_median_repeated_search": 20406.931640625,
+      "recall_at10": 0.89054
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 847.0,
+      "avg_visited": 29.0,
+      "beam": 20,
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "qps_median_repeated_search": 20544.6328125,
+      "recall_at10": 0.89054
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 847.0,
+      "avg_visited": 29.0,
+      "beam": 20,
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "qps_median_repeated_search": 20542.92773438,
+      "recall_at10": 0.89056998
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 1357.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "qps_median_repeated_search": 12862.422851565,
+      "recall_at10": 0.96165001
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 1357.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "qps_median_repeated_search": 12843.009277345,
+      "recall_at10": 0.96168
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 1357.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "qps_median_repeated_search": 12846.354980465,
+      "recall_at10": 0.96173
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 1357.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "qps_median_repeated_search": 12839.016113279999,
+      "recall_at10": 0.96166998
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 1357.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "qps_median_repeated_search": 12857.98095703,
+      "recall_at10": 0.96166998
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 1357.0,
+      "avg_visited": 48.0,
+      "beam": 40,
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "qps_median_repeated_search": 12831.739257815,
+      "recall_at10": 0.96166003
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 2278.0,
+      "avg_visited": 87.0,
+      "beam": 80,
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "qps_median_repeated_search": 7504.088134765,
+      "recall_at10": 0.99138999
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 2278.0,
+      "avg_visited": 87.0,
+      "beam": 80,
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "qps_median_repeated_search": 7421.03051758,
+      "recall_at10": 0.99141997
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 2278.0,
+      "avg_visited": 87.0,
+      "beam": 80,
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "qps_median_repeated_search": 7496.596679685001,
+      "recall_at10": 0.99141997
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 2278.0,
+      "avg_visited": 87.0,
+      "beam": 80,
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "qps_median_repeated_search": 7454.29956055,
+      "recall_at10": 0.99138999
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 2278.0,
+      "avg_visited": 87.0,
+      "beam": 80,
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "qps_median_repeated_search": 7514.111083985,
+      "recall_at10": 0.9914
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 2278.0,
+      "avg_visited": 87.0,
+      "beam": 80,
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "qps_median_repeated_search": 7483.53540039,
+      "recall_at10": 0.99138999
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 3668.0,
+      "avg_visited": 156.0,
+      "beam": 160,
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "qps_median_repeated_search": 4203.90698242,
+      "recall_at10": 0.99857998
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 3668.0,
+      "avg_visited": 156.0,
+      "beam": 160,
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "qps_median_repeated_search": 4205.670166015,
+      "recall_at10": 0.99858999
+    },
+    {
+      "arm": "ctrl",
+      "avg_cmps": 3668.0,
+      "avg_visited": 156.0,
+      "beam": 160,
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "qps_median_repeated_search": 4181.03662109,
+      "recall_at10": 0.99858999
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 3668.0,
+      "avg_visited": 156.0,
+      "beam": 160,
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "qps_median_repeated_search": 4209.16333008,
+      "recall_at10": 0.99858999
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 3668.0,
+      "avg_visited": 156.0,
+      "beam": 160,
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "qps_median_repeated_search": 4195.842529295,
+      "recall_at10": 0.99858999
+    },
+    {
+      "arm": "fast",
+      "avg_cmps": 3668.0,
+      "avg_visited": 156.0,
+      "beam": 160,
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "qps_median_repeated_search": 4193.994384765,
+      "recall_at10": 0.99858999
+    }
+  ],
+  "recall_screen_margin_absolute": 0.001,
+  "search_cpu_affinity": "0",
+  "search_query_count": 10000,
+  "search_reps_per_graph": 2,
+  "search_threads": 1,
+  "source_search_manifest_sha": "6d601697e7c7842a26056a90862d19433efcb2c16f8888491b7d21b9919f3fd7",
+  "sources": {
+    "beams": [
+      10,
+      20,
+      40,
+      80,
+      160
+    ],
+    "data_sha": {
+      "base": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+      "evaluator": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "gt": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13",
+      "query": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+    },
+    "graph_sha": {
+      "ctrl_r1": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "ctrl_r2": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "ctrl_r3": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "fast_r1": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "fast_r2": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "fast_r3": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd"
+    },
+    "k": 10,
+    "nqueries": 10000,
+    "p311_build_audit": "9c8547c73f43e0e9473f5362f7edcf9d96062628d31cbac0126de66cb3d4ac1f",
+    "p311_manifest": "36a906b5dc30200308c00bf220864e76ca47f42aa8f43fbc3cd3c0ffd8610cca",
+    "p311_script": "09a2399ffdb525905cb36e2c2ac8fbeabf13779e58ba844222e00ad0d9871af4",
+    "search_repeats": [
+      1,
+      2
+    ]
+  },
+  "status": "QUALITY_SCREEN_NO_LARGE_RECALL_DROP"
+}

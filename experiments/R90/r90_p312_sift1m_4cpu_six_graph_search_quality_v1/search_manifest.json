@@ -1,0 +1,522 @@
+{
+  "PARLAY_NUM_THREADS": 1,
+  "native_evaluator": "R72 graph recall: 10000 heldout SIFT1M queries, GT top10",
+  "not_matched_recall": true,
+  "phase": "COMPLETE_12_SEARCH_RUNS",
+  "runs": [
+    {
+      "arm": "ctrl",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30331.43164062,
+          "recall_at10": 0.76380002
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4199.27050781,
+          "recall_at10": 0.99857998
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20513.99804688,
+          "recall_at10": 0.89055997
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12844.53808594,
+          "recall_at10": 0.96165001
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7478.41308594,
+          "recall_at10": 0.99138999
+        }
+      },
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/ctrl_build1_search1.stdout",
+      "log_sha": "a4da62f79a6f7bb5fc36a6608eb0c4cb5a7e5a4c7cc39db21c5952de3d6a37ed",
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30491.89648438,
+          "recall_at10": 0.76378
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4209.03369141,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20541.89453125,
+          "recall_at10": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12877.81933594,
+          "recall_at10": 0.96166998
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7474.95898438,
+          "recall_at10": 0.99138999
+        }
+      },
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/fast_build1_search1.stdout",
+      "log_sha": "0394c935717e88bd3e69d40c95d1c33deb885490fc0032d858183abd740c8ede",
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30512.64257812,
+          "recall_at10": 0.76380002
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4186.02685547,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20679.22851562,
+          "recall_at10": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12909.30566406,
+          "recall_at10": 0.96166998
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7505.91259766,
+          "recall_at10": 0.9914
+        }
+      },
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/fast_build2_search1.stdout",
+      "log_sha": "fd819bea38c580f52416c2e77768c25ff950762861f5ca766f69c0766e1f0ab1",
+      "search_rep": 1
+    },
+    {
+      "arm": "ctrl",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30305.96875,
+          "recall_at10": 0.76384997
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4208.10595703,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20585.66210938,
+          "recall_at10": 0.89052999
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12876.55859375,
+          "recall_at10": 0.96168
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7413.82714844,
+          "recall_at10": 0.99141997
+        }
+      },
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/ctrl_build2_search1.stdout",
+      "log_sha": "a14086ab5b97cc8a547aa93bb1b9d3ea6ef0c0f739a7c167d911fe9fdbf7f95a",
+      "search_rep": 1
+    },
+    {
+      "arm": "ctrl",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30598.53710938,
+          "recall_at10": 0.76384002
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4199.01318359,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20640.6015625,
+          "recall_at10": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12861.52050781,
+          "recall_at10": 0.96173
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7481.64208984,
+          "recall_at10": 0.99141997
+        }
+      },
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/ctrl_build3_search1.stdout",
+      "log_sha": "29810aeb236b5eec26b6aca93dba9b3a94afdd65ee81c3adb6afb37f01bdf274",
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30348.09179688,
+          "recall_at10": 0.76378
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4222.64453125,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20562.67773438,
+          "recall_at10": 0.89056998
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12796.39648438,
+          "recall_at10": 0.96166003
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7461.37792969,
+          "recall_at10": 0.99138999
+        }
+      },
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/fast_build3_search1.stdout",
+      "log_sha": "c163536c98b5b8f933c6240653a94a24862aca736d680100bb34ea81c0804a69",
+      "search_rep": 1
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30352.60546875,
+          "recall_at10": 0.76378
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4209.29296875,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20271.96875,
+          "recall_at10": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12800.21289062,
+          "recall_at10": 0.96166998
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7433.64013672,
+          "recall_at10": 0.99138999
+        }
+      },
+      "build_rep": 1,
+      "graph_sha": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/fast_build1_search2.stdout",
+      "log_sha": "33e32a2cd47db31f9df4e4635f15289c4c05acb0adc62b1abc39d6d67ae3c456",
+      "search_rep": 2
+    },
+    {
+      "arm": "ctrl",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30573.09375,
+          "recall_at10": 0.76380002
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4208.54345703,
+          "recall_at10": 0.99857998
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20700.37695312,
+          "recall_at10": 0.89055997
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12880.30761719,
+          "recall_at10": 0.96165001
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7529.76318359,
+          "recall_at10": 0.99138999
+        }
+      },
+      "build_rep": 1,
+      "graph_sha": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/ctrl_build1_search2.stdout",
+      "log_sha": "b587f265f54633300cecc01baf8d9ff0ea432437e691451b7a7cc7ff55337817",
+      "search_rep": 2
+    },
+    {
+      "arm": "ctrl",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30212.57617188,
+          "recall_at10": 0.76384997
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4203.234375,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20672.73242188,
+          "recall_at10": 0.89052999
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12809.45996094,
+          "recall_at10": 0.96168
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7428.23388672,
+          "recall_at10": 0.99141997
+        }
+      },
+      "build_rep": 2,
+      "graph_sha": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/ctrl_build2_search2.stdout",
+      "log_sha": "550d25e0985d7a945d6ad2bf80da18f8368ec0a0c92bcf8f078608cac75e062f",
+      "search_rep": 2
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30629.74804688,
+          "recall_at10": 0.76380002
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4205.65820312,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20410.03710938,
+          "recall_at10": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12806.65625,
+          "recall_at10": 0.96166998
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7522.30957031,
+          "recall_at10": 0.9914
+        }
+      },
+      "build_rep": 2,
+      "graph_sha": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/fast_build2_search2.stdout",
+      "log_sha": "b4772605d34c19c9b5b0cda5043e800e3cae4252e983295d0640d3fd372a1e80",
+      "search_rep": 2
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30130.64648438,
+          "recall_at10": 0.76378
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4165.34423828,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20523.17773438,
+          "recall_at10": 0.89056998
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12867.08203125,
+          "recall_at10": 0.96166003
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7505.69287109,
+          "recall_at10": 0.99138999
+        }
+      },
+      "build_rep": 3,
+      "graph_sha": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/fast_build3_search2.stdout",
+      "log_sha": "d9de9850258a7c14e2bcf8714f0d6237257381f9b405830321e6f6b477afcc56",
+      "search_rep": 2
+    },
+    {
+      "arm": "ctrl",
+      "beams": {
+        "10": {
+          "avg_cmps": 584.0,
+          "avg_visited": 19.0,
+          "qps": 30580.19921875,
+          "recall_at10": 0.76384002
+        },
+        "160": {
+          "avg_cmps": 3668.0,
+          "avg_visited": 156.0,
+          "qps": 4163.06005859,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps": 847.0,
+          "avg_visited": 29.0,
+          "qps": 20636.21484375,
+          "recall_at10": 0.89054
+        },
+        "40": {
+          "avg_cmps": 1357.0,
+          "avg_visited": 48.0,
+          "qps": 12831.18945312,
+          "recall_at10": 0.96173
+        },
+        "80": {
+          "avg_cmps": 2278.0,
+          "avg_visited": 87.0,
+          "qps": 7511.55126953,
+          "recall_at10": 0.99141997
+        }
+      },
+      "build_rep": 3,
+      "graph_sha": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p312_sift1m_4cpu_six_graph_search_quality_v1/logs/ctrl_build3_search2.stdout",
+      "log_sha": "d1baa666d993760df49629148ee815ffae20ac2f73061f8b94d9da42d8ac3d56",
+      "search_rep": 2
+    }
+  ],
+  "script_sha": "6ed9c4d4c869feff6de4c38fe02f3df59b3e63c770aae7f24c10e94341e31671",
+  "search_affinity": "CPU0",
+  "sources": {
+    "beams": [
+      10,
+      20,
+      40,
+      80,
+      160
+    ],
+    "data_sha": {
+      "base": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+      "evaluator": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "gt": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13",
+      "query": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+    },
+    "graph_sha": {
+      "ctrl_r1": "87b989b4229d0a36eaffba892a43a2fd06dfea227b4dde55f8351b4279348688",
+      "ctrl_r2": "0ccdd72a8edb979d34816eb41b2b4db475249d972e631343a1da549a22d7f5e2",
+      "ctrl_r3": "c09bd769ea89d55a58a93fff68c72c644cf08aa2c654ffb2d5d5c61127588b3c",
+      "fast_r1": "cdc1a475d02496900fe08eba2cd42f71c0496807b51e7ce95ffde2396bc6be3a",
+      "fast_r2": "dad585a5825245db7206e679a9c6eb7c53d19e9180329f072b1bbcaa18d42e4d",
+      "fast_r3": "dec5769ac0b8ff929cdfe8820fa91897df0d87da4ab22af32ee3fbb9f27c73fd"
+    },
+    "k": 10,
+    "nqueries": 10000,
+    "p311_build_audit": "9c8547c73f43e0e9473f5362f7edcf9d96062628d31cbac0126de66cb3d4ac1f",
+    "p311_manifest": "36a906b5dc30200308c00bf220864e76ca47f42aa8f43fbc3cd3c0ffd8610cca",
+    "p311_script": "09a2399ffdb525905cb36e2c2ac8fbeabf13779e58ba844222e00ad0d9871af4",
+    "search_repeats": [
+      1,
+      2
+    ]
+  }
+}
