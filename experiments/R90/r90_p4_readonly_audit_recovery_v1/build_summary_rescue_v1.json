@@ -1,0 +1,1078 @@
+{
+  "arms": {
+    "fast": {
+      "arcs": [
+        52855080,
+        52855109,
+        52855065
+      ],
+      "graph_sha": [
+        "6936e95d42ff27c8511e791b1f53164d1273709b2b4fcf8d710edc081838fdac",
+        "ef92e69ba759910cc8399ae84723e58d5665f06022ebf407786597fc79a10aa9",
+        "324973bf593f4db0cf17f543376cb4184e302437e758418a1867a138b2fe9e17"
+      ],
+      "mean_rss_kib": 3122006.6666666665,
+      "mean_wall_s": 33.796617136998975,
+      "median_wall_s": 33.77936533799948,
+      "rss_kib": [
+        3117948,
+        3132692,
+        3115380
+      ],
+      "sample_sd_wall_s": 0.07686491322344637,
+      "wall_s": [
+        33.88064195199695,
+        33.77936533799948,
+        33.7298441210005
+      ]
+    },
+    "h17": {
+      "arcs": [
+        52855134,
+        52855100,
+        52855119
+      ],
+      "graph_sha": [
+        "64a670d0136cc070cfe376a27a5dd3aabebb7be784f2a258734a35635717c6d7",
+        "8a89f28ae3d1617e0e9a8d8d132a433f8c6682335ab28e768f3f354d2e2918cf",
+        "a20fdc5a6bf1b927eac9584b729c43ec71bf97bedb8a918850a0206570fda9d6"
+      ],
+      "mean_rss_kib": 3130749.3333333335,
+      "mean_wall_s": 36.47823164466536,
+      "median_wall_s": 36.4645429259981,
+      "rss_kib": [
+        3133876,
+        3117228,
+        3141144
+      ],
+      "sample_sd_wall_s": 0.08649602505428594,
+      "wall_s": [
+        36.57075579500088,
+        36.39939621299709,
+        36.4645429259981
+      ]
+    },
+    "stock": {
+      "arcs": [
+        52849006,
+        52852523,
+        52865098
+      ],
+      "graph_sha": [
+        "c24e1a506c4adaca82d398bbc51a68d0fc8caab7f6472219182614a874081ca3",
+        "3161a570d03daccb498ef1e6a8fcd11063e4899e9e0044242adab8a11aa6a3aa",
+        "6ff7c6b143eced4e666799ce6c7eef39f96e8771b7bb76244f04cffef72da505"
+      ],
+      "mean_rss_kib": 3125966.6666666665,
+      "mean_wall_s": 42.051130979001755,
+      "median_wall_s": 42.06169888099976,
+      "rss_kib": [
+        3116784,
+        3126012,
+        3135104
+      ],
+      "sample_sd_wall_s": 0.07207529023109317,
+      "wall_s": [
+        42.06169888099976,
+        41.97435516100086,
+        42.11733889500465
+      ]
+    }
+  },
+  "comparisons": {
+    "h17_to_fast": {
+      "mean_pair_pct_saving": 7.3511775307822305,
+      "per_pair": [
+        {
+          "baseline_s": 36.57075579500088,
+          "comparison_s": 33.88064195199695,
+          "pct_saving": 7.355915360577969,
+          "rep": 1,
+          "time_saved_s": 2.690113843003928
+        },
+        {
+          "baseline_s": 36.39939621299709,
+          "comparison_s": 33.77936533799948,
+          "pct_saving": 7.1980064165517055,
+          "rep": 2,
+          "time_saved_s": 2.6200308749976102
+        },
+        {
+          "baseline_s": 36.4645429259981,
+          "comparison_s": 33.7298441210005,
+          "pct_saving": 7.499610815217017,
+          "rep": 3,
+          "time_saved_s": 2.734698804997606
+        }
+      ],
+      "ratio_of_mean_wall_pct_saving": 7.351273312226326
+    },
+    "stock_to_fast": {
+      "mean_pair_pct_saving": 19.629508174641458,
+      "per_pair": [
+        {
+          "baseline_s": 42.06169888099976,
+          "comparison_s": 33.88064195199695,
+          "pct_saving": 19.450134318512703,
+          "rep": 1,
+          "time_saved_s": 8.181056929002807
+        },
+        {
+          "baseline_s": 41.97435516100086,
+          "comparison_s": 33.77936533799948,
+          "pct_saving": 19.523801596398304,
+          "rep": 2,
+          "time_saved_s": 8.194989823001379
+        },
+        {
+          "baseline_s": 42.11733889500465,
+          "comparison_s": 33.7298441210005,
+          "pct_saving": 19.91458860901337,
+          "rep": 3,
+          "time_saved_s": 8.387494774004153
+        }
+      ],
+      "ratio_of_mean_wall_pct_saving": 19.629707096640693
+    },
+    "stock_to_h17": {
+      "mean_pair_pct_saving": 13.252619792312833,
+      "per_pair": [
+        {
+          "baseline_s": 42.06169888099976,
+          "comparison_s": 36.57075579500088,
+          "pct_saving": 13.054496684819517,
+          "rep": 1,
+          "time_saved_s": 5.490943085998879
+        },
+        {
+          "baseline_s": 41.97435516100086,
+          "comparison_s": 36.39939621299709,
+          "pct_saving": 13.281821547037287,
+          "rep": 2,
+          "time_saved_s": 5.5749589480037685
+        },
+        {
+          "baseline_s": 42.11733889500465,
+          "comparison_s": 36.4645429259981,
+          "pct_saving": 13.421541145081694,
+          "rep": 3,
+          "time_saved_s": 5.652795969006547
+        }
+      ],
+      "ratio_of_mean_wall_pct_saving": 13.252674076992665
+    }
+  },
+  "d": 100,
+  "graph_semantic": [
+    {
+      "baseline_arm": "stock",
+      "baseline_graph_sha": "c24e1a506c4adaca82d398bbc51a68d0fc8caab7f6472219182614a874081ca3",
+      "comparison_arm": "h17",
+      "comparison_graph_sha": "64a670d0136cc070cfe376a27a5dd3aabebb7be784f2a258734a35635717c6d7",
+      "rep": 1,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 6089356,
+        "arc_instances_removed_ctrl_to_fast": 6083228,
+        "arcs_ctrl": 52849006,
+        "arcs_fast": 52855134,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 562694,
+        "different_neighbor_multiset_vertices": 994154,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "1d09f55277004c65bf406e6d8ebe21c45ae4299eaa182f31a91292c2b95a0f39",
+        "normalized_sorted_rows_sha_fast": "26cb0837202c154845eecbfc0b49560f5abd7217f5e5256c1b62f2ff9519b12e",
+        "order_only_vertices": 3753,
+        "same_multiset_vertices": 5846,
+        "same_sequence_vertices": 2093,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              211132,
+              214691,
+              258125,
+              382543,
+              542152,
+              633356,
+              690612,
+              713337,
+              947510,
+              971601
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              38603,
+              72315,
+              163142,
+              390668,
+              467576,
+              480892,
+              616416,
+              679533,
+              840087,
+              900399
+            ],
+            "vertex": 0
+          },
+          {
+            "ctrl_degree": 36,
+            "ctrl_lost_neighbor_ids": [
+              25489,
+              55981,
+              332480,
+              352638,
+              798373,
+              959768,
+              968979
+            ],
+            "fast_degree": 36,
+            "fast_gained_neighbor_ids": [
+              168641,
+              168965,
+              495204,
+              640587,
+              728073,
+              770337,
+              903445
+            ],
+            "vertex": 1
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              118830,
+              398268,
+              699489,
+              916940
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              175379,
+              443520,
+              635902,
+              668220
+            ],
+            "vertex": 2
+          },
+          {
+            "ctrl_degree": 34,
+            "ctrl_lost_neighbor_ids": [
+              48097,
+              271666,
+              713160
+            ],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [
+              310999,
+              958863
+            ],
+            "vertex": 3
+          },
+          {
+            "ctrl_degree": 32,
+            "ctrl_lost_neighbor_ids": [
+              393222
+            ],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [
+              280253,
+              637977
+            ],
+            "vertex": 4
+          }
+        ],
+        "unique_edge_set_added": 6089356,
+        "unique_edge_set_removed": 6083228
+      }
+    },
+    {
+      "baseline_arm": "h17",
+      "baseline_graph_sha": "64a670d0136cc070cfe376a27a5dd3aabebb7be784f2a258734a35635717c6d7",
+      "comparison_arm": "fast",
+      "comparison_graph_sha": "6936e95d42ff27c8511e791b1f53164d1273709b2b4fcf8d710edc081838fdac",
+      "rep": 1,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 5152,
+        "arc_instances_removed_ctrl_to_fast": 5206,
+        "arcs_ctrl": 52855134,
+        "arcs_fast": 52855080,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 1403,
+        "different_neighbor_multiset_vertices": 4714,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "26cb0837202c154845eecbfc0b49560f5abd7217f5e5256c1b62f2ff9519b12e",
+        "normalized_sorted_rows_sha_fast": "feba73e79472a969bc640c76f16bd8ddb13b535a0c89d666591b68a8e211d23c",
+        "order_only_vertices": 0,
+        "same_multiset_vertices": 995286,
+        "same_sequence_vertices": 995286,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 51,
+            "ctrl_lost_neighbor_ids": [
+              556347,
+              621629,
+              832073,
+              914025
+            ],
+            "fast_degree": 49,
+            "fast_gained_neighbor_ids": [
+              106404,
+              407987
+            ],
+            "vertex": 131
+          },
+          {
+            "ctrl_degree": 45,
+            "ctrl_lost_neighbor_ids": [
+              274296
+            ],
+            "fast_degree": 45,
+            "fast_gained_neighbor_ids": [
+              421161
+            ],
+            "vertex": 151
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              404119,
+              683048
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              236589,
+              966973
+            ],
+            "vertex": 336
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              563192
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              509843
+            ],
+            "vertex": 510
+          },
+          {
+            "ctrl_degree": 41,
+            "ctrl_lost_neighbor_ids": [
+              452534
+            ],
+            "fast_degree": 41,
+            "fast_gained_neighbor_ids": [
+              316144
+            ],
+            "vertex": 1922
+          }
+        ],
+        "unique_edge_set_added": 5152,
+        "unique_edge_set_removed": 5206
+      }
+    },
+    {
+      "baseline_arm": "stock",
+      "baseline_graph_sha": "c24e1a506c4adaca82d398bbc51a68d0fc8caab7f6472219182614a874081ca3",
+      "comparison_arm": "fast",
+      "comparison_graph_sha": "6936e95d42ff27c8511e791b1f53164d1273709b2b4fcf8d710edc081838fdac",
+      "rep": 1,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 6089322,
+        "arc_instances_removed_ctrl_to_fast": 6083248,
+        "arcs_ctrl": 52849006,
+        "arcs_fast": 52855080,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 562755,
+        "different_neighbor_multiset_vertices": 994156,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "1d09f55277004c65bf406e6d8ebe21c45ae4299eaa182f31a91292c2b95a0f39",
+        "normalized_sorted_rows_sha_fast": "feba73e79472a969bc640c76f16bd8ddb13b535a0c89d666591b68a8e211d23c",
+        "order_only_vertices": 3749,
+        "same_multiset_vertices": 5844,
+        "same_sequence_vertices": 2095,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              211132,
+              214691,
+              258125,
+              382543,
+              542152,
+              633356,
+              690612,
+              713337,
+              947510,
+              971601
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              38603,
+              72315,
+              163142,
+              390668,
+              467576,
+              480892,
+              616416,
+              679533,
+              840087,
+              900399
+            ],
+            "vertex": 0
+          },
+          {
+            "ctrl_degree": 36,
+            "ctrl_lost_neighbor_ids": [
+              25489,
+              55981,
+              332480,
+              352638,
+              798373,
+              959768,
+              968979
+            ],
+            "fast_degree": 36,
+            "fast_gained_neighbor_ids": [
+              168641,
+              168965,
+              495204,
+              640587,
+              728073,
+              770337,
+              903445
+            ],
+            "vertex": 1
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              118830,
+              398268,
+              699489,
+              916940
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              175379,
+              443520,
+              635902,
+              668220
+            ],
+            "vertex": 2
+          },
+          {
+            "ctrl_degree": 34,
+            "ctrl_lost_neighbor_ids": [
+              48097,
+              271666,
+              713160
+            ],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [
+              310999,
+              958863
+            ],
+            "vertex": 3
+          },
+          {
+            "ctrl_degree": 32,
+            "ctrl_lost_neighbor_ids": [
+              393222
+            ],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [
+              280253,
+              637977
+            ],
+            "vertex": 4
+          }
+        ],
+        "unique_edge_set_added": 6089322,
+        "unique_edge_set_removed": 6083248
+      }
+    },
+    {
+      "baseline_arm": "stock",
+      "baseline_graph_sha": "3161a570d03daccb498ef1e6a8fcd11063e4899e9e0044242adab8a11aa6a3aa",
+      "comparison_arm": "h17",
+      "comparison_graph_sha": "8a89f28ae3d1617e0e9a8d8d132a433f8c6682335ab28e768f3f354d2e2918cf",
+      "rep": 2,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 1643979,
+        "arc_instances_removed_ctrl_to_fast": 1641402,
+        "arcs_ctrl": 52852523,
+        "arcs_fast": 52855100,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 390091,
+        "different_neighbor_multiset_vertices": 830560,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "507209445be67d95543e3ed8e77e9916cb48f926f0f53d8c7c5ab14b885c3f25",
+        "normalized_sorted_rows_sha_fast": "32e43ed747fa9d54a7ba9a06d735ebc2e880501d3fcd6f973ed6af4abf4277af",
+        "order_only_vertices": 116048,
+        "same_multiset_vertices": 169440,
+        "same_sequence_vertices": 53392,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 38,
+            "ctrl_lost_neighbor_ids": [
+              332480,
+              798373,
+              959768
+            ],
+            "fast_degree": 36,
+            "fast_gained_neighbor_ids": [
+              495204
+            ],
+            "vertex": 1
+          },
+          {
+            "ctrl_degree": 34,
+            "ctrl_lost_neighbor_ids": [
+              271666
+            ],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [],
+            "vertex": 3
+          },
+          {
+            "ctrl_degree": 47,
+            "ctrl_lost_neighbor_ids": [],
+            "fast_degree": 48,
+            "fast_gained_neighbor_ids": [
+              809147
+            ],
+            "vertex": 5
+          },
+          {
+            "ctrl_degree": 46,
+            "ctrl_lost_neighbor_ids": [
+              130769
+            ],
+            "fast_degree": 46,
+            "fast_gained_neighbor_ids": [
+              607520
+            ],
+            "vertex": 6
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              190200,
+              439330,
+              463861
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              256821,
+              570785,
+              633012
+            ],
+            "vertex": 7
+          }
+        ],
+        "unique_edge_set_added": 1643979,
+        "unique_edge_set_removed": 1641402
+      }
+    },
+    {
+      "baseline_arm": "h17",
+      "baseline_graph_sha": "8a89f28ae3d1617e0e9a8d8d132a433f8c6682335ab28e768f3f354d2e2918cf",
+      "comparison_arm": "fast",
+      "comparison_graph_sha": "ef92e69ba759910cc8399ae84723e58d5665f06022ebf407786597fc79a10aa9",
+      "rep": 2,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 8591,
+        "arc_instances_removed_ctrl_to_fast": 8582,
+        "arcs_ctrl": 52855100,
+        "arcs_fast": 52855109,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 2429,
+        "different_neighbor_multiset_vertices": 7749,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "32e43ed747fa9d54a7ba9a06d735ebc2e880501d3fcd6f973ed6af4abf4277af",
+        "normalized_sorted_rows_sha_fast": "138903974a928eeeeff93adc33eb2b0c5acc3927b867529c54064ad020cfbb22",
+        "order_only_vertices": 0,
+        "same_multiset_vertices": 992251,
+        "same_sequence_vertices": 992251,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 45,
+            "ctrl_lost_neighbor_ids": [
+              274296
+            ],
+            "fast_degree": 45,
+            "fast_gained_neighbor_ids": [
+              421161
+            ],
+            "vertex": 151
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              236589,
+              966973
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              404119,
+              683048
+            ],
+            "vertex": 336
+          },
+          {
+            "ctrl_degree": 31,
+            "ctrl_lost_neighbor_ids": [
+              628347
+            ],
+            "fast_degree": 31,
+            "fast_gained_neighbor_ids": [
+              328132
+            ],
+            "vertex": 928
+          },
+          {
+            "ctrl_degree": 40,
+            "ctrl_lost_neighbor_ids": [
+              259699
+            ],
+            "fast_degree": 40,
+            "fast_gained_neighbor_ids": [
+              900773
+            ],
+            "vertex": 1039
+          },
+          {
+            "ctrl_degree": 54,
+            "ctrl_lost_neighbor_ids": [
+              251924,
+              542493,
+              594198,
+              869574,
+              987125
+            ],
+            "fast_degree": 51,
+            "fast_gained_neighbor_ids": [
+              127316,
+              904870
+            ],
+            "vertex": 1329
+          }
+        ],
+        "unique_edge_set_added": 8591,
+        "unique_edge_set_removed": 8582
+      }
+    },
+    {
+      "baseline_arm": "stock",
+      "baseline_graph_sha": "3161a570d03daccb498ef1e6a8fcd11063e4899e9e0044242adab8a11aa6a3aa",
+      "comparison_arm": "fast",
+      "comparison_graph_sha": "ef92e69ba759910cc8399ae84723e58d5665f06022ebf407786597fc79a10aa9",
+      "rep": 2,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 1641024,
+        "arc_instances_removed_ctrl_to_fast": 1638438,
+        "arcs_ctrl": 52852523,
+        "arcs_fast": 52855109,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 389944,
+        "different_neighbor_multiset_vertices": 830176,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "507209445be67d95543e3ed8e77e9916cb48f926f0f53d8c7c5ab14b885c3f25",
+        "normalized_sorted_rows_sha_fast": "138903974a928eeeeff93adc33eb2b0c5acc3927b867529c54064ad020cfbb22",
+        "order_only_vertices": 116359,
+        "same_multiset_vertices": 169824,
+        "same_sequence_vertices": 53465,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 38,
+            "ctrl_lost_neighbor_ids": [
+              332480,
+              798373,
+              959768
+            ],
+            "fast_degree": 36,
+            "fast_gained_neighbor_ids": [
+              495204
+            ],
+            "vertex": 1
+          },
+          {
+            "ctrl_degree": 34,
+            "ctrl_lost_neighbor_ids": [
+              271666
+            ],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [],
+            "vertex": 3
+          },
+          {
+            "ctrl_degree": 47,
+            "ctrl_lost_neighbor_ids": [],
+            "fast_degree": 48,
+            "fast_gained_neighbor_ids": [
+              809147
+            ],
+            "vertex": 5
+          },
+          {
+            "ctrl_degree": 46,
+            "ctrl_lost_neighbor_ids": [
+              130769
+            ],
+            "fast_degree": 46,
+            "fast_gained_neighbor_ids": [
+              607520
+            ],
+            "vertex": 6
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              190200,
+              439330,
+              463861
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              256821,
+              570785,
+              633012
+            ],
+            "vertex": 7
+          }
+        ],
+        "unique_edge_set_added": 1641024,
+        "unique_edge_set_removed": 1638438
+      }
+    },
+    {
+      "baseline_arm": "stock",
+      "baseline_graph_sha": "6ff7c6b143eced4e666799ce6c7eef39f96e8771b7bb76244f04cffef72da505",
+      "comparison_arm": "h17",
+      "comparison_graph_sha": "a20fdc5a6bf1b927eac9584b729c43ec71bf97bedb8a918850a0206570fda9d6",
+      "rep": 3,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 1386418,
+        "arc_instances_removed_ctrl_to_fast": 1396397,
+        "arcs_ctrl": 52865098,
+        "arcs_fast": 52855119,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 363179,
+        "different_neighbor_multiset_vertices": 783449,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "1e1f4e64ba39e5a17f3dd14d5ea96f17370ee74b3b602737f86efc758ae3b94b",
+        "normalized_sorted_rows_sha_fast": "60c1436134dc5a5f8028c016f89f08d6460440b0533f77b3cd99b30da9efd0ef",
+        "order_only_vertices": 140959,
+        "same_multiset_vertices": 216551,
+        "same_sequence_vertices": 75592,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 37,
+            "ctrl_lost_neighbor_ids": [
+              352638,
+              798373,
+              959768
+            ],
+            "fast_degree": 36,
+            "fast_gained_neighbor_ids": [
+              495204,
+              903445
+            ],
+            "vertex": 1
+          },
+          {
+            "ctrl_degree": 32,
+            "ctrl_lost_neighbor_ids": [],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [
+              419015
+            ],
+            "vertex": 4
+          },
+          {
+            "ctrl_degree": 46,
+            "ctrl_lost_neighbor_ids": [
+              130769
+            ],
+            "fast_degree": 46,
+            "fast_gained_neighbor_ids": [
+              607520
+            ],
+            "vertex": 6
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              439330
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              256821
+            ],
+            "vertex": 7
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              21120
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              614054
+            ],
+            "vertex": 8
+          }
+        ],
+        "unique_edge_set_added": 1386418,
+        "unique_edge_set_removed": 1396397
+      }
+    },
+    {
+      "baseline_arm": "h17",
+      "baseline_graph_sha": "a20fdc5a6bf1b927eac9584b729c43ec71bf97bedb8a918850a0206570fda9d6",
+      "comparison_arm": "fast",
+      "comparison_graph_sha": "324973bf593f4db0cf17f543376cb4184e302437e758418a1867a138b2fe9e17",
+      "rep": 3,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 7787,
+        "arc_instances_removed_ctrl_to_fast": 7841,
+        "arcs_ctrl": 52855119,
+        "arcs_fast": 52855065,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 2170,
+        "different_neighbor_multiset_vertices": 7007,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "60c1436134dc5a5f8028c016f89f08d6460440b0533f77b3cd99b30da9efd0ef",
+        "normalized_sorted_rows_sha_fast": "0617482d6b9a1ac675067fc92a6861c4f37cd60fe7e136b9e007c103399dccae",
+        "order_only_vertices": 0,
+        "same_multiset_vertices": 992993,
+        "same_sequence_vertices": 992993,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              404119,
+              683048
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              236589,
+              966973
+            ],
+            "vertex": 336
+          },
+          {
+            "ctrl_degree": 54,
+            "ctrl_lost_neighbor_ids": [
+              645533
+            ],
+            "fast_degree": 54,
+            "fast_gained_neighbor_ids": [
+              556100
+            ],
+            "vertex": 439
+          },
+          {
+            "ctrl_degree": 46,
+            "ctrl_lost_neighbor_ids": [
+              832484
+            ],
+            "fast_degree": 45,
+            "fast_gained_neighbor_ids": [],
+            "vertex": 955
+          },
+          {
+            "ctrl_degree": 51,
+            "ctrl_lost_neighbor_ids": [
+              127316,
+              904870
+            ],
+            "fast_degree": 54,
+            "fast_gained_neighbor_ids": [
+              251924,
+              542493,
+              594198,
+              869574,
+              987125
+            ],
+            "vertex": 1329
+          },
+          {
+            "ctrl_degree": 48,
+            "ctrl_lost_neighbor_ids": [
+              357336,
+              516757
+            ],
+            "fast_degree": 49,
+            "fast_gained_neighbor_ids": [
+              269804,
+              640773,
+              667706
+            ],
+            "vertex": 1379
+          }
+        ],
+        "unique_edge_set_added": 7787,
+        "unique_edge_set_removed": 7841
+      }
+    },
+    {
+      "baseline_arm": "stock",
+      "baseline_graph_sha": "6ff7c6b143eced4e666799ce6c7eef39f96e8771b7bb76244f04cffef72da505",
+      "comparison_arm": "fast",
+      "comparison_graph_sha": "324973bf593f4db0cf17f543376cb4184e302437e758418a1867a138b2fe9e17",
+      "rep": 3,
+      "semantic": {
+        "arc_instances_added_ctrl_to_fast": 1386791,
+        "arc_instances_removed_ctrl_to_fast": 1396824,
+        "arcs_ctrl": 52865098,
+        "arcs_fast": 52855065,
+        "classification": "EDGE_MULTISET_DIFFERENCE",
+        "degree_changed_vertices": 363149,
+        "different_neighbor_multiset_vertices": 783460,
+        "duplicate_neighbor_rows_ctrl": 0,
+        "duplicate_neighbor_rows_fast": 0,
+        "max_degree": 64,
+        "n": 1000000,
+        "normalized_sorted_rows_equal": false,
+        "normalized_sorted_rows_sha_ctrl": "1e1f4e64ba39e5a17f3dd14d5ea96f17370ee74b3b602737f86efc758ae3b94b",
+        "normalized_sorted_rows_sha_fast": "0617482d6b9a1ac675067fc92a6861c4f37cd60fe7e136b9e007c103399dccae",
+        "order_only_vertices": 140922,
+        "same_multiset_vertices": 216540,
+        "same_sequence_vertices": 75618,
+        "sample_different_vertices": [
+          {
+            "ctrl_degree": 37,
+            "ctrl_lost_neighbor_ids": [
+              352638,
+              798373,
+              959768
+            ],
+            "fast_degree": 36,
+            "fast_gained_neighbor_ids": [
+              495204,
+              903445
+            ],
+            "vertex": 1
+          },
+          {
+            "ctrl_degree": 32,
+            "ctrl_lost_neighbor_ids": [],
+            "fast_degree": 33,
+            "fast_gained_neighbor_ids": [
+              419015
+            ],
+            "vertex": 4
+          },
+          {
+            "ctrl_degree": 46,
+            "ctrl_lost_neighbor_ids": [
+              130769
+            ],
+            "fast_degree": 46,
+            "fast_gained_neighbor_ids": [
+              607520
+            ],
+            "vertex": 6
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              439330
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              256821
+            ],
+            "vertex": 7
+          },
+          {
+            "ctrl_degree": 64,
+            "ctrl_lost_neighbor_ids": [
+              21120
+            ],
+            "fast_degree": 64,
+            "fast_gained_neighbor_ids": [
+              614054
+            ],
+            "vertex": 8
+          }
+        ],
+        "unique_edge_set_added": 1386791,
+        "unique_edge_set_removed": 1396824
+      }
+    }
+  ],
+  "limitations": [
+    "This report independently audits pre-existing evidence; original P4 runner and failed audit log stay unchanged.",
+    "Stock ELF from R86, H17/Fast ELFs from R90; source/toolchain vintage differs.",
+    "Four-CPU graph SHA/neighbor differences cannot by themselves establish Recall parity.",
+    "No MS-Turing1M native Search Recall/QPS or matched-Recall evidence yet.",
+    "Time is native uninstrumented BUILD; audit does not rebuild or retime."
+  ],
+  "n": 1000000,
+  "native_evidence_sha_checked_for_all_nine_runs": true,
+  "normalization_scope": "ONLY physical_core_identifiers tuple/list JSON round trip",
+  "original_audit_status": "HOLD_physical_core_identifiers_tuple_vs_JSON_list",
+  "original_build_manifest_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/build_manifest.json",
+  "original_build_manifest_sha": "50f68f3bf7ddadd9fc0da9585f5c3624b5aed5692b658492f45efc0beb1f0276",
+  "original_dataset": "MSTuring1M",
+  "original_pilot_status": "NINE_4CPU_BUILDS_COMPLETE_QUALITY_PENDING",
+  "original_progress_sha": "e495accfcca378c1f66a79b94a4e1e46c6bafef2e784fde394c83dea998e0a77",
+  "original_runner_sha": "c28ffbb20f729ce4d88f06da3c2be54d8d8b87c0e8ebef379528c93d22b30e43",
+  "physical_core_identifiers_normalized": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      12
+    ]
+  ],
+  "quality_status": "NATIVE_MS_TURING1M_100KQ_SEARCH_NOT_RUN",
+  "source_elf_data_4core_provenance_checked": true,
+  "status": "PASS_READONLY_RESCUE_AUDIT_9_P4_BUILDS__SEARCH_NOT_RUN"
+}

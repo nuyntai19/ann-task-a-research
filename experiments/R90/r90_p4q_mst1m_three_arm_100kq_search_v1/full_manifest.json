@@ -1,0 +1,447 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "data_sha": {
+    "base": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "gt": "fa5acf5ab262b42355296e99f920e6aa863f48820ca6f70fa37ca7966634c344",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+  },
+  "dataset": "MSTuring1M",
+  "dim": 100,
+  "evaluation_cpu": 0,
+  "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "n": 1000000,
+  "original_build_manifest_sha": "50f68f3bf7ddadd9fc0da9585f5c3624b5aed5692b658492f45efc0beb1f0276",
+  "original_runner_sha": "c28ffbb20f729ce4d88f06da3c2be54d8d8b87c0e8ebef379528c93d22b30e43",
+  "queries": 100000,
+  "rescue_receipt_sha": "754b8920875cef6bd45906772c7f8b941d0a66aaa99b84a55130af8e1fbf1bb6",
+  "searches": [
+    {
+      "arm": "stock",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_stock_r1.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_stock_r1.graph",
+      "graph_sha": "c24e1a506c4adaca82d398bbc51a68d0fc8caab7f6472219182614a874081ca3",
+      "rep": 1,
+      "rows": {
+        "384": {
+          "avg_cmps": 16723.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 817.1000528649738,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1223.84033203,
+          "recall_at10": 0.991054
+        },
+        "896": {
+          "avg_cmps": 4294955360.0,
+          "avg_visited": 740.0,
+          "latency_us_proxy": 1773.938863194819,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 563.71728516,
+          "recall_at10": 0.99820203
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_stock_r1.stdout",
+      "stdout_sha": "63e418811ff4e1b2a6ae8e7bf245a7475854f2fa583c2e1319f870ad215f5d89",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_stock_r1.time",
+      "timefile_sha": "4cd78eb5464d1613c2d00384ec03c59833b2560465ba0b00f3a0998dc59a5253",
+      "wall_s": 260.3969996040032
+    },
+    {
+      "arm": "h17",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_h17_r1.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_h17_r1.graph",
+      "graph_sha": "64a670d0136cc070cfe376a27a5dd3aabebb7be784f2a258734a35635717c6d7",
+      "rep": 1,
+      "rows": {
+        "384": {
+          "avg_cmps": 16731.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.8151537296334,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.2722168,
+          "recall_at10": 0.99103099
+        },
+        "896": {
+          "avg_cmps": 4294955369.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1783.7134248326793,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 560.62817383,
+          "recall_at10": 0.998155
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_h17_r1.stdout",
+      "stdout_sha": "25bcdaf4f76c797c00c64c396b7965f516cb47b608bbafad6cd785b2391fa270",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_h17_r1.time",
+      "timefile_sha": "bc9e7ec3f27e824c2891cd6cd0d4e3f8c34efcf71ec0f004eabb1780883118d0",
+      "wall_s": 261.15217996200226
+    },
+    {
+      "arm": "fast",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r1.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r1.graph",
+      "graph_sha": "6936e95d42ff27c8511e791b1f53164d1273709b2b4fcf8d710edc081838fdac",
+      "rep": 1,
+      "rows": {
+        "384": {
+          "avg_cmps": 16731.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 821.3436247289134,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1217.51721191,
+          "recall_at10": 0.99102497
+        },
+        "896": {
+          "avg_cmps": 4294955370.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1786.259993054379,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 559.82891846,
+          "recall_at10": 0.99815297
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_fast_r1.stdout",
+      "stdout_sha": "5c051968b743cbece8a956707eaae0bae875c27d856d8883078905035db4760e",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_fast_r1.time",
+      "timefile_sha": "1ca7ffe833f0d2a26a0a21e9620a467849c6576ac0b66ad719c780bb59c6df8a",
+      "wall_s": 262.08034985999984
+    },
+    {
+      "arm": "stock",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_stock_r2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_stock_r2.graph",
+      "graph_sha": "3161a570d03daccb498ef1e6a8fcd11063e4899e9e0044242adab8a11aa6a3aa",
+      "rep": 2,
+      "rows": {
+        "384": {
+          "avg_cmps": 16732.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.250658792262,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1228.12304688,
+          "recall_at10": 0.99103397
+        },
+        "896": {
+          "avg_cmps": 4294955367.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1775.6412667019702,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 563.17681885,
+          "recall_at10": 0.99815702
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_stock_r2.stdout",
+      "stdout_sha": "37ea79f2e64072a443afc4ea923f05eb2409836ee4482b928bfa04fa2f9c814e",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_stock_r2.time",
+      "timefile_sha": "2e7de32b230393697bd1b9241b4e590fdcefffa222987edac2e591d05243b547",
+      "wall_s": 260.3269158949988
+    },
+    {
+      "arm": "h17",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_h17_r2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_h17_r2.graph",
+      "graph_sha": "8a89f28ae3d1617e0e9a8d8d132a433f8c6682335ab28e768f3f354d2e2918cf",
+      "rep": 2,
+      "rows": {
+        "384": {
+          "avg_cmps": 16731.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.3161389580583,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1228.02429199,
+          "recall_at10": 0.99102902
+        },
+        "896": {
+          "avg_cmps": 4294955370.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1775.844311861018,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 563.11242676,
+          "recall_at10": 0.99815202
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_h17_r2.stdout",
+      "stdout_sha": "5c31cf3c434ebc9195b0b3c88ce003cfc5cdfb453c3e1090909a008888a6c094",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_h17_r2.time",
+      "timefile_sha": "c2a932af1e228c385741e748287fb432301208596dbf23330ee2f86307117a26",
+      "wall_s": 260.3506322559988
+    },
+    {
+      "arm": "fast",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r2.graph",
+      "graph_sha": "ef92e69ba759910cc8399ae84723e58d5665f06022ebf407786597fc79a10aa9",
+      "rep": 2,
+      "rows": {
+        "384": {
+          "avg_cmps": 16731.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.3685144773091,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.9453125,
+          "recall_at10": 0.99102402
+        },
+        "896": {
+          "avg_cmps": 4294955369.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1776.4587340500962,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.91766357,
+          "recall_at10": 0.99815398
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_fast_r2.stdout",
+      "stdout_sha": "d50c81869e5b89282f37c0f2d79eb4db5346380dec3b5bfebecffe48db3adcdd",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_fast_r2.time",
+      "timefile_sha": "72ee2ca51228742bfaf42eb78dab75eef0e6a21b46aa25f8d76fe3a3c915f656",
+      "wall_s": 260.42927444499946
+    },
+    {
+      "arm": "stock",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_stock_r3.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_stock_r3.graph",
+      "graph_sha": "6ff7c6b143eced4e666799ce6c7eef39f96e8771b7bb76244f04cffef72da505",
+      "rep": 3,
+      "rows": {
+        "384": {
+          "avg_cmps": 16734.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.7167765196647,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.42041016,
+          "recall_at10": 0.99111003
+        },
+        "896": {
+          "avg_cmps": 4294955370.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1778.9208734319755,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.1385498,
+          "recall_at10": 0.99817699
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_stock_r3.stdout",
+      "stdout_sha": "2fe4c202f3d4edc967de5ffa519f99215fd0f878b7f7609aebc13aaeab85d634",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_stock_r3.time",
+      "timefile_sha": "7ecc3835ccc3bf00dccaa739696ee9aebaffc1ec4e9b7efe5e2f36c1f962a51b",
+      "wall_s": 260.71206873499614
+    },
+    {
+      "arm": "h17",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_h17_r3.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_h17_r3.graph",
+      "graph_sha": "a20fdc5a6bf1b927eac9584b729c43ec71bf97bedb8a918850a0206570fda9d6",
+      "rep": 3,
+      "rows": {
+        "384": {
+          "avg_cmps": 16731.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 813.6997962296768,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1228.95446777,
+          "recall_at10": 0.991032
+        },
+        "896": {
+          "avg_cmps": 4294955370.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1777.4188610434833,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.61358643,
+          "recall_at10": 0.998151
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_h17_r3.stdout",
+      "stdout_sha": "6391e88b20c8efdaa6bec0060977b84776c81b3df626e909c2696396c07dc186",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_h17_r3.time",
+      "timefile_sha": "179ee59b4b6a2060f134372138fac59ab25a04a186895a04bbaa374c838b7e0d",
+      "wall_s": 260.4269243500021
+    },
+    {
+      "arm": "fast",
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r3.graph",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r3.graph",
+      "graph_sha": "324973bf593f4db0cf17f543376cb4184e302437e758418a1867a138b2fe9e17",
+      "rep": 3,
+      "rows": {
+        "384": {
+          "avg_cmps": 16731.0,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.0122996116576,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1228.48266602,
+          "recall_at10": 0.99102902
+        },
+        "896": {
+          "avg_cmps": 4294955370.0,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1776.7534840059109,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.82427979,
+          "recall_at10": 0.998151
+        }
+      },
+      "run_status": "NATIVE_SEARCH_EXIT0_VALID_100KQ",
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_fast_r3.stdout",
+      "stdout_sha": "d380688fa05b9c9d50ae152d506eb3db08098e417f987f0ed35e26f32a1e392e",
+      "threads": 1,
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p4q_mst1m_three_arm_100kq_search_v1/logs/mst1m_fast_r3.time",
+      "timefile_sha": "b0d52f3c7dab4c6f2c1e7e617a2ad854a56c98b7ae6b84a1745ac0ac6d852800",
+      "wall_s": 260.4098611629961
+    }
+  ],
+  "status": "FULL_NINE_SEARCHES_DONE__AUDIT_REQUIRED",
+  "threads": 1
+}
