@@ -1,0 +1,400 @@
+{
+  "beams_tested": [
+    320,
+    352,
+    368,
+    384,
+    800,
+    848,
+    880,
+    896
+  ],
+  "comparisons": {
+    "h17_to_fast": {
+      "0.99": {
+        "qps_change_pct": -0.6204692442438264,
+        "qps_ratio_means_b_over_a": 0.9937953075575617,
+        "recall_delta_pp": -0.0007040000000069213
+      },
+      "0.998": {
+        "qps_change_pct": 0.09214218347377567,
+        "qps_ratio_means_b_over_a": 1.0009214218347378,
+        "recall_delta_pp": 0.00020299999999862095
+      }
+    },
+    "stock_to_fast": {
+      "0.99": {
+        "qps_change_pct": 0.3413038985132566,
+        "qps_ratio_means_b_over_a": 1.0034130389851326,
+        "recall_delta_pp": -0.003200999999997123
+      },
+      "0.998": {
+        "qps_change_pct": -0.07380943307103704,
+        "qps_ratio_means_b_over_a": 0.9992619056692896,
+        "recall_delta_pp": -0.003796999999994277
+      }
+    },
+    "stock_to_h17": {
+      "0.99": {
+        "qps_change_pct": 0.9677779070227599,
+        "qps_ratio_means_b_over_a": 1.0096777790702276,
+        "recall_delta_pp": -0.0024969999999902015
+      },
+      "0.998": {
+        "qps_change_pct": -0.16579884586805926,
+        "qps_ratio_means_b_over_a": 0.9983420115413194,
+        "recall_delta_pp": -0.003999999999992898
+      }
+    }
+  },
+  "guidance": "Selected beam is first satisfying sampled grid quality floor. Interpolated exact-target latency, where available, is NOT measured. Further fine-grid sweep and repeated QPS required.",
+  "independent_build_graphs_per_arm": 1,
+  "legacy_avg_cmps_highbeam_invalid": true,
+  "native_search_calls": 3,
+  "no_tail_latency_p95_p99": true,
+  "not_exact_matched_recall": true,
+  "not_formal_equivalence_or_noninferiority": true,
+  "not_global_minimum_beam": true,
+  "per_arm": {
+    "fast": {
+      "0.99": {
+        "mean_observed_latency_us_proxy": 790.2808574460815,
+        "mean_observed_qps": 1265.3729248,
+        "mean_observed_recall": 0.99041998,
+        "n_bracketed_graphs": 1,
+        "per_graph": [
+          {
+            "build_rep": 1,
+            "interpolation_estimate": {
+              "estimated_latency_us_at_exact_target": 772.7035057343767,
+              "not_direct_native_measurement": true,
+              "weight": 0.5374414890687915
+            },
+            "lower_beam": 352,
+            "lower_recall": 0.98951203,
+            "not_global_minimum_beam": true,
+            "observed_latency_us_proxy": 790.2808574460815,
+            "observed_qps": 1265.3729248,
+            "observed_recall": 0.99041998,
+            "overshoot": 0.0004199799999999865,
+            "selected_beam_in_tested_grid": 368,
+            "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+            "target": 0.99,
+            "upper_beam": 368,
+            "upper_recall": 0.99041998
+          }
+        ],
+        "selected_beams": [
+          368
+        ]
+      },
+      "0.998": {
+        "mean_observed_latency_us_proxy": 1751.355980739205,
+        "mean_observed_qps": 570.98614502,
+        "mean_observed_recall": 0.99808401,
+        "n_bracketed_graphs": 1,
+        "per_graph": [
+          {
+            "build_rep": 1,
+            "interpolation_estimate": {
+              "estimated_latency_us_at_exact_target": 1719.2047558413246,
+              "not_direct_native_measurement": true,
+              "weight": 0.3637052185110611
+            },
+            "lower_beam": 848,
+            "lower_recall": 0.99795198,
+            "not_global_minimum_beam": true,
+            "observed_latency_us_proxy": 1751.355980739205,
+            "observed_qps": 570.98614502,
+            "observed_recall": 0.99808401,
+            "overshoot": 8.401000000002323e-05,
+            "selected_beam_in_tested_grid": 880,
+            "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+            "target": 0.998,
+            "upper_beam": 880,
+            "upper_recall": 0.99808401
+          }
+        ],
+        "selected_beams": [
+          880
+        ]
+      }
+    },
+    "h17": {
+      "0.99": {
+        "mean_observed_latency_us_proxy": 785.3774077824821,
+        "mean_observed_qps": 1273.27319336,
+        "mean_observed_recall": 0.99042702,
+        "n_bracketed_graphs": 1,
+        "per_graph": [
+          {
+            "build_rep": 1,
+            "interpolation_estimate": {
+              "estimated_latency_us_at_exact_target": 766.0671705420192,
+              "not_direct_native_measurement": true,
+              "weight": 0.5307730344485933
+            },
+            "lower_beam": 352,
+            "lower_recall": 0.98951697,
+            "not_global_minimum_beam": true,
+            "observed_latency_us_proxy": 785.3774077824821,
+            "observed_qps": 1273.27319336,
+            "observed_recall": 0.99042702,
+            "overshoot": 0.0004270200000000557,
+            "selected_beam_in_tested_grid": 368,
+            "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+            "target": 0.99,
+            "upper_beam": 368,
+            "upper_recall": 0.99042702
+          }
+        ],
+        "selected_beams": [
+          368
+        ]
+      },
+      "0.998": {
+        "mean_observed_latency_us_proxy": 1752.9697183802566,
+        "mean_observed_qps": 570.46051025,
+        "mean_observed_recall": 0.99808198,
+        "n_bracketed_graphs": 1,
+        "per_graph": [
+          {
+            "build_rep": 1,
+            "interpolation_estimate": {
+              "estimated_latency_us_at_exact_target": 1719.108516581172,
+              "not_direct_native_measurement": true,
+              "weight": 0.3742462407449016
+            },
+            "lower_beam": 848,
+            "lower_recall": 0.99795097,
+            "not_global_minimum_beam": true,
+            "observed_latency_us_proxy": 1752.9697183802566,
+            "observed_qps": 570.46051025,
+            "observed_recall": 0.99808198,
+            "overshoot": 8.198000000003702e-05,
+            "selected_beam_in_tested_grid": 880,
+            "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+            "target": 0.998,
+            "upper_beam": 880,
+            "upper_recall": 0.99808198
+          }
+        ],
+        "selected_beams": [
+          880
+        ]
+      }
+    },
+    "stock": {
+      "0.99": {
+        "mean_observed_latency_us_proxy": 792.978116821749,
+        "mean_observed_qps": 1261.06884766,
+        "mean_observed_recall": 0.99045199,
+        "n_bracketed_graphs": 1,
+        "per_graph": [
+          {
+            "build_rep": 1,
+            "interpolation_estimate": {
+              "estimated_latency_us_at_exact_target": 774.2075072374553,
+              "not_direct_native_measurement": true,
+              "weight": 0.5281744540481926
+            },
+            "lower_beam": 352,
+            "lower_recall": 0.98949403,
+            "not_global_minimum_beam": true,
+            "observed_latency_us_proxy": 792.978116821749,
+            "observed_qps": 1261.06884766,
+            "observed_recall": 0.99045199,
+            "overshoot": 0.0004519899999999577,
+            "selected_beam_in_tested_grid": 368,
+            "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+            "target": 0.99,
+            "upper_beam": 368,
+            "upper_recall": 0.99045199
+          }
+        ],
+        "selected_beams": [
+          368
+        ]
+      },
+      "0.998": {
+        "mean_observed_latency_us_proxy": 1750.0633148187658,
+        "mean_observed_qps": 571.40789795,
+        "mean_observed_recall": 0.99812198,
+        "n_bracketed_graphs": 1,
+        "per_graph": [
+          {
+            "build_rep": 1,
+            "interpolation_estimate": {
+              "estimated_latency_us_at_exact_target": 1711.5644543165008,
+              "not_direct_native_measurement": true,
+              "weight": 0.2027972027974717
+            },
+            "lower_beam": 848,
+            "lower_recall": 0.99796897,
+            "not_global_minimum_beam": true,
+            "observed_latency_us_proxy": 1750.0633148187658,
+            "observed_qps": 571.40789795,
+            "observed_recall": 0.99812198,
+            "overshoot": 0.000121979999999966,
+            "selected_beam_in_tested_grid": 880,
+            "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+            "target": 0.998,
+            "upper_beam": 880,
+            "upper_recall": 0.99812198
+          }
+        ],
+        "selected_beams": [
+          880
+        ]
+      }
+    }
+  },
+  "per_graph": [
+    {
+      "arm": "stock",
+      "build_rep": 1,
+      "graph_sha": "c24e1a506c4adaca82d398bbc51a68d0fc8caab7f6472219182614a874081ca3",
+      "max_recall_anchor_delta": 0.0,
+      "targets": {
+        "0.99": {
+          "interpolation_estimate": {
+            "estimated_latency_us_at_exact_target": 774.2075072374553,
+            "not_direct_native_measurement": true,
+            "weight": 0.5281744540481926
+          },
+          "lower_beam": 352,
+          "lower_recall": 0.98949403,
+          "not_global_minimum_beam": true,
+          "observed_latency_us_proxy": 792.978116821749,
+          "observed_qps": 1261.06884766,
+          "observed_recall": 0.99045199,
+          "overshoot": 0.0004519899999999577,
+          "selected_beam_in_tested_grid": 368,
+          "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+          "target": 0.99,
+          "upper_beam": 368,
+          "upper_recall": 0.99045199
+        },
+        "0.998": {
+          "interpolation_estimate": {
+            "estimated_latency_us_at_exact_target": 1711.5644543165008,
+            "not_direct_native_measurement": true,
+            "weight": 0.2027972027974717
+          },
+          "lower_beam": 848,
+          "lower_recall": 0.99796897,
+          "not_global_minimum_beam": true,
+          "observed_latency_us_proxy": 1750.0633148187658,
+          "observed_qps": 571.40789795,
+          "observed_recall": 0.99812198,
+          "overshoot": 0.000121979999999966,
+          "selected_beam_in_tested_grid": 880,
+          "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+          "target": 0.998,
+          "upper_beam": 880,
+          "upper_recall": 0.99812198
+        }
+      }
+    },
+    {
+      "arm": "h17",
+      "build_rep": 1,
+      "graph_sha": "64a670d0136cc070cfe376a27a5dd3aabebb7be784f2a258734a35635717c6d7",
+      "max_recall_anchor_delta": 0.0,
+      "targets": {
+        "0.99": {
+          "interpolation_estimate": {
+            "estimated_latency_us_at_exact_target": 766.0671705420192,
+            "not_direct_native_measurement": true,
+            "weight": 0.5307730344485933
+          },
+          "lower_beam": 352,
+          "lower_recall": 0.98951697,
+          "not_global_minimum_beam": true,
+          "observed_latency_us_proxy": 785.3774077824821,
+          "observed_qps": 1273.27319336,
+          "observed_recall": 0.99042702,
+          "overshoot": 0.0004270200000000557,
+          "selected_beam_in_tested_grid": 368,
+          "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+          "target": 0.99,
+          "upper_beam": 368,
+          "upper_recall": 0.99042702
+        },
+        "0.998": {
+          "interpolation_estimate": {
+            "estimated_latency_us_at_exact_target": 1719.108516581172,
+            "not_direct_native_measurement": true,
+            "weight": 0.3742462407449016
+          },
+          "lower_beam": 848,
+          "lower_recall": 0.99795097,
+          "not_global_minimum_beam": true,
+          "observed_latency_us_proxy": 1752.9697183802566,
+          "observed_qps": 570.46051025,
+          "observed_recall": 0.99808198,
+          "overshoot": 8.198000000003702e-05,
+          "selected_beam_in_tested_grid": 880,
+          "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+          "target": 0.998,
+          "upper_beam": 880,
+          "upper_recall": 0.99808198
+        }
+      }
+    },
+    {
+      "arm": "fast",
+      "build_rep": 1,
+      "graph_sha": "6936e95d42ff27c8511e791b1f53164d1273709b2b4fcf8d710edc081838fdac",
+      "max_recall_anchor_delta": 0.0,
+      "targets": {
+        "0.99": {
+          "interpolation_estimate": {
+            "estimated_latency_us_at_exact_target": 772.7035057343767,
+            "not_direct_native_measurement": true,
+            "weight": 0.5374414890687915
+          },
+          "lower_beam": 352,
+          "lower_recall": 0.98951203,
+          "not_global_minimum_beam": true,
+          "observed_latency_us_proxy": 790.2808574460815,
+          "observed_qps": 1265.3729248,
+          "observed_recall": 0.99041998,
+          "overshoot": 0.0004199799999999865,
+          "selected_beam_in_tested_grid": 368,
+          "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+          "target": 0.99,
+          "upper_beam": 368,
+          "upper_recall": 0.99041998
+        },
+        "0.998": {
+          "interpolation_estimate": {
+            "estimated_latency_us_at_exact_target": 1719.2047558413246,
+            "not_direct_native_measurement": true,
+            "weight": 0.3637052185110611
+          },
+          "lower_beam": 848,
+          "lower_recall": 0.99795198,
+          "not_global_minimum_beam": true,
+          "observed_latency_us_proxy": 1751.355980739205,
+          "observed_qps": 570.98614502,
+          "observed_recall": 0.99808401,
+          "overshoot": 8.401000000002323e-05,
+          "selected_beam_in_tested_grid": 880,
+          "status": "BRACKETED_MEASURED_QUALITY_FLOOR",
+          "target": 0.998,
+          "upper_beam": 880,
+          "upper_recall": 0.99808401
+        }
+      }
+    }
+  ],
+  "qps_one_search_call_per_graph": true,
+  "queries_per_search": 100000,
+  "source_vintage_note": "Stock ELF from R86, H17/Fast from R90; code/compiler vintage confound.",
+  "status": "BRACKETED_QUALITY_FLOORS_ON_TESTED_GRID",
+  "targets": [
+    0.99,
+    0.998
+  ]
+}
