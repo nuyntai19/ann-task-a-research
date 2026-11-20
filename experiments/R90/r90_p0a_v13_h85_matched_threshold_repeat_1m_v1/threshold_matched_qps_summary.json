@@ -1,0 +1,667 @@
+{
+  "calibration_manifest_sha256": "fa968ba03bc44ee0313752fe70cd21f8fbaff81d2e04f8cdfb7ce0a9ed26010b",
+  "limitations": [
+    "Minimum among preregistered discrete beams meeting threshold on all three graph builds, not equal attained Recall across arms.",
+    "Calibration and timing use SAME queries/GT; results are conditional on this benchmark set.",
+    "QPS derived from evaluator internal Search throughput, reciprocal is latency proxy not perquery p50/p95/p99.",
+    "Three build graph realizations and three correlated repeated timings per graph; not a non-inferiority test.",
+    "MS-Turing legacy high-beam avg_cmps may overflow: excluded from all comparisons.",
+    "Historical Highway H85 DAZ still has simultaneous subnormal tie order differences in controlled probe.",
+    "All native graph, query/GT and binary SHA verified on user Ubuntu; raw 18 graph bytes not uploaded here."
+  ],
+  "native_evaluator_invocations_calibration": 18,
+  "native_evaluator_invocations_timing": 54,
+  "original_build_audit_sha256": "9550858dcb763349ed5180b3b65577e48a600e54becc0ecb9c755970a4d4bbfb",
+  "original_quality_screen_sha256": "861c8734cab66a6d2dcbcee9aca56a981ab364ea7e14e04e64e9177bf3ddd7a7",
+  "original_screen_full_manifest_sha256": "767c8b95dcf9f2e91bb06612b1c0d82ee9814ea3e6b220cd755601705a1738ed",
+  "report": {
+    "MS-Turing1M": {
+      "0.99": {
+        "fast": {
+          "beam": 368,
+          "inverse_qps_us_proxy_median": 784.4882765374898,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 1274.3908555755556,
+          "qps_median": 1274.71630859,
+          "qps_sample_stddev": 1.8303814095843423,
+          "recall_max": 0.99049503,
+          "recall_mean": 0.9904653433333334,
+          "recall_min": 0.99044299,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 1273.74914551,
+              "qps_samples": [
+                1273.74914551,
+                1270.45068359,
+                1275.76696777
+              ],
+              "recall_mean": 0.99049503
+            },
+            "2": {
+              "qps_median": 1274.93444824,
+              "qps_samples": [
+                1274.93444824,
+                1274.71630859,
+                1275.80981445
+              ],
+              "recall_mean": 0.99045801
+            },
+            "3": {
+              "qps_median": 1273.67651367,
+              "qps_samples": [
+                1273.67150879,
+                1273.67651367,
+                1276.74230957
+              ],
+              "recall_mean": 0.99044299
+            }
+          }
+        },
+        "h17": {
+          "beam": 368,
+          "inverse_qps_us_proxy_median": 785.5606435646087,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 1272.7693820533334,
+          "qps_median": 1272.97619629,
+          "qps_sample_stddev": 1.0261257789792304,
+          "recall_max": 0.99049598,
+          "recall_mean": 0.9904503233333334,
+          "recall_min": 0.99041897,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 1272.48815918,
+              "qps_samples": [
+                1273.43017578,
+                1272.48815918,
+                1271.18310547
+              ],
+              "recall_mean": 0.99049598
+            },
+            "2": {
+              "qps_median": 1273.87744141,
+              "qps_samples": [
+                1273.87744141,
+                1272.5604248,
+                1274.00610352
+              ],
+              "recall_mean": 0.99043602
+            },
+            "3": {
+              "qps_median": 1272.97619629,
+              "qps_samples": [
+                1271.22607422,
+                1273.17675781,
+                1272.97619629
+              ],
+              "recall_mean": 0.99041897
+            }
+          }
+        },
+        "pairwise": {
+          "h17_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 1.5019999999976719e-05,
+            "difference_in_qps_median_percent": 0.13669637382627275,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.09909611503282623,
+              0.08297555130813983,
+              0.05501417717324042
+            ]
+          },
+          "stock_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 3.234666666662722e-05,
+            "difference_in_qps_median_percent": 0.0612010874126101,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.07446204225223241,
+              0.07832436043948565,
+              -0.06529208796713926
+            ]
+          },
+          "stock_vs_h17": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 1.7326666666650503e-05,
+            "difference_in_qps_median_percent": -0.07539222797187106,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              -0.024609685538312664,
+              -0.004647334717045037,
+              -0.12024011602990159
+            ]
+          }
+        },
+        "stock": {
+          "beam": 368,
+          "inverse_qps_us_proxy_median": 784.9683918933551,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 1272.3541531033334,
+          "qps_median": 1273.93664551,
+          "qps_sample_stddev": 3.9735277670936213,
+          "recall_max": 0.99047297,
+          "recall_mean": 0.9904329966666667,
+          "recall_min": 0.99038303,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 1272.8013916,
+              "qps_samples": [
+                1274.8425293,
+                1272.8013916,
+                1266.93896484
+              ],
+              "recall_mean": 0.99047297
+            },
+            "2": {
+              "qps_median": 1273.93664551,
+              "qps_samples": [
+                1274.828125,
+                1273.93664551,
+                1264.23046875
+              ],
+              "recall_mean": 0.99038303
+            },
+            "3": {
+              "qps_median": 1274.50866699,
+              "qps_samples": [
+                1275.46899414,
+                1274.50866699,
+                1273.6315918
+              ],
+              "recall_mean": 0.99044299
+            }
+          }
+        }
+      },
+      "0.998": {
+        "fast": {
+          "beam": 864,
+          "inverse_qps_us_proxy_median": 1725.7445933893475,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 579.34516737,
+          "qps_median": 579.46002197,
+          "qps_sample_stddev": 0.6223958441020201,
+          "recall_max": 0.99805099,
+          "recall_mean": 0.9980466566666667,
+          "recall_min": 0.998043,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 579.72576904,
+              "qps_samples": [
+                579.53881836,
+                579.72576904,
+                579.89208984
+              ],
+              "recall_mean": 0.99805099
+            },
+            "2": {
+              "qps_median": 579.30462646,
+              "qps_samples": [
+                579.82757568,
+                579.30462646,
+                579.27606201
+              ],
+              "recall_mean": 0.998043
+            },
+            "3": {
+              "qps_median": 579.27258301,
+              "qps_samples": [
+                577.80895996,
+                579.27258301,
+                579.46002197
+              ],
+              "recall_mean": 0.99804598
+            }
+          }
+        },
+        "h17": {
+          "beam": 864,
+          "inverse_qps_us_proxy_median": 1726.9096454303278,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 579.1283433711111,
+          "qps_median": 579.0690918,
+          "qps_sample_stddev": 0.41750413526979535,
+          "recall_max": 0.99803603,
+          "recall_mean": 0.9980273433333333,
+          "recall_min": 0.99801701,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 578.71575928,
+              "qps_samples": [
+                579.68945312,
+                578.60107422,
+                578.71575928
+              ],
+              "recall_mean": 0.99802899
+            },
+            "2": {
+              "qps_median": 579.0690918,
+              "qps_samples": [
+                579.05371094,
+                579.0690918,
+                579.42260742
+              ],
+              "recall_mean": 0.99803603
+            },
+            "3": {
+              "qps_median": 579.2532959,
+              "qps_samples": [
+                578.66723633,
+                579.68286133,
+                579.2532959
+              ],
+              "recall_mean": 0.99801701
+            }
+          }
+        },
+        "pairwise": {
+          "h17_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 1.93133333333817e-05,
+            "difference_in_qps_median_percent": 0.06751010812626745,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.17452605079506522,
+              0.040674707618704176,
+              0.0033296504545532457
+            ]
+          },
+          "stock_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": -5.368333333322095e-05,
+            "difference_in_qps_median_percent": 1.4191608277511536,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              1.534667625571351,
+              1.6643740924724648,
+              1.3410051293400116
+            ]
+          },
+          "stock_vs_h17": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": -7.299666666660265e-05,
+            "difference_in_qps_median_percent": 1.3507388343773075,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              1.3577719090845708,
+              1.6230392183971265,
+              1.3376309404507847
+            ]
+          }
+        },
+        "stock": {
+          "beam": 880,
+          "inverse_qps_us_proxy_median": 1750.2356846457628,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 570.5884806311111,
+          "qps_median": 571.35162354,
+          "qps_sample_stddev": 1.4871404687834633,
+          "recall_max": 0.99812001,
+          "recall_mean": 0.9981003399999999,
+          "recall_min": 0.99806398,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 570.96337891,
+              "qps_samples": [
+                571.35162354,
+                570.96337891,
+                569.40997314
+              ],
+              "recall_mean": 0.99812001
+            },
+            "2": {
+              "qps_median": 569.82067871,
+              "qps_samples": [
+                571.63513184,
+                569.82067871,
+                567.30224609
+              ],
+              "recall_mean": 0.99806398
+            },
+            "3": {
+              "qps_median": 571.6072998,
+              "qps_samples": [
+                571.60864258,
+                571.6072998,
+                571.59735107
+              ],
+              "recall_mean": 0.99811703
+            }
+          }
+        }
+      }
+    },
+    "SIFT1M": {
+      "0.99": {
+        "fast": {
+          "beam": 76,
+          "inverse_qps_us_proxy_median": 114.31560730672011,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 8752.237196177777,
+          "qps_median": 8747.71191406,
+          "qps_sample_stddev": 9.245868617086767,
+          "recall_max": 0.99023998,
+          "recall_mean": 0.99015999,
+          "recall_min": 0.99010998,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 8756.58203125,
+              "qps_samples": [
+                8746.61035156,
+                8766.73144531,
+                8756.58203125
+              ],
+              "recall_mean": 0.99010998
+            },
+            "2": {
+              "qps_median": 8747.29882812,
+              "qps_samples": [
+                8757.45703125,
+                8747.29882812,
+                8739.47851562
+              ],
+              "recall_mean": 0.99013001
+            },
+            "3": {
+              "qps_median": 8747.71191406,
+              "qps_samples": [
+                8744.61425781,
+                8747.71191406,
+                8763.65039062
+              ],
+              "recall_mean": 0.99023998
+            }
+          }
+        },
+        "h17": {
+          "beam": 76,
+          "inverse_qps_us_proxy_median": 114.2927045091597,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 8751.479492186667,
+          "qps_median": 8749.46484375,
+          "qps_sample_stddev": 19.77732901924924,
+          "recall_max": 0.99019003,
+          "recall_mean": 0.9901500166666667,
+          "recall_min": 0.99013001,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 8737.11132812,
+              "qps_samples": [
+                8737.11132812,
+                8781.8125,
+                8724.23730469
+              ],
+              "recall_mean": 0.99013001
+            },
+            "2": {
+              "qps_median": 8767.43164062,
+              "qps_samples": [
+                8734.5703125,
+                8771.60742188,
+                8767.43164062
+              ],
+              "recall_mean": 0.99013001
+            },
+            "3": {
+              "qps_median": 8749.46484375,
+              "qps_samples": [
+                8736.42382812,
+                8760.65625,
+                8749.46484375
+              ],
+              "recall_mean": 0.99019003
+            }
+          }
+        },
+        "pairwise": {
+          "h17_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 9.97333333330186e-06,
+            "difference_in_qps_median_percent": -0.02003470750844283,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.22285057839808164,
+              -0.22963181608082195,
+              -0.02003470750844283
+            ]
+          },
+          "stock_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": -0.0011333399999999827,
+            "difference_in_qps_median_percent": 4.338422132459074,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              4.47459476322456,
+              4.148312997152237,
+              4.38977076253646
+            ]
+          },
+          "stock_vs_h17": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": -0.0011433133333332846,
+            "difference_in_qps_median_percent": 4.359330219026236,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              4.242290216541567,
+              4.388021105788287,
+              4.410689138712964
+            ]
+          }
+        },
+        "stock": {
+          "beam": 80,
+          "inverse_qps_us_proxy_median": 119.27510091496987,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 8386.105143228888,
+          "qps_median": 8383.97949219,
+          "qps_sample_stddev": 11.497950671811228,
+          "recall_max": 0.99141997,
+          "recall_mean": 0.99129333,
+          "recall_min": 0.99115002,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 8381.54199219,
+              "qps_samples": [
+                8381.54199219,
+                8383.97949219,
+                8366.8984375
+              ],
+              "recall_mean": 0.99141997
+            },
+            "2": {
+              "qps_median": 8398.88671875,
+              "qps_samples": [
+                8398.88671875,
+                8391.12695312,
+                8405.22558594
+              ],
+              "recall_mean": 0.99115002
+            },
+            "3": {
+              "qps_median": 8379.85546875,
+              "qps_samples": [
+                8379.85546875,
+                8378.296875,
+                8389.13476562
+              ],
+              "recall_mean": 0.99131
+            }
+          }
+        }
+      },
+      "0.998": {
+        "fast": {
+          "beam": 144,
+          "inverse_qps_us_proxy_median": 198.51239771958882,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 5037.457899307778,
+          "qps_median": 5037.46875,
+          "qps_sample_stddev": 5.5783665806849125,
+          "recall_max": 0.99821001,
+          "recall_mean": 0.9981433366666667,
+          "recall_min": 0.99811,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 5037.46875,
+              "qps_samples": [
+                5037.46875,
+                5044.13867188,
+                5035.95947266
+              ],
+              "recall_mean": 0.99811
+            },
+            "2": {
+              "qps_median": 5036.70263672,
+              "qps_samples": [
+                5037.56542969,
+                5036.70263672,
+                5035.20605469
+              ],
+              "recall_mean": 0.99811
+            },
+            "3": {
+              "qps_median": 5040.38330078,
+              "qps_samples": [
+                5040.38330078,
+                5044.18212891,
+                5025.51464844
+              ],
+              "recall_mean": 0.99821001
+            }
+          }
+        },
+        "h17": {
+          "beam": 144,
+          "inverse_qps_us_proxy_median": 198.56919646865902,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 5032.684136285556,
+          "qps_median": 5036.02783203,
+          "qps_sample_stddev": 8.440067880969163,
+          "recall_max": 0.99811,
+          "recall_mean": 0.99808999,
+          "recall_min": 0.99804997,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 5036.99169922,
+              "qps_samples": [
+                5036.02783203,
+                5036.99169922,
+                5045.48242188
+              ],
+              "recall_mean": 0.99811
+            },
+            "2": {
+              "qps_median": 5036.80371094,
+              "qps_samples": [
+                5039.49707031,
+                5036.80371094,
+                5030.68457031
+              ],
+              "recall_mean": 0.99811
+            },
+            "3": {
+              "qps_median": 5023.48242188,
+              "qps_samples": [
+                5023.48242188,
+                5019.37988281,
+                5025.80761719
+              ],
+              "recall_mean": 0.99804997
+            }
+          }
+        },
+        "pairwise": {
+          "h17_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 5.334666666667598e-05,
+            "difference_in_qps_median_percent": 0.02861219234799872,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.009470946320488949,
+              -0.0020067134993029256,
+              0.3364375045165291
+            ]
+          },
+          "stock_vs_fast": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 5.668666666669431e-05,
+            "difference_in_qps_median_percent": 0.044733756644310674,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.044733756644310674,
+              0.09218229164833502,
+              -0.17873188256839478
+            ]
+          },
+          "stock_vs_h17": {
+            "NOT_a_formal_noninferiority_test": true,
+            "achieved_recall_mean_difference_other_minus_base": 3.3400000000183283e-06,
+            "difference_in_qps_median_percent": 0.016116952882749835,
+            "three_build_rep_matched_median_qps_pct_changes": [
+              0.03525947091826964,
+              0.0941908952890369,
+              -0.5134419757146902
+            ]
+          }
+        },
+        "stock": {
+          "beam": 144,
+          "inverse_qps_us_proxy_median": 198.60119977249352,
+          "n_graph_realizations": 3,
+          "n_timing_reps_per_graph": 3,
+          "n_total_qps_samples": 9,
+          "qps_mean": 5038.24018012,
+          "qps_median": 5035.21630859,
+          "qps_sample_stddev": 9.627973247649908,
+          "recall_max": 0.99811,
+          "recall_mean": 0.99808665,
+          "recall_min": 0.99804997,
+          "three_graph_replicate_medians": {
+            "1": {
+              "qps_median": 5035.21630859,
+              "qps_samples": [
+                5035.21630859,
+                5045.72412109,
+                5032.68505859
+              ],
+              "recall_mean": 0.99811
+            },
+            "2": {
+              "qps_median": 5032.06396484,
+              "qps_samples": [
+                5032.8671875,
+                5032.06396484,
+                5025.59277344
+              ],
+              "recall_mean": 0.99804997
+            },
+            "3": {
+              "qps_median": 5049.40820312,
+              "qps_samples": [
+                5055.15429688,
+                5049.40820312,
+                5035.44970703
+              ],
+              "recall_mean": 0.99809998
+            }
+          }
+        }
+      }
+    }
+  },
+  "selected_threshold_beams_sha256": "f5ae3ccc2e9438b499d337fd49411e8a8bb8470cc4c0a5ccae5f026b2e770003",
+  "status": "V13_H85_18_GRAPH_THRESHOLD_QUALIFIED_CALIBRATED_REPEATED_QPS_AUDIT_PASS__NO_STATISTICAL_NONINFERIORITY_CLAIM",
+  "timing_manifest_sha256": "8d37f408e215e23ed5cca60bae63a1437bd8f2a339914f14fd2104d5a53d7e78",
+  "timing_qps_per_target_observations": 108
+}

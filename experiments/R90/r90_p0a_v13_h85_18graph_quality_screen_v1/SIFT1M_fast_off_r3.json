@@ -1,0 +1,64 @@
+{
+  "arm": "fast",
+  "beams": {
+    "10": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 583.0,
+      "avg_visited": 19.0,
+      "latency_us_proxy": 32.3103020830185,
+      "qps": 30949.88085938,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.76419002
+    },
+    "160": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 3666.0,
+      "avg_visited": 156.0,
+      "latency_us_proxy": 233.4825090476641,
+      "qps": 4282.97607422,
+      "reaches_099": true,
+      "reaches_0998": true,
+      "recall_at10": 0.99856001
+    },
+    "20": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 846.0,
+      "avg_visited": 29.0,
+      "latency_us_proxy": 47.529501013587186,
+      "qps": 21039.56445312,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.89037001
+    },
+    "40": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 1356.0,
+      "avg_visited": 48.0,
+      "latency_us_proxy": 76.06790159637812,
+      "qps": 13146.14941406,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.96179003
+    },
+    "80": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 2277.0,
+      "avg_visited": 87.0,
+      "latency_us_proxy": 130.85589724344769,
+      "qps": 7641.99414062,
+      "reaches_099": true,
+      "reaches_0998": false,
+      "recall_at10": 0.99141002
+    }
+  },
+  "dataset": "SIFT1M",
+  "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+  "graph_sha256": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75",
+  "name": "SIFT1M_fast_off_r3",
+  "rep": 3,
+  "status": "NATIVE_QUERY_SEARCH_PASS",
+  "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha": "784130bd7bf76e18ec42c2f1828d36ab78522fe65cf7d01e2d0dbdeb30f34003",
+  "wall_elapsed_s": 6.050299492984777
+}

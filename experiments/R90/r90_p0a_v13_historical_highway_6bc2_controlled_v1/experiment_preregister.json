@@ -1,0 +1,52 @@
+{
+  "A": "compile6 + controlled 126-case Highway probe + 6 SIFT10K graph builds + structural gate; cross-arm graph SHA NOT REQUIRED",
+  "B": "only after A PASS: ONE SIFT1M Stock OFF 4CPU graph, v0/dup geometry and 10000Q Recall@10 screening beam80/160",
+  "baseline_commit_full": "6bc2d47793bae9c521fb4150936669647700765d",
+  "compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "future": "Any 24-run SIFT1M/MS-Turing1M campaign requires explicit new authorization; NO 10M",
+  "highway_after_6bc2": {
+    "sorting_networks-inl.h": "54b15230730ef3785ae1eaa09ce97485ce917021",
+    "traits-inl.h": "b02ed8b9ab0d2e7d3d70f48c74f006531ff54753"
+  },
+  "highway_before_0e0a": {
+    "sorting_networks-inl.h": "92c2dfad48291f0c194d85f1bbe05dc6aee8d71a",
+    "traits-inl.h": "3a4d8506e6794432009c70ac312380b1d2ba801b"
+  },
+  "old_source_manifest_sha256": "6e5d82c4ca331476240950afedfad970d8358fc7252d0d2b8b9ac441e1afb298",
+  "original_flags": [
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "original_v11_runner_sha256": "fa9cdc09b3f447161f5c1f65382b15a0bc9645f425a679b73ca26f5ce8abecf0",
+  "source_trees_sha256": {
+    "fast_off": "de97c4d9020eb2de9fbdab6051fd01f40d6f6e960ff8a75e08ce8545a49bb25c",
+    "fast_on": "1aae65af5915e71ec2e1ed239fb6f6b746ae37b88271720e47abcc47441cdc0e",
+    "h17_off": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+    "h17_on": "6dfbd8dda6a0fef3b52286fec7b5e5c82abf450069dc2a679a2ea08fe2d747e2",
+    "stock_off": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+    "stock_on": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9"
+  },
+  "status": "V13_HISTORICAL_HIGHWAY_SOURCE_SIX_COPY_PREPARED"
+}

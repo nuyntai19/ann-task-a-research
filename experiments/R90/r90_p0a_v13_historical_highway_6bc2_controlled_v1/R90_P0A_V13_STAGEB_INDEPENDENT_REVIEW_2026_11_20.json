@@ -1,0 +1,108 @@
+{
+  "big_inversions_first_10000": 0,
+  "duplicates": {
+    "at_least_one_direct_neighbor": 14538,
+    "both_directions_direct_neighbors": 14538,
+    "detected_pairs": 14538,
+    "either_end_retention_ratio": 1.0,
+    "one_endpoint_first_neighbor": 14538
+  },
+  "file_sha256": {
+    "R90_P0A_V13_H85_HIGHWAY_STAGEB_STOCK_SIFT1M_QUALITY.log": "a6031ddc1686bdd404a7863b18acedeaecf5d719867e13cec5bd9844fd0faf93",
+    "stageB_stock_sift1m_quality.json": "5827a3f5e52d552521cd4f64ce42324a0f13d6549be5cb37e5f2e987fdf9f785"
+  },
+  "highway_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+  "limits": [
+    "Measured no new H17/Fast v13 graph Search/Recall yet.",
+    "Historical Stock SIFT1M recovered on single pilot with 6bc2; source cause stronger but individual leaf edge trace absent.",
+    "Do not merge Stage B Stock quality pilot as timed repetition in new controlled 24 job matrix.",
+    "Big inversions are heuristic diagnostic not graph correctness invariant."
+  ],
+  "next_gate": {
+    "benchmark_matrix": "18 OFF 4CPU with 3 rep per arm/dataset, plus 6 ON 1CPU diagnostic work",
+    "decision": "OPEN_ISOLATED_V13_H85_24_1M_BUILD_ONLY",
+    "graph_validation": "FULL graph IDs/selfloops/duplicates plus SIFT v0/dup/big inversion diagnostics",
+    "quality": "new-graph native Search and matched Recall/QPS still required"
+  },
+  "proof_levels": {
+    "historical_P311_exact_stage1_comparisons": "GEMINI_REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+    "objdump_instruction_counts": "GEMINI_REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+    "ubuntu_one_graph_original_graph_bytes": "SHA_PINNED_IN_NATIVE_RECORD_NOT_UPLOADED_IN_THIS_TURN",
+    "uploaded_json_byte_sha": "INDEPENDENTLY_REHASHED",
+    "uploaded_log_byte_sha": "INDEPENDENTLY_REHASHED"
+  },
+  "search_by_beam": {
+    "10": {
+      "latency_us_proxy": 32.302299046740394,
+      "qps": 30957.54882812,
+      "recall": 0.76283002
+    },
+    "160": {
+      "latency_us_proxy": 233.6065092263053,
+      "qps": 4280.70263672,
+      "recall": 0.99862999
+    },
+    "20": {
+      "latency_us_proxy": 47.67499656870386,
+      "qps": 20975.35546875,
+      "recall": 0.88929999
+    },
+    "40": {
+      "latency_us_proxy": 76.16939925624784,
+      "qps": 13128.63183594,
+      "recall": 0.96188003
+    },
+    "80": {
+      "latency_us_proxy": 130.1915054747075,
+      "qps": 7680.99267578,
+      "recall": 0.99146003
+    }
+  },
+  "sift1m_compared_with_v12_stock_off_r1": {
+    "delta_recall_beam160": 0.0011599899999999996,
+    "delta_recall_beam80": 0.0024000299999999974,
+    "source_qualification": "v1.2 r1 exact Recall from user native terminal earlier; one graph vs one graph, not paired exact same Stage1 leaf.",
+    "v12_beam160_recall": 0.99747,
+    "v12_beam80_recall": 0.98906,
+    "v13_beam160_recall": 0.99862999,
+    "v13_beam80_recall": 0.99146003
+  },
+  "single_Stock_SIFT1M_graph": {
+    "arcs": 26034608,
+    "degree_bound": 64,
+    "duplicate_neighbor_slots": 0,
+    "graph_sha256": "c60d2fed5d6b5c2a59b7f7fa1549f89436bc36fa4315d410d87c0f4be5a8735b",
+    "invalid_neighbor_ids": 0,
+    "node_count": 1000000,
+    "self_loops": 0
+  },
+  "status": "STAGEB_INDEPENDENT_FILE_CONTENT_AUDIT_PASS__FULL_NEW_24_1M_MATRIX_NOT_RUN",
+  "v0": {
+    "degree": 37,
+    "has_2": true,
+    "has_6": true,
+    "mean_neighbor_l2_squared": 59871.189,
+    "nearest": [
+      {
+        "id": 2,
+        "squared_l2": 18724.0
+      },
+      {
+        "id": 6,
+        "squared_l2": 24320.0
+      },
+      {
+        "id": 631203,
+        "squared_l2": 45468.0
+      },
+      {
+        "id": 246710,
+        "squared_l2": 47026.0
+      },
+      {
+        "id": 10336,
+        "squared_l2": 47909.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "correct_MS_Turing1M_tested_beam_grid": [
+    384,
+    896
+  ],
+  "correct_SIFT1M_tested_beam_grid": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "impact": "v1.2 summary tested_beam_grid field only; per-graph native Recall lines remain intact; this does not amend original report.",
+  "old_readonly_report_sha256": "7562055b2a548c67c4831570ae1923918fbafa762a25c4cb5b0230d4264e7d50",
+  "original_reported": {
+    "MS-Turing1M": {
+      "fast": {
+        "expected_from_original_runner": [
+          384,
+          896
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": false
+      },
+      "h17": {
+        "expected_from_original_runner": [
+          384,
+          896
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": false
+      },
+      "stock": {
+        "expected_from_original_runner": [
+          384,
+          896
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": false
+      }
+    },
+    "SIFT1M": {
+      "fast": {
+        "expected_from_original_runner": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": true
+      },
+      "h17": {
+        "expected_from_original_runner": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": true
+      },
+      "stock": {
+        "expected_from_original_runner": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": true
+      }
+    }
+  },
+  "status": "DERIVED_ERRATA_ORIGINAL_SEARCH_SUMMARY_UNCHANGED"
+}

@@ -1,0 +1,455 @@
+{
+  "full_search_manifest_sha256": "767c8b95dcf9f2e91bb06612b1c0d82ee9814ea3e6b220cd755601705a1738ed",
+  "limitations": [
+    "These are fixed tested beam grids, not a continuous matched-Recall optimization.",
+    "SIFT1M grid: 10,20,40,80,160; for these H85 graphs may bracket recall .998 but thresholds are still only among tested beams.",
+    "MS-Turing1M grid: 384,896 only, 100K queries; legacy avg_cmps may overflow and MUST NOT be used.",
+    "Only one native Search trial per graph; QPS sensitive to scheduling/thermal state, need repeated paired QPS if formal timing equivalence is desired.",
+    "Historical H85 Highway 6bc2 StageA/B corrected single-subnormal bit loss in tested cases; simultaneous-subnormal DAZ tie-order differences remain possible.",
+    "Quality gate not a proof of same-input Top2 equivalence."
+  ],
+  "original_build_audit_sha256": "9550858dcb763349ed5180b3b65577e48a600e54becc0ecb9c755970a4d4bbfb",
+  "report": {
+    "MS-Turing1M": {
+      "fast": {
+        "beams": {
+          "384": {
+            "n_graphs": 3,
+            "qps_mean": 1228.6348470066666,
+            "qps_median": 1229.09399414,
+            "qps_range": [
+              1226.74047852,
+              1230.07006836
+            ],
+            "recall_max": 0.99112803,
+            "recall_mean": 0.9910760133333334,
+            "recall_min": 0.99103701
+          },
+          "896": {
+            "n_graphs": 3,
+            "qps_mean": 562.82499186,
+            "qps_median": 562.88061523,
+            "qps_range": [
+              562.65563965,
+              562.9387207
+            ],
+            "recall_max": 0.9982,
+            "recall_mean": 0.9981936633333334,
+            "recall_min": 0.99818999
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 384,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 896,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        },
+        "tested_beam_grid": [
+          384,
+          896
+        ]
+      },
+      "h17": {
+        "beams": {
+          "384": {
+            "n_graphs": 3,
+            "qps_mean": 1227.4055989566666,
+            "qps_median": 1227.80957031,
+            "qps_range": [
+              1226.31213379,
+              1228.09509277
+            ],
+            "recall_max": 0.99112898,
+            "recall_mean": 0.9910829866666667,
+            "recall_min": 0.99103397
+          },
+          "896": {
+            "n_graphs": 3,
+            "qps_mean": 563.2561442066667,
+            "qps_median": 563.1572876,
+            "qps_range": [
+              563.11608887,
+              563.49505615
+            ],
+            "recall_max": 0.99817997,
+            "recall_mean": 0.99816632,
+            "recall_min": 0.99815297
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 384,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 896,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        },
+        "tested_beam_grid": [
+          384,
+          896
+        ]
+      },
+      "stock": {
+        "beams": {
+          "384": {
+            "n_graphs": 3,
+            "qps_mean": 1225.8878987633334,
+            "qps_median": 1226.58935547,
+            "qps_range": [
+              1223.37329102,
+              1227.7010498
+            ],
+            "recall_max": 0.99109298,
+            "recall_mean": 0.9910483166666667,
+            "recall_min": 0.990991
+          },
+          "896": {
+            "n_graphs": 3,
+            "qps_mean": 562.8068033866666,
+            "qps_median": 563.02362061,
+            "qps_range": [
+              562.23413086,
+              563.16265869
+            ],
+            "recall_max": 0.99819601,
+            "recall_mean": 0.9981786833333334,
+            "recall_min": 0.99814701
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 384,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 896,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        },
+        "tested_beam_grid": [
+          384,
+          896
+        ]
+      }
+    },
+    "SIFT1M": {
+      "fast": {
+        "beams": {
+          "10": {
+            "n_graphs": 3,
+            "qps_mean": 31012.313151043334,
+            "qps_median": 30949.88085938,
+            "qps_range": [
+              30913.3359375,
+              31173.72265625
+            ],
+            "recall_max": 0.76419002,
+            "recall_mean": 0.7635399933333333,
+            "recall_min": 0.76270998
+          },
+          "160": {
+            "n_graphs": 3,
+            "qps_mean": 4278.087239583333,
+            "qps_median": 4282.41357422,
+            "qps_range": [
+              4268.87207031,
+              4282.97607422
+            ],
+            "recall_max": 0.99858999,
+            "recall_mean": 0.99857334,
+            "recall_min": 0.99856001
+          },
+          "20": {
+            "n_graphs": 3,
+            "qps_mean": 20902.052083333332,
+            "qps_median": 20964.84375,
+            "qps_range": [
+              20701.74804688,
+              21039.56445312
+            ],
+            "recall_max": 0.89051998,
+            "recall_mean": 0.8902533266666667,
+            "recall_min": 0.88986999
+          },
+          "40": {
+            "n_graphs": 3,
+            "qps_mean": 13125.669921873334,
+            "qps_median": 13138.34277344,
+            "qps_range": [
+              13092.51757812,
+              13146.14941406
+            ],
+            "recall_max": 0.96179003,
+            "recall_mean": 0.9617300233333334,
+            "recall_min": 0.96170002
+          },
+          "80": {
+            "n_graphs": 3,
+            "qps_mean": 7643.835123696666,
+            "qps_median": 7641.99414062,
+            "qps_range": [
+              7626.80517578,
+              7662.70605469
+            ],
+            "recall_max": 0.99151999,
+            "recall_mean": 0.9914499933333334,
+            "recall_min": 0.99141002
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 80,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              10,
+              20,
+              40,
+              80,
+              160
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 160,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              10,
+              20,
+              40,
+              80,
+              160
+            ]
+          }
+        },
+        "tested_beam_grid": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      },
+      "h17": {
+        "beams": {
+          "10": {
+            "n_graphs": 3,
+            "qps_mean": 30895.662109373334,
+            "qps_median": 30842.68554688,
+            "qps_range": [
+              30646.36132812,
+              31197.93945312
+            ],
+            "recall_max": 0.76381999,
+            "recall_mean": 0.76347667,
+            "recall_min": 0.76288003
+          },
+          "160": {
+            "n_graphs": 3,
+            "qps_mean": 4278.470540363333,
+            "qps_median": 4283.29882812,
+            "qps_range": [
+              4263.85595703,
+              4288.25683594
+            ],
+            "recall_max": 0.99858999,
+            "recall_mean": 0.9985566533333333,
+            "recall_min": 0.99849999
+          },
+          "20": {
+            "n_graphs": 3,
+            "qps_mean": 20908.943359373334,
+            "qps_median": 20932.80664062,
+            "qps_range": [
+              20696.22070312,
+              21097.80273438
+            ],
+            "recall_max": 0.89055002,
+            "recall_mean": 0.89037333,
+            "recall_min": 0.89003998
+          },
+          "40": {
+            "n_graphs": 3,
+            "qps_mean": 13080.781901043334,
+            "qps_median": 13087.49804688,
+            "qps_range": [
+              12975.55371094,
+              13179.29394531
+            ],
+            "recall_max": 0.96174997,
+            "recall_mean": 0.9616333233333333,
+            "recall_min": 0.96144998
+          },
+          "80": {
+            "n_graphs": 3,
+            "qps_mean": 7653.606282553334,
+            "qps_median": 7649.56982422,
+            "qps_range": [
+              7642.53125,
+              7668.71777344
+            ],
+            "recall_max": 0.99142998,
+            "recall_mean": 0.99141999,
+            "recall_min": 0.99141002
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 80,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              10,
+              20,
+              40,
+              80,
+              160
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 160,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              10,
+              20,
+              40,
+              80,
+              160
+            ]
+          }
+        },
+        "tested_beam_grid": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      },
+      "stock": {
+        "beams": {
+          "10": {
+            "n_graphs": 3,
+            "qps_mean": 31363.232421873334,
+            "qps_median": 31111.16601562,
+            "qps_range": [
+              31110.48828125,
+              31868.04296875
+            ],
+            "recall_max": 0.76415998,
+            "recall_mean": 0.76361998,
+            "recall_min": 0.76297998
+          },
+          "160": {
+            "n_graphs": 3,
+            "qps_mean": 4273.041503906667,
+            "qps_median": 4263.15966797,
+            "qps_range": [
+              4256.87548828,
+              4299.08935547
+            ],
+            "recall_max": 0.99858999,
+            "recall_mean": 0.9985366666666666,
+            "recall_min": 0.99849999
+          },
+          "20": {
+            "n_graphs": 3,
+            "qps_mean": 21135.03580729,
+            "qps_median": 21102.078125,
+            "qps_range": [
+              20955.48632812,
+              21347.54296875
+            ],
+            "recall_max": 0.89051998,
+            "recall_mean": 0.8899033266666666,
+            "recall_min": 0.88937002
+          },
+          "40": {
+            "n_graphs": 3,
+            "qps_mean": 13144.831380206666,
+            "qps_median": 13144.04101562,
+            "qps_range": [
+              13133.77050781,
+              13156.68261719
+            ],
+            "recall_max": 0.96195,
+            "recall_mean": 0.9618166666666667,
+            "recall_min": 0.96170002
+          },
+          "80": {
+            "n_graphs": 3,
+            "qps_mean": 7648.278157553334,
+            "qps_median": 7641.11816406,
+            "qps_range": [
+              7630.77978516,
+              7672.93652344
+            ],
+            "recall_max": 0.99141997,
+            "recall_mean": 0.99129333,
+            "recall_min": 0.99115002
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 80,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              10,
+              20,
+              40,
+              80,
+              160
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 160,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              10,
+              20,
+              40,
+              80,
+              160
+            ]
+          }
+        },
+        "tested_beam_grid": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    }
+  },
+  "source_build_full_manifest_sha256": "0c76f3e5bc3dc0d82f70aa1aadac9b26c5b0e8f4607f31d9aa6d8b0b0a4121c3",
+  "status": "NATIVE_18_GRAPH_SEARCH_FIXED_BEAM_SCREEN_PASS__MATCHED_RECALL_LATENCY_NOT_PROVEN"
+}

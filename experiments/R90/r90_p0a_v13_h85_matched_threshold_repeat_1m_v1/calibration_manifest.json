@@ -1,0 +1,1833 @@
+{
+  "preregister_sha256": "b990f58aec4d7c41239364a32ccebe99f96fb900b177aaf3c8390df69c87c937",
+  "rows": [
+    {
+      "arm": "stock",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.51872235100018,
+      "graph_sha256": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3194.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 177.89330032806416,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5621.34716797,
+          "recall_at10": 0.99743003
+        },
+        "136": {
+          "avg_cmps_sift_only": 3256.0,
+          "avg_visited": 137.0,
+          "latency_us_proxy": 190.084688854706,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5260.81298828,
+          "recall_at10": 0.99787003
+        },
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.427097080508,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5039.63427734,
+          "recall_at10": 0.99811
+        },
+        "152": {
+          "avg_cmps_sift_only": 3537.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 206.94870703519308,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4832.11523438,
+          "recall_at10": 0.99838001
+        },
+        "160": {
+          "avg_cmps_sift_only": 3668.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 215.6156928215813,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4637.88134766,
+          "recall_at10": 0.99858999
+        },
+        "64": {
+          "avg_cmps_sift_only": 1967.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 98.84359747839297,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10116.99316406,
+          "recall_at10": 0.98500001
+        },
+        "68": {
+          "avg_cmps_sift_only": 1995.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.61750400006332,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9558.62988281,
+          "recall_at10": 0.98724997
+        },
+        "72": {
+          "avg_cmps_sift_only": 2092.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.51379724119344,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9131.26953125,
+          "recall_at10": 0.98886001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 113.94900514951578,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8775.85546875,
+          "recall_at10": 0.99013001
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 118.7697082034372,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8419.65527344,
+          "recall_at10": 0.99141997
+        }
+      },
+      "name": "SIFT1M_stock_off_r1",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "21b6816d540a223bae681406a978383e8620664db162c84b96c684e2b7d084eb",
+      "stem": "SIFT1M_stock_off_r1_calibration"
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.507121245987946,
+      "graph_sha256": "fe5729630a50951ba995750761b52cd67884efee74854a78cef81f0a51070f83",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3194.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 177.83299554032922,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5623.25341797,
+          "recall_at10": 0.99743003
+        },
+        "136": {
+          "avg_cmps_sift_only": 3256.0,
+          "avg_visited": 137.0,
+          "latency_us_proxy": 188.42529539653938,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5307.14306641,
+          "recall_at10": 0.99787003
+        },
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.66250083286675,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5033.66259766,
+          "recall_at10": 0.99811
+        },
+        "152": {
+          "avg_cmps_sift_only": 3537.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 207.7365008552998,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4813.79052734,
+          "recall_at10": 0.99838001
+        },
+        "160": {
+          "avg_cmps_sift_only": 3668.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 215.87289808522425,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4632.35546875,
+          "recall_at10": 0.99858999
+        },
+        "64": {
+          "avg_cmps_sift_only": 1967.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 99.33419895066086,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10067.02636719,
+          "recall_at10": 0.98500001
+        },
+        "68": {
+          "avg_cmps_sift_only": 1995.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 105.09030120176187,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9515.62597656,
+          "recall_at10": 0.98724997
+        },
+        "72": {
+          "avg_cmps_sift_only": 2092.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.38190146119052,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9142.28027344,
+          "recall_at10": 0.98886001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.36610242326742,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8743.84960938,
+          "recall_at10": 0.99013001
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.33530236582237,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8379.75,
+          "recall_at10": 0.99141997
+        }
+      },
+      "name": "SIFT1M_h17_off_r1",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "43a017715e91d8c4066eaa19d17f5d0a5c1bfad86e75f9b56cf5034c2c15b4c0",
+      "stem": "SIFT1M_h17_off_r1_calibration"
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.492457309999736,
+      "graph_sha256": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3195.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 177.95499128993734,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5619.3984375,
+          "recall_at10": 0.99746001
+        },
+        "136": {
+          "avg_cmps_sift_only": 3265.0,
+          "avg_visited": 138.0,
+          "latency_us_proxy": 189.1618044631316,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5286.47949219,
+          "recall_at10": 0.99785
+        },
+        "144": {
+          "avg_cmps_sift_only": 3402.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.1892010110746,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5045.68359375,
+          "recall_at10": 0.99811
+        },
+        "152": {
+          "avg_cmps_sift_only": 3537.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 207.07500887753213,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4829.16796875,
+          "recall_at10": 0.99835002
+        },
+        "160": {
+          "avg_cmps_sift_only": 3669.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 215.7918999012765,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4634.09423828,
+          "recall_at10": 0.99857002
+        },
+        "64": {
+          "avg_cmps_sift_only": 1967.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 99.22820034442516,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10077.78027344,
+          "recall_at10": 0.98506999
+        },
+        "68": {
+          "avg_cmps_sift_only": 1995.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.50450119463417,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9568.96582031,
+          "recall_at10": 0.98729998
+        },
+        "72": {
+          "avg_cmps_sift_only": 2092.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.2540996426666,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9152.97460938,
+          "recall_at10": 0.98878002
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.37569579010399,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8743.11621094,
+          "recall_at10": 0.99010998
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.06688768457693,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8398.640625,
+          "recall_at10": 0.99151999
+        }
+      },
+      "name": "SIFT1M_fast_off_r1",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e612cc168e92c42f3c41e5d6a71bd61c168c2452f0066c1a614279022c3040ba",
+      "stem": "SIFT1M_fast_off_r1_calibration"
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.497519166005077,
+      "graph_sha256": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3202.0,
+          "avg_visited": 131.0,
+          "latency_us_proxy": 178.42630784392716,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5604.5546875,
+          "recall_at10": 0.99732
+        },
+        "136": {
+          "avg_cmps_sift_only": 3266.0,
+          "avg_visited": 138.0,
+          "latency_us_proxy": 189.64049883956716,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5273.13525391,
+          "recall_at10": 0.99774998
+        },
+        "144": {
+          "avg_cmps_sift_only": 3405.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 198.86288879617447,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5028.59033203,
+          "recall_at10": 0.99804997
+        },
+        "152": {
+          "avg_cmps_sift_only": 3540.0,
+          "avg_visited": 151.0,
+          "latency_us_proxy": 207.61808329186005,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4816.53613281,
+          "recall_at10": 0.99834001
+        },
+        "160": {
+          "avg_cmps_sift_only": 3672.0,
+          "avg_visited": 157.0,
+          "latency_us_proxy": 216.1428070724452,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4626.57080078,
+          "recall_at10": 0.99849999
+        },
+        "64": {
+          "avg_cmps_sift_only": 1965.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 98.60709770807831,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10141.2578125,
+          "recall_at10": 0.98503
+        },
+        "68": {
+          "avg_cmps_sift_only": 1992.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.31310229611067,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9586.5234375,
+          "recall_at10": 0.98703003
+        },
+        "72": {
+          "avg_cmps_sift_only": 2088.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.17060828705569,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9159.97460938,
+          "recall_at10": 0.98861998
+        },
+        "76": {
+          "avg_cmps_sift_only": 2179.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.12639587504408,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8762.21484375,
+          "recall_at10": 0.98986
+        },
+        "80": {
+          "avg_cmps_sift_only": 2274.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.00999951299985,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8402.65527344,
+          "recall_at10": 0.99115002
+        }
+      },
+      "name": "SIFT1M_stock_off_r2",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6920ca4e79c30fbf9efdedb5286e585c2e6454744e8633ca69b5b7a74bff7fad",
+      "stem": "SIFT1M_stock_off_r2_calibration"
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.5150360109983,
+      "graph_sha256": "8c8b808a19590e8685c4894f1eb6bfdf187b4d07aec4d2d6249868747eae5538",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3194.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 177.79149797233006,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5624.56591797,
+          "recall_at10": 0.99743998
+        },
+        "136": {
+          "avg_cmps_sift_only": 3256.0,
+          "avg_visited": 137.0,
+          "latency_us_proxy": 189.3079113514837,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5282.39941406,
+          "recall_at10": 0.99787003
+        },
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.37270453581976,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5041.01611328,
+          "recall_at10": 0.99811
+        },
+        "152": {
+          "avg_cmps_sift_only": 3537.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 207.10621049625394,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4828.44042969,
+          "recall_at10": 0.99838001
+        },
+        "160": {
+          "avg_cmps_sift_only": 3668.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 215.78250977384087,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4634.29589844,
+          "recall_at10": 0.99857998
+        },
+        "64": {
+          "avg_cmps_sift_only": 1967.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 98.64990286255187,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10136.85742188,
+          "recall_at10": 0.98500001
+        },
+        "68": {
+          "avg_cmps_sift_only": 1995.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.60740452883296,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9559.55273438,
+          "recall_at10": 0.98719001
+        },
+        "72": {
+          "avg_cmps_sift_only": 2092.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.58939294545692,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9124.97070312,
+          "recall_at10": 0.98887998
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.56040353902146,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8729.01953125,
+          "recall_at10": 0.99013001
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.4970946101195,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8368.40429688,
+          "recall_at10": 0.99141002
+        }
+      },
+      "name": "SIFT1M_h17_off_r2",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "de0d3aa87c26a841993387479d2f1055a21f80d51b6bda8345bba250282ab9e7",
+      "stem": "SIFT1M_h17_off_r2_calibration"
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.478403020999394,
+      "graph_sha256": "7a5246e98eaf88289aa2995f0d32d1c3f7b7f9dbc6032ce622efafd89974c63a",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3194.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 177.9196965358363,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5620.51318359,
+          "recall_at10": 0.99743003
+        },
+        "136": {
+          "avg_cmps_sift_only": 3256.0,
+          "avg_visited": 137.0,
+          "latency_us_proxy": 188.49020633226175,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5305.31542969,
+          "recall_at10": 0.99787003
+        },
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.39849403157885,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5040.36083984,
+          "recall_at10": 0.99811
+        },
+        "152": {
+          "avg_cmps_sift_only": 3537.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 206.93490603861923,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4832.4375,
+          "recall_at10": 0.99838001
+        },
+        "160": {
+          "avg_cmps_sift_only": 3668.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 215.24988693617672,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4645.76318359,
+          "recall_at10": 0.99858999
+        },
+        "64": {
+          "avg_cmps_sift_only": 1967.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 99.00990099009901,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10100.0,
+          "recall_at10": 0.98500001
+        },
+        "68": {
+          "avg_cmps_sift_only": 1995.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.86749009493785,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9535.84375,
+          "recall_at10": 0.98724997
+        },
+        "72": {
+          "avg_cmps_sift_only": 2092.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.4979061199043,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9132.59472656,
+          "recall_at10": 0.98886001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.39150089028601,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8741.90820312,
+          "recall_at10": 0.99013001
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.11130404664426,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8395.50878906,
+          "recall_at10": 0.99141997
+        }
+      },
+      "name": "SIFT1M_fast_off_r2",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "07248a79373e5b43b1a0428477390f6deb02ca4f465aeb8bd1100aa38e40717e",
+      "stem": "SIFT1M_fast_off_r2_calibration"
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.465927296987502,
+      "graph_sha256": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3191.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 177.34800137536823,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5638.63134766,
+          "recall_at10": 0.99743003
+        },
+        "136": {
+          "avg_cmps_sift_only": 3263.0,
+          "avg_visited": 138.0,
+          "latency_us_proxy": 188.909900400894,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5293.52880859,
+          "recall_at10": 0.99785
+        },
+        "144": {
+          "avg_cmps_sift_only": 3399.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.15520215928004,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5046.54931641,
+          "recall_at10": 0.99809998
+        },
+        "152": {
+          "avg_cmps_sift_only": 3535.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 206.85289082996474,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4834.35351562,
+          "recall_at10": 0.99835998
+        },
+        "160": {
+          "avg_cmps_sift_only": 3666.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 215.66160251517957,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4636.89404297,
+          "recall_at10": 0.99852002
+        },
+        "64": {
+          "avg_cmps_sift_only": 1965.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 98.62650076741362,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10139.26269531,
+          "recall_at10": 0.98506999
+        },
+        "68": {
+          "avg_cmps_sift_only": 1993.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.46819871734016,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9572.29101562,
+          "recall_at10": 0.98712999
+        },
+        "72": {
+          "avg_cmps_sift_only": 2089.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 109.21730019100228,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9156.05859375,
+          "recall_at10": 0.98873001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2180.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.15789821039657,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8759.796875,
+          "recall_at10": 0.99006999
+        },
+        "80": {
+          "avg_cmps_sift_only": 2276.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.08149558454242,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8397.61035156,
+          "recall_at10": 0.99131
+        }
+      },
+      "name": "SIFT1M_stock_off_r3",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "694f72488c9e23efc8dc8d5d3289729baa02fe1b6a4bac02798b4140140d01f0",
+      "stem": "SIFT1M_stock_off_r3_calibration"
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.715774943004362,
+      "graph_sha256": "c24eadfb4472b9337efafb2258c22c8185323484266c7781a6293e7e38b726f6",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3194.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 180.67819607634314,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5534.70214844,
+          "recall_at10": 0.99733001
+        },
+        "136": {
+          "avg_cmps_sift_only": 3270.0,
+          "avg_visited": 138.0,
+          "latency_us_proxy": 192.59531210973117,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5192.234375,
+          "recall_at10": 0.99782997
+        },
+        "144": {
+          "avg_cmps_sift_only": 3407.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 201.49099400200583,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4963.00097656,
+          "recall_at10": 0.99804997
+        },
+        "152": {
+          "avg_cmps_sift_only": 3542.0,
+          "avg_visited": 151.0,
+          "latency_us_proxy": 210.8969029255437,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4741.65332031,
+          "recall_at10": 0.99829
+        },
+        "160": {
+          "avg_cmps_sift_only": 3673.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 219.5307080904503,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4555.17138672,
+          "recall_at10": 0.99849999
+        },
+        "64": {
+          "avg_cmps_sift_only": 1967.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 98.46220118794109,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 10156.18164062,
+          "recall_at10": 0.98488998
+        },
+        "68": {
+          "avg_cmps_sift_only": 1995.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 104.79640024365163,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9542.3125,
+          "recall_at10": 0.98719001
+        },
+        "72": {
+          "avg_cmps_sift_only": 2091.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 110.3420928144491,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9062.72460938,
+          "recall_at10": 0.98887998
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 84.0,
+          "latency_us_proxy": 116.40089787829832,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8590.99902344,
+          "recall_at10": 0.99019003
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 121.1866014483562,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8251.73730469,
+          "recall_at10": 0.99142998
+        }
+      },
+      "name": "SIFT1M_h17_off_r3",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2601c1e25d8d50adcd7ea61de2478bda338a788ae4fef06ee8276645f57d3dc7",
+      "stem": "SIFT1M_h17_off_r3_calibration"
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        64,
+        68,
+        72,
+        76,
+        80,
+        128,
+        136,
+        144,
+        152,
+        160
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 16.60429442799068,
+      "graph_sha256": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75",
+      "metrics": {
+        "128": {
+          "avg_cmps_sift_only": 3192.0,
+          "avg_visited": 130.0,
+          "latency_us_proxy": 178.94350461731543,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5588.35595703,
+          "recall_at10": 0.99746001
+        },
+        "136": {
+          "avg_cmps_sift_only": 3263.0,
+          "avg_visited": 138.0,
+          "latency_us_proxy": 189.5274076713703,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5276.28173828,
+          "recall_at10": 0.99795002
+        },
+        "144": {
+          "avg_cmps_sift_only": 3400.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.48009602245034,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5038.28857422,
+          "recall_at10": 0.99821001
+        },
+        "152": {
+          "avg_cmps_sift_only": 3534.0,
+          "avg_visited": 150.0,
+          "latency_us_proxy": 207.21699980740047,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4825.85888672,
+          "recall_at10": 0.99843001
+        },
+        "160": {
+          "avg_cmps_sift_only": 3666.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 216.05738940026026,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 4628.39990234,
+          "recall_at10": 0.99856001
+        },
+        "64": {
+          "avg_cmps_sift_only": 1966.0,
+          "avg_visited": 72.0,
+          "latency_us_proxy": 100.72899660243674,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9927.62792969,
+          "recall_at10": 0.98512
+        },
+        "68": {
+          "avg_cmps_sift_only": 1994.0,
+          "avg_visited": 76.0,
+          "latency_us_proxy": 106.39849811869999,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9398.62890625,
+          "recall_at10": 0.98729998
+        },
+        "72": {
+          "avg_cmps_sift_only": 2090.0,
+          "avg_visited": 80.0,
+          "latency_us_proxy": 111.0279004222547,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 9006.74511719,
+          "recall_at10": 0.98892999
+        },
+        "76": {
+          "avg_cmps_sift_only": 2181.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 116.25019994690436,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8602.13574219,
+          "recall_at10": 0.99023998
+        },
+        "80": {
+          "avg_cmps_sift_only": 2277.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 120.78150825668888,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8279.41308594,
+          "recall_at10": 0.99141002
+        }
+      },
+      "name": "SIFT1M_fast_off_r3",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "583c1042103a122e1ad202dc019ca854f8236db42eb50d891949d6ac1606d8d9",
+      "stem": "SIFT1M_fast_off_r3_calibration"
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1173.6962146110018,
+      "graph_sha256": "db4f5257f06d7ca6df0a040d19590d201bc3e9b1eab7bf0f36265732969716cc",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 713.8360812059456,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1400.88183594,
+          "recall_at10": 0.98869997
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 743.6895553630718,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1344.64709473,
+          "recall_at10": 0.98950899
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 786.7374807256228,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1271.07202148,
+          "recall_at10": 0.99047297
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 813.5880324667352,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1229.12329102,
+          "recall_at10": 0.99109298
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1677.758193907204,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 596.03344727,
+          "recall_at10": 0.997904
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1701.5800059481828,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 587.68908691,
+          "recall_at10": 0.99797398
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1725.0682936174094,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.68719482,
+          "recall_at10": 0.99804097
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1752.0373154895217,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 570.76409912,
+          "recall_at10": 0.99812001
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1777.1676477528101,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 562.69311523,
+          "recall_at10": 0.99819601
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r1",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "de92e5023090b201baea48dea9ab40b5681437a2810155a8ba4ec0e07bad9aa3",
+      "stem": "MS-Turing1M_stock_off_r1_calibration"
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1173.5176338250167,
+      "graph_sha256": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 713.893374203105,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1400.76940918,
+          "recall_at10": 0.98873198
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 742.9198163539776,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1346.0402832,
+          "recall_at10": 0.98953003
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.4919483744374,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.08752441,
+          "recall_at10": 0.99049598
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.4882668237915,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1227.76477051,
+          "recall_at10": 0.99112898
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1674.3136938839305,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 597.25964355,
+          "recall_at10": 0.99787903
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1701.9674635889253,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 587.55529785,
+          "recall_at10": 0.99795198
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1727.8951181055188,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.73883057,
+          "recall_at10": 0.99802899
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1753.9260205836501,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 570.1494751,
+          "recall_at10": 0.99809802
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1774.8858847055353,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 563.41650391,
+          "recall_at10": 0.99816602
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r1",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2e4967e04993f23efe0e075959fb1135926b2070836d8ffdca77840ee9b628b8",
+      "stem": "MS-Turing1M_h17_off_r1_calibration"
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1173.8837795120198,
+      "graph_sha256": "104a1bc69711e494dbf562772b867752dd915e53ff7ed4142763cdc98fb354e9",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 712.4196875498233,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1403.66699219,
+          "recall_at10": 0.98874003
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 742.913752719961,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1346.05126953,
+          "recall_at10": 0.98955297
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.2095355393463,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.54541016,
+          "recall_at10": 0.99049503
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.7861405187474,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1227.31591797,
+          "recall_at10": 0.99112803
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1678.0020223252852,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 595.94683838,
+          "recall_at10": 0.99791002
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1701.5093210084858,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 587.71350098,
+          "recall_at10": 0.99797702
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1727.8324340010954,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.75982666,
+          "recall_at10": 0.99805099
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1752.6351839241374,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 570.56939697,
+          "recall_at10": 0.99812198
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1778.1185066624475,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 562.39221191,
+          "recall_at10": 0.99818999
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r1",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3a3cd9cdd80723d725e87d59ee75fd1ce7fe37afb2a74d8be541bd441170e62c",
+      "stem": "MS-Turing1M_fast_off_r1_calibration"
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1175.4516674299957,
+      "graph_sha256": "5de325e9bbb0b46208c4878b3af77ae79c7c1821096eb11064efab5c15d0ae84",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 713.8364544195048,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1400.88110352,
+          "recall_at10": 0.98865998
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 743.7667993281665,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1344.50744629,
+          "recall_at10": 0.98943102
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 783.713379791886,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1275.97668457,
+          "recall_at10": 0.99038303
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.1269308576227,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1228.30969238,
+          "recall_at10": 0.990991
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1676.0989860061527,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 596.62347412,
+          "recall_at10": 0.997832
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1698.784835911436,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 588.65606689,
+          "recall_at10": 0.99790698
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1727.5646199738037,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.84954834,
+          "recall_at10": 0.99798501
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1766.245056160248,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 566.17285156,
+          "recall_at10": 0.99806398
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 740.0,
+          "latency_us_proxy": 1784.8682521388414,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 560.26544189,
+          "recall_at10": 0.99814701
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r2",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "482cd990764d8c7147032450234531e6ff7525fb2638dfed80339df58bbc33f2",
+      "stem": "MS-Turing1M_stock_off_r2_calibration"
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1174.4722592420003,
+      "graph_sha256": "96b10e9be21f1d0d8c22aca692acf426e5e2375d078f97081f2095088b9c11f2",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 714.5462051569373,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1399.48962402,
+          "recall_at10": 0.98869401
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 744.1135143686871,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1343.88098145,
+          "recall_at10": 0.98948598
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.6842799821095,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1272.77587891,
+          "recall_at10": 0.99043602
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 816.2058305337773,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1225.18115234,
+          "recall_at10": 0.99108601
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1679.4833538628875,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 595.42120361,
+          "recall_at10": 0.997877
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1699.6464187584954,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 588.35766602,
+          "recall_at10": 0.997953
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1727.238800476067,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.95874023,
+          "recall_at10": 0.99803603
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1750.6865867209183,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.20446777,
+          "recall_at10": 0.99809599
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1781.615326164874,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 561.28839111,
+          "recall_at10": 0.99817997
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r2",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "32786c6ec6c3fb44a741fdf38e1d04f93dc552c1b80a6a3ccc81c4f58a5a8f34",
+      "stem": "MS-Turing1M_h17_off_r2_calibration"
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1174.4198577619973,
+      "graph_sha256": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 716.144325110539,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1396.36657715,
+          "recall_at10": 0.98870403
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 744.223298239825,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1343.68273926,
+          "recall_at10": 0.98953497
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 788.1376054417103,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1268.81396484,
+          "recall_at10": 0.99045801
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 815.0030602426436,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1226.98925781,
+          "recall_at10": 0.991063
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1675.37776526667,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 596.88031006,
+          "recall_at10": 0.99790001
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1703.210214449527,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 587.12658691,
+          "recall_at10": 0.99797201
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1726.6543090353891,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.15472412,
+          "recall_at10": 0.998043
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1751.4029716837447,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 570.9708252,
+          "recall_at10": 0.99811703
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1778.2590036853621,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 562.34777832,
+          "recall_at10": 0.9982
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r2",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2aff483de6788058c5b1b2d6c9bc6ea56e53365019685d8026d64411dd562d58",
+      "stem": "MS-Turing1M_fast_off_r2_calibration"
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1174.190633508988,
+      "graph_sha256": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 716.5323124861536,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1395.61047363,
+          "recall_at10": 0.98873001
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 748.3011590643573,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1336.36035156,
+          "recall_at10": 0.989501
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.2302333962683,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.51184082,
+          "recall_at10": 0.99044299
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.525276529605,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1227.70898438,
+          "recall_at10": 0.99106097
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1673.9612990350122,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 597.38537598,
+          "recall_at10": 0.997904
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1700.3756310757028,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 588.10534668,
+          "recall_at10": 0.99798501
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1726.5600556640115,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.18634033,
+          "recall_at10": 0.99804401
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1751.0780180820798,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.07678223,
+          "recall_at10": 0.99811703
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1779.8301057580322,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 561.85137939,
+          "recall_at10": 0.99819303
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r3",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1acc680d08647b3b425ac35d64bf6d9e4f17cbe53d2cececb91e9ffdfca0db3b",
+      "stem": "MS-Turing1M_stock_off_r3_calibration"
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1173.629682565981,
+      "graph_sha256": "1c1fa1af7f1344c3d0506736595a58c63a2acf7cf645f7ca45a83992fdb5307f",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 713.4413144887075,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1401.65698242,
+          "recall_at10": 0.98868501
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 341.0,
+          "latency_us_proxy": 744.4361305266503,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1343.29858398,
+          "recall_at10": 0.989519
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 358.0,
+          "latency_us_proxy": 785.0436158206081,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.8145752,
+          "recall_at10": 0.99041897
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 815.7946284854459,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1225.79870605,
+          "recall_at10": 0.99103397
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1677.0942540473732,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 596.26940918,
+          "recall_at10": 0.99786198
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1701.2192209619514,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 587.8137207,
+          "recall_at10": 0.997949
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1725.8971157064007,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.40881348,
+          "recall_at10": 0.99801701
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1750.7939696889057,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.16943359,
+          "recall_at10": 0.99808502
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1777.2503494317004,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 562.66693115,
+          "recall_at10": 0.99815297
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r3",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2c67b8104e6005a0114cb7634b1c1655595b799fbdac767d8011b4b3b7f24500",
+      "stem": "MS-Turing1M_h17_off_r3_calibration"
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        336,
+        352,
+        368,
+        384,
+        832,
+        848,
+        864,
+        880,
+        896
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 1173.1608751640015,
+      "graph_sha256": "7c80157e8165e2792151e4934078fd7bd2fa2deebad2ad9864ba6aaf24da0462",
+      "metrics": {
+        "336": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 328.0,
+          "latency_us_proxy": 714.1706379609394,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1400.22558594,
+          "recall_at10": 0.98872697
+        },
+        "352": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 340.0,
+          "latency_us_proxy": 744.7529328519167,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1342.72717285,
+          "recall_at10": 0.98951399
+        },
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.6092460150353,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.51977539,
+          "recall_at10": 0.99044299
+        },
+        "384": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.4221922112691,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1227.86437988,
+          "recall_at10": 0.99103701
+        },
+        "832": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 700.0,
+          "latency_us_proxy": 1675.6502067924878,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 596.78326416,
+          "recall_at10": 0.99789798
+        },
+        "848": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 710.0,
+          "latency_us_proxy": 1698.9645171991817,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 588.59381104,
+          "recall_at10": 0.99796802
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1728.5916915472358,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.50561523,
+          "recall_at10": 0.99804598
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1750.1724909013521,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.37225342,
+          "recall_at10": 0.99812001
+        },
+        "896": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 740.0,
+          "latency_us_proxy": 1774.8960753159047,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 563.41326904,
+          "recall_at10": 0.998191
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r3",
+      "status": "CALIBRATED_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a6c1d565e738f859964595547ca4c0904792bf36ddd238414b3e8cd95891e295",
+      "stem": "MS-Turing1M_fast_off_r3_calibration"
+    }
+  ],
+  "status": "CALIBRATION_18_FROZEN_GRAPHS_NATIVE_COMPLETE"
+}

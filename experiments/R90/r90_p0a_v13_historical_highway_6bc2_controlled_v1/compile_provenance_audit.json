@@ -1,0 +1,58 @@
+{
+  "highway_commit": {
+    "expected_commit_prefix": "6bc2d477",
+    "git_blobs": {
+      "sorting_networks-inl.h": {
+        "git_blob_sha1": "54b15230730ef3785ae1eaa09ce97485ce917021",
+        "sha256": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b"
+      },
+      "traits-inl.h": {
+        "git_blob_sha1": "b02ed8b9ab0d2e7d3d70f48c74f006531ff54753",
+        "sha256": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+      }
+    },
+    "git_head": "6bc2d47793bae9c521fb4150936669647700765d",
+    "source_root": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+  },
+  "per_arm": {
+    "fast_off": {
+      "compile_commands_sha256": "0530321bbcb14f60a4c4db136207f03eeb452794233ed136b978b63dae69f20a",
+      "elf_sha256": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "highway_sort_compile_units": 50,
+      "highway_source": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+    },
+    "fast_on": {
+      "compile_commands_sha256": "c530ef97673e3075885ae5b2a7fe962ac97e6065a7cb40721bcf3a04d07341f3",
+      "elf_sha256": "fa11cdde5931317c66c05a3f7b80631452e067dec7532cafc08ed6725eeb89a8",
+      "highway_sort_compile_units": 50,
+      "highway_source": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+    },
+    "h17_off": {
+      "compile_commands_sha256": "c90ee10a82d4dbcb2fcf5d04af070b8ee654d00709db712a3d5f35a400e91f23",
+      "elf_sha256": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "highway_sort_compile_units": 50,
+      "highway_source": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+    },
+    "h17_on": {
+      "compile_commands_sha256": "44a899c7513ec267af344078b9d3a969c61538a3fbe805891e1715230726b3d1",
+      "elf_sha256": "5afcfb5e2fbc7b7da9ec944b5c8dc3a53944c805b5c92ef1393618cb99ccc4b2",
+      "highway_sort_compile_units": 50,
+      "highway_source": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+    },
+    "stock_off": {
+      "compile_commands_sha256": "2e416d882d1f95e1967a0d86c0c3b781e8af7316d382d59e7bc5bf22f16ff4b0",
+      "elf_sha256": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "highway_sort_compile_units": 50,
+      "highway_source": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+    },
+    "stock_on": {
+      "compile_commands_sha256": "799418472b0e5b93b6d6bd3c9adb5f088a1439b46fa5a8b939f433822c58507e",
+      "elf_sha256": "dcf4faf194dc62f918a0df6868e5a915f50aaa65793479e2825ce22e1c076ad0",
+      "highway_sort_compile_units": 50,
+      "highway_source": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+    }
+  },
+  "six_binary_compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "source_manifest_sha256": "5f42250caa47659daf978a73355857e355cc86096571d327518e676d41f1423b",
+  "status": "SIX_HISTORICAL_HWY_COMPILER_SOURCE_MACRO_PROVENANCE_PASS"
+}

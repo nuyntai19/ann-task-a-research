@@ -1,0 +1,39 @@
+{
+  "arm": "stock",
+  "beams_tested": [
+    80,
+    144
+  ],
+  "build_rep": 3,
+  "dataset": "SIFT1M",
+  "elapsed_external_s": 3.6790334940014873,
+  "graph_sha256": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93",
+  "metrics": {
+    "144": {
+      "avg_cmps_sift_only": 3399.0,
+      "avg_visited": 144.0,
+      "latency_us_proxy": 198.04301014564555,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 5049.40820312,
+      "recall_at10": 0.99809998
+    },
+    "80": {
+      "avg_cmps_sift_only": 2276.0,
+      "avg_visited": 87.0,
+      "latency_us_proxy": 119.35599978366724,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 8378.296875,
+      "recall_at10": 0.99131
+    }
+  },
+  "name": "SIFT1M_stock_off_r3",
+  "repeat": 2,
+  "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "a613811b9888e1fcd930f24304138bc3fff8f309ff7e6a29dac3c18d4c5b4856",
+  "stem": "SIFT1M_stock_off_r3_timing_r2",
+  "target_beams": {
+    "0.99": 80,
+    "0.998": 144
+  }
+}

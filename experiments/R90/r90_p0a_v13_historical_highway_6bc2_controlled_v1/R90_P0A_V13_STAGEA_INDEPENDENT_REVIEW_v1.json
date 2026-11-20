@@ -1,0 +1,84 @@
+{
+  "audited_relation": {
+    "six_compiler_sha_one": "PASS",
+    "six_pilot_arm_mode_unique": "PASS",
+    "six_pilot_graph_hash_one": "PASS",
+    "stageA_commit_equals_compile_provenance_commit": "PASS",
+    "stageA_report_links_probe_SHA": "PASS",
+    "uploaded_probe_case_totals_match_summary": "PASS"
+  },
+  "caveats": [
+    "Original Ubuntu ELF and graph bytes were not uploaded; their SHA checks were performed by native runner and reported in uploaded artifacts.",
+    "Stage A is SIFT10K six single-build pilot; identical graph SHA does not establish invariance on other runs or SIFT1M.",
+    "12 Highway ON bitwise mismatches in zero12_and45 are order-only under FTZ/DAZ, no multiset bit loss. H17/Fast ON bitwise mismatches remain 21 of 63.",
+    "User-reported objdump opcode tallies have not been independently reproduced; no disassembly artifact uploaded.",
+    "Stage B duplicate-pair grouping checks each duplicate vector against one representative, not every pair in a duplicate equivalence class.",
+    "No SIFT1M native v1.3 graph or Recall result has yet been supplied; Stage B is appropriate only as a gated pilot."
+  ],
+  "compile_units_hwy_sort_each": {
+    "fast_off": 50,
+    "fast_on": 50,
+    "h17_off": 50,
+    "h17_on": 50,
+    "stock_off": 50,
+    "stock_on": 50
+  },
+  "compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "native_6_ELF_sha256": {
+    "fast_off": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "fast_on": "fa11cdde5931317c66c05a3f7b80631452e067dec7532cafc08ed6725eeb89a8",
+    "h17_off": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+    "h17_on": "5afcfb5e2fbc7b7da9ec944b5c8dc3a53944c805b5c92ef1393618cb99ccc4b2",
+    "stock_off": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+    "stock_on": "dcf4faf194dc62f918a0df6868e5a915f50aaa65793479e2825ce22e1c076ad0"
+  },
+  "native_highway_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+  "native_pilot_sift10k": {
+    "arcs": 105127,
+    "arms_and_modes": [
+      "fast_off",
+      "fast_on",
+      "h17_off",
+      "h17_on",
+      "stock_off",
+      "stock_on"
+    ],
+    "buckets_pass_1_2": [
+      493,
+      498
+    ],
+    "graph_count": 6,
+    "unique_graph_sha256": [
+      "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+    ]
+  },
+  "native_probe_by_mode": {
+    "off": {
+      "cases": 63,
+      "fast_bitwise_top2_mismatch_count": 0,
+      "h17_bitwise_top2_mismatch_count": 0,
+      "highway_bitwise_top2_mismatch_count": 0,
+      "highway_mismatch_kinds": {},
+      "index12_lost": 0,
+      "raw_bit_mutation_count": 0
+    },
+    "on": {
+      "cases": 63,
+      "fast_bitwise_top2_mismatch_count": 21,
+      "h17_bitwise_top2_mismatch_count": 21,
+      "highway_bitwise_top2_mismatch_count": 12,
+      "highway_mismatch_kinds": {
+        "zero12_and45": 12
+      },
+      "index12_lost": 0,
+      "raw_bit_mutation_count": 0
+    }
+  },
+  "status": "INDEPENDENT_UPLOADED_STAGEA_METADATA_AND_CASES_PASS",
+  "uploaded_file_sha256": {
+    "R90_P0A_V13_H85_HIGHWAY_STAGEA_6ELF_PILOT.log": "492b31333c7bd0cd6afae27465c134071de1fc1f9dd1f58678ba223e71184d15",
+    "compile_provenance_audit.json": "81dd161594fb92c8dc3c8bea54c004afdbdc6f7ba71d8ed5b187ecd01d64d89e",
+    "probe_report.json": "277e30167756f11953812d2079f6151c6fca1bcf4b16c7e26e3d54dce2de466f",
+    "stageA_audit.json": "58406df0aaa4813a8562623726a627e133efdf08ddb2eaec1c5501f6157e230a"
+  }
+}

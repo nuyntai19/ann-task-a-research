@@ -1,0 +1,8 @@
+R90_P0A_V13_H85HWY_SELFTEST_PASS_GRAPH_INVALID_ID_PROBE126_RECALL_PARSER_NO_1M
+R90_P0A_V13_H85HWY_STAGEB_PREFLIGHT_PASS_H85_6ELF_STAGEA_GATE_SIFT1M_QUERY_GT_EVAL_RESOURCE
+R90_P0A_V13_H85HWY_STAGEB_PREFLIGHT_PASS_H85_6ELF_STAGEA_GATE_SIFT1M_QUERY_GT_EVAL_RESOURCE
+R90_P0A_UNIFIED_V11_BUILD_START SIFT1M_stock_off_r1 CPU 4 TIMING_OFF
+R90_P0A_UNIFIED_V11_BUILD_PASS SIFT1M_stock_off_r1 graph_sha c60d2fed5d6b5c2a59b7f7fa1549f89436bc36fa4315d410d87c0f4be5a8735b
+R90_P0A_V13_H85HWY_STAGEB_STOCK_SIFT1M_QUALITY STAGEB_STOCK_SIFT1M_QUALITY_PASS_READY_FOR_REVIEW v0 {'degree': 37, 'has_2': True, 'has_6': True, 'nearest': [{'id': 2, 'squared_l2': 18724.0}, {'id': 6, 'squared_l2': 24320.0}, {'id': 631203, 'squared_l2': 45468.0}, {'id': 246710, 'squared_l2': 47026.0}, {'id': 10336, 'squared_l2': 47909.0}], 'mean_neighbor_l2_squared': 59871.189} duplicate {'detected_pairs': 14538, 'both_directions_direct_neighbors': 14538, 'at_least_one_direct_neighbor': 14538, 'one_endpoint_first_neighbor': 14538, 'either_end_retention_ratio': 1.0} big_inv_first10000 0 Recall80 0.99146003 Recall160 0.99862999
+R90_P0A_V13_H85HWY_STAGEB_REPORT /home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/stageB_stock_sift1m_quality.json sha256 5827a3f5e52d552521cd4f64ce42324a0f13d6549be5cb37e5f2e987fdf9f785
+R90_P0A_V13_STAGEB_ONE_STOCK_SIFT1M_SEQUENCE_COMPLETE__FULL_MATRIX_NOT_RUN

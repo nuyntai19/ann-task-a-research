@@ -1,0 +1,123 @@
+{
+  "calibration_manifest_sha256": "fa968ba03bc44ee0313752fe70cd21f8fbaff81d2e04f8cdfb7ce0a9ed26010b",
+  "limits": [
+    "not exact same Recall across arms",
+    "selected using same query/GT as timing",
+    "not continuous minimal beam"
+  ],
+  "selected": {
+    "MS-Turing1M": {
+      "fast": {
+        "0.99": {
+          "beam": 368,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99049503,
+          "recall_mean": 0.9904653433333334,
+          "recall_min": 0.99044299,
+          "target": 0.99
+        },
+        "0.998": {
+          "beam": 864,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99805099,
+          "recall_mean": 0.9980466566666667,
+          "recall_min": 0.998043,
+          "target": 0.998
+        }
+      },
+      "h17": {
+        "0.99": {
+          "beam": 368,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99049598,
+          "recall_mean": 0.9904503233333334,
+          "recall_min": 0.99041897,
+          "target": 0.99
+        },
+        "0.998": {
+          "beam": 864,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99803603,
+          "recall_mean": 0.9980273433333333,
+          "recall_min": 0.99801701,
+          "target": 0.998
+        }
+      },
+      "stock": {
+        "0.99": {
+          "beam": 368,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99047297,
+          "recall_mean": 0.9904329966666667,
+          "recall_min": 0.99038303,
+          "target": 0.99
+        },
+        "0.998": {
+          "beam": 880,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99812001,
+          "recall_mean": 0.9981003399999999,
+          "recall_min": 0.99806398,
+          "target": 0.998
+        }
+      }
+    },
+    "SIFT1M": {
+      "fast": {
+        "0.99": {
+          "beam": 76,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99023998,
+          "recall_mean": 0.99015999,
+          "recall_min": 0.99010998,
+          "target": 0.99
+        },
+        "0.998": {
+          "beam": 144,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99821001,
+          "recall_mean": 0.9981433366666667,
+          "recall_min": 0.99811,
+          "target": 0.998
+        }
+      },
+      "h17": {
+        "0.99": {
+          "beam": 76,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99019003,
+          "recall_mean": 0.9901500166666667,
+          "recall_min": 0.99013001,
+          "target": 0.99
+        },
+        "0.998": {
+          "beam": 144,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99811,
+          "recall_mean": 0.99808999,
+          "recall_min": 0.99804997,
+          "target": 0.998
+        }
+      },
+      "stock": {
+        "0.99": {
+          "beam": 80,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99141997,
+          "recall_mean": 0.99129333,
+          "recall_min": 0.99115002,
+          "target": 0.99
+        },
+        "0.998": {
+          "beam": 144,
+          "min_among_preselected_grid_only": true,
+          "recall_max": 0.99811,
+          "recall_mean": 0.99808665,
+          "recall_min": 0.99804997,
+          "target": 0.998
+        }
+      }
+    }
+  },
+  "status": "MINIMUM_TESTED_BEAM_ALL_3_BUILD_REPS_THRESHOLD_QUALIFIED"
+}

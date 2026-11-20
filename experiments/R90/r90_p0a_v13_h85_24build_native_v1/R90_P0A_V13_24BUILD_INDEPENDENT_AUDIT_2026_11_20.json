@@ -1,0 +1,260 @@
+{
+  "caveats": [
+    "Uploaded graph bytes not available locally, native graph structural scan only verifiable via audited receipts.",
+    "FTZ/DAZ simultaneous-subnormal tie-order mismatch remains possible from prior native probe; not numerically universally safe.",
+    "ON 1CPU timing excluded from performance comparison.",
+    "Only three OFF timings/arm/dataset, no formal statistical equivalence test.",
+    "Stock SIMD internal comparator/assignment counts not measured.",
+    "H17/Fast shared r86_work_jsonl SHA does not imply identical D6 instrumented counters; D6 rows from stdout differ because algorithmic work differs."
+  ],
+  "cross_manifest_graph_and_elf_sha_24_pass": true,
+  "full_structural_graph_24_zero_invalid_selfloops_duplicate_rows_as_native_audit": true,
+  "highway_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+  "log_build_records": 24,
+  "log_graph_audits": 24,
+  "ms_turing_geometry": "NOT PRESENT IN USER UPLOADED JSON: user Gemini reports independent MS graph scan, but full graph bytes/scan artifact not supplied. Native structural 24/24 audit is supported.",
+  "native_audit_status": "V13_H85_24GRAPH_BUILD_WORK_AND_FULL_STRUCTURAL_AUDIT_PASS__NEW_SEARCH_QUALITY_PENDING",
+  "off_groups": [
+    {
+      "all_major_faults_zero": true,
+      "arcs_mean": 26025813.333333332,
+      "arm": "stock",
+      "buckets_s_mean": 10.045433333333333,
+      "dataset": "SIFT1M",
+      "leaf_s_mean": 27.313133333333333,
+      "n": 3,
+      "prune_s_mean": 2.6903,
+      "rss_GiB_mean": 2.6713155110677085,
+      "rss_KiB_mean": 2801077.3333333335,
+      "wall_s_max": 40.56,
+      "wall_s_mean": 40.5,
+      "wall_s_min": 40.43,
+      "wall_s_std_sample": 0.06557438524302105
+    },
+    {
+      "all_major_faults_zero": true,
+      "arcs_mean": 26037843,
+      "arm": "h17",
+      "buckets_s_mean": 10.023733333333334,
+      "dataset": "SIFT1M",
+      "leaf_s_mean": 21.589066666666668,
+      "n": 3,
+      "prune_s_mean": 2.7010666666666667,
+      "rss_GiB_mean": 2.6619275410970054,
+      "rss_KiB_mean": 2791233.3333333335,
+      "wall_s_max": 34.8,
+      "wall_s_mean": 34.766666666666666,
+      "wall_s_min": 34.73,
+      "wall_s_std_sample": 0.035118845842842895
+    },
+    {
+      "all_major_faults_zero": true,
+      "arcs_mean": 26037236,
+      "arm": "fast",
+      "buckets_s_mean": 10.038566666666666,
+      "dataset": "SIFT1M",
+      "leaf_s_mean": 19.0649,
+      "n": 3,
+      "prune_s_mean": 2.6959666666666666,
+      "rss_GiB_mean": 2.6769332885742188,
+      "rss_KiB_mean": 2806968,
+      "wall_s_max": 32.31,
+      "wall_s_mean": 32.27,
+      "wall_s_min": 32.25,
+      "wall_s_std_sample": 0.03464101615137886
+    },
+    {
+      "all_major_faults_zero": true,
+      "arcs_mean": 52846610.333333336,
+      "arm": "stock",
+      "buckets_s_mean": 9.383899999999999,
+      "dataset": "MS-Turing1M",
+      "leaf_s_mean": 26.914533333333335,
+      "n": 3,
+      "prune_s_mean": 5.479633333333333,
+      "rss_GiB_mean": 2.9742762247721353,
+      "rss_KiB_mean": 3118754.6666666665,
+      "wall_s_max": 42.57,
+      "wall_s_mean": 42.25666666666667,
+      "wall_s_min": 41.99,
+      "wall_s_std_sample": 0.2928025500799692
+    },
+    {
+      "all_major_faults_zero": true,
+      "arcs_mean": 52854063.333333336,
+      "arm": "h17",
+      "buckets_s_mean": 9.3474,
+      "dataset": "MS-Turing1M",
+      "leaf_s_mean": 21.0376,
+      "n": 3,
+      "prune_s_mean": 5.542766666666666,
+      "rss_GiB_mean": 2.984185536702474,
+      "rss_KiB_mean": 3129145.3333333335,
+      "wall_s_max": 36.44,
+      "wall_s_mean": 36.39333333333333,
+      "wall_s_min": 36.32,
+      "wall_s_std_sample": 0.06429100507328574
+    },
+    {
+      "all_major_faults_zero": true,
+      "arcs_mean": 52857311.333333336,
+      "arm": "fast",
+      "buckets_s_mean": 9.3671,
+      "dataset": "MS-Turing1M",
+      "leaf_s_mean": 18.468466666666664,
+      "n": 3,
+      "prune_s_mean": 5.490766666666667,
+      "rss_GiB_mean": 2.9711926778157554,
+      "rss_KiB_mean": 3115521.3333333335,
+      "wall_s_max": 33.84,
+      "wall_s_mean": 33.79333333333334,
+      "wall_s_min": 33.74,
+      "wall_s_std_sample": 0.050332229568472005
+    }
+  ],
+  "off_improvements": [
+    {
+      "comparison": "stock_to_h17",
+      "dataset": "SIFT1M",
+      "leaf_reduction_pct": 20.957195195473723,
+      "rss_change_pct": -0.35143620930613295,
+      "wall_reduction_pct": 14.15637860082305
+    },
+    {
+      "comparison": "h17_to_fast",
+      "dataset": "SIFT1M",
+      "leaf_reduction_pct": 11.691874899640553,
+      "rss_change_pct": 0.5637173531413797,
+      "wall_reduction_pct": 7.181208053691268
+    },
+    {
+      "comparison": "stock_to_fast",
+      "dataset": "SIFT1M",
+      "leaf_reduction_pct": 30.198781050386014,
+      "rss_change_pct": 0.21030003693816024,
+      "wall_reduction_pct": 20.320987654320977
+    },
+    {
+      "comparison": "stock_to_h17",
+      "dataset": "MS-Turing1M",
+      "leaf_reduction_pct": 21.83553866808019,
+      "rss_change_pct": 0.33316717014399977,
+      "wall_reduction_pct": 13.875522599984237
+    },
+    {
+      "comparison": "h17_to_fast",
+      "dataset": "MS-Turing1M",
+      "leaf_reduction_pct": 12.212102774714495,
+      "rss_change_pct": -0.4353904516632645,
+      "wall_reduction_pct": 7.144165598094876
+    },
+    {
+      "comparison": "stock_to_fast",
+      "dataset": "MS-Turing1M",
+      "leaf_reduction_pct": 31.381063019236212,
+      "rss_change_pct": -0.10367385956615571,
+      "wall_reduction_pct": 20.028397885935156
+    }
+  ],
+  "on_single_cpu_graph_identical_groups": [
+    {
+      "dataset": "SIFT1M",
+      "directed_arcs": 26040599,
+      "on_graph_sha256": "b9f8b08c09b08da5f537d0b28769b836f622732485974fba0707674a8a946b7f",
+      "source_counter_jsonl_h17_fast_sha256": "773f50bb7229006184e9dc76d3827bb0b49ed62b4d41e9a952ca5b940cdbeb12",
+      "stock_h17_fast_sha_equal": true
+    },
+    {
+      "dataset": "MS-Turing1M",
+      "directed_arcs": 52855159,
+      "on_graph_sha256": "ddc76663f0db2edc2bc1895e1b61f19463d9e65fd2617418da556b457c370e88",
+      "source_counter_jsonl_h17_fast_sha256": "b5dcbb94d4019f88af1c40004f60f512749a86243dee78d0dfa26123023f50fc",
+      "stock_h17_fast_sha_equal": true
+    }
+  ],
+  "search_quality": "NOT TESTED ON NEW 18 OFF GRAPHS; no matched Recall QPS",
+  "sha256_inputs": {
+    "audit": "9550858dcb763349ed5180b3b65577e48a600e54becc0ecb9c755970a4d4bbfb",
+    "full_manifest": "0c76f3e5bc3dc0d82f70aa1aadac9b26c5b0e8f4607f31d9aa6d8b0b0a4121c3",
+    "uploaded_log": "eb12eafb1693cf1b06ab3b6a9f6473385ee864924c2678df984b369717ecbd58"
+  },
+  "sift1m_quality_diagnostics": {
+    "all_12_big_inv_first10000_zero": true,
+    "all_12_both_directions_14538": true,
+    "all_12_first_neighbor_pair_14538": true,
+    "all_12_v0_have_2_and_6": true,
+    "duplicate_representative_pairs": 14538,
+    "pair_definition": "one initial representative per vector equivalence class, not all combinatorial pairs",
+    "v0_degree_max": 39,
+    "v0_degree_min": 37
+  },
+  "source_level_on_counter_groups": [
+    {
+      "dataset": "SIFT1M",
+      "fast_candidates": 28123433514,
+      "fast_cutoff_assignments": 753382907,
+      "fast_pack": 756864595,
+      "fast_value_comparisons": 29009206525,
+      "first_assignments_equal": 417859541,
+      "h17_candidates": 28123433514,
+      "h17_pack": 28123433514,
+      "h17_value_comparisons": 55738909953,
+      "on_graph_sha_equal": true,
+      "pack_reduction_pct": 97.30877599058725,
+      "second_assignments_equal": 753382907,
+      "second_branch_hits_equal": 335523366,
+      "stock_highway_internal_comparisons_measured": false,
+      "stock_pack_calls_inferred_not_measured": 28123433514,
+      "stock_partial_sort_calls": 59999552,
+      "stock_source_q_writes": 28123433514,
+      "value_comparisons_reduction_pct": 47.955195841718
+    },
+    {
+      "dataset": "MS-Turing1M",
+      "fast_candidates": 28620360856,
+      "fast_cutoff_assignments": 730510582,
+      "fast_pack": 730511363,
+      "fast_value_comparisons": 29476080083,
+      "first_assignments_equal": 395339611,
+      "h17_candidates": 28620360856,
+      "h17_pack": 28620360856,
+      "h17_value_comparisons": 56755417959,
+      "on_graph_sha_equal": true,
+      "pack_reduction_pct": 97.44758157776037,
+      "second_assignments_equal": 730510582,
+      "second_branch_hits_equal": 335170971,
+      "stock_highway_internal_comparisons_measured": false,
+      "stock_pack_calls_inferred_not_measured": 28620360856,
+      "stock_partial_sort_calls": 59999873,
+      "stock_source_q_writes": 28620360856,
+      "value_comparisons_reduction_pct": 48.064729072573364
+    }
+  ],
+  "stage1_12_runs_per_dataset": [
+    {
+      "buckets_two_passes": [
+        90503,
+        89561
+      ],
+      "clustering_comparisons_two_passes": [
+        4804051721,
+        9667904774
+      ],
+      "dataset": "SIFT1M",
+      "same_in_all_12_graph_builds": true
+    },
+    {
+      "buckets_two_passes": [
+        89813,
+        88807
+      ],
+      "clustering_comparisons_two_passes": [
+        5104928517,
+        10204781605
+      ],
+      "dataset": "MS-Turing1M",
+      "same_in_all_12_graph_builds": true
+    }
+  ],
+  "title": "R90-P0A v1.3 historical Highway6bc2 native 24 BUILD-only independent audit from three uploaded files"
+}

@@ -1,0 +1,39 @@
+{
+  "arm": "h17",
+  "beams_tested": [
+    368,
+    864
+  ],
+  "build_rep": 1,
+  "dataset": "MS-Turing1M",
+  "elapsed_external_s": 252.75173581502168,
+  "graph_sha256": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c",
+  "metrics": {
+    "368": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 357.0,
+      "latency_us_proxy": 786.6687306470028,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 1271.18310547,
+      "recall_at10": 0.99049598
+    },
+    "864": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 720.0,
+      "latency_us_proxy": 1727.9640029919592,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 578.71575928,
+      "recall_at10": 0.99802899
+    }
+  },
+  "name": "MS-Turing1M_h17_off_r1",
+  "repeat": 3,
+  "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "ecd693e9d986c16cbe49da2c078a160df7e13541616fd3f21627ae65aa931128",
+  "stem": "MS-Turing1M_h17_off_r1_timing_r3",
+  "target_beams": {
+    "0.99": 368,
+    "0.998": 864
+  }
+}

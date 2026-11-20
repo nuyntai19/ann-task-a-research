@@ -1,0 +1,39 @@
+{
+  "arm": "fast",
+  "beams_tested": [
+    76,
+    144
+  ],
+  "build_rep": 1,
+  "dataset": "SIFT1M",
+  "elapsed_external_s": 3.622508510015905,
+  "graph_sha256": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358",
+  "metrics": {
+    "144": {
+      "avg_cmps_sift_only": 3402.0,
+      "avg_visited": 144.0,
+      "latency_us_proxy": 198.24990252048127,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 5044.13867188,
+      "recall_at10": 0.99811
+    },
+    "76": {
+      "avg_cmps_sift_only": 2182.0,
+      "avg_visited": 83.0,
+      "latency_us_proxy": 114.06759819647229,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 8766.73144531,
+      "recall_at10": 0.99010998
+    }
+  },
+  "name": "SIFT1M_fast_off_r1",
+  "repeat": 2,
+  "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "d683eb5cebe6178cc9f016c6faa13bb2d41e74c1c922ff40cfe48d78d8c74a4a",
+  "stem": "SIFT1M_fast_off_r1_timing_r2",
+  "target_beams": {
+    "0.99": 76,
+    "0.998": 144
+  }
+}

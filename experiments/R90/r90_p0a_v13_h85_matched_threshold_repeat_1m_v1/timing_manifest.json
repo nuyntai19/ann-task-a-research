@@ -1,0 +1,2114 @@
+{
+  "native_evaluator_invocations": 54,
+  "per_target_metrics": 108,
+  "rows": [
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.677118174993666,
+      "graph_sha256": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.60119977249352,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5035.21630859,
+          "recall_at10": 0.99811
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.30978821460413,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8381.54199219,
+          "recall_at10": 0.99141997
+        }
+      },
+      "name": "SIFT1M_stock_off_r1",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2d19a01ab54c2af1a4e9c884751a5cd91b969b4fa31e4b3450c4ea4cfda19ff1",
+      "stem": "SIFT1M_stock_off_r1_timing_r1",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.633074517012574,
+      "graph_sha256": "fe5729630a50951ba995750761b52cd67884efee74854a78cef81f0a51070f83",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.56919646865902,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5036.02783203,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.45430445432748,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8737.11132812,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_h17_off_r1",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8e250a5c42c4260ff9e6fa705362399f74320d4174f703c444897ab875419566",
+      "stem": "SIFT1M_h17_off_r1_timing_r1",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6300091670127586,
+      "graph_sha256": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3402.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.51239771958882,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5037.46875,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.33000440240774,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8746.61035156,
+          "recall_at10": 0.99010998
+        }
+      },
+      "name": "SIFT1M_fast_off_r1",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5ce06f6574d16d678299693f869d75c1f41ee9eef60dc409e02c275956e91606",
+      "stem": "SIFT1M_fast_off_r1_timing_r1",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.681764821987599,
+      "graph_sha256": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3405.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 198.69389807934405,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5032.8671875,
+          "recall_at10": 0.99804997
+        },
+        "80": {
+          "avg_cmps_sift_only": 2274.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.0633989344756,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8398.88671875,
+          "recall_at10": 0.99115002
+        }
+      },
+      "name": "SIFT1M_stock_off_r2",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1ef7148240ec57d665a6fa850a6bde741fac080b65f20d3e784a1c318d6b2d17",
+      "stem": "SIFT1M_stock_off_r2_timing_r1",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.636556120996829,
+      "graph_sha256": "8c8b808a19590e8685c4894f1eb6bfdf187b4d07aec4d2d6249868747eae5538",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.43249952291092,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5039.49707031,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.48760090337872,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8734.5703125,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_h17_off_r2",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "29fb0ee483047f7f47bf48527bccaa36c8811d28cac4103eddea479074e185f0",
+      "stem": "SIFT1M_h17_off_r2_timing_r1",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6316551589989103,
+      "graph_sha256": "7a5246e98eaf88289aa2995f0d32d1c3f7b7f9dbc6032ce622efafd89974c63a",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.50858791952953,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5037.56542969,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.1883992615222,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8757.45703125,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_fast_off_r2",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "61d730769288c940ebed0dbdf354cc4cc26043d5cab0c43f7b37fea1fa84b103",
+      "stem": "SIFT1M_fast_off_r2_timing_r1",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6741927309776656,
+      "graph_sha256": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3399.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 197.81789857872226,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5055.15429688,
+          "recall_at10": 0.99809998
+        },
+        "80": {
+          "avg_cmps_sift_only": 2276.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.33380041328651,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8379.85546875,
+          "recall_at10": 0.99131
+        }
+      },
+      "name": "SIFT1M_stock_off_r3",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "96b71dc354420d9ab37a4375cbf148fbd8cb30f2c54b7fe19279f686ef11be76",
+      "stem": "SIFT1M_stock_off_r3_timing_r1",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.636661684984574,
+      "graph_sha256": "c24eadfb4472b9337efafb2258c22c8185323484266c7781a6293e7e38b726f6",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3407.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 199.06509389670714,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5023.48242188,
+          "recall_at10": 0.99804997
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 84.0,
+          "latency_us_proxy": 114.46331126716767,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8736.42382812,
+          "recall_at10": 0.99019003
+        }
+      },
+      "name": "SIFT1M_h17_off_r3",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "58e93252e9d6322482d63b28453981135d79dee7acf4880c9a46be30e6bddbae",
+      "stem": "SIFT1M_h17_off_r3_timing_r1",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6301143980235793,
+      "graph_sha256": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3400.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.3976099288421,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5040.38330078,
+          "recall_at10": 0.99821001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2181.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.35610199808171,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8744.61425781,
+          "recall_at10": 0.99023998
+        }
+      },
+      "name": "SIFT1M_fast_off_r3",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1a178c9362fd5dfd31b41cbf5473bed74a99dd35b6f4af7f43f7914786afec96",
+      "stem": "SIFT1M_fast_off_r3_timing_r1",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.628638422000222,
+      "graph_sha256": "fe5729630a50951ba995750761b52cd67884efee74854a78cef81f0a51070f83",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.53119872221635,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5036.99169922,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 113.8717092855262,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8781.8125,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_h17_off_r1",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4611f1272295d9f065b693bba52eca15e704f0a02d91eb4030723e5a58c1055d",
+      "stem": "SIFT1M_h17_off_r1_timing_r2",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.622508510015905,
+      "graph_sha256": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3402.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.24990252048127,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5044.13867188,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.06759819647229,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8766.73144531,
+          "recall_at10": 0.99010998
+        }
+      },
+      "name": "SIFT1M_fast_off_r1",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d683eb5cebe6178cc9f016c6faa13bb2d41e74c1c922ff40cfe48d78d8c74a4a",
+      "stem": "SIFT1M_fast_off_r1_timing_r2",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6766458339989185,
+      "graph_sha256": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.1876091521182,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5045.72412109,
+          "recall_at10": 0.99811
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.27510091496987,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8383.97949219,
+          "recall_at10": 0.99141997
+        }
+      },
+      "name": "SIFT1M_stock_off_r1",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "47e290cfd5a65f11dd5ed51014cbff5d8e46a5d6f75f1d8d5eef02a38a03f7a3",
+      "stem": "SIFT1M_stock_off_r1_timing_r2",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6281835709814914,
+      "graph_sha256": "8c8b808a19590e8685c4894f1eb6bfdf187b4d07aec4d2d6249868747eae5538",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.5386084885515,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5036.80371094,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.00419009925002,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8771.60742188,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_h17_off_r2",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "dd2ccf287ea51fef1f3992c25cabb7d72da2b17756d5bb3b7220572bcf1a9a28",
+      "stem": "SIFT1M_h17_off_r2_timing_r2",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.632981511997059,
+      "graph_sha256": "7a5246e98eaf88289aa2995f0d32d1c3f7b7f9dbc6032ce622efafd89974c63a",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.54259266956046,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5036.70263672,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.32100579270178,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8747.29882812,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_fast_off_r2",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7acaf345f95523cf0024b7e8bc5808d07479e5f954fbc8d8ac163437a7a2ac61",
+      "stem": "SIFT1M_fast_off_r2_timing_r2",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.676680328004295,
+      "graph_sha256": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3405.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 198.72561378138127,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5032.06396484,
+          "recall_at10": 0.99804997
+        },
+        "80": {
+          "avg_cmps_sift_only": 2274.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.17350381979129,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8391.12695312,
+          "recall_at10": 0.99115002
+        }
+      },
+      "name": "SIFT1M_stock_off_r2",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "bae5206c224fe3704a6b4f069107d02e16b9d740ddd8d87ddd76f745415dda49",
+      "stem": "SIFT1M_stock_off_r2_timing_r2",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.636233438999625,
+      "graph_sha256": "c24eadfb4472b9337efafb2258c22c8185323484266c7781a6293e7e38b726f6",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3407.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 199.22779772551704,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5019.37988281,
+          "recall_at10": 0.99804997
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 84.0,
+          "latency_us_proxy": 114.14669991189301,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8760.65625,
+          "recall_at10": 0.99019003
+        }
+      },
+      "name": "SIFT1M_h17_off_r3",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "52bded9f524656c5ff015d3ae6d286f77654dc983b343b823c70ddccf7494e2a",
+      "stem": "SIFT1M_h17_off_r3_timing_r2",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6274578039883636,
+      "graph_sha256": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3400.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.24819454250962,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5044.18212891,
+          "recall_at10": 0.99821001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2181.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.31560730672011,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8747.71191406,
+          "recall_at10": 0.99023998
+        }
+      },
+      "name": "SIFT1M_fast_off_r3",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6ab9b57ad1cf64493f152b7d27f3fcef3fb7e065dfeb1a8088099bd10ea120cf",
+      "stem": "SIFT1M_fast_off_r3_timing_r2",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6790334940014873,
+      "graph_sha256": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3399.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.04301014564555,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5049.40820312,
+          "recall_at10": 0.99809998
+        },
+        "80": {
+          "avg_cmps_sift_only": 2276.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.35599978366724,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8378.296875,
+          "recall_at10": 0.99131
+        }
+      },
+      "name": "SIFT1M_stock_off_r3",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a613811b9888e1fcd930f24304138bc3fff8f309ff7e6a29dac3c18d4c5b4856",
+      "stem": "SIFT1M_stock_off_r3_timing_r2",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.632728066004347,
+      "graph_sha256": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3402.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.57189189646095,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5035.95947266,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.19980951828647,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8756.58203125,
+          "recall_at10": 0.99010998
+        }
+      },
+      "name": "SIFT1M_fast_off_r1",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "535f4835bab3d16e94b35974617d899f1c5383d8c7edef6cef17e806fa1c9eb3",
+      "stem": "SIFT1M_fast_off_r1_timing_r3",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.684466577018611,
+      "graph_sha256": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.70108865508237,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5032.68505859,
+          "recall_at10": 0.99811
+        },
+        "80": {
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.5186014829644,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8366.8984375,
+          "recall_at10": 0.99141997
+        }
+      },
+      "name": "SIFT1M_stock_off_r1",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e229f1622c0c1ae0ed36d8fe7eaabeb9690b25f46f794e696876d903691ef702",
+      "stem": "SIFT1M_stock_off_r1_timing_r3",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 1,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6307091010094155,
+      "graph_sha256": "fe5729630a50951ba995750761b52cd67884efee74854a78cef81f0a51070f83",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.19710314784714,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5045.48242188,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.62320029539055,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8724.23730469,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_h17_off_r1",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6483b2943ff71186fa61656ac4d9afeac849786ea360bba83ba27f0e5448d249",
+      "stem": "SIFT1M_h17_off_r1_timing_r3",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.633150980982464,
+      "graph_sha256": "7a5246e98eaf88289aa2995f0d32d1c3f7b7f9dbc6032ce622efafd89974c63a",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.60160421211728,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5035.20605469,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.42330319969413,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8739.47851562,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_fast_off_r2",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "04c019d94a77793d937e2e1074f283a36820694f50b74497df886cf8dfcd4cd1",
+      "stem": "SIFT1M_fast_off_r2_timing_r3",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6826935190183576,
+      "graph_sha256": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3405.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 198.9815022985843,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5025.59277344,
+          "recall_at10": 0.99804997
+        },
+        "80": {
+          "avg_cmps_sift_only": 2274.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 118.97360633279956,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8405.22558594,
+          "recall_at10": 0.99115002
+        }
+      },
+      "name": "SIFT1M_stock_off_r2",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1ff848b27ef734077560378a9851e544817d50d7168870f63202575d404fe7cb",
+      "stem": "SIFT1M_stock_off_r2_timing_r3",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 2,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.632132536993595,
+      "graph_sha256": "8c8b808a19590e8685c4894f1eb6bfdf187b4d07aec4d2d6249868747eae5538",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3403.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.78010358705083,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5030.68457031,
+          "recall_at10": 0.99811
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.05848839093815,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8767.43164062,
+          "recall_at10": 0.99013001
+        }
+      },
+      "name": "SIFT1M_h17_off_r2",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8dd9caed6f1ef38685615410a1bd2389e046b70981cfb46fd3764c287ff43d7c",
+      "stem": "SIFT1M_h17_off_r2_timing_r3",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.6344088509795256,
+      "graph_sha256": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3400.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.98459559965983,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5025.51464844,
+          "recall_at10": 0.99821001
+        },
+        "76": {
+          "avg_cmps_sift_only": 2181.0,
+          "avg_visited": 83.0,
+          "latency_us_proxy": 114.10770117784826,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8763.65039062,
+          "recall_at10": 0.99023998
+        }
+      },
+      "name": "SIFT1M_fast_off_r3",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "55487f167214cc368c2b542b27cca19d3ae29211cd282cdc68645d7d6abc7d89",
+      "stem": "SIFT1M_fast_off_r3_timing_r3",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        80,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.677962321002269,
+      "graph_sha256": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3399.0,
+          "avg_visited": 144.0,
+          "latency_us_proxy": 198.59199439603145,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5035.44970703,
+          "recall_at10": 0.99809998
+        },
+        "80": {
+          "avg_cmps_sift_only": 2276.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 119.20180423112978,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8389.13476562,
+          "recall_at10": 0.99131
+        }
+      },
+      "name": "SIFT1M_stock_off_r3",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b5648498278f86f978cadfad38af2b9f4bfe3babd54861d5670a0f177d91a8bd",
+      "stem": "SIFT1M_stock_off_r3_timing_r3",
+      "target_beams": {
+        "0.99": 80,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        76,
+        144
+      ],
+      "build_rep": 3,
+      "dataset": "SIFT1M",
+      "elapsed_external_s": 3.632083970005624,
+      "graph_sha256": "c24eadfb4472b9337efafb2258c22c8185323484266c7781a6293e7e38b726f6",
+      "metrics": {
+        "144": {
+          "avg_cmps_sift_only": 3407.0,
+          "avg_visited": 145.0,
+          "latency_us_proxy": 198.97299621649944,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 5025.80761719,
+          "recall_at10": 0.99804997
+        },
+        "76": {
+          "avg_cmps_sift_only": 2182.0,
+          "avg_visited": 84.0,
+          "latency_us_proxy": 114.2927045091597,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 8749.46484375,
+          "recall_at10": 0.99019003
+        }
+      },
+      "name": "SIFT1M_h17_off_r3",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d9d09a8dfbd7bbac082bc147b26292d6d48a7a4a9d619fcc4e827be798e46c19",
+      "stem": "SIFT1M_h17_off_r3_timing_r3",
+      "target_beams": {
+        "0.99": 76,
+        "0.998": 144
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 254.75719905699953,
+      "graph_sha256": "db4f5257f06d7ca6df0a040d19590d201bc3e9b1eab7bf0f36265732969716cc",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.4106052447806,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.8425293,
+          "recall_at10": 0.99047297
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1750.2356846457628,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.35162354,
+          "recall_at10": 0.99812001
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r1",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "69bbedcc126fc617f9eb0faa0e4219f51cf888ae57296cce85eefed8984dcc88",
+      "stem": "MS-Turing1M_stock_off_r1_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.32385795700247,
+      "graph_sha256": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.2805901882144,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.43017578,
+          "recall_at10": 0.99049598
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1725.0615732575568,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.68945312,
+          "recall_at10": 0.99802899
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r1",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "114fff248d97cf7bacf1eeaab2ae28d833aef89e1de7784eda0486b452070aa8",
+      "stem": "MS-Turing1M_h17_off_r1_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.34476673798054,
+      "graph_sha256": "104a1bc69711e494dbf562772b867752dd915e53ff7ed4142763cdc98fb354e9",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.0839417832207,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.74914551,
+          "recall_at10": 0.99049503
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1725.509954328575,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.53881836,
+          "recall_at10": 0.99805099
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r1",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3003ccd7210cba9b03b7b5b624a46e54064a86ea002817d4e7ecb8a57ab49d7d",
+      "stem": "MS-Turing1M_fast_off_r1_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 254.669578370027,
+      "graph_sha256": "5de325e9bbb0b46208c4878b3af77ae79c7c1821096eb11064efab5c15d0ae84",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.4194683106791,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.828125,
+          "recall_at10": 0.99038303
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1749.3676373269145,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.63513184,
+          "recall_at10": 0.99806398
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r2",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a9aaa49f54111d12a80360a0664b6bac2c93873f4ebda02375ed40c4a953373b",
+      "stem": "MS-Turing1M_stock_off_r2_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.48840152399498,
+      "graph_sha256": "96b10e9be21f1d0d8c22aca692acf426e5e2375d078f97081f2095088b9c11f2",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.0048736973811,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.87744141,
+          "recall_at10": 0.99043602
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1726.9555157096945,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.05371094,
+          "recall_at10": 0.99803603
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r2",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f7c66a5e9114c72d57880f1c738c8f028e185a1af692efd2d3f67a5318f20e5a",
+      "stem": "MS-Turing1M_h17_off_r2_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.18840803200146,
+      "graph_sha256": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.3540515988592,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.93444824,
+          "recall_at10": 0.99045801
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1724.6506408861937,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.82757568,
+          "recall_at10": 0.998043
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r2",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9b4ce2c07367f058b2b03bd3f45bc3d9db2771eba93984d36ccffa207e8972ae",
+      "stem": "MS-Turing1M_fast_off_r2_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 254.6350737850007,
+      "graph_sha256": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.0253307562854,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1275.46899414,
+          "recall_at10": 0.99044299
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1749.4487058250593,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.60864258,
+          "recall_at10": 0.99811703
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r3",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1aab2a1d6dc556c37f1d048bc44a461b1352384f6484825acc229c83cbf95324",
+      "stem": "MS-Turing1M_stock_off_r3_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.76679165300447,
+      "graph_sha256": "1c1fa1af7f1344c3d0506736595a58c63a2acf7cf645f7ca45a83992fdb5307f",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 358.0,
+          "latency_us_proxy": 786.6421404340537,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1271.22607422,
+          "recall_at10": 0.99041897
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1728.1088978566672,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.66723633,
+          "recall_at10": 0.99801701
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r3",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f04232a02a3d295c6759b99ae5e2909f98e02d67cff38f02fc62d17f3504b4c7",
+      "stem": "MS-Turing1M_h17_off_r3_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.86918211099692,
+      "graph_sha256": "7c80157e8165e2792151e4934078fd7bd2fa2deebad2ad9864ba6aaf24da0462",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.131796620001,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.67150879,
+          "recall_at10": 0.99044299
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1730.6758276459177,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 577.80895996,
+          "recall_at10": 0.99804598
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r3",
+      "repeat": 1,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "88cba3b64b36c83078f31eeb7f4c379f8906c2045b8bf00e9b3d38fadb0f4274",
+      "stem": "MS-Turing1M_fast_off_r3_timing_r1",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.70385763200466,
+      "graph_sha256": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.8619294692745,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1272.48815918,
+          "recall_at10": 0.99049598
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1728.3065043528982,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.60107422,
+          "recall_at10": 0.99802899
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r1",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e4ef9fe81ea25a1c003771e1a19225035972b5667fe9816f0d6d6d0255ef0c13",
+      "stem": "MS-Turing1M_h17_off_r1_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.49464630999137,
+      "graph_sha256": "104a1bc69711e494dbf562772b867752dd915e53ff7ed4142763cdc98fb354e9",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 787.1222495423681,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1270.45068359,
+          "recall_at10": 0.99049503
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1724.9535097533362,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.72576904,
+          "recall_at10": 0.99805099
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r1",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "210f9adadd66a5890aecfdbbe7ff7e5ed73a8eff0a30ecc3bc46dc86da29fd71",
+      "stem": "MS-Turing1M_fast_off_r1_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 254.99502258602297,
+      "graph_sha256": "db4f5257f06d7ca6df0a040d19590d201bc3e9b1eab7bf0f36265732969716cc",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.6685313196667,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1272.8013916,
+          "recall_at10": 0.99047297
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1751.4258128236775,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 570.96337891,
+          "recall_at10": 0.99812001
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r1",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "0b055a51c7cc567a48b8ebeec78474cd3490891fe85b22e8059a2f57ceda08f7",
+      "stem": "MS-Turing1M_stock_off_r1_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.5586721689906,
+      "graph_sha256": "96b10e9be21f1d0d8c22aca692acf426e5e2375d078f97081f2095088b9c11f2",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.8173022763642,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1272.5604248,
+          "recall_at10": 0.99043602
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1726.9096454303278,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.0690918,
+          "recall_at10": 0.99803603
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r2",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fe30dbc517fc4aaa506b33d832a44fc986b28f5fb896e2f544b881353c53236a",
+      "stem": "MS-Turing1M_h17_off_r2_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.35374848599895,
+      "graph_sha256": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.4882765374898,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.71630859,
+          "recall_at10": 0.99045801
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1726.2075155704772,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.30462646,
+          "recall_at10": 0.998043
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r2",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "456aec54b686754862d904f8f36bdaebb6e8dfaf9205fbf9110d90406f672926",
+      "stem": "MS-Turing1M_fast_off_r2_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 255.27283738800907,
+      "graph_sha256": "5de325e9bbb0b46208c4878b3af77ae79c7c1821096eb11064efab5c15d0ae84",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.9683918933551,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.93664551,
+          "recall_at10": 0.99038303
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1754.9380662419449,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 569.82067871,
+          "recall_at10": 0.99806398
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r2",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8d8df5bc26204921bf22c6b398afca09656ad6b8ce79e9f049e42bb61815e26d",
+      "stem": "MS-Turing1M_stock_off_r2_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.34309337701416,
+      "graph_sha256": "1c1fa1af7f1344c3d0506736595a58c63a2acf7cf645f7ca45a83992fdb5307f",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 358.0,
+          "latency_us_proxy": 785.4368954394886,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.17675781,
+          "recall_at10": 0.99041897
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1725.0811895760417,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.68286133,
+          "recall_at10": 0.99801701
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r3",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8e577fdf393dfe6252261c40db6c38c386bfaa486b1f0798edc02bcc49605af3",
+      "stem": "MS-Turing1M_h17_off_r3_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.43010238499846,
+      "graph_sha256": "7c80157e8165e2792151e4934078fd7bd2fa2deebad2ad9864ba6aaf24da0462",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.1287114642458,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.67651367,
+          "recall_at10": 0.99044299
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1726.3030036806301,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.27258301,
+          "recall_at10": 0.99804598
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r3",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "788c5a00c12a2f1259c8ef06cfce6620c2e407f40f4ec19c404c42999f423f4f",
+      "stem": "MS-Turing1M_fast_off_r3_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 254.6926887150039,
+      "graph_sha256": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.6160845353013,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.50866699,
+          "recall_at10": 0.99044299
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1749.452815507938,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.6072998,
+          "recall_at10": 0.99811703
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r3",
+      "repeat": 2,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a6b83ad5051173a2539c8cc0eceb18f42a2f8b4798d5d5af90f6e0e5d9d75189",
+      "stem": "MS-Turing1M_stock_off_r3_timing_r2",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.111904771009,
+      "graph_sha256": "104a1bc69711e494dbf562772b867752dd915e53ff7ed4142763cdc98fb354e9",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 783.842210421836,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1275.76696777,
+          "recall_at10": 0.99049503
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1724.4587700375657,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.89208984,
+          "recall_at10": 0.99805099
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r1",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "14b54803ce81a7cc6183c70e37496e800817c1679e31b607ce83070620a8ea39",
+      "stem": "MS-Turing1M_fast_off_r1_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 255.83861682200222,
+      "graph_sha256": "db4f5257f06d7ca6df0a040d19590d201bc3e9b1eab7bf0f36265732969716cc",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 789.3040057587058,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1266.93896484,
+          "recall_at10": 0.99047297
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 731.0,
+          "latency_us_proxy": 1756.2038727307845,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 569.40997314,
+          "recall_at10": 0.99812001
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r1",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e000759c01f1f27badc61e6c4d7e57a955b7fef22c97c1e2393d3f8a56230437",
+      "stem": "MS-Turing1M_stock_off_r1_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 1,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.75173581502168,
+      "graph_sha256": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 786.6687306470028,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1271.18310547,
+          "recall_at10": 0.99049598
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1727.9640029919592,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 578.71575928,
+          "recall_at10": 0.99802899
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r1",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ecd693e9d986c16cbe49da2c078a160df7e13541616fd3f21627ae65aa931128",
+      "stem": "MS-Turing1M_h17_off_r1_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.29224775001057,
+      "graph_sha256": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 783.8158859368069,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1275.80981445,
+          "recall_at10": 0.99045801
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1726.2926358982481,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.27606201,
+          "recall_at10": 0.998043
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r2",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "78a5c0c39d69f2d7ddba7d3d89cfd700663de60f71c0cd1789432f8758b7ff07",
+      "stem": "MS-Turing1M_fast_off_r2_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 256.6572572400037,
+      "graph_sha256": "5de325e9bbb0b46208c4878b3af77ae79c7c1821096eb11064efab5c15d0ae84",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 790.9950161134336,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1264.23046875,
+          "recall_at10": 0.99038303
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1762.7287868015146,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 567.30224609,
+          "recall_at10": 0.99806398
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r2",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b2a685b9ca2f173246e9f276f943d84d8d84741e5bac1dbb5c8619b4074b288b",
+      "stem": "MS-Turing1M_stock_off_r2_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 2,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.36319964297581,
+      "graph_sha256": "96b10e9be21f1d0d8c22aca692acf426e5e2375d078f97081f2095088b9c11f2",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 784.9255959112456,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1274.00610352,
+          "recall_at10": 0.99043602
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1725.8560283878267,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.42260742,
+          "recall_at10": 0.99803603
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r2",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d1c29aa7df46f8ea5b839513d4490e8065bf4a0a0df6e99d2e7a5c634ae17aa6",
+      "stem": "MS-Turing1M_h17_off_r2_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "fast",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.18030761700356,
+      "graph_sha256": "7c80157e8165e2792151e4934078fd7bd2fa2deebad2ad9864ba6aaf24da0462",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 783.2434098128969,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1276.74230957,
+          "recall_at10": 0.99044299
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 720.0,
+          "latency_us_proxy": 1725.7445933893475,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.46002197,
+          "recall_at10": 0.99804598
+        }
+      },
+      "name": "MS-Turing1M_fast_off_r3",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fcf2eeb958e1432f9a1cdb55a01118de2ca8b41218c939e228345679163a126d",
+      "stem": "MS-Turing1M_fast_off_r3_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    },
+    {
+      "arm": "stock",
+      "beams_tested": [
+        368,
+        880
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 254.74547483201604,
+      "graph_sha256": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 357.0,
+          "latency_us_proxy": 785.1564034986902,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1273.6315918,
+          "recall_at10": 0.99044299
+        },
+        "880": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 730.0,
+          "latency_us_proxy": 1749.483264973242,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 571.59735107,
+          "recall_at10": 0.99811703
+        }
+      },
+      "name": "MS-Turing1M_stock_off_r3",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4864c70dec94def29a1af3ed0e5ced6a0e81dfcee4443af7b36d792614ec4e94",
+      "stem": "MS-Turing1M_stock_off_r3_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 880
+      }
+    },
+    {
+      "arm": "h17",
+      "beams_tested": [
+        368,
+        864
+      ],
+      "build_rep": 3,
+      "dataset": "MS-Turing1M",
+      "elapsed_external_s": 252.47681933600688,
+      "graph_sha256": "1c1fa1af7f1344c3d0506736595a58c63a2acf7cf645f7ca45a83992fdb5307f",
+      "metrics": {
+        "368": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 358.0,
+          "latency_us_proxy": 785.5606435646087,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 1272.97619629,
+          "recall_at10": 0.99041897
+        },
+        "864": {
+          "avg_cmps_sift_only": null,
+          "avg_visited": 721.0,
+          "latency_us_proxy": 1726.360483536439,
+          "ms_legacy_avg_cmps_IGNORED": null,
+          "qps": 579.2532959,
+          "recall_at10": 0.99801701
+        }
+      },
+      "name": "MS-Turing1M_h17_off_r3",
+      "repeat": 3,
+      "status": "TIMING_THRESHOLD_SEARCH_NATIVE_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6b0990e06e6f2f9eb64909defeaae25370c76ac3e6da8b0dcff5f1e00ba3eb1e",
+      "stem": "MS-Turing1M_h17_off_r3_timing_r3",
+      "target_beams": {
+        "0.99": 368,
+        "0.998": 864
+      }
+    }
+  ],
+  "selected_beams_sha256": "f5ae3ccc2e9438b499d337fd49411e8a8bb8470cc4c0a5ccae5f026b2e770003",
+  "status": "TIMING_54_NATIVE_EVALUATOR_INVOCATIONS_108_TARGET_ROWS_COMPLETE"
+}

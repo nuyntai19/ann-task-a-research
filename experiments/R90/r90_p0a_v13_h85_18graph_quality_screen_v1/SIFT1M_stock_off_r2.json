@@ -1,0 +1,64 @@
+{
+  "arm": "stock",
+  "beams": {
+    "10": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 583.0,
+      "avg_visited": 19.0,
+      "latency_us_proxy": 32.143500640672706,
+      "qps": 31110.48828125,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.76415998
+    },
+    "160": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 3672.0,
+      "avg_visited": 157.0,
+      "latency_us_proxy": 234.56780366759585,
+      "qps": 4263.15966797,
+      "reaches_099": true,
+      "reaches_0998": true,
+      "recall_at10": 0.99849999
+    },
+    "20": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 844.0,
+      "avg_visited": 29.0,
+      "latency_us_proxy": 47.72020006322201,
+      "qps": 20955.48632812,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.88937002
+    },
+    "40": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 1355.0,
+      "avg_visited": 48.0,
+      "latency_us_proxy": 76.13959749070914,
+      "qps": 13133.77050781,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.96195
+    },
+    "80": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 2274.0,
+      "avg_visited": 87.0,
+      "latency_us_proxy": 131.04820583929776,
+      "qps": 7630.77978516,
+      "reaches_099": true,
+      "reaches_0998": false,
+      "recall_at10": 0.99115002
+    }
+  },
+  "dataset": "SIFT1M",
+  "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+  "graph_sha256": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e",
+  "name": "SIFT1M_stock_off_r2",
+  "rep": 2,
+  "status": "NATIVE_QUERY_SEARCH_PASS",
+  "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha": "5de7a54a0e4319c0781a78408f300dd6df110bb331cec239659035e4cf94b8f9",
+  "wall_elapsed_s": 6.0807765790086705
+}

@@ -1,0 +1,200 @@
+{
+  "compiler_sha": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "data_shas": {
+    "MS-Turing1M": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "SIFT1M": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+  },
+  "existing_elf_sha": {
+    "fast_off": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "fast_on": "fa11cdde5931317c66c05a3f7b80631452e067dec7532cafc08ed6725eeb89a8",
+    "h17_off": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+    "h17_on": "5afcfb5e2fbc7b7da9ec944b5c8dc3a53944c805b5c92ef1393618cb99ccc4b2",
+    "stock_off": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+    "stock_on": "dcf4faf194dc62f918a0df6868e5a915f50aaa65793479e2825ce22e1c076ad0"
+  },
+  "ftz_native_probe_sha": "277e30167756f11953812d2079f6151c6fca1bcf4b16c7e26e3d54dce2de466f",
+  "historical_highway_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+  "jobs": [
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 1,
+      "dataset": "SIFT1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 1,
+      "dataset": "SIFT1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 1,
+      "dataset": "SIFT1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 1,
+      "dataset": "MS-Turing1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 1,
+      "dataset": "MS-Turing1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 1,
+      "dataset": "MS-Turing1M",
+      "mode": "on",
+      "rep": 1
+    }
+  ],
+  "known_risks": [
+    "H85 Highway synthetic one-zero bit-clearing not observed but simultaneous subnormal ties still change ordering under DAZ.",
+    "Historical Stage B Stock graph is NOT part of this performance repetition matrix.",
+    "Recall@10/QPS have not been tested on the NEW 24 graph instances; Stage B only certifies its separate Stock graph."
+  ],
+  "original_p0a_py_sha": "fa9cdc09b3f447161f5c1f65382b15a0bc9645f425a679b73ca26f5ce8abecf0",
+  "original_pilot_manifest_sha": "eb8b155038051a8dcd8f0bbaebd6ced880c2424f184e021d9f1472cd695ce20f",
+  "original_source_manifest_sha": "5f42250caa47659daf978a73355857e355cc86096571d327518e676d41f1423b",
+  "protocol": "New isolated 4CPU OFF 18 + 1CPU0 ON 6 BUILD runs using original pinned V11 native_one with six new V13 H85 ELF symlinks; Stage B Stock graph independent anchor not timing repetition. No across-arm exact graph SHA requirement.",
+  "runner_sha256": "68bab029e4bd65a7179372ee67389c1272a5ce3bb6030b3f9be83318945fb140",
+  "stageA_sha": "58406df0aaa4813a8562623726a627e133efdf08ddb2eaec1c5501f6157e230a",
+  "stageB_sha": "5827a3f5e52d552521cd4f64ce42324a0f13d6549be5cb37e5f2e987fdf9f785",
+  "status": "V13_H85_BUILDONLY_BASELINE_QUALITY_STAGEB_PASS_NO_NEW_GRAPH_SEARCH"
+}

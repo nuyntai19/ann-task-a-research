@@ -1,0 +1,77 @@
+{
+  "compile_manifest_sha256": "48531781fbcd89f1e7256f2fa8a85d26f28098dc21447f9891988d6312400675",
+  "compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "highway_commit_full": "6bc2d47793bae9c521fb4150936669647700765d",
+  "highway_source_manifest_sha256": "5f42250caa47659daf978a73355857e355cc86096571d327518e676d41f1423b",
+  "limitations": [
+    "A PASS is not SIFT1M recall certification.",
+    "No cross-arm bytewise graph SHA parity required due Stage1 randomness.",
+    "Historical Highway probe PASS only rules out a particular synthetic single-zero clearing on this CPU; simultaneous subnormal ties and other numerical risks remain.",
+    "B is one Stock SIFT1M quality pilot, not a 24-run study."
+  ],
+  "pilot_graphs": [
+    {
+      "arcs": 105127,
+      "arm": "stock",
+      "buckets": [
+        493,
+        498
+      ],
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "mode": "off"
+    },
+    {
+      "arcs": 105127,
+      "arm": "h17",
+      "buckets": [
+        493,
+        498
+      ],
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "mode": "off"
+    },
+    {
+      "arcs": 105127,
+      "arm": "fast",
+      "buckets": [
+        493,
+        498
+      ],
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "mode": "off"
+    },
+    {
+      "arcs": 105127,
+      "arm": "stock",
+      "buckets": [
+        493,
+        498
+      ],
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "mode": "on"
+    },
+    {
+      "arcs": 105127,
+      "arm": "h17",
+      "buckets": [
+        493,
+        498
+      ],
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "mode": "on"
+    },
+    {
+      "arcs": 105127,
+      "arm": "fast",
+      "buckets": [
+        493,
+        498
+      ],
+      "graph_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "mode": "on"
+    }
+  ],
+  "pilot_manifest_sha256": "eb8b155038051a8dcd8f0bbaebd6ced880c2424f184e021d9f1472cd695ce20f",
+  "probe_report_sha256": "277e30167756f11953812d2079f6151c6fca1bcf4b16c7e26e3d54dce2de466f",
+  "status": "STAGEA_SIX_ELF_H85_HWY_PROBE_AND_SIFT10K_GRAPH_STRUCTURE_PASS"
+}

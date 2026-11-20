@@ -1,0 +1,97 @@
+{
+  "arm": "fast",
+  "beams_tested": [
+    336,
+    352,
+    368,
+    384,
+    832,
+    848,
+    864,
+    880,
+    896
+  ],
+  "build_rep": 2,
+  "dataset": "MS-Turing1M",
+  "elapsed_external_s": 1174.4198577619973,
+  "graph_sha256": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a",
+  "metrics": {
+    "336": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 328.0,
+      "latency_us_proxy": 716.144325110539,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 1396.36657715,
+      "recall_at10": 0.98870403
+    },
+    "352": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 340.0,
+      "latency_us_proxy": 744.223298239825,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 1343.68273926,
+      "recall_at10": 0.98953497
+    },
+    "368": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 357.0,
+      "latency_us_proxy": 788.1376054417103,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 1268.81396484,
+      "recall_at10": 0.99045801
+    },
+    "384": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 370.0,
+      "latency_us_proxy": 815.0030602426436,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 1226.98925781,
+      "recall_at10": 0.991063
+    },
+    "832": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 700.0,
+      "latency_us_proxy": 1675.37776526667,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 596.88031006,
+      "recall_at10": 0.99790001
+    },
+    "848": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 710.0,
+      "latency_us_proxy": 1703.210214449527,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 587.12658691,
+      "recall_at10": 0.99797201
+    },
+    "864": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 720.0,
+      "latency_us_proxy": 1726.6543090353891,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 579.15472412,
+      "recall_at10": 0.998043
+    },
+    "880": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 730.0,
+      "latency_us_proxy": 1751.4029716837447,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 570.9708252,
+      "recall_at10": 0.99811703
+    },
+    "896": {
+      "avg_cmps_sift_only": null,
+      "avg_visited": 741.0,
+      "latency_us_proxy": 1778.2590036853621,
+      "ms_legacy_avg_cmps_IGNORED": null,
+      "qps": 562.34777832,
+      "recall_at10": 0.9982
+    }
+  },
+  "name": "MS-Turing1M_fast_off_r2",
+  "status": "CALIBRATED_NATIVE_PASS",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "2aff483de6788058c5b1b2d6c9bc6ea56e53365019685d8026d64411dd562d58",
+  "stem": "MS-Turing1M_fast_off_r2_calibration"
+}

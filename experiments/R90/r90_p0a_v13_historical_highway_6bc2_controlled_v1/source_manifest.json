@@ -1,0 +1,93 @@
+{
+  "controlled_change": "ONLY FETCHCONTENT_SOURCE_DIR_HIGHWAY changed from R86 0e0a01da to H85 6bc2d477; original 6 source tree SHAs and compiler/macros unchanged",
+  "copied_from_v11_source_manifest_sha256": "6e5d82c4ca331476240950afedfad970d8358fc7252d0d2b8b9ac441e1afb298",
+  "highway_historical_pin": {
+    "expected_commit_prefix": "6bc2d477",
+    "git_blobs": {
+      "sorting_networks-inl.h": {
+        "git_blob_sha1": "54b15230730ef3785ae1eaa09ce97485ce917021",
+        "sha256": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b"
+      },
+      "traits-inl.h": {
+        "git_blob_sha1": "b02ed8b9ab0d2e7d3d70f48c74f006531ff54753",
+        "sha256": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+      }
+    },
+    "git_head": "6bc2d47793bae9c521fb4150936669647700765d",
+    "source_root": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src"
+  },
+  "input": {
+    "allowed_source_links": {
+      "data_tools/utils": "../algorithms/utils",
+      "rangeSearch/utils": "../algorithms/utils"
+    },
+    "baseline_source": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+    "d6_ctrl_utils_sha256": "72663ad75da8533de6e466355a0997b6a580609c5b669d7e2460eca4a1a028e8",
+    "d6_fast_utils_sha256": "380530713c0dcba189a0a0c76e8ef0eef572f735da5c80e5fb9fb56b9db185aa",
+    "data_sha256": {
+      "MS-Turing1M": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+      "SIFT1M": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+    },
+    "deps": {
+      "ABSEIL-CPP": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/abseil-cpp-src",
+      "EIGEN": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/eigen-src",
+      "GOOGLEBENCHMARK": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/googlebenchmark-src",
+      "HIGHWAY": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src",
+      "PARLAYLIB": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/parlaylib-src"
+    },
+    "source_tree_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+    "status": "LOCAL_SOURCE_TRANSFORM_GATE_PASS_NATIVE_COMPILE_NOT_RUN"
+  },
+  "protocol": "one R86 v1_2 snapshot; strict 2-link preserve; R71_H17_TOP2 flag; Fast localized cutoff; R86 ON source counters + D6 exact Top2 branch for H17/Fast",
+  "status": "SOURCE_6_VARIANTS_PREPARED__NO_COMPILE_NO_BUILD",
+  "variants": [
+    {
+      "base_source_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "pipnn_sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+      "status": "SOURCE_PREPARED_UNCOMPILED",
+      "tree_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "utils_sha256": "33b09c3cb85d70f0a11d86c481dc2a6e398b9e162fe1d42b2b1bd1314a0bd3db",
+      "variant": "stock_off"
+    },
+    {
+      "base_source_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "pipnn_sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+      "status": "SOURCE_PREPARED_UNCOMPILED",
+      "tree_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "utils_sha256": "33b09c3cb85d70f0a11d86c481dc2a6e398b9e162fe1d42b2b1bd1314a0bd3db",
+      "variant": "h17_off"
+    },
+    {
+      "base_source_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "pipnn_sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+      "status": "SOURCE_PREPARED_UNCOMPILED",
+      "tree_sha256": "de97c4d9020eb2de9fbdab6051fd01f40d6f6e960ff8a75e08ce8545a49bb25c",
+      "utils_sha256": "72ca1451790234a76a9bfe5ecafd7bc555e6cd53673587b62a37a93f24caad28",
+      "variant": "fast_off"
+    },
+    {
+      "base_source_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "pipnn_sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+      "status": "SOURCE_PREPARED_UNCOMPILED",
+      "tree_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "utils_sha256": "33b09c3cb85d70f0a11d86c481dc2a6e398b9e162fe1d42b2b1bd1314a0bd3db",
+      "variant": "stock_on"
+    },
+    {
+      "base_source_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "pipnn_sha256": "45e75af52a1dd305d49e815195629ae67092e916a0e5638165f24ea04df8e94f",
+      "status": "SOURCE_PREPARED_UNCOMPILED",
+      "tree_sha256": "6dfbd8dda6a0fef3b52286fec7b5e5c82abf450069dc2a679a2ea08fe2d747e2",
+      "utils_sha256": "2c6a9f506733e8b6f9122f566e868c49376c00887531c5b79e6d844e6ee1cb9e",
+      "variant": "h17_on"
+    },
+    {
+      "base_source_sha256": "236222ce948678bcf230686bb2e5957995f28ac813fe445fcb991d5bcf83e1f9",
+      "pipnn_sha256": "be504d144c64ac38dd483f1154372df23b7b5565e2fbbc51fe9a24bc758332c8",
+      "status": "SOURCE_PREPARED_UNCOMPILED",
+      "tree_sha256": "1aae65af5915e71ec2e1ed239fb6f6b746ae37b88271720e47abcc47441cdc0e",
+      "utils_sha256": "cafdef215c731c396037172bc1c2d969b93be3a797da90c4c6cea2f63e90dd45",
+      "variant": "fast_on"
+    }
+  ]
+}

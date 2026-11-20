@@ -1,0 +1,69 @@
+{
+  "build_audit_sha256": "9550858dcb763349ed5180b3b65577e48a600e54becc0ecb9c755970a4d4bbfb",
+  "build_full_manifest_sha256": "0c76f3e5bc3dc0d82f70aa1aadac9b26c5b0e8f4607f31d9aa6d8b0b0a4121c3",
+  "calibration_grids": {
+    "MS-Turing1M": [
+      336,
+      352,
+      368,
+      384,
+      832,
+      848,
+      864,
+      880,
+      896
+    ],
+    "SIFT1M": [
+      64,
+      68,
+      72,
+      76,
+      80,
+      128,
+      136,
+      144,
+      152,
+      160
+    ]
+  },
+  "graph_shas": {
+    "MS-Turing1M_fast_off_r1": "104a1bc69711e494dbf562772b867752dd915e53ff7ed4142763cdc98fb354e9",
+    "MS-Turing1M_fast_off_r2": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a",
+    "MS-Turing1M_fast_off_r3": "7c80157e8165e2792151e4934078fd7bd2fa2deebad2ad9864ba6aaf24da0462",
+    "MS-Turing1M_h17_off_r1": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c",
+    "MS-Turing1M_h17_off_r2": "96b10e9be21f1d0d8c22aca692acf426e5e2375d078f97081f2095088b9c11f2",
+    "MS-Turing1M_h17_off_r3": "1c1fa1af7f1344c3d0506736595a58c63a2acf7cf645f7ca45a83992fdb5307f",
+    "MS-Turing1M_stock_off_r1": "db4f5257f06d7ca6df0a040d19590d201bc3e9b1eab7bf0f36265732969716cc",
+    "MS-Turing1M_stock_off_r2": "5de325e9bbb0b46208c4878b3af77ae79c7c1821096eb11064efab5c15d0ae84",
+    "MS-Turing1M_stock_off_r3": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010",
+    "SIFT1M_fast_off_r1": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358",
+    "SIFT1M_fast_off_r2": "7a5246e98eaf88289aa2995f0d32d1c3f7b7f9dbc6032ce622efafd89974c63a",
+    "SIFT1M_fast_off_r3": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75",
+    "SIFT1M_h17_off_r1": "fe5729630a50951ba995750761b52cd67884efee74854a78cef81f0a51070f83",
+    "SIFT1M_h17_off_r2": "8c8b808a19590e8685c4894f1eb6bfdf187b4d07aec4d2d6249868747eae5538",
+    "SIFT1M_h17_off_r3": "c24eadfb4472b9337efafb2258c22c8185323484266c7781a6293e7e38b726f6",
+    "SIFT1M_stock_off_r1": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5",
+    "SIFT1M_stock_off_r2": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e",
+    "SIFT1M_stock_off_r3": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93"
+  },
+  "limitations": [
+    "min eligible among tested beam values only; not continuous optimization or equal Recall",
+    "same query/GT used for calibration and timing, no independent test split",
+    "MS v4 legacy avg_cmps ignored due overflow",
+    "QPS=throughput; 1e6/QPS is inverse throughput, NOT latency p95/p99",
+    "3 timing repetitions nested in 3 graph builds, no formal non-inferiority proof"
+  ],
+  "ms_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "native_build": false,
+  "one_cpu": 0,
+  "screen_manifest_sha256": "767c8b95dcf9f2e91bb06612b1c0d82ee9814ea3e6b220cd755601705a1738ed",
+  "screen_runner_sha256": "dcfe8d6f856b37ca149ee4a00b257f2af11d7ef757a24d99859634633c2191a6",
+  "screen_summary_sha256": "861c8734cab66a6d2dcbcee9aca56a981ab364ea7e14e04e64e9177bf3ddd7a7",
+  "sift_dynamic_evaluator_sha256": "11587916ffd70143d6d5246bf8d2e26c1927b81bf8b3298fbc2014bfb6c64a4e",
+  "status": "V13_H85_SAME_QUERY_GT_BEAM_THRESHOLD_SCREEN_AND_REPEATED_QPS",
+  "target_recalls": {
+    "0.99": 0.99,
+    "0.998": 0.998
+  },
+  "timing_repeats": 3
+}

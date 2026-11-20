@@ -1,0 +1,100 @@
+{
+  "build_only_one_stock_1m": true,
+  "gates": {
+    "big_inversion_is_diagnostic_not_gate": true,
+    "duplicate_either_endpoint_retention_atleast_095": true,
+    "recall_80_atleast_099_and_160_atleast_0998": true,
+    "v0_contains_2_and_6_degree_under64": true
+  },
+  "h85_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+  "limitations": [
+    "Historical Stock source revision restored, but causal attribution to a particular historical edge needs paired old/new leaf-key trace.",
+    "Quality threshold is measured on same SIFT1M public 10KQ GT, not a formal independence/noninferiority test.",
+    "Old Highway 6bc2 avoids observed synthetic single-zero clearing but other DAZ and tie behavior can remain."
+  ],
+  "no_full_1m_six_arm_campaign": true,
+  "search_recall_by_beam": {
+    "10": {
+      "latency_us_proxy": 32.302299046740394,
+      "qps": 30957.54882812,
+      "recall": 0.76283002
+    },
+    "160": {
+      "latency_us_proxy": 233.6065092263053,
+      "qps": 4280.70263672,
+      "recall": 0.99862999
+    },
+    "20": {
+      "latency_us_proxy": 47.67499656870386,
+      "qps": 20975.35546875,
+      "recall": 0.88929999
+    },
+    "40": {
+      "latency_us_proxy": 76.16939925624784,
+      "qps": 13128.63183594,
+      "recall": 0.96188003
+    },
+    "80": {
+      "latency_us_proxy": 130.1915054747075,
+      "qps": 7680.99267578,
+      "recall": 0.99146003
+    }
+  },
+  "search_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "search_stdout_sha256": "528c4df5e7b499843ed2d4e5211df501f3d261fe80bd56bd2e7dfb2b7c91d53e",
+  "status": "STAGEB_STOCK_SIFT1M_QUALITY_PASS_READY_FOR_REVIEW",
+  "stock_graph": {
+    "arcs": 26034608,
+    "degree_bound": 64,
+    "duplicate_neighbor_slots": 0,
+    "graph_sha256": "c60d2fed5d6b5c2a59b7f7fa1549f89436bc36fa4315d410d87c0f4be5a8735b",
+    "invalid_neighbor_ids": 0,
+    "node_count": 1000000,
+    "self_loops": 0
+  },
+  "stock_graph_record_sha256": "0dbb2a60f10991014e18ccb2e366a824a56a9ba04ba019ff6ae880ca8ebcd961",
+  "v0_and_duplicates": {
+    "big_inv_examples": [],
+    "big_inv_first_10000": 0,
+    "caveats": [
+      "Neighbor list is not guaranteed sorted by L2; big_inv is diagnostic, not intrinsic graph corruption.",
+      "Duplicate direct-neighbor retention is a quality diagnostic; ANN graph need not represent every exact duplicate directly."
+    ],
+    "exact_duplicate_vectors": {
+      "at_least_one_direct_neighbor": 14538,
+      "both_directions_direct_neighbors": 14538,
+      "detected_pairs": 14538,
+      "either_end_retention_ratio": 1.0,
+      "one_endpoint_first_neighbor": 14538
+    },
+    "first_10000_large_first_second_inversions_threshold": "first_d2 - second_d2 >10000 AND first_d2 > 1.5*second_d2",
+    "v0": {
+      "degree": 37,
+      "has_2": true,
+      "has_6": true,
+      "mean_neighbor_l2_squared": 59871.189,
+      "nearest": [
+        {
+          "id": 2,
+          "squared_l2": 18724.0
+        },
+        {
+          "id": 6,
+          "squared_l2": 24320.0
+        },
+        {
+          "id": 631203,
+          "squared_l2": 45468.0
+        },
+        {
+          "id": 246710,
+          "squared_l2": 47026.0
+        },
+        {
+          "id": 10336,
+          "squared_l2": 47909.0
+        }
+      ]
+    }
+  }
+}

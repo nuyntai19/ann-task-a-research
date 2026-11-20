@@ -1,0 +1,34 @@
+{
+  "arm": "stock",
+  "beams": {
+    "384": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": 16726.0,
+      "avg_cmps_sift_only": null,
+      "avg_visited": 370.0,
+      "latency_us_proxy": 817.4119930035745,
+      "qps": 1223.37329102,
+      "reaches_099": true,
+      "reaches_0998": false,
+      "recall_at10": 0.99106097
+    },
+    "896": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": 4294955367.0,
+      "avg_cmps_sift_only": null,
+      "avg_visited": 741.0,
+      "latency_us_proxy": 1776.1244171542291,
+      "qps": 563.02362061,
+      "reaches_099": true,
+      "reaches_0998": true,
+      "recall_at10": 0.99819303
+    }
+  },
+  "dataset": "MS-Turing1M",
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010",
+  "name": "MS-Turing1M_stock_off_r3",
+  "rep": 3,
+  "status": "NATIVE_QUERY_SEARCH_PASS",
+  "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha": "00b692eb1d39dc1e6322ac491ac4721dedf36447c69b3ccabb60169073f2ac21",
+  "wall_elapsed_s": 260.65103671399993
+}

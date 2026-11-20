@@ -1,0 +1,69 @@
+{
+  "runs": [
+    {
+      "arm": "stock",
+      "beams": {
+        "10": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 584.0,
+          "avg_visited": 19.0,
+          "latency_us_proxy": 31.379397880836493,
+          "qps": 31868.04296875,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.76371998
+        },
+        "160": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 3668.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 234.91408258315118,
+          "qps": 4256.87548828,
+          "reaches_099": true,
+          "reaches_0998": true,
+          "recall_at10": 0.99858999
+        },
+        "20": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 847.0,
+          "avg_visited": 29.0,
+          "latency_us_proxy": 46.84379843918659,
+          "qps": 21347.54296875,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.89051998
+        },
+        "40": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 1357.0,
+          "avg_visited": 48.0,
+          "latency_us_proxy": 76.08010343330706,
+          "qps": 13144.04101562,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.96170002
+        },
+        "80": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 2278.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 130.87089854250652,
+          "qps": 7641.11816406,
+          "reaches_099": true,
+          "reaches_0998": false,
+          "recall_at10": 0.99141997
+        }
+      },
+      "dataset": "SIFT1M",
+      "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "graph_sha256": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5",
+      "name": "SIFT1M_stock_off_r1",
+      "rep": 1,
+      "status": "NATIVE_QUERY_SEARCH_PASS",
+      "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha": "c7b7fc147b7e5fddfdd7dacddb953e8c081c896e0338397175a60708fcfc6829",
+      "wall_elapsed_s": 6.054449040006148
+    }
+  ],
+  "status": "RUNNING"
+}

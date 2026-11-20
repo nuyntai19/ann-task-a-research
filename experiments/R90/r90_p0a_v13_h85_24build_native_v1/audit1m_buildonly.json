@@ -1,0 +1,1623 @@
+{
+  "Highway_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+  "full_manifest_sha256": "0c76f3e5bc3dc0d82f70aa1aadac9b26c5b0e8f4607f31d9aa6d8b0b0a4121c3",
+  "graph_sha_policy": "Graph SHA locked within each graph receipt, NOT required equal across branches or replications.",
+  "known_StageB_stock_anchor_graph_sha": "c60d2fed5d6b5c2a59b7f7fa1549f89436bc36fa4315d410d87c0f4be5a8735b",
+  "limitations": [
+    "No Search Recall/QPS performed on these 24 new graphs.",
+    "Three OFF repetitions, not a hypothesis test.",
+    "Stage B Stock1M independent anchor NOT used as performance repetition.",
+    "Old H85 Highway still has simultaneous-subnormal tie ordering differences under DAZ.",
+    "Stock Highway internal SIMD comparisons/moves not measured; no false zero counters."
+  ],
+  "off_group_means": [
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "major_faults_by_rep": [
+        0,
+        0,
+        0
+      ],
+      "repetitions": 3,
+      "rss_KiB_mean": 2801077.3333333335,
+      "stage_leaf_seconds_mean": 27.31313333333333,
+      "wall_s_mean": 40.5
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "major_faults_by_rep": [
+        0,
+        0,
+        0
+      ],
+      "repetitions": 3,
+      "rss_KiB_mean": 2791233.3333333335,
+      "stage_leaf_seconds_mean": 21.589066666666668,
+      "wall_s_mean": 34.766666666666666
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "major_faults_by_rep": [
+        0,
+        0,
+        0
+      ],
+      "repetitions": 3,
+      "rss_KiB_mean": 2806968.0,
+      "stage_leaf_seconds_mean": 19.064899999999998,
+      "wall_s_mean": 32.27
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "major_faults_by_rep": [
+        0,
+        0,
+        0
+      ],
+      "repetitions": 3,
+      "rss_KiB_mean": 3118754.6666666665,
+      "stage_leaf_seconds_mean": 26.914533333333335,
+      "wall_s_mean": 42.25666666666667
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "major_faults_by_rep": [
+        0,
+        0,
+        0
+      ],
+      "repetitions": 3,
+      "rss_KiB_mean": 3129145.3333333335,
+      "stage_leaf_seconds_mean": 21.0376,
+      "wall_s_mean": 36.39333333333334
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "major_faults_by_rep": [
+        0,
+        0,
+        0
+      ],
+      "repetitions": 3,
+      "rss_KiB_mean": 3115521.3333333335,
+      "stage_leaf_seconds_mean": 18.468466666666668,
+      "wall_s_mean": 33.79333333333333
+    }
+  ],
+  "prior_StageB_report_sha": "5827a3f5e52d552521cd4f64ce42324a0f13d6549be5cb37e5f2e987fdf9f785",
+  "runs": [
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040566,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "e739363deb1d1cfbebbbe909d3211b460397e24a95c62805edb579b1785b71d5"
+      },
+      "mode": "off",
+      "name": "SIFT1M_stock_off_r1",
+      "original_elf_sha": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0667,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 27.302799999999998,
+        "prune_line_count": 1,
+        "prune_seconds": 2.6943
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2800988,
+        "wall_seconds": 40.51
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040560,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "fe5729630a50951ba995750761b52cd67884efee74854a78cef81f0a51070f83"
+      },
+      "mode": "off",
+      "name": "SIFT1M_h17_off_r1",
+      "original_elf_sha": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0105,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 21.6274,
+        "prune_line_count": 1,
+        "prune_seconds": 2.7045
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2783504,
+        "wall_seconds": 34.8
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26038038,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "f9d387ac6b49bf91d4da1062c8cfae9e9e4ed353a0ad1a0a52f04fea11f1a358"
+      },
+      "mode": "off",
+      "name": "SIFT1M_fast_off_r1",
+      "original_elf_sha": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 39,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59940.667,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.055299999999999,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 19.0363,
+        "prune_line_count": 1,
+        "prune_seconds": 2.6886
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2804544,
+        "wall_seconds": 32.25
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040553,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "7a5246e98eaf88289aa2995f0d32d1c3f7b7f9dbc6032ce622efafd89974c63a"
+      },
+      "mode": "off",
+      "name": "SIFT1M_fast_off_r2",
+      "original_elf_sha": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "rep": 2,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0317,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 19.102,
+        "prune_line_count": 1,
+        "prune_seconds": 2.7059
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2806728,
+        "wall_seconds": 32.31
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26005968,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "37e7363d849f1a6beb1db33ecec0c37869b1cc83929b6ab85678b7d35d81a57e"
+      },
+      "mode": "off",
+      "name": "SIFT1M_stock_off_r2",
+      "original_elf_sha": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "rep": 2,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59501.789,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.038499999999999,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 27.3818,
+        "prune_line_count": 1,
+        "prune_seconds": 2.6837
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2799908,
+        "wall_seconds": 40.56
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040579,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "8c8b808a19590e8685c4894f1eb6bfdf187b4d07aec4d2d6249868747eae5538"
+      },
+      "mode": "off",
+      "name": "SIFT1M_h17_off_r2",
+      "original_elf_sha": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "rep": 2,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0281,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 21.5923,
+        "prune_line_count": 1,
+        "prune_seconds": 2.6947
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2793792,
+        "wall_seconds": 34.77
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26032390,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "c24eadfb4472b9337efafb2258c22c8185323484266c7781a6293e7e38b726f6"
+      },
+      "mode": "off",
+      "name": "SIFT1M_h17_off_r3",
+      "original_elf_sha": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "rep": 3,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59528.316,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0326,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 21.5475,
+        "prune_line_count": 1,
+        "prune_seconds": 2.704
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2796404,
+        "wall_seconds": 34.73
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26033117,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "24784878d2076ec58e8a00a75e25dd0f362ef6e3efb032ab9bb583c8b7543f75"
+      },
+      "mode": "off",
+      "name": "SIFT1M_fast_off_r3",
+      "original_elf_sha": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "rep": 3,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 37,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59871.189,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0287,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 19.0564,
+        "prune_line_count": 1,
+        "prune_seconds": 2.6934
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2809632,
+        "wall_seconds": 32.25
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26030906,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "d8f04748db599f4c79c92f23d720f65ca2c185cdebee7079c3c572f18b082a93"
+      },
+      "mode": "off",
+      "name": "SIFT1M_stock_off_r3",
+      "original_elf_sha": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "rep": 3,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59888.658,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 10.0311,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 27.2548,
+        "prune_line_count": 1,
+        "prune_seconds": 2.6929
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2802336,
+        "wall_seconds": 40.43
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040599,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "b9f8b08c09b08da5f537d0b28769b836f622732485974fba0707674a8a946b7f"
+      },
+      "mode": "on",
+      "name": "SIFT1M_stock_on_r1",
+      "original_elf_sha": "dcf4faf194dc62f918a0df6868e5a915f50aaa65793479e2825ce22e1c076ad0",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 38.883,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 109.6867,
+        "prune_line_count": 1,
+        "prune_seconds": 10.0139
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2638116,
+        "wall_seconds": 159.35
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040599,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "b9f8b08c09b08da5f537d0b28769b836f622732485974fba0707674a8a946b7f"
+      },
+      "mode": "on",
+      "name": "SIFT1M_h17_on_r1",
+      "original_elf_sha": "5afcfb5e2fbc7b7da9ec944b5c8dc3a53944c805b5c92ef1393618cb99ccc4b2",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 38.951800000000006,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 90.3621,
+        "prune_line_count": 1,
+        "prune_seconds": 9.9952
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2638332,
+        "wall_seconds": 140.09
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26040599,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "b9f8b08c09b08da5f537d0b28769b836f622732485974fba0707674a8a946b7f"
+      },
+      "mode": "on",
+      "name": "SIFT1M_fast_on_r1",
+      "original_elf_sha": "fa11cdde5931317c66c05a3f7b80631452e067dec7532cafc08ed6725eeb89a8",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": {
+        "big_inv_first_10000": 0,
+        "big_inv_is_diagnostic_not_hard_gate": true,
+        "exact_duplicate_vectors": {
+          "at_least_one_direct_neighbor": 14538,
+          "both_directions_direct_neighbors": 14538,
+          "detected_representative_pairs": 14538,
+          "either_end_retention_ratio": 1.0,
+          "one_endpoint_first_neighbor": 14538,
+          "pair_definition": "One initial representative per exact 512-byte vector equivalence class, not all pairwise combinations"
+        },
+        "quality_diagnostic_flags": {
+          "duplicate_either_end_retention_above_095": true,
+          "v0_has_2_and_6_with_degree_under64": true
+        },
+        "v0": {
+          "degree": 38,
+          "has_2": true,
+          "has_6": true,
+          "mean_neighbor_l2_squared": 59918.737,
+          "nearest": [
+            {
+              "id": 2,
+              "squared_l2": 18724.0
+            },
+            {
+              "id": 6,
+              "squared_l2": 24320.0
+            },
+            {
+              "id": 631203,
+              "squared_l2": 45468.0
+            },
+            {
+              "id": 246710,
+              "squared_l2": 47026.0
+            },
+            {
+              "id": 10336,
+              "squared_l2": 47909.0
+            }
+          ]
+        }
+      },
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 38.9942,
+        "buckets_two_passes": [
+          90503,
+          89561
+        ],
+        "clustering_comparisons_final": [
+          4804051721,
+          9667904774
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 82.2486,
+        "prune_line_count": 1,
+        "prune_seconds": 10.2242
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2638340,
+        "wall_seconds": 132.24
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52828429,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "db4f5257f06d7ca6df0a040d19590d201bc3e9b1eab7bf0f36265732969716cc"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_stock_off_r1",
+      "original_elf_sha": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.505099999999999,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 27.131500000000003,
+        "prune_line_count": 1,
+        "prune_seconds": 5.4533
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3126972,
+        "wall_seconds": 42.57
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52849784,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "ba233635f8a81702f9d1143bd00485db330f631ef8cc42aed09838c09c05ee9c"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_h17_off_r1",
+      "original_elf_sha": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.3255,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 20.9923,
+        "prune_line_count": 1,
+        "prune_seconds": 5.5367
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3115336,
+        "wall_seconds": 36.32
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52849553,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "104a1bc69711e494dbf562772b867752dd915e53ff7ed4142763cdc98fb354e9"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_fast_off_r1",
+      "original_elf_sha": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.3658,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 18.5175,
+        "prune_line_count": 1,
+        "prune_seconds": 5.4848
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3094868,
+        "wall_seconds": 33.84
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52857274,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "4b69a53c548cdb47714902c2201fe732daf668683056aae9efa724982e11731a"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_fast_off_r2",
+      "original_elf_sha": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "rep": 2,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.3564,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 18.4282,
+        "prune_line_count": 1,
+        "prune_seconds": 5.4884
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3123992,
+        "wall_seconds": 33.74
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52853377,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "5de325e9bbb0b46208c4878b3af77ae79c7c1821096eb11064efab5c15d0ae84"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_stock_off_r2",
+      "original_elf_sha": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "rep": 2,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.321,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 26.6995,
+        "prune_line_count": 1,
+        "prune_seconds": 5.4919
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3105164,
+        "wall_seconds": 41.99
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52857283,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "96b10e9be21f1d0d8c22aca692acf426e5e2375d078f97081f2095088b9c11f2"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_h17_off_r2",
+      "original_elf_sha": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "rep": 2,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.3308,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 21.0595,
+        "prune_line_count": 1,
+        "prune_seconds": 5.5652
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3134556,
+        "wall_seconds": 36.42
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52855123,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "1c1fa1af7f1344c3d0506736595a58c63a2acf7cf645f7ca45a83992fdb5307f"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_h17_off_r3",
+      "original_elf_sha": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "rep": 3,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.3859,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 21.061,
+        "prune_line_count": 1,
+        "prune_seconds": 5.5264
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3137544,
+        "wall_seconds": 36.44
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52865107,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "7c80157e8165e2792151e4934078fd7bd2fa2deebad2ad9864ba6aaf24da0462"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_fast_off_r3",
+      "original_elf_sha": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "rep": 3,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.379100000000001,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 18.459699999999998,
+        "prune_line_count": 1,
+        "prune_seconds": 5.4991
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3127704,
+        "wall_seconds": 33.8
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52858025,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "a7eb1ad15ff31130ce8411169f19b41d9bde75577ad5b5416e1b53a90ecbd010"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_stock_off_r3",
+      "original_elf_sha": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "rep": 3,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 9.3256,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 26.9126,
+        "prune_line_count": 1,
+        "prune_seconds": 5.4937
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 3124128,
+        "wall_seconds": 42.21
+      }
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52855159,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "ddc76663f0db2edc2bc1895e1b61f19463d9e65fd2617418da556b457c370e88"
+      },
+      "mode": "on",
+      "name": "MS-Turing1M_stock_on_r1",
+      "original_elf_sha": "dcf4faf194dc62f918a0df6868e5a915f50aaa65793479e2825ce22e1c076ad0",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 36.7124,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 107.637,
+        "prune_line_count": 1,
+        "prune_seconds": 21.0753
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2943720,
+        "wall_seconds": 166.29
+      }
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52855159,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "ddc76663f0db2edc2bc1895e1b61f19463d9e65fd2617418da556b457c370e88"
+      },
+      "mode": "on",
+      "name": "MS-Turing1M_h17_on_r1",
+      "original_elf_sha": "5afcfb5e2fbc7b7da9ec944b5c8dc3a53944c805b5c92ef1393618cb99ccc4b2",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 36.747,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 88.24680000000001,
+        "prune_line_count": 1,
+        "prune_seconds": 21.1207
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2943712,
+        "wall_seconds": 146.98
+      }
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52855159,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "FULL_1M_ROWS_ALL_GRAPH_ARCS",
+        "duplicate_neighbor_rows_full_graph": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "ddc76663f0db2edc2bc1895e1b61f19463d9e65fd2617418da556b457c370e88"
+      },
+      "mode": "on",
+      "name": "MS-Turing1M_fast_on_r1",
+      "original_elf_sha": "fa11cdde5931317c66c05a3f7b80631452e067dec7532cafc08ed6725eeb89a8",
+      "rep": 1,
+      "search_on_new_graph_NOT_DONE": true,
+      "sift_quality_diagnostic": null,
+      "stage": {
+        "buckets_line_count": 2,
+        "buckets_seconds": 36.9662,
+        "buckets_two_passes": [
+          89813,
+          88807
+        ],
+        "clustering_comparisons_final": [
+          5104928517,
+          10204781605
+        ],
+        "leaf_line_count": 2,
+        "leaf_seconds": 80.4439,
+        "prune_line_count": 1,
+        "prune_seconds": 21.3667
+      },
+      "timing": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 2943560,
+        "wall_seconds": 139.69
+      }
+    }
+  ],
+  "sift_diagnostics": "v0/zero-distance duplicate statistics and big inversions are diagnostics, not substitute for Recall. All original graph bytes remain immutable.",
+  "source_manifest_sha256": "5f42250caa47659daf978a73355857e355cc86096571d327518e676d41f1423b",
+  "status": "V13_H85_24GRAPH_BUILD_WORK_AND_FULL_STRUCTURAL_AUDIT_PASS__NEW_SEARCH_QUALITY_PENDING"
+}
