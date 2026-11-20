@@ -4,6 +4,7 @@ Source-only mirror of `/home/tai/ann-task-a` for code review and research collab
 
 ## Key Directories
 
+- [`experiments/R90/`](experiments/R90/) — Complete R90 Stock vs H17 vs Fast v2 campaign: exploratory P0–P3.8 gates, D6/D7 & P4/P4Q/P4M/P4R 1M studies, P0B counter64 audit, P0A v1.1–v1.2 unified builds + Highway `0e0a01da` vs `6bc2d477` FTZ/DAZ root-cause audit, and final **P0A v1.3** historical Highway `6bc2d477` controlled 1M benchmark (Stage A/B, 24-build 1M audit, 18-graph search screen, and 108-observation matched-threshold repeated QPS).
 - [`experiments/R86/r86_v1_2_source/`](experiments/R86/r86_v1_2_source/) — Active R86 instrumented PiPNN C++ implementation (`algorithms/PipNN/pipnn.h`, `pipnn_utils.h`, `CMakeLists.txt`).
 - [`experiments/R86/`](experiments/R86/) — Latest R86 diagnostics, gate tools, counter64 campaigns (`g11_*`), beam/trace diagnostics (`g12_*`, `g15_*`), MSTuring 1M evaluation/six-arm runs (`msturing_1m_*`), prefix scaling, and matched-recall runners.
 - [`00_PROJECT_HOME/`](00_PROJECT_HOME/) — Navigation hub (`00_START_HERE.md`, `PROJECT_STATUS.md`, `LINK_MAP.tsv`), R86 shell/Python runner scripts (`07_SCRIPTS/`), and lightweight result summaries (`05_RESULTS_AND_COUNTERS/`).
