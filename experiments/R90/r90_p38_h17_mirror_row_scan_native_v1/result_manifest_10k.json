@@ -1,0 +1,68 @@
+{
+  "arm_source": {
+    "ctrl": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "algorithms/PipNN/pipnn_utils.h": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520"
+    },
+    "mirror": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "algorithms/PipNN/pipnn_utils.h": "def8b3e23536917433ff5683465920f0d56653d48f9646949563620b4b7fac34"
+    }
+  },
+  "elf_sha": {
+    "ctrl": "983eadb573730cd6ebb3bcffa3d66889a9b089582204b9cb7f823a97ce58f3ed",
+    "mirror": "6712b9ca19fc86fd16ed0a914e284db17f9cecd736f624c22864f96d3b5c4748"
+  },
+  "prefix_sha": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+  "runs": [
+    {
+      "arm": "ctrl",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_mirror_row_scan_native_v1/graphs/10000_ctrl_r1.graph",
+      "graph_bytes": 460516,
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_mirror_row_scan_native_v1/logs/10000_ctrl_r1.stdout",
+      "stdout_sha": "91d85dcd61542c39e76db3349e51fd422f191764685a837f72c7e764b74c8a12",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_mirror_row_scan_native_v1/logs/10000_ctrl_r1.time",
+      "timefile_sha": "34248f7c507caa7255b32e7da3133d8f9cd71035599686111b58fbc57a4c37c4",
+      "wall_s": 0.8152943750010309
+    },
+    {
+      "arm": "mirror",
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_mirror_row_scan_native_v1/graphs/10000_mirror_r1.graph",
+      "graph_bytes": 460516,
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_mirror_row_scan_native_v1/logs/10000_mirror_r1.stdout",
+      "stdout_sha": "dd75d1024360a86fde9a494f7b798a7b2f071e79b8f1b06011fe25c7c7d51819",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p38_h17_mirror_row_scan_native_v1/logs/10000_mirror_r1.time",
+      "timefile_sha": "f8f1357a4e254a150c6f1a6be8aa6f240c7d46645d556a7ab5d8633a8c673719",
+      "wall_s": 0.8655711669998709
+    }
+  ],
+  "scope": "One isolated H17 C160 N2 1CPU baseline vs exact-distance mirrored RowMajor scan; unchanged packed-double logic. Timings BUILD not source counters.",
+  "script_sha": "14229bce4bba1030a53bc13af70974b75bc99c028aefd04500bfb64b74b5f371",
+  "source": {
+    "H17_root": "/home/tai/ann-task-a/experiments/H17/phase3_top2_e2e/PiPNN-top2",
+    "base_sha": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "cpu": 0,
+    "deps": {
+      "ABSEIL-CPP": "bc257a88f7c1939f24e0379f14a3589e926c950c",
+      "EIGEN": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "GOOGLEBENCHMARK": "d886e3177c5dc48f150fbfbf142be6e724a032a4",
+      "HIGHWAY": "6bc2d47793bae9c521fb4150936669647700765d",
+      "PARLAYLIB": "51017699dcc421f80479cdb238d3092233ad0d26"
+    },
+    "patched_utils_sha": "def8b3e23536917433ff5683465920f0d56653d48f9646949563620b4b7fac34",
+    "source_hashes": {
+      "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+      "algorithms/PipNN/pipnn.h": "3367d12486c53f637ada6d3c747816d71c6eb2c9de869158adae79e404650ec2",
+      "algorithms/PipNN/pipnn_utils.h": "b4a7e39a1ddf6c9f41f136360773aa9aef50ae7d19921b0b49b6422408c4c520"
+    }
+  },
+  "status": "PASS_10K_PAIR"
+}

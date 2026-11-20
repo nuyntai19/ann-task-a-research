@@ -1,0 +1,38 @@
+R90_P31_SELFTEST_PASS_READONLY_BRACKET_AND_INTERPOLATION
+R90_P31_NATIVE_SWEEP_SOURCE_AND_LOG_SHA_PARITY_PASS
+
+=== INTERPOLATED RECALL 0.990 ===
+stock_N1               BUILD=  6.580s bracket= 64- 72 R=(0.98685002,0.99011999) QPS_interp_direct=  17687.50 QPS_interp_latency=  17681.02 sweep_recall_monotone=True
+stock_N2               BUILD= 12.695s bracket= 56- 64 R=(0.98908001,0.99207997) QPS_interp_direct=  19299.05 QPS_interp_latency=  19252.84 sweep_recall_monotone=True
+a5_gate_q0p5_N2        BUILD=  9.989s bracket= 64- 72 R=(0.98931998,0.99229997) QPS_interp_direct=  18260.04 QPS_interp_latency=  18227.14 sweep_recall_monotone=True
+a5_gate_q001_N2        BUILD= 10.893s bracket= 56- 64 R=(0.98667002,0.99006999) QPS_interp_direct=  18717.14 QPS_interp_latency=  18712.54 sweep_recall_monotone=True
+a5_gate_q2_N2          BUILD= 11.795s bracket= 56- 64 R=(0.98790002,0.99115998) QPS_interp_direct=  19042.16 QPS_interp_latency=  18991.14 sweep_recall_monotone=True
+a5_gate_q5_N2          BUILD= 12.649s bracket= 56- 64 R=(0.98904002,0.99204999) QPS_interp_direct=  19401.44 QPS_interp_latency=  19349.24 sweep_recall_monotone=True
+--- Relative to Stock N2 and N1-to-N2 build/QPS chord ---
+a5_gate_q0p5_N2        vs_N2=  -5.328% vs_build_QPS_chord=  -1.779% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+a5_gate_q001_N2        vs_N2=  -2.806% vs_build_QPS_chord=  -0.410% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+a5_gate_q2_N2          vs_N2=  -1.359% vs_build_QPS_chord=  -0.159% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+a5_gate_q5_N2          vs_N2=  +0.501% vs_build_QPS_chord=  +0.563% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+
+=== INTERPOLATED RECALL 0.998 ===
+stock_N1               BUILD=  6.580s bracket=128-144 R=(0.99786001,0.99851000) QPS_interp_direct=  10663.26 QPS_interp_latency=  10645.56 sweep_recall_monotone=True
+stock_N2               BUILD= 12.695s bracket= 96-104 R=(0.99756002,0.99808002) QPS_interp_direct=  12091.66 QPS_interp_latency=  12085.00 sweep_recall_monotone=True
+a5_gate_q0p5_N2        BUILD=  9.989s bracket=112-128 R=(0.99760997,0.99838001) QPS_interp_direct=  11040.38 QPS_interp_latency=  11008.47 sweep_recall_monotone=True
+a5_gate_q001_N2        BUILD= 10.893s bracket=112-128 R=(0.99778998,0.99853998) QPS_interp_direct=  11324.89 QPS_interp_latency=  11301.87 sweep_recall_monotone=True
+a5_gate_q2_N2          BUILD= 11.795s bracket=104-112 R=(0.99777001,0.99822003) QPS_interp_direct=  11790.43 QPS_interp_latency=  11779.16 sweep_recall_monotone=True
+a5_gate_q5_N2          BUILD= 12.649s bracket= 96-104 R=(0.99755001,0.99804997) QPS_interp_direct=  12128.90 QPS_interp_latency=  12124.89 sweep_recall_monotone=True
+--- Relative to Stock N2 and N1-to-N2 build/QPS chord ---
+a5_gate_q0p5_N2        vs_N2=  -8.908% vs_build_QPS_chord=  -3.839% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+a5_gate_q001_N2        vs_N2=  -6.480% vs_build_QPS_chord=  -3.078% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+a5_gate_q2_N2          vs_N2=  -2.531% vs_build_QPS_chord=  -0.790% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+a5_gate_q5_N2          vs_N2=  +0.330% vs_build_QPS_chord=  +0.421% NOT_A_FORMAL_MATCHED_RECALL_CLAIM
+
+=== P3 RECTANGULAR PAIR PROXY ===
+q=0.0050 rect/tri=1.0483% Q_occ=14998 total_occ=2999577 PROXY_ONLY_NOT_BUILD_SPEEDUP
+q=0.0100 rect/tri=2.0644% Q_occ=29994 total_occ=2999577 PROXY_ONLY_NOT_BUILD_SPEEDUP
+q=0.0200 rect/tri=4.0739% Q_occ=59985 total_occ=2999577 PROXY_ONLY_NOT_BUILD_SPEEDUP
+q=0.0500 rect/tri=10.0521% Q_occ=149965 total_occ=2999577 PROXY_ONLY_NOT_BUILD_SPEEDUP
+
+R90_P31_READONLY_AUDIT_PASS_NO_GRAPH_BUILD_OR_SEARCH_NO_WRITES
+LIMITATION: bracket QPS derived from ONE 18-beam sweep per graph; interpolation model, time noise and single build/seed must be validated before claims.
+R90_P31_SEQUENCE_COMPLETE

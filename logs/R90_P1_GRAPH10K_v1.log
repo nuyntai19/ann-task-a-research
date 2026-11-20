@@ -1,0 +1,32 @@
+R90_P1_SELFTEST_FBIN_GRAPH_CANONICAL_COVERAGE_AND_8ARM_CONTRACT_PASS
+R90_P1_SOURCE_2_ELF_SHA_P0_RECEIPT_DATA_10K_PREFLIGHT_PASS {"a5_elf_sha": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2", "cpu": 0, "input": "/home/tai/ann-task-a/data/sift100k.fbin", "n": 100000, "output": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1", "stock_elf_sha": "31b337316f69c5945dc78a14be16217e7f0bf901e7af5d752a3af17bdb337225"}
+R90_P1_SOURCE_2_ELF_SHA_P0_RECEIPT_DATA_10K_PREFLIGHT_PASS {"a5_elf_sha": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2", "cpu": 0, "input": "/home/tai/ann-task-a/data/sift100k.fbin", "n": 100000, "output": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1", "stock_elf_sha": "31b337316f69c5945dc78a14be16217e7f0bf901e7af5d752a3af17bdb337225"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "stock_N2", "cpu": 0, "frac": null, "mode": "off"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 105127, "arm": "stock_N2", "coverage": null, "sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"}
+R90_P1_NATIVE_GRAPH_START {"N": 1, "arm": "stock_N1", "cpu": 0, "frac": null, "mode": "off"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 87301, "arm": "stock_N1", "coverage": null, "sha": "6b45ec27d38a0c06031136f85fdf11d8800339e5325b5a43000b81269c2a39d9"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "a5_off_N2", "cpu": 0, "frac": null, "mode": "off"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 105127, "arm": "a5_off_N2", "coverage": null, "sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "a5_all_N2", "cpu": 0, "frac": null, "mode": "all"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 105127, "arm": "a5_all_N2", "coverage": {"eligible_leaf_pct": 100.0, "eligible_leaves": 498, "eligible_wl_pct": 100.0, "gate": 1, "total_leaves": 498, "wl_eligible": 140407134, "wl_total": 140407134}, "sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "a5_none_N2", "cpu": 0, "frac": null, "mode": "none"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 87301, "arm": "a5_none_N2", "coverage": {"eligible_leaf_pct": 0.0, "eligible_leaves": 0, "eligible_wl_pct": 0.0, "gate": 1, "total_leaves": 498, "wl_eligible": 0, "wl_total": 140407134}, "sha": "6b45ec27d38a0c06031136f85fdf11d8800339e5325b5a43000b81269c2a39d9"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "a5_dryrun_q001", "cpu": 0, "frac": 0.01, "mode": "dryrun"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 105127, "arm": "a5_dryrun_q001", "coverage": {"eligible_leaf_pct": 66.666667, "eligible_leaves": 332, "eligible_wl_pct": 77.731756, "gate": 0, "total_leaves": 498, "wl_eligible": 109140931, "wl_total": 140407134}, "sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "a5_dryrun_q010", "cpu": 0, "frac": 0.1, "mode": "dryrun"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 105127, "arm": "a5_dryrun_q010", "coverage": {"eligible_leaf_pct": 99.39759, "eligible_leaves": 495, "eligible_wl_pct": 99.924224, "gate": 0, "total_leaves": 498, "wl_eligible": 140300739, "wl_total": 140407134}, "sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"}
+R90_P1_NATIVE_GRAPH_START {"N": 2, "arm": "a5_dryrun_q025", "cpu": 0, "frac": 0.25, "mode": "dryrun"}
+R90_P1_GRAPH_NATIVE_RECEIPT_PASS {"arcs": 105127, "arm": "a5_dryrun_q025", "coverage": {"eligible_leaf_pct": 100.0, "eligible_leaves": 498, "eligible_wl_pct": 100.0, "gate": 0, "total_leaves": 498, "wl_eligible": 140407134, "wl_total": 140407134}, "sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"}
+R90_P1_N2_GRAPH_EQ a5_off_N2 RAW True CANONICAL True
+R90_P1_N2_GRAPH_EQ a5_all_N2 RAW True CANONICAL True
+R90_P1_N2_GRAPH_EQ a5_dryrun_q001 RAW True CANONICAL True
+R90_P1_N2_GRAPH_EQ a5_dryrun_q010 RAW True CANONICAL True
+R90_P1_N2_GRAPH_EQ a5_dryrun_q025 RAW True CANONICAL True
+R90_P1_N1_GRAPH_EQ a5_none_N2 RAW True CANONICAL True
+R90_P1_DRYRUN_COVERAGE a5_dryrun_q001 {"eligible_leaf_pct": 66.666667, "eligible_leaves": 332, "eligible_wl_pct": 77.731756, "gate": 0, "total_leaves": 498, "wl_eligible": 109140931, "wl_total": 140407134}
+R90_P1_DRYRUN_COVERAGE a5_dryrun_q010 {"eligible_leaf_pct": 99.39759, "eligible_leaves": 495, "eligible_wl_pct": 99.924224, "gate": 0, "total_leaves": 498, "wl_eligible": 140300739, "wl_total": 140407134}
+R90_P1_DRYRUN_COVERAGE a5_dryrun_q025 {"eligible_leaf_pct": 100.0, "eligible_leaves": 498, "eligible_wl_pct": 100.0, "gate": 0, "total_leaves": 498, "wl_eligible": 140407134, "wl_total": 140407134}
+R90_P1_10K_STOCK_N2_OFF_DRYRUN_ALL_AND_N1_NONE_BYTE_GRAPH_PARITY_PASS
+R90_P1_NO_A5_GATE_GRAPH_NO_SEARCH_NO_QPS_GAIN
+R90_P1_8_NATIVE_10K_GRAPHS_INPUT_ELF_LOG_PAIRED_PARITY_AND_COVERAGE_SHA_AUDIT_PASS
+R90_P1_SEQUENCE_COMPLETE

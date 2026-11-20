@@ -1,0 +1,153 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ba41e07..fb67fe8 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -21,7 +21,7 @@ FetchContent_Declare(parlaylib
+ FetchContent_GetProperties(parlaylib)
+ if(NOT parlaylib_POPULATED)
+   FetchContent_Populate(parlaylib)  
+-  add_subdirectory(${parlaylib_SOURCE_DIR} EXCLUDE_FROM_ALL)
++  add_subdirectory(${parlaylib_SOURCE_DIR} ${parlaylib_BINARY_DIR} EXCLUDE_FROM_ALL)
+ endif()
+ 
+ FetchContent_Declare(Eigen
+diff --git a/algorithms/PipNN/CMakeLists.txt b/algorithms/PipNN/CMakeLists.txt
+index 913ad60..089a89b 100644
+--- a/algorithms/PipNN/CMakeLists.txt
++++ b/algorithms/PipNN/CMakeLists.txt
+@@ -1,3 +1,7 @@
++# R71_H17_PACKED_TOP2_ISOLATED
++option(R71_USE_H17 "Enable H17 packed top2 for MST_DEG==2" OFF)
++# R70_COMPILE_TIME_RESERVOIR_SELECTION (research-only isolated worktree)
++option(R70_USE_TIER "R70 Two-Tier physical reservoir; logical C unchanged" OFF)
+ #add_executable(${TARGET_NAME} ../bench/neighborsTime.C)
+ #target_link_libraries(${TARGET_NAME} PRIVATE parlay ParlayANN Eigen3::Eigen)
+ #target_include_directories(${TARGET_NAME} PRIVATE ../bench)
+@@ -32,7 +36,38 @@ foreach(CURRENT_DATATYPE_CMAKE ${CONFIG_DATATYPES_CMAKE})
+           absl::span hwy hwy_contrib)
+         target_include_directories(${TARGET_NAME} PRIVATE ../bench ../../external/Parallel-KMeans/seeding)
+         target_precompile_headers(${TARGET_NAME} PRIVATE neighbors.h)
++        if(R71_USE_H17)
++            target_compile_definitions(${TARGET_NAME} PRIVATE R71_H17_TOP2=1)
++        endif()
++        if(R70_USE_TIER)
++            target_compile_definitions(${TARGET_NAME} PRIVATE R70_TWO_TIER=1)
++        endif()
+ 
+         message(STATUS "Configured Target: ${TARGET_NAME} with Definitions: ${DATATYPE_DEFINE}, ${DISTANCETYPE_DEFINE}")
+     endforeach()
+ endforeach()
++
++
++# R70 research-only native correctness/microbench target (isolated worktree)
++add_executable(r70_native_tests r70_native_tests.cc)
++target_link_libraries(r70_native_tests PRIVATE parlay ParlayANN
++  Eigen3::Eigen absl::synchronization absl::flat_hash_set absl::span hwy hwy_contrib)
++target_include_directories(r70_native_tests PRIVATE ../bench ../../external/Parallel-KMeans/seeding)
++
++# R70_RECALL_EVALUATOR_TARGET: reads saved graphs, does not build PiPNN graph
++add_executable(r70_graph_recall r70_graph_recall.cc)
++target_link_libraries(r70_graph_recall PRIVATE
++  parlay ParlayANN Eigen3::Eigen absl::synchronization
++  absl::flat_hash_set absl::span hwy hwy_contrib)
++target_include_directories(r70_graph_recall PRIVATE
++  ../bench ../../external/Parallel-KMeans/seeding)
++target_compile_features(r70_graph_recall PRIVATE cxx_std_17)
++
++# R72_SIFT1M_RECALL_EVALUATOR_TARGET: SIFT1M search-only; does NOT BUILD graph
++add_executable(r72_graph_recall r72_graph_recall.cc)
++target_link_libraries(r72_graph_recall PRIVATE
++  parlay ParlayANN Eigen3::Eigen absl::synchronization
++  absl::flat_hash_set absl::span hwy hwy_contrib)
++target_include_directories(r72_graph_recall PRIVATE
++  ../bench ../../external/Parallel-KMeans/seeding)
++target_compile_features(r72_graph_recall PRIVATE cxx_std_17)
+diff --git a/algorithms/PipNN/pipnn.h b/algorithms/PipNN/pipnn.h
+index ebe6e52..bdf90f8 100644
+--- a/algorithms/PipNN/pipnn.h
++++ b/algorithms/PipNN/pipnn.h
+@@ -11,6 +11,9 @@
+ 
+ #include "../bench/parse_command_line.h"
+ #include "../utils/graph.h"
++#ifdef R70_TWO_TIER
++#include "../utils/r70_two_tier_lshgraph.h"
++#endif // R70_COMPILE_TIME_RESERVOIR_SELECTION
+ #include "pipnn_utils.h"
+ #include "parlay/parallel.h"
+ #include "parlay/primitives.h"
+@@ -553,7 +556,21 @@ struct pipnn_index {
+         size_t h_size = H.get_total_size_in_bytes();
+         std::cout << "Size of SketchHash (bytes): " << h_size << std::endl;
+ 
+-        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>> lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);
++        // R70_COMPILE_TIME_RESERVOIR_SELECTION: keep all caller arguments and logical C unchanged.
++#ifdef R70_TWO_TIER
++        using R70GraphStorage = TwoTierLSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>>;
++        std::cout << "R70_RESERVOIR_VARIANT=TIER_B64_C" << table_size << std::endl;
++#else
++        using R70GraphStorage = LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>>;
++        std::cout << "R70_RESERVOIR_VARIANT=STOCK_FLAT_C" << table_size << std::endl;
++#endif
++        // R71_H17_PACKED_TOP2_ISOLATED: emit once per BUILD for binary provenance.
++#ifdef R71_H17_TOP2
++        std::cout << "R71_SELECTION_VARIANT=H17_PACKED_TOP2" << std::endl;
++#else
++        std::cout << "R71_SELECTION_VARIANT=STOCK_HIGHWAY" << std::endl;
++#endif
++        R70GraphStorage lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);
+         build_index_impl(G, P, Points, cluster_rounds, cluster_size, MSTDeg, prune, prune_all, alpha, prune_degree, top_level_leaders, fanout, fanout_per_level, fraction_leaders, fanout_scheme, Hsize, table_size, lsh_graph, fixed_num_leaders);
+     }
+   }
+diff --git a/algorithms/PipNN/pipnn_utils.h b/algorithms/PipNN/pipnn_utils.h
+index 81b9149..4d2a54d 100644
+--- a/algorithms/PipNN/pipnn_utils.h
++++ b/algorithms/PipNN/pipnn_utils.h
+@@ -446,6 +446,37 @@ void eigen_knn(GraphH &G, parlay::sequence<uint32_t> &active_indices, PR &Points
+   std::vector<std::tuple<uint32_t, uint32_t, float>> directed_edges;
+   directed_edges.reserve(N * MST_DEG);
+ 
++  // R71_H17_PACKED_TOP2_ISOLATED: exact H17 Phase3 Packed Top-2; only MST_DEG==2.
++#if defined(R71_H17_TOP2)
++  if (MST_DEG == 2) {
++    for (size_t i = 0; i < N; ++i) {
++      double first = std::numeric_limits<double>::infinity();
++      double second = std::numeric_limits<double>::infinity();
++      size_t count = 0;
++      for (indexType j = 0; j < N; ++j) {
++        if (i == j) continue;
++        float dist_ij = (i < j) ? dist_mat[j * N + i] : dist_mat[i * N + j];
++        double d = packFloatAndInt(dist_ij, j);
++        if (count == 0 || d < first) {
++          second = first;
++          first = d;
++        } else if (count == 1 || d < second) {
++          second = d;
++        }
++        if (count < 2) ++count;
++      }
++      const uint32_t global_i = active_indices[i];
++      if (count > 0) {
++        auto p = unpackDouble(first);
++        directed_edges.emplace_back(global_i, active_indices[p.second], p.first);
++      }
++      if (count > 1) {
++        auto p = unpackDouble(second);
++        directed_edges.emplace_back(global_i, active_indices[p.second], p.first);
++      }
++    }
++  } else {
++#endif
+   std::vector<double> Q;
+   Q.reserve(N);
+ 
+@@ -469,6 +500,9 @@ void eigen_knn(GraphH &G, parlay::sequence<uint32_t> &active_indices, PR &Points
+     }
+   }
+ 
++#if defined(R71_H17_TOP2)
++  }
++#endif
+   // the problem with this approach is that we only merge one neighbor at a time.
+   for (const auto& edge : directed_edges) {
+     uint32_t u = std::get<0>(edge);

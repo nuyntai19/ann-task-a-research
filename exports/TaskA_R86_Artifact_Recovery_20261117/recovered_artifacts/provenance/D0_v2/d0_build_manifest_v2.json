@@ -1,0 +1,34 @@
+{
+  "source": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+  "source_pipnn_cmakelists_sha256": "19d5eb89771343c90ee21c98b8ed3628cfab1a1daf2d5549d37123bfa10d2a95",
+  "ref_h17_build": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_h17_off",
+  "ref_h17_binary_sha256": "5f673586210f93b424fc81791ec7873cb74600843b5004c0a4aaaf32bf936297",
+  "ref_h17_cmakecache_sha256": "2aa16b38262313558f1050c416a768478f0038afada1c09be0a4651b1fed5a6d",
+  "ref_h17_flags_sha256": "46cb2df5e586c498af84ed3ac858c5eb34211d326251f947cc43a802a5b1475b",
+  "deps": {
+    "ABSEIL_CPP": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/abseil-cpp-src",
+    "PARLAYLIB": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/parlaylib-src",
+    "EIGEN": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/eigen-src",
+    "HIGHWAY": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src",
+    "GOOGLEBENCHMARK": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/googlebenchmark-src"
+  },
+  "dep_header_shas": {
+    "parlay_parallel_h": "56e1ee69a6970f690f132d7b01489bd736587d4f397d5ac8a8b8ac22fcaa253f",
+    "absl_mutex_h": "3fd83e09c7c02709694eb5615d4fd7c8f5c5e16f837d065b5c31771141791c4c",
+    "googlebenchmark_h": "3dfa2dd39fd4075e6f3fec4161cdacea6d18d23243cf9e95211750a5779f0d9c"
+  },
+  "destination": "/home/tai/ann-task-a/experiments/R86/msturing_1m_sixarm/build_d0_h17_tier_off_v2",
+  "free_disk_gib": 51.98,
+  "requested_flags": {
+    "R70_USE_TIER": "ON",
+    "R71_USE_H17": "ON",
+    "R86_USE_COUNTERS": "OFF"
+  },
+  "cmake_offline_dependency_gate": "5 FetchContent source directories pinned; no network fetching",
+  "note": "No ANN graph built; binary compile only; equivalent source/dependency intended, must audit resulting command macros and graph behavior.",
+  "new_d0_binary": "/home/tai/ann-task-a/experiments/R86/msturing_1m_sixarm/build_d0_h17_tier_off_v2/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+  "new_d0_binary_sha256": "7c2aad71a97f9c2b2e6de6026085be43954a7dd0845feffb672f6782c84575ab",
+  "new_d0_flags_sha256": "aae44043ceceb38483e91eafa0cd2f150b8ff3b4a4ecda53cf7622b6599f4ced",
+  "new_d0_cmakecache_sha256": "a449e47e4337790570460cfce5fcdd95cf5c9bfb86d3b9687b85db17f814c6f8",
+  "new_d0_link_sha256": "ba77aec85902e3bae7a6ba4a3880544640c1e2403a62826495bb51d699813d68"
+}

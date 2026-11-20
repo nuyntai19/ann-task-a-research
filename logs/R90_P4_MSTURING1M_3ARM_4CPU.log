@@ -1,0 +1,26 @@
+R90_P4_SELFTEST_PASS_LATIN_SQUARE_TIMES_AND_ATOMIC
+R90_P4_PREFLIGHT_PINNED_MST1M_DATA_STOCK_H17_FAST_SHA_4_PHYSICAL_CORES_PASS cpus 0,2,4,6 physical_cores [(0, 0), (0, 4), (0, 8), (0, 12)]
+R90_P4_PREFLIGHT_PINNED_MST1M_DATA_STOCK_H17_FAST_SHA_4_PHYSICAL_CORES_PASS cpus 0,2,4,6 physical_cores [(0, 0), (0, 4), (0, 8), (0, 12)]
+R90_P4_BUILD_START mst1m_stock_r1 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_stock_r1 wall_s 42.061699 rss_kib 3116784 cpu_pct 396.0 arcs 52849006 graph_sha c24e1a506c4adaca82d398bbc51a68d0fc8caab7f6472219182614a874081ca3
+R90_P4_BUILD_START mst1m_h17_r1 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_h17_r1 wall_s 36.570756 rss_kib 3133876 cpu_pct 395.0 arcs 52855134 graph_sha 64a670d0136cc070cfe376a27a5dd3aabebb7be784f2a258734a35635717c6d7
+R90_P4_BUILD_START mst1m_fast_r1 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_fast_r1 wall_s 33.880642 rss_kib 3117948 cpu_pct 396.0 arcs 52855080 graph_sha 6936e95d42ff27c8511e791b1f53164d1273709b2b4fcf8d710edc081838fdac
+R90_P4_REP_COMPLETE 1 arms ('stock', 'h17', 'fast')
+R90_P4_BUILD_START mst1m_fast_r2 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_fast_r2 wall_s 33.779365 rss_kib 3132692 cpu_pct 396.0 arcs 52855109 graph_sha ef92e69ba759910cc8399ae84723e58d5665f06022ebf407786597fc79a10aa9
+R90_P4_BUILD_START mst1m_stock_r2 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_stock_r2 wall_s 41.974355 rss_kib 3126012 cpu_pct 396.0 arcs 52852523 graph_sha 3161a570d03daccb498ef1e6a8fcd11063e4899e9e0044242adab8a11aa6a3aa
+R90_P4_BUILD_START mst1m_h17_r2 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_h17_r2 wall_s 36.399396 rss_kib 3117228 cpu_pct 396.0 arcs 52855100 graph_sha 8a89f28ae3d1617e0e9a8d8d132a433f8c6682335ab28e768f3f354d2e2918cf
+R90_P4_REP_COMPLETE 2 arms ('fast', 'stock', 'h17')
+R90_P4_BUILD_START mst1m_h17_r3 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_h17_r3 wall_s 36.464543 rss_kib 3141144 cpu_pct 396.0 arcs 52855119 graph_sha a20fdc5a6bf1b927eac9584b729c43ec71bf97bedb8a918850a0206570fda9d6
+R90_P4_BUILD_START mst1m_fast_r3 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_fast_r3 wall_s 33.729844 rss_kib 3115380 cpu_pct 396.0 arcs 52855065 graph_sha 324973bf593f4db0cf17f543376cb4184e302437e758418a1867a138b2fe9e17
+R90_P4_BUILD_START mst1m_stock_r3 cpus 0,2,4,6
+R90_P4_BUILD_PASS mst1m_stock_r3 wall_s 42.117339 rss_kib 3135104 cpu_pct 396.0 arcs 52865098 graph_sha 6ff7c6b143eced4e666799ce6c7eef39f96e8771b7bb76244f04cffef72da505
+R90_P4_REP_COMPLETE 3 arms ('h17', 'fast', 'stock')
+R90_P4_PILOT_NINE_BUILDS_COMPLETE__MST1M_SEARCH_PENDING
+R90_P4_HOLD RuntimeError R90_P4_HOLD_PROVENANCE_DRIFT_physical_core_identifiers

@@ -1,0 +1,437 @@
+{
+  "schema_version": "R86_G0_native_audit_v1",
+  "date_local": "2026-11-13T01:12:56+07:00",
+  "root": "/home/tai/ann-task-a/experiments",
+  "checks": [
+    {
+      "check": "G0_STAGED_SOURCE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source"
+    },
+    {
+      "check": "G0_STAGING_PROVENANCE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/R86_STAGING_PROVENANCE.json"
+    },
+    {
+      "check": "G0_STAGING_PATH_MATCH",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source"
+    },
+    {
+      "check": "G0_BASELINE_PATH_MATCH",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328"
+    },
+    {
+      "check": "G0_VERIFIER_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86_patch_v1_2/R86_Day2_Counter_Patch_v1_2/scripts/verify_g0.py"
+    },
+    {
+      "check": "G0_SOURCE_OFF_BYTE_IDENTITY",
+      "status": "PASS",
+      "detail": "rc=0 / see g0_source_verifier.log"
+    },
+    {
+      "check": "G0_PIN_FILE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86_patch_v1_2/R86_Day2_Counter_Patch_v1_2/EXPECTED_SOURCE_SHA256.txt"
+    },
+    {
+      "check": "G0_BASELINE_SHA_algorithms/PipNN/pipnn.h",
+      "status": "PASS",
+      "detail": "f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288 (want f4391ad8712d7757423dca872f9042c3271660dffde384a85b93854b9692f288)"
+    },
+    {
+      "check": "G0_BASELINE_SHA_algorithms/PipNN/pipnn_utils.h",
+      "status": "PASS",
+      "detail": "7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d (want 7083e8183554a1cb586b70cdb4c57920f49ec5a50680096aecf6b873f596595d)"
+    },
+    {
+      "check": "G0_BASELINE_SHA_algorithms/PipNN/neighbors.h",
+      "status": "PASS",
+      "detail": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef (want 29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef)"
+    },
+    {
+      "check": "G0_BASELINE_SHA_algorithms/utils/graph.h",
+      "status": "PASS",
+      "detail": "17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e (want 17e51779f32db56c9c50b6d514a8ff68539fd19b734804df3abdb63f88dd443e)"
+    },
+    {
+      "check": "stock_off_EXECUTABLE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+    },
+    {
+      "check": "stock_off_SHA256",
+      "status": "PASS",
+      "detail": "ba8e621fdcbf1649f101b2a0f63d13791061847e14608907ecbe601c4269b681"
+    },
+    {
+      "check": "stock_off_RECEIPT_MATCH",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/R86_EXECUTABLE_SHA256.txt"
+    },
+    {
+      "check": "stock_off_CMAKE_CACHE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/CMakeCache.txt"
+    },
+    {
+      "check": "stock_off_R70_USE_TIER",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "stock_off_R71_USE_H17",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "stock_off_R86_USE_COUNTERS",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "stock_off_CMAKE_BUILD_TYPE",
+      "status": "PASS",
+      "detail": "'Release' (want 'Release')"
+    },
+    {
+      "check": "stock_off_CMAKE_CXX_FLAGS",
+      "status": "PASS",
+      "detail": "'' (want '')"
+    },
+    {
+      "check": "stock_off_CMAKE_CXX_FLAGS_RELEASE",
+      "status": "PASS",
+      "detail": "'-O3 -DNDEBUG' (want '-O3 -DNDEBUG')"
+    },
+    {
+      "check": "stock_off_CMAKE_CXX_COMPILER",
+      "status": "PASS",
+      "detail": "'/usr/bin/c++' (R85 '/usr/bin/c++')"
+    },
+    {
+      "check": "stock_off_CMAKE_SOURCE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source"
+    },
+    {
+      "check": "stock_on_EXECUTABLE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+    },
+    {
+      "check": "stock_on_SHA256",
+      "status": "PASS",
+      "detail": "64b69daee16edb8e6ec48e39c63b816505bf8f3b0a07adc78e05ea05ac40a859"
+    },
+    {
+      "check": "stock_on_RECEIPT_MATCH",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_on/R86_EXECUTABLE_SHA256.txt"
+    },
+    {
+      "check": "stock_on_CMAKE_CACHE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_on/CMakeCache.txt"
+    },
+    {
+      "check": "stock_on_R70_USE_TIER",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "stock_on_R71_USE_H17",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "stock_on_R86_USE_COUNTERS",
+      "status": "PASS",
+      "detail": "'ON' (want 'ON')"
+    },
+    {
+      "check": "stock_on_CMAKE_BUILD_TYPE",
+      "status": "PASS",
+      "detail": "'Release' (want 'Release')"
+    },
+    {
+      "check": "stock_on_CMAKE_CXX_FLAGS",
+      "status": "PASS",
+      "detail": "'' (want '')"
+    },
+    {
+      "check": "stock_on_CMAKE_CXX_FLAGS_RELEASE",
+      "status": "PASS",
+      "detail": "'-O3 -DNDEBUG' (want '-O3 -DNDEBUG')"
+    },
+    {
+      "check": "stock_on_CMAKE_CXX_COMPILER",
+      "status": "PASS",
+      "detail": "'/usr/bin/c++' (R85 '/usr/bin/c++')"
+    },
+    {
+      "check": "stock_on_CMAKE_SOURCE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source"
+    },
+    {
+      "check": "h17_off_EXECUTABLE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+    },
+    {
+      "check": "h17_off_SHA256",
+      "status": "PASS",
+      "detail": "dd3829b1734b39fa175091fe0decdbb1cddf2f87795c9a0048df7a1e4e03eeb2"
+    },
+    {
+      "check": "h17_off_RECEIPT_MATCH",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_off/R86_EXECUTABLE_SHA256.txt"
+    },
+    {
+      "check": "h17_off_CMAKE_CACHE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_off/CMakeCache.txt"
+    },
+    {
+      "check": "h17_off_R70_USE_TIER",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "h17_off_R71_USE_H17",
+      "status": "PASS",
+      "detail": "'ON' (want 'ON')"
+    },
+    {
+      "check": "h17_off_R86_USE_COUNTERS",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "h17_off_CMAKE_BUILD_TYPE",
+      "status": "PASS",
+      "detail": "'Release' (want 'Release')"
+    },
+    {
+      "check": "h17_off_CMAKE_CXX_FLAGS",
+      "status": "PASS",
+      "detail": "'' (want '')"
+    },
+    {
+      "check": "h17_off_CMAKE_CXX_FLAGS_RELEASE",
+      "status": "PASS",
+      "detail": "'-O3 -DNDEBUG' (want '-O3 -DNDEBUG')"
+    },
+    {
+      "check": "h17_off_CMAKE_CXX_COMPILER",
+      "status": "PASS",
+      "detail": "'/usr/bin/c++' (R85 '/usr/bin/c++')"
+    },
+    {
+      "check": "h17_off_CMAKE_SOURCE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source"
+    },
+    {
+      "check": "h17_on_EXECUTABLE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+    },
+    {
+      "check": "h17_on_SHA256",
+      "status": "PASS",
+      "detail": "8bcd603d4a60811ae766c4101758b137c958f0bbfe6a5dd6cd2cbdf4e12a7203"
+    },
+    {
+      "check": "h17_on_RECEIPT_MATCH",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_on/R86_EXECUTABLE_SHA256.txt"
+    },
+    {
+      "check": "h17_on_CMAKE_CACHE_PRESENT",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_on/CMakeCache.txt"
+    },
+    {
+      "check": "h17_on_R70_USE_TIER",
+      "status": "PASS",
+      "detail": "'OFF' (want 'OFF')"
+    },
+    {
+      "check": "h17_on_R71_USE_H17",
+      "status": "PASS",
+      "detail": "'ON' (want 'ON')"
+    },
+    {
+      "check": "h17_on_R86_USE_COUNTERS",
+      "status": "PASS",
+      "detail": "'ON' (want 'ON')"
+    },
+    {
+      "check": "h17_on_CMAKE_BUILD_TYPE",
+      "status": "PASS",
+      "detail": "'Release' (want 'Release')"
+    },
+    {
+      "check": "h17_on_CMAKE_CXX_FLAGS",
+      "status": "PASS",
+      "detail": "'' (want '')"
+    },
+    {
+      "check": "h17_on_CMAKE_CXX_FLAGS_RELEASE",
+      "status": "PASS",
+      "detail": "'-O3 -DNDEBUG' (want '-O3 -DNDEBUG')"
+    },
+    {
+      "check": "h17_on_CMAKE_CXX_COMPILER",
+      "status": "PASS",
+      "detail": "'/usr/bin/c++' (R85 '/usr/bin/c++')"
+    },
+    {
+      "check": "h17_on_CMAKE_SOURCE",
+      "status": "PASS",
+      "detail": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source"
+    },
+    {
+      "check": "G0_ON_OFF_BINARY_DISTINCT_STOCK",
+      "status": "PASS",
+      "detail": "ON/OFF binary SHA must differ after instrumentation"
+    },
+    {
+      "check": "G0_ON_OFF_BINARY_DISTINCT_H17",
+      "status": "PASS",
+      "detail": "ON/OFF binary SHA must differ after instrumentation"
+    },
+    {
+      "check": "G0_STOCK_H17_BINARY_DISTINCT_OFF",
+      "status": "PASS",
+      "detail": "Stock and H17 OFF binaries should differ"
+    },
+    {
+      "check": "G0_PREVIOUS_STAGING_MARKER",
+      "status": "PASS",
+      "detail": "marker in /home/tai/r86_step2_g0_staging.log"
+    }
+  ],
+  "variants": {
+    "stock_off": {
+      "binary": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "cmake_cache": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/CMakeCache.txt",
+      "expected_flags": {
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "OFF",
+        "R86_USE_COUNTERS": "OFF"
+      },
+      "sha256": "ba8e621fdcbf1649f101b2a0f63d13791061847e14608907ecbe601c4269b681",
+      "bytes": 2836408,
+      "cmake": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "/usr/bin/c++",
+        "CMAKE_CXX_FLAGS": "",
+        "CMAKE_CXX_FLAGS_RELEASE": "-O3 -DNDEBUG",
+        "CMAKE_HOME_DIRECTORY": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "OFF",
+        "R86_USE_COUNTERS": "OFF"
+      }
+    },
+    "stock_on": {
+      "binary": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "cmake_cache": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_on/CMakeCache.txt",
+      "expected_flags": {
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "OFF",
+        "R86_USE_COUNTERS": "ON"
+      },
+      "sha256": "64b69daee16edb8e6ec48e39c63b816505bf8f3b0a07adc78e05ea05ac40a859",
+      "bytes": 2549944,
+      "cmake": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "/usr/bin/c++",
+        "CMAKE_CXX_FLAGS": "",
+        "CMAKE_CXX_FLAGS_RELEASE": "-O3 -DNDEBUG",
+        "CMAKE_HOME_DIRECTORY": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "OFF",
+        "R86_USE_COUNTERS": "ON"
+      }
+    },
+    "h17_off": {
+      "binary": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "cmake_cache": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_off/CMakeCache.txt",
+      "expected_flags": {
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "ON",
+        "R86_USE_COUNTERS": "OFF"
+      },
+      "sha256": "dd3829b1734b39fa175091fe0decdbb1cddf2f87795c9a0048df7a1e4e03eeb2",
+      "bytes": 2840040,
+      "cmake": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "/usr/bin/c++",
+        "CMAKE_CXX_FLAGS": "",
+        "CMAKE_CXX_FLAGS_RELEASE": "-O3 -DNDEBUG",
+        "CMAKE_HOME_DIRECTORY": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "ON",
+        "R86_USE_COUNTERS": "OFF"
+      }
+    },
+    "h17_on": {
+      "binary": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "cmake_cache": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/h17_on/CMakeCache.txt",
+      "expected_flags": {
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "ON",
+        "R86_USE_COUNTERS": "ON"
+      },
+      "sha256": "8bcd603d4a60811ae766c4101758b137c958f0bbfe6a5dd6cd2cbdf4e12a7203",
+      "bytes": 2554272,
+      "cmake": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "/usr/bin/c++",
+        "CMAKE_CXX_FLAGS": "",
+        "CMAKE_CXX_FLAGS_RELEASE": "-O3 -DNDEBUG",
+        "CMAKE_HOME_DIRECTORY": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+        "R70_USE_TIER": "OFF",
+        "R71_USE_H17": "ON",
+        "R86_USE_COUNTERS": "ON"
+      }
+    }
+  },
+  "gates": {
+    "G1": "NOT_RUN",
+    "G2": "NOT_RUN",
+    "G3": "NOT_RUN"
+  },
+  "paths": {
+    "source": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+    "h70": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328",
+    "patch": "/home/tai/ann-task-a/experiments/R86_patch_v1_2/R86_Day2_Counter_Patch_v1_2",
+    "build_root": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds",
+    "staging_provenance": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source/R86_STAGING_PROVENANCE.json"
+  },
+  "staging": {
+    "source": "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328",
+    "staged": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+    "patch_sha256": "70c9088092f58c16be6835cddad6710003216723164bd74fff81510c909e0a8c",
+    "omitted_dangling_symlinks": [
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/data_tools/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/rangeSearch/bench/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/rangeSearch/vamanaRange/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/python/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/bench/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/vamanaRange/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/HCNNG/parlay",
+      "/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/pyNNDescent/parlay"
+    ]
+  },
+  "prior_g0_log": "/home/tai/r86_step2_g0_staging.log",
+  "result": "R86_G0_NATIVE_BINARY_AUDIT_PASS"
+}

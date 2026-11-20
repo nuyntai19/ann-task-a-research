@@ -1,0 +1,33 @@
+{
+  "status": "FOUR_BINARIES_BUILT_NOT_VALIDATED",
+  "highway_rev": "6bc2d47793bae9c521fb4150936669647700765d",
+  "source": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_source",
+  "control_decision": "CONTROL_PASS_MATCH_STABLE",
+  "binaries": {
+    "stock_off": {
+      "path": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "aa2d174ed063070045f1fbbc8051b1d97b851168b2f3bf53ee32215a867583be",
+      "H17": false,
+      "COUNTERS_ON": false
+    },
+    "stock_on": {
+      "path": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_stock_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "396ef852992428cd3f935bcb33eeeeacc1bae565fbc4a441c1fa9d19720122ff",
+      "H17": false,
+      "COUNTERS_ON": true
+    },
+    "h17_off": {
+      "path": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_h17_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "5f673586210f93b424fc81791ec7873cb74600843b5004c0a4aaaf32bf936297",
+      "H17": true,
+      "COUNTERS_ON": false
+    },
+    "h17_on": {
+      "path": "/home/tai/ann-task-a/experiments/R86/gates/highway_r85_four_binary_jvYREW/build_h17_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "ef707479be221cb7a3c6257298d22f614678878f0a7bfc724dc8b28fabdd21c4",
+      "H17": true,
+      "COUNTERS_ON": true
+    }
+  },
+  "next": "Native 10K ON/OFF G2 counter invariant + graph audit + search protocol; this build is NOT G1/G2 PASS"
+}

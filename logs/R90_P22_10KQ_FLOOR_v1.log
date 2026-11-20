@@ -1,0 +1,75 @@
+R90_P22_LOCAL_SELFTEST_PASS_10K_EVALUATOR_PARSER_AND_FLOOR_CONTRACT
+R90_P22_PARENT_4_GRAPH_SHA_BUILD_RECEIPT_AND_DRYRUN_PARITY_PASS
+R90_P22_INPUT_SHA_PASS base e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12
+R90_P22_INPUT_SHA_PASS query 9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65
+R90_P22_INPUT_SHA_PASS gt 70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28
+R90_P22_INPUT_SHA_PASS evaluator 3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a
+R90_P22_PREFLIGHT_PASS_SIFT100K_10000QUERY_100GT_READONLY
+R90_P22_PARENT_4_GRAPH_SHA_BUILD_RECEIPT_AND_DRYRUN_PARITY_PASS
+R90_P22_INPUT_SHA_PASS base e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12
+R90_P22_INPUT_SHA_PASS query 9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65
+R90_P22_INPUT_SHA_PASS gt 70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28
+R90_P22_INPUT_SHA_PASS evaluator 3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a
+R90_P22_PREFLIGHT_PASS_SIFT100K_10000QUERY_100GT_READONLY
+R90_P22_SWEEP_START stock_N1 beams [40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 128, 144, 160, 176, 192, 224, 256, 320]
+R90_P22_SWEEP_PASS stock_N1 calibration {"0.99": {"beam": 72, "sweep_recall": 0.99011999}, "0.998": {"beam": 144, "sweep_recall": 0.99851}}
+R90_P22_SWEEP_START stock_N2 beams [40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 128, 144, 160, 176, 192, 224, 256, 320]
+R90_P22_SWEEP_PASS stock_N2 calibration {"0.99": {"beam": 64, "sweep_recall": 0.99207997}, "0.998": {"beam": 104, "sweep_recall": 0.99808002}}
+R90_P22_SWEEP_START a5_dryrun_q001_N2 beams [40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 128, 144, 160, 176, 192, 224, 256, 320]
+R90_P22_SWEEP_PASS a5_dryrun_q001_N2 calibration {"0.99": {"beam": 64, "sweep_recall": 0.99207997}, "0.998": {"beam": 104, "sweep_recall": 0.99808002}}
+R90_P22_SWEEP_START a5_gate_q001_N2 beams [40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 128, 144, 160, 176, 192, 224, 256, 320]
+R90_P22_SWEEP_PASS a5_gate_q001_N2 calibration {"0.99": {"beam": 64, "sweep_recall": 0.99006999}, "0.998": {"beam": 128, "sweep_recall": 0.99853998}}
+R90_P22_REPEAT_START stock_N2 rep 1 beams [64, 104]
+R90_P22_REPEAT_PASS stock_N2 rep 1
+R90_P22_REPEAT_START a5_dryrun_q001_N2 rep 1 beams [64, 104]
+R90_P22_REPEAT_PASS a5_dryrun_q001_N2 rep 1
+R90_P22_REPEAT_START a5_gate_q001_N2 rep 1 beams [64, 128]
+R90_P22_REPEAT_PASS a5_gate_q001_N2 rep 1
+R90_P22_REPEAT_START stock_N1 rep 1 beams [72, 144]
+R90_P22_REPEAT_PASS stock_N1 rep 1
+R90_P22_REPEAT_START stock_N2 rep 2 beams [64, 104]
+R90_P22_REPEAT_PASS stock_N2 rep 2
+R90_P22_REPEAT_START stock_N1 rep 2 beams [72, 144]
+R90_P22_REPEAT_PASS stock_N1 rep 2
+R90_P22_REPEAT_START a5_gate_q001_N2 rep 2 beams [64, 128]
+R90_P22_REPEAT_PASS a5_gate_q001_N2 rep 2
+R90_P22_REPEAT_START a5_dryrun_q001_N2 rep 2 beams [64, 104]
+R90_P22_REPEAT_PASS a5_dryrun_q001_N2 rep 2
+R90_P22_REPEAT_START a5_gate_q001_N2 rep 3 beams [64, 128]
+R90_P22_REPEAT_PASS a5_gate_q001_N2 rep 3
+R90_P22_REPEAT_START stock_N1 rep 3 beams [72, 144]
+R90_P22_REPEAT_PASS stock_N1 rep 3
+R90_P22_REPEAT_START stock_N2 rep 3 beams [64, 104]
+R90_P22_REPEAT_PASS stock_N2 rep 3
+R90_P22_REPEAT_START a5_dryrun_q001_N2 rep 3 beams [64, 104]
+R90_P22_REPEAT_PASS a5_dryrun_q001_N2 rep 3
+R90_P22_REPEAT_START a5_gate_q001_N2 rep 4 beams [64, 128]
+R90_P22_REPEAT_PASS a5_gate_q001_N2 rep 4
+R90_P22_REPEAT_START a5_dryrun_q001_N2 rep 4 beams [64, 104]
+R90_P22_REPEAT_PASS a5_dryrun_q001_N2 rep 4
+R90_P22_REPEAT_START stock_N2 rep 4 beams [64, 104]
+R90_P22_REPEAT_PASS stock_N2 rep 4
+R90_P22_REPEAT_START stock_N1 rep 4 beams [72, 144]
+R90_P22_REPEAT_PASS stock_N1 rep 4
+R90_P22_REPEAT_START stock_N2 rep 5 beams [64, 104]
+R90_P22_REPEAT_PASS stock_N2 rep 5
+R90_P22_REPEAT_START a5_dryrun_q001_N2 rep 5 beams [64, 104]
+R90_P22_REPEAT_PASS a5_dryrun_q001_N2 rep 5
+R90_P22_REPEAT_START a5_gate_q001_N2 rep 5 beams [64, 128]
+R90_P22_REPEAT_PASS a5_gate_q001_N2 rep 5
+R90_P22_REPEAT_START stock_N1 rep 5 beams [72, 144]
+R90_P22_REPEAT_PASS stock_N1 rep 5
+R90_P22_10K_QUERY_FLOOR_SUMMARY_BEGIN
+R90_P22_FLOOR {"arm": "stock_N1", "avg_cmps_median5": 1106.0, "avg_visited_median5": 81.0, "beam": 72, "build_reps": 1, "qps_max": 17771.42773438, "qps_median5": 17685.25, "qps_min": 17655.9609375, "recall_at10": 0.99011999, "search_reps": 5, "target": 0.99}
+R90_P22_FLOOR {"arm": "stock_N1", "avg_cmps_median5": 1737.0, "avg_visited_median5": 143.0, "beam": 144, "build_reps": 1, "qps_max": 9948.35839844, "qps_median5": 9934.89648438, "qps_min": 9907.88671875, "recall_at10": 0.99851, "search_reps": 5, "target": 0.998}
+R90_P22_FLOOR {"arm": "stock_N2", "avg_cmps_median5": 1219.0, "avg_visited_median5": 70.0, "beam": 64, "build_reps": 1, "qps_max": 17942.7890625, "qps_median5": 17863.10742188, "qps_min": 17804.58789062, "recall_at10": 0.99207997, "search_reps": 5, "target": 0.99}
+R90_P22_FLOOR {"arm": "stock_N2", "avg_cmps_median5": 1634.0, "avg_visited_median5": 107.0, "beam": 104, "build_reps": 1, "qps_max": 11952.14355469, "qps_median5": 11941.22558594, "qps_min": 11884.65722656, "recall_at10": 0.99808002, "search_reps": 5, "target": 0.998}
+R90_P22_FLOOR {"arm": "a5_dryrun_q001_N2", "avg_cmps_median5": 1219.0, "avg_visited_median5": 70.0, "beam": 64, "build_reps": 1, "qps_max": 17963.609375, "qps_median5": 17903.30664062, "qps_min": 17808.8671875, "recall_at10": 0.99207997, "search_reps": 5, "target": 0.99}
+R90_P22_FLOOR {"arm": "a5_dryrun_q001_N2", "avg_cmps_median5": 1634.0, "avg_visited_median5": 107.0, "beam": 104, "build_reps": 1, "qps_max": 11971.24511719, "qps_median5": 11933.78613281, "qps_min": 11913.24316406, "recall_at10": 0.99808002, "search_reps": 5, "target": 0.998}
+R90_P22_FLOOR {"arm": "a5_gate_q001_N2", "avg_cmps_median5": 1132.0, "avg_visited_median5": 71.0, "beam": 64, "build_reps": 1, "qps_max": 18848.72070312, "qps_median5": 18787.4921875, "qps_min": 18744.45898438, "recall_at10": 0.99006999, "search_reps": 5, "target": 0.99}
+R90_P22_FLOOR {"arm": "a5_gate_q001_N2", "avg_cmps_median5": 1772.0, "avg_visited_median5": 127.0, "beam": 128, "build_reps": 1, "qps_max": 10500.375, "qps_median5": 10476.26171875, "qps_min": 10462.05664062, "recall_at10": 0.99853998, "search_reps": 5, "target": 0.998}
+R90_P22_10K_QUERY_FLOOR_SUMMARY_END
+R90_P22_ONE_GRAPH_PER_ARM_FIVE_SEARCH_REPS_PILOT_PASS_NO_MATCHED_RECALL_CLAIM
+R90_P22_PARENT_4_GRAPH_SHA_BUILD_RECEIPT_AND_DRYRUN_PARITY_PASS
+R90_P22_AUDIT_ALL_24_NATIVE_LOGS_SOURCE_GRAPH_SHA_AND_FLOOR_ROWS_PASS
+R90_P22_SEQUENCE_COMPLETE

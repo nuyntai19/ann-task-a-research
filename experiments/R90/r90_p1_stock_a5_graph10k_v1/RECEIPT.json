@@ -1,0 +1,573 @@
+{
+  "arms": {
+    "a5_all_N2": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_all_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2",
+      "fraction": null,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_all_N2.graph",
+      "graph_audit": {
+        "arcs": 105127,
+        "bound": 64,
+        "bytes": 460516,
+        "canonical_sha256": "e1b5a2a214a9fb9cfd0d7e4812e3f593da6fea6de8325cf375bd43c403c1e4b4",
+        "n": 10000,
+        "raw_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+      },
+      "kind": "a5",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/a5_all_N2.log",
+      "log_sha256": "3272590d3435fcb96cb0f5923df9b656442e3dc3f6de5eb1edf634a3d05a345e",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": {
+          "eligible_leaf_pct": 100.0,
+          "eligible_leaves": 498,
+          "eligible_wl_pct": 100.0,
+          "gate": 1,
+          "total_leaves": 498,
+          "wl_eligible": 140407134,
+          "wl_total": 140407134
+        }
+      },
+      "mode": "all",
+      "wall_diagnostic_s": 1.006874
+    },
+    "a5_dryrun_q001": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_dryrun_q001.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2",
+      "fraction": 0.01,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_dryrun_q001.graph",
+      "graph_audit": {
+        "arcs": 105127,
+        "bound": 64,
+        "bytes": 460516,
+        "canonical_sha256": "e1b5a2a214a9fb9cfd0d7e4812e3f593da6fea6de8325cf375bd43c403c1e4b4",
+        "n": 10000,
+        "raw_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+      },
+      "kind": "a5",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/a5_dryrun_q001.log",
+      "log_sha256": "f642eaa9552f4c6550063abe85bbb9cb5983852f7d4c4e3de74c1c62cef1c5fc",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": {
+          "eligible_leaf_pct": 66.666667,
+          "eligible_leaves": 332,
+          "eligible_wl_pct": 77.731756,
+          "gate": 0,
+          "total_leaves": 498,
+          "wl_eligible": 109140931,
+          "wl_total": 140407134
+        }
+      },
+      "mode": "dryrun",
+      "wall_diagnostic_s": 1.002908
+    },
+    "a5_dryrun_q010": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_dryrun_q010.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2",
+      "fraction": 0.1,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_dryrun_q010.graph",
+      "graph_audit": {
+        "arcs": 105127,
+        "bound": 64,
+        "bytes": 460516,
+        "canonical_sha256": "e1b5a2a214a9fb9cfd0d7e4812e3f593da6fea6de8325cf375bd43c403c1e4b4",
+        "n": 10000,
+        "raw_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+      },
+      "kind": "a5",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/a5_dryrun_q010.log",
+      "log_sha256": "3e2918402cb6349c44cdd53600a91075ad4e52c5e1e7617998b46d4ac56b2efd",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": {
+          "eligible_leaf_pct": 99.39759,
+          "eligible_leaves": 495,
+          "eligible_wl_pct": 99.924224,
+          "gate": 0,
+          "total_leaves": 498,
+          "wl_eligible": 140300739,
+          "wl_total": 140407134
+        }
+      },
+      "mode": "dryrun",
+      "wall_diagnostic_s": 0.999943
+    },
+    "a5_dryrun_q025": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_dryrun_q025.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2",
+      "fraction": 0.25,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_dryrun_q025.graph",
+      "graph_audit": {
+        "arcs": 105127,
+        "bound": 64,
+        "bytes": 460516,
+        "canonical_sha256": "e1b5a2a214a9fb9cfd0d7e4812e3f593da6fea6de8325cf375bd43c403c1e4b4",
+        "n": 10000,
+        "raw_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+      },
+      "kind": "a5",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/a5_dryrun_q025.log",
+      "log_sha256": "dd0cee571b273c28c4a225543ec3f58da02da49459df6408ce7cf18fb3367033",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": {
+          "eligible_leaf_pct": 100.0,
+          "eligible_leaves": 498,
+          "eligible_wl_pct": 100.0,
+          "gate": 0,
+          "total_leaves": 498,
+          "wl_eligible": 140407134,
+          "wl_total": 140407134
+        }
+      },
+      "mode": "dryrun",
+      "wall_diagnostic_s": 1.002022
+    },
+    "a5_none_N2": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_none_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2",
+      "fraction": null,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_none_N2.graph",
+      "graph_audit": {
+        "arcs": 87301,
+        "bound": 64,
+        "bytes": 389212,
+        "canonical_sha256": "553f371edd2ed97203a75cb5545a1d53d4b0ff809beb92c73d932d1b6f44ec18",
+        "n": 10000,
+        "raw_sha256": "6b45ec27d38a0c06031136f85fdf11d8800339e5325b5a43000b81269c2a39d9"
+      },
+      "kind": "a5",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/a5_none_N2.log",
+      "log_sha256": "052ec561a8bbd37717e8d53afb87c5c44ca39fec82a3fd144fdafb86362020f7",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": {
+          "eligible_leaf_pct": 0.0,
+          "eligible_leaves": 0,
+          "eligible_wl_pct": 0.0,
+          "gate": 1,
+          "total_leaves": 498,
+          "wl_eligible": 0,
+          "wl_total": 140407134
+        }
+      },
+      "mode": "none",
+      "wall_diagnostic_s": 0.527005
+    },
+    "a5_off_N2": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_off_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2",
+      "fraction": null,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/a5_off_N2.graph",
+      "graph_audit": {
+        "arcs": 105127,
+        "bound": 64,
+        "bytes": 460516,
+        "canonical_sha256": "e1b5a2a214a9fb9cfd0d7e4812e3f593da6fea6de8325cf375bd43c403c1e4b4",
+        "n": 10000,
+        "raw_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+      },
+      "kind": "a5",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/a5_off_N2.log",
+      "log_sha256": "5355d82915a9a971a0a09db4e7831928861ffa692bb15716edfb680ddc72cc32",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": null
+      },
+      "mode": "off",
+      "wall_diagnostic_s": 1.009285
+    },
+    "stock_N1": {
+      "N": 1,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/stock_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/stock_N1.graph",
+        "-num_clusters",
+        "1",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "31b337316f69c5945dc78a14be16217e7f0bf901e7af5d752a3af17bdb337225",
+      "fraction": null,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/stock_N1.graph",
+      "graph_audit": {
+        "arcs": 87301,
+        "bound": 64,
+        "bytes": 389212,
+        "canonical_sha256": "553f371edd2ed97203a75cb5545a1d53d4b0ff809beb92c73d932d1b6f44ec18",
+        "n": 10000,
+        "raw_sha256": "6b45ec27d38a0c06031136f85fdf11d8800339e5325b5a43000b81269c2a39d9"
+      },
+      "kind": "stock",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/stock_N1.log",
+      "log_sha256": "1b1da3c1fe61b4ec51772c524775ad77432b75dd093c87aecc77a57c5e35d2b5",
+      "metrics": {
+        "WP_cumulative": [
+          1839487
+        ],
+        "coverage": null
+      },
+      "mode": "off",
+      "wall_diagnostic_s": 0.50924
+    },
+    "stock_N2": {
+      "N": 2,
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/stock_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/sift10k_prefix.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/stock_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-table_size",
+        "160",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "elf_sha256": "31b337316f69c5945dc78a14be16217e7f0bf901e7af5d752a3af17bdb337225",
+      "fraction": null,
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/graphs/stock_N2.graph",
+      "graph_audit": {
+        "arcs": 105127,
+        "bound": 64,
+        "bytes": 460516,
+        "canonical_sha256": "e1b5a2a214a9fb9cfd0d7e4812e3f593da6fea6de8325cf375bd43c403c1e4b4",
+        "n": 10000,
+        "raw_sha256": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9"
+      },
+      "kind": "stock",
+      "log": "/home/tai/ann-task-a/experiments/R90/r90_p1_stock_a5_graph10k_v1/logs/stock_N2.log",
+      "log_sha256": "4cd6c7bf17c78984bc30b019866f8698e3fb6362f86bcb78dbb726c78260114f",
+      "metrics": {
+        "WP_cumulative": [
+          1839487,
+          3751489
+        ],
+        "coverage": null
+      },
+      "mode": "off",
+      "wall_diagnostic_s": 1.016247
+    }
+  },
+  "comparison": {
+    "a5_all_N2": {
+      "baseline": "stock_N2",
+      "same_canonical": true,
+      "same_raw": true
+    },
+    "a5_dryrun_q001": {
+      "baseline": "stock_N2",
+      "same_canonical": true,
+      "same_raw": true
+    },
+    "a5_dryrun_q010": {
+      "baseline": "stock_N2",
+      "same_canonical": true,
+      "same_raw": true
+    },
+    "a5_dryrun_q025": {
+      "baseline": "stock_N2",
+      "same_canonical": true,
+      "same_raw": true
+    },
+    "a5_none_N2": {
+      "baseline": "stock_N1",
+      "same_canonical": true,
+      "same_raw": true
+    },
+    "a5_off_N2": {
+      "baseline": "stock_N2",
+      "same_canonical": true,
+      "same_raw": true
+    }
+  },
+  "cpu": 0,
+  "input_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "input_source": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "notes": "10K one-core graph correctness only; not timing result, not Search or 1M",
+  "p0_receipt_sha256": "6f44a9d15eb89a3073a05aefc05cfb528a663a2d67f5e100b4dca3ab398463ff",
+  "parameters": {
+    "C": 160,
+    "K": 1024,
+    "N": [
+      1,
+      2
+    ],
+    "R": 64,
+    "fanout": "10,3,1",
+    "mst_deg": 2
+  },
+  "prefix_sha256": "94320c4336a35f046de768a24ada57aa8998f511df9aa2a7c72fe9ed8c67c1f5",
+  "protocol": "R90_P1_STOCK_A5_SIFT10K_SOURCE_PARITY_V1"
+}

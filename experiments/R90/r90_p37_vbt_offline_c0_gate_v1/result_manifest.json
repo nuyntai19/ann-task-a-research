@@ -1,0 +1,178 @@
+{
+  "author_caution": "No graph BUILD or Search performed. Training and partition cost modeled as logical point-centroid distance counts.",
+  "base_path": "/home/tai/ann-task-a/data/sift100k.fbin",
+  "base_sha": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "cases": [
+    {
+      "coarse_M": 391,
+      "coarse_map_sha": "ebeb62fe6ad8f437a5167fc3fb36ef1608dbdb0f00e7c5115318c0895fec35ad",
+      "elapsed_s_DIAGNOSTIC": 1.398,
+      "eval_ids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+      "final_T": 641,
+      "mode": "random",
+      "n_eval": 2000,
+      "rank_cache_entries": 15605,
+      "seed": 555,
+      "splits": 250,
+      "tile_map_sha": "97e2705d18ef0fa2ed0282296024e4f313fd84ab55d956f368d55e7fc5e5580d",
+      "tile_size_max": 256,
+      "tile_size_median": 160.0,
+      "tile_size_min": 10,
+      "tile_size_p99": 251.60000000000002,
+      "training": {
+        "init_sha": "595e8aaedde6d15b193f5c0cba6943056668d105a4113d3a4a8c3ef0684c4c68",
+        "iterations": 0,
+        "train_size": 0
+      }
+    },
+    {
+      "coarse_M": 391,
+      "coarse_map_sha": "40f5c8c6aae50d7f13901d6aea9483a2d1d7c0c2c8fbe654b9e033410296becd",
+      "elapsed_s_DIAGNOSTIC": 1.421,
+      "eval_ids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+      "final_T": 701,
+      "mode": "sample1pct_kmeans",
+      "n_eval": 2000,
+      "rank_cache_entries": 15671,
+      "seed": 555,
+      "splits": 310,
+      "tile_map_sha": "904d861d07a0f1d0679f5c488d31584a4154c86d9e90c8c106290203c893444e",
+      "tile_size_max": 256,
+      "tile_size_median": 147.0,
+      "tile_size_min": 1,
+      "tile_size_p99": 253.0,
+      "training": {
+        "init_sha": "1db4ef3b9cc8e47e32d21c8bca89ce9e5afb1f870ef290b6cd0ac16f21008dee",
+        "iterations": 4,
+        "train_size": 1000
+      }
+    },
+    {
+      "coarse_M": 391,
+      "coarse_map_sha": "b08066e3b662808b9fe7386ba3fe0d4e3af58734d8368e82acb518517241a751",
+      "elapsed_s_DIAGNOSTIC": 1.365,
+      "eval_ids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+      "final_T": 641,
+      "mode": "random",
+      "n_eval": 2000,
+      "rank_cache_entries": 15617,
+      "seed": 556,
+      "splits": 250,
+      "tile_map_sha": "e820c468b2210050e4186a5bf63ef56db7fc1e1ad432891c873700f5c39a86c8",
+      "tile_size_max": 256,
+      "tile_size_median": 156.0,
+      "tile_size_min": 6,
+      "tile_size_p99": 251.0,
+      "training": {
+        "init_sha": "fcfcd4adbaf6bb44497b8e97dcbb69088a7db0f65337d2dbed8906f9cc63fddf",
+        "iterations": 0,
+        "train_size": 0
+      }
+    },
+    {
+      "coarse_M": 391,
+      "coarse_map_sha": "1ec3c212152008092c084dae0adf8ddd6366cc1503245df8473ae50277270b64",
+      "elapsed_s_DIAGNOSTIC": 1.398,
+      "eval_ids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+      "final_T": 717,
+      "mode": "sample1pct_kmeans",
+      "n_eval": 2000,
+      "rank_cache_entries": 15625,
+      "seed": 556,
+      "splits": 326,
+      "tile_map_sha": "9b257576ce443cc1ee8d689063531369ba37f6f993729488314379d5fd310f95",
+      "tile_size_max": 253,
+      "tile_size_median": 153.0,
+      "tile_size_min": 1,
+      "tile_size_p99": 251.0,
+      "training": {
+        "init_sha": "a9c4ac462548290aaf9cd64571decab081979b708dd91158ae9c013d4dc23d47",
+        "iterations": 4,
+        "train_size": 1000
+      }
+    },
+    {
+      "coarse_M": 391,
+      "coarse_map_sha": "d02619dc5e1be3c5b8303b35303c2181709f49e3b150d2e758a978d40f5e3266",
+      "elapsed_s_DIAGNOSTIC": 1.32,
+      "eval_ids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+      "final_T": 641,
+      "mode": "random",
+      "n_eval": 2000,
+      "rank_cache_entries": 15596,
+      "seed": 557,
+      "splits": 250,
+      "tile_map_sha": "4d25b09fb1ce18953aa745f4bfc08269631c72d2bf8fb395809947aaa39431fb",
+      "tile_size_max": 255,
+      "tile_size_median": 158.0,
+      "tile_size_min": 15,
+      "tile_size_p99": 250.0,
+      "training": {
+        "init_sha": "12abcf29bd34ca9fc4be81e47c0e7cbd391174b9d81a2e47d1ec17d6f9f81a90",
+        "iterations": 0,
+        "train_size": 0
+      }
+    },
+    {
+      "coarse_M": 391,
+      "coarse_map_sha": "88e4d9d423865c9a9e1ee3f0d5704a3048f56f84e0edc0eea887b8938151d526",
+      "elapsed_s_DIAGNOSTIC": 1.451,
+      "eval_ids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+      "final_T": 701,
+      "mode": "sample1pct_kmeans",
+      "n_eval": 2000,
+      "rank_cache_entries": 15674,
+      "seed": 557,
+      "splits": 310,
+      "tile_map_sha": "7b70dc7283bf9014276861a7ae7d5e5b9ea1c8bc3ce66cbfc9293437a477c4a3",
+      "tile_size_max": 256,
+      "tile_size_median": 154.0,
+      "tile_size_min": 2,
+      "tile_size_p99": 252.0,
+      "training": {
+        "init_sha": "adeda8836372e21673c64b4c66540bbff93bfa17cc8fe519cc19e5bdb105d5e2",
+        "iterations": 4,
+        "train_size": 1000
+      }
+    }
+  ],
+  "config": {
+    "B": 256,
+    "algorithmic_caution": "Final-tile centroids used only as heuristic seam features; actual partition is coarse assigned then median split",
+    "center_methods": [
+      "random",
+      "sample1pct_kmeans"
+    ],
+    "cost_caution": "Logical n*M+n*T+trainM+matrix cells, not physical FLOPs or exact total H17 W_P; per-cell Top2 simulation lacks HashPrune/RobustPrune.",
+    "description": "RBC N1/N2 SAME-SAMPLED raw co-leaf and post-native-Top2 proposal pools are REQUIRED before GO/NO-GO.",
+    "eval_sample_count": 2000,
+    "evaluation_seed": 20261118,
+    "kbs": [
+      8,
+      12,
+      16,
+      20
+    ],
+    "numeric_caution": "GT by full FP32 dense brute-force with float32 tie-ID order, not native PiPNN packed-bit semantics",
+    "screening": "HOLD_RBC_N1_N2_MATCHED_POOL_CAPTURE_MISSING",
+    "seeds": [
+      555,
+      556,
+      557
+    ]
+  },
+  "csv_sha": "6ec20c87b0ef3f4e2f7efaf834fceba5dc5df1f547a2537f9844fd1d5d978194",
+  "d": 128,
+  "decision": "NO_GO_DECISION_ALLOWED_UNTIL_RBC_N1_N2_POOL_TOP2_AND_WORK_BASELINES_SAME_QIDS",
+  "eval_gt10_sha": "2f838dab19b8e48006b97f5bc263f4d3b2a9ec2847b320e065300c1bae12a2b4",
+  "eval_npz_sha": "8538d74a0164c12c0b052fcef226d6a0f7e0e963fbe7ce4b04834462a54370f1",
+  "eval_qids_sha": "8440c63e92d31fcf4edc31ce691de76364b5e04f8950cd7db5fafe534d5ecb0a",
+  "n": 100000,
+  "rbc_controls": {
+    "N1": "MISSING_NATIVE_SIFT100K_SAME_QIDS_POOL_CAPTURE",
+    "N2": "MISSING_NATIVE_SIFT100K_SAME_QIDS_POOL_CAPTURE"
+  },
+  "rows": 72,
+  "stage": "SIFT100K_VBT_OFFLINE_ONLY",
+  "status": "PASS_VBT_DIAGNOSTIC__HOLD_RBC_MATCHED_POOL"
+}

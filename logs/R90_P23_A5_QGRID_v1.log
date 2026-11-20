@@ -1,0 +1,64 @@
+R90_P23_LOCAL_SELFTEST_PASS_QGRID_BUILD_EVAL_AND_SHA_CONTRACT
+R90_P23_INPUT_SHA_PASS base e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12
+R90_P23_INPUT_SHA_PASS query 9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65
+R90_P23_INPUT_SHA_PASS gt 70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28
+R90_P23_INPUT_SHA_PASS evaluator 3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a
+R90_P23_INPUT_SHA_PASS a5_elf aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2
+R90_P23_PREFLIGHT_PASS_PINNED_SIFT100K_10KQ_GT_PARENT_SHA
+R90_P23_INPUT_SHA_PASS base e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12
+R90_P23_INPUT_SHA_PASS query 9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65
+R90_P23_INPUT_SHA_PASS gt 70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28
+R90_P23_INPUT_SHA_PASS evaluator 3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a
+R90_P23_INPUT_SHA_PASS a5_elf aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2
+R90_P23_PREFLIGHT_PASS_PINNED_SIFT100K_10KQ_GT_PARENT_SHA
+R90_P23_BUILD_START a5_gate_q0p5_N2 fraction 0.005
+R90_P23_BUILD_PASS a5_gate_q0p5_N2 wall_s 9.989 coverage {"eligible_leaf_pct": 41.846450524285885, "eligible_leaves": 3472, "fraction": 0.005, "gate": 1, "retained_wl_pct": 54.9695836315966, "selected_points": 500, "skipped_wl_pct": 45.0304163684034, "sort_comparisons": 1980141, "total_leaves": 8297, "wl_eligible": 821224265, "wl_total": 1493961225}
+R90_P23_BUILD_START a5_gate_q2_N2 fraction 0.02
+R90_P23_BUILD_PASS a5_gate_q2_N2 wall_s 11.795 coverage {"eligible_leaf_pct": 76.28058334337713, "eligible_leaves": 6329, "fraction": 0.02, "gate": 1, "retained_wl_pct": 87.03697761633673, "selected_points": 2000, "skipped_wl_pct": 12.96302238366327, "sort_comparisons": 1980141, "total_leaves": 8297, "wl_eligible": 1300298697, "wl_total": 1493961225}
+R90_P23_BUILD_START a5_gate_q5_N2 fraction 0.05
+R90_P23_BUILD_PASS a5_gate_q5_N2 wall_s 12.649 coverage {"eligible_leaf_pct": 93.78088465710498, "eligible_leaves": 7781, "fraction": 0.05, "gate": 1, "retained_wl_pct": 98.04225675268111, "selected_points": 5000, "skipped_wl_pct": 1.9577432473188854, "sort_comparisons": 1980141, "total_leaves": 8297, "wl_eligible": 1464713300, "wl_total": 1493961225}
+R90_P23_SWEEP_START a5_gate_q0p5_N2
+R90_P23_SWEEP_PASS a5_gate_q0p5_N2 {"0.99": {"beam": 72, "sweep_recall": 0.99229997}, "0.998": {"beam": 128, "sweep_recall": 0.99838001}}
+R90_P23_SWEEP_START a5_gate_q2_N2
+R90_P23_SWEEP_PASS a5_gate_q2_N2 {"0.99": {"beam": 64, "sweep_recall": 0.99115998}, "0.998": {"beam": 112, "sweep_recall": 0.99822003}}
+R90_P23_SWEEP_START a5_gate_q5_N2
+R90_P23_SWEEP_PASS a5_gate_q5_N2 {"0.99": {"beam": 64, "sweep_recall": 0.99204999}, "0.998": {"beam": 104, "sweep_recall": 0.99804997}}
+R90_P23_SEARCH_PASS stock_N1 rep 1
+R90_P23_SEARCH_PASS stock_N2 rep 1
+R90_P23_SEARCH_PASS a5_gate_q001_N2 rep 1
+R90_P23_SEARCH_PASS a5_gate_q0p5_N2 rep 1
+R90_P23_SEARCH_PASS a5_gate_q2_N2 rep 1
+R90_P23_SEARCH_PASS a5_gate_q5_N2 rep 1
+R90_P23_SEARCH_PASS stock_N1 rep 2
+R90_P23_SEARCH_PASS a5_gate_q5_N2 rep 2
+R90_P23_SEARCH_PASS a5_gate_q2_N2 rep 2
+R90_P23_SEARCH_PASS a5_gate_q0p5_N2 rep 2
+R90_P23_SEARCH_PASS a5_gate_q001_N2 rep 2
+R90_P23_SEARCH_PASS stock_N2 rep 2
+R90_P23_SEARCH_PASS a5_gate_q001_N2 rep 3
+R90_P23_SEARCH_PASS a5_gate_q0p5_N2 rep 3
+R90_P23_SEARCH_PASS a5_gate_q2_N2 rep 3
+R90_P23_SEARCH_PASS a5_gate_q5_N2 rep 3
+R90_P23_SEARCH_PASS stock_N1 rep 3
+R90_P23_SEARCH_PASS stock_N2 rep 3
+R90_P23_QUALITY_FLOOR {"arm": "stock_N1", "avg_cmps_median": 1106.0, "avg_visited_median": 81.0, "beam": 72, "qps_median": 17684.56054688, "recall": 0.99011999, "status": "QUALITY_FLOOR_PASS", "target": 0.99}
+R90_P23_QUALITY_FLOOR {"arm": "stock_N1", "avg_cmps_median": 1737.0, "avg_visited_median": 143.0, "beam": 144, "qps_median": 9914.39941406, "recall": 0.99851, "status": "QUALITY_FLOOR_PASS", "target": 0.998}
+R90_P23_QUALITY_FLOOR {"arm": "stock_N2", "avg_cmps_median": 1219.0, "avg_visited_median": 70.0, "beam": 64, "qps_median": 17857.52539062, "recall": 0.99207997, "status": "QUALITY_FLOOR_PASS", "target": 0.99}
+R90_P23_QUALITY_FLOOR {"arm": "stock_N2", "avg_cmps_median": 1634.0, "avg_visited_median": 107.0, "beam": 104, "qps_median": 11932.26269531, "recall": 0.99808002, "status": "QUALITY_FLOOR_PASS", "target": 0.998}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q001_N2", "avg_cmps_median": 1132.0, "avg_visited_median": 71.0, "beam": 64, "qps_median": 18771.97460938, "recall": 0.99006999, "status": "QUALITY_FLOOR_PASS", "target": 0.99}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q001_N2", "avg_cmps_median": 1772.0, "avg_visited_median": 127.0, "beam": 128, "qps_median": 10481.40039062, "recall": 0.99853998, "status": "QUALITY_FLOOR_PASS", "target": 0.998}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q0p5_N2", "avg_cmps_median": 1174.0, "avg_visited_median": 80.0, "beam": 72, "qps_median": 17086.65625, "recall": 0.99229997, "status": "QUALITY_FLOOR_PASS", "target": 0.99}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q0p5_N2", "avg_cmps_median": 1744.0, "avg_visited_median": 128.0, "beam": 128, "qps_median": 10518.22265625, "recall": 0.99838001, "status": "QUALITY_FLOOR_PASS", "target": 0.998}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q2_N2", "avg_cmps_median": 1170.0, "avg_visited_median": 71.0, "beam": 64, "qps_median": 18406.6484375, "recall": 0.99115998, "status": "QUALITY_FLOOR_PASS", "target": 0.99}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q2_N2", "avg_cmps_median": 1666.0, "avg_visited_median": 114.0, "beam": 112, "qps_median": 11402.65136719, "recall": 0.99822003, "status": "QUALITY_FLOOR_PASS", "target": 0.998}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q5_N2", "avg_cmps_median": 1208.0, "avg_visited_median": 70.0, "beam": 64, "qps_median": 17966.70703125, "recall": 0.99204999, "status": "QUALITY_FLOOR_PASS", "target": 0.99}
+R90_P23_QUALITY_FLOOR {"arm": "a5_gate_q5_N2", "avg_cmps_median": 1620.0, "avg_visited_median": 107.0, "beam": 104, "qps_median": 11979.04589844, "recall": 0.99804997, "status": "QUALITY_FLOOR_PASS", "target": 0.998}
+R90_P23_NATIVE_PILOT_COMPLETE_ONE_BUILD_PER_NEW_Q_NOT_FORMAL
+R90_P23_INPUT_SHA_PASS base e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12
+R90_P23_INPUT_SHA_PASS query 9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65
+R90_P23_INPUT_SHA_PASS gt 70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28
+R90_P23_INPUT_SHA_PASS evaluator 3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a
+R90_P23_INPUT_SHA_PASS a5_elf aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2
+R90_P23_PREFLIGHT_PASS_PINNED_SIFT100K_10KQ_GT_PARENT_SHA
+R90_P23_AUDIT_PASS_BUILDS_AND_REPEATED_SEARCH_SHA
+R90_P23_SEQUENCE_COMPLETE

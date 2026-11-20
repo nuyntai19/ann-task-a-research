@@ -1,0 +1,78 @@
+R90_P32_SELFTEST_PASS_PATCH_SELECTOR_EVAL_AND_INTERPOLATION
+R90_P32_PREFLIGHT_SOURCE_DEP_GT_PARENT_GRAPHS_AND_PATCH_PASS
+R90_P32_PREFLIGHT_SOURCE_DEP_GT_PARENT_GRAPHS_AND_PATCH_PASS
+R90_P32_SOURCE_CPP_COMPILATION_PASS 335fe5ead3ddbc27b593c67569b3d7dbe0189cc97ca639126356a30c985becdf
+R90_P32_BUILD_START low_q1 q 0.01
+R90_P32_BUILD_PASS low_q1 wall_s 10.994 retained_wl_pct 71.473
+R90_P32_BUILD_START low_q2 q 0.02
+R90_P32_BUILD_PASS low_q2 wall_s 11.7833 retained_wl_pct 87.037
+R90_P32_BUILD_START random_q1 q 0.01
+R90_P32_BUILD_PASS random_q1 wall_s 12.5419 retained_wl_pct 98.141
+R90_P32_BUILD_START random_q2 q 0.02
+R90_P32_BUILD_PASS random_q2 wall_s 12.743 retained_wl_pct 99.761
+R90_P32_BUILD_START high_q1 q 0.01
+R90_P32_BUILD_PASS high_q1 wall_s 11.3439 retained_wl_pct 79.176
+R90_P32_BUILD_START high_q2 q 0.02
+R90_P32_BUILD_PASS high_q2 wall_s 11.8463 retained_wl_pct 89.043
+R90_P32_SWEEP_START stock_N1
+R90_P32_SWEEP_PASS stock_N1 {'0.99': {'b0': 64, 'b1': 72, 'r0': 0.98685002, 'r1': 0.99011999, 't': 0.9633054737505358}, '0.998': {'b0': 128, 'b1': 144, 'r0': 0.99786001, 'r1': 0.99851, 't': 0.21537254419295845}}
+R90_P32_SWEEP_START stock_N2
+R90_P32_SWEEP_PASS stock_N2 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98908001, 'r1': 0.99207997, 't': 0.3066674222322879}, '0.998': {'b0': 96, 'b1': 104, 'r0': 0.99756002, 'r1': 0.99808002, 't': 0.8461153846154541}}
+R90_P32_SWEEP_START low_q1
+R90_P32_SWEEP_PASS low_q1 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98667002, 'r1': 0.99006999, 't': 0.9794145242458122}, '0.998': {'b0': 112, 'b1': 128, 'r0': 0.99778998, 'r1': 0.99853998, 't': 0.2800266666667}}
+R90_P32_SWEEP_START low_q2
+R90_P32_SWEEP_PASS low_q2 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98790002, 'r1': 0.99115998, 't': 0.6441735481416831}, '0.998': {'b0': 104, 'b1': 112, 'r0': 0.99777001, 'r1': 0.99822003, 't': 0.5110661748366455}}
+R90_P32_SWEEP_START random_q1
+R90_P32_SWEEP_PASS random_q1 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98892999, 'r1': 0.99198002, 't': 0.3508195001360579}, '0.998': {'b0': 96, 'b1': 104, 'r0': 0.99760997, 'r1': 0.99808002, 't': 0.8297627911925146}}
+R90_P32_SWEEP_START random_q2
+R90_P32_SWEEP_PASS random_q2 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98904997, 'r1': 0.99203002, 't': 0.3187966644855094}, '0.998': {'b0': 96, 'b1': 104, 'r0': 0.99756998, 'r1': 0.99808002, 't': 0.8431103442868008}}
+R90_P32_SWEEP_START high_q1
+R90_P32_SWEEP_PASS high_q1 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98811001, 'r1': 0.99145001, 't': 0.5658652694610786}, '0.998': {'b0': 104, 'b1': 112, 'r0': 0.99789, 'r1': 0.99829, 't': 0.274999999999889}}
+R90_P32_SWEEP_START high_q2
+R90_P32_SWEEP_PASS high_q2 {'0.99': {'b0': 56, 'b1': 64, 'r0': 0.98864001, 'r1': 0.99193001, 't': 0.4133708206686843}, '0.998': {'b0': 96, 'b1': 104, 'r0': 0.99747998, 'r1': 0.99801999, 't': 0.9629821669969583}}
+R90_P32_REPEAT_PASS stock_N1 1
+R90_P32_REPEAT_PASS stock_N2 1
+R90_P32_REPEAT_PASS low_q1 1
+R90_P32_REPEAT_PASS low_q2 1
+R90_P32_REPEAT_PASS random_q1 1
+R90_P32_REPEAT_PASS random_q2 1
+R90_P32_REPEAT_PASS high_q1 1
+R90_P32_REPEAT_PASS high_q2 1
+R90_P32_REPEAT_PASS stock_N1 2
+R90_P32_REPEAT_PASS high_q2 2
+R90_P32_REPEAT_PASS high_q1 2
+R90_P32_REPEAT_PASS random_q2 2
+R90_P32_REPEAT_PASS random_q1 2
+R90_P32_REPEAT_PASS low_q2 2
+R90_P32_REPEAT_PASS low_q1 2
+R90_P32_REPEAT_PASS stock_N2 2
+R90_P32_REPEAT_PASS low_q1 3
+R90_P32_REPEAT_PASS low_q2 3
+R90_P32_REPEAT_PASS random_q1 3
+R90_P32_REPEAT_PASS random_q2 3
+R90_P32_REPEAT_PASS high_q1 3
+R90_P32_REPEAT_PASS high_q2 3
+R90_P32_REPEAT_PASS stock_N1 3
+R90_P32_REPEAT_PASS stock_N2 3
+R90_P32_INTERP_ROW {"arm": "stock_N1", "bracket": [64, 72], "build_s": 6.580044230002386, "qps_endpoints_median": {"64": 19594.81835938, "72": 17735.43359375}, "qps_latency_interp": 17797.404233003617, "recall_bracket": [0.98685002, 0.99011999], "retained_wl_pct": null, "selector": "stock", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "stock_N1", "bracket": [128, 144], "build_s": 6.580044230002386, "qps_endpoints_median": {"128": 10962.9765625, "144": 9937.73046875}, "qps_latency_interp": 10724.681173822792, "recall_bracket": [0.99786001, 0.99851], "retained_wl_pct": null, "selector": "stock", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "stock_N2", "bracket": [56, 64], "build_s": 12.695254935999401, "qps_endpoints_median": {"56": 19946.74023438, "64": 17929.24414062}, "qps_latency_interp": 19281.3805382538, "recall_bracket": [0.98908001, 0.99207997], "retained_wl_pct": null, "selector": "stock", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "stock_N2", "bracket": [96, 104], "build_s": 12.695254935999401, "qps_endpoints_median": {"96": 12769.92480469, "104": 11965.15722656}, "qps_latency_interp": 12082.330359250402, "recall_bracket": [0.99756002, 0.99808002], "retained_wl_pct": null, "selector": "stock", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "low_q1", "bracket": [56, 64], "build_s": 10.993976240002667, "qps_endpoints_median": {"56": 20924.31054688, "64": 18791.26953125}, "qps_latency_interp": 18830.78593411741, "recall_bracket": [0.98667002, 0.99006999], "retained_wl_pct": 71.47340621240019, "selector": "low", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "low_q1", "bracket": [112, 128], "build_s": 10.993976240002667, "qps_endpoints_median": {"112": 11713.29199219, "128": 10457.75683594}, "qps_latency_interp": 11332.306836717657, "recall_bracket": [0.99778998, 0.99853998], "retained_wl_pct": 71.47340621240019, "selector": "low", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "low_q2", "bracket": [56, 64], "build_s": 11.783291054998699, "qps_endpoints_median": {"56": 20474.30859375, "64": 18443.20898438}, "qps_latency_interp": 19118.053754060413, "recall_bracket": [0.98790002, 0.99115998], "retained_wl_pct": 87.03697761633673, "selector": "low", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "low_q2", "bracket": [104, 112], "build_s": 11.783291054998699, "qps_endpoints_median": {"104": 12183.39941406, "112": 11458.00878906}, "qps_latency_interp": 11801.561201621435, "recall_bracket": [0.99777001, 0.99822003], "retained_wl_pct": 87.03697761633673, "selector": "low", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "random_q1", "bracket": [56, 64], "build_s": 12.541937611000321, "qps_endpoints_median": {"56": 20029.5625, "64": 18015.03320312}, "qps_latency_interp": 19273.45789090524, "recall_bracket": [0.98892999, 0.99198002], "retained_wl_pct": 98.14103113686903, "selector": "random", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "random_q1", "bracket": [96, 104], "build_s": 12.541937611000321, "qps_endpoints_median": {"96": 12833.52734375, "104": 12020.60351562}, "qps_latency_interp": 12151.640294466897, "recall_bracket": [0.99760997, 0.99808002], "retained_wl_pct": 98.14103113686903, "selector": "random", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "random_q2", "bracket": [56, 64], "build_s": 12.742992954001238, "qps_endpoints_median": {"56": 19970.28515625, "64": 17914.05273438}, "qps_latency_interp": 19265.318906605455, "recall_bracket": [0.98904997, 0.99203002], "retained_wl_pct": 99.76141395503755, "selector": "random", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "random_q2", "bracket": [96, 104], "build_s": 12.742992954001238, "qps_endpoints_median": {"96": 12805.49023438, "104": 11964.69921875}, "qps_latency_interp": 12089.232344075841, "recall_bracket": [0.99756998, 0.99808002], "retained_wl_pct": 99.76141395503755, "selector": "random", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "high_q1", "bracket": [56, 64], "build_s": 11.343928674999916, "qps_endpoints_median": {"56": 20289.40820312, "64": 18257.4375}, "qps_latency_interp": 19087.321879287407, "recall_bracket": [0.98811001, 0.99145001], "retained_wl_pct": 79.17587024388803, "selector": "high", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "high_q1", "bracket": [104, 112], "build_s": 11.343928674999916, "qps_endpoints_median": {"104": 12148.04101562, "112": 11388.09472656}, "qps_latency_interp": 11929.127189972387, "recall_bracket": [0.99789, 0.99829], "retained_wl_pct": 79.17587024388803, "selector": "high", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_INTERP_ROW {"arm": "high_q2", "bracket": [56, 64], "build_s": 11.846253132996935, "qps_endpoints_median": {"56": 20179.109375, "64": 18076.0234375}, "qps_latency_interp": 19253.14226565738, "recall_bracket": [0.98864001, 0.99193001], "retained_wl_pct": 89.04292131142827, "selector": "high", "status": "INTERPOLATION_PILOT", "target": 0.99}
+R90_P32_INTERP_ROW {"arm": "high_q2", "bracket": [96, 104], "build_s": 11.846253132996935, "qps_endpoints_median": {"96": 12894.04199219, "104": 12033.91113281}, "qps_latency_interp": 12063.700892631818, "recall_bracket": [0.99747998, 0.99801999], "retained_wl_pct": 89.04292131142827, "selector": "high", "status": "INTERPOLATION_PILOT", "target": 0.998}
+R90_P32_PILOT_COMPLETE_ONE_RANDOM_SEED_NOT_FORMAL
+R90_P32_PREFLIGHT_SOURCE_DEP_GT_PARENT_GRAPHS_AND_PATCH_PASS
+R90_P32_AUDIT_SOURCE_ELF_GRAPHS_LOGS_AND_INTERPOLATION_PASS
+R90_P32_PREFLIGHT_SOURCE_DEP_GT_PARENT_GRAPHS_AND_PATCH_PASS
+R90_P32_AUDIT_SOURCE_ELF_GRAPHS_LOGS_AND_INTERPOLATION_PASS
+R90_P32_SEQUENCE_COMPLETE

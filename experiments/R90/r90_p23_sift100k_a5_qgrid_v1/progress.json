@@ -1,0 +1,1488 @@
+{
+  "status": "RUNNING",
+  "script_sha256": "ee2c5f607ab1155fc5cee719151b0608de1164e300d7a058689729846a25df8d",
+  "cpu": 0,
+  "reps": 3,
+  "inputs_sha256": {
+    "base": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "query": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+    "gt": "70d25b3fff9d68ee3571931cc28e36f03d77c8bb4eea089ca206e5e709be8e28",
+    "evaluator": "3698f915ef3b7369aee527b6bb126512c0e31eb677a46480a5526cf4f909c64a",
+    "a5_elf": "aebdae764f3e79ff709546787c22e3df910dbb1934851ce7ddfaf4927ff10fa2"
+  },
+  "new_fractions": [
+    [
+      "a5_gate_q0p5_N2",
+      "0.005"
+    ],
+    [
+      "a5_gate_q2_N2",
+      "0.02"
+    ],
+    [
+      "a5_gate_q5_N2",
+      "0.05"
+    ]
+  ],
+  "old_sha": {
+    "stock_N1": "67310319473693823c37bb441fdfb97ceb3c379f6da50f46e7623f8141559781",
+    "stock_N2": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+    "a5_dryrun_q001_N2": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+    "a5_gate_q001_N2": "4cceb72e0dcb34f030f9cd447f2d7da2ed67a166f32188f7cfde20bcdd72e9c0"
+  },
+  "old_p22_manifest_path": "/home/tai/ann-task-a/experiments/R90/r90_p22_sift100k_10kq_floor_v1/result_manifest.json",
+  "builds": [
+    {
+      "arm": "a5_gate_q0p5_N2",
+      "fraction": 0.005,
+      "build_wall_s": 9.988989781999408,
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q0p5_N2.graph",
+      "graph_sha256": "7588f1c3f2fa5e3722c6a428fc4f29f00c060dab59bee2a606943397a584f094",
+      "graph_bytes": 6980364,
+      "coverage": {
+        "fraction": 0.005,
+        "selected_points": 500,
+        "sort_comparisons": 1980141,
+        "total_leaves": 8297,
+        "eligible_leaves": 3472,
+        "eligible_leaf_pct": 41.846450524285885,
+        "wl_total": 1493961225,
+        "wl_eligible": 821224265,
+        "retained_wl_pct": 54.9695836315966,
+        "skipped_wl_pct": 45.0304163684034,
+        "gate": 1
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q0p5_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-table_size",
+        "160",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q0p5_N2.build.stdout",
+      "stdout_sha256": "b066a5c89ce056d1af55efbac684b62ee91fdfee34d9f4cd31aee4b55030726b",
+      "time_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q0p5_N2.build.time",
+      "time_sha256": "2be0af82fe8d62c0ae6aaf6a0a07a29bfc0ad28708ec6ec36bb07a286ceb387e"
+    },
+    {
+      "arm": "a5_gate_q2_N2",
+      "fraction": 0.02,
+      "build_wall_s": 11.794590326000616,
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q2_N2.graph",
+      "graph_sha256": "8642dcc314c6b78ec8e2aa8cd4182f56d0282e2105b3dce0f40e0b1dfe0df067",
+      "graph_bytes": 7450388,
+      "coverage": {
+        "fraction": 0.02,
+        "selected_points": 2000,
+        "sort_comparisons": 1980141,
+        "total_leaves": 8297,
+        "eligible_leaves": 6329,
+        "eligible_leaf_pct": 76.28058334337713,
+        "wl_total": 1493961225,
+        "wl_eligible": 1300298697,
+        "retained_wl_pct": 87.03697761633673,
+        "skipped_wl_pct": 12.96302238366327,
+        "gate": 1
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q2_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-table_size",
+        "160",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q2_N2.build.stdout",
+      "stdout_sha256": "3d533a8194dc65e720c28c9ee894921d9927de0182be2c949c1147242f10b4fc",
+      "time_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q2_N2.build.time",
+      "time_sha256": "c5739d218a3eb5052463bcd170e27498610df771296a3b12c5a1ff95aed3d81d"
+    },
+    {
+      "arm": "a5_gate_q5_N2",
+      "fraction": 0.05,
+      "build_wall_s": 12.648893794001197,
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q5_N2.graph",
+      "graph_sha256": "f40b9c6f9e487fb58f3eb504525dfb6af206a55ae1f56df291565f50788b48f7",
+      "graph_bytes": 7652148,
+      "coverage": {
+        "fraction": 0.05,
+        "selected_points": 5000,
+        "sort_comparisons": 1980141,
+        "total_leaves": 8297,
+        "eligible_leaves": 7781,
+        "eligible_leaf_pct": 93.78088465710498,
+        "wl_total": 1493961225,
+        "wl_eligible": 1464713300,
+        "retained_wl_pct": 98.04225675268111,
+        "skipped_wl_pct": 1.9577432473188854,
+        "gate": 1
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R90/r90_p0_stock_a5_compile_gate_v1/a5_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "-base_path",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "-graph_outfile",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q5_N2.graph",
+        "-num_clusters",
+        "2",
+        "-cluster_size",
+        "1024",
+        "-table_size",
+        "160",
+        "-top_level_leaders",
+        "100",
+        "-fanout_scheme",
+        "10,3,1",
+        "-mst_deg",
+        "2",
+        "-prune",
+        "1",
+        "-prune_all",
+        "1",
+        "-prune_degree",
+        "64",
+        "-hash_bits",
+        "12",
+        "-alpha",
+        "1.1",
+        "-k",
+        "0"
+      ],
+      "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q5_N2.build.stdout",
+      "stdout_sha256": "04ab0afac24e982644c0d87dea739be9d2a093e839de86b56017a5c10ca45d0f",
+      "time_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q5_N2.build.time",
+      "time_sha256": "c4711b07e5a0b31bed55a6af68c9017dfd8eed2febb8ae6ebd92eaf86f4e3280"
+    }
+  ],
+  "runs": [
+    {
+      "arm": "a5_gate_q0p5_N2",
+      "phase": "sweep",
+      "rep": 1,
+      "beams": [
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104,
+        112,
+        128,
+        144,
+        160,
+        176,
+        192,
+        224,
+        256,
+        320
+      ],
+      "rows": [
+        {
+          "beam": 40,
+          "recall": 0.97082001,
+          "qps": 26903.70703125,
+          "avg_cmps": 780.0,
+          "avg_visited": 49.0
+        },
+        {
+          "beam": 48,
+          "recall": 0.97991002,
+          "qps": 23390.1171875,
+          "avg_cmps": 891.0,
+          "avg_visited": 56.0
+        },
+        {
+          "beam": 56,
+          "recall": 0.98558003,
+          "qps": 20814.90429688,
+          "avg_cmps": 1001.0,
+          "avg_visited": 64.0
+        },
+        {
+          "beam": 64,
+          "recall": 0.98931998,
+          "qps": 18670.05664062,
+          "avg_cmps": 1111.0,
+          "avg_visited": 72.0
+        },
+        {
+          "beam": 72,
+          "recall": 0.99229997,
+          "qps": 16873.28125,
+          "avg_cmps": 1174.0,
+          "avg_visited": 80.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.99382001,
+          "qps": 15532.17089844,
+          "avg_cmps": 1273.0,
+          "avg_visited": 87.0
+        },
+        {
+          "beam": 88,
+          "recall": 0.99527001,
+          "qps": 14344.85644531,
+          "avg_cmps": 1369.0,
+          "avg_visited": 94.0
+        },
+        {
+          "beam": 96,
+          "recall": 0.99642003,
+          "qps": 13242.5078125,
+          "avg_cmps": 1424.0,
+          "avg_visited": 103.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99703002,
+          "qps": 12363.03320312,
+          "avg_cmps": 1507.0,
+          "avg_visited": 109.0
+        },
+        {
+          "beam": 112,
+          "recall": 0.99760997,
+          "qps": 11642.06640625,
+          "avg_cmps": 1589.0,
+          "avg_visited": 116.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99838001,
+          "qps": 10454.14941406,
+          "avg_cmps": 1744.0,
+          "avg_visited": 128.0
+        },
+        {
+          "beam": 144,
+          "recall": 0.99892002,
+          "qps": 9480.08398438,
+          "avg_cmps": 1840.0,
+          "avg_visited": 141.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99918997,
+          "qps": 8730.109375,
+          "avg_cmps": 1964.0,
+          "avg_visited": 152.0
+        },
+        {
+          "beam": 176,
+          "recall": 0.99936998,
+          "qps": 8194.82714844,
+          "avg_cmps": 2078.0,
+          "avg_visited": 162.0
+        },
+        {
+          "beam": 192,
+          "recall": 0.99949002,
+          "qps": 7673.90234375,
+          "avg_cmps": 2145.0,
+          "avg_visited": 173.0
+        },
+        {
+          "beam": 224,
+          "recall": 0.99965,
+          "qps": 6915.6484375,
+          "avg_cmps": 2322.0,
+          "avg_visited": 190.0
+        },
+        {
+          "beam": 256,
+          "recall": 0.99978,
+          "qps": 6369.58886719,
+          "avg_cmps": 2465.0,
+          "avg_visited": 204.0
+        },
+        {
+          "beam": 320,
+          "recall": 0.99988002,
+          "qps": 5632.97460938,
+          "avg_cmps": 2653.0,
+          "avg_visited": 228.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q0p5_N2.sweep.r1.stdout",
+      "log_sha256": "3c34d5ce20e0c9daa20a7adffbee0ad5225dfdb3c8601694c74bf3635ec28f7d",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q0p5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "40,48,56,64,72,80,88,96,104,112,128,144,160,176,192,224,256,320"
+      ],
+      "graph_sha256": "7588f1c3f2fa5e3722c6a428fc4f29f00c060dab59bee2a606943397a584f094"
+    },
+    {
+      "arm": "a5_gate_q2_N2",
+      "phase": "sweep",
+      "rep": 1,
+      "beams": [
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104,
+        112,
+        128,
+        144,
+        160,
+        176,
+        192,
+        224,
+        256,
+        320
+      ],
+      "rows": [
+        {
+          "beam": 40,
+          "recall": 0.97516,
+          "qps": 26493.71679688,
+          "avg_cmps": 817.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 48,
+          "recall": 0.98293,
+          "qps": 23019.78125,
+          "avg_cmps": 936.0,
+          "avg_visited": 55.0
+        },
+        {
+          "beam": 56,
+          "recall": 0.98790002,
+          "qps": 20389.1875,
+          "avg_cmps": 1054.0,
+          "avg_visited": 63.0
+        },
+        {
+          "beam": 64,
+          "recall": 0.99115998,
+          "qps": 18298.09570312,
+          "avg_cmps": 1170.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 72,
+          "recall": 0.99360001,
+          "qps": 16629.25,
+          "avg_cmps": 1234.0,
+          "avg_visited": 79.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.99497998,
+          "qps": 15257.32226562,
+          "avg_cmps": 1338.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 88,
+          "recall": 0.99620003,
+          "qps": 14099.24121094,
+          "avg_cmps": 1437.0,
+          "avg_visited": 93.0
+        },
+        {
+          "beam": 96,
+          "recall": 0.99722999,
+          "qps": 13064.53515625,
+          "avg_cmps": 1484.0,
+          "avg_visited": 100.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99777001,
+          "qps": 12163.4375,
+          "avg_cmps": 1580.0,
+          "avg_visited": 108.0
+        },
+        {
+          "beam": 112,
+          "recall": 0.99822003,
+          "qps": 11433.57617188,
+          "avg_cmps": 1666.0,
+          "avg_visited": 114.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99883002,
+          "qps": 10232.11523438,
+          "avg_cmps": 1827.0,
+          "avg_visited": 126.0
+        },
+        {
+          "beam": 144,
+          "recall": 0.99922001,
+          "qps": 9285.61132812,
+          "avg_cmps": 1923.0,
+          "avg_visited": 139.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99941999,
+          "qps": 8615.52050781,
+          "avg_cmps": 2051.0,
+          "avg_visited": 149.0
+        },
+        {
+          "beam": 176,
+          "recall": 0.99956,
+          "qps": 8013.71289062,
+          "avg_cmps": 2171.0,
+          "avg_visited": 159.0
+        },
+        {
+          "beam": 192,
+          "recall": 0.99962997,
+          "qps": 7489.21728516,
+          "avg_cmps": 2234.0,
+          "avg_visited": 170.0
+        },
+        {
+          "beam": 224,
+          "recall": 0.99975002,
+          "qps": 6753.89990234,
+          "avg_cmps": 2423.0,
+          "avg_visited": 187.0
+        },
+        {
+          "beam": 256,
+          "recall": 0.99983001,
+          "qps": 6205.32128906,
+          "avg_cmps": 2575.0,
+          "avg_visited": 201.0
+        },
+        {
+          "beam": 320,
+          "recall": 0.99992001,
+          "qps": 5473.66357422,
+          "avg_cmps": 2763.0,
+          "avg_visited": 224.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q2_N2.sweep.r1.stdout",
+      "log_sha256": "8306656d1ccad8c19d8442a70bcdb26b51fa016286479123fe138f660ba1c6c4",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q2_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "40,48,56,64,72,80,88,96,104,112,128,144,160,176,192,224,256,320"
+      ],
+      "graph_sha256": "8642dcc314c6b78ec8e2aa8cd4182f56d0282e2105b3dce0f40e0b1dfe0df067"
+    },
+    {
+      "arm": "a5_gate_q5_N2",
+      "phase": "sweep",
+      "rep": 1,
+      "beams": [
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104,
+        112,
+        128,
+        144,
+        160,
+        176,
+        192,
+        224,
+        256,
+        320
+      ],
+      "rows": [
+        {
+          "beam": 40,
+          "recall": 0.97676998,
+          "qps": 25986.71484375,
+          "avg_cmps": 842.0,
+          "avg_visited": 48.0
+        },
+        {
+          "beam": 48,
+          "recall": 0.98414999,
+          "qps": 22597.4921875,
+          "avg_cmps": 965.0,
+          "avg_visited": 55.0
+        },
+        {
+          "beam": 56,
+          "recall": 0.98904002,
+          "qps": 20076.37109375,
+          "avg_cmps": 1087.0,
+          "avg_visited": 63.0
+        },
+        {
+          "beam": 64,
+          "recall": 0.99204999,
+          "qps": 17960.15625,
+          "avg_cmps": 1208.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 72,
+          "recall": 0.99422002,
+          "qps": 16256.83203125,
+          "avg_cmps": 1271.0,
+          "avg_visited": 78.0
+        },
+        {
+          "beam": 80,
+          "recall": 0.99540001,
+          "qps": 14896.0703125,
+          "avg_cmps": 1377.0,
+          "avg_visited": 86.0
+        },
+        {
+          "beam": 88,
+          "recall": 0.99654001,
+          "qps": 13797.65136719,
+          "avg_cmps": 1480.0,
+          "avg_visited": 92.0
+        },
+        {
+          "beam": 96,
+          "recall": 0.99755001,
+          "qps": 12806.88476562,
+          "avg_cmps": 1528.0,
+          "avg_visited": 100.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99804997,
+          "qps": 12053.61035156,
+          "avg_cmps": 1620.0,
+          "avg_visited": 107.0
+        },
+        {
+          "beam": 112,
+          "recall": 0.99843001,
+          "qps": 11325.61816406,
+          "avg_cmps": 1706.0,
+          "avg_visited": 113.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99892002,
+          "qps": 10058.39941406,
+          "avg_cmps": 1881.0,
+          "avg_visited": 126.0
+        },
+        {
+          "beam": 144,
+          "recall": 0.99932998,
+          "qps": 9148.59570312,
+          "avg_cmps": 1976.0,
+          "avg_visited": 139.0
+        },
+        {
+          "beam": 160,
+          "recall": 0.99952,
+          "qps": 8431.2265625,
+          "avg_cmps": 2109.0,
+          "avg_visited": 149.0
+        },
+        {
+          "beam": 176,
+          "recall": 0.99962997,
+          "qps": 7842.36230469,
+          "avg_cmps": 2233.0,
+          "avg_visited": 159.0
+        },
+        {
+          "beam": 192,
+          "recall": 0.99970001,
+          "qps": 7368.63232422,
+          "avg_cmps": 2296.0,
+          "avg_visited": 170.0
+        },
+        {
+          "beam": 224,
+          "recall": 0.99980003,
+          "qps": 6621.15722656,
+          "avg_cmps": 2484.0,
+          "avg_visited": 186.0
+        },
+        {
+          "beam": 256,
+          "recall": 0.99985999,
+          "qps": 6097.41943359,
+          "avg_cmps": 2644.0,
+          "avg_visited": 200.0
+        },
+        {
+          "beam": 320,
+          "recall": 0.99993998,
+          "qps": 5372.45605469,
+          "avg_cmps": 2838.0,
+          "avg_visited": 224.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q5_N2.sweep.r1.stdout",
+      "log_sha256": "0ea6894adea8aa049902497bd0f593a028fbb3d39ff31e29fc0953d9fb120c56",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "40,48,56,64,72,80,88,96,104,112,128,144,160,176,192,224,256,320"
+      ],
+      "graph_sha256": "f40b9c6f9e487fb58f3eb504525dfb6af206a55ae1f56df291565f50788b48f7"
+    },
+    {
+      "arm": "stock_N1",
+      "phase": "repeat",
+      "rep": 1,
+      "beams": [
+        72,
+        144
+      ],
+      "rows": [
+        {
+          "beam": 72,
+          "recall": 0.99011999,
+          "qps": 17686.96875,
+          "avg_cmps": 1106.0,
+          "avg_visited": 81.0
+        },
+        {
+          "beam": 144,
+          "recall": 0.99851,
+          "qps": 9940.36816406,
+          "avg_cmps": 1737.0,
+          "avg_visited": 143.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/stock_N1.repeat.r1.stdout",
+      "log_sha256": "c537655935787020f73ff455074a4d46fa9993462c0568402fe3cf3bc17a4dda",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/stock_N1.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "72,144"
+      ],
+      "graph_sha256": "67310319473693823c37bb441fdfb97ceb3c379f6da50f46e7623f8141559781"
+    },
+    {
+      "arm": "stock_N2",
+      "phase": "repeat",
+      "rep": 1,
+      "beams": [
+        64,
+        104
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99207997,
+          "qps": 17835.0703125,
+          "avg_cmps": 1219.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99808002,
+          "qps": 11937.86132812,
+          "avg_cmps": 1634.0,
+          "avg_visited": 107.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/stock_N2.repeat.r1.stdout",
+      "log_sha256": "290edf48297f381d8f60401872e76d51d58317e6de522f61afd5ce349af75f50",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/stock_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,104"
+      ],
+      "graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1"
+    },
+    {
+      "arm": "a5_gate_q001_N2",
+      "phase": "repeat",
+      "rep": 1,
+      "beams": [
+        64,
+        128
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99006999,
+          "qps": 18771.97460938,
+          "avg_cmps": 1132.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99853998,
+          "qps": 10481.40039062,
+          "avg_cmps": 1772.0,
+          "avg_visited": 127.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q001_N2.repeat.r1.stdout",
+      "log_sha256": "98cb9b45801ebda93c4583304a5e96298ac98dbb19682c1281498fa6fd065172",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/a5_gate_q001_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,128"
+      ],
+      "graph_sha256": "4cceb72e0dcb34f030f9cd447f2d7da2ed67a166f32188f7cfde20bcdd72e9c0"
+    },
+    {
+      "arm": "a5_gate_q0p5_N2",
+      "phase": "repeat",
+      "rep": 1,
+      "beams": [
+        72,
+        128
+      ],
+      "rows": [
+        {
+          "beam": 72,
+          "recall": 0.99229997,
+          "qps": 17127.3046875,
+          "avg_cmps": 1174.0,
+          "avg_visited": 80.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99838001,
+          "qps": 10518.22265625,
+          "avg_cmps": 1744.0,
+          "avg_visited": 128.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q0p5_N2.repeat.r1.stdout",
+      "log_sha256": "02cea5ecb3ddb0f15fac63f5ca157132a489c805f2f2e60dda1915855fa7d4b7",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q0p5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "72,128"
+      ],
+      "graph_sha256": "7588f1c3f2fa5e3722c6a428fc4f29f00c060dab59bee2a606943397a584f094"
+    },
+    {
+      "arm": "a5_gate_q2_N2",
+      "phase": "repeat",
+      "rep": 1,
+      "beams": [
+        64,
+        112
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99115998,
+          "qps": 18213.078125,
+          "avg_cmps": 1170.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 112,
+          "recall": 0.99822003,
+          "qps": 11437.38183594,
+          "avg_cmps": 1666.0,
+          "avg_visited": 114.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q2_N2.repeat.r1.stdout",
+      "log_sha256": "7f39077614a81145cfa10018836523c466dad4ed53b666871a6f08cfdce737e3",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q2_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,112"
+      ],
+      "graph_sha256": "8642dcc314c6b78ec8e2aa8cd4182f56d0282e2105b3dce0f40e0b1dfe0df067"
+    },
+    {
+      "arm": "a5_gate_q5_N2",
+      "phase": "repeat",
+      "rep": 1,
+      "beams": [
+        64,
+        104
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99204999,
+          "qps": 17981.73046875,
+          "avg_cmps": 1208.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99804997,
+          "qps": 11979.04589844,
+          "avg_cmps": 1620.0,
+          "avg_visited": 107.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q5_N2.repeat.r1.stdout",
+      "log_sha256": "735f73e58783697f631be7e8c3c18d062fad8f0092645a138a255b5e87e27539",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,104"
+      ],
+      "graph_sha256": "f40b9c6f9e487fb58f3eb504525dfb6af206a55ae1f56df291565f50788b48f7"
+    },
+    {
+      "arm": "stock_N1",
+      "phase": "repeat",
+      "rep": 2,
+      "beams": [
+        72,
+        144
+      ],
+      "rows": [
+        {
+          "beam": 72,
+          "recall": 0.99011999,
+          "qps": 17673.96484375,
+          "avg_cmps": 1106.0,
+          "avg_visited": 81.0
+        },
+        {
+          "beam": 144,
+          "recall": 0.99851,
+          "qps": 9914.39941406,
+          "avg_cmps": 1737.0,
+          "avg_visited": 143.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/stock_N1.repeat.r2.stdout",
+      "log_sha256": "25ae02a51158cbed9f089f7b23f4a46e8a7d56f0a694e7fa6de6c5de0cc88d2a",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/stock_N1.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "72,144"
+      ],
+      "graph_sha256": "67310319473693823c37bb441fdfb97ceb3c379f6da50f46e7623f8141559781"
+    },
+    {
+      "arm": "a5_gate_q5_N2",
+      "phase": "repeat",
+      "rep": 2,
+      "beams": [
+        64,
+        104
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99204999,
+          "qps": 17966.70703125,
+          "avg_cmps": 1208.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99804997,
+          "qps": 11958.76171875,
+          "avg_cmps": 1620.0,
+          "avg_visited": 107.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q5_N2.repeat.r2.stdout",
+      "log_sha256": "2f7f3f9622c551a381e6a9e7df9ee23c0b776e1daf79d7d5df1b70f76b9ddf65",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,104"
+      ],
+      "graph_sha256": "f40b9c6f9e487fb58f3eb504525dfb6af206a55ae1f56df291565f50788b48f7"
+    },
+    {
+      "arm": "a5_gate_q2_N2",
+      "phase": "repeat",
+      "rep": 2,
+      "beams": [
+        64,
+        112
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99115998,
+          "qps": 18421.22851562,
+          "avg_cmps": 1170.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 112,
+          "recall": 0.99822003,
+          "qps": 11393.51855469,
+          "avg_cmps": 1666.0,
+          "avg_visited": 114.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q2_N2.repeat.r2.stdout",
+      "log_sha256": "2172f93fbec4b5b29afa323da496531f130abe6d03ced4758e6a4c27503c9b7f",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q2_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,112"
+      ],
+      "graph_sha256": "8642dcc314c6b78ec8e2aa8cd4182f56d0282e2105b3dce0f40e0b1dfe0df067"
+    },
+    {
+      "arm": "a5_gate_q0p5_N2",
+      "phase": "repeat",
+      "rep": 2,
+      "beams": [
+        72,
+        128
+      ],
+      "rows": [
+        {
+          "beam": 72,
+          "recall": 0.99229997,
+          "qps": 17086.65625,
+          "avg_cmps": 1174.0,
+          "avg_visited": 80.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99838001,
+          "qps": 10486.24804688,
+          "avg_cmps": 1744.0,
+          "avg_visited": 128.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q0p5_N2.repeat.r2.stdout",
+      "log_sha256": "dc8f03379c6f8050b3289d73166f92a3271120c035cb9429905836d79cd7bf69",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q0p5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "72,128"
+      ],
+      "graph_sha256": "7588f1c3f2fa5e3722c6a428fc4f29f00c060dab59bee2a606943397a584f094"
+    },
+    {
+      "arm": "a5_gate_q001_N2",
+      "phase": "repeat",
+      "rep": 2,
+      "beams": [
+        64,
+        128
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99006999,
+          "qps": 18732.24023438,
+          "avg_cmps": 1132.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99853998,
+          "qps": 10519.83789062,
+          "avg_cmps": 1772.0,
+          "avg_visited": 127.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q001_N2.repeat.r2.stdout",
+      "log_sha256": "bc6cbd220734ec961f4117f492dc4c3129baecbd53e5321a0c0b21c9e8b914b6",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/a5_gate_q001_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,128"
+      ],
+      "graph_sha256": "4cceb72e0dcb34f030f9cd447f2d7da2ed67a166f32188f7cfde20bcdd72e9c0"
+    },
+    {
+      "arm": "stock_N2",
+      "phase": "repeat",
+      "rep": 2,
+      "beams": [
+        64,
+        104
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99207997,
+          "qps": 17857.52539062,
+          "avg_cmps": 1219.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99808002,
+          "qps": 11932.26269531,
+          "avg_cmps": 1634.0,
+          "avg_visited": 107.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/stock_N2.repeat.r2.stdout",
+      "log_sha256": "52aff63e0d7673b07bbf322d0d43de1525141a4085276c4720d9de01b2b886aa",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/stock_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,104"
+      ],
+      "graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1"
+    },
+    {
+      "arm": "a5_gate_q001_N2",
+      "phase": "repeat",
+      "rep": 3,
+      "beams": [
+        64,
+        128
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99006999,
+          "qps": 18797.734375,
+          "avg_cmps": 1132.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99853998,
+          "qps": 10478.59960938,
+          "avg_cmps": 1772.0,
+          "avg_visited": 127.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q001_N2.repeat.r3.stdout",
+      "log_sha256": "e8fc9418a5be8016ac1c39c3eefa1f8591ecd54a102a400a317b8fd3a244d250",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/a5_gate_q001_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,128"
+      ],
+      "graph_sha256": "4cceb72e0dcb34f030f9cd447f2d7da2ed67a166f32188f7cfde20bcdd72e9c0"
+    },
+    {
+      "arm": "a5_gate_q0p5_N2",
+      "phase": "repeat",
+      "rep": 3,
+      "beams": [
+        72,
+        128
+      ],
+      "rows": [
+        {
+          "beam": 72,
+          "recall": 0.99229997,
+          "qps": 17068.72070312,
+          "avg_cmps": 1174.0,
+          "avg_visited": 80.0
+        },
+        {
+          "beam": 128,
+          "recall": 0.99838001,
+          "qps": 10523.16992188,
+          "avg_cmps": 1744.0,
+          "avg_visited": 128.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q0p5_N2.repeat.r3.stdout",
+      "log_sha256": "55bfa34cc9f8ee14fe3ff71629cdacfb4c7fd8a9e5eec5fc2f8882ccc21feddb",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q0p5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "72,128"
+      ],
+      "graph_sha256": "7588f1c3f2fa5e3722c6a428fc4f29f00c060dab59bee2a606943397a584f094"
+    },
+    {
+      "arm": "a5_gate_q2_N2",
+      "phase": "repeat",
+      "rep": 3,
+      "beams": [
+        64,
+        112
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99115998,
+          "qps": 18406.6484375,
+          "avg_cmps": 1170.0,
+          "avg_visited": 71.0
+        },
+        {
+          "beam": 112,
+          "recall": 0.99822003,
+          "qps": 11402.65136719,
+          "avg_cmps": 1666.0,
+          "avg_visited": 114.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q2_N2.repeat.r3.stdout",
+      "log_sha256": "8f1c9cb11391f270c0822a9053ddb0d8c35f631a140413f1ece7232a79971414",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q2_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,112"
+      ],
+      "graph_sha256": "8642dcc314c6b78ec8e2aa8cd4182f56d0282e2105b3dce0f40e0b1dfe0df067"
+    },
+    {
+      "arm": "a5_gate_q5_N2",
+      "phase": "repeat",
+      "rep": 3,
+      "beams": [
+        64,
+        104
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99204999,
+          "qps": 17858.73828125,
+          "avg_cmps": 1208.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99804997,
+          "qps": 11988.41015625,
+          "avg_cmps": 1620.0,
+          "avg_visited": 107.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/a5_gate_q5_N2.repeat.r3.stdout",
+      "log_sha256": "62c5f023ea5b6206037ad4fea4adf50d686953d0f0de9379097076715a80860d",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/graphs/a5_gate_q5_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,104"
+      ],
+      "graph_sha256": "f40b9c6f9e487fb58f3eb504525dfb6af206a55ae1f56df291565f50788b48f7"
+    },
+    {
+      "arm": "stock_N1",
+      "phase": "repeat",
+      "rep": 3,
+      "beams": [
+        72,
+        144
+      ],
+      "rows": [
+        {
+          "beam": 72,
+          "recall": 0.99011999,
+          "qps": 17684.56054688,
+          "avg_cmps": 1106.0,
+          "avg_visited": 81.0
+        },
+        {
+          "beam": 144,
+          "recall": 0.99851,
+          "qps": 9909.61523438,
+          "avg_cmps": 1737.0,
+          "avg_visited": 143.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/stock_N1.repeat.r3.stdout",
+      "log_sha256": "342165fb7709d57ac7ca216f26557a9630168abd4acd169d8499b865a3e31d6d",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/stock_N1.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "72,144"
+      ],
+      "graph_sha256": "67310319473693823c37bb441fdfb97ceb3c379f6da50f46e7623f8141559781"
+    },
+    {
+      "arm": "stock_N2",
+      "phase": "repeat",
+      "rep": 3,
+      "beams": [
+        64,
+        104
+      ],
+      "rows": [
+        {
+          "beam": 64,
+          "recall": 0.99207997,
+          "qps": 17888.19140625,
+          "avg_cmps": 1219.0,
+          "avg_visited": 70.0
+        },
+        {
+          "beam": 104,
+          "recall": 0.99808002,
+          "qps": 11929.75683594,
+          "avg_cmps": 1634.0,
+          "avg_visited": 107.0
+        }
+      ],
+      "log_path": "/home/tai/ann-task-a/experiments/R90/r90_p23_sift100k_a5_qgrid_v1/logs/stock_N2.repeat.r3.stdout",
+      "log_sha256": "668b304b1d313541919a33005b8ceb15db0a4ddc3c2bdbd582ad85e7e595ce1b",
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_native_eval/r85_b1_100k_graph_recall",
+        "/home/tai/ann-task-a/experiments/R90/r90_p2_sift100k_pass2_value_gate1_v1/graphs/stock_N2.graph",
+        "/home/tai/ann-task-a/data/sift100k.fbin",
+        "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+        "/home/tai/ann-task-a/experiments/H85/r85_b1_controlled/step8e_gt10k/sift100k_sift1mqueries10k_exact100.ibin",
+        "64,104"
+      ],
+      "graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1"
+    }
+  ],
+  "calibrations": {
+    "stock_N1": {
+      "0.99": {
+        "beam": 72,
+        "sweep_recall": 0.99011999
+      },
+      "0.998": {
+        "beam": 144,
+        "sweep_recall": 0.99851
+      }
+    },
+    "stock_N2": {
+      "0.99": {
+        "beam": 64,
+        "sweep_recall": 0.99207997
+      },
+      "0.998": {
+        "beam": 104,
+        "sweep_recall": 0.99808002
+      }
+    },
+    "a5_gate_q001_N2": {
+      "0.99": {
+        "beam": 64,
+        "sweep_recall": 0.99006999
+      },
+      "0.998": {
+        "beam": 128,
+        "sweep_recall": 0.99853998
+      }
+    },
+    "a5_gate_q0p5_N2": {
+      "0.99": {
+        "beam": 72,
+        "sweep_recall": 0.99229997
+      },
+      "0.998": {
+        "beam": 128,
+        "sweep_recall": 0.99838001
+      }
+    },
+    "a5_gate_q2_N2": {
+      "0.99": {
+        "beam": 64,
+        "sweep_recall": 0.99115998
+      },
+      "0.998": {
+        "beam": 112,
+        "sweep_recall": 0.99822003
+      }
+    },
+    "a5_gate_q5_N2": {
+      "0.99": {
+        "beam": 64,
+        "sweep_recall": 0.99204999
+      },
+      "0.998": {
+        "beam": 104,
+        "sweep_recall": 0.99804997
+      }
+    }
+  },
+  "summary": [],
+  "limits": [
+    "ONE new BUILD per fraction, no independent BUILD repetitions",
+    "Quality floor from fixed 18-point beam grid, NOT exact matched Recall",
+    "Search QPS comparison only as pilot; 10K public queries and 3/5 rep Search",
+    "Selected set ranks by PASS1 degree and breaks ties by ID, NOT verified optimal",
+    "No change to source, old results, or historical graph files"
+  ]
+}

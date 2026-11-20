@@ -1,0 +1,26 @@
+R90_P39_REPRO_SELFTEST_PASS_ATOMIC_STATE_UPDATE_AND_REP_PROTOCOL
+R90_P39_REPRO_PREFLIGHT_SOURCE_ELF_DATA_TOPOLOGY_ORIGINAL_GRAPH_SHA_PASS 0,2,4,6 [(0, 0), (0, 4), (0, 8), (0, 12)]
+R90_P39_REPRO_PREFLIGHT_SOURCE_ELF_DATA_TOPOLOGY_ORIGINAL_GRAPH_SHA_PASS 0,2,4,6 [(0, 0), (0, 4), (0, 8), (0, 12)]
+R90_P39_BUILD_START 100000_fast_r2 affinity 0,2,4,6
+R90_P39_BUILD_PASS 100000_fast_r2 wall_s 2.471409 graph_sha f2a9141c38fc19371bf5a4ba3404931f4da79b6d4a843c3874bc10938e7aab38 rss_kib 414796 cpu_percent 389.0
+R90_P39_BUILD_START 100000_ctrl_r2 affinity 0,2,4,6
+R90_P39_BUILD_PASS 100000_ctrl_r2 wall_s 2.770774 graph_sha 6fe3c1f8c119972c36a426cc878d0a6b9c61d04a97e75284569452be68fc16de rss_kib 414964 cpu_percent 390.0
+R90_P39_REPRO_PAIR_BUILT 2 graphs_SHA [('fast', 'f2a9141c38fc1937'), ('ctrl', '6fe3c1f8c119972c')]
+R90_P39_BUILD_START 100000_ctrl_r3 affinity 0,2,4,6
+R90_P39_BUILD_PASS 100000_ctrl_r3 wall_s 2.720838 graph_sha 7bf3164ee98d9cb1c4600a3e27b5dc06a6b9747e62a7ac6e37e655f49075f700 rss_kib 413760 cpu_percent 391.0
+R90_P39_BUILD_START 100000_fast_r3 affinity 0,2,4,6
+R90_P39_BUILD_PASS 100000_fast_r3 wall_s 2.470474 graph_sha 0e60496773566fc18103598f0b90210b8695e32418b062a78e46950b71745776 rss_kib 415176 cpu_percent 390.0
+R90_P39_REPRO_PAIR_BUILT 3 graphs_SHA [('ctrl', '7bf3164ee98d9cb1'), ('fast', '0e60496773566fc1')]
+R90_P39_REPRO_PILOT_4_BUILDS_COMPLETE__GRAPH_SEMANTIC_AUDIT_REQUIRED
+R90_P39_REPRO_GRAPH_COMPARE ctrl_r1__vs__ctrl_r2 EDGE_MULTISET_DIFFERENCE changed_vertices 85 arc_lost 112 arc_gained 116
+R90_P39_REPRO_GRAPH_COMPARE ctrl_r1__vs__ctrl_r3 EDGE_MULTISET_DIFFERENCE changed_vertices 100 arc_lost 140 arc_gained 126
+R90_P39_REPRO_GRAPH_COMPARE ctrl_r2__vs__ctrl_r3 EDGE_MULTISET_DIFFERENCE changed_vertices 159 arc_lost 204 arc_gained 186
+R90_P39_REPRO_GRAPH_COMPARE fast_r1__vs__fast_r2 EDGE_MULTISET_DIFFERENCE changed_vertices 58 arc_lost 80 arc_gained 78
+R90_P39_REPRO_GRAPH_COMPARE fast_r1__vs__fast_r3 EDGE_MULTISET_DIFFERENCE changed_vertices 98 arc_lost 110 arc_gained 122
+R90_P39_REPRO_GRAPH_COMPARE fast_r2__vs__fast_r3 EDGE_MULTISET_DIFFERENCE changed_vertices 134 arc_lost 152 arc_gained 166
+R90_P39_REPRO_GRAPH_COMPARE ctrl_r1__vs__fast_r1 EDGE_MULTISET_DIFFERENCE changed_vertices 104 arc_lost 131 arc_gained 133
+R90_P39_REPRO_GRAPH_COMPARE ctrl_r2__vs__fast_r2 EDGE_MULTISET_DIFFERENCE changed_vertices 137 arc_lost 191 arc_gained 187
+R90_P39_REPRO_GRAPH_COMPARE ctrl_r3__vs__fast_r3 EDGE_MULTISET_DIFFERENCE changed_vertices 224 arc_lost 256 arc_gained 284
+R90_P39_REPRO_AUDIT_PASS_GRAPH_VARIABILITY_RECORDED within_arm_varies True mean_paired_fast_wall_gain_pct 10.2909
+R90_P39_REPRO_REPORT /home/tai/ann-task-a/experiments/R90/r90_p39_4cpu_within_arm_probe_v1/within_arm_semantic_audit.json
+R90_P39_REPRO_SEQUENCE_COMPLETE

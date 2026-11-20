@@ -1,0 +1,62 @@
+{
+  "builds": [
+    {
+      "arm": "split",
+      "counters": {
+        "p34": {
+          "copy_coords": 58022016,
+          "copy_us": 29409,
+          "directed_edges": 906594,
+          "distmat_us": 313579,
+          "dot_components_proxy": 17632984448,
+          "fix_us": 13581,
+          "leaves": 991,
+          "merge_calls": 1813188,
+          "merge_us": 82467,
+          "metric_fix_cells": 137757691,
+          "norm_terms": 58022016,
+          "norm_us": 1285,
+          "pack_values": 274608788,
+          "partial_sort_rows": 453297,
+          "rows": 453297,
+          "selection_us": 569912,
+          "syrk_us": 267719,
+          "triangle_pairs": 137757691
+        },
+        "p35": {
+          "emit_ns": 7843475,
+          "emitted_edges": 906594,
+          "pack_ns": 242937200,
+          "rows": 453297,
+          "sort_inputs": 274608788,
+          "sort_ns": 314265125
+        }
+      },
+      "graph": "/home/tai/ann-task-a/experiments/R90/r90_p35_selection_decompose_native_v1/graphs/10000_split_r1.graph",
+      "graph_bytes": 460516,
+      "graph_sha": "59dd18da46ebb88604de4aa0d253df36b65ca5965de80af2f616d5f119a637a9",
+      "n": 10000,
+      "rep": 1,
+      "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p35_selection_decompose_native_v1/logs/10000_split_r1.stdout",
+      "stdout_sha": "3ab298145c1f66e3c26d42c924a3a103ef438d876f7d79f5181297715b11871c",
+      "time_sha": "1488081b834eb4670b2f2df36c79f7f7973c4e0c36486cb289801ab88d7cb24d",
+      "timefile": "/home/tai/ann-task-a/experiments/R90/r90_p35_selection_decompose_native_v1/logs/10000_split_r1.time",
+      "wall_s": 1.0667708829996627
+    }
+  ],
+  "limits": [
+    "This is timing instrumentation, not a proposed optimization",
+    "Per-row timers cause overhead; split times include clock effects",
+    "VQPartialSort Highway actual comparisons and assignments not counted",
+    "Three repetitions are same graph seed 555, not independent graph seeds"
+  ],
+  "p34_diag_elf_sha": "a26fa27cd354c9c6e3d6c32a9e1601ba63b78e4d50d22a925d72de96292d1d87",
+  "p34_diag_source_utils_sha": "d508822aa40bd4f14d50a12ca0c930056c7e7508feacd711561345801947236d",
+  "p34_script_sha": "0361ed829b033e1796dc145364d6c109edabfdc0e82a5c91150e984d9676343d",
+  "p35_script_sha": "ccaf523b71c4adad6c1457eb94a0f31c3221000c707111730830f28e430b5c91",
+  "parent_p34_manifest_sha": "7c978922ccef69441ab9efe147230c6a81dc48b8b3b3f6cd7a50b6daf2bd8420",
+  "split_elf_sha": "58ea642d39a5070fc436a90c9a6040cd685b8212ebc0174f5b227c1bb898467a",
+  "split_pipnn_sha": "ec3eaa798bfb0245bf21c691c5d6f8d44957e6b59b9b1d5440fd299f962c7953",
+  "split_utils_sha": "08b4a790fceeaeb88f38ea838924e3f3984b68274e883c7dfc9e54b90e2c7d8a",
+  "status": "PASS_10K"
+}
