@@ -1,0 +1,64 @@
+{
+  "arm": "h17",
+  "beams": {
+    "10": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 583.0,
+      "avg_visited": 18.0,
+      "latency_us_proxy": 31.93419958176178,
+      "qps": 31314.390625,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.76481003
+    },
+    "160": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 3676.0,
+      "avg_visited": 156.0,
+      "latency_us_proxy": 232.97751175494244,
+      "qps": 4292.25976562,
+      "reaches_099": true,
+      "reaches_0998": true,
+      "recall_at10": 0.99851
+    },
+    "20": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 845.0,
+      "avg_visited": 28.0,
+      "latency_us_proxy": 47.18610022826467,
+      "qps": 21192.68164062,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.88990003
+    },
+    "40": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 1357.0,
+      "avg_visited": 48.0,
+      "latency_us_proxy": 75.884403450413,
+      "qps": 13177.93847656,
+      "reaches_099": false,
+      "reaches_0998": false,
+      "recall_at10": 0.96123999
+    },
+    "80": {
+      "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+      "avg_cmps_sift_only": 2275.0,
+      "avg_visited": 87.0,
+      "latency_us_proxy": 130.36319964003724,
+      "qps": 7670.87646484,
+      "reaches_099": true,
+      "reaches_0998": false,
+      "recall_at10": 0.99094999
+    }
+  },
+  "dataset": "SIFT1M",
+  "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+  "graph_sha256": "954483feee40c1b37a69aabd1be75bd9d645973a7fb0ba4a8907408ec9caf99c",
+  "name": "SIFT1M_h17_off_r2",
+  "rep": 2,
+  "status": "NATIVE_QUERY_SEARCH_PASS",
+  "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha": "531d774f79033b5736b149ff96cf194b1a7db3762893ab63c3c093469b7b54e0",
+  "wall_elapsed_s": 6.03847646099166
+}

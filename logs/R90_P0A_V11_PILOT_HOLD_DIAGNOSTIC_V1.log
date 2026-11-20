@@ -1,0 +1,18 @@
+R90_P0A_PILOT_HOLD_DIAGNOSTIC_V1_SELFTEST_PASS_BITS_GRAPH_PARSE_DIFF
+R90_P0A_PILOT_HOLD_DIAGNOSTIC_V1_SHA_GATES_PASS_SIX_GRAPHS
+PILOT_DIAGNOSTIC stock_off buckets [474, 499] arcs 104776 first_two_inversions 87 selfloops 0
+PILOT_DIAGNOSTIC h17_off buckets [474, 500] arcs 104779 first_two_inversions 39 selfloops 0
+PILOT_DIAGNOSTIC fast_off buckets [474, 499] arcs 104746 first_two_inversions 39 selfloops 0
+PILOT_DIAGNOSTIC stock_on buckets [474, 499] arcs 104776 first_two_inversions 87 selfloops 0
+PILOT_DIAGNOSTIC h17_on buckets [474, 499] arcs 104746 first_two_inversions 39 selfloops 0
+PILOT_DIAGNOSTIC fast_on buckets [474, 499] arcs 104746 first_two_inversions 39 selfloops 0
+PILOT_GRAPH_DIFF stock_off vs stock_on changed_rows 0 changed_neighbor_sets 0
+PILOT_GRAPH_DIFF h17_off vs h17_on changed_rows 285 changed_neighbor_sets 285
+PILOT_GRAPH_DIFF fast_off vs fast_on changed_rows 0 changed_neighbor_sets 0
+PILOT_GRAPH_DIFF h17_on vs fast_on changed_rows 0 changed_neighbor_sets 0
+PILOT_GRAPH_DIFF h17_on vs fast_off changed_rows 0 changed_neighbor_sets 0
+PILOT_GRAPH_DIFF stock_off vs fast_off changed_rows 54 changed_neighbor_sets 36
+PILOT_GRAPH_DIFF h17_off vs fast_off changed_rows 285 changed_neighbor_sets 285
+R90_P0A_PILOT_HOLD_DIAGNOSTIC_V1_REPORT /home/tai/ann-task-a/experiments/R90/r90_p0a_v11_pilot_hold_diagnostic_v1/diagnostic_report.json sha256 cffe7fb508b3d5550e9ea7a41a11fa41f101b23a0034cd6b4c051a15fec9e519
+R90_P0A_PILOT_HOLD_DIAGNOSTIC_V1_NO_BUILD_NO_SEARCH_NO_INPUT_MODIFICATION
+R90_P0A_DIAG_V1_NATIVE_SEQUENCE_COMPLETE

@@ -1,0 +1,31 @@
+{
+  "arm": "stock",
+  "cpu_affinity": "0",
+  "elf_sha256": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+  "graph": {
+    "arcs": 104776,
+    "max_degree": 64,
+    "n": 10000,
+    "sha256": "080ad514a21885dd1cdedd538c3b442c7cd9ad16dd989b0f4f0ecb30e5ab6607"
+  },
+  "name": "SIFT10K_stock_off_probe_r2",
+  "rep": 2,
+  "stage1": {
+    "buckets": [
+      474,
+      499
+    ],
+    "clustering_cmps_cumulative": [
+      1827627,
+      3734009
+    ],
+    "total_points": [
+      222585,
+      230942
+    ]
+  },
+  "stdout_sha256": "f22c48d82e5c41b285f5f070d22cdd5cfcbb5171ffda41ef862c6c4873e9737c",
+  "threads": 1,
+  "timefile_sha256": "a5b6e3725b955ede38acc2cbaeaedff94c0011e27edfebb8dd0b29285cec14fd",
+  "timing_not_used_for_production": true
+}

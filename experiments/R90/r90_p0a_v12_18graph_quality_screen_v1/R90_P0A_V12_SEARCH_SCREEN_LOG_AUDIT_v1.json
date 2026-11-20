@@ -1,0 +1,339 @@
+{
+  "data": {
+    "MS-Turing1M": {
+      "fast": {
+        "beams": {
+          "384": {
+            "max": 0.991024,
+            "mean": 0.9909836666666667,
+            "min": 0.990945,
+            "recalls": [
+              0.991024,
+              0.990982,
+              0.990945
+            ],
+            "sample_stddev_across_graphs": 3.952636251080148e-05
+          },
+          "896": {
+            "max": 0.998111,
+            "mean": 0.9980976666666667,
+            "min": 0.998086,
+            "recalls": [
+              0.998086,
+              0.998111,
+              0.998096
+            ],
+            "sample_stddev_across_graphs": 1.2583057392090061e-05
+          }
+        },
+        "target_screen_min_tested_beam_all_3": {
+          "0.99": 384,
+          "0.998": 896
+        }
+      },
+      "h17": {
+        "beams": {
+          "384": {
+            "max": 0.991129,
+            "mean": 0.9910203333333333,
+            "min": 0.990949,
+            "recalls": [
+              0.990983,
+              0.991129,
+              0.990949
+            ],
+            "sample_stddev_across_graphs": 9.563123618013957e-05
+          },
+          "896": {
+            "max": 0.998111,
+            "mean": 0.9980883333333334,
+            "min": 0.998063,
+            "recalls": [
+              0.998063,
+              0.998111,
+              0.998091
+            ],
+            "sample_stddev_across_graphs": 2.411085509333262e-05
+          }
+        },
+        "target_screen_min_tested_beam_all_3": {
+          "0.99": 384,
+          "0.998": 896
+        }
+      },
+      "stock": {
+        "beams": {
+          "384": {
+            "max": 0.991054,
+            "mean": 0.991014,
+            "min": 0.990939,
+            "recalls": [
+              0.991054,
+              0.990939,
+              0.991049
+            ],
+            "sample_stddev_across_graphs": 6.499999999997747e-05
+          },
+          "896": {
+            "max": 0.998099,
+            "mean": 0.9980893333333333,
+            "min": 0.998084,
+            "recalls": [
+              0.998085,
+              0.998099,
+              0.998084
+            ],
+            "sample_stddev_across_graphs": 8.386497083591303e-06
+          }
+        },
+        "target_screen_min_tested_beam_all_3": {
+          "0.99": 384,
+          "0.998": 896
+        }
+      }
+    },
+    "SIFT1M": {
+      "fast": {
+        "beams": {
+          "10": {
+            "max": 0.76533,
+            "mean": 0.7641633333333333,
+            "min": 0.76355,
+            "recalls": [
+              0.76361,
+              0.76533,
+              0.76355
+            ],
+            "sample_stddev_across_graphs": 0.001010808257452077
+          },
+          "160": {
+            "max": 0.99861,
+            "mean": 0.9985733333333333,
+            "min": 0.99854,
+            "recalls": [
+              0.99857,
+              0.99861,
+              0.99854
+            ],
+            "sample_stddev_across_graphs": 3.5118845842851244e-05
+          },
+          "20": {
+            "max": 0.89031,
+            "mean": 0.8896366666666666,
+            "min": 0.88911,
+            "recalls": [
+              0.88949,
+              0.89031,
+              0.88911
+            ],
+            "sample_stddev_across_graphs": 0.0006132971003790797
+          },
+          "40": {
+            "max": 0.96207,
+            "mean": 0.96196,
+            "min": 0.96179,
+            "recalls": [
+              0.96179,
+              0.96202,
+              0.96207
+            ],
+            "sample_stddev_across_graphs": 0.0001493318452306517
+          },
+          "80": {
+            "max": 0.99137,
+            "mean": 0.99119,
+            "min": 0.99095,
+            "recalls": [
+              0.99125,
+              0.99095,
+              0.99137
+            ],
+            "sample_stddev_across_graphs": 0.00021633307652782477
+          }
+        },
+        "target_screen_min_tested_beam_all_3": {
+          "0.99": 80,
+          "0.998": 160
+        }
+      },
+      "h17": {
+        "beams": {
+          "10": {
+            "max": 0.76548,
+            "mean": 0.7651600000000001,
+            "min": 0.76481,
+            "recalls": [
+              0.76548,
+              0.76481,
+              0.76519
+            ],
+            "sample_stddev_across_graphs": 0.0003360059523282592
+          },
+          "160": {
+            "max": 0.99862,
+            "mean": 0.9985499999999999,
+            "min": 0.99851,
+            "recalls": [
+              0.99852,
+              0.99851,
+              0.99862
+            ],
+            "sample_stddev_across_graphs": 6.08276253029609e-05
+          },
+          "20": {
+            "max": 0.89028,
+            "mean": 0.8900733333333334,
+            "min": 0.8899,
+            "recalls": [
+              0.89028,
+              0.8899,
+              0.89004
+            ],
+            "sample_stddev_across_graphs": 0.00019218047073862405
+          },
+          "40": {
+            "max": 0.96259,
+            "mean": 0.9620466666666666,
+            "min": 0.96124,
+            "recalls": [
+              0.96231,
+              0.96124,
+              0.96259
+            ],
+            "sample_stddev_across_graphs": 0.000712483917947147
+          },
+          "80": {
+            "max": 0.99133,
+            "mean": 0.9911266666666667,
+            "min": 0.99095,
+            "recalls": [
+              0.9911,
+              0.99095,
+              0.99133
+            ],
+            "sample_stddev_across_graphs": 0.00019139836293276732
+          }
+        },
+        "target_screen_min_tested_beam_all_3": {
+          "0.99": 80,
+          "0.998": 160
+        }
+      },
+      "stock": {
+        "beams": {
+          "10": {
+            "max": 0.75988,
+            "mean": 0.7595566666666667,
+            "min": 0.75927,
+            "recalls": [
+              0.75927,
+              0.75952,
+              0.75988
+            ],
+            "sample_stddev_across_graphs": 0.00030664855018951935
+          },
+          "160": {
+            "max": 0.99747,
+            "mean": 0.9973299999999999,
+            "min": 0.99722,
+            "recalls": [
+              0.99747,
+              0.99722,
+              0.9973
+            ],
+            "sample_stddev_across_graphs": 0.0001276714533480256
+          },
+          "20": {
+            "max": 0.88587,
+            "mean": 0.8854133333333334,
+            "min": 0.88455,
+            "recalls": [
+              0.88587,
+              0.88455,
+              0.88582
+            ],
+            "sample_stddev_across_graphs": 0.0007480864477675163
+          },
+          "40": {
+            "max": 0.95825,
+            "mean": 0.95796,
+            "min": 0.95743,
+            "recalls": [
+              0.95825,
+              0.95743,
+              0.9582
+            ],
+            "sample_stddev_across_graphs": 0.00045967379738247435
+          },
+          "80": {
+            "max": 0.98906,
+            "mean": 0.98877,
+            "min": 0.98855,
+            "recalls": [
+              0.98906,
+              0.98855,
+              0.9887
+            ],
+            "sample_stddev_across_graphs": 0.0002621068484416311
+          }
+        },
+        "target_screen_min_tested_beam_all_3": {
+          "0.99": 160,
+          "0.998": null
+        }
+      }
+    }
+  },
+  "limitations": [
+    "only recall numbers present in pasted screen stdout; no graph-level QPS or avg_visited evidence accessible without quality_screen_summary.json and full_manifest.json",
+    "fixed beam screen, no matched recall/latency noninferiority",
+    "cross-graph samples share identical query set per dataset; do not equate graph repeat with independent test query set",
+    "MS legacy highbeam avg_cmps may overflow 32-bit; do not use"
+  ],
+  "n_graphs_total": 18,
+  "pairwise_mean_recall_diff": {
+    "MS-Turing1M": {
+      "384": {
+        "fast_minus_h17": -3.666666666657381e-05,
+        "fast_minus_stock": -3.0333333333243395e-05,
+        "h17_minus_stock": 6.333333333330415e-06
+      },
+      "896": {
+        "fast_minus_h17": 9.33333333330566e-06,
+        "fast_minus_stock": 8.333333333387927e-06,
+        "h17_minus_stock": -9.999999999177334e-07
+      }
+    },
+    "SIFT1M": {
+      "10": {
+        "fast_minus_h17": -0.0009966666666667567,
+        "fast_minus_stock": 0.004606666666666648,
+        "h17_minus_stock": 0.0056033333333334046
+      },
+      "160": {
+        "fast_minus_h17": 2.3333333333375172e-05,
+        "fast_minus_stock": 0.001243333333333374,
+        "h17_minus_stock": 0.0012199999999999989
+      },
+      "20": {
+        "fast_minus_h17": -0.0004366666666667518,
+        "fast_minus_stock": 0.004223333333333246,
+        "h17_minus_stock": 0.0046599999999999975
+      },
+      "40": {
+        "fast_minus_h17": -8.66666666665683e-05,
+        "fast_minus_stock": 0.0040000000000000036,
+        "h17_minus_stock": 0.004086666666666572
+      },
+      "80": {
+        "fast_minus_h17": 6.333333333330415e-05,
+        "fast_minus_stock": 0.0024199999999999777,
+        "h17_minus_stock": 0.0023566666666666736
+      }
+    }
+  },
+  "per_arm_graphs": 3,
+  "screen_summary_sha_claimed": "340679635faa8b07b07ec5343e0c1d0ad4b080d8388b69d40ab4fab5d68f222e",
+  "source": "User-pasted Ubuntu native terminal screen output in current conversation; quality_screen_summary.json not uploaded for independent SHA verification",
+  "status": "LOG_CONSISTENCY_PASS__NATIVE_EXIT0__SHA_IN_SUMMARY_NOT_REHASHED"
+}

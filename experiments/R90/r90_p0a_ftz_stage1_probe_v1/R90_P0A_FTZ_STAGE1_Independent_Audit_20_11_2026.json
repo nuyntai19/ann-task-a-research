@@ -1,0 +1,177 @@
+{
+  "artifact": "R90_P0A_FTZ_STAGE1_NATIVE_AUDIT_INDEPENDENT_RECHECK_v1",
+  "verified_utc": "2026-11-20 (session date; no measurement timestamp asserted)",
+  "uploaded_files": {
+    "probe_report_sha256": "1ecaa86646921e3abd600ba3108aa6537737813f065d9c1cc02e6966a8e48a31",
+    "user_terminal_log_sha256": "18e0d8b20a1d9d9b84720ff38dee18a2bea06a9abacf09f65e8cc822530f1fe1"
+  },
+  "checks": "128? Actual 126 per-case rows parsed; 63 ON +63 OFF, all flags_valid; report/log hash consistency; 9/9 graph record/aggregates internal consistency",
+  "case_counts": {
+    "off": {
+      "cases": 63,
+      "highway_top2_inexact": 0,
+      "highway_multiset_mutation": 0,
+      "packed_index12_lost": 0,
+      "h17_top2_inexact": 0,
+      "fast_top2_inexact": 0,
+      "mxcsr_samples": {
+        "0x00001f80": 63
+      },
+      "case_counts_by_size": {
+        "2": 9,
+        "8": 9,
+        "16": 9,
+        "32": 9,
+        "64": 9,
+        "189": 9,
+        "512": 9
+      },
+      "highway_top2_inexact_without_mutation": 0
+    },
+    "on": {
+      "cases": 63,
+      "highway_top2_inexact": 36,
+      "highway_multiset_mutation": 32,
+      "packed_index12_lost": 32,
+      "h17_top2_inexact": 21,
+      "fast_top2_inexact": 21,
+      "mxcsr_samples": {
+        "0x00009fc0": 63
+      },
+      "case_counts_by_size": {
+        "2": 9,
+        "8": 9,
+        "16": 9,
+        "32": 9,
+        "64": 9,
+        "189": 9,
+        "512": 9
+      },
+      "highway_top2_inexact_without_mutation": 4
+    }
+  },
+  "stage1_runs": {
+    "stock": {
+      "round1_buckets": [
+        474,
+        474,
+        474
+      ],
+      "round2_buckets": [
+        499,
+        499,
+        499
+      ],
+      "total_clustering_comparisons": [
+        3734009,
+        3734009,
+        3734009
+      ],
+      "graph_sha_unique": 3,
+      "graph_sha_first12": [
+        "33785e0f83b1",
+        "080ad514a218",
+        "ff5de5d2a741"
+      ],
+      "num_arcs": [
+        104776,
+        104776,
+        104776
+      ],
+      "round1_total_points": [
+        222585,
+        222585,
+        222585
+      ],
+      "round2_total_points": [
+        230942,
+        230942,
+        230942
+      ]
+    },
+    "h17": {
+      "round1_buckets": [
+        474,
+        470,
+        474
+      ],
+      "round2_buckets": [
+        499,
+        499,
+        499
+      ],
+      "total_clustering_comparisons": [
+        3734009,
+        3726622,
+        3734009
+      ],
+      "graph_sha_unique": 2,
+      "graph_sha_first12": [
+        "7fe09244afa4",
+        "307f2ba008d1",
+        "7fe09244afa4"
+      ],
+      "num_arcs": [
+        104746,
+        104661,
+        104746
+      ],
+      "round1_total_points": [
+        222585,
+        222571,
+        222585
+      ],
+      "round2_total_points": [
+        230942,
+        230942,
+        230942
+      ]
+    },
+    "fast": {
+      "round1_buckets": [
+        474,
+        474,
+        474
+      ],
+      "round2_buckets": [
+        499,
+        499,
+        499
+      ],
+      "total_clustering_comparisons": [
+        3734009,
+        3734009,
+        3734009
+      ],
+      "graph_sha_unique": 1,
+      "graph_sha_first12": [
+        "7fe09244afa4",
+        "7fe09244afa4",
+        "7fe09244afa4"
+      ],
+      "num_arcs": [
+        104746,
+        104746,
+        104746
+      ],
+      "round1_total_points": [
+        222585,
+        222585,
+        222585
+      ],
+      "round2_total_points": [
+        230942,
+        230942,
+        230942
+      ]
+    }
+  },
+  "limits": [
+    "Original Highway .a archives and 9 native graph bytes not accessible inside this container; referenced SHA proofs are source-pinned checks made by Ubuntu runner and JSON, not independently rehashed here.",
+    "Controlled synthetic bit corruption demonstrates FTZ/DAZ-dependent mutable packed key; does not prove causation for a particular historical Stock graph edge.",
+    "H17/Fast comparisons may be non-bitwise-exact for two zero subnormal packed keys with DAZ enabled (21/63 ON).",
+    "Bucket counts/clustering comparisons are not leaf membership fingerprints.",
+    "Search Recall@10 not measured by this probe; old full1m blocked by v1.1 global graph SHA condition."
+  ],
+  "next_gate": "quality-aware v1.2 pilot gate with same-source graph validity, Search Recall, and isolated same-input Top2 equivalence, then Full1M with original six binary and separate output namespace."
+}

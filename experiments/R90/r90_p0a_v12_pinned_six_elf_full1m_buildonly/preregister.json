@@ -1,0 +1,197 @@
+{
+  "compiler_sha": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "data_shas": {
+    "MS-Turing1M": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "SIFT1M": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e"
+  },
+  "existing_elf_sha": {
+    "fast_off": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+    "fast_on": "77cfe433775d7d7443c074025fa5131e08122862f191c0c75ed59507d94ddb30",
+    "h17_off": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+    "h17_on": "8bb92dbf9a63b3924f7ba395c889446fc5421ce25535971317cdba240a273cfc",
+    "stock_off": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+    "stock_on": "846d387525c372428d82fd994e526e8639f1a90e235d94f1f8e5f85ea3f67b1b"
+  },
+  "ftz_native_probe_sha": "1ecaa86646921e3abd600ba3108aa6537737813f065d9c1cc02e6966a8e48a31",
+  "jobs": [
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "SIFT1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 1,
+      "dataset": "SIFT1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 1,
+      "dataset": "SIFT1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 1,
+      "dataset": "SIFT1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 2
+    },
+    {
+      "arm": "h17",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "fast",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 4,
+      "dataset": "MS-Turing1M",
+      "mode": "off",
+      "rep": 3
+    },
+    {
+      "arm": "stock",
+      "cpu": 1,
+      "dataset": "MS-Turing1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "h17",
+      "cpu": 1,
+      "dataset": "MS-Turing1M",
+      "mode": "on",
+      "rep": 1
+    },
+    {
+      "arm": "fast",
+      "cpu": 1,
+      "dataset": "MS-Turing1M",
+      "mode": "on",
+      "rep": 1
+    }
+  ],
+  "known_risks": [
+    "Controlled Highway FTZ/DAZ packed bit mutation; Stock can produce different graph SHA even with same Stage1 bucket counts.",
+    "H17/Fast are also bitwise inexact under DAZ for two zero-subnormal packed keys.",
+    "Recall@10 and QPS have not been tested on these new 1M graphs."
+  ],
+  "original_p0a_py_sha": "fa9cdc09b3f447161f5c1f65382b15a0bc9645f425a679b73ca26f5ce8abecf0",
+  "original_pilot_manifest_sha": "b45ab2841b6f8ade980735d9b5414b921366eeab65d48dd52e770b8aef5947c9",
+  "original_source_manifest_sha": "6e5d82c4ca331476240950afedfad970d8358fc7252d0d2b8b9ac441e1afb298",
+  "protocol": "New isolated 4CPU OFF 18 + 1CPU0 ON 6 BUILD runs using original P0A v1.1 native_one only; no graph SHA equality across arms, no quality claim.",
+  "runner_sha256": "cd696087b03135699b4272357964f840f6148d9fe818b65c31a37064d122fabc",
+  "status": "EXPLORATORY_BUILD_ONLY_NO_SEARCH_QUALITY_CERTIFICATE"
+}

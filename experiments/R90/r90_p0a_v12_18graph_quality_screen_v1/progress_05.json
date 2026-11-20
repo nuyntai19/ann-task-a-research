@@ -1,0 +1,325 @@
+{
+  "runs": [
+    {
+      "arm": "stock",
+      "beams": {
+        "10": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 595.0,
+          "avg_visited": 18.0,
+          "latency_us_proxy": 31.71670048438704,
+          "qps": 31529.13085938,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.75927001
+        },
+        "160": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 3708.0,
+          "avg_visited": 155.0,
+          "latency_us_proxy": 235.1013960866636,
+          "qps": 4253.48388672,
+          "reaches_099": true,
+          "reaches_0998": false,
+          "recall_at10": 0.99747002
+        },
+        "20": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 859.0,
+          "avg_visited": 28.0,
+          "latency_us_proxy": 46.71699936713065,
+          "qps": 21405.484375,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.88586998
+        },
+        "40": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 1375.0,
+          "avg_visited": 48.0,
+          "latency_us_proxy": 76.01160008278138,
+          "qps": 13155.88671875,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.95824999
+        },
+        "80": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 2304.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 131.12269518088013,
+          "qps": 7626.44482422,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.98905998
+        }
+      },
+      "dataset": "SIFT1M",
+      "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "graph_sha256": "adf142c99584255d38acea2d9723857c67a1f32dfe13a78950f256c19f2b8566",
+      "name": "SIFT1M_stock_off_r1",
+      "rep": 1,
+      "status": "NATIVE_QUERY_SEARCH_PASS",
+      "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha": "1b1d73b0b9c1f7946af2e7db180ff136063b7d29cec21fb428cdd0d0c0010599",
+      "wall_elapsed_s": 6.0589703469886445
+    },
+    {
+      "arm": "h17",
+      "beams": {
+        "10": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 585.0,
+          "avg_visited": 18.0,
+          "latency_us_proxy": 31.883600943854223,
+          "qps": 31364.0859375,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.76547998
+        },
+        "160": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 3665.0,
+          "avg_visited": 155.0,
+          "latency_us_proxy": 232.6318143772807,
+          "qps": 4298.63818359,
+          "reaches_099": true,
+          "reaches_0998": true,
+          "recall_at10": 0.99852002
+        },
+        "20": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 846.0,
+          "avg_visited": 28.0,
+          "latency_us_proxy": 47.26069794820265,
+          "qps": 21159.23046875,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.89028001
+        },
+        "40": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 1360.0,
+          "avg_visited": 48.0,
+          "latency_us_proxy": 76.14630113766552,
+          "qps": 13132.61425781,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.96231002
+        },
+        "80": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 2279.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 130.8073046171702,
+          "qps": 7644.83300781,
+          "reaches_099": true,
+          "reaches_0998": false,
+          "recall_at10": 0.99110001
+        }
+      },
+      "dataset": "SIFT1M",
+      "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "graph_sha256": "c18616c26efb7c57540c6e86b7a06a39de54e05e178cf1dc13094e6c0610b1aa",
+      "name": "SIFT1M_h17_off_r1",
+      "rep": 1,
+      "status": "NATIVE_QUERY_SEARCH_PASS",
+      "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha": "015288078c7b7a4763551b0e95a214ac64010e43ef085c8add761da41ec6abeb",
+      "wall_elapsed_s": 6.037472709984286
+    },
+    {
+      "arm": "fast",
+      "beams": {
+        "10": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 585.0,
+          "avg_visited": 18.0,
+          "latency_us_proxy": 32.33160098257756,
+          "qps": 30929.4921875,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.76361001
+        },
+        "160": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 3665.0,
+          "avg_visited": 155.0,
+          "latency_us_proxy": 232.86209458778646,
+          "qps": 4294.38720703,
+          "reaches_099": true,
+          "reaches_0998": true,
+          "recall_at10": 0.99857002
+        },
+        "20": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 848.0,
+          "avg_visited": 28.0,
+          "latency_us_proxy": 47.582900192636394,
+          "qps": 21015.953125,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.88949001
+        },
+        "40": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 1361.0,
+          "avg_visited": 48.0,
+          "latency_us_proxy": 76.11789800125887,
+          "qps": 13137.51464844,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.96179003
+        },
+        "80": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 2280.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 130.63319786298612,
+          "qps": 7655.02197266,
+          "reaches_099": true,
+          "reaches_0998": false,
+          "recall_at10": 0.99124998
+        }
+      },
+      "dataset": "SIFT1M",
+      "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "graph_sha256": "b05dc9752ad711ea501199f2294ed5e4fe4e2607b4d02cb8d80832904bb52e99",
+      "name": "SIFT1M_fast_off_r1",
+      "rep": 1,
+      "status": "NATIVE_QUERY_SEARCH_PASS",
+      "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha": "d8583b59f4d6d793537ff4aabf1d78f64421eda2f14c9a6c4277e1a2885e87b3",
+      "wall_elapsed_s": 6.058180997992167
+    },
+    {
+      "arm": "stock",
+      "beams": {
+        "10": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 602.0,
+          "avg_visited": 19.0,
+          "latency_us_proxy": 33.45169920911559,
+          "qps": 29893.84765625,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.75951999
+        },
+        "160": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 3731.0,
+          "avg_visited": 157.0,
+          "latency_us_proxy": 237.4222986834619,
+          "qps": 4211.90429688,
+          "reaches_099": true,
+          "reaches_0998": false,
+          "recall_at10": 0.99721998
+        },
+        "20": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 866.0,
+          "avg_visited": 29.0,
+          "latency_us_proxy": 48.300100600053284,
+          "qps": 20703.890625,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.88454998
+        },
+        "40": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 1383.0,
+          "avg_visited": 48.0,
+          "latency_us_proxy": 77.30290175767473,
+          "qps": 12936.125,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.95743001
+        },
+        "80": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 2311.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 132.4046046803634,
+          "qps": 7552.60742188,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.98855001
+        }
+      },
+      "dataset": "SIFT1M",
+      "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "graph_sha256": "1f1ce038b4dcec4d00eec1ad6f5207d1ea3c658e098c151b08ae74d47075ce7f",
+      "name": "SIFT1M_stock_off_r2",
+      "rep": 2,
+      "status": "NATIVE_QUERY_SEARCH_PASS",
+      "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha": "deeb57c22d71da1751592f0e868aaf092388e1330faee4b515654e6464578867",
+      "wall_elapsed_s": 6.145992136007408
+    },
+    {
+      "arm": "h17",
+      "beams": {
+        "10": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 583.0,
+          "avg_visited": 18.0,
+          "latency_us_proxy": 31.93419958176178,
+          "qps": 31314.390625,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.76481003
+        },
+        "160": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 3676.0,
+          "avg_visited": 156.0,
+          "latency_us_proxy": 232.97751175494244,
+          "qps": 4292.25976562,
+          "reaches_099": true,
+          "reaches_0998": true,
+          "recall_at10": 0.99851
+        },
+        "20": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 845.0,
+          "avg_visited": 28.0,
+          "latency_us_proxy": 47.18610022826467,
+          "qps": 21192.68164062,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.88990003
+        },
+        "40": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 1357.0,
+          "avg_visited": 48.0,
+          "latency_us_proxy": 75.884403450413,
+          "qps": 13177.93847656,
+          "reaches_099": false,
+          "reaches_0998": false,
+          "recall_at10": 0.96123999
+        },
+        "80": {
+          "avg_cmps_legacy_raw_NOT_FOR_COMPARISON": null,
+          "avg_cmps_sift_only": 2275.0,
+          "avg_visited": 87.0,
+          "latency_us_proxy": 130.36319964003724,
+          "qps": 7670.87646484,
+          "reaches_099": true,
+          "reaches_0998": false,
+          "recall_at10": 0.99094999
+        }
+      },
+      "dataset": "SIFT1M",
+      "evaluator_sha256": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "graph_sha256": "954483feee40c1b37a69aabd1be75bd9d645973a7fb0ba4a8907408ec9caf99c",
+      "name": "SIFT1M_h17_off_r2",
+      "rep": 2,
+      "status": "NATIVE_QUERY_SEARCH_PASS",
+      "stderr_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha": "531d774f79033b5736b149ff96cf194b1a7db3762893ab63c3c093469b7b54e0",
+      "wall_elapsed_s": 6.03847646099166
+    }
+  ],
+  "status": "RUNNING"
+}

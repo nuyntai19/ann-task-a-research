@@ -1,0 +1,31 @@
+{
+  "arm": "h17",
+  "cpu_affinity": "0",
+  "elf_sha256": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+  "graph": {
+    "arcs": 104661,
+    "max_degree": 64,
+    "n": 10000,
+    "sha256": "307f2ba008d1851bae045c934baa308e9ae7ed3b37a124df33098116497cd219"
+  },
+  "name": "SIFT10K_h17_off_probe_r2",
+  "rep": 2,
+  "stage1": {
+    "buckets": [
+      470,
+      499
+    ],
+    "clustering_cmps_cumulative": [
+      1820240,
+      3726622
+    ],
+    "total_points": [
+      222571,
+      230942
+    ]
+  },
+  "stdout_sha256": "8e93ba512ef0d9ce80ded8500bb52affa8554c7686df198ac8d2bf68a1d73cac",
+  "threads": 1,
+  "timefile_sha256": "6b33d70dcf52bf510e04fde89c9f2d0ed49be00578d59c20289149d39a79d2fa",
+  "timing_not_used_for_production": true
+}

@@ -1,0 +1,1182 @@
+{
+  "P0A_runner_sha256": "fa9cdc09b3f447161f5c1f65382b15a0bc9645f425a679b73ca26f5ce8abecf0",
+  "classification": "Stock leaf Highway FTZ/DAZ bit-loss and Stage1 sorting nondeterminism are plausible; direct SIMD trace/scratch evidence NOT present in this report.",
+  "compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+  "ftz_packed_zero_index_example": {
+    "bits_hex": "0x000000000000000c",
+    "double_value": 6e-323,
+    "index_if_all_subnormal_bits_cleared": 0,
+    "is_subnormal": true,
+    "j": 12
+  },
+  "full_1m_authorized": false,
+  "graph_pair_differences": [
+    {
+      "common_edges_across_rows": 104776,
+      "comparison": "stock_off vs stock_on",
+      "different_neighbor_set_rows": 0,
+      "different_ordered_neighbor_rows": 0,
+      "edges_armA_count_as_sets": 104776,
+      "edges_armB_count_as_sets": 104776
+    },
+    {
+      "common_edges_across_rows": 104563,
+      "comparison": "h17_off vs h17_on",
+      "different_neighbor_set_rows": 285,
+      "different_ordered_neighbor_rows": 285,
+      "edges_armA_count_as_sets": 104779,
+      "edges_armB_count_as_sets": 104746
+    },
+    {
+      "common_edges_across_rows": 104746,
+      "comparison": "fast_off vs fast_on",
+      "different_neighbor_set_rows": 0,
+      "different_ordered_neighbor_rows": 0,
+      "edges_armA_count_as_sets": 104746,
+      "edges_armB_count_as_sets": 104746
+    },
+    {
+      "common_edges_across_rows": 104746,
+      "comparison": "h17_on vs fast_on",
+      "different_neighbor_set_rows": 0,
+      "different_ordered_neighbor_rows": 0,
+      "edges_armA_count_as_sets": 104746,
+      "edges_armB_count_as_sets": 104746
+    },
+    {
+      "common_edges_across_rows": 104746,
+      "comparison": "h17_on vs fast_off",
+      "different_neighbor_set_rows": 0,
+      "different_ordered_neighbor_rows": 0,
+      "edges_armA_count_as_sets": 104746,
+      "edges_armB_count_as_sets": 104746
+    },
+    {
+      "common_edges_across_rows": 104718,
+      "comparison": "stock_off vs fast_off",
+      "different_neighbor_set_rows": 36,
+      "different_ordered_neighbor_rows": 54,
+      "edges_armA_count_as_sets": 104776,
+      "edges_armB_count_as_sets": 104746
+    },
+    {
+      "common_edges_across_rows": 104563,
+      "comparison": "h17_off vs fast_off",
+      "different_neighbor_set_rows": 285,
+      "different_ordered_neighbor_rows": 285,
+      "edges_armA_count_as_sets": 104779,
+      "edges_armB_count_as_sets": 104746
+    }
+  ],
+  "important": "Graph SHA mismatches need not imply incorrect ANN; same buckets count does not prove equal leaf memberships; graph edge order inversion alone does not prove corruption.",
+  "next_gates": [
+    "controlled raw Highway sort packed-bit probe with MXCSR evidence",
+    "Stage1 equal membership or leaf fingerprint before kernel equivalence claims",
+    "bounded and validated graph topology/Recall gate under identical source and data",
+    "replace impossible global graph SHA parity only with scientifically justified per-arm and equivalence checks"
+  ],
+  "original_auditpilot_status": "HOLD_PILOT10K_GRAPH_PARITY_off",
+  "original_pilot_status": "PILOT10K_6_BUILD_COMPLETE__AUDIT_REQUIRED",
+  "read_only": true,
+  "results": {
+    "fast_off": {
+      "elf_sha256": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "graph_diagnostic": {
+        "arcs": 104746,
+        "duplicate_neighbor_rows": 0,
+        "important": "First/second adjacency geometric order is not guaranteed by binary graph format; inversions ALONE do not establish corruption.",
+        "invalid_neighbor_rows": 0,
+        "max_degree": 64,
+        "rows_where_first_edge_farther_than_second": 39,
+        "rows_with_two_neighbors": 10000,
+        "sample_vertices": [
+          {
+            "degree": 24,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18724.0,
+                "neighbor": 0,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 49872.0,
+                "neighbor": 4,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 52966.0,
+                "neighbor": 4589,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 53663.0,
+                "neighbor": 233,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 58194.0,
+                "neighbor": 474,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18724.0,
+              "neighbor": 0,
+              "position": 0
+            },
+            "vertex": 2
+          },
+          {
+            "degree": 18,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 1855.0,
+                "neighbor": 23,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 63334.0,
+                "neighbor": 3958,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 72371.0,
+                "neighbor": 1471,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 73264.0,
+                "neighbor": 1593,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 76716.0,
+                "neighbor": 294,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 1855.0,
+              "neighbor": 23,
+              "position": 0
+            },
+            "vertex": 15
+          },
+          {
+            "degree": 10,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18914.0,
+                "neighbor": 1052,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 38802.0,
+                "neighbor": 706,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 76015.0,
+                "neighbor": 1564,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 80119.0,
+                "neighbor": 9851,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 80129.0,
+                "neighbor": 4411,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18914.0,
+              "neighbor": 1052,
+              "position": 0
+            },
+            "vertex": 746
+          },
+          {
+            "degree": 7,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 80591.0,
+                "neighbor": 3872,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 80781.0,
+                "neighbor": 249,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 95004.0,
+                "neighbor": 5190,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 96213.0,
+                "neighbor": 3078,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 98611.0,
+                "neighbor": 1339,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 80591.0,
+              "neighbor": 3872,
+              "position": 0
+            },
+            "vertex": 2887
+          }
+        ],
+        "self_loop_rows": 0,
+        "vertices": 10000
+      },
+      "graph_sha256": "7fe09244afa40e7e25aa8c5dd062b09858c092b79119aa03ef357973efbc0d16",
+      "parsed_stdout": {
+        "clustering_comparisons_cumulative": [
+          1827627,
+          3734009
+        ],
+        "r90_d6_work_lines": [],
+        "total_buckets_by_round": [
+          474,
+          499
+        ],
+        "total_points_by_round": [
+          222585,
+          230942
+        ]
+      },
+      "stdout_sha256": "b98163b90c30f40890a42c0d0d5f7f8b27c5d895d1e42d6ddc0ce6930637f27c",
+      "timefile_sha256": "f350172997896a335f2f3caae8db2f03f54e2f5315043ae0205863c755ac6a7f"
+    },
+    "fast_on": {
+      "elf_sha256": "77cfe433775d7d7443c074025fa5131e08122862f191c0c75ed59507d94ddb30",
+      "graph_diagnostic": {
+        "arcs": 104746,
+        "duplicate_neighbor_rows": 0,
+        "important": "First/second adjacency geometric order is not guaranteed by binary graph format; inversions ALONE do not establish corruption.",
+        "invalid_neighbor_rows": 0,
+        "max_degree": 64,
+        "rows_where_first_edge_farther_than_second": 39,
+        "rows_with_two_neighbors": 10000,
+        "sample_vertices": [
+          {
+            "degree": 24,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18724.0,
+                "neighbor": 0,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 49872.0,
+                "neighbor": 4,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 52966.0,
+                "neighbor": 4589,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 53663.0,
+                "neighbor": 233,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 58194.0,
+                "neighbor": 474,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18724.0,
+              "neighbor": 0,
+              "position": 0
+            },
+            "vertex": 2
+          },
+          {
+            "degree": 18,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 1855.0,
+                "neighbor": 23,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 63334.0,
+                "neighbor": 3958,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 72371.0,
+                "neighbor": 1471,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 73264.0,
+                "neighbor": 1593,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 76716.0,
+                "neighbor": 294,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 1855.0,
+              "neighbor": 23,
+              "position": 0
+            },
+            "vertex": 15
+          },
+          {
+            "degree": 10,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18914.0,
+                "neighbor": 1052,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 38802.0,
+                "neighbor": 706,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 76015.0,
+                "neighbor": 1564,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 80119.0,
+                "neighbor": 9851,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 80129.0,
+                "neighbor": 4411,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18914.0,
+              "neighbor": 1052,
+              "position": 0
+            },
+            "vertex": 746
+          },
+          {
+            "degree": 7,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 80591.0,
+                "neighbor": 3872,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 80781.0,
+                "neighbor": 249,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 95004.0,
+                "neighbor": 5190,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 96213.0,
+                "neighbor": 3078,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 98611.0,
+                "neighbor": 1339,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 80591.0,
+              "neighbor": 3872,
+              "position": 0
+            },
+            "vertex": 2887
+          }
+        ],
+        "self_loop_rows": 0,
+        "vertices": 10000
+      },
+      "graph_sha256": "7fe09244afa40e7e25aa8c5dd062b09858c092b79119aa03ef357973efbc0d16",
+      "parsed_stdout": {
+        "clustering_comparisons_cumulative": [
+          1827627,
+          3734009
+        ],
+        "r90_d6_work_lines": [
+          "R90_D6_WORK arm=fast leaf_calls=973 leaf_point_visits=453527 lower_triangle_pairs_theoretical=137219944 candidates=274439888 fp32_checks=273532834 early_rejects=268470991 pack_calls=5968897 packed_first_checks=5515370 packed_second_checks=2354336 first_branch_hits=3396582 second_branch_hits=2571396 first_assignments=3396582 second_assignments=5967978 cutoff_assignments=5967978 count_increments=907054"
+        ],
+        "total_buckets_by_round": [
+          474,
+          499
+        ],
+        "total_points_by_round": [
+          222585,
+          230942
+        ]
+      },
+      "stdout_sha256": "7e9f0193a73089af915a12d938bca5f25591b261643974149d48859725c2bd31",
+      "timefile_sha256": "2f597783a1856cda7f212a5c155edc44c1fcdd4622c1e40a6c1f00aaf084504b"
+    },
+    "h17_off": {
+      "elf_sha256": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "graph_diagnostic": {
+        "arcs": 104779,
+        "duplicate_neighbor_rows": 0,
+        "important": "First/second adjacency geometric order is not guaranteed by binary graph format; inversions ALONE do not establish corruption.",
+        "invalid_neighbor_rows": 0,
+        "max_degree": 64,
+        "rows_where_first_edge_farther_than_second": 39,
+        "rows_with_two_neighbors": 10000,
+        "sample_vertices": [
+          {
+            "degree": 25,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18724.0,
+                "neighbor": 0,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 49872.0,
+                "neighbor": 4,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 52966.0,
+                "neighbor": 4589,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 53663.0,
+                "neighbor": 233,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 58194.0,
+                "neighbor": 474,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18724.0,
+              "neighbor": 0,
+              "position": 0
+            },
+            "vertex": 2
+          },
+          {
+            "degree": 18,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 1855.0,
+                "neighbor": 23,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 63334.0,
+                "neighbor": 3958,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 72371.0,
+                "neighbor": 1471,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 73264.0,
+                "neighbor": 1593,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 76716.0,
+                "neighbor": 294,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 1855.0,
+              "neighbor": 23,
+              "position": 0
+            },
+            "vertex": 15
+          },
+          {
+            "degree": 10,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18914.0,
+                "neighbor": 1052,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 38802.0,
+                "neighbor": 706,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 76015.0,
+                "neighbor": 1564,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 80119.0,
+                "neighbor": 9851,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 80129.0,
+                "neighbor": 4411,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18914.0,
+              "neighbor": 1052,
+              "position": 0
+            },
+            "vertex": 746
+          },
+          {
+            "degree": 7,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 80591.0,
+                "neighbor": 3872,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 80781.0,
+                "neighbor": 249,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 95004.0,
+                "neighbor": 5190,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 96213.0,
+                "neighbor": 3078,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 98611.0,
+                "neighbor": 1339,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 80591.0,
+              "neighbor": 3872,
+              "position": 0
+            },
+            "vertex": 2887
+          }
+        ],
+        "self_loop_rows": 0,
+        "vertices": 10000
+      },
+      "graph_sha256": "a49557be4fb15ac43b8fd4ca729c8d2e5fcf228a6c5880864748288c1b6632e8",
+      "parsed_stdout": {
+        "clustering_comparisons_cumulative": [
+          1827627,
+          3734218
+        ],
+        "r90_d6_work_lines": [],
+        "total_buckets_by_round": [
+          474,
+          500
+        ],
+        "total_points_by_round": [
+          222585,
+          230941
+        ]
+      },
+      "stdout_sha256": "3c0cf8d64f886eac13b797e1fe2630d8a12dce157b82bb50d0ae1cf6d284a971",
+      "timefile_sha256": "e52982dc673eb3f55421f90d12091cf47c8dba54a2e09bccf9439e454134534b"
+    },
+    "h17_on": {
+      "elf_sha256": "8bb92dbf9a63b3924f7ba395c889446fc5421ce25535971317cdba240a273cfc",
+      "graph_diagnostic": {
+        "arcs": 104746,
+        "duplicate_neighbor_rows": 0,
+        "important": "First/second adjacency geometric order is not guaranteed by binary graph format; inversions ALONE do not establish corruption.",
+        "invalid_neighbor_rows": 0,
+        "max_degree": 64,
+        "rows_where_first_edge_farther_than_second": 39,
+        "rows_with_two_neighbors": 10000,
+        "sample_vertices": [
+          {
+            "degree": 24,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18724.0,
+                "neighbor": 0,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 49872.0,
+                "neighbor": 4,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 52966.0,
+                "neighbor": 4589,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 53663.0,
+                "neighbor": 233,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 58194.0,
+                "neighbor": 474,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18724.0,
+              "neighbor": 0,
+              "position": 0
+            },
+            "vertex": 2
+          },
+          {
+            "degree": 18,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 1855.0,
+                "neighbor": 23,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 63334.0,
+                "neighbor": 3958,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 72371.0,
+                "neighbor": 1471,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 73264.0,
+                "neighbor": 1593,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 76716.0,
+                "neighbor": 294,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 1855.0,
+              "neighbor": 23,
+              "position": 0
+            },
+            "vertex": 15
+          },
+          {
+            "degree": 10,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 18914.0,
+                "neighbor": 1052,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 38802.0,
+                "neighbor": 706,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 76015.0,
+                "neighbor": 1564,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 80119.0,
+                "neighbor": 9851,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 80129.0,
+                "neighbor": 4411,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18914.0,
+              "neighbor": 1052,
+              "position": 0
+            },
+            "vertex": 746
+          },
+          {
+            "degree": 7,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 80591.0,
+                "neighbor": 3872,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 80781.0,
+                "neighbor": 249,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 95004.0,
+                "neighbor": 5190,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 96213.0,
+                "neighbor": 3078,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 98611.0,
+                "neighbor": 1339,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 80591.0,
+              "neighbor": 3872,
+              "position": 0
+            },
+            "vertex": 2887
+          }
+        ],
+        "self_loop_rows": 0,
+        "vertices": 10000
+      },
+      "graph_sha256": "7fe09244afa40e7e25aa8c5dd062b09858c092b79119aa03ef357973efbc0d16",
+      "parsed_stdout": {
+        "clustering_comparisons_cumulative": [
+          1827627,
+          3734009
+        ],
+        "r90_d6_work_lines": [
+          "R90_D6_WORK arm=ctrl leaf_calls=973 leaf_point_visits=453527 lower_triangle_pairs_theoretical=137219944 candidates=274439888 fp32_checks=0 early_rejects=0 pack_calls=274439888 packed_first_checks=273986361 packed_second_checks=270825327 first_branch_hits=3396582 second_branch_hits=2571396 first_assignments=3396582 second_assignments=5967978 cutoff_assignments=0 count_increments=907054"
+        ],
+        "total_buckets_by_round": [
+          474,
+          499
+        ],
+        "total_points_by_round": [
+          222585,
+          230942
+        ]
+      },
+      "stdout_sha256": "12923ece74862f772c441cad145ab64bf8063c8720b3cb695930fb07045687f0",
+      "timefile_sha256": "5e5a248b7a9c04c7a04457b6c097ec8892d64f226a331b33cf699556137efa52"
+    },
+    "stock_off": {
+      "elf_sha256": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "graph_diagnostic": {
+        "arcs": 104776,
+        "duplicate_neighbor_rows": 0,
+        "important": "First/second adjacency geometric order is not guaranteed by binary graph format; inversions ALONE do not establish corruption.",
+        "invalid_neighbor_rows": 0,
+        "max_degree": 64,
+        "rows_where_first_edge_farther_than_second": 87,
+        "rows_with_two_neighbors": 10000,
+        "sample_vertices": [
+          {
+            "degree": 24,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 88616.0,
+                "neighbor": 2983,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 18724.0,
+                "neighbor": 0,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 49872.0,
+                "neighbor": 4,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 52966.0,
+                "neighbor": 4589,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 53663.0,
+                "neighbor": 233,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": true,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18724.0,
+              "neighbor": 0,
+              "position": 1
+            },
+            "vertex": 2
+          },
+          {
+            "degree": 16,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 76910.0,
+                "neighbor": 9909,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 72371.0,
+                "neighbor": 1471,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 73264.0,
+                "neighbor": 1593,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 76716.0,
+                "neighbor": 294,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 78245.0,
+                "neighbor": 1436,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": true,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 72371.0,
+              "neighbor": 1471,
+              "position": 1
+            },
+            "vertex": 15
+          },
+          {
+            "degree": 11,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 81609.0,
+                "neighbor": 4178,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 18914.0,
+                "neighbor": 1052,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 38802.0,
+                "neighbor": 706,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 76015.0,
+                "neighbor": 1564,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 80119.0,
+                "neighbor": 9851,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": true,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18914.0,
+              "neighbor": 1052,
+              "position": 1
+            },
+            "vertex": 746
+          },
+          {
+            "degree": 9,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 126761.0,
+                "neighbor": 133,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 177909.0,
+                "neighbor": 24,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 80591.0,
+                "neighbor": 3872,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 80781.0,
+                "neighbor": 249,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 95004.0,
+                "neighbor": 5190,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 80591.0,
+              "neighbor": 3872,
+              "position": 2
+            },
+            "vertex": 2887
+          }
+        ],
+        "self_loop_rows": 0,
+        "vertices": 10000
+      },
+      "graph_sha256": "ff5de5d2a741fc3a669bbd7d23494abef2acb77c10c1c92b72962eca35e463c4",
+      "parsed_stdout": {
+        "clustering_comparisons_cumulative": [
+          1827627,
+          3734009
+        ],
+        "r90_d6_work_lines": [],
+        "total_buckets_by_round": [
+          474,
+          499
+        ],
+        "total_points_by_round": [
+          222585,
+          230942
+        ]
+      },
+      "stdout_sha256": "c0f44c09287f76e1b99c4773ade7c4f0688a0fab7c5759b088070d0b6e59efde",
+      "timefile_sha256": "e73ccf0772da77fa6dc78a0096a2173df5a91f2f3a46e25ca227871ece511a87"
+    },
+    "stock_on": {
+      "elf_sha256": "846d387525c372428d82fd994e526e8639f1a90e235d94f1f8e5f85ea3f67b1b",
+      "graph_diagnostic": {
+        "arcs": 104776,
+        "duplicate_neighbor_rows": 0,
+        "important": "First/second adjacency geometric order is not guaranteed by binary graph format; inversions ALONE do not establish corruption.",
+        "invalid_neighbor_rows": 0,
+        "max_degree": 64,
+        "rows_where_first_edge_farther_than_second": 87,
+        "rows_with_two_neighbors": 10000,
+        "sample_vertices": [
+          {
+            "degree": 24,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 88616.0,
+                "neighbor": 2983,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 18724.0,
+                "neighbor": 0,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 49872.0,
+                "neighbor": 4,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 52966.0,
+                "neighbor": 4589,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 53663.0,
+                "neighbor": 233,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": true,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18724.0,
+              "neighbor": 0,
+              "position": 1
+            },
+            "vertex": 2
+          },
+          {
+            "degree": 16,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 76910.0,
+                "neighbor": 9909,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 72371.0,
+                "neighbor": 1471,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 73264.0,
+                "neighbor": 1593,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 76716.0,
+                "neighbor": 294,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 78245.0,
+                "neighbor": 1436,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": true,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 72371.0,
+              "neighbor": 1471,
+              "position": 1
+            },
+            "vertex": 15
+          },
+          {
+            "degree": 11,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 81609.0,
+                "neighbor": 4178,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 18914.0,
+                "neighbor": 1052,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 38802.0,
+                "neighbor": 706,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 76015.0,
+                "neighbor": 1564,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 80119.0,
+                "neighbor": 9851,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": true,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 18914.0,
+              "neighbor": 1052,
+              "position": 1
+            },
+            "vertex": 746
+          },
+          {
+            "degree": 9,
+            "first_neighbors": [
+              {
+                "distance_l2_squared": 126761.0,
+                "neighbor": 133,
+                "position": 0
+              },
+              {
+                "distance_l2_squared": 177909.0,
+                "neighbor": 24,
+                "position": 1
+              },
+              {
+                "distance_l2_squared": 80591.0,
+                "neighbor": 3872,
+                "position": 2
+              },
+              {
+                "distance_l2_squared": 80781.0,
+                "neighbor": 249,
+                "position": 3
+              },
+              {
+                "distance_l2_squared": 95004.0,
+                "neighbor": 5190,
+                "position": 4
+              }
+            ],
+            "first_two_inversion": false,
+            "nearest_graph_neighbor": {
+              "distance_l2_squared": 80591.0,
+              "neighbor": 3872,
+              "position": 2
+            },
+            "vertex": 2887
+          }
+        ],
+        "self_loop_rows": 0,
+        "vertices": 10000
+      },
+      "graph_sha256": "ff5de5d2a741fc3a669bbd7d23494abef2acb77c10c1c92b72962eca35e463c4",
+      "parsed_stdout": {
+        "clustering_comparisons_cumulative": [
+          1827627,
+          3734009
+        ],
+        "r90_d6_work_lines": [],
+        "total_buckets_by_round": [
+          474,
+          499
+        ],
+        "total_points_by_round": [
+          222585,
+          230942
+        ]
+      },
+      "stdout_sha256": "31e58d127e37e82223b5748f8ae9cfd3ce392744046bf64b3c9a358d7cac6210",
+      "timefile_sha256": "7a5116a881b24f77ac9c64173b5fe96044d14ae04adab7d823b2fcbc9dc98a07"
+    }
+  },
+  "source": "P0A v1.1 original compile_manifest/pilot_manifest/6 graph+stdout+timefile/6 binaries",
+  "source_manifest_sha256": "6e5d82c4ca331476240950afedfad970d8358fc7252d0d2b8b9ac441e1afb298",
+  "status": "READ_ONLY_SHA_GATED_PILOT_HOLD_ROOT_CAUSE_NOT_CERTIFIED"
+}

@@ -1,0 +1,209 @@
+{
+  "cpu": 0,
+  "data": {
+    "MS-Turing1M": {
+      "base": "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+      "base_sha": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+      "beams": [
+        384,
+        896
+      ],
+      "dims": 100,
+      "evaluator": "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+      "evaluator_sha": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "gt": "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+      "gt_k": 100,
+      "gt_sha": "fa5acf5ab262b42355296e99f920e6aa863f48820ca6f70fa37ca7966634c344",
+      "nqueries": 100000,
+      "query": "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+      "query_sha": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+    },
+    "SIFT1M": {
+      "base": "/home/tai/ann-task-a/data/sift1m.fbin",
+      "base_sha": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+      "beams": [
+        10,
+        20,
+        40,
+        80,
+        160
+      ],
+      "dims": 128,
+      "evaluator": "/home/tai/ann-task-a/experiments/H70/build-r70/algorithms/PipNN/r72_graph_recall",
+      "evaluator_sha": "3c2294efa1d7fb5d89c79ca5bf9c1eaca86247f7246e6d6d7c6c94549d08ed57",
+      "gt": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+      "gt_k": 100,
+      "gt_sha": "047418d19f3981e4fc2dd28ae3b6f72fa7108f40d9336bd2d80b07829885ba13",
+      "nqueries": 10000,
+      "query": "/home/tai/ann-task-a/data/sift1m_queries.fbin",
+      "query_sha": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+    }
+  },
+  "evaluator_cmps_note": "MS v4 highbeam raw avg_cmps invalid/overflow; ignore. For MS use Counter64 diagnostic separately.",
+  "jobs": [
+    {
+      "arcs": 26117364,
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_stock_off_r1.graph",
+      "graph_sha256": "adf142c99584255d38acea2d9723857c67a1f32dfe13a78950f256c19f2b8566",
+      "name": "SIFT1M_stock_off_r1",
+      "rep": 1
+    },
+    {
+      "arcs": 26082558,
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_h17_off_r1.graph",
+      "graph_sha256": "c18616c26efb7c57540c6e86b7a06a39de54e05e178cf1dc13094e6c0610b1aa",
+      "name": "SIFT1M_h17_off_r1",
+      "rep": 1
+    },
+    {
+      "arcs": 26082133,
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_fast_off_r1.graph",
+      "graph_sha256": "b05dc9752ad711ea501199f2294ed5e4fe4e2607b4d02cb8d80832904bb52e99",
+      "name": "SIFT1M_fast_off_r1",
+      "rep": 1
+    },
+    {
+      "arcs": 26072834,
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_stock_off_r2.graph",
+      "graph_sha256": "1f1ce038b4dcec4d00eec1ad6f5207d1ea3c658e098c151b08ae74d47075ce7f",
+      "name": "SIFT1M_stock_off_r2",
+      "rep": 2
+    },
+    {
+      "arcs": 26051959,
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_h17_off_r2.graph",
+      "graph_sha256": "954483feee40c1b37a69aabd1be75bd9d645973a7fb0ba4a8907408ec9caf99c",
+      "name": "SIFT1M_h17_off_r2",
+      "rep": 2
+    },
+    {
+      "arcs": 26036309,
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_fast_off_r2.graph",
+      "graph_sha256": "bc065ddc41967acd8025d0fdcd6fb3a92fc8d1d4ff1ab0d4c6d7982c7e54444e",
+      "name": "SIFT1M_fast_off_r2",
+      "rep": 2
+    },
+    {
+      "arcs": 26117764,
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_stock_off_r3.graph",
+      "graph_sha256": "a92bf4b0c6a2a202ad2f49dcee9a38e2f2cb94d126d0a37f8817fa1f0c6c73cb",
+      "name": "SIFT1M_stock_off_r3",
+      "rep": 3
+    },
+    {
+      "arcs": 26089051,
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_h17_off_r3.graph",
+      "graph_sha256": "8a0cd0bf76eb825e108200e8dcdfcb06128044f21ef6fa9b24cdb5fb6ddc17b6",
+      "name": "SIFT1M_h17_off_r3",
+      "rep": 3
+    },
+    {
+      "arcs": 26080391,
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_fast_off_r3.graph",
+      "graph_sha256": "aa03eb3de4cec0783f97f6bd277c013d5c7f31757e218b1211b07ea174bbabe5",
+      "name": "SIFT1M_fast_off_r3",
+      "rep": 3
+    },
+    {
+      "arcs": 52862971,
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_stock_off_r1.graph",
+      "graph_sha256": "b4a278e3d7607956b7a0951866834f9739e651761029e6101b86598e460b6c79",
+      "name": "MS-Turing1M_stock_off_r1",
+      "rep": 1
+    },
+    {
+      "arcs": 52878051,
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_h17_off_r1.graph",
+      "graph_sha256": "31143f2e6572c733e4c4e770dc05f87f0dcd9854a74e48ae294750608f3d052d",
+      "name": "MS-Turing1M_h17_off_r1",
+      "rep": 1
+    },
+    {
+      "arcs": 52863581,
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_fast_off_r1.graph",
+      "graph_sha256": "367f6a0aaf6315aade1fe235a5354bcbcddd1486ae55f0143e60ccda6339c168",
+      "name": "MS-Turing1M_fast_off_r1",
+      "rep": 1
+    },
+    {
+      "arcs": 52859076,
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_stock_off_r2.graph",
+      "graph_sha256": "935e9ec8ec701701dcd3496dcfa04cf833f51a52229931985a89bd52c7249fac",
+      "name": "MS-Turing1M_stock_off_r2",
+      "rep": 2
+    },
+    {
+      "arcs": 52866271,
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_h17_off_r2.graph",
+      "graph_sha256": "f06aea3b21384833ba38866dd1925f607c257cd97dfea2dfafd327ebdffc4164",
+      "name": "MS-Turing1M_h17_off_r2",
+      "rep": 2
+    },
+    {
+      "arcs": 52854205,
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_fast_off_r2.graph",
+      "graph_sha256": "aec69d6a97a20a98b21dbff40b2ec0f7443910f9a2553f55f45741c0ba6bcd20",
+      "name": "MS-Turing1M_fast_off_r2",
+      "rep": 2
+    },
+    {
+      "arcs": 52869418,
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_stock_off_r3.graph",
+      "graph_sha256": "2991af2a585ca5d80e8a70baf984c415a0821c001bbcbdf9fbffb6867bda0d10",
+      "name": "MS-Turing1M_stock_off_r3",
+      "rep": 3
+    },
+    {
+      "arcs": 52859042,
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_h17_off_r3.graph",
+      "graph_sha256": "d3e8c659fcb001848d165161cf89ed5681c1a409a06ddb6ec95785651e19cfbb",
+      "name": "MS-Turing1M_h17_off_r3",
+      "rep": 3
+    },
+    {
+      "arcs": 52855740,
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/MS-Turing1M_fast_off_r3.graph",
+      "graph_sha256": "b26812bbf017158c575cfbd9e82d8c98b745879b6cd69278fe990f1b91b6adbc",
+      "name": "MS-Turing1M_fast_off_r3",
+      "rep": 3
+    }
+  ],
+  "search_only": true,
+  "status": "SEARCH_FIXED_BEAM_SCREEN_NOT_MATCHED_EQUIVALENCE"
+}

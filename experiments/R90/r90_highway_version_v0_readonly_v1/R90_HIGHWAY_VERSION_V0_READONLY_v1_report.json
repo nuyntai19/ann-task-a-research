@@ -1,0 +1,229 @@
+{
+  "interpretation": [
+    "Confirms source differences and observed v0 graph geometry, not historical graph causality.",
+    "Before claiming stock SIFT1M edge corruption due to new Highway, collect same-leaf packed-key trace or controlled old/new Highway build comparison.",
+    "Do not run old matched-threshold timing on potentially confounded stock baseline.",
+    "Keep original results unchanged."
+  ],
+  "old_new_highway_source": {
+    "new": {
+      "files": {
+        "sorting_networks-inl.h": {
+          "git_blob_sha1": "92c2dfad48291f0c194d85f1bbe05dc6aee8d71a",
+          "sha256": "ce8e82e95bb897ab72e6bd6b8dc801d5dde44bcb642dbdef218173637b967403"
+        },
+        "traits-inl.h": {
+          "git_blob_sha1": "3a4d8506e6794432009c70ac312380b1d2ba801b",
+          "sha256": "ba1f0797074f2571d99eeab223a58c8480e050d61b0cbf122300c511580feaac"
+        }
+      },
+      "source_root": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/highway-src",
+      "traits_branch": "mirrored_float_first_last"
+    },
+    "old": {
+      "files": {
+        "sorting_networks-inl.h": {
+          "git_blob_sha1": "54b15230730ef3785ae1eaa09ce97485ce917021",
+          "sha256": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b"
+        },
+        "traits-inl.h": {
+          "git_blob_sha1": "b02ed8b9ab0d2e7d3d70f48c74f006531ff54753",
+          "sha256": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+        }
+      },
+      "source_root": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src",
+      "traits_branch": "compare_blend_double"
+    }
+  },
+  "original_full_manifest_sha256": "4917142a7dcb5e6bab06bd4b8724f3bfac854bdcfbde2c5bc932220335fd6692",
+  "original_screen_grid_metadata": {
+    "MS-Turing1M": {
+      "fast": {
+        "expected_from_original_runner": [
+          384,
+          896
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": false
+      },
+      "h17": {
+        "expected_from_original_runner": [
+          384,
+          896
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": false
+      },
+      "stock": {
+        "expected_from_original_runner": [
+          384,
+          896
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": false
+      }
+    },
+    "SIFT1M": {
+      "fast": {
+        "expected_from_original_runner": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": true
+      },
+      "h17": {
+        "expected_from_original_runner": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": true
+      },
+      "stock": {
+        "expected_from_original_runner": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "grid_from_summary": [
+          384,
+          896
+        ],
+        "metadata_error": true
+      }
+    }
+  },
+  "sift1m_base_sha256": "8c7b3d999ba3133f865af72df078f77c2d248fdb80571d7ea1f1bb8e1750658e",
+  "status": "NATIVE_READONLY_SOURCE_REVISION_AND_V0_GRAPH_OBSERVATION_COMPLETE",
+  "v0": {
+    "fast": {
+      "degree_v0": 47,
+      "graph_file": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_fast_off_r1.graph",
+      "graph_sha256": "b05dc9752ad711ea501199f2294ed5e4fe4e2607b4d02cb8d80832904bb52e99",
+      "total_directed_arcs": 26082133,
+      "v0_contains_neighbor_2": true,
+      "v0_contains_neighbor_6": true,
+      "v0_first_three_file_order": [
+        {
+          "id": 2,
+          "squared_l2": 18724.0
+        },
+        {
+          "id": 6,
+          "squared_l2": 24320.0
+        },
+        {
+          "id": 631203,
+          "squared_l2": 45468.0
+        }
+      ],
+      "v0_neighbors_squared_l2_gt_50000": 38,
+      "v0_neighbors_squared_l2_mean": 60839.553,
+      "v0_two_closest_in_stored_neighbors": [
+        {
+          "id": 2,
+          "squared_l2": 18724.0
+        },
+        {
+          "id": 6,
+          "squared_l2": 24320.0
+        }
+      ],
+      "warning": "First-vertex geometry is diagnostic, not definitive causal proof of FTZ damage."
+    },
+    "h17": {
+      "degree_v0": 46,
+      "graph_file": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_h17_off_r1.graph",
+      "graph_sha256": "c18616c26efb7c57540c6e86b7a06a39de54e05e178cf1dc13094e6c0610b1aa",
+      "total_directed_arcs": 26082558,
+      "v0_contains_neighbor_2": true,
+      "v0_contains_neighbor_6": true,
+      "v0_first_three_file_order": [
+        {
+          "id": 2,
+          "squared_l2": 18724.0
+        },
+        {
+          "id": 6,
+          "squared_l2": 24320.0
+        },
+        {
+          "id": 631203,
+          "squared_l2": 45468.0
+        }
+      ],
+      "v0_neighbors_squared_l2_gt_50000": 37,
+      "v0_neighbors_squared_l2_mean": 60821.326,
+      "v0_two_closest_in_stored_neighbors": [
+        {
+          "id": 2,
+          "squared_l2": 18724.0
+        },
+        {
+          "id": 6,
+          "squared_l2": 24320.0
+        }
+      ],
+      "warning": "First-vertex geometry is diagnostic, not definitive causal proof of FTZ damage."
+    },
+    "stock": {
+      "degree_v0": 64,
+      "graph_file": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v12_pinned_six_elf_full1m_buildonly/graphs/SIFT1M_stock_off_r1.graph",
+      "graph_sha256": "adf142c99584255d38acea2d9723857c67a1f32dfe13a78950f256c19f2b8566",
+      "total_directed_arcs": 26117364,
+      "v0_contains_neighbor_2": false,
+      "v0_contains_neighbor_6": false,
+      "v0_first_three_file_order": [
+        {
+          "id": 202472,
+          "squared_l2": 101147.0
+        },
+        {
+          "id": 198436,
+          "squared_l2": 101142.0
+        },
+        {
+          "id": 196874,
+          "squared_l2": 73994.0
+        }
+      ],
+      "v0_neighbors_squared_l2_gt_50000": 64,
+      "v0_neighbors_squared_l2_mean": 96086.703,
+      "v0_two_closest_in_stored_neighbors": [
+        {
+          "id": 192507,
+          "squared_l2": 55061.0
+        },
+        {
+          "id": 206873,
+          "squared_l2": 55765.0
+        }
+      ],
+      "warning": "First-vertex geometry is diagnostic, not definitive causal proof of FTZ damage."
+    }
+  }
+}

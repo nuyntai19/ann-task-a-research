@@ -1,0 +1,471 @@
+{
+  "ftz_probe_sha": "1ecaa86646921e3abd600ba3108aa6537737813f065d9c1cc02e6966a8e48a31",
+  "full_manifest_sha256": "4917142a7dcb5e6bab06bd4b8724f3bfac854bdcfbde2c5bc932220335fd6692",
+  "graph_sha_criterion": "Each graph checked against its original recorded bytes; never expect cross-arm SHA equality.",
+  "original_source_manifest_sha": "6e5d82c4ca331476240950afedfad970d8358fc7252d0d2b8b9ac441e1afb298",
+  "requirements_before_scientific_claim": [
+    "SIFT1M and MS-Turing1M per-graph native evaluator with identical queries/GT and matched Recall@10.",
+    "Validate actual counters for Stock source q_writes/sort calls and H17/Fast D6 + assignment taxonomy.",
+    "Validate true same-input Top2 kernel equivalence for the relevant distance/duplicate-key domain.",
+    "No Stock-H17/Fast causal graph claim from controlled synthetic FTZ witness alone."
+  ],
+  "runs": [
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26117364,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "adf142c99584255d38acea2d9723857c67a1f32dfe13a78950f256c19f2b8566"
+      },
+      "mode": "off",
+      "name": "SIFT1M_stock_off_r1",
+      "original_elf_sha": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26082558,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "c18616c26efb7c57540c6e86b7a06a39de54e05e178cf1dc13094e6c0610b1aa"
+      },
+      "mode": "off",
+      "name": "SIFT1M_h17_off_r1",
+      "original_elf_sha": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26082133,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "b05dc9752ad711ea501199f2294ed5e4fe4e2607b4d02cb8d80832904bb52e99"
+      },
+      "mode": "off",
+      "name": "SIFT1M_fast_off_r1",
+      "original_elf_sha": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26036309,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "bc065ddc41967acd8025d0fdcd6fb3a92fc8d1d4ff1ab0d4c6d7982c7e54444e"
+      },
+      "mode": "off",
+      "name": "SIFT1M_fast_off_r2",
+      "original_elf_sha": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26072834,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "1f1ce038b4dcec4d00eec1ad6f5207d1ea3c658e098c151b08ae74d47075ce7f"
+      },
+      "mode": "off",
+      "name": "SIFT1M_stock_off_r2",
+      "original_elf_sha": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26051959,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "954483feee40c1b37a69aabd1be75bd9d645973a7fb0ba4a8907408ec9caf99c"
+      },
+      "mode": "off",
+      "name": "SIFT1M_h17_off_r2",
+      "original_elf_sha": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26089051,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "8a0cd0bf76eb825e108200e8dcdfcb06128044f21ef6fa9b24cdb5fb6ddc17b6"
+      },
+      "mode": "off",
+      "name": "SIFT1M_h17_off_r3",
+      "original_elf_sha": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26080391,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "aa03eb3de4cec0783f97f6bd277c013d5c7f31757e218b1211b07ea174bbabe5"
+      },
+      "mode": "off",
+      "name": "SIFT1M_fast_off_r3",
+      "original_elf_sha": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26117764,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "a92bf4b0c6a2a202ad2f49dcee9a38e2f2cb94d126d0a37f8817fa1f0c6c73cb"
+      },
+      "mode": "off",
+      "name": "SIFT1M_stock_off_r3",
+      "original_elf_sha": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26121755,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "351b34c963e16e9c4422f3c4d753744fab417142b912a025fac48a63286f9cbd"
+      },
+      "mode": "on",
+      "name": "SIFT1M_stock_on_r1",
+      "original_elf_sha": "846d387525c372428d82fd994e526e8639f1a90e235d94f1f8e5f85ea3f67b1b",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26088193,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "a0b0daef0ca8035123d181e2b877f83b55172b46a3e5f455d757dde311879803"
+      },
+      "mode": "on",
+      "name": "SIFT1M_h17_on_r1",
+      "original_elf_sha": "8bb92dbf9a63b3924f7ba395c889446fc5421ce25535971317cdba240a273cfc",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "SIFT1M",
+      "graph": {
+        "arcs": 26088166,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "fdb42daed20b6d2b90086e4b4914fbfb3fade526bc17c0809f8477f556e1e27b"
+      },
+      "mode": "on",
+      "name": "SIFT1M_fast_on_r1",
+      "original_elf_sha": "77cfe433775d7d7443c074025fa5131e08122862f191c0c75ed59507d94ddb30",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52862971,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "b4a278e3d7607956b7a0951866834f9739e651761029e6101b86598e460b6c79"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_stock_off_r1",
+      "original_elf_sha": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52878051,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "31143f2e6572c733e4c4e770dc05f87f0dcd9854a74e48ae294750608f3d052d"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_h17_off_r1",
+      "original_elf_sha": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52863581,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "367f6a0aaf6315aade1fe235a5354bcbcddd1486ae55f0143e60ccda6339c168"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_fast_off_r1",
+      "original_elf_sha": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52854205,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "aec69d6a97a20a98b21dbff40b2ec0f7443910f9a2553f55f45741c0ba6bcd20"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_fast_off_r2",
+      "original_elf_sha": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52859076,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "935e9ec8ec701701dcd3496dcfa04cf833f51a52229931985a89bd52c7249fac"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_stock_off_r2",
+      "original_elf_sha": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52866271,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "f06aea3b21384833ba38866dd1925f607c257cd97dfea2dfafd327ebdffc4164"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_h17_off_r2",
+      "original_elf_sha": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52859042,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "d3e8c659fcb001848d165161cf89ed5681c1a409a06ddb6ec95785651e19cfbb"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_h17_off_r3",
+      "original_elf_sha": "63a7550992ba30ce2a89effd98b738a620727ff12de13f89ad024ea2e95b7636",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52855740,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "b26812bbf017158c575cfbd9e82d8c98b745879b6cd69278fe990f1b91b6adbc"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_fast_off_r3",
+      "original_elf_sha": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52869418,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "2991af2a585ca5d80e8a70baf984c415a0821c001bbcbdf9fbffb6867bda0d10"
+      },
+      "mode": "off",
+      "name": "MS-Turing1M_stock_off_r3",
+      "original_elf_sha": "0b4e27255d9dd21bf9346fab16894b0e3e876d3b56bbc2a9da70e825f7f3ac02",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "stock",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52858890,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "aa0ec842c77a6baee144318621438cb4413f805b6ffa52b7d7ee8eb664d258c3"
+      },
+      "mode": "on",
+      "name": "MS-Turing1M_stock_on_r1",
+      "original_elf_sha": "846d387525c372428d82fd994e526e8639f1a90e235d94f1f8e5f85ea3f67b1b",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "h17",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52859094,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "d39bd7678661954768cb502a04f2c043c22431119b3cfb2aa01b1f827e14c959"
+      },
+      "mode": "on",
+      "name": "MS-Turing1M_h17_on_r1",
+      "original_elf_sha": "8bb92dbf9a63b3924f7ba395c889446fc5421ce25535971317cdba240a273cfc",
+      "qps_not_measured": true
+    },
+    {
+      "arm": "fast",
+      "dataset": "MS-Turing1M",
+      "graph": {
+        "arcs": 52858683,
+        "degree_cap": 64,
+        "duplicate_audit_scope": "SAMPLED_ONLY_NOT_FULL_GRAPH",
+        "duplicate_neighbor_rows_in_1024_deterministic_sample": 0,
+        "invalid_neighbor_count": 0,
+        "max_observed_degree": 64,
+        "nodes": 1000000,
+        "selfloops": 0,
+        "sha256": "10ff97059e45aa829e1f7085287aea0d456bc6922f1d98807b063cead0451718"
+      },
+      "mode": "on",
+      "name": "MS-Turing1M_fast_on_r1",
+      "original_elf_sha": "77cfe433775d7d7443c074025fa5131e08122862f191c0c75ed59507d94ddb30",
+      "qps_not_measured": true
+    }
+  ],
+  "status": "NATIVE_24_GRAPH_SHA_STRUCTURE_PASS__SEARCH_RECALL_QPS_NOT_MEASURED"
+}

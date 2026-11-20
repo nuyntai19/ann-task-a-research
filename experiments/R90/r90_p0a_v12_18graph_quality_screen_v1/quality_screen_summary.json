@@ -1,0 +1,404 @@
+{
+  "full_search_manifest_sha256": "35a71086025f78cc4ee15e62451f5f43720795a977f0552d111651778f73fd56",
+  "limitations": [
+    "These are fixed tested beam grids, not a continuous matched-Recall optimization.",
+    "SIFT1M grid: 10,20,40,80,160; may not bracket recall=0.998.",
+    "MS-Turing1M grid: 384,896 only, 100K queries; legacy avg_cmps may overflow and MUST NOT be used.",
+    "Only one native Search trial per graph; QPS sensitive to scheduling/thermal state, need repeated paired QPS if formal timing equivalence is desired.",
+    "Legacy Stock packed-double FTZ/DAZ vulnerability may impact graph correctness.",
+    "Quality gate not a proof of same-input Top2 equivalence."
+  ],
+  "original_build_audit_sha256": "dd90ce5c892e88235c1b611809ca9d2b43801ecd6d887ccb0f0ae75c49718f97",
+  "report": {
+    "MS-Turing1M": {
+      "fast": {
+        "beams": {
+          "384": {
+            "n_graphs": 3,
+            "qps_mean": 1227.2210693333332,
+            "qps_median": 1228.11828613,
+            "qps_range": [
+              1224.76318359,
+              1228.78173828
+            ],
+            "recall_max": 0.99102402,
+            "recall_mean": 0.9909836666666667,
+            "recall_min": 0.99094498
+          },
+          "896": {
+            "n_graphs": 3,
+            "qps_mean": 562.2095336933334,
+            "qps_median": 562.52246094,
+            "qps_range": [
+              561.17492676,
+              562.93121338
+            ],
+            "recall_max": 0.99811101,
+            "recall_mean": 0.99809766,
+            "recall_min": 0.99808598
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 384,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 896,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        }
+      },
+      "h17": {
+        "beams": {
+          "384": {
+            "n_graphs": 3,
+            "qps_mean": 1228.11987305,
+            "qps_median": 1228.0958252,
+            "qps_range": [
+              1225.08081055,
+              1231.1829834
+            ],
+            "recall_max": 0.99112898,
+            "recall_mean": 0.9910203233333333,
+            "recall_min": 0.99094898
+          },
+          "896": {
+            "n_graphs": 3,
+            "qps_mean": 562.76953125,
+            "qps_median": 562.72216797,
+            "qps_range": [
+              562.45770264,
+              563.12872314
+            ],
+            "recall_max": 0.99811101,
+            "recall_mean": 0.99808834,
+            "recall_min": 0.99806303
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 384,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 896,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        }
+      },
+      "stock": {
+        "beams": {
+          "384": {
+            "n_graphs": 3,
+            "qps_mean": 1225.1347249366668,
+            "qps_median": 1225.96118164,
+            "qps_range": [
+              1222.8659668,
+              1226.57702637
+            ],
+            "recall_max": 0.991054,
+            "recall_mean": 0.9910140033333333,
+            "recall_min": 0.99093902
+          },
+          "896": {
+            "n_graphs": 3,
+            "qps_mean": 562.6712443033333,
+            "qps_median": 562.85180664,
+            "qps_range": [
+              562.05285645,
+              563.10906982
+            ],
+            "recall_max": 0.99809903,
+            "recall_mean": 0.9980893533333334,
+            "recall_min": 0.99808401
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 384,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 896,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        }
+      }
+    },
+    "SIFT1M": {
+      "fast": {
+        "beams": {
+          "10": {
+            "n_graphs": 3,
+            "qps_mean": 31142.286458333332,
+            "qps_median": 31144.78710938,
+            "qps_range": [
+              30929.4921875,
+              31352.58007812
+            ],
+            "recall_max": 0.76533002,
+            "recall_mean": 0.7641633366666667,
+            "recall_min": 0.76354998
+          },
+          "160": {
+            "n_graphs": 3,
+            "qps_mean": 4294.053873696666,
+            "qps_median": 4294.38720703,
+            "qps_range": [
+              4289.16894531,
+              4298.60546875
+            ],
+            "recall_max": 0.99861002,
+            "recall_mean": 0.99857334,
+            "recall_min": 0.99853998
+          },
+          "20": {
+            "n_graphs": 3,
+            "qps_mean": 21091.706380206666,
+            "qps_median": 21110.5859375,
+            "qps_range": [
+              21015.953125,
+              21148.58007812
+            ],
+            "recall_max": 0.89030999,
+            "recall_mean": 0.8896366766666667,
+            "recall_min": 0.88911003
+          },
+          "40": {
+            "n_graphs": 3,
+            "qps_mean": 13182.384440106667,
+            "qps_median": 13197.3828125,
+            "qps_range": [
+              13137.51464844,
+              13212.25585938
+            ],
+            "recall_max": 0.96206999,
+            "recall_mean": 0.96196,
+            "recall_min": 0.96179003
+          },
+          "80": {
+            "n_graphs": 3,
+            "qps_mean": 7653.888020833333,
+            "qps_median": 7655.02197266,
+            "qps_range": [
+              7643.34326172,
+              7663.29882812
+            ],
+            "recall_max": 0.99137002,
+            "recall_mean": 0.9911899966666666,
+            "recall_min": 0.99094999
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 80,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 160,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        }
+      },
+      "h17": {
+        "beams": {
+          "10": {
+            "n_graphs": 3,
+            "qps_mean": 31274.16341146,
+            "qps_median": 31314.390625,
+            "qps_range": [
+              31144.01367188,
+              31364.0859375
+            ],
+            "recall_max": 0.76547998,
+            "recall_mean": 0.7651600066666666,
+            "recall_min": 0.76481003
+          },
+          "160": {
+            "n_graphs": 3,
+            "qps_mean": 4298.269694006666,
+            "qps_median": 4298.63818359,
+            "qps_range": [
+              4292.25976562,
+              4303.91113281
+            ],
+            "recall_max": 0.99861997,
+            "recall_mean": 0.9985499966666667,
+            "recall_min": 0.99851
+          },
+          "20": {
+            "n_graphs": 3,
+            "qps_mean": 21137.02018229,
+            "qps_median": 21159.23046875,
+            "qps_range": [
+              21059.1484375,
+              21192.68164062
+            ],
+            "recall_max": 0.89028001,
+            "recall_mean": 0.8900733399999999,
+            "recall_min": 0.88990003
+          },
+          "40": {
+            "n_graphs": 3,
+            "qps_mean": 13164.869140623334,
+            "qps_median": 13177.93847656,
+            "qps_range": [
+              13132.61425781,
+              13184.0546875
+            ],
+            "recall_max": 0.96258998,
+            "recall_mean": 0.9620466633333333,
+            "recall_min": 0.96123999
+          },
+          "80": {
+            "n_graphs": 3,
+            "qps_mean": 7659.362141923333,
+            "qps_median": 7662.37695312,
+            "qps_range": [
+              7644.83300781,
+              7670.87646484
+            ],
+            "recall_max": 0.99133003,
+            "recall_mean": 0.9911266766666667,
+            "recall_min": 0.99094999
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 80,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 160,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        }
+      },
+      "stock": {
+        "beams": {
+          "10": {
+            "n_graphs": 3,
+            "qps_mean": 30813.898437503332,
+            "qps_median": 31018.71679688,
+            "qps_range": [
+              29893.84765625,
+              31529.13085938
+            ],
+            "recall_max": 0.75988001,
+            "recall_mean": 0.75955667,
+            "recall_min": 0.75927001
+          },
+          "160": {
+            "n_graphs": 3,
+            "qps_mean": 4245.688313803334,
+            "qps_median": 4253.48388672,
+            "qps_range": [
+              4211.90429688,
+              4271.67675781
+            ],
+            "recall_max": 0.99747002,
+            "recall_mean": 0.99733001,
+            "recall_min": 0.99721998
+          },
+          "20": {
+            "n_graphs": 3,
+            "qps_mean": 21025.662760416668,
+            "qps_median": 20967.61328125,
+            "qps_range": [
+              20703.890625,
+              21405.484375
+            ],
+            "recall_max": 0.88586998,
+            "recall_mean": 0.88541331,
+            "recall_min": 0.88454998
+          },
+          "40": {
+            "n_graphs": 3,
+            "qps_mean": 13055.963216146667,
+            "qps_median": 13075.87792969,
+            "qps_range": [
+              12936.125,
+              13155.88671875
+            ],
+            "recall_max": 0.95824999,
+            "recall_mean": 0.9579599933333334,
+            "recall_min": 0.95743001
+          },
+          "80": {
+            "n_graphs": 3,
+            "qps_mean": 7602.578776043333,
+            "qps_median": 7626.44482422,
+            "qps_range": [
+              7552.60742188,
+              7628.68408203
+            ],
+            "recall_max": 0.98905998,
+            "recall_mean": 0.9887699866666666,
+            "recall_min": 0.98855001
+          }
+        },
+        "target_screen": {
+          "0.99": {
+            "min_tested_beam_all_3_graphs_meet_threshold": 160,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          },
+          "0.998": {
+            "min_tested_beam_all_3_graphs_meet_threshold": null,
+            "not_exact_matched_recall": true,
+            "tested_beam_grid": [
+              384,
+              896
+            ]
+          }
+        }
+      }
+    }
+  },
+  "source_build_full_manifest_sha256": "4917142a7dcb5e6bab06bd4b8724f3bfac854bdcfbde2c5bc932220335fd6692",
+  "status": "NATIVE_18_GRAPH_SEARCH_FIXED_BEAM_SCREEN_PASS__MATCHED_RECALL_LATENCY_NOT_PROVEN"
+}

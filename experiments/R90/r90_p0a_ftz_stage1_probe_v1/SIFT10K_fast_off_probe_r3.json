@@ -1,0 +1,31 @@
+{
+  "arm": "fast",
+  "cpu_affinity": "0",
+  "elf_sha256": "61bce9705348b2b3cb7d2c7c5ed7c9a0684cddb29d58ed214dc0a7def56157ed",
+  "graph": {
+    "arcs": 104746,
+    "max_degree": 64,
+    "n": 10000,
+    "sha256": "7fe09244afa40e7e25aa8c5dd062b09858c092b79119aa03ef357973efbc0d16"
+  },
+  "name": "SIFT10K_fast_off_probe_r3",
+  "rep": 3,
+  "stage1": {
+    "buckets": [
+      474,
+      499
+    ],
+    "clustering_cmps_cumulative": [
+      1827627,
+      3734009
+    ],
+    "total_points": [
+      222585,
+      230942
+    ]
+  },
+  "stdout_sha256": "a0f327977a655374b4242d63ed672aff0e82c0a3c0389cf2d19218328f82ea3f",
+  "threads": 1,
+  "timefile_sha256": "ecad36f0f019ac50c4b924fc804577e25baadb1efc6fc5bb4f8a3954a76e959d",
+  "timing_not_used_for_production": true
+}
