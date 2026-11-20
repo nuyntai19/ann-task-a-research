@@ -1,0 +1,75 @@
+{
+  "diagnostic_elf_sha256": "a98b8748b92787e6ccbf52556a8eef2c24bff4580c6275c9fa464dd82af4d3a4",
+  "measurements": [
+    {
+      "arm": "stock",
+      "avg_cmps_per_graph": [
+        16181.0,
+        16190.0,
+        16190.0
+      ],
+      "beam": 368,
+      "mean_avg_cmps": 16187.0,
+      "source": "G11 valid 64-bit accumulator; diagnostic only"
+    },
+    {
+      "arm": "stock",
+      "avg_cmps_per_graph": [
+        30642.0,
+        30649.0,
+        30652.0
+      ],
+      "beam": 880,
+      "mean_avg_cmps": 30647.666666666668,
+      "source": "G11 valid 64-bit accumulator; diagnostic only"
+    },
+    {
+      "arm": "h17",
+      "avg_cmps_per_graph": [
+        16190.0,
+        16190.0,
+        16190.0
+      ],
+      "beam": 368,
+      "mean_avg_cmps": 16190.0,
+      "source": "G11 valid 64-bit accumulator; diagnostic only"
+    },
+    {
+      "arm": "h17",
+      "avg_cmps_per_graph": [
+        30647.0,
+        30648.0,
+        30648.0
+      ],
+      "beam": 880,
+      "mean_avg_cmps": 30647.666666666668,
+      "source": "G11 valid 64-bit accumulator; diagnostic only"
+    },
+    {
+      "arm": "fast",
+      "avg_cmps_per_graph": [
+        16189.0,
+        16190.0,
+        16190.0
+      ],
+      "beam": 368,
+      "mean_avg_cmps": 16189.666666666666,
+      "source": "G11 valid 64-bit accumulator; diagnostic only"
+    },
+    {
+      "arm": "fast",
+      "avg_cmps_per_graph": [
+        30648.0,
+        30648.0,
+        30648.0
+      ],
+      "beam": 880,
+      "mean_avg_cmps": 30648.0,
+      "source": "G11 valid 64-bit accumulator; diagnostic only"
+    }
+  ],
+  "no_build": true,
+  "no_performance_timing": true,
+  "results_sha256": "65f47a2602b61f62815761d83e364f469255c7c08dca85cf4c2a53a7fbbc9393",
+  "status": "AUDIT_PASS_9_GRAPH_COUNTER64_RECALL_VISITED_PARITY"
+}

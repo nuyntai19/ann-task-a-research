@@ -1,0 +1,338 @@
+{
+  "data_scan": {
+    "blocked_roots": [],
+    "full_sha_requested": false,
+    "matching_candidates": [
+      {
+        "bytes": 1280000008,
+        "dimension": 128,
+        "element_bytes": 1,
+        "expected_bytes": 1280000008,
+        "filename": "bigann10m_u8.u8bin",
+        "n": 10000000,
+        "path": "/home/tai/ann-task-a/data/bigann10m_u8.u8bin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".u8bin"
+      },
+      {
+        "bytes": 1280000008,
+        "dimension": 128,
+        "element_bytes": 1,
+        "expected_bytes": 128000000008,
+        "filename": "bigann_first10m.u8bin",
+        "n": 1000000000,
+        "path": "/home/tai/ann-task-a/data/bigann_first10m.u8bin",
+        "size_match": false,
+        "status": "BAD_HEADER_OR_SIZE",
+        "suffix": ".u8bin"
+      },
+      {
+        "bytes": 240008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 120008,
+        "filename": "sift100k_gt300.ibin",
+        "n": 300,
+        "path": "/home/tai/ann-task-a/data/sift100k_gt300.ibin",
+        "size_match": false,
+        "status": "BAD_HEADER_OR_SIZE",
+        "suffix": ".ibin"
+      },
+      {
+        "bytes": 5120000008,
+        "dimension": 128,
+        "element_bytes": 4,
+        "expected_bytes": 5120000008,
+        "filename": "sift10m.fbin",
+        "n": 10000000,
+        "path": "/home/tai/ann-task-a/data/sift10m.fbin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".fbin"
+      },
+      {
+        "bytes": 8000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 4000008,
+        "filename": "sift1m_gt.ibin",
+        "n": 10000,
+        "path": "/home/tai/ann-task-a/data/sift1m_gt.ibin",
+        "size_match": false,
+        "status": "BAD_HEADER_OR_SIZE",
+        "suffix": ".ibin"
+      },
+      {
+        "bytes": 4000000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 4000000008,
+        "filename": "base.10M.fbin",
+        "n": 10000000,
+        "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".fbin"
+      },
+      {
+        "bytes": 80000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 40000008,
+        "filename": "groundtruth.public.100K.ibin",
+        "n": 100000,
+        "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "size_match": false,
+        "status": "BAD_HEADER_OR_SIZE",
+        "suffix": ".ibin"
+      },
+      {
+        "bytes": 40000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 40000008,
+        "filename": "query.public.100K.fbin",
+        "n": 100000,
+        "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".fbin"
+      },
+      {
+        "bytes": 400000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 400000008,
+        "filename": "base.1M.fbin",
+        "n": 1000000,
+        "path": "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".fbin"
+      },
+      {
+        "bytes": 80000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 40000008,
+        "filename": "groundtruth.public.100K.ibin",
+        "n": 100000,
+        "path": "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "size_match": false,
+        "status": "BAD_HEADER_OR_SIZE",
+        "suffix": ".ibin"
+      },
+      {
+        "bytes": 40000008,
+        "dimension": 100,
+        "element_bytes": 4,
+        "expected_bytes": 40000008,
+        "filename": "query.public.100K.fbin",
+        "n": 100000,
+        "path": "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".fbin"
+      },
+      {
+        "bytes": 262152,
+        "dimension": 128,
+        "element_bytes": 4,
+        "expected_bytes": 262152,
+        "filename": "sift100k_eval_queries_512.fbin",
+        "n": 512,
+        "path": "/home/tai/Downloads/G14_H17_SIFT100K_QUERY_SEARCH_SCREEN_v1/data/sift100k_eval_queries_512.fbin",
+        "size_match": true,
+        "status": "HEADER_SIZE_PASS",
+        "suffix": ".fbin"
+      },
+      {
+        "bytes": 81928,
+        "dimension": 20,
+        "element_bytes": 4,
+        "expected_bytes": 40968,
+        "filename": "sift100k_eval_queries_512_gt20.ibin",
+        "n": 512,
+        "path": "/home/tai/Downloads/G14_H17_SIFT100K_QUERY_SEARCH_SCREEN_v1/data/sift100k_eval_queries_512_gt20.ibin",
+        "size_match": false,
+        "status": "BAD_HEADER_OR_SIZE",
+        "suffix": ".ibin"
+      }
+    ],
+    "scanned_file_names": 1565
+  },
+  "disk_available_bytes": 57762172928,
+  "disk_total_bytes": 421606629376,
+  "important": "Header/size alone do NOT prove dataset identity, exact 10M GT, feasible RAM/disk, or BUILD equivalence. 10M GT must match 10M base.",
+  "memory": {
+    "MemAvailable_KiB": 25821100,
+    "MemTotal_KiB": 32609404,
+    "SwapFree_KiB": 4193668,
+    "SwapTotal_KiB": 4194300
+  },
+  "p4_native_log_profile": {
+    "note": "Thread-summed profile times are not additive to global 4CPU wall time.",
+    "runs": [
+      {
+        "actual_sha": "3c8e3c5ba7a1843cfb177b34d8bc2d21323247156a5ae088f7010b45ea0a28cc",
+        "arm": "stock",
+        "expected_sha": "3c8e3c5ba7a1843cfb177b34d8bc2d21323247156a5ae088f7010b45ea0a28cc",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "Total buckets: 88807",
+          "Total points: 29999931"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 1,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_stock_r1.stdout"
+      },
+      {
+        "actual_sha": "054476f8820bbe1f28cd89a192148d306cb97b0a56637414fedd918b78f9716d",
+        "arm": "h17",
+        "expected_sha": "054476f8820bbe1f28cd89a192148d306cb97b0a56637414fedd918b78f9716d",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "H17_LEAF_PROFILE matrix_sum_s=13.47 selection_sum_s=18.2 merge_sum_s=9.119 leaves=89813 pair_count=7127724866 directed_candidates=59999884",
+          "Total buckets: 88807",
+          "Total points: 29999931",
+          "H17_LEAF_PROFILE matrix_sum_s=27.08 selection_sum_s=36.53 merge_sum_s=20.24 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 1,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_h17_r1.stdout"
+      },
+      {
+        "actual_sha": "e82361a17fe66b8d7b5ecbd345eaf6da4dfd83882d37517e71dc1c31c0360c8c",
+        "arm": "fast",
+        "expected_sha": "e82361a17fe66b8d7b5ecbd345eaf6da4dfd83882d37517e71dc1c31c0360c8c",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "H17_LEAF_PROFILE matrix_sum_s=13.54 selection_sum_s=12.84 merge_sum_s=9.28 leaves=89813 pair_count=7127724866 directed_candidates=59999884",
+          "Total buckets: 88807",
+          "Total points: 29999931",
+          "H17_LEAF_PROFILE matrix_sum_s=27.19 selection_sum_s=25.75 merge_sum_s=20.6 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 1,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_fast_r1.stdout"
+      },
+      {
+        "actual_sha": "3435165090535a38ef683f327041c2866fcdf494c42ad37d194d2a8ba4f820e8",
+        "arm": "fast",
+        "expected_sha": "3435165090535a38ef683f327041c2866fcdf494c42ad37d194d2a8ba4f820e8",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "H17_LEAF_PROFILE matrix_sum_s=13.47 selection_sum_s=12.81 merge_sum_s=9.22 leaves=89813 pair_count=7127724866 directed_candidates=59999884",
+          "Total buckets: 88807",
+          "Total points: 29999931",
+          "H17_LEAF_PROFILE matrix_sum_s=27.1 selection_sum_s=25.71 merge_sum_s=20.49 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 2,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_fast_r2.stdout"
+      },
+      {
+        "actual_sha": "53bd067bba91ac6655e380800f3be8b887da417323853d99d2e9715e3fb8a782",
+        "arm": "stock",
+        "expected_sha": "53bd067bba91ac6655e380800f3be8b887da417323853d99d2e9715e3fb8a782",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "Total buckets: 88807",
+          "Total points: 29999931"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 2,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_stock_r2.stdout"
+      },
+      {
+        "actual_sha": "29c712a51b1816d399b246b3b20f514f930f49a942f934e6ec53d819dfe5cff9",
+        "arm": "h17",
+        "expected_sha": "29c712a51b1816d399b246b3b20f514f930f49a942f934e6ec53d819dfe5cff9",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "H17_LEAF_PROFILE matrix_sum_s=13.47 selection_sum_s=18.19 merge_sum_s=9.138 leaves=89813 pair_count=7127724866 directed_candidates=59999884",
+          "Total buckets: 88807",
+          "Total points: 29999931",
+          "H17_LEAF_PROFILE matrix_sum_s=27.06 selection_sum_s=36.51 merge_sum_s=20.27 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 2,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_h17_r2.stdout"
+      },
+      {
+        "actual_sha": "64bc5f9045c9b5ba9f5cd4d536abf075849aecfe6eff61869b3be13934c2425c",
+        "arm": "h17",
+        "expected_sha": "64bc5f9045c9b5ba9f5cd4d536abf075849aecfe6eff61869b3be13934c2425c",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "H17_LEAF_PROFILE matrix_sum_s=13.51 selection_sum_s=18.24 merge_sum_s=9.161 leaves=89813 pair_count=7127724866 directed_candidates=59999884",
+          "Total buckets: 88807",
+          "Total points: 29999931",
+          "H17_LEAF_PROFILE matrix_sum_s=27.12 selection_sum_s=36.57 merge_sum_s=20.29 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 3,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_h17_r3.stdout"
+      },
+      {
+        "actual_sha": "bac7dce38a897666d78bbf79f82528a16950e5e12da56292414d2746f1068c7d",
+        "arm": "fast",
+        "expected_sha": "bac7dce38a897666d78bbf79f82528a16950e5e12da56292414d2746f1068c7d",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "H17_LEAF_PROFILE matrix_sum_s=13.46 selection_sum_s=12.81 merge_sum_s=9.227 leaves=89813 pair_count=7127724866 directed_candidates=59999884",
+          "Total buckets: 88807",
+          "Total points: 29999931",
+          "H17_LEAF_PROFILE matrix_sum_s=27.07 selection_sum_s=25.7 merge_sum_s=20.5 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 3,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_fast_r3.stdout"
+      },
+      {
+        "actual_sha": "5be9699ad074073fc4d214996589597eccb23d8e57b6a46aee4dc9f0888d72df",
+        "arm": "stock",
+        "expected_sha": "5be9699ad074073fc4d214996589597eccb23d8e57b6a46aee4dc9f0888d72df",
+        "profile_lines": [
+          "Total buckets: 89813",
+          "Total points: 29999942",
+          "Total buckets: 88807",
+          "Total points: 29999931"
+        ],
+        "profile_lines_truncated": false,
+        "rep": 3,
+        "status": "LOG_SHA_PASS",
+        "stdout_path": "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/logs/mst1m_stock_r3.stdout"
+      }
+    ],
+    "status": "INVENTORY_COMPLETE"
+  },
+  "plausible_float32_base_10m_count": 1,
+  "sizing_reference": {
+    "base_10m_100d_f32_nominal_bytes": 4000000000,
+    "candidate_C160_slot_lower_model_bytes": 12880000000,
+    "graph_52_85_arcs_per_point_x_uint32_bytes_rough": 2114000000,
+    "warning": "These do not sum to a proven peak RSS. Multiple transients, copies, build buffers, HashPrune, concurrency can increase peak."
+  },
+  "status": "10M_HEADER_FOUND__PROVENANCE_GT_AND_RESOURCES_UNVERIFIED",
+  "timestamp_utc": "2026-11-19T11:57:15.385336+00:00",
+  "verified_10m_header_file_count": 3,
+  "version": "R90_1M_10M_READONLY_PREFLIGHT_V1"
+}

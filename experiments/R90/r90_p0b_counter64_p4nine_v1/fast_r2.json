@@ -1,0 +1,37 @@
+{
+  "arm": "fast",
+  "command": [
+    "taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R86/g11_counter64_diagnostic_v2_0/msturing_1m_eval/r86_msturing1m_graph_recall_v4_diag_counter64",
+    "/home/tai/ann-task-a/experiments/R90/r90_p4_msturing1m_stock_h17_fastv2_4cpu_build_v1/graphs/mst1m_fast_r2.graph",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+    "368,880"
+  ],
+  "graph_sha": "ef92e69ba759910cc8399ae84723e58d5665f06022ebf407786597fc79a10aa9",
+  "rep": 2,
+  "rows": {
+    "368": {
+      "avg_cmps_counter64": 16190.0,
+      "avg_visited": 358.0,
+      "beam": 368,
+      "qps_diagnostic_not_for_timing": 1275.39953613,
+      "recall_at10": 0.990426
+    },
+    "880": {
+      "avg_cmps_counter64": 30648.0,
+      "avg_visited": 731.0,
+      "beam": 880,
+      "qps_diagnostic_not_for_timing": 572.81695557,
+      "recall_at10": 0.99808401
+    }
+  },
+  "status": "COUNTER64_RECALL_VISITED_PARITY_PASS",
+  "stderr": "/home/tai/ann-task-a/experiments/R90/r90_p0b_counter64_p4nine_v1/logs/fast_r2.stderr",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "/home/tai/ann-task-a/experiments/R90/r90_p0b_counter64_p4nine_v1/logs/fast_r2.stdout",
+  "stdout_sha256": "b9a0f291029b7bdecafde085feb9b6bce46a0bdf960960733e6ab7d72ce8a141"
+}

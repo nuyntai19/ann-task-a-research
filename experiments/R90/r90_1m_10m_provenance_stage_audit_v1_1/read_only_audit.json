@@ -1,0 +1,816 @@
+{
+  "NO_BUILD_NO_SEARCH": true,
+  "dataset_10m": {
+    "dataset_manifest_path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/dataset_manifest.json",
+    "files": {
+      "base": {
+        "d": 100,
+        "expected_bytes": 4000000008,
+        "kind": "fbin",
+        "n": 10000000,
+        "observed_bytes": 4000000008,
+        "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "status": "HEADER_SIZE_PASS"
+      },
+      "gt": {
+        "d": 100,
+        "expected_bytes": 80000008,
+        "kind": "ibin_gt_ids_dist",
+        "n": 100000,
+        "observed_bytes": 80000008,
+        "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "status": "HEADER_SIZE_PASS"
+      },
+      "query": {
+        "d": 100,
+        "expected_bytes": 40000008,
+        "kind": "fbin",
+        "n": 100000,
+        "observed_bytes": 40000008,
+        "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "status": "HEADER_SIZE_PASS"
+      }
+    },
+    "gt_ids": {
+      "gt_id_bounds_status": "PASS",
+      "id_max": 9999998,
+      "id_min": 0,
+      "id_out_of_bounds": 0
+    },
+    "integrity": {
+      "base": {
+        "actual_sha256": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+        "expected_sha256_from_manifest": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+        "status": "FILE_SHA_PASS"
+      },
+      "gt": {
+        "actual_sha256": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+        "expected_sha256_from_manifest": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+        "status": "FILE_SHA_PASS"
+      },
+      "query": {
+        "actual_sha256": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+        "expected_sha256_from_manifest": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+        "status": "FILE_SHA_PASS"
+      }
+    },
+    "manifest": {
+      "base_sha256": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "d": 100,
+      "dataset": "Microsoft Turing-ANNS official prefix first 10M",
+      "gt_id_bounds_pass": true,
+      "gt_k": 100,
+      "gt_sha256": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "n": 10000000,
+      "note": "Only download+schema/range check, NOT full top100 exact GT spotcheck and NOT 10M PiPNN build authorization; 50M GT not provided by official standard subsets.",
+      "prefix_payload_matches_sha_pinned_1m": true,
+      "query_count": 100000,
+      "query_sha256": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+      "source_base": "https://comp21storage.z5.web.core.windows.net/comp21/MSFT-TURING-ANNS/base1b.fbin",
+      "source_gt": "https://comp21storage.z5.web.core.windows.net/comp21/MSFT-TURING-ANNS/msturing-gt-10M"
+    },
+    "manifest_source": "LOCAL_USER_DATASET_MANIFEST_NOT_AUTOMATICALLY_TRUSTED",
+    "prefix_check": {
+      "bytes_compared": 400000000,
+      "exact_prefix_match": true,
+      "first_1m_payload_sha256": "48a27733117cb354070c8b6a0fcc9ec6b69024293e27a5ecb4a971862938ea15",
+      "prefix_rows": 1000000
+    }
+  },
+  "disk_free_bytes": 57699201024,
+  "memory": {
+    "MemAvailable_KiB": 26142136,
+    "MemTotal_KiB": 32609404,
+    "SwapFree_KiB": 4193600,
+    "SwapTotal_KiB": 4194300
+  },
+  "p4_stage_evidence": {
+    "caveat": "Timer labels are measured wall intervals within source stages; H17_LEAF_PROFILE matrix/selection/merge are cumulative thread-time, not additive to BUILD wall.",
+    "runs": [
+      {
+        "arm": "stock",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 41.67 seconds"
+          }
+        ],
+        "graph_built_s": 41.67,
+        "labels_without_numeric": [],
+        "leaf_profiles": [],
+        "rep": 1,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 41.5147,
+        "stage_sum_vs_graph_built_s": -0.155300000000004,
+        "stage_sums": {
+          "Final prune time": 5.4842,
+          "buckets time": 9.311399999999999,
+          "build leaf time": 26.719099999999997
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 22,
+            "seconds": 4.6822,
+            "text": "Parlay time: buckets time: 4.6822"
+          },
+          {
+            "label": "build leaf time",
+            "line": 28,
+            "seconds": 13.0282,
+            "text": "Parlay time: build leaf time: 13.0282"
+          },
+          {
+            "label": "buckets time",
+            "line": 39,
+            "seconds": 4.6292,
+            "text": "Parlay time: buckets time: 4.6292"
+          },
+          {
+            "label": "build leaf time",
+            "line": 45,
+            "seconds": 13.6909,
+            "text": "Parlay time: build leaf time: 13.6909"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.4842,
+            "text": "Parlay time: Final prune time: 5.4842"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.4842
+          ],
+          "buckets time": [
+            4.6822,
+            4.6292
+          ],
+          "build leaf time": [
+            13.0282,
+            13.6909
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "3c8e3c5ba7a1843cfb177b34d8bc2d21323247156a5ae088f7010b45ea0a28cc",
+        "wall_s_from_native_manifest": 42.06169888099976
+      },
+      {
+        "arm": "h17",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 36.16 seconds"
+          }
+        ],
+        "graph_built_s": 36.16,
+        "labels_without_numeric": [],
+        "leaf_profiles": [
+          {
+            "line": 27,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=13.47 selection_sum_s=18.2 merge_sum_s=9.119 leaves=89813 pair_count=7127724866 directed_candidates=59999884"
+          },
+          {
+            "line": 45,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=27.08 selection_sum_s=36.53 merge_sum_s=20.24 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+          }
+        ],
+        "rep": 1,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 36.0451,
+        "stage_sum_vs_graph_built_s": -0.11489999999999867,
+        "stage_sums": {
+          "Final prune time": 5.5172,
+          "buckets time": 9.363,
+          "build leaf time": 21.1649
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 20,
+            "seconds": 4.7171,
+            "text": "Parlay time: buckets time: 4.7171"
+          },
+          {
+            "label": "build leaf time",
+            "line": 26,
+            "seconds": 10.2845,
+            "text": "Parlay time: build leaf time: 10.2845"
+          },
+          {
+            "label": "buckets time",
+            "line": 38,
+            "seconds": 4.6459,
+            "text": "Parlay time: buckets time: 4.6459"
+          },
+          {
+            "label": "build leaf time",
+            "line": 44,
+            "seconds": 10.8804,
+            "text": "Parlay time: build leaf time: 10.8804"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.5172,
+            "text": "Parlay time: Final prune time: 5.5172"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.5172
+          ],
+          "buckets time": [
+            4.7171,
+            4.6459
+          ],
+          "build leaf time": [
+            10.2845,
+            10.8804
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "054476f8820bbe1f28cd89a192148d306cb97b0a56637414fedd918b78f9716d",
+        "wall_s_from_native_manifest": 36.57075579500088
+      },
+      {
+        "arm": "fast",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 33.49 seconds"
+          }
+        ],
+        "graph_built_s": 33.49,
+        "labels_without_numeric": [],
+        "leaf_profiles": [
+          {
+            "line": 27,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=13.54 selection_sum_s=12.84 merge_sum_s=9.28 leaves=89813 pair_count=7127724866 directed_candidates=59999884"
+          },
+          {
+            "line": 45,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=27.19 selection_sum_s=25.75 merge_sum_s=20.6 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+          }
+        ],
+        "rep": 1,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 33.3899,
+        "stage_sum_vs_graph_built_s": -0.10010000000000474,
+        "stage_sums": {
+          "Final prune time": 5.5244,
+          "buckets time": 9.3553,
+          "build leaf time": 18.5102
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 20,
+            "seconds": 4.6949,
+            "text": "Parlay time: buckets time: 4.6949"
+          },
+          {
+            "label": "build leaf time",
+            "line": 26,
+            "seconds": 8.9983,
+            "text": "Parlay time: build leaf time: 8.9983"
+          },
+          {
+            "label": "buckets time",
+            "line": 38,
+            "seconds": 4.6604,
+            "text": "Parlay time: buckets time: 4.6604"
+          },
+          {
+            "label": "build leaf time",
+            "line": 44,
+            "seconds": 9.5119,
+            "text": "Parlay time: build leaf time: 9.5119"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.5244,
+            "text": "Parlay time: Final prune time: 5.5244"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.5244
+          ],
+          "buckets time": [
+            4.6949,
+            4.6604
+          ],
+          "build leaf time": [
+            8.9983,
+            9.5119
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "e82361a17fe66b8d7b5ecbd345eaf6da4dfd83882d37517e71dc1c31c0360c8c",
+        "wall_s_from_native_manifest": 33.88064195199695
+      },
+      {
+        "arm": "stock",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 41.56 seconds"
+          }
+        ],
+        "graph_built_s": 41.56,
+        "labels_without_numeric": [],
+        "leaf_profiles": [],
+        "rep": 2,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 41.456,
+        "stage_sum_vs_graph_built_s": -0.1039999999999992,
+        "stage_sums": {
+          "Final prune time": 5.4597,
+          "buckets time": 9.328700000000001,
+          "build leaf time": 26.6676
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 22,
+            "seconds": 4.6794,
+            "text": "Parlay time: buckets time: 4.6794"
+          },
+          {
+            "label": "build leaf time",
+            "line": 28,
+            "seconds": 13.1127,
+            "text": "Parlay time: build leaf time: 13.1127"
+          },
+          {
+            "label": "buckets time",
+            "line": 39,
+            "seconds": 4.6493,
+            "text": "Parlay time: buckets time: 4.6493"
+          },
+          {
+            "label": "build leaf time",
+            "line": 45,
+            "seconds": 13.5549,
+            "text": "Parlay time: build leaf time: 13.5549"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.4597,
+            "text": "Parlay time: Final prune time: 5.4597"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.4597
+          ],
+          "buckets time": [
+            4.6794,
+            4.6493
+          ],
+          "build leaf time": [
+            13.1127,
+            13.5549
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "53bd067bba91ac6655e380800f3be8b887da417323853d99d2e9715e3fb8a782",
+        "wall_s_from_native_manifest": 41.97435516100086
+      },
+      {
+        "arm": "h17",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 36.02 seconds"
+          }
+        ],
+        "graph_built_s": 36.02,
+        "labels_without_numeric": [],
+        "leaf_profiles": [
+          {
+            "line": 27,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=13.47 selection_sum_s=18.19 merge_sum_s=9.138 leaves=89813 pair_count=7127724866 directed_candidates=59999884"
+          },
+          {
+            "line": 45,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=27.06 selection_sum_s=36.51 merge_sum_s=20.27 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+          }
+        ],
+        "rep": 2,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 35.9201,
+        "stage_sum_vs_graph_built_s": -0.0999000000000052,
+        "stage_sums": {
+          "Final prune time": 5.4757,
+          "buckets time": 9.3351,
+          "build leaf time": 21.109299999999998
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 20,
+            "seconds": 4.6832,
+            "text": "Parlay time: buckets time: 4.6832"
+          },
+          {
+            "label": "build leaf time",
+            "line": 26,
+            "seconds": 10.2821,
+            "text": "Parlay time: build leaf time: 10.2821"
+          },
+          {
+            "label": "buckets time",
+            "line": 38,
+            "seconds": 4.6519,
+            "text": "Parlay time: buckets time: 4.6519"
+          },
+          {
+            "label": "build leaf time",
+            "line": 44,
+            "seconds": 10.8272,
+            "text": "Parlay time: build leaf time: 10.8272"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.4757,
+            "text": "Parlay time: Final prune time: 5.4757"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.4757
+          ],
+          "buckets time": [
+            4.6832,
+            4.6519
+          ],
+          "build leaf time": [
+            10.2821,
+            10.8272
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "29c712a51b1816d399b246b3b20f514f930f49a942f934e6ec53d819dfe5cff9",
+        "wall_s_from_native_manifest": 36.39939621299709
+      },
+      {
+        "arm": "fast",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 33.36 seconds"
+          }
+        ],
+        "graph_built_s": 33.36,
+        "labels_without_numeric": [],
+        "leaf_profiles": [
+          {
+            "line": 27,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=13.47 selection_sum_s=12.81 merge_sum_s=9.22 leaves=89813 pair_count=7127724866 directed_candidates=59999884"
+          },
+          {
+            "line": 45,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=27.1 selection_sum_s=25.71 merge_sum_s=20.49 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+          }
+        ],
+        "rep": 2,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 33.2635,
+        "stage_sum_vs_graph_built_s": -0.09649999999999892,
+        "stage_sums": {
+          "Final prune time": 5.5068,
+          "buckets time": 9.3621,
+          "build leaf time": 18.3946
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 20,
+            "seconds": 4.7024,
+            "text": "Parlay time: buckets time: 4.7024"
+          },
+          {
+            "label": "build leaf time",
+            "line": 26,
+            "seconds": 8.9018,
+            "text": "Parlay time: build leaf time: 8.9018"
+          },
+          {
+            "label": "buckets time",
+            "line": 38,
+            "seconds": 4.6597,
+            "text": "Parlay time: buckets time: 4.6597"
+          },
+          {
+            "label": "build leaf time",
+            "line": 44,
+            "seconds": 9.4928,
+            "text": "Parlay time: build leaf time: 9.4928"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.5068,
+            "text": "Parlay time: Final prune time: 5.5068"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.5068
+          ],
+          "buckets time": [
+            4.7024,
+            4.6597
+          ],
+          "build leaf time": [
+            8.9018,
+            9.4928
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "3435165090535a38ef683f327041c2866fcdf494c42ad37d194d2a8ba4f820e8",
+        "wall_s_from_native_manifest": 33.77936533799948
+      },
+      {
+        "arm": "stock",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 41.72 seconds"
+          }
+        ],
+        "graph_built_s": 41.72,
+        "labels_without_numeric": [],
+        "leaf_profiles": [],
+        "rep": 3,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 41.615,
+        "stage_sum_vs_graph_built_s": -0.10499999999999687,
+        "stage_sums": {
+          "Final prune time": 5.4783,
+          "buckets time": 9.3207,
+          "build leaf time": 26.816
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 22,
+            "seconds": 4.6768,
+            "text": "Parlay time: buckets time: 4.6768"
+          },
+          {
+            "label": "build leaf time",
+            "line": 28,
+            "seconds": 13.0993,
+            "text": "Parlay time: build leaf time: 13.0993"
+          },
+          {
+            "label": "buckets time",
+            "line": 39,
+            "seconds": 4.6439,
+            "text": "Parlay time: buckets time: 4.6439"
+          },
+          {
+            "label": "build leaf time",
+            "line": 45,
+            "seconds": 13.7167,
+            "text": "Parlay time: build leaf time: 13.7167"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.4783,
+            "text": "Parlay time: Final prune time: 5.4783"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.4783
+          ],
+          "buckets time": [
+            4.6768,
+            4.6439
+          ],
+          "build leaf time": [
+            13.0993,
+            13.7167
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "5be9699ad074073fc4d214996589597eccb23d8e57b6a46aee4dc9f0888d72df",
+        "wall_s_from_native_manifest": 42.11733889500465
+      },
+      {
+        "arm": "h17",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 36.06 seconds"
+          }
+        ],
+        "graph_built_s": 36.06,
+        "labels_without_numeric": [],
+        "leaf_profiles": [
+          {
+            "line": 27,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=13.51 selection_sum_s=18.24 merge_sum_s=9.161 leaves=89813 pair_count=7127724866 directed_candidates=59999884"
+          },
+          {
+            "line": 45,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=27.12 selection_sum_s=36.57 merge_sum_s=20.29 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+          }
+        ],
+        "rep": 3,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 35.9612,
+        "stage_sum_vs_graph_built_s": -0.09880000000000422,
+        "stage_sums": {
+          "Final prune time": 5.4795,
+          "buckets time": 9.343,
+          "build leaf time": 21.1387
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 20,
+            "seconds": 4.68,
+            "text": "Parlay time: buckets time: 4.6800"
+          },
+          {
+            "label": "build leaf time",
+            "line": 26,
+            "seconds": 10.3285,
+            "text": "Parlay time: build leaf time: 10.3285"
+          },
+          {
+            "label": "buckets time",
+            "line": 38,
+            "seconds": 4.663,
+            "text": "Parlay time: buckets time: 4.6630"
+          },
+          {
+            "label": "build leaf time",
+            "line": 44,
+            "seconds": 10.8102,
+            "text": "Parlay time: build leaf time: 10.8102"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.4795,
+            "text": "Parlay time: Final prune time: 5.4795"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.4795
+          ],
+          "buckets time": [
+            4.68,
+            4.663
+          ],
+          "build leaf time": [
+            10.3285,
+            10.8102
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "64bc5f9045c9b5ba9f5cd4d536abf075849aecfe6eff61869b3be13934c2425c",
+        "wall_s_from_native_manifest": 36.4645429259981
+      },
+      {
+        "arm": "fast",
+        "cluster_comparisons_cumulative": [
+          5104928517,
+          10204781605
+        ],
+        "graph_built_raw_lines": [
+          {
+            "line": 57,
+            "text": "Graph built in 33.34 seconds"
+          }
+        ],
+        "graph_built_s": 33.34,
+        "labels_without_numeric": [],
+        "leaf_profiles": [
+          {
+            "line": 27,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=13.46 selection_sum_s=12.81 merge_sum_s=9.227 leaves=89813 pair_count=7127724866 directed_candidates=59999884"
+          },
+          {
+            "line": 45,
+            "text": "H17_LEAF_PROFILE matrix_sum_s=27.07 selection_sum_s=25.7 merge_sum_s=20.5 leaves=178620 pair_count=14310180428 directed_candidates=119999746"
+          }
+        ],
+        "rep": 3,
+        "stage_status": "STAGE_LINES_COMPLETE",
+        "stage_sum_total_s": 33.2382,
+        "stage_sum_vs_graph_built_s": -0.10180000000000433,
+        "stage_sums": {
+          "Final prune time": 5.4929,
+          "buckets time": 9.319600000000001,
+          "build leaf time": 18.4257
+        },
+        "stage_timer_lines": [
+          {
+            "label": "buckets time",
+            "line": 20,
+            "seconds": 4.6841,
+            "text": "Parlay time: buckets time: 4.6841"
+          },
+          {
+            "label": "build leaf time",
+            "line": 26,
+            "seconds": 8.9569,
+            "text": "Parlay time: build leaf time: 8.9569"
+          },
+          {
+            "label": "buckets time",
+            "line": 38,
+            "seconds": 4.6355,
+            "text": "Parlay time: buckets time: 4.6355"
+          },
+          {
+            "label": "build leaf time",
+            "line": 44,
+            "seconds": 9.4688,
+            "text": "Parlay time: build leaf time: 9.4688"
+          },
+          {
+            "label": "Final prune time",
+            "line": 51,
+            "seconds": 5.4929,
+            "text": "Parlay time: Final prune time: 5.4929"
+          }
+        ],
+        "stages": {
+          "Final prune time": [
+            5.4929
+          ],
+          "buckets time": [
+            4.6841,
+            4.6355
+          ],
+          "build leaf time": [
+            8.9569,
+            9.4688
+          ]
+        },
+        "status": "STDOUT_SHA_VERIFIED",
+        "stdout_sha256": "bac7dce38a897666d78bbf79f82528a16950e5e12da56292414d2746f1068c7d",
+        "wall_s_from_native_manifest": 33.7298441210005
+      }
+    ],
+    "status": "NINE_NATIVE_SHA_PASS"
+  },
+  "resource_model": {
+    "current_MemAvailable_GiB": 24.931,
+    "rough_10m_high_C160_GiB_scenario": [
+      25,
+      30
+    ],
+    "suggestion": "NO_10M_BUILD_AUTHORIZED; independent guarded pilot only after same-source 1M gates and memory headroom review",
+    "warning": "Memory available fluctuates; no peak-RSS or swap proof from a read-only pass."
+  },
+  "status": "FILE_SHA_VERIFIED__C160_MEMORY_HEADROOM_HOLD",
+  "utc": "2026-11-19T12:27:06.064585+00:00",
+  "version": "R90_1M_10M_PROVENANCE_STAGE_AUDIT_V1_1"
+}
