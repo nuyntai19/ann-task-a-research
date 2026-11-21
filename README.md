@@ -4,6 +4,7 @@ Source-only mirror of `/home/tai/ann-task-a` for code review and research collab
 
 ## Key Directories
 
+- [`experiments/R91/`](experiments/R91/) — **MS-Turing10M** scale-up campaign under strict 24 GiB / zero-swap cgroup v2: TwoTier degree audit (`G0.6`), `Fast v2` vs `Stock` Flat C160 10M BUILD (`377.47s` vs `437.77s`, `−13.77%` total / `−26.28%` Stage 2), exact-guard 10M evaluator (`G1B v2`), 10-beam Recall calibration (`G1B`/`G1B-C`/`G1-Stock Search`/`G1M-A`), and 12-run interleaved paired QPS (`G1M-D`, beams `576` & `1792`).
 - [`experiments/R90/`](experiments/R90/) — Complete R90 Stock vs H17 vs Fast v2 campaign: exploratory P0–P3.8 gates, D6/D7 & P4/P4Q/P4M/P4R 1M studies, P0B counter64 audit, P0A v1.1–v1.2 unified builds + Highway `0e0a01da` vs `6bc2d477` FTZ/DAZ root-cause audit, and final **P0A v1.3** historical Highway `6bc2d477` controlled 1M benchmark (Stage A/B, 24-build 1M audit, 18-graph search screen, and 108-observation matched-threshold repeated QPS).
 - [`experiments/R86/r86_v1_2_source/`](experiments/R86/r86_v1_2_source/) — Active R86 instrumented PiPNN C++ implementation (`algorithms/PipNN/pipnn.h`, `pipnn_utils.h`, `CMakeLists.txt`).
 - [`experiments/R86/`](experiments/R86/) — Latest R86 diagnostics, gate tools, counter64 campaigns (`g11_*`), beam/trace diagnostics (`g12_*`, `g15_*`), MSTuring 1M evaluation/six-arm runs (`msturing_1m_*`), prefix scaling, and matched-recall runners.
