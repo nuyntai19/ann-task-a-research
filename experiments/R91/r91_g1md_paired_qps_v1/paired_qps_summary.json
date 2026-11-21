@@ -1,0 +1,289 @@
+{
+  "caveats": [
+    "Three paired rounds are an exploratory pilot, not a formal equivalence/noninferiority statistical test.",
+    "Recall satisfies thresholds for both arms but exact Recall is not matched.",
+    "QPS timing uses one CPU, 100K queries, separate native evaluator processes; 1/QPS is not p95/p99 latency.",
+    "Legacy avg_cmps invalid; do not infer search work from it. No graph build/rebuild."
+  ],
+  "plan": {
+    "beams": [
+      576,
+      1792
+    ],
+    "commands": {
+      "b1792_fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "1792"
+      ],
+      "b1792_stock": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "1792"
+      ],
+      "b576_fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "576"
+      ],
+      "b576_stock": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "576"
+      ]
+    },
+    "cpu": 0,
+    "env": {
+      "LC_ALL": "C",
+      "OMP_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "1"
+    },
+    "goal": "PILOT_PAIRED_INTERLEAVED_QPS_AT_THRESHOLD_RECALL_NOT_FORMAL_NONINFERIORITY",
+    "hardcap_bytes": 25769803776,
+    "no_ann_build": true,
+    "nqueries": 100000,
+    "pins": {
+      "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "elf": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+      "eval_receipt": "79373da654e102c9a115eb63bd1aca7937f1349d4a289c181bd9befd27b69f62",
+      "fast_build": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "fast_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "fast_highbeam": "ad3be04bbdc83b04d5d71068a44dc74b37b098743a06bdc5b4b2e7260d278a07",
+      "fast_search": "960295996dc176dc6d1bb5074ff0543e96f43cba06907b5142c44be8949a44eb",
+      "g1ma_fast_receipt": "00a1ba5136409988df4e8e05530c22ff801945b4ae6c3569b80470bcba686dc7",
+      "g1ma_preflight": "6b61c57be18b6eff419159f7d8827edfa7f374117087015941211bc779fd3ed4",
+      "g1ma_stock_receipt": "017ef6c3b21d0c7188ed7d1fc755fdefb70f5f505170c996ef92d44188248dfc",
+      "g1ma_summary": "e534316cfbe0a2ddd8a7b7d73b6ad5d114930f8929db379d17b8692235e7e13e",
+      "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+      "stock_graph": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+      "stock_outside": "968f297cd502e281f922520e4a84fbe925bb0e1371362094e2fb15fcd4417cf2",
+      "stock_preflight": "7a42faffab06f64a2af88d90c3a855dadd1bb9e109f6a47497b9a8619132629d",
+      "stock_result": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6",
+      "stock_search": "499c5608956d8c33a8d206b039074f871065546de32b7edbde49ced5acd60e6d",
+      "stock_search_preflight": "a883034f6c1960a78c173ddc65bb3de6d8b8c068b354363c0d7841ea65b64ae5"
+    },
+    "rounds": 3,
+    "schedule": [
+      {
+        "arm": "stock",
+        "beam": 576,
+        "round": 1,
+        "slot": "r1_b576_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 576,
+        "round": 1,
+        "slot": "r1_b576_fast"
+      },
+      {
+        "arm": "fast",
+        "beam": 1792,
+        "round": 1,
+        "slot": "r1_b1792_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 1792,
+        "round": 1,
+        "slot": "r1_b1792_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 576,
+        "round": 2,
+        "slot": "r2_b576_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 576,
+        "round": 2,
+        "slot": "r2_b576_stock"
+      },
+      {
+        "arm": "stock",
+        "beam": 1792,
+        "round": 2,
+        "slot": "r2_b1792_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 1792,
+        "round": 2,
+        "slot": "r2_b1792_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 576,
+        "round": 3,
+        "slot": "r3_b576_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 576,
+        "round": 3,
+        "slot": "r3_b576_fast"
+      },
+      {
+        "arm": "fast",
+        "beam": 1792,
+        "round": 3,
+        "slot": "r3_b1792_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 1792,
+        "round": 3,
+        "slot": "r3_b1792_stock"
+      }
+    ],
+    "source_script_sha256": "f25edb81d6c8dfbbaf90872d5fd184501e31df39cdc546d06f334d8d375bf397",
+    "swapmax_bytes": 0,
+    "threads": 1
+  },
+  "preflight_sha256": "8726d5bbd6b84b08f83cde5d6dda564a892ccb2f9dfcc73f89a9ba0697347ac0",
+  "run_receipt_sha256": {
+    "r1_b1792_fast": "2be9bd9863b27848a9b497a0717b5cd7ed37390ea80ffeb8cb6f6ed19537aeb8",
+    "r1_b1792_stock": "ad79f44de8554fa47529f0974f64eac12fecb99a216e59d4aeee3e8cedc27748",
+    "r1_b576_fast": "c6f6a91a7b915c9ed92ddf9b1a10e9f6860bfa013c8d9b1af811caf03db790a3",
+    "r1_b576_stock": "c1ab332446c3490a55cdf4c73f9d81c446d975190373c7504a3047e1b4812e1b",
+    "r2_b1792_fast": "3a88737888acdacb01029bee3a9b03adfb29f19ad3832ad1d8a002c42c8250c6",
+    "r2_b1792_stock": "26276a78bc112a9f273d10b8511941b59c2673c73f4b97e1471084645d93861f",
+    "r2_b576_fast": "142bbe6f12eedf1eec2254504c2ff7b77152738c6705cbbad195940b48de04ae",
+    "r2_b576_stock": "4b73d4d41f67cd974de2ef4a092afef04ee24e02bab30fc46081003c63f95e7d",
+    "r3_b1792_fast": "ac9eb12841cd7b4df697b9b6535970d986229cf6c1764f31e45945038c1f608a",
+    "r3_b1792_stock": "896902b3bebebb851e092278fa655b7897e73adcc424bdeef9e3494d609fe25c",
+    "r3_b576_fast": "cdf264fcbfb4985dacc4273f7ac8f689ac57f8d775cf2b034a95d913d34525d6",
+    "r3_b576_stock": "1d976210b5923ad5fd3f96e01f141e2f0aab1e99c866a9eca854bed833e3457a"
+  },
+  "status": "R91_G1MD_10M_PAIRED_QPS_V1_PAIRED_PILOT_NATIVE_PASS",
+  "threshold_matched_qps_summary": {
+    "1792": {
+      "fast_qps_range": [
+        324.61599731,
+        325.27740479
+      ],
+      "geomean_paired_ratio": 1.0002362509731066,
+      "median_fast_qps": 325.18392944,
+      "median_paired_delta_pct": 0.0779820353138172,
+      "median_paired_ratio": 1.0007798203531382,
+      "median_stock_qps": 324.93054199,
+      "pairs": [
+        {
+          "delta_pct": 0.0779820353138172,
+          "fast_qps": 325.18392944,
+          "fast_recall": 0.99817097,
+          "fast_visited": 999.0,
+          "ratio_fast_to_stock": 1.0007798203531382,
+          "round": 1,
+          "stock_qps": 324.93054199,
+          "stock_recall": 0.99811602,
+          "stock_visited": 999.0
+        },
+        {
+          "delta_pct": 0.1644082269220304,
+          "fast_qps": 325.27740479,
+          "fast_recall": 0.99817097,
+          "fast_visited": 999.0,
+          "ratio_fast_to_stock": 1.0016440822692203,
+          "round": 2,
+          "stock_qps": 324.74349976,
+          "stock_recall": 0.99811602,
+          "stock_visited": 999.0
+        },
+        {
+          "delta_pct": -0.17121121468985923,
+          "fast_qps": 324.61599731,
+          "fast_recall": 0.99817097,
+          "fast_visited": 999.0,
+          "ratio_fast_to_stock": 0.9982878878531014,
+          "round": 3,
+          "stock_qps": 325.17272949,
+          "stock_recall": 0.99811602,
+          "stock_visited": 999.0
+        }
+      ],
+      "rounds": 3,
+      "stock_qps_range": [
+        324.74349976,
+        325.17272949
+      ]
+    },
+    "576": {
+      "fast_qps_range": [
+        800.54943848,
+        803.3671875
+      ],
+      "geomean_paired_ratio": 0.998410997864383,
+      "median_fast_qps": 802.17224121,
+      "median_paired_delta_pct": -0.22703021427094017,
+      "median_paired_ratio": 0.9977296978572906,
+      "median_stock_qps": 803.07769775,
+      "pairs": [
+        {
+          "delta_pct": -0.22703021427094017,
+          "fast_qps": 802.17224121,
+          "fast_recall": 0.99129599,
+          "fast_visited": 480.0,
+          "ratio_fast_to_stock": 0.9977296978572906,
+          "round": 1,
+          "stock_qps": 803.99755859,
+          "stock_recall": 0.99118501,
+          "stock_visited": 480.0
+        },
+        {
+          "delta_pct": -0.3148212529227701,
+          "fast_qps": 800.54943848,
+          "fast_recall": 0.99129599,
+          "fast_visited": 480.0,
+          "ratio_fast_to_stock": 0.9968517874707723,
+          "round": 2,
+          "stock_qps": 803.07769775,
+          "stock_recall": 0.99118501,
+          "stock_visited": 480.0
+        },
+        {
+          "delta_pct": 0.06554786785535338,
+          "fast_qps": 803.3671875,
+          "fast_recall": 0.99129599,
+          "fast_visited": 480.0,
+          "ratio_fast_to_stock": 1.0006554786785535,
+          "round": 3,
+          "stock_qps": 802.84094238,
+          "stock_recall": 0.99118501,
+          "stock_visited": 480.0
+        }
+      ],
+      "rounds": 3,
+      "stock_qps_range": [
+        802.84094238,
+        803.99755859
+      ]
+    }
+  }
+}

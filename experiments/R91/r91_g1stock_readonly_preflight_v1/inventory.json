@@ -1,0 +1,254 @@
+{
+  "binary_candidates": [
+    {
+      "executable": true,
+      "matches_stock_pin": false,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/fast_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "size": 2840040,
+      "status": "REGULAR_FILE"
+    },
+    {
+      "executable": true,
+      "matches_stock_pin": false,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/stock_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "dcf4faf194dc62f918a0df6868e5a915f50aaa65793479e2825ce22e1c076ad0",
+      "size": 2549944,
+      "status": "REGULAR_FILE"
+    },
+    {
+      "executable": true,
+      "matches_stock_pin": true,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "size": 2836408,
+      "status": "REGULAR_FILE"
+    },
+    {
+      "executable": true,
+      "matches_stock_pin": false,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/h17_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "5afcfb5e2fbc7b7da9ec944b5c8dc3a53944c805b5c92ef1393618cb99ccc4b2",
+      "size": 2558136,
+      "status": "REGULAR_FILE"
+    },
+    {
+      "executable": true,
+      "matches_stock_pin": false,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/h17_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "be9feed5e618587f2d153fcaf7d7284279ae8ed4173c2e3796104058b8e4b22e",
+      "size": 2840040,
+      "status": "REGULAR_FILE"
+    },
+    {
+      "executable": true,
+      "matches_stock_pin": false,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/fast_on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "sha256": "fa11cdde5931317c66c05a3f7b80631452e067dec7532cafc08ed6725eeb89a8",
+      "size": 2562232,
+      "status": "REGULAR_FILE"
+    }
+  ],
+  "cgroup": {
+    "NOTE": "No cgroup created here. Exact hard cap & 0-swap must be verified inside future builder scope.",
+    "systemd_run_available": true,
+    "v2_controllers_exist": true
+  },
+  "checks": {
+    "binary_scan_limited": false,
+    "file_exists_base10m": true,
+    "file_exists_fast_graph": true,
+    "file_exists_gt100k": true,
+    "file_exists_query100k": true,
+    "found_exact_stock_elf_sha": true,
+    "original_g1_result_sha_matches": true,
+    "pinned_v13_compile_manifest_fast_off_matches": true,
+    "pinned_v13_compile_manifest_stock_off_matches": true
+  },
+  "cpu": {
+    "available_affinity_cpu_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "four_target_cpus_present_in_affinity": true
+  },
+  "disk": {
+    "free_GiB": 38.43825912475586,
+    "free_bytes": 41272766464,
+    "total_bytes": 421606629376
+  },
+  "expected_shas": {
+    "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "compile_manifest": null,
+    "fast_elf": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "g1_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+    "g1_result": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+    "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+    "stock_elf": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9"
+  },
+  "files": {
+    "base10m": {
+      "executable": false,
+      "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+      "size": 4000000008,
+      "status": "REGULAR_FILE"
+    },
+    "fast_graph": {
+      "executable": false,
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+      "size": 2202769196,
+      "status": "REGULAR_FILE"
+    },
+    "g1_result": {
+      "executable": false,
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/r91_g1_single10m_result.json",
+      "sha256": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "size": 2666,
+      "status": "REGULAR_FILE"
+    },
+    "g1_runner_python": {
+      "executable": false,
+      "path": "/home/tai/Downloads/r91_g07_g1_mst10m_hardcap_v1.py",
+      "size": 22320,
+      "status": "REGULAR_FILE"
+    },
+    "g1_runner_shell": {
+      "executable": true,
+      "path": "/home/tai/Downloads/R91_G1_ONE_FASTV2_MST10M_24G_NOSWAP_v1_Ubuntu.sh",
+      "size": 2501,
+      "status": "REGULAR_FILE"
+    },
+    "gt100k": {
+      "executable": false,
+      "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+      "size": 80000008,
+      "status": "REGULAR_FILE"
+    },
+    "historical_compile_manifest": {
+      "executable": false,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/compile_manifest.json",
+      "sha256": "48531781fbcd89f1e7256f2fa8a85d26f28098dc21447f9891988d6312400675",
+      "size": 813,
+      "status": "REGULAR_FILE"
+    },
+    "query100k": {
+      "executable": false,
+      "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+      "size": 40000008,
+      "status": "REGULAR_FILE"
+    }
+  },
+  "g1_command_related_fields": {
+    "builder_exit_code": "0"
+  },
+  "g1_result_top_keys": [
+    "builder_exit_code",
+    "cgroup_events_after",
+    "cgroup_events_before",
+    "cgroup_events_delta",
+    "df_after",
+    "disk_abort",
+    "disk_free_after_GiB",
+    "error",
+    "graph_quality",
+    "max_event_increase",
+    "min_disk_free_GiB",
+    "min_host_memavailable_kib",
+    "oom_kill_observed",
+    "peak_memory_current",
+    "peak_swap_current",
+    "pressure_abort",
+    "sample_count",
+    "source_cgroup_peak_bytes",
+    "source_cgroup_swap_after_bytes",
+    "stage_metrics",
+    "status",
+    "stdout_sha256",
+    "time_metrics",
+    "timefile_sha256",
+    "vmstat_after"
+  ],
+  "memory": {
+    "MemAvailable_KiB": 28364544,
+    "MemTotal_KiB": 32609400,
+    "SwapFree_KiB": 4194300,
+    "SwapTotal_KiB": 4194300
+  },
+  "scope": "READ_ONLY_SOURCE_RESOURCE_INVENTORY_NO_ANN_BUILD",
+  "source_snippets": {
+    "g1_runner_python": {
+      "executable": false,
+      "matching_source_lines": [
+        "6: systemd-run --user --scope -p MemoryMax=24G -p MemorySwapMax=0. It refuses to",
+        "8: builder is the existing six-ELF v1.3 historical H85 fast_off (NO rebuild).",
+        "20: BASE=DATA/'base.10M.fbin';QUERY=DATA/'query.public.100K.fbin';GT=DATA/'groundtruth.public.100K.ibin'",
+        "24: BIN=ORIG/'build/fast_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN'",
+        "25: SOURCE=ORIG/'source/fast_off'",
+        "41:  'fast_off_elf':'fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793',",
+        "43:  'fast_off_commands':'0530321bbcb14f60a4c4db136207f03eeb452794233ed136b978b63dae69f20a'}",
+        "44: FLAGS_EXPECTED=['-num_clusters','2','-cluster_size','1024','-table_size','160','-top_level_leaders','100',",
+        "45:  '-fanout_scheme','10,3,1','-mst_deg','2','-prune','1','-prune_all','1',",
+        "46:  '-prune_degree','64','-hash_bits','12','-alpha','1.1','-k','0']",
+        "158:  must(cm['binaries']['fast_off']==PIN['fast_off_elf']==cp['per_arm']['fast_off']['elf_sha256'],'ELF_RECORDED_SHA')",
+        "161:  file_pin(BIN,PIN['fast_off_elf'],'FAST_OFF_H85_ELF')",
+        "162:  v=next((x for x in sr['variants'] if x['variant']=='fast_off'),None)",
+        "163:  must(v is not None and mod.digest_tree(SOURCE)==v['tree_sha256'],'FAST_OFF_TREE_SHA')",
+        "164:  commands=ORIG/'build/fast_off/compile_commands.json'",
+        "165:  file_pin(commands,PIN['fast_off_commands'],'FAST_OFF_COMPILE_COMMANDS')",
+        "171:  for key in ('taskset','df'):",
+        "176:  return {'fast_off_tree_sha256':v['tree_sha256'],'compile_commands_sha256':PIN['fast_off_commands'],",
+        "177:          'fast_off_elf_sha256':PIN['fast_off_elf'],'highway_git_head':H85,",
+        "315:  must(info['fast_off_elf_sha256']==pre['source']['fast_off_elf_sha256'] and data==pre['data'],'SOURCE_DATA_DRIFT')",
+        "323:  g=OUT/'graphs/MSTuring10M_fast_off_C160_K1024_N2.graph'",
+        "324:  out=OUT/'logs/MSTuring10M_fast_off_C160_K1024_N2.stdout'",
+        "325:  timefile=OUT/'logs/MSTuring10M_fast_off_C160_K1024_N2.time'",
+        "329:          'cmd':['/usr/bin/time','-v','-o',str(timefile),'taskset','-c','0,2,4,6',str(BIN),'-base_path',str(BASE),'-graph_outfile',str(g),*FLAGS_EXPECTED],",
+        "330:          'env':{'PARLAY_NUM_THREADS':'4','OMP_NUM_THREADS':'4','LC_ALL':'C'}}",
+        "338:  print(TAG+'_SINGLE10M_BUILD_START_PINNED_H85_FAST_OFF_FLAT_C160_4CPU_HARD24G_NO_SWAP',flush=True)"
+      ],
+      "path": "/home/tai/Downloads/r91_g07_g1_mst10m_hardcap_v1.py",
+      "sha256": "b216af7d3b49994f3ad9704d7354ebe3fac5dec57ec986c41deb02644d1957ed",
+      "size": 22320,
+      "status": "REGULAR_FILE"
+    },
+    "g1_runner_shell": {
+      "executable": true,
+      "matching_source_lines": [
+        "16: elif ! command -v systemd-run >/dev/null || ! command -v python3 >/dev/null; then",
+        "42:   systemd-run --user --scope --expand-environment=no \\",
+        "43:    -p MemoryAccounting=yes -p MemoryMax=24G -p MemorySwapMax=0 \\"
+      ],
+      "path": "/home/tai/Downloads/R91_G1_ONE_FASTV2_MST10M_24G_NOSWAP_v1_Ubuntu.sh",
+      "sha256": "15f2fb92f6e0a72de75ee34e8cf8c91790903a1e1e615e595c300127e23b2e2d",
+      "size": 2501,
+      "status": "REGULAR_FILE"
+    }
+  },
+  "status": "R91_G1STOCK_READONLY_INVENTORY_READY_FOR_MANUAL_CLI_REVIEW_NO_BUILD",
+  "timestamp_utc_epoch": 1795241828.909215,
+  "warnings": [
+    "NO ANN BUILD in this script; no new Search; no hardware 24GiB scope was created",
+    "Original 10M data/graph are stat-only here, full SHA must be rechecked for the actual Stock one-shot",
+    "No automatic GO_BUILD without exact command equivalence and actual cgroup/disk gates",
+    "Do NOT infer Stock10M wall/RSS or speedup from 1M results"
+  ]
+}

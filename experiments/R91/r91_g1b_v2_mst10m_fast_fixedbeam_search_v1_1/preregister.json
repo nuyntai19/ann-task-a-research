@@ -1,0 +1,48 @@
+{
+  "beam_grid": [
+    384,
+    896,
+    1024,
+    1536
+  ],
+  "build_receipt_sha256": "79373da654e102c9a115eb63bd1aca7937f1349d4a289c181bd9befd27b69f62",
+  "cgroup": {
+    "metrics": {
+      "memory.current": "9957376",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "memory.max": "25769803776",
+      "memory.peak": "9957376",
+      "memory.swap.current": "0",
+      "memory.swap.max": "0"
+    },
+    "path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rea3c0dc2fce140649e50052c5dbb97c0.scope"
+  },
+  "cmd": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_mst10m_fast_fixedbeam_search_v1_1/logs/native_10m_search.time",
+    "taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+    "384,896,1024,1536"
+  ],
+  "evaluator_new_source_sha256": "c851ec10cdc673eb2ef7237340c95a035656cad890f94b03df87b3595390baef",
+  "evaluator_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "graph_sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+  "limitations": [
+    "fixed beam only; not exact matched-Recall",
+    "Search throughput != perquery p95/p99",
+    "Do not use MS legacy avg_cmps counter",
+    "Stock 10M not yet built"
+  ],
+  "no_graph_build": true,
+  "original_v4_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "preflight_sha256": "ec040c05b3984c81cab38aeae85145d19391833a27ad4a0eb1f186d3f77b2b7c",
+  "script_sha256": "3577ec1248696b4e1e7b427f0092b23ea2e01ecab80c39e1d0a1cc3cbd01f0c2"
+}

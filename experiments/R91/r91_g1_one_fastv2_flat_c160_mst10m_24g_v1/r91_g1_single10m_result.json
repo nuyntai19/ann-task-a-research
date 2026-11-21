@@ -1,0 +1,101 @@
+{
+  "builder_exit_code": 0,
+  "cgroup_events_after": {
+    "high": 0,
+    "low": 0,
+    "max": 345,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_events_before": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 345,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "df_after": "H\u1ec7 th\u1ed1ng t\u1eadp tin    C\u1ee1  D\u00f9ng   C\u00f2n %D\u00f9ng G\u1eafn v\u00e0o\n/dev/nvme0n1p5    393G  335G   39G   90% /",
+  "disk_abort": false,
+  "disk_free_after_GiB": 38.5016975402832,
+  "error": null,
+  "graph_quality": {
+    "arcs": 540692297,
+    "bytes": 2202769196,
+    "degree_cap": 64,
+    "full_audit_all_vertices": true,
+    "full_graph_duplicate_neighbor_rows": 0,
+    "full_graph_invalid_id": 0,
+    "full_graph_selfloops": 0,
+    "nodes": 10000000,
+    "sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429"
+  },
+  "max_event_increase": 345,
+  "min_disk_free_GiB": 38.5016975402832,
+  "min_host_memavailable_kib": 3463804,
+  "oom_kill_observed": false,
+  "peak_memory_current": 25643192320,
+  "peak_swap_current": 0,
+  "pressure_abort": false,
+  "sample_count": 379,
+  "source_cgroup_peak_bytes": 25769750528,
+  "source_cgroup_swap_after_bytes": 0,
+  "stage_metrics": {
+    "bucket_counts": [
+      1267470,
+      1267294
+    ],
+    "buckets_actual_line_count": 2,
+    "buckets_expected_line_count": 2,
+    "buckets_per_pass_seconds": [
+      72.1732,
+      73.1209
+    ],
+    "buckets_total_seconds": 145.29410000000001,
+    "clustering_comparisons_cumulative": [
+      77609361757,
+      156998418988
+    ],
+    "leaf_actual_line_count": 2,
+    "leaf_expected_line_count": 2,
+    "leaf_per_pass_seconds": [
+      77.0432,
+      84.3607
+    ],
+    "leaf_total_seconds": 161.4039,
+    "prune_actual_line_count": 1,
+    "prune_expected_line_count": 1,
+    "prune_per_pass_seconds": [
+      63.8364
+    ],
+    "prune_total_seconds": 63.8364
+  },
+  "status": "NATIVE_1_OF_1_10M_BUILD_AND_FULL_GRAPH_STRUCTURE_PASS_NO_SWAP",
+  "stdout_sha256": "2e3d36c2ab1c73f58700542fa909eed41a2ee932c9dde33481ed9a74abfa6bce",
+  "time_metrics": {
+    "exit_status_time": "0",
+    "major_page_faults": 4,
+    "max_RSS_KiB": 23836432,
+    "minor_page_faults": 4141540,
+    "swaps_time_counter": 0,
+    "wall_seconds": 377.47
+  },
+  "timefile_sha256": "7235b9225dc7cbd56a03329799e7824e52a7d63596cf5f7f66692bf12fd29eba",
+  "vmstat_after": {
+    "pgmajfault": 48250,
+    "pswpin": 21621,
+    "pswpout": 320471
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "beam_grid": [
+    384,
+    896
+  ],
+  "cmd": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_mst10m_fastv2_search_screen_v1/logs/native_fixedbeam.time",
+    "taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+    "384,896"
+  ],
+  "limitations": [
+    "No guarantee .99 or .998 reached at selected beams",
+    "MS legacy avg_cmps overflow excluded",
+    "No per-query p50/p95/p99",
+    "R86 evaluator 10M binary compatibility not proven until stdout input marker"
+  ],
+  "no_build": true,
+  "pins": {
+    "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "evaluator": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+    "g07": "70e9f33fa933b791f45e3254185b0374b129b6c4297a0e469c7d3ae02f38b8b0",
+    "g1": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+    "graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+    "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+    "h85_elf": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+  },
+  "runner_sha256": "3566fc7e04d0b8833c3fed07fdd0a2612ecc7612223b7e43781f594a5e9223b5",
+  "scope_before": {
+    "files": {
+      "memory.current": "9170944",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "memory.max": "25769803776",
+      "memory.peak": "9170944",
+      "memory.swap.current": "0",
+      "memory.swap.max": "0"
+    },
+    "path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rc68c65ca7e344c0cb51aa66cb6709f31.scope"
+  },
+  "single_cpu": 0,
+  "source_preflight_sha": "58d651b7598643ea784e026d79343395b29e57d8dc7582d09f9b0d18ce653fd4"
+}

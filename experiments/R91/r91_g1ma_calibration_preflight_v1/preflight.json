@@ -1,0 +1,74 @@
+{
+  "plan": {
+    "arm_order": [
+      "stock",
+      "fast"
+    ],
+    "beam_grid": [
+      512,
+      576,
+      640,
+      1664
+    ],
+    "commands": {
+      "fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "512,576,640,1664"
+      ],
+      "stock": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "512,576,640,1664"
+      ]
+    },
+    "cpu_core": 0,
+    "env": {
+      "LC_ALL": "C",
+      "OMP_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "1"
+    },
+    "hardcap_bytes": 25769803776,
+    "no_ann_build": true,
+    "nqueries": 100000,
+    "pins": {
+      "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "elf": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+      "eval_receipt": "79373da654e102c9a115eb63bd1aca7937f1349d4a289c181bd9befd27b69f62",
+      "fast_build": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "fast_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "fast_highbeam": "ad3be04bbdc83b04d5d71068a44dc74b37b098743a06bdc5b4b2e7260d278a07",
+      "fast_search": "960295996dc176dc6d1bb5074ff0543e96f43cba06907b5142c44be8949a44eb",
+      "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+      "stock_graph": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+      "stock_outside": "968f297cd502e281f922520e4a84fbe925bb0e1371362094e2fb15fcd4417cf2",
+      "stock_preflight": "7a42faffab06f64a2af88d90c3a855dadd1bb9e109f6a47497b9a8619132629d",
+      "stock_result": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6",
+      "stock_search": "499c5608956d8c33a8d206b039074f871065546de32b7edbde49ced5acd60e6d",
+      "stock_search_preflight": "a883034f6c1960a78c173ddc65bb3de6d8b8c068b354363c0d7841ea65b64ae5"
+    },
+    "purpose": "RECALL_CALIBRATION_ONLY_NOT_PAIRED_QPS",
+    "script_sha256": "2f64af73c6969ae9c7233fa57b586a0238fb004cea1d22a7d0727060d4c4d59e",
+    "swapmax_bytes": 0
+  },
+  "resources": {
+    "MemAvailable_bytes": 28973428736,
+    "cpu0_available": true,
+    "disk_free_bytes": 39013416960
+  },
+  "status": "R91_G1MA_10M_CALIBRATION_V1_PREFLIGHT_PASS_NO_SEARCH_NO_BUILD",
+  "timestamp": 1795247030.488588
+}

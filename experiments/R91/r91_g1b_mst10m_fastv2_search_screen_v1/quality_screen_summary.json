@@ -1,0 +1,37 @@
+{
+  "beam_grid": [
+    384,
+    896
+  ],
+  "cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rc68c65ca7e344c0cb51aa66cb6709f31.scope",
+  "cgroup_peak_bytes": 7823863808,
+  "cgroup_swap_after": 0,
+  "dataset": "MS-Turing10M",
+  "elapsed_external_s": 3.321814398979768,
+  "error": "EVALUATOR_EXIT_3",
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "limitations": [
+    "single frozen graph, first screen beams384/896 only; can miss Recall target",
+    "Stock 10M not yet built; no 10M speedup comparison",
+    "avg_cmps legacy ignored, QPS inversion is NOT tail latency"
+  ],
+  "metrics": null,
+  "native_evaluator_exit": 3,
+  "nqueries": 100000,
+  "preregister_sha256": "575766d2a85b7f269c729cac4031c03a3a4c655d7377ad0382d2e91c87bc7fe0",
+  "source_graph_sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+  "src_preflight_sha256": "58d651b7598643ea784e026d79343395b29e57d8dc7582d09f9b0d18ce653fd4",
+  "status": "R91_G1B_SEARCH_HOLD_PRESERVE_ORPHAN_LOGS",
+  "stderr_sha256": "47a74d22c3497a9d6cbe74c730959e788169268c289eec39b818b4de69177fa6",
+  "stdout_sha256": "52250fef56a6ba1ac80fe634731d399594c5d6c195cb3651b2ce3941013920c3",
+  "timefile_sha256": "29d9e0a11ea52ff7da19dca78731369440d6e71a227bb616f6540d5164542f5e"
+}

@@ -1,0 +1,82 @@
+{
+  "cmd": [
+    "taskset",
+    "-c",
+    "0,2,4,6",
+    "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "-base_path",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "-graph_outfile",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "env": {
+    "LC_ALL": "C",
+    "OMP_NUM_THREADS": "4",
+    "PARLAY_NUM_THREADS": "4"
+  },
+  "hardcap_bytes": 25769803776,
+  "pins": {
+    "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "fast": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "g1": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+    "g1bc": "ad3be04bbdc83b04d5d71068a44dc74b37b098743a06bdc5b4b2e7260d278a07",
+    "graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+    "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+    "inventory": "7a353e47ba684048f66d8b54c26a29c9fe04afbddbef185972329adf152530f8",
+    "manifest": "48531781fbcd89f1e7256f2fa8a85d26f28098dc21447f9891988d6312400675",
+    "old_runner": "b216af7d3b49994f3ad9704d7354ebe3fac5dec57ec986c41deb02644d1957ed",
+    "old_shell": "15f2fb92f6e0a72de75ee34e8cf8c91790903a1e1e615e595c300127e23b2e2d",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+    "stock": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9"
+  },
+  "resources": {
+    "MemAvailable_bytes": 28983152640,
+    "cpu_topology": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "disk_free_bytes": 41271746560
+  },
+  "script_sha": "84d1d7b5409f215667dbd7b92176ff8c3383cf17a4742bdbb42efebe98b95b63",
+  "status": "R91_G1STOCK_MST10M_24G_V1_PREFLIGHT_PASS_NO_BUILD",
+  "swapmax_bytes": 0,
+  "timestamp": 1795242443.806185
+}

@@ -1,0 +1,168 @@
+{
+  "builder_cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 333,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "builder_cgroup_peak_bytes": 25769680896,
+  "builder_external_seconds": 438.41160303500055,
+  "cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 333,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rcfa5cad50004411d969264de8f2e20fb.scope",
+  "cgroup_peak_bytes": 25769680896,
+  "cgroup_swap_after": 0,
+  "cgroup_swap_before": 0,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/logs/native.time",
+    "taskset",
+    "-c",
+    "0,2,4,6",
+    "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "-base_path",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "-graph_outfile",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "error": null,
+  "graph_quality": {
+    "arcs": 540816693,
+    "bytes": 2203266780,
+    "degree_cap": 64,
+    "full_audit_all_vertices": true,
+    "full_graph_duplicate_neighbor_rows": 0,
+    "full_graph_invalid_id": 0,
+    "full_graph_selfloops": 0,
+    "max_degree": 64,
+    "nodes": 10000000,
+    "sha256": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe"
+  },
+  "log_shas": {
+    "memory_monitor.tsv": "6ed8432aa7a120308a4b4fd3ebeac59b951f6e36b0888f6a8dfa258846366835",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "e1c384f3e94ba740af657bc65f7525cbb8554fb979039e13c3dc31d52339db25",
+    "native.time": "3bf70a1b4f5282b63f06211bdc7f05a66d61ef891826a92c55c0a4abbbad8484"
+  },
+  "min_disk_free_bytes": 39068508160,
+  "min_host_memavailable_bytes": 4835934208,
+  "native_exit_code": 0,
+  "no_search": true,
+  "peak_swap_sampled_bytes": 0,
+  "pins": {
+    "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "fast": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "g1": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+    "g1bc": "ad3be04bbdc83b04d5d71068a44dc74b37b098743a06bdc5b4b2e7260d278a07",
+    "graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+    "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+    "inventory": "7a353e47ba684048f66d8b54c26a29c9fe04afbddbef185972329adf152530f8",
+    "manifest": "48531781fbcd89f1e7256f2fa8a85d26f28098dc21447f9891988d6312400675",
+    "old_runner": "b216af7d3b49994f3ad9704d7354ebe3fac5dec57ec986c41deb02644d1957ed",
+    "old_shell": "15f2fb92f6e0a72de75ee34e8cf8c91790903a1e1e615e595c300127e23b2e2d",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+    "stock": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9"
+  },
+  "preflight_sha256": "7a42faffab06f64a2af88d90c3a855dadd1bb9e109f6a47497b9a8619132629d",
+  "resources_before": {
+    "MemAvailable_bytes": 29144838144,
+    "cpu_topology": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "disk_free_bytes": 41271595008
+  },
+  "sample_count": 439,
+  "stage_metrics": {
+    "average_table_size_printed": [
+      115
+    ],
+    "bucket_counts": [
+      1267470,
+      1267294
+    ],
+    "buckets_expected_count": 2,
+    "buckets_observed_count": 2,
+    "buckets_per_pass_seconds": [
+      73.8235,
+      75.5153
+    ],
+    "buckets_total_seconds": 149.3388,
+    "clustering_comparisons_cumulative": [
+      77609361757,
+      156998418988
+    ],
+    "leaf_expected_count": 2,
+    "leaf_observed_count": 2,
+    "leaf_per_pass_seconds": [
+      105.9817,
+      112.9719
+    ],
+    "leaf_total_seconds": 218.9536,
+    "prune_expected_count": 1,
+    "prune_observed_count": 1,
+    "prune_per_pass_seconds": [
+      64.6503
+    ],
+    "prune_total_seconds": 64.6503
+  },
+  "status": "R91_G1STOCK_MST10M_24G_V1_NATIVE_BUILD_FULL_GRAPH_PASS",
+  "time_metrics": {
+    "exit_status_time": 0,
+    "major_page_faults": 0,
+    "max_RSS_KiB": 23783148,
+    "minor_page_faults": 2621906,
+    "swaps_time_counter": 0,
+    "wall_seconds": 437.77
+  }
+}

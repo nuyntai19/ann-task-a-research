@@ -1,0 +1,225 @@
+{
+  "arm": "fast",
+  "beam": 1792,
+  "cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_peak_bytes": 7809814528,
+  "cgroup_swap_after": 0,
+  "cgroup_swap_before": 0,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1md_paired_qps_v1/runs/r1_b1792_fast/native.time",
+    "taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+    "1792"
+  ],
+  "elapsed_external_s": 311.3032640759993,
+  "error": null,
+  "evaluator_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "graph_sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+  "log_shas": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "d10ee9bc9a2953dbf5cf4161628dde711b658f47c619cd872eccdd910cfda4ad",
+    "native.time": "a62f9cf3101ecbe2a8b5c580a438a7d58f21d02caedbaa567d2e1721c2cdce94"
+  },
+  "metrics": {
+    "avg_cmps_legacy_untrusted": null,
+    "avg_visited": 999.0,
+    "beam": 1792,
+    "latency_inverse_qps_us_NOT_P95": 3075.182718045453,
+    "meets_0_990": true,
+    "meets_0_998": true,
+    "qps": 325.18392944,
+    "recall_at10": 0.99817097
+  },
+  "native_exit_code": 0,
+  "plan": {
+    "beams": [
+      576,
+      1792
+    ],
+    "commands": {
+      "b1792_fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "1792"
+      ],
+      "b1792_stock": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "1792"
+      ],
+      "b576_fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "576"
+      ],
+      "b576_stock": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "576"
+      ]
+    },
+    "cpu": 0,
+    "env": {
+      "LC_ALL": "C",
+      "OMP_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "1"
+    },
+    "goal": "PILOT_PAIRED_INTERLEAVED_QPS_AT_THRESHOLD_RECALL_NOT_FORMAL_NONINFERIORITY",
+    "hardcap_bytes": 25769803776,
+    "no_ann_build": true,
+    "nqueries": 100000,
+    "pins": {
+      "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "elf": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+      "eval_receipt": "79373da654e102c9a115eb63bd1aca7937f1349d4a289c181bd9befd27b69f62",
+      "fast_build": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "fast_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "fast_highbeam": "ad3be04bbdc83b04d5d71068a44dc74b37b098743a06bdc5b4b2e7260d278a07",
+      "fast_search": "960295996dc176dc6d1bb5074ff0543e96f43cba06907b5142c44be8949a44eb",
+      "g1ma_fast_receipt": "00a1ba5136409988df4e8e05530c22ff801945b4ae6c3569b80470bcba686dc7",
+      "g1ma_preflight": "6b61c57be18b6eff419159f7d8827edfa7f374117087015941211bc779fd3ed4",
+      "g1ma_stock_receipt": "017ef6c3b21d0c7188ed7d1fc755fdefb70f5f505170c996ef92d44188248dfc",
+      "g1ma_summary": "e534316cfbe0a2ddd8a7b7d73b6ad5d114930f8929db379d17b8692235e7e13e",
+      "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+      "stock_graph": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+      "stock_outside": "968f297cd502e281f922520e4a84fbe925bb0e1371362094e2fb15fcd4417cf2",
+      "stock_preflight": "7a42faffab06f64a2af88d90c3a855dadd1bb9e109f6a47497b9a8619132629d",
+      "stock_result": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6",
+      "stock_search": "499c5608956d8c33a8d206b039074f871065546de32b7edbde49ced5acd60e6d",
+      "stock_search_preflight": "a883034f6c1960a78c173ddc65bb3de6d8b8c068b354363c0d7841ea65b64ae5"
+    },
+    "rounds": 3,
+    "schedule": [
+      {
+        "arm": "stock",
+        "beam": 576,
+        "round": 1,
+        "slot": "r1_b576_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 576,
+        "round": 1,
+        "slot": "r1_b576_fast"
+      },
+      {
+        "arm": "fast",
+        "beam": 1792,
+        "round": 1,
+        "slot": "r1_b1792_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 1792,
+        "round": 1,
+        "slot": "r1_b1792_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 576,
+        "round": 2,
+        "slot": "r2_b576_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 576,
+        "round": 2,
+        "slot": "r2_b576_stock"
+      },
+      {
+        "arm": "stock",
+        "beam": 1792,
+        "round": 2,
+        "slot": "r2_b1792_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 1792,
+        "round": 2,
+        "slot": "r2_b1792_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 576,
+        "round": 3,
+        "slot": "r3_b576_stock"
+      },
+      {
+        "arm": "fast",
+        "beam": 576,
+        "round": 3,
+        "slot": "r3_b576_fast"
+      },
+      {
+        "arm": "fast",
+        "beam": 1792,
+        "round": 3,
+        "slot": "r3_b1792_fast"
+      },
+      {
+        "arm": "stock",
+        "beam": 1792,
+        "round": 3,
+        "slot": "r3_b1792_stock"
+      }
+    ],
+    "source_script_sha256": "f25edb81d6c8dfbbaf90872d5fd184501e31df39cdc546d06f334d8d375bf397",
+    "swapmax_bytes": 0,
+    "threads": 1
+  },
+  "preflight_sha256": "8726d5bbd6b84b08f83cde5d6dda564a892ccb2f9dfcc73f89a9ba0697347ac0",
+  "round": 1,
+  "slot": "r1_b1792_fast",
+  "status": "R91_G1MD_10M_PAIRED_QPS_V1_RUN_PASS",
+  "time_metrics": {
+    "exit_status_time": 0,
+    "major_page_faults": 0,
+    "max_RSS_KiB": 7606076,
+    "minor_page_faults": 1650247,
+    "swaps_time_counter": 0,
+    "wall_seconds": 311.25
+  },
+  "timestamp": 1795266484.0709617
+}

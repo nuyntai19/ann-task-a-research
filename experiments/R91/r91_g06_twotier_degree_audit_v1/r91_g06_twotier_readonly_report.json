@@ -1,0 +1,200 @@
+{
+  "audit_sha256": "9550858dcb763349ed5180b3b65577e48a600e54becc0ecb9c755970a4d4bbfb",
+  "degree_audits": {
+    "MS-Turing1M": {
+      "bins_le64_65to96_97to112_113to128_gt128": [
+        55934,
+        460870,
+        226926,
+        132806,
+        123464
+      ],
+      "count_gt_64": 944066,
+      "fraction_gt_64": 0.944066,
+      "maximum": 160,
+      "mean_degree": 98.702534,
+      "n": 1000000,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_h85_24build_native_v1/logs/MS-Turing1M_fast_on_r1.degrees_pass2.u32le",
+      "raw_u32le_sha256": "d4307ae5a812fb08b1cad74584d023dbbc61f7b774eff21b7c230d18aec5ebd0",
+      "zero_degree": 0
+    },
+    "SIFT1M": {
+      "bins_le64_65to96_97to112_113to128_gt128": [
+        771530,
+        188989,
+        23030,
+        9494,
+        6957
+      ],
+      "count_gt_64": 228470,
+      "fraction_gt_64": 0.22847,
+      "maximum": 160,
+      "mean_degree": 53.342662,
+      "n": 1000000,
+      "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_h85_24build_native_v1/logs/SIFT1M_fast_on_r1.degrees_pass2.u32le",
+      "raw_u32le_sha256": "d980ed6297d90372eb3ac57af2505b9d255d1b3d3f1a69fe2c440a132a5d0745",
+      "zero_degree": 0
+    }
+  },
+  "fast_off_source_tree_sha256": "de97c4d9020eb2de9fbdab6051fd01f40d6f6e960ff8a75e08ce8545a49bb25c",
+  "full_manifest_sha256": "0c76f3e5bc3dc0d82f70aa1aadac9b26c5b0e8f4607f31d9aa6d8b0b0a4121c3",
+  "header_sha256": "ac0bece4804c7bc552b30db0df57ee92492033065cef62330ddb58a19d470af1",
+  "legacy_two_tier_header": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/utils/r70_two_tier_lshgraph.h",
+  "notes": [
+    "This is a 1M preprune histogram and theoretical 10M reservoir model, not observed native 10M RSS.",
+    "R85 TwoTier benefits on BIGANN1M do not establish benefit on MS-Turing10M.",
+    "Merely detecting source symbols does not prove allocator lifetime; review snippet in report."
+  ],
+  "projection_10m": {
+    "MS-Turing1M": {
+      "active_rows_pointer_bytes": 80000000,
+      "flat_slot_bytes": 12880000000,
+      "limitations": [
+        "Requires native source confirmation that old small rows remain allocated, promoted chunks grow per owner, and active_rows_ has a pointer per owner.",
+        "1M preprune degree distribution extrapolation to 10M is NOT measured 10M occupancy.",
+        "Slab allocator metadata, alignment, other graph/data structures and peak RSS not modeled."
+      ],
+      "n": 10000000,
+      "promoted_slot_bytes": 12159570080,
+      "promotion_fraction_1m_extrapolated": 0.944066,
+      "relative_over_flat_pct": 35.40038881987578,
+      "small_slot_bytes": 5200000000,
+      "two_tier_slot_plus_pointer_bytes": 17439570080
+    },
+    "SIFT1M": {
+      "active_rows_pointer_bytes": 80000000,
+      "flat_slot_bytes": 12880000000,
+      "limitations": [
+        "Requires native source confirmation that old small rows remain allocated, promoted chunks grow per owner, and active_rows_ has a pointer per owner.",
+        "1M preprune degree distribution extrapolation to 10M is NOT measured 10M occupancy.",
+        "Slab allocator metadata, alignment, other graph/data structures and peak RSS not modeled."
+      ],
+      "n": 10000000,
+      "promoted_slot_bytes": 2942693600,
+      "promotion_fraction_1m_extrapolated": 0.22847,
+      "relative_over_flat_pct": -36.159211180124224,
+      "small_slot_bytes": 5200000000,
+      "two_tier_slot_plus_pointer_bytes": 8222693600
+    }
+  },
+  "source_code_snippets_for_human_review": [
+    {
+      "line": 29,
+      "text": "T* small_rows_ = nullptr;"
+    },
+    {
+      "line": 30,
+      "text": "T** active_rows_ = nullptr;"
+    },
+    {
+      "line": 31,
+      "text": "std::unique_ptr<std::atomic<T*>[]> chunks_;"
+    },
+    {
+      "line": 32,
+      "text": "size_t max_chunks_ = 0;"
+    },
+    {
+      "line": 33,
+      "text": "std::atomic<size_t> next_promoted_{0};"
+    },
+    {
+      "line": 54,
+      "text": "if (small_rows_ || locks || active_rows_ || chunks_)"
+    },
+    {
+      "line": 58,
+      "text": "small_rows_=aligned_rows(n*(kSmallCapacity+1)*sizeof(T), alignment);"
+    },
+    {
+      "line": 59,
+      "text": "(void)madvise(small_rows_, n*(kSmallCapacity+1)*sizeof(T), MADV_HUGEPAGE);"
+    },
+    {
+      "line": 60,
+      "text": "active_rows_=new T*[n];"
+    },
+    {
+      "line": 62,
+      "text": "max_chunks_=(n+kChunkRows-1)/kChunkRows;"
+    },
+    {
+      "line": 63,
+      "text": "chunks_=std::make_unique<std::atomic<T*>[]>(max_chunks_);"
+    },
+    {
+      "line": 64,
+      "text": "for (size_t c=0;c<max_chunks_;++c) chunks_[c].store(nullptr);"
+    },
+    {
+      "line": 66,
+      "text": "T* row=small_rows_+i*(kSmallCapacity+1);"
+    },
+    {
+      "line": 70,
+      "text": "active_rows_[i]=row;"
+    },
+    {
+      "line": 74,
+      "text": "T* row_ptr(size_t i) const {return active_rows_[i];}"
+    },
+    {
+      "line": 75,
+      "text": "bool is_promoted(size_t i) const {"
+    },
+    {
+      "line": 76,
+      "text": "return active_rows_[i] != small_rows_ + i*(kSmallCapacity+1);"
+    },
+    {
+      "line": 78,
+      "text": "size_t promoted_rows() const {return next_promoted_.load();}"
+    },
+    {
+      "line": 81,
+      "text": "const size_t ordinal=next_promoted_.fetch_add(1);"
+    },
+    {
+      "line": 82,
+      "text": "if (ordinal >= n) throw std::overflow_error(\"R70: too many promoted rows\");"
+    },
+    {
+      "line": 85,
+      "text": "T* p=chunks_[chunk].load(std::memory_order_acquire);"
+    },
+    {
+      "line": 88,
+      "text": "p=chunks_[chunk].load(std::memory_order_relaxed);"
+    },
+    {
+      "line": 91,
+      "text": "chunks_[chunk].store(p,std::memory_order_release);"
+    },
+    {
+      "line": 111,
+      "text": "T* sentinel = row_ptr(i); // active pointer; updated after promotion"
+    },
+    {
+      "line": 167,
+      "text": "if (deg == kSmallCapacity && !is_promoted(i)) {"
+    },
+    {
+      "line": 170,
+      "text": "active_rows_[i] = large; // publication occurs under locks[i]"
+    },
+    {
+      "line": 219,
+      "text": "if (chunks_) for(size_t i=0;i<max_chunks_;++i) std::free(chunks_[i].load());"
+    },
+    {
+      "line": 221,
+      "text": "delete[] active_rows_;"
+    },
+    {
+      "line": 222,
+      "text": "std::free(small_rows_);"
+    }
+  ],
+  "source_manifest_sha256": "5f42250caa47659daf978a73355857e355cc86096571d327518e676d41f1423b",
+  "status": "READONLY_SOURCE_TREE_PIN_AND_TWO_ON_HISTOGRAMS_VERIFIED__10M_PROJECTION_ONLY"
+}

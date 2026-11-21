@@ -1,0 +1,11 @@
+--- R86_PRESERVED_ORIGINAL
++++ R91_10M_GUARD_ONLY
+@@ -46,7 +46,7 @@
+     groundTruth<indexType> gt(argv[4]);
+     Graph<indexType> graph(argv[1]);
+ 
+-    if (base.size() != 1000000 || base.dimension() != 100 ||
++    if (base.size() != 10000000 || base.dimension() != 100 ||
+         queries.size() != 100000 || queries.dimension() != 100 ||
+         gt.size() != queries.size() || gt.dimension() < 10 ||
+         graph.size() != base.size() || graph.max_degree() != 64) {

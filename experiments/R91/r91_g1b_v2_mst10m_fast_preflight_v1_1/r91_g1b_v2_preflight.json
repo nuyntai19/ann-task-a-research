@@ -1,0 +1,40 @@
+{
+  "eval_bin_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "eval_build_sha256": "79373da654e102c9a115eb63bd1aca7937f1349d4a289c181bd9befd27b69f62",
+  "script_sha256": "3577ec1248696b4e1e7b427f0092b23ea2e01ecab80c39e1d0a1cc3cbd01f0c2",
+  "status": "R91_G1B_V2_PINNED_10M_NEW_ELF_PREFLIGHT_PASS_NO_SEARCH",
+  "timestamp": 1795194265.4728532,
+  "validated": {
+    "beam_grid": [
+      384,
+      896,
+      1024,
+      1536
+    ],
+    "compiled_eval_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+    "graph": {
+      "arcs": 540692297,
+      "degree_cap": 64,
+      "nodes": 10000000,
+      "sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429"
+    },
+    "gt": {
+      "count": 10000000,
+      "max_id": 9999998,
+      "min_id": 0
+    },
+    "host_disk_free_GiB": 38.514625549316406,
+    "host_memavailable_kib": 28142604,
+    "input_shas": {
+      "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "g07": "70e9f33fa933b791f45e3254185b0374b129b6c4297a0e469c7d3ae02f38b8b0",
+      "g1": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "old_hold": "9d48e98acadbba7ff66ba55ac5ba3f1f81bb4e56e53ada248cc7d1812607e003",
+      "old_pre": "58d651b7598643ea784e026d79343395b29e57d8dc7582d09f9b0d18ce653fd4",
+      "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+    },
+    "orig_eval_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144"
+  }
+}
