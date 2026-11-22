@@ -1,0 +1,71 @@
+--- G2A2/sketch_locks/stock/graph.h
++++ G2A3/lazy_reclaim/stock/graph.h
+@@ -181,7 +181,7 @@
+ 
+   Graph(){}
+ 
+-  void allocate_graph(long _maxDeg, size_t _n) {
++  void allocate_graph(long _maxDeg, size_t _n, bool initialize_all_degrees = true) {
+     maxDeg = _maxDeg;
+     n = _n;
+     long cnt = n * (maxDeg + 1);
+@@ -198,7 +198,11 @@
+       ptr = (indexType*) parlay::p_malloc(num_bytes);
+       graph = std::shared_ptr<indexType[]>(ptr, parlay::p_free);
+     }
+-    parlay::parallel_for(0, cnt, [&] (long i) {ptr[i] = 0;});
++    if (initialize_all_degrees) {
++      parlay::parallel_for(0, cnt, [&] (long i) {ptr[i] = 0;});
++    }
++    // G2A3: if deferred, caller MUST initialize degree[0] for each vertex
++    // before append/read. The default preserves all historical call sites.
+     locks = new absl::Mutex[n];
+   }
+ 
+@@ -675,8 +679,19 @@
+   void allocate_graph(size_t n) {
+     locks = new absl::Mutex[n];
+     constexpr size_t ALIGNMENT = 1L << 21;
+-    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));
++    // G2A3: aligned_alloc requires length to be a multiple of alignment.
++    // Check every multiplication/addition before rounding, including on 10M.
++    if (kMaxDegree == static_cast<size_t>(-1)) abort();
++    const size_t stride = kMaxDegree + 1;
++    if (stride > static_cast<size_t>(-1) / sizeof(T)) abort();
++    const size_t row_bytes = stride * sizeof(T);
++    if (n > static_cast<size_t>(-1) / row_bytes) abort();
++    const size_t logical_bytes = n * row_bytes;
++    const size_t padding = (ALIGNMENT - logical_bytes % ALIGNMENT) % ALIGNMENT;
++    if (logical_bytes > static_cast<size_t>(-1) - padding) abort();
++    const size_t num_bytes = logical_bytes + padding;
+     tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);
++    if (tables == nullptr) abort();
+     madvise(tables, num_bytes, MADV_HUGEPAGE);
+     std::cout << "Allocating: " << ((kMaxDegree+1)*n*sizeof(T)) << " bytes of space for the candidates lists." << std::endl;
+     std::cout << "Sizeof T = " << sizeof(T) << std::endl;
+@@ -1021,6 +1036,25 @@
+     }
+   }
+ 
++  // G2A3: called only after ALL workers for a completed vertex block joined.
++  // No caller may read a previously completed row after reclamation.
++  void reclaim_completed_prefix(size_t completed_vertices, size_t &reclaimed_bytes) {
++    constexpr size_t ALIGNMENT = 1L << 21;
++    if (completed_vertices > n || kMaxDegree == static_cast<size_t>(-1)) abort();
++    const size_t stride = kMaxDegree + 1;
++    if (stride > static_cast<size_t>(-1) / sizeof(T)) abort();
++    const size_t row_bytes = stride * sizeof(T);
++    if (completed_vertices > static_cast<size_t>(-1) / row_bytes) abort();
++    const size_t consumed = completed_vertices * row_bytes;
++    const size_t reclaim_end = (consumed / ALIGNMENT) * ALIGNMENT;
++    if (reclaim_end <= reclaimed_bytes) return;
++    if (reclaimed_bytes % ALIGNMENT != 0) abort();
++    // Both address and length are 2MiB aligned and behind the barrier.
++    if (madvise(reinterpret_cast<unsigned char*>(tables) + reclaimed_bytes,
++                reclaim_end - reclaimed_bytes, MADV_DONTNEED) != 0) abort();
++    reclaimed_bytes = reclaim_end;
++  }
++
+   void finalize() {}
+ 
+   ~LSHGraph() {

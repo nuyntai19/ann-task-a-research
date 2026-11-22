@@ -1,0 +1,464 @@
+{
+  "expected": {
+    "compile_manifest_sha256": "48531781fbcd89f1e7256f2fa8a85d26f28098dc21447f9891988d6312400675",
+    "fast_elf_sha256": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+    "fast_g1_result_sha256": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+    "fast_graph_sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+    "github_commit": "64b7d147ecff7d637be78abdf77e7f56358c5fac",
+    "highway_commit": "6bc2d47793bae9c521fb4150936669647700765d",
+    "stock_elf_sha256": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+    "stock_graph_sha256": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+    "stock_result_sha256": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6"
+  },
+  "git_sha1_pins": {
+    "algorithms/PipNN/neighbors.h": "877e087da7cf362d547d75f1393dfb3737d4e303",
+    "algorithms/PipNN/pipnn.h": "f357626cbf9ece485e913934f928f2c26d8db919",
+    "algorithms/utils/graph.h": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+    "algorithms/utils/hash.h": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391"
+  },
+  "historical_receipts": {
+    "fast": {
+      "cgroup_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 345,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "cgroup_peak_bytes": 25769750528,
+      "graph_quality": {
+        "arcs": 540692297,
+        "bytes": 2202769196,
+        "degree_cap": 64,
+        "full_audit_all_vertices": true,
+        "full_graph_duplicate_neighbor_rows": 0,
+        "full_graph_invalid_id": 0,
+        "full_graph_selfloops": 0,
+        "nodes": 10000000,
+        "sha256": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429"
+      },
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/r91_g1_single10m_result.json",
+      "sha256": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "status": "NATIVE_1_OF_1_10M_BUILD_AND_FULL_GRAPH_STRUCTURE_PASS_NO_SWAP"
+    },
+    "stock": {
+      "cgroup_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 333,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "cgroup_peak_bytes": 25769680896,
+      "graph_quality": {
+        "arcs": 540816693,
+        "bytes": 2203266780,
+        "degree_cap": 64,
+        "full_audit_all_vertices": true,
+        "full_graph_duplicate_neighbor_rows": 0,
+        "full_graph_invalid_id": 0,
+        "full_graph_selfloops": 0,
+        "max_degree": 64,
+        "nodes": 10000000,
+        "sha256": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe"
+      },
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/stock_result.json",
+      "sha256": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6",
+      "status": "R91_G1STOCK_MST10M_24G_V1_NATIVE_BUILD_FULL_GRAPH_PASS"
+    }
+  },
+  "memory_monitor": {
+    "fast_outside": {
+      "at_max_memory_current": {
+        "anon": null,
+        "disk_free_bytes": 42206097408,
+        "epoch": 1795190538.0,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": null,
+        "max_events": null,
+        "memory_current": 25668354048,
+        "memory_peak": 25668354048,
+        "oom": null,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "available_columns": [
+        "epoch",
+        "memory_current",
+        "memory_peak",
+        "swap_current",
+        "oom_kill",
+        "disk_free_bytes"
+      ],
+      "caveat": "memory.peak may be near a cgroup limit due to file cache; max of anon and file columns need not coincide and do not by themselves prove causal source.",
+      "first": {
+        "anon": null,
+        "disk_free_bytes": 43544100864,
+        "epoch": 1795190162.0,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": null,
+        "max_events": null,
+        "memory_current": 1462898688,
+        "memory_peak": 1468403712,
+        "oom": null,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "last": {
+        "anon": null,
+        "disk_free_bytes": 41340882944,
+        "epoch": 1795190551.0,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": null,
+        "max_events": null,
+        "memory_current": 2365689856,
+        "memory_peak": 25769750528,
+        "oom": null,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "max_by_column": {
+        "anon": null,
+        "disk_free_bytes": 43544117248,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": null,
+        "max_events": null,
+        "memory_current": 25668354048,
+        "memory_peak": 25769750528,
+        "oom": null,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "min_by_column": {
+        "anon": null,
+        "disk_free_bytes": 41340882944,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": null,
+        "max_events": null,
+        "memory_current": 1462898688,
+        "memory_peak": 1468403712,
+        "oom": null,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "path": "/home/tai/R91_G1_OUTSIDE_CGROUP_MONITOR_v1.tsv",
+      "samples": 386,
+      "sha256": "97e82a2cd3d3ba2af097230ce1f97925189929e97a84e54924370ac9e7218d53",
+      "status": "READ_ONLY_MONITOR_PASS",
+      "supports_anon_file_attribution": false
+    },
+    "stock_inside": {
+      "at_max_memory_current": {
+        "anon": 24175067136,
+        "disk_free_bytes": 39367565312,
+        "epoch": 1795242946.1743536,
+        "events_max": 191,
+        "file": 1503674368,
+        "host_memavailable_bytes": 5042655232,
+        "max_events": null,
+        "memory_current": 25769025536,
+        "memory_peak": 25769549824,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "available_columns": [
+        "epoch",
+        "memory_current",
+        "memory_peak",
+        "swap_current",
+        "anon",
+        "file",
+        "events_max",
+        "oom",
+        "oom_kill",
+        "host_memavailable_bytes",
+        "disk_free_bytes"
+      ],
+      "caveat": "memory.peak may be near a cgroup limit due to file cache; max of anon and file columns need not coincide and do not by themselves prove causal source.",
+      "first": {
+        "anon": 8859648,
+        "disk_free_bytes": 41271582720,
+        "epoch": 1795242508.9810553,
+        "events_max": 0,
+        "file": 20480,
+        "host_memavailable_bytes": 29144838144,
+        "max_events": null,
+        "memory_current": 9875456,
+        "memory_peak": 26230784,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "last": {
+        "anon": 8822784,
+        "disk_free_bytes": 39068508160,
+        "epoch": 1795242947.3916235,
+        "events_max": 333,
+        "file": 1502875648,
+        "host_memavailable_bytes": 29226037248,
+        "max_events": null,
+        "memory_current": 1553412096,
+        "memory_peak": 25769680896,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "max_by_column": {
+        "anon": 24357990400,
+        "disk_free_bytes": 41271812096,
+        "events_max": 333,
+        "file": 1503674368,
+        "host_memavailable_bytes": 29226037248,
+        "max_events": null,
+        "memory_current": 25769025536,
+        "memory_peak": 25769680896,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "min_by_column": {
+        "anon": 8822784,
+        "disk_free_bytes": 39068508160,
+        "events_max": 0,
+        "file": 20480,
+        "host_memavailable_bytes": 4835934208,
+        "max_events": null,
+        "memory_current": 9875456,
+        "memory_peak": 26230784,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/logs/memory_monitor.tsv",
+      "samples": 439,
+      "sha256": "6ed8432aa7a120308a4b4fd3ebeac59b951f6e36b0888f6a8dfa258846366835",
+      "status": "READ_ONLY_MONITOR_PASS",
+      "supports_anon_file_attribution": true
+    },
+    "stock_outside": {
+      "at_max_memory_current": {
+        "anon": null,
+        "disk_free_bytes": 39501266944,
+        "epoch": 1795242946.0925558,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": 5049454592,
+        "max_events": 127,
+        "memory_current": 25769549824,
+        "memory_peak": 25769549824,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "available_columns": [
+        "epoch",
+        "memory_current",
+        "memory_peak",
+        "swap_current",
+        "max_events",
+        "oom",
+        "oom_kill",
+        "host_memavailable_bytes",
+        "disk_free_bytes"
+      ],
+      "caveat": "memory.peak may be near a cgroup limit due to file cache; max of anon and file columns need not coincide and do not by themselves prove causal source.",
+      "first": {
+        "anon": null,
+        "disk_free_bytes": 41271595008,
+        "epoch": 1795242506.878237,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": 29152129024,
+        "max_events": 0,
+        "memory_current": 25915392,
+        "memory_peak": 25915392,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "last": {
+        "anon": null,
+        "disk_free_bytes": 39068504064,
+        "epoch": 1795242972.106068,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": 29186891776,
+        "max_events": 333,
+        "memory_current": 3700424704,
+        "memory_peak": 25769680896,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "max_by_column": {
+        "anon": null,
+        "disk_free_bytes": 41271812096,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": 29228453888,
+        "max_events": 333,
+        "memory_current": 25769549824,
+        "memory_peak": 25769680896,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "min_by_column": {
+        "anon": null,
+        "disk_free_bytes": 39068504064,
+        "events_max": null,
+        "file": null,
+        "host_memavailable_bytes": 4835405824,
+        "max_events": 0,
+        "memory_current": 25915392,
+        "memory_peak": 25915392,
+        "oom": 0,
+        "oom_kill": 0,
+        "swap_current": 0
+      },
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/outside_scope_monitor.tsv",
+      "samples": 466,
+      "sha256": "280469b14aed2c5535a90fa7ec9c146e73645a35b517b550a43af589b01fff28",
+      "status": "READ_ONLY_MONITOR_PASS",
+      "supports_anon_file_attribution": false
+    }
+  },
+  "protocol": "G2A.0_READONLY_NO_BUILD_NO_SEARCH_NO_SOURCE_MODIFICATION",
+  "source": {
+    "fast": {
+      "binary_sha256": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793",
+      "paths_git_sha1_verified": {
+        "algorithms/PipNN/neighbors.h": "877e087da7cf362d547d75f1393dfb3737d4e303",
+        "algorithms/PipNN/pipnn.h": "f357626cbf9ece485e913934f928f2c26d8db919",
+        "algorithms/utils/graph.h": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+        "algorithms/utils/hash.h": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391"
+      },
+      "source_root": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off",
+      "static": {
+        "build_index_returns_before_graph_save": true,
+        "builder_calls_export_to_graph": true,
+        "builder_passes_lshgraph_to_build_index_impl": true,
+        "explicit_copy_constructor_found": false,
+        "explicit_move_constructor_found": false,
+        "implicit_shallow_copy_risk": true,
+        "inference": "Strong static indication of missing cleanup on the Flat LSHGraph path; runtime source pin and full ownership proof before patch. Empty destructor does not by itself quantify RSS savings.",
+        "locations": {
+          "final_prune": [
+            665
+          ],
+          "lshgraph_empty_destructor": [
+            1010
+          ],
+          "lshgraph_locks_alloc": [
+            202,
+            352,
+            411,
+            537,
+            672
+          ],
+          "lshgraph_table_alloc": [
+            414,
+            540,
+            675
+          ],
+          "reservoir_construction": [
+            605
+          ],
+          "save_graph": [
+            86
+          ],
+          "sketchhash_shared_ptr_deleter": [
+            178,
+            195
+          ]
+        },
+        "locks_allocation": "new[]",
+        "locks_owned_raw_pointer": true,
+        "lshgraph_contains_nonowning_sketchhash_reference": true,
+        "lshgraph_destructor_empty": true,
+        "lshgraph_finalize_empty": true,
+        "safety": "Never free tables/locks without checking allocation paths, implicit copies, reference H lifetime, and all use sites; a destructor fix would normally free after final prune, not necessarily reduce maximum RSS.",
+        "sketchhash_shared_ptr_with_std_free": true,
+        "tables_allocation": "aligned_alloc",
+        "tables_owned_raw_pointer": true
+      }
+    },
+    "stock": {
+      "binary_sha256": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9",
+      "paths_git_sha1_verified": {
+        "algorithms/PipNN/neighbors.h": "877e087da7cf362d547d75f1393dfb3737d4e303",
+        "algorithms/PipNN/pipnn.h": "f357626cbf9ece485e913934f928f2c26d8db919",
+        "algorithms/utils/graph.h": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+        "algorithms/utils/hash.h": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391"
+      },
+      "source_root": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off",
+      "static": {
+        "build_index_returns_before_graph_save": true,
+        "builder_calls_export_to_graph": true,
+        "builder_passes_lshgraph_to_build_index_impl": true,
+        "explicit_copy_constructor_found": false,
+        "explicit_move_constructor_found": false,
+        "implicit_shallow_copy_risk": true,
+        "inference": "Strong static indication of missing cleanup on the Flat LSHGraph path; runtime source pin and full ownership proof before patch. Empty destructor does not by itself quantify RSS savings.",
+        "locations": {
+          "final_prune": [
+            665
+          ],
+          "lshgraph_empty_destructor": [
+            1010
+          ],
+          "lshgraph_locks_alloc": [
+            202,
+            352,
+            411,
+            537,
+            672
+          ],
+          "lshgraph_table_alloc": [
+            414,
+            540,
+            675
+          ],
+          "reservoir_construction": [
+            605
+          ],
+          "save_graph": [
+            86
+          ],
+          "sketchhash_shared_ptr_deleter": [
+            178,
+            195
+          ]
+        },
+        "locks_allocation": "new[]",
+        "locks_owned_raw_pointer": true,
+        "lshgraph_contains_nonowning_sketchhash_reference": true,
+        "lshgraph_destructor_empty": true,
+        "lshgraph_finalize_empty": true,
+        "safety": "Never free tables/locks without checking allocation paths, implicit copies, reference H lifetime, and all use sites; a destructor fix would normally free after final prune, not necessarily reduce maximum RSS.",
+        "sketchhash_shared_ptr_with_std_free": true,
+        "tables_allocation": "aligned_alloc",
+        "tables_owned_raw_pointer": true
+      }
+    }
+  },
+  "status": "G2A0_PINNED_SOURCE_OWNERSHIP_PASS",
+  "timestamp_utc": "2026-11-21T14:29:19.100534+00:00",
+  "warnings": [
+    "No graph building/search, no memory allocation experiment and no source modifications were performed by this tool.",
+    "This is a source + historical log audit, not an allocation trace; do not claim 12.88GB RSS or peak saving.",
+    "Leaked tables likely remain resident until process exit. A destructor-only fix occurs after prune; whether peak BUILD RSS falls is unknown.",
+    "The data structure uses a reference H and raw pointers; implicit copying makes a naive free/delete patch potentially unsafe.",
+    "Use a separate small-scale native build (G2A.1) and graph byte-equivalence gate before 10M."
+  ]
+}

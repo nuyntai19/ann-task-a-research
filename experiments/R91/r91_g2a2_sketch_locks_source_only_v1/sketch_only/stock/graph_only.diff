@@ -1,0 +1,21 @@
+--- R91/G2A1/stock/graph.h
++++ R91/G2A2/sketch_only/stock/graph.h
+@@ -1009,6 +1009,18 @@
+ 
+ 
+ 
++  // G2A2: only after synchronous cluster rounds finish; H object remains alive.
++  void release_sketch_after_clustering() noexcept {
++    H.release_sketch_data_after_clustering();
++  }
++  // All LSHGraph lock uses are confined to merge_neighbors during clustering.
++  void release_locks_after_clustering() noexcept {
++    if (locks != nullptr) {
++      delete[] locks;
++      locks = nullptr;  // G2A1 destructor must not double-delete.
++    }
++  }
++
+   void finalize() {}
+ 
+   ~LSHGraph() {

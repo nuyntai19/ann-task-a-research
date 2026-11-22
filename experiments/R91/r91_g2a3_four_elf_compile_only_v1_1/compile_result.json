@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-11-22T09:41:55.380442+00:00",
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "no_historical_source_edit": true,
+  "preflight_sha256": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+  "scope": {
+    "cpus": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-r9b674fce203849d2a9bd0386cdaae8ef.scope",
+    "ram_cap_bytes": 25769803776,
+    "swap_max_bytes": 0
+  },
+  "status": "R91_G2A3_FOUR_ELF_COMPILE_ONLY_V1_1_FOUR_ELF_PASS_NO_ANN_BUILD_NO_SEARCH",
+  "variants": {
+    "lazy_only": {
+      "fast": {
+        "cmake_build": {
+          "elapsed_s": 86.2392,
+          "sha256": "0aea4c6605075cf9d46804f8cf5d84bc999820b2f6f895e50907d44d24432887"
+        },
+        "cmake_configure": {
+          "elapsed_s": 14.5641,
+          "sha256": "223fdec6d4ae591b12c0827e58a4c32eeced8661de9aabcdbaf803343bc42463"
+        },
+        "elf": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_only/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "efd62b1288904ad3a8ef80b9f42e7dac0d640c01648fa65001901430b13f9d99",
+        "h17_flag": "ON",
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "616c78ad78d21884d5db3a7f32bea7901b04d1cfa2ad9f8105b93b268f950929"
+        },
+        "source_copy_tree_before_patch_sha256": "fe18456af7f61c76d7cb549bcc596b45ce259427ac3c73f673670698a4b0f9ef",
+        "status": "NATIVE_CPP_COMPILE_PASS_NO_ANN_BUILD"
+      },
+      "stock": {
+        "cmake_build": {
+          "elapsed_s": 86.4871,
+          "sha256": "fe0404277e69112336745ea546c523223ead76269311da760b9e24636a367d8b"
+        },
+        "cmake_configure": {
+          "elapsed_s": 11.3005,
+          "sha256": "c1e6c4e05c0734f4918a74dc85b174e6db136436af2da9d78333c1cf8e885eb2"
+        },
+        "elf": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_only/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "e6cb009aedee92ae23de184a8f0f944cab61280778f7532aaf80f8ea6fdd4e04",
+        "h17_flag": "OFF",
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "616c78ad78d21884d5db3a7f32bea7901b04d1cfa2ad9f8105b93b268f950929"
+        },
+        "source_copy_tree_before_patch_sha256": "e7b89c3a50c4b5eaa501a49c50eaf77cd98bd010cedda4bb85b9c5dea7bbf72e",
+        "status": "NATIVE_CPP_COMPILE_PASS_NO_ANN_BUILD"
+      }
+    },
+    "lazy_reclaim": {
+      "fast": {
+        "cmake_build": {
+          "elapsed_s": 86.4017,
+          "sha256": "87baa3cb7b8c3960b92ab79163626c9795c0441f5e4fcd1d82a2b03ca362ff44"
+        },
+        "cmake_configure": {
+          "elapsed_s": 10.9435,
+          "sha256": "bce37c70b3ebac2e25d55d1a8d6c61e92e6f3486549f55038522d33745d33099"
+        },
+        "elf": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+        "h17_flag": "ON",
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c"
+        },
+        "source_copy_tree_before_patch_sha256": "fe18456af7f61c76d7cb549bcc596b45ce259427ac3c73f673670698a4b0f9ef",
+        "status": "NATIVE_CPP_COMPILE_PASS_NO_ANN_BUILD"
+      },
+      "stock": {
+        "cmake_build": {
+          "elapsed_s": 86.412,
+          "sha256": "345791fb91c44e130e61c98bd6e4de8cd243cfee6b4b464a5c15b48f86bab655"
+        },
+        "cmake_configure": {
+          "elapsed_s": 10.7676,
+          "sha256": "f6ded28277f90c3b814f36877b7f9b8e118fdc084b3f7ab47e024f789b0eff53"
+        },
+        "elf": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "52e0406e0835ad30c83a4aedab2dedf7dd9f01b6a6a20e3add42f1c4ea54b4cc",
+        "h17_flag": "OFF",
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c"
+        },
+        "source_copy_tree_before_patch_sha256": "e7b89c3a50c4b5eaa501a49c50eaf77cd98bd010cedda4bb85b9c5dea7bbf72e",
+        "status": "NATIVE_CPP_COMPILE_PASS_NO_ANN_BUILD"
+      }
+    }
+  }
+}

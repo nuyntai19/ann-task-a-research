@@ -1,0 +1,37 @@
+--- R90/fast/graph.h
++++ R91/G2A1/fast/graph.h
+@@ -667,6 +667,10 @@
+   size_t size() const {return n;}
+ 
+   LSHGraph(){}
++  LSHGraph(const LSHGraph&) = delete;
++  LSHGraph& operator=(const LSHGraph&) = delete;
++  LSHGraph(LSHGraph&&) = delete;
++  LSHGraph& operator=(LSHGraph&&) = delete;
+ 
+   void allocate_graph(size_t n) {
+     locks = new absl::Mutex[n];
+@@ -1007,11 +1011,20 @@
+ 
+   void finalize() {}
+ 
+-  ~LSHGraph(){}
++  ~LSHGraph() {
++    if (tables != nullptr) {
++      free(tables);
++      tables = nullptr;
++    }
++    if (locks != nullptr) {
++      delete[] locks;
++      locks = nullptr;
++    }
++  }
+ 
+   size_t n;
+-  absl::Mutex* locks;
+-  T* tables;
++  absl::Mutex* locks = nullptr;
++  T* tables = nullptr;
+   sketchHash &H;
+   size_t kMaxDegree;
+ };

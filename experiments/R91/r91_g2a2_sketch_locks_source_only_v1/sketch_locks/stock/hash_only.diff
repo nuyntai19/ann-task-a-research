@@ -1,0 +1,14 @@
+--- R90/stock/hash.h
++++ R91/G2A2/sketch_locks/stock/hash.h
+@@ -229,6 +229,11 @@
+     }
+ 
+ 
++  // G2A2: only after all clustering tasks and their calls to relative_hash finish.
++  void release_sketch_data_after_clustering() noexcept {
++    sketch_data.reset();
++  }
++
+ private:
+     Hash_Family<Point, PointRange, indexType> hash_family;
+     std::shared_ptr<distanceType[]> sketch_data;

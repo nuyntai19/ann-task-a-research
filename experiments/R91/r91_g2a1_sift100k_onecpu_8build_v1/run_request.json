@@ -1,0 +1,31 @@
+{
+  "cpu_affinity": [
+    0
+  ],
+  "no_original_artifacts_modified": true,
+  "preflight_sha256": "05b732c888810ddb3fcb7e45a20bb73f7b17a676da6c0412573157834483176b",
+  "slots": [
+    "r1_stock_original",
+    "r1_stock_patched",
+    "r1_fast_patched",
+    "r1_fast_original",
+    "r2_fast_original",
+    "r2_fast_patched",
+    "r2_stock_patched",
+    "r2_stock_original"
+  ],
+  "source_ref_pins": {
+    "edge": "e24062fd8afdc050af30eeb5ddcbb367980a5af97f394e2b982a3bbdc8c09773",
+    "old_pre": "48dee7631535cf705dec7994221af42db5a432ccf8f9b9f983f7862a1007d574",
+    "old_sum": "12eb45e9a71ae138c23b3c293032df0a559f560e8899a702e64933aa197fce60"
+  },
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

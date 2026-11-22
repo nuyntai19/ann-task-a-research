@@ -1,0 +1,86 @@
+{
+  "changes": [
+    "initialize LSHGraph pointers to nullptr",
+    "delete copy constructor and assignment",
+    "delete move constructor and assignment",
+    "LSHGraph destructor uses free(tables) and delete[] locks"
+  ],
+  "created_utc": "2026-11-21T14:36:49.109552+00:00",
+  "effects_not_tested": [
+    "C++ compiler compatibility",
+    "runtime memory reclamation",
+    "build-time max RSS reduction",
+    "graph byte-for-byte equivalence",
+    "Search recall/QPS"
+  ],
+  "g2a0_audit_sha256": "96e994c28bc031dc1a4ff16580c795c578e1dbe55a0c92ed6d4b0c45405f2f2d",
+  "no_ANN_build": true,
+  "no_ANN_search": true,
+  "no_source_replacement": true,
+  "patched_graph_h": {
+    "fast": {
+      "git_blob_sha1": "89a194fa2ac05903d7ef119204f69b5a7cfe19ff",
+      "patch_diff_sha256": "a35f13f1468eb668bcfd3069cd5a8052d60d040e924d31f8663d2fdb83de0f3d",
+      "sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962"
+    },
+    "stock": {
+      "git_blob_sha1": "89a194fa2ac05903d7ef119204f69b5a7cfe19ff",
+      "patch_diff_sha256": "15a2f75369c2a7abef401eff5d0b47ffe37806b82f7c4c0ed8f6f70c2dc61a8a",
+      "sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962"
+    }
+  },
+  "source_git_blob_sha1_pins": {
+    "algorithms/PipNN/neighbors.h": "877e087da7cf362d547d75f1393dfb3737d4e303",
+    "algorithms/PipNN/pipnn.h": "f357626cbf9ece485e913934f928f2c26d8db919",
+    "algorithms/utils/graph.h": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+    "algorithms/utils/hash.h": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391"
+  },
+  "source_immutability_policy": "DO NOT replace R90 source, graph or archived binary; this receipt contains only proposed patched headers/diffs.",
+  "source_verification": {
+    "fast": {
+      "algorithms/PipNN/neighbors.h": {
+        "blob_sha1": "877e087da7cf362d547d75f1393dfb3737d4e303",
+        "sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+        "size_bytes": 4149
+      },
+      "algorithms/PipNN/pipnn.h": {
+        "blob_sha1": "f357626cbf9ece485e913934f928f2c26d8db919",
+        "sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+        "size_bytes": 25499
+      },
+      "algorithms/utils/graph.h": {
+        "blob_sha1": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+        "sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+        "size_bytes": 32500
+      },
+      "algorithms/utils/hash.h": {
+        "blob_sha1": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+        "sha256": "eca6131674ca2d5d11724ed72ccc7beb44ffde096ee5cec8209a79a8cb6fc481",
+        "size_bytes": 8452
+      }
+    },
+    "stock": {
+      "algorithms/PipNN/neighbors.h": {
+        "blob_sha1": "877e087da7cf362d547d75f1393dfb3737d4e303",
+        "sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+        "size_bytes": 4149
+      },
+      "algorithms/PipNN/pipnn.h": {
+        "blob_sha1": "f357626cbf9ece485e913934f928f2c26d8db919",
+        "sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+        "size_bytes": 25499
+      },
+      "algorithms/utils/graph.h": {
+        "blob_sha1": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+        "sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+        "size_bytes": 32500
+      },
+      "algorithms/utils/hash.h": {
+        "blob_sha1": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+        "sha256": "eca6131674ca2d5d11724ed72ccc7beb44ffde096ee5cec8209a79a8cb6fc481",
+        "size_bytes": 8452
+      }
+    }
+  },
+  "status": "R91_G2A1_SOURCE_ONLY_PATCH_READY_UNCOMPILED_UNBUILT"
+}

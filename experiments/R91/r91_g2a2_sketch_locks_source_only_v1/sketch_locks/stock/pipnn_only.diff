@@ -1,0 +1,24 @@
+--- R90/stock/pipnn.h
++++ R91/G2A2/sketch_locks/stock/pipnn.h
+@@ -8,6 +8,7 @@
+ #include <set>
+ #include <utility>
+ #include <bitset>
++#include <type_traits>
+ 
+ #include "../bench/parse_command_line.h"
+ #include "../utils/graph.h"
+@@ -653,6 +654,13 @@
+     std::cout << std::endl;
+ 
+     C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);
++  // G2A2: after all cluster merges and before output-graph allocation/prune.
++  // Compile-time branch excludes HashSetGraph and alternative reservoir types.
++  if constexpr (std::is_same<GraphH,
++      LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>>>::value) {
++    graph_h.release_sketch_after_clustering();
++    graph_h.release_locks_after_clustering();
++  }
+ #if defined(R86_COUNTERS) && R86_COUNTERS
+     r86::set_active_pass(0);
+     r86::declare_metric(r86::Metric::prune_distance_calls);

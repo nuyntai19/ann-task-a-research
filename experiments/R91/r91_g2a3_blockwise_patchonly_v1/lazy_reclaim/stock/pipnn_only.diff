@@ -1,0 +1,53 @@
+--- G2A2/sketch_locks/stock/pipnn.h
++++ G2A3/lazy_reclaim/stock/pipnn.h
+@@ -546,7 +546,8 @@
+     //create LSH table
+     //auto H = SimHash<Point, PR, indexType>(12, Points.dimension());
+ 
+-    parlay::parallel_for(0, Points.size(), [&](size_t i) {
++    // G2A3: only LSHGraph uses the blockwise output graph lifetime.
++    auto prune_one_vertex = [&](size_t i) {
+       if (prune_all || graph.degree(i) > prune_degree) {
+         utils::robustPrune(graph.Neighbors(i), i, Points, G, alpha, prune_degree);
+ 
+@@ -556,7 +557,25 @@
+         }
+       }
+ 			// G[i].random_permute();
+-    });
++    };
++    if constexpr (std::is_same<GraphH,
++        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>>>::value) {
++      constexpr size_t G2A3_BLOCK_VERTICES = 65536;
++      size_t reclaimed_bytes = 0;
++      for (size_t begin = 0; begin < Points.size(); ) {
++        const size_t remaining = Points.size() - begin;
++        const size_t end = begin + (remaining < G2A3_BLOCK_VERTICES ? remaining : G2A3_BLOCK_VERTICES);
++        parlay::parallel_for(begin, end, [&](size_t i) {
++          G[i].clear_neighbors(); // initializes degree before BOTH prune/append paths
++          prune_one_vertex(i);
++        }); // barrier: complete every read from source rows [begin,end)
++        graph.reclaim_completed_prefix(end, reclaimed_bytes);
++        begin = end;
++      }
++    } else {
++      // All historical HashSet/TwoTier codepaths retain full eager zeroing.
++      parlay::parallel_for(0, Points.size(), prune_one_vertex);
++    }
+     t.next("Final prune time");
+   }
+ 
+@@ -668,7 +687,12 @@
+ 
+     // Export the edges from the hashgraph into G.
+     std::cout << "Allocating graph, prune_degree = " << prune_degree << std::endl;
+-    G.allocate_graph(prune_degree, Points.size());
++    if constexpr (std::is_same<GraphH,
++        LSHGraph<indexType, float, SketchHash<Point, PointRange, indexType>>>::value) {
++      G.allocate_graph(prune_degree, Points.size(), false); // defer full zero fill
++    } else {
++      G.allocate_graph(prune_degree, Points.size());
++    }
+     assert(G.max_degree() == prune_degree);
+     ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);
+ #if defined(R86_COUNTERS) && R86_COUNTERS

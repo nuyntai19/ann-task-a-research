@@ -1,0 +1,43 @@
+{
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "no_original_artifacts_modified": true,
+  "preflight_sha256": "7d7975c75860041dcb91baaf57c850ad0354205f456451c87320fba37d2b19e3",
+  "slots": [
+    "r1_stock_g2a2",
+    "r1_stock_lazy_only",
+    "r1_stock_lazy_reclaim",
+    "r1_fast_g2a2",
+    "r1_fast_lazy_only",
+    "r1_fast_lazy_reclaim",
+    "r2_fast_lazy_reclaim",
+    "r2_fast_lazy_only",
+    "r2_fast_g2a2",
+    "r2_stock_lazy_reclaim",
+    "r2_stock_lazy_only",
+    "r2_stock_g2a2"
+  ],
+  "source_ref_pins": {
+    "g2a2_1m_pre": "877a21fa7cf575952044cd289edeaa15d69a6307b87347e2d5eee1bdfcbaab85",
+    "g2a2_1m_sum": "b8792fc973f8a31b91dea2bf554dd77efd60713cbda36f495e08a3a60cf953fe",
+    "g2a2_full_quality": "0d14aa0c9a19b5f3947dee7b42d285e0133f3fceee9d0034928441606fd2bf40",
+    "g2a3_100k_pre": "7fc353696fdb4b5550c53416b1399a048ce0631a148835833d26a63cba7972e6",
+    "g2a3_100k_sum": "ac43d4b599acd882ab1a055727237ad362e0240d3704b96839c739245129543a",
+    "g2a3_comp_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+    "g2a3_comp_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+    "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+  },
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

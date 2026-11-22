@@ -1,0 +1,37 @@
+{
+  "flags": {
+    "Highway": "6bc2d47793bae9c521fb4150936669647700765d",
+    "R70_USE_TIER": "OFF",
+    "R86_USE_COUNTERS": "OFF",
+    "fast_R71_USE_H17": "ON",
+    "stock_R71_USE_H17": "OFF"
+  },
+  "inputs": {
+    "compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+    "dependency_paths": {
+      "ABSEIL-CPP": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/abseil-cpp-src",
+      "EIGEN": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/eigen-src",
+      "GOOGLEBENCHMARK": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/googlebenchmark-src",
+      "HIGHWAY": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src",
+      "PARLAYLIB": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/parlaylib-src"
+    },
+    "disk_free_bytes": 39010508800,
+    "fast_original_source_root": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off",
+    "g2a0_report_sha256": "96e994c28bc031dc1a4ff16580c795c578e1dbe55a0c92ed6d4b0c45405f2f2d",
+    "g2a1_patch_receipt_sha256": "e902e28f695892be6818e3dcb2bcbe9d2e41d41816f78a91f3a1f18eb7d71721",
+    "highway_file_sha256": {
+      "sorting_networks-inl.h": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b",
+      "traits-inl.h": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+    },
+    "highway_head": "6bc2d47793bae9c521fb4150936669647700765d",
+    "mem_available_bytes": 28468592640,
+    "patched_graph_h_sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962",
+    "stock_original_source_root": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off"
+  },
+  "no_ANN_build": true,
+  "no_ANN_search": true,
+  "no_original_changes": true,
+  "planned_artifact": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_compile_only_v1",
+  "status": "R91_G2A1_COMPILE_ONLY_PREFLIGHT_PASS__NATIVE_COMPILE_UNRUN",
+  "timestamp_utc": "2026-11-21T14:48:11.681064+00:00"
+}

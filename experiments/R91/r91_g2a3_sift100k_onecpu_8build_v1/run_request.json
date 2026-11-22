@@ -1,0 +1,36 @@
+{
+  "cpu_affinity": [
+    0
+  ],
+  "no_original_artifacts_modified": true,
+  "preflight_sha256": "7fc353696fdb4b5550c53416b1399a048ce0631a148835833d26a63cba7972e6",
+  "slots": [
+    "r1_stock_lazy_only",
+    "r1_stock_lazy_reclaim",
+    "r1_fast_lazy_only",
+    "r1_fast_lazy_reclaim",
+    "r2_fast_lazy_reclaim",
+    "r2_fast_lazy_only",
+    "r2_stock_lazy_reclaim",
+    "r2_stock_lazy_only"
+  ],
+  "source_ref_pins": {
+    "g2a1_pre": "05b732c888810ddb3fcb7e45a20bb73f7b17a676da6c0412573157834483176b",
+    "g2a1_sum": "e6a24ae2e822bf5392457dc4cf82230081d8b49c6627e772d48f95b63040eea2",
+    "g2a2_pre": "9c8e5f1d0a3d4c4011882564985de7a31c067cbf6e699203688ee59fbabd2d93",
+    "g2a2_sum": "34d382e9f88e2e55ccd6eaff952db6febcb107c937630df6326fa541512cc97a",
+    "g2a3_audit": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+    "g2a3_compile_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+    "g2a3_compile_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+    "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+  },
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

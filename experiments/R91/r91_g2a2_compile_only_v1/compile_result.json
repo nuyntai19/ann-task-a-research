@@ -1,0 +1,133 @@
+{
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "no_historical_source_edit": true,
+  "preflight_sha256": "0712c9ebd52f7b9b348817928427f4841ece5ae675942da262fc3a08ba02ff94",
+  "scope": {
+    "cpu": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "memory.max": 25769803776,
+    "memory.swap.max": 0,
+    "path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-r5842571103864ccf99a960e6fd5fd1d1.scope"
+  },
+  "status": "R91_G2A2_COMPILE_ONLY_V1_FOUR_ELF_NATIVE_PASS_NO_ANN_BUILD",
+  "timestamp_utc": "2026-11-21T17:18:25.434427+00:00",
+  "variants": {
+    "sketch_locks": {
+      "fast": {
+        "cmake_build": {
+          "sha256": "efe0b4dc4314a15d15facee79bf0669283cebf1d7651087efab1a7d11d053a34",
+          "wall_s": 86.5378
+        },
+        "cmake_configure": {
+          "sha256": "4bf35a56750866e14dbbdb10a909a99534d5314689470a9a27ff268a15a351f7",
+          "wall_s": 11.0301
+        },
+        "elf_path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_locks/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "bb31c04045bc078c8446582259c2dda2f7a247b3f9a968e30f57c64b0026f332",
+        "h17_flag": "ON",
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+        },
+        "source_canonical_link_scan": {
+          "bytes": 27681340,
+          "files": 1681,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          }
+        },
+        "status": "CPP_COMPILE_PASS_NO_ANN_BUILD"
+      },
+      "stock": {
+        "cmake_build": {
+          "sha256": "c5a84f43466648164ba04ddf6089415501594292b8da952ca5940f9ab955de23",
+          "wall_s": 85.7216
+        },
+        "cmake_configure": {
+          "sha256": "4068aed73dbc868b6eb8e20e0095ac0f4072e1ff3c6cabe7eeaa3d6daff80e70",
+          "wall_s": 10.8569
+        },
+        "elf_path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_locks/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "2844e8dd0d4ffdf0393886ad6edaad2ad679114b2692a6594dc9fb230a78c99b",
+        "h17_flag": "OFF",
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+        },
+        "source_canonical_link_scan": {
+          "bytes": 27681087,
+          "files": 1681,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          }
+        },
+        "status": "CPP_COMPILE_PASS_NO_ANN_BUILD"
+      }
+    },
+    "sketch_only": {
+      "fast": {
+        "cmake_build": {
+          "sha256": "ca21fe2d7ad42ccacfbd25b73cf29551cf7949b59086fe4bb267642a8659936e",
+          "wall_s": 86.856
+        },
+        "cmake_configure": {
+          "sha256": "1ed516a1fa4e1cdfdff8441350d408f886575f0ee417ee57bd2cb10dfbcd1c37",
+          "wall_s": 11.5705
+        },
+        "elf_path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_only/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "1baf64615ec5788590d8d5becbe01c5f3012496bf315d9ef074f1d16bdedd1ad",
+        "h17_flag": "ON",
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "100c3a76adfaaa51f625d011a298fc1dbb655869053ed059815a126a9105e61b"
+        },
+        "source_canonical_link_scan": {
+          "bytes": 27681340,
+          "files": 1681,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          }
+        },
+        "status": "CPP_COMPILE_PASS_NO_ANN_BUILD"
+      },
+      "stock": {
+        "cmake_build": {
+          "sha256": "766b6695d53b3abee4575b4987e14645154cea09595fd070f8ee6292c23facaa",
+          "wall_s": 86.5922
+        },
+        "cmake_configure": {
+          "sha256": "d2618619460ff8be41572d959ae5c58de969b02521cf20784315456fe9010a50",
+          "wall_s": 11.0672
+        },
+        "elf_path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_only/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "elf_sha256": "a4da22c1ae0018eb48ff2b24a3b0a01ea793ae56e4c48f84922657d49443880e",
+        "h17_flag": "OFF",
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "100c3a76adfaaa51f625d011a298fc1dbb655869053ed059815a126a9105e61b"
+        },
+        "source_canonical_link_scan": {
+          "bytes": 27681087,
+          "files": 1681,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          }
+        },
+        "status": "CPP_COMPILE_PASS_NO_ANN_BUILD"
+      }
+    }
+  }
+}

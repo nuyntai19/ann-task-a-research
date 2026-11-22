@@ -1,0 +1,537 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "cautions": {
+    "legacy_avg_cmps_at_highbeam_untrusted": true,
+    "no_ann_build_or_graph_edit": true,
+    "no_tail_latency_percentiles": true,
+    "not_formal_noninferiority": true,
+    "not_matched_recall_latency": true,
+    "qps_single_search_per_graph": true
+  },
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "num_queries_per_search": 100000,
+  "num_searches": 6,
+  "paired_deltas": {
+    "fast_r1_sketch_locks_vs_g2a1": {
+      "384": {
+        "both_meet_099": true,
+        "both_meet_0998": false,
+        "qps_ratio_b_over_a": 0.9986726546258281,
+        "recall_delta": 5.009999999971981e-06
+      },
+      "896": {
+        "both_meet_099": true,
+        "both_meet_0998": true,
+        "qps_ratio_b_over_a": 1.000310621323,
+        "recall_delta": 2.4970000000013037e-05
+      }
+    },
+    "fast_r1_sketch_only_vs_g2a1": {
+      "384": {
+        "both_meet_099": true,
+        "both_meet_0998": false,
+        "qps_ratio_b_over_a": 0.9962553202523432,
+        "recall_delta": 4.6019999999979966e-05
+      },
+      "896": {
+        "both_meet_099": true,
+        "both_meet_0998": true,
+        "qps_ratio_b_over_a": 1.0009275256757644,
+        "recall_delta": 3.396999999993877e-05
+      }
+    },
+    "stock_r1_sketch_locks_vs_g2a1": {
+      "384": {
+        "both_meet_099": true,
+        "both_meet_0998": false,
+        "qps_ratio_b_over_a": 0.9990467037677032,
+        "recall_delta": 4.696999999997953e-05
+      },
+      "896": {
+        "both_meet_099": true,
+        "both_meet_0998": true,
+        "qps_ratio_b_over_a": 0.9978664102525244,
+        "recall_delta": 1.6039999999994947e-05
+      }
+    },
+    "stock_r1_sketch_only_vs_g2a1": {
+      "384": {
+        "both_meet_099": true,
+        "both_meet_0998": false,
+        "qps_ratio_b_over_a": 0.9967775846057616,
+        "recall_delta": 1.8950000000073075e-05
+      },
+      "896": {
+        "both_meet_099": true,
+        "both_meet_0998": true,
+        "qps_ratio_b_over_a": 0.996985752254347,
+        "recall_delta": -5.959999999971544e-06
+      }
+    }
+  },
+  "per_arm_variant": {
+    "fast_g2a1": {
+      "384": {
+        "all_meet_099": true,
+        "all_meet_0998": false,
+        "mean_qps": 1227.09899902,
+        "mean_recall_at10": 0.99102497,
+        "qps_values": [
+          1227.09899902
+        ],
+        "recall_at10_values": [
+          0.99102497
+        ]
+      },
+      "896": {
+        "all_meet_099": true,
+        "all_meet_0998": true,
+        "mean_qps": 562.75817871,
+        "mean_recall_at10": 0.99815202,
+        "qps_values": [
+          562.75817871
+        ],
+        "recall_at10_values": [
+          0.99815202
+        ]
+      },
+      "n": 1
+    },
+    "fast_sketch_locks": {
+      "384": {
+        "all_meet_099": true,
+        "all_meet_0998": false,
+        "mean_qps": 1225.47021484,
+        "mean_recall_at10": 0.99102998,
+        "qps_values": [
+          1225.47021484
+        ],
+        "recall_at10_values": [
+          0.99102998
+        ]
+      },
+      "896": {
+        "all_meet_099": true,
+        "all_meet_0998": true,
+        "mean_qps": 562.9329834,
+        "mean_recall_at10": 0.99817699,
+        "qps_values": [
+          562.9329834
+        ],
+        "recall_at10_values": [
+          0.99817699
+        ]
+      },
+      "n": 1
+    },
+    "fast_sketch_only": {
+      "384": {
+        "all_meet_099": true,
+        "all_meet_0998": false,
+        "mean_qps": 1222.50390625,
+        "mean_recall_at10": 0.99107099,
+        "qps_values": [
+          1222.50390625
+        ],
+        "recall_at10_values": [
+          0.99107099
+        ]
+      },
+      "896": {
+        "all_meet_099": true,
+        "all_meet_0998": true,
+        "mean_qps": 563.28015137,
+        "mean_recall_at10": 0.99818599,
+        "qps_values": [
+          563.28015137
+        ],
+        "recall_at10_values": [
+          0.99818599
+        ]
+      },
+      "n": 1
+    },
+    "stock_g2a1": {
+      "384": {
+        "all_meet_099": true,
+        "all_meet_0998": false,
+        "mean_qps": 1229.03125,
+        "mean_recall_at10": 0.99104202,
+        "qps_values": [
+          1229.03125
+        ],
+        "recall_at10_values": [
+          0.99104202
+        ]
+      },
+      "896": {
+        "all_meet_099": true,
+        "all_meet_0998": true,
+        "mean_qps": 563.66821289,
+        "mean_recall_at10": 0.99818897,
+        "qps_values": [
+          563.66821289
+        ],
+        "recall_at10_values": [
+          0.99818897
+        ]
+      },
+      "n": 1
+    },
+    "stock_sketch_locks": {
+      "384": {
+        "all_meet_099": true,
+        "all_meet_0998": false,
+        "mean_qps": 1227.85961914,
+        "mean_recall_at10": 0.99108899,
+        "qps_values": [
+          1227.85961914
+        ],
+        "recall_at10_values": [
+          0.99108899
+        ]
+      },
+      "896": {
+        "all_meet_099": true,
+        "all_meet_0998": true,
+        "mean_qps": 562.46557617,
+        "mean_recall_at10": 0.99820501,
+        "qps_values": [
+          562.46557617
+        ],
+        "recall_at10_values": [
+          0.99820501
+        ]
+      },
+      "n": 1
+    },
+    "stock_sketch_only": {
+      "384": {
+        "all_meet_099": true,
+        "all_meet_0998": false,
+        "mean_qps": 1225.07080078,
+        "mean_recall_at10": 0.99106097,
+        "qps_values": [
+          1225.07080078
+        ],
+        "recall_at10_values": [
+          0.99106097
+        ]
+      },
+      "896": {
+        "all_meet_099": true,
+        "all_meet_0998": true,
+        "mean_qps": 561.96917725,
+        "mean_recall_at10": 0.99818301,
+        "qps_values": [
+          561.96917725
+        ],
+        "recall_at10_values": [
+          0.99818301
+        ]
+      },
+      "n": 1
+    }
+  },
+  "per_slot": [
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_stock_g2a1/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.06830778499716,
+      "graph_sha256": "697a4048876cdd64e636718a75be6be24f94db941eb8168323740a80da9642c6",
+      "native_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 813.6489613262478,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1229.03125,
+          "raw_legacy_avg_cmps_untrusted": 16727.0,
+          "recall_at10": 0.99104202
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1774.0933001576768,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 563.66821289,
+          "raw_legacy_avg_cmps_untrusted": 4294955365.0,
+          "recall_at10": 0.99818897
+        }
+      },
+      "slot": "r1_stock_g2a1",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fada892af9055db3de291ee75acb43356e605941c1e9310df91b3ef54a43b805",
+      "threads_search": 1,
+      "time_sha256": "82914889deca2f893b675aaffe0a7c4c776b4606da40ebe956ea86c78e605940"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_stock_sketch_only/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.8590163570043,
+      "graph_sha256": "183dd204fdd3e053ab6d6c423b2353e080bc5b841b779e05e7abc27ae80905a6",
+      "native_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 816.2793524776708,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1225.07080078,
+          "raw_legacy_avg_cmps_untrusted": 16727.0,
+          "recall_at10": 0.99106097
+        },
+        "896": {
+          "avg_visited": 740.0,
+          "latency_us_proxy": 1779.4570244822087,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 561.96917725,
+          "raw_legacy_avg_cmps_untrusted": 4294955362.0,
+          "recall_at10": 0.99818301
+        }
+      },
+      "slot": "r1_stock_sketch_only",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4d078a627accbec5b4a48ffdab66bae03750775252b75e31e77dce62704dc7a5",
+      "threads_search": 1,
+      "time_sha256": "2a434f907640788af3055a756a62ae158d2818aedc8d62aeab213390912df121"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_stock_sketch_locks/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.558750158998,
+      "graph_sha256": "d20555f11f0be6780f6d1cf5b818f7ef7beb27237fceb281a544cc5444204342",
+      "native_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.4253499438363,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.85961914,
+          "raw_legacy_avg_cmps_untrusted": 16735.0,
+          "recall_at10": 0.99108899
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1777.886580738515,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.46557617,
+          "raw_legacy_avg_cmps_untrusted": 4294955375.0,
+          "recall_at10": 0.99820501
+        }
+      },
+      "slot": "r1_stock_sketch_locks",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6ecbde6f700d554ac555ceca1001b679a015b0e81604b285b46be0f189eeb0f7",
+      "threads_search": 1,
+      "time_sha256": "162a3817614e14baec36adf787a4a5d12ffa194db6cf08743c91aab708070d1e"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_fast_g2a1/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.516256461,
+      "graph_sha256": "f3dd250c0b883ddee058a561f5930f22b778847d3b25166522dad300b7b66488",
+      "native_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.9301733589804,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.09899902,
+          "raw_legacy_avg_cmps_untrusted": 16721.0,
+          "recall_at10": 0.99102497
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1776.9621799051968,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.75817871,
+          "raw_legacy_avg_cmps_untrusted": 4294955358.0,
+          "recall_at10": 0.99815202
+        }
+      },
+      "slot": "r1_fast_g2a1",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "67f72b6eabb5090bd5f7510c746c74ec9c7427110986dd51ef102972f30a054e",
+      "threads_search": 1,
+      "time_sha256": "a5004c59201948ee030fb575d52877b53dc8b29754fceb4e965afd08a6861b57"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_fast_sketch_only/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.62962512599915,
+      "graph_sha256": "1026c9087ec630cc47fb4c85db717c5907ad17b6f9a97a0b5bbe972c9b21e156",
+      "native_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 817.993296289314,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1222.50390625,
+          "raw_legacy_avg_cmps_untrusted": 16728.0,
+          "recall_at10": 0.99107099
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1775.315529169309,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 563.28015137,
+          "raw_legacy_avg_cmps_untrusted": 4294955371.0,
+          "recall_at10": 0.99818599
+        }
+      },
+      "slot": "r1_fast_sketch_only",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "359cb6a56ff63f2094f77af7fb7d9f5b55cb66a27f845a145c8db646b1e1b606",
+      "threads_search": 1,
+      "time_sha256": "b35c232add3920f93c9f44293386adfa0686edaee83eb91699ffcc23ad000266"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_fast_sketch_locks/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.5233581259963,
+      "graph_sha256": "b054776e8e8d2e55260ddc8c8aaf905e4e2dfb4a935c9a5521990de5a3923fbe",
+      "native_evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 816.0133048444284,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1225.47021484,
+          "raw_legacy_avg_cmps_untrusted": 16734.0,
+          "recall_at10": 0.99102998
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1776.4103889599871,
+          "legacy_avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.9329834,
+          "raw_legacy_avg_cmps_untrusted": 4294955373.0,
+          "recall_at10": 0.99817699
+        }
+      },
+      "slot": "r1_fast_sketch_locks",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "720f455ae794772e2066ca8c6bbee329c539c3a15b1e6bf87777e47e40e3071e",
+      "threads_search": 1,
+      "time_sha256": "3c5b816bbe23960c5f69f7dcbb1cb6032256fb21688b4ce74e1f5a1a28ca69f8"
+    }
+  ],
+  "source_summary_sha256": "b8792fc973f8a31b91dea2bf554dd77efd60713cbda36f495e08a3a60cf953fe",
+  "status": "FIXED_BEAM_100K_QUERY_QUALITY_SCREEN_PASS_NOT_MATCHED_RECALL"
+}

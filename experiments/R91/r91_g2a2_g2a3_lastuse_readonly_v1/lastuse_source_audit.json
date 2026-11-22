@@ -1,0 +1,370 @@
+{
+  "candidate_g2a2": {
+    "danger": "Must modify code for release and prove no later reference to H, locks. Do not destroy H reference object prematurely.",
+    "release_not_performed": true,
+    "sequence": "After all C.multiple_clustertrees complete, before G.allocate_graph/ExportToGraph. Audit SketchHash relative_hash last use, LSHGraph locks last mutation, and no references alive in async tasks before releasing storage.",
+    "sketch_data_logical_bytes_10m": 480000000,
+    "sketch_data_logical_bytes_1m": 48000000
+  },
+  "candidate_g2a3": {
+    "current_storage": "Single contiguous aligned_alloc graph candidate reservoir, cannot free arbitrary row or subblock.",
+    "options": [
+      "Chunk-owned allocations with per-block free AFTER barrier, if algorithm dataflow permits",
+      "Page-aligned madvise(MADV_DONTNEED) on fully consumed prefixes AFTER completed, barrier-separated prune blocks, only if no later reservoir access"
+    ],
+    "preconditions": [
+      "Audit robustPrune internal accesses and G output writes, plus cross-row reachability",
+      "Barrier-separated block consumption; no readers or writers of reclaimed pages",
+      "Proper alignment, THP effects, cgroup sampled profile; stress graph equivalence and 4CPU quality",
+      "Test at 100K/1M with immutable baseline before large 10M"
+    ],
+    "release_not_performed": true
+  },
+  "created_utc": "2026-11-21T16:59:46.583821+00:00",
+  "memory_evidence": {
+    "slots": [
+      {
+        "anon_at_first_graph_file_bytes": 2093506560,
+        "cgroup_peak_bytes": 3427323904,
+        "first_graph_file_size_bytes": 215478596,
+        "graph_arcs": 52869647,
+        "maxrss_cgroup_gap_bytes": 236015616,
+        "maxrss_kib": 3116512,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "original",
+        "sampled_peak_anon_bytes": 2689789952,
+        "sampled_peak_file_bytes": 215506944,
+        "slot": "r1_fast_original"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 1677750272,
+        "cgroup_peak_bytes": 2679451648,
+        "first_graph_file_size_bytes": 4000008,
+        "graph_arcs": 52877257,
+        "maxrss_cgroup_gap_bytes": 13357056,
+        "maxrss_kib": 2603608,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "patched",
+        "sampled_peak_anon_bytes": 2673094656,
+        "sampled_peak_file_bytes": 215535616,
+        "slot": "r1_fast_patched"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 3083788288,
+        "cgroup_peak_bytes": 3441897472,
+        "first_graph_file_size_bytes": 4000008,
+        "graph_arcs": 52873497,
+        "maxrss_cgroup_gap_bytes": 236150784,
+        "maxrss_kib": 3130612,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "original",
+        "sampled_peak_anon_bytes": 3083788288,
+        "sampled_peak_file_bytes": 215523328,
+        "slot": "r1_stock_original"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 1917411328,
+        "cgroup_peak_bytes": 2710970368,
+        "first_graph_file_size_bytes": 215543208,
+        "graph_arcs": 52885800,
+        "maxrss_cgroup_gap_bytes": 13766656,
+        "maxrss_kib": 2633988,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "patched",
+        "sampled_peak_anon_bytes": 2704449536,
+        "sampled_peak_file_bytes": 215572480,
+        "slot": "r1_stock_patched"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 3180036096,
+        "cgroup_peak_bytes": 3431321600,
+        "first_graph_file_size_bytes": 4000008,
+        "graph_arcs": 52862295,
+        "maxrss_cgroup_gap_bytes": 235778048,
+        "maxrss_kib": 3120648,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "original",
+        "sampled_peak_anon_bytes": 3180036096,
+        "sampled_peak_file_bytes": 215478272,
+        "slot": "r2_fast_original"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 1599897600,
+        "cgroup_peak_bytes": 2693193728,
+        "first_graph_file_size_bytes": 4000008,
+        "graph_arcs": 52855317,
+        "maxrss_cgroup_gap_bytes": 13737984,
+        "maxrss_kib": 2616656,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "patched",
+        "sampled_peak_anon_bytes": 2686623744,
+        "sampled_peak_file_bytes": 215449600,
+        "slot": "r2_fast_patched"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 3207139328,
+        "cgroup_peak_bytes": 3435982848,
+        "first_graph_file_size_bytes": 96468992,
+        "graph_arcs": 52846953,
+        "maxrss_cgroup_gap_bytes": 236007424,
+        "maxrss_kib": 3124976,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "original",
+        "sampled_peak_anon_bytes": 3207139328,
+        "sampled_peak_file_bytes": 215416832,
+        "slot": "r2_stock_original"
+      },
+      {
+        "anon_at_first_graph_file_bytes": 1919291392,
+        "cgroup_peak_bytes": 2710474752,
+        "first_graph_file_size_bytes": 46137344,
+        "graph_arcs": 52861367,
+        "maxrss_cgroup_gap_bytes": 13524992,
+        "maxrss_kib": 2633740,
+        "memory_events_delta": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "original_or_patched": "patched",
+        "sampled_peak_anon_bytes": 2704183296,
+        "sampled_peak_file_bytes": 215474176,
+        "slot": "r2_stock_patched"
+      }
+    ],
+    "warnings": [
+      "cgroup peak, GNU time maxrss, file/anon maxima may occur at different instants",
+      "first graph file observation is NOT exact timestamp for G.save and is sample-interval sensitive",
+      "No malloc trace or strong causal attribution to edge_data vs flattened data",
+      "Do not extrapolate observed 1M savings to 10M or promise memory.events.max zero."
+    ]
+  },
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "no_source_modified": true,
+  "provenance": {
+    "1m_preflight_sha256": "958ebec86e7394ac47ff688776b36a0bbde7f30ceab048ab0fbd571f503415af",
+    "1m_summary_sha256": "f0fabe9c77ddfefc13e7e5022a7e776904ebdcabf5e17c9ea2679dcb41e43ace",
+    "source": {
+      "fast_off": {
+        "graph.h": {
+          "git_blob_sha1": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/utils/graph.h",
+          "sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+          "size_bytes": 32500
+        },
+        "hash.h": {
+          "git_blob_sha1": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/utils/hash.h",
+          "sha256": "eca6131674ca2d5d11724ed72ccc7beb44ffde096ee5cec8209a79a8cb6fc481",
+          "size_bytes": 8452
+        },
+        "neighbors.h": {
+          "git_blob_sha1": "877e087da7cf362d547d75f1393dfb3737d4e303",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/PipNN/neighbors.h",
+          "sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+          "size_bytes": 4149
+        },
+        "pipnn.h": {
+          "git_blob_sha1": "f357626cbf9ece485e913934f928f2c26d8db919",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/PipNN/pipnn.h",
+          "sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+          "size_bytes": 25499
+        }
+      },
+      "stock_off": {
+        "graph.h": {
+          "git_blob_sha1": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/utils/graph.h",
+          "sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+          "size_bytes": 32500
+        },
+        "hash.h": {
+          "git_blob_sha1": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/utils/hash.h",
+          "sha256": "eca6131674ca2d5d11724ed72ccc7beb44ffde096ee5cec8209a79a8cb6fc481",
+          "size_bytes": 8452
+        },
+        "neighbors.h": {
+          "git_blob_sha1": "877e087da7cf362d547d75f1393dfb3737d4e303",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/PipNN/neighbors.h",
+          "sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+          "size_bytes": 4149
+        },
+        "pipnn.h": {
+          "git_blob_sha1": "f357626cbf9ece485e913934f928f2c26d8db919",
+          "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/PipNN/pipnn.h",
+          "sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+          "size_bytes": 25499
+        }
+      }
+    }
+  },
+  "source_evidence": {
+    "source": {
+      "build_to_save": [
+        {
+          "line": 75,
+          "needle": "I.build_index(",
+          "text": "72:\n73:  findex I;\n74:  // Note, we need to allocate G internally.\n75:  I.build_index(G, P, Points, BP.num_clusters, BP.cluster_size, BP.MST_deg,\n76:                prune, prune_all, alpha,\n77:                prune_degree,\n78:                top_level_leaders, BP.fanout, fanout_per_level,\n79:                fraction_leaders, fanout_scheme, Hsize, table_size,\n80:                no_reservoir, fixed_num_leaders);"
+        },
+        {
+          "line": 86,
+          "needle": "G.save(oFile);",
+          "text": "83:  char* oFile = P.getOptionValue(\"-graph_outfile\");\n84:  if (oFile != nullptr) {\n85:    std::cout << \"Writing graph to \" << oFile << std::endl;\n86:    G.save(oFile);\n87:  }\n88:\n89:  // Below is query stuff.\n90:  std::string name = \"PiPNN\";\n91:  std::string params = \"Trees = \" + std::to_string(BP.num_clusters);"
+        }
+      ],
+      "cluster_last_use_candidates": [
+        {
+          "line": 655,
+          "needle": "C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);",
+          "text": "652:    }\n653:    std::cout << std::endl;\n654:\n655:    C.multiple_clustertrees(graph_h, Points, cluster_size, cluster_rounds);\n656:#if defined(R86_COUNTERS) && R86_COUNTERS\n657:    r86::set_active_pass(0);\n658:    r86::declare_metric(r86::Metric::prune_distance_calls);\n659:#endif\n660:"
+        },
+        {
+          "line": 663,
+          "needle": "G.allocate_graph(prune_degree, Points.size());",
+          "text": "660:\n661:    // Export the edges from the hashgraph into G.\n662:    std::cout << \"Allocating graph, prune_degree = \" << prune_degree << std::endl;\n663:    G.allocate_graph(prune_degree, Points.size());\n664:    assert(G.max_degree() == prune_degree);\n665:    ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);\n666:#if defined(R86_COUNTERS) && R86_COUNTERS\n667:    r86::dump_jsonl_from_env();\n668:#endif"
+        },
+        {
+          "line": 665,
+          "needle": "ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);",
+          "text": "662:    std::cout << \"Allocating graph, prune_degree = \" << prune_degree << std::endl;\n663:    G.allocate_graph(prune_degree, Points.size());\n664:    assert(G.max_degree() == prune_degree);\n665:    ExportToGraph(graph_h, P, G, Points, prune_all, prune_degree, alpha);\n666:#if defined(R86_COUNTERS) && R86_COUNTERS\n667:    r86::dump_jsonl_from_env();\n668:#endif\n669:    std::cout << \"Average distance traversed: \" << (dist_traversed.load() / Points.size()) << std::endl;\n670:  }"
+        }
+      ],
+      "contiguous_storage": [
+        {
+          "line": 414,
+          "needle": "tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);",
+          "text": "411:    locks = new absl::Mutex[n];\n412:    constexpr size_t ALIGNMENT = 1L << 21;\n413:    size_t num_bytes = ((kMaxDegree+1)*n*sizeof(T));\n414:    tables = (T*) aligned_alloc(ALIGNMENT, num_bytes);\n415:    madvise(tables, num_bytes, MADV_HUGEPAGE);\n416:    std::cout << \"Allocating: \" << ((kMaxDegree+1)*n*sizeof(T)) << \" bytes of space for the candidates lists.\" << std::endl;\n417:    std::cout << \"Sizeof T = \" << sizeof(T) << std::endl;\n418:    std::cout << tables[0].first << std::endl;\n419:    std::cout << \"Table size = \" << tables << std::endl;"
+        },
+        {
+          "line": 701,
+          "needle": "return tables[i * (kMaxDegree + 1)].point_id;",
+          "text": "698:  }\n699:\n700:  indexType &degree(size_t i) {\n701:    return tables[i * (kMaxDegree + 1)].point_id;\n702:  }\n703:\n704:  Eigen::bfloat16 &get_furthest(size_t i) {\n705:    return tables[i * (kMaxDegree + 1)].norm;\n706:  }"
+        }
+      ],
+      "locks_lifetime": [
+        {
+          "line": 202,
+          "needle": "locks = new absl::Mutex[n];",
+          "text": "199:      graph = std::shared_ptr<indexType[]>(ptr, parlay::p_free);\n200:    }\n201:    parlay::parallel_for(0, cnt, [&] (long i) {ptr[i] = 0;});\n202:    locks = new absl::Mutex[n];\n203:  }\n204:\n205:  Graph(long maxDeg, size_t n) : maxDeg(maxDeg), n(n) {\n206:    allocate_graph(maxDeg, n);\n207:  }"
+        },
+        {
+          "line": 371,
+          "needle": "locks[i].Lock();",
+          "text": "368:\n369:  template<typename rangeType>\n370:  void merge_neighbors(size_t i, const rangeType& r) {\n371:    locks[i].Lock();\n372:    // Assuming 'r' contains tuples, use structured bindings\n373:    for (const auto& [point_id, norm] : r) {\n374:      // Construct a Neighbor on the fly for insertion\n375:      tables[i].insert({point_id, norm});\n376:    }"
+        },
+        {
+          "line": 1010,
+          "needle": "~LSHGraph(){}",
+          "text": "1007:\n1008:  void finalize() {}\n1009:\n1010:  ~LSHGraph(){}\n1011:\n1012:  size_t n;\n1013:  absl::Mutex* locks;\n1014:  T* tables;\n1015:  sketchHash &H;"
+        },
+        {
+          "line": 548,
+          "needle": "parlay::parallel_for(0, Points.size()",
+          "text": "545:    //create LSH table\n546:    //auto H = SimHash<Point, PR, indexType>(12, Points.dimension());\n547:\n548:    parlay::parallel_for(0, Points.size(), [&](size_t i) {\n549:      if (prune_all || graph.degree(i) > prune_degree) {\n550:        utils::robustPrune(graph.Neighbors(i), i, Points, G, alpha, prune_degree);\n551:\n552:      } else {\n553:        for (auto ngh : graph.Neighbors(i)) {"
+        }
+      ],
+      "save_footprint": [
+        {
+          "line": 242,
+          "needle": "size_t BLOCK_SIZE = 1000000;",
+          "text": "239:    allocate_graph(max_deg, n);\n240:\n241:    //write 1000000 vertices at a time\n242:    size_t BLOCK_SIZE = 1000000;\n243:    size_t index = 0;\n244:    size_t total_size_read = 0;\n245:    while(index < n){\n246:      size_t g_floor = index;\n247:      size_t g_ceiling = g_floor + BLOCK_SIZE <= n ? g_floor + BLOCK_SIZE : n;"
+        },
+        {
+          "line": 285,
+          "needle": "auto edge_data = parlay::tabulate",
+          "text": "282:    while(index < n){\n283:      size_t floor = index;\n284:      size_t ceiling = index + BLOCK_SIZE <= n ? index + BLOCK_SIZE : n;\n285:      auto edge_data = parlay::tabulate(ceiling - floor, [&] (size_t i){\n286:        return parlay::tabulate(sizes[i + floor], [&] (size_t j){\n287:          return (*this)[i + floor][j];});\n288:      });\n289:      parlay::sequence<indexType> data = parlay::flatten(edge_data);\n290:      writer.write((char*)data.begin(), data.size() * sizeof(indexType));"
+        },
+        {
+          "line": 289,
+          "needle": "parlay::sequence<indexType> data = parlay::flatten(edge_data);",
+          "text": "286:        return parlay::tabulate(sizes[i + floor], [&] (size_t j){\n287:          return (*this)[i + floor][j];});\n288:      });\n289:      parlay::sequence<indexType> data = parlay::flatten(edge_data);\n290:      writer.write((char*)data.begin(), data.size() * sizeof(indexType));\n291:      index = ceiling;\n292:    }\n293:    writer.close();\n294:  }"
+        }
+      ],
+      "sketch_lifetime": [
+        {
+          "line": 584,
+          "needle": "SketchHash<Point, PointRange, indexType> H(",
+          "text": "581:                    << \"Using 16 bits instead of \" << Hsize << std::endl;\n582:        Hsize = 16;\n583:        }\n584:        SketchHash<Point, PointRange, indexType> H(Hsize, Points.dimension(),Points);\n585:        ht.next(\"SketchHash construction time\");\n586:        ht.stop();\n587:        //get size of H in bytes\n588:        size_t h_size = H.get_total_size_in_bytes();\n589:        std::cout << \"Size of SketchHash (bytes): \" << h_size << std::endl;"
+        },
+        {
+          "line": 605,
+          "needle": "R70GraphStorage lsh_graph(",
+          "text": "602:#else\n603:        std::cout << \"R71_SELECTION_VARIANT=STOCK_HIGHWAY\" << std::endl;\n604:#endif\n605:        R70GraphStorage lsh_graph(Points.size(), (size_t)table_size, H, /*allocate=*/false);\n606:        build_index_impl(G, P, Points, cluster_rounds, cluster_size, MSTDeg, prune, prune_all, alpha, prune_degree, top_level_leaders, fanout, fanout_per_level, fraction_leaders, fanout_scheme, Hsize, table_size, lsh_graph, fixed_num_leaders);\n607:    }\n608:  }\n609:\n610:  template<typename GraphH>"
+        },
+        {
+          "line": 809,
+          "needle": "H.relative_hash(i, pid)",
+          "text": "806:#if defined(R86_COUNTERS) && R86_COUNTERS\n807:    ++work.hash_compute;\n808:#endif\n809:    const uint16_t cand_hash = static_cast<uint16_t>(H.relative_hash(i, pid));\n810:\n811:    T* pos_ptr = std::lower_bound(begin, end, cand_hash, cmp);\n812:    size_t pos = static_cast<size_t>(pos_ptr - begin);\n813:\n814:    // Hash collision: keep nearer"
+        },
+        {
+          "line": 178,
+          "needle": "sketch_data = std::shared_ptr<distanceType[]>(ptr, std::free);",
+          "text": "175:            total_bytes = (total_bytes + ALIGNMENT - 1) & ~(ALIGNMENT - 1);\n176:            distanceType* ptr = (distanceType*) aligned_alloc(ALIGNMENT, total_bytes);\n177:            madvise(ptr, total_bytes, MADV_HUGEPAGE);\n178:            sketch_data = std::shared_ptr<distanceType[]>(ptr, std::free);\n179:            parlay::parallel_for(0,n,[&] (size_t i) {\n180:                for (auto j = 0; j < num_hashes; ++j) {\n181:                    sketch_data[(i*num_hashes)+j] = sketch(Points[i],j);\n182:                }\n183:            });"
+        }
+      ]
+    }
+  },
+  "status": "R91_G2A2_G2A3_READONLY_SOURCE_ANCHORS_PASS_PATCH_NOT_PROVEN"
+}

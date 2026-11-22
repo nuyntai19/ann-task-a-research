@@ -1,0 +1,125 @@
+{
+  "ann_build_rerun": false,
+  "ann_search_run": false,
+  "builder_wall_external_s": 370.019,
+  "cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_peak_bytes": 22163161088,
+  "graph": {
+    "arcs": 540770561,
+    "bytes": 2203082252,
+    "degree_cap": 64,
+    "duplicate_rows": 0,
+    "full_audit": true,
+    "invalid_id_rows": 0,
+    "max_degree": 64,
+    "nodes": 10000000,
+    "selfloop_rows": 0,
+    "sha256": "80abfaf9dd6232d004db497aa7fd086c93721939d3c5b568a9a5087a186af47a"
+  },
+  "historical_reference": {
+    "note": "Old 10M G1 fast/stock graph hashes only validated at preflight; no 10M G2A3 result until native pilot.",
+    "old_fast_build_status": "NATIVE_1_OF_1_10M_BUILD_AND_FULL_GRAPH_STRUCTURE_PASS_NO_SWAP",
+    "old_fast_cgroup_peak_bytes": null,
+    "old_fast_max_events": 345,
+    "old_fast_max_rss_kib": 23836432,
+    "old_stock_cgroup_peak_bytes": 25769680896,
+    "old_stock_max_events": 333,
+    "old_stock_max_rss_kib": 23783148,
+    "pins": {
+      "data_10m_base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "data_10m_gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "data_10m_queries": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+      "elf_fast_lazy_reclaim": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+      "g2a3_1m_build": "ad9ef6e52da30ff35eaf5d1cc9ff1dcbc6d5b78aadd76c9cc13da7f4ed006d2f",
+      "g2a3_1m_manifest": "da127568cc61f8148518d5d82654ed289cb465b970028fbb8696251708246994",
+      "g2a3_1m_quality": "4f906de4623ac4668912066fa195b6ac5fdeca43d6e1f93ebcc153391f2ae48c",
+      "g2a3_audit_source": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+      "g2a3_compiler": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+      "g2a3_patch_source": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e",
+      "historical_fast_g1_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "historical_fast_g1_summary": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "historical_stock_g1_graph": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+      "historical_stock_g1_summary": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6"
+    }
+  },
+  "historical_v1_HOLD_reason": "RuntimeError('R91_G2A3_MST10M_FAST_LAZY_RECLAIM_NATIVE_V1_HOLD_GNU_TIME_FAILURE_SWAP_OR_MAJORFAULTS')",
+  "historical_v1_receipt_status": "R91_G2A3_MST10M_FAST_LAZY_RECLAIM_NATIVE_V1_HOLD_PRESERVE_OUTPUTS",
+  "historical_v1_scope_exit_code": 2,
+  "log_sha256": {
+    "memory_monitor.tsv": "99092a58bd29a6e7a51482cbc00adce4293db2778c8556b529c10c4a71325bf5",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "5f6a6e755abc93d2b1aa9298318760d7dae38c1a38f4c18de3fe37599235844f",
+    "native.time": "5f41f837920de50fe50c84b6edc14c0b2882f4f59aec9d64737d06de4421ae69"
+  },
+  "max_sampled_swap_bytes": 0,
+  "monitor": {
+    "anon_at_sampled_peak_bytes": 22021328896,
+    "final_graph_file_sample_bytes": 2203082252,
+    "first_positive_graph_file_sample_epoch": 1795352796.2508545,
+    "max_sampled_anon_bytes": 22021328896,
+    "max_sampled_file_bytes": 2203975680,
+    "max_sampled_swap_bytes": 0,
+    "sampled_memory_current_peak_bytes": 22066618368,
+    "sampled_peak_epoch": 1795352577.1308055,
+    "samples": 2458
+  },
+  "native_stage_times_from_stdout": {
+    "Final_prune_time": {
+      "expected": 1,
+      "observed": 1,
+      "seconds": [
+        63.7348
+      ],
+      "total_seconds": 63.7348
+    },
+    "buckets_time": {
+      "expected": 2,
+      "observed": 2,
+      "seconds": [
+        71.7047,
+        73.1547
+      ],
+      "total_seconds": 144.8594
+    },
+    "build_leaf_time": {
+      "expected": 2,
+      "observed": 2,
+      "seconds": [
+        74.4437,
+        82.2811
+      ],
+      "total_seconds": 156.72480000000002
+    }
+  },
+  "original_build_receipt_sha256": "4fc9740e5acd182885f74c52fe83e1e0575fa48cf36584d70d025544bdebe6a3",
+  "original_builder_script_sha256": "cfffd1db0e65c9a7a928e1ac47c59a110c91a42b1383f5a4cfb3bd82869b94cf",
+  "original_v1_modified": false,
+  "preflight_sha256": "b219c2b9d2e327ee599195e668d7b2eb0728a7d1aafa9ea1964b04af3e82f5fc",
+  "reclassified_policy_issue": "One-time exception: 23 GNU major file page faults are not swap; original v1 demanded zero, all other safety gates remain zero.",
+  "remaining_evidence_gaps": [
+    "10M Recall@10/QPS exactguard search",
+    "10M matched Recall latency",
+    "10M same-session G2A2 baseline",
+    "10M Stock G2A3 build",
+    "Independent full memory phase telemetry analysis"
+  ],
+  "run_request_sha256": "1d62d04fcdd869c36f2d1b6b7215dca683c294892a49f62d1748562648b15316",
+  "scope_result_sha256": "f8dfff284432cb04d557d48704e413541328e3e2b6713a505ed2a761b756b0e5",
+  "status": "R91_G2A3_MST10M_MAJORFAULT23_FORENSIC_V1_ONE_TIME_NONSWAP_MAJORFAULT23_RECOVERED_FULL_GRAPH_AUDIT_PASS_ORIGINAL_V1_HOLD_PRESERVED",
+  "swap_final_bytes": 0,
+  "time_metrics": {
+    "exit_status": 0,
+    "major_faults": 23,
+    "rss_kib": 21594860,
+    "swaps": 0,
+    "wall_seconds": 370.0
+  }
+}

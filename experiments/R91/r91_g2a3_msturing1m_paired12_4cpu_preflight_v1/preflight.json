@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-11-22T11:00:32.162673+00:00",
+  "inputs": {
+    "cpu_set": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "dataset_dim": 100,
+    "dataset_file": "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "dataset_n": 1000000,
+    "dataset_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "disk_free_bytes": 29924921344,
+    "elfs": {
+      "fast_g2a2": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_locks/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "bb31c04045bc078c8446582259c2dda2f7a247b3f9a968e30f57c64b0026f332"
+      },
+      "fast_lazy_only": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_only/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "efd62b1288904ad3a8ef80b9f42e7dac0d640c01648fa65001901430b13f9d99"
+      },
+      "fast_lazy_reclaim": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3"
+      },
+      "stock_g2a2": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_locks/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "2844e8dd0d4ffdf0393886ad6edaad2ad679114b2692a6594dc9fb230a78c99b"
+      },
+      "stock_lazy_only": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_only/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "e6cb009aedee92ae23de184a8f0f944cab61280778f7532aaf80f8ea6fdd4e04"
+      },
+      "stock_lazy_reclaim": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "52e0406e0835ad30c83a4aedab2dedf7dd9f01b6a6a20e3add42f1c4ea54b4cc"
+      }
+    },
+    "flags": [
+      "-num_clusters",
+      "2",
+      "-cluster_size",
+      "1024",
+      "-table_size",
+      "160",
+      "-top_level_leaders",
+      "100",
+      "-fanout_scheme",
+      "10,3,1",
+      "-mst_deg",
+      "2",
+      "-prune",
+      "1",
+      "-prune_all",
+      "1",
+      "-prune_degree",
+      "64",
+      "-hash_bits",
+      "12",
+      "-alpha",
+      "1.1",
+      "-k",
+      "0"
+    ],
+    "memory_max_bytes": 25769803776,
+    "ram_available_bytes": 29456211968,
+    "slots": [
+      "r1_stock_g2a2",
+      "r1_stock_lazy_only",
+      "r1_stock_lazy_reclaim",
+      "r1_fast_g2a2",
+      "r1_fast_lazy_only",
+      "r1_fast_lazy_reclaim",
+      "r2_fast_lazy_reclaim",
+      "r2_fast_lazy_only",
+      "r2_fast_g2a2",
+      "r2_stock_lazy_reclaim",
+      "r2_stock_lazy_only",
+      "r2_stock_g2a2"
+    ],
+    "source_provenance": {
+      "baseline_100k_graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+      "prior_sha256": {
+        "g2a2_1m_pre": "877a21fa7cf575952044cd289edeaa15d69a6307b87347e2d5eee1bdfcbaab85",
+        "g2a2_1m_sum": "b8792fc973f8a31b91dea2bf554dd77efd60713cbda36f495e08a3a60cf953fe",
+        "g2a2_full_quality": "0d14aa0c9a19b5f3947dee7b42d285e0133f3fceee9d0034928441606fd2bf40",
+        "g2a3_100k_pre": "7fc353696fdb4b5550c53416b1399a048ce0631a148835833d26a63cba7972e6",
+        "g2a3_100k_sum": "ac43d4b599acd882ab1a055727237ad362e0240d3704b96839c739245129543a",
+        "g2a3_comp_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+        "g2a3_comp_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+        "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+      }
+    },
+    "swap_max_bytes": 0,
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "LC_ALL": "C",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "no_existing_outputs_modified": true,
+  "source_ref_pins": {
+    "g2a2_1m_pre": "877a21fa7cf575952044cd289edeaa15d69a6307b87347e2d5eee1bdfcbaab85",
+    "g2a2_1m_sum": "b8792fc973f8a31b91dea2bf554dd77efd60713cbda36f495e08a3a60cf953fe",
+    "g2a2_full_quality": "0d14aa0c9a19b5f3947dee7b42d285e0133f3fceee9d0034928441606fd2bf40",
+    "g2a3_100k_pre": "7fc353696fdb4b5550c53416b1399a048ce0631a148835833d26a63cba7972e6",
+    "g2a3_100k_sum": "ac43d4b599acd882ab1a055727237ad362e0240d3704b96839c739245129543a",
+    "g2a3_comp_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+    "g2a3_comp_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+    "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+  },
+  "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_PREFLIGHT_PASS_TWELVE_4CPU_BUILDS"
+}

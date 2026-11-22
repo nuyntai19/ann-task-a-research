@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-11-22T09:57:52.915801+00:00",
+  "inputs": {
+    "cpu_set": [
+      0
+    ],
+    "dataset_dim": 128,
+    "dataset_file": "/home/tai/ann-task-a/data/sift100k.fbin",
+    "dataset_n": 100000,
+    "dataset_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "disk_free_bytes": 29989244928,
+    "elfs": {
+      "fast_lazy_only": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_only/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "efd62b1288904ad3a8ef80b9f42e7dac0d640c01648fa65001901430b13f9d99"
+      },
+      "fast_lazy_reclaim": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3"
+      },
+      "stock_lazy_only": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_only/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "e6cb009aedee92ae23de184a8f0f944cab61280778f7532aaf80f8ea6fdd4e04"
+      },
+      "stock_lazy_reclaim": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "52e0406e0835ad30c83a4aedab2dedf7dd9f01b6a6a20e3add42f1c4ea54b4cc"
+      }
+    },
+    "flags": [
+      "-num_clusters",
+      "2",
+      "-cluster_size",
+      "1024",
+      "-table_size",
+      "160",
+      "-top_level_leaders",
+      "100",
+      "-fanout_scheme",
+      "10,3,1",
+      "-mst_deg",
+      "2",
+      "-prune",
+      "1",
+      "-prune_all",
+      "1",
+      "-prune_degree",
+      "64",
+      "-hash_bits",
+      "12",
+      "-alpha",
+      "1.1",
+      "-k",
+      "0"
+    ],
+    "memory_max_bytes": 25769803776,
+    "ram_available_bytes": 29331816448,
+    "slots": [
+      "r1_stock_lazy_only",
+      "r1_stock_lazy_reclaim",
+      "r1_fast_lazy_only",
+      "r1_fast_lazy_reclaim",
+      "r2_fast_lazy_reclaim",
+      "r2_fast_lazy_only",
+      "r2_stock_lazy_reclaim",
+      "r2_stock_lazy_only"
+    ],
+    "source_provenance": {
+      "frozen_g2a2_onecpu_graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+      "g2a3_elfs": {
+        "fast_lazy_only": "efd62b1288904ad3a8ef80b9f42e7dac0d640c01648fa65001901430b13f9d99",
+        "fast_lazy_reclaim": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+        "stock_lazy_only": "e6cb009aedee92ae23de184a8f0f944cab61280778f7532aaf80f8ea6fdd4e04",
+        "stock_lazy_reclaim": "52e0406e0835ad30c83a4aedab2dedf7dd9f01b6a6a20e3add42f1c4ea54b4cc"
+      },
+      "ref_sha256": {
+        "g2a1_pre": "05b732c888810ddb3fcb7e45a20bb73f7b17a676da6c0412573157834483176b",
+        "g2a1_sum": "e6a24ae2e822bf5392457dc4cf82230081d8b49c6627e772d48f95b63040eea2",
+        "g2a2_pre": "9c8e5f1d0a3d4c4011882564985de7a31c067cbf6e699203688ee59fbabd2d93",
+        "g2a2_sum": "34d382e9f88e2e55ccd6eaff952db6febcb107c937630df6326fa541512cc97a",
+        "g2a3_audit": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+        "g2a3_compile_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+        "g2a3_compile_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+        "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+      }
+    },
+    "swap_max_bytes": 0,
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "LC_ALL": "C",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "no_existing_outputs_modified": true,
+  "source_ref_pins": {
+    "g2a1_pre": "05b732c888810ddb3fcb7e45a20bb73f7b17a676da6c0412573157834483176b",
+    "g2a1_sum": "e6a24ae2e822bf5392457dc4cf82230081d8b49c6627e772d48f95b63040eea2",
+    "g2a2_pre": "9c8e5f1d0a3d4c4011882564985de7a31c067cbf6e699203688ee59fbabd2d93",
+    "g2a2_sum": "34d382e9f88e2e55ccd6eaff952db6febcb107c937630df6326fa541512cc97a",
+    "g2a3_audit": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+    "g2a3_compile_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+    "g2a3_compile_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+    "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+  },
+  "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_PREFLIGHT_PASS_ONECPU_EIGHT_NEW_BUILDS"
+}

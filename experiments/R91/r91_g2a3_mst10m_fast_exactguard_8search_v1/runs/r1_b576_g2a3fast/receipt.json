@@ -1,0 +1,191 @@
+{
+  "arm": "g2a3fast",
+  "at_epoch": 1795354597.3495185,
+  "beam": 576,
+  "cgroup_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "cgroup_peak_bytes": 7810883584,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a3_mst10m_fast_exactguard_8search_v1/runs/r1_b576_g2a3fast/native.time",
+    "taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a3_mst10m_fast_pilot_v1/fast/graph.bin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+    "576"
+  ],
+  "error": null,
+  "evaluator_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "graph_sha256": "80abfaf9dd6232d004db497aa7fd086c93721939d3c5b568a9a5087a186af47a",
+  "log_shas": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "e4fe615a6a7f6649742cd736d62ee98ad680bd850d8ac9528b4fcfbe20e05c3b",
+    "native.time": "c0e4082cfef10d4c77e8ef72261b46c201ea5931e99f8744aac8eec5522833dc"
+  },
+  "metrics": {
+    "average_latency_proxy_us_NOT_P95": 1233.785666194917,
+    "avg_cmps_legacy_untrusted": null,
+    "avg_visited": 474.0,
+    "beam": 576,
+    "meets_threshold": true,
+    "qps": 810.5135498,
+    "recall_at10": 0.991225
+  },
+  "native_exit_code": 0,
+  "plan": {
+    "beams": [
+      576,
+      1792
+    ],
+    "cgroup_memory_max_bytes": 25769803776,
+    "cgroup_swap_max_bytes": 0,
+    "commands": {
+      "1792_g1fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "1792"
+      ],
+      "1792_g2a3fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a3_mst10m_fast_pilot_v1/fast/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "1792"
+      ],
+      "576_g1fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1_one_fastv2_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_fast_off_C160_K1024_N2.graph",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "576"
+      ],
+      "576_g2a3fast": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a3_mst10m_fast_pilot_v1/fast/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+        "576"
+      ]
+    },
+    "cpu": 0,
+    "env": {
+      "LC_ALL": "C",
+      "OMP_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "1"
+    },
+    "no_ann_build": true,
+    "no_graph_mutation": true,
+    "nqueries": 100000,
+    "pins": {
+      "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "eval_receipt": "79373da654e102c9a115eb63bd1aca7937f1349d4a289c181bd9befd27b69f62",
+      "evaluator": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+      "forensic": "c2bbc815d205d358dc5983c1b8b5b7903365f6692f4154e9dcc4f62a749cd576",
+      "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "hold_receipt": "4fc9740e5acd182885f74c52fe83e1e0575fa48cf36584d70d025544bdebe6a3",
+      "new_graph": "80abfaf9dd6232d004db497aa7fd086c93721939d3c5b568a9a5087a186af47a",
+      "old_calibration": "e534316cfbe0a2ddd8a7b7d73b6ad5d114930f8929db379d17b8692235e7e13e",
+      "old_fast_result": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "old_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+    },
+    "purpose": "FIXEDBEAM_RECALL_AND_EXPLORATORY_SAMESESSION_QPS_NOT_MATCHED_RECALL_NONINFERIORITY",
+    "schedule": [
+      {
+        "arm": "g1fast",
+        "beam": 576,
+        "rep": 1,
+        "slot": "r1_b576_g1fast"
+      },
+      {
+        "arm": "g2a3fast",
+        "beam": 576,
+        "rep": 1,
+        "slot": "r1_b576_g2a3fast"
+      },
+      {
+        "arm": "g2a3fast",
+        "beam": 1792,
+        "rep": 1,
+        "slot": "r1_b1792_g2a3fast"
+      },
+      {
+        "arm": "g1fast",
+        "beam": 1792,
+        "rep": 1,
+        "slot": "r1_b1792_g1fast"
+      },
+      {
+        "arm": "g2a3fast",
+        "beam": 576,
+        "rep": 2,
+        "slot": "r2_b576_g2a3fast"
+      },
+      {
+        "arm": "g1fast",
+        "beam": 576,
+        "rep": 2,
+        "slot": "r2_b576_g1fast"
+      },
+      {
+        "arm": "g1fast",
+        "beam": 1792,
+        "rep": 2,
+        "slot": "r2_b1792_g1fast"
+      },
+      {
+        "arm": "g2a3fast",
+        "beam": 1792,
+        "rep": 2,
+        "slot": "r2_b1792_g2a3fast"
+      }
+    ],
+    "source_script_sha256": "f6593ba05e89eaa71535461af70df2b47d0e3e585901d40adee337b8952aab3a",
+    "threads": 1
+  },
+  "preflight_sha256": "4bbf84975b0427cae426edc14543ce7918d4875c68077dc4c6470f897733a8ce",
+  "rep": 1,
+  "slot": "r1_b576_g2a3fast",
+  "status": "R91_G2A3_MST10M_FAST_EXACTGUARD_8SEARCH_V1_SEARCH_PASS",
+  "swap_after": 0,
+  "swap_before": 0,
+  "time": {
+    "exit_status": 0,
+    "major_faults_accepted_file_io": 0,
+    "max_rss_kib": 7606296,
+    "swaps": 0,
+    "wall_s": 127.07
+  },
+  "wall_external_s": 127.08471032899979
+}

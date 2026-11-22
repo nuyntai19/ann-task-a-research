@@ -1,0 +1,250 @@
+{
+  "comparison": {
+    "all_8_graphs_valid": true,
+    "all_ablation_pairs_same": true,
+    "all_match_g2a2": true,
+    "all_repeats_same": true,
+    "conclusion": "ALL_EIGHT_G2A3_GRAPH_SHA_IDENTICAL_TO_FROZEN_G2A2_ONECPU_OBSERVED",
+    "g2a2_baseline_graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+    "lazy_only_vs_lazy_reclaim_sha_equal": {
+      "fast_r1": true,
+      "fast_r2": true,
+      "stock_r1": true,
+      "stock_r2": true
+    },
+    "repeat_sha_equal": {
+      "fast_lazy_only": true,
+      "fast_lazy_reclaim": true,
+      "stock_lazy_only": true,
+      "stock_lazy_reclaim": true
+    },
+    "vs_frozen_g2a2_graph_sha_equal": {
+      "r1_fast_lazy_only": true,
+      "r1_fast_lazy_reclaim": true,
+      "r1_stock_lazy_only": true,
+      "r1_stock_lazy_reclaim": true,
+      "r2_fast_lazy_only": true,
+      "r2_fast_lazy_reclaim": true,
+      "r2_stock_lazy_only": true,
+      "r2_stock_lazy_reclaim": true
+    }
+  },
+  "failed_slot": null,
+  "new_builds_succeeded": 8,
+  "note": "G2A3 eight new single CPU builds compared against frozen G2A2 and G2A1 common graph SHA from previous sessions. No 1M G2A3 memory or Recall evidence; a mismatch is a review gate, not an automatic failure of a structurally valid graph.",
+  "preflight_sha256": "7fc353696fdb4b5550c53416b1399a048ce0631a148835833d26a63cba7972e6",
+  "ref_sha256": {
+    "g2a1_pre": "05b732c888810ddb3fcb7e45a20bb73f7b17a676da6c0412573157834483176b",
+    "g2a1_sum": "e6a24ae2e822bf5392457dc4cf82230081d8b49c6627e772d48f95b63040eea2",
+    "g2a2_pre": "9c8e5f1d0a3d4c4011882564985de7a31c067cbf6e699203688ee59fbabd2d93",
+    "g2a2_sum": "34d382e9f88e2e55ccd6eaff952db6febcb107c937630df6326fa541512cc97a",
+    "g2a3_audit": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+    "g2a3_compile_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+    "g2a3_compile_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+    "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+  },
+  "run_request_sha256": "d049fca8df396805e72058f13d88992cd42426f61e762148be43cd0f2a7bac5d",
+  "slots": {
+    "r1_fast_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 286580,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 301682688,
+      "receipt_sha256": "3b909a82ad711fe9dd05dca486557e7a2bf7d372b329acfd00c3dcc9b4413ef9",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 9.22731
+    },
+    "r1_fast_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 278296,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 293400576,
+      "receipt_sha256": "0447f12749def4a4d44890ff28c93756b09081198c3c94719689b4dfad541ef5",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 9.22554
+    },
+    "r1_stock_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 286644,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 301654016,
+      "receipt_sha256": "a4ad244bea6ef8b20d281b723f8018ae45bd8a9ba546bf691ed41f6635107326",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 12.83478
+    },
+    "r1_stock_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 278472,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 293351424,
+      "receipt_sha256": "dda876047192324203fa688571e50984c95acd10d7bc0998fb91cf8fadfb2506",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 12.83389
+    },
+    "r2_fast_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 286788,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 301690880,
+      "receipt_sha256": "244cd23317ca0dc4636fa1b82f68806db13af1de34d3d5ba969705ada43f493a",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 9.22624
+    },
+    "r2_fast_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 278416,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 293384192,
+      "receipt_sha256": "69d16021e1c23e86af27522ad9cb402384029b6a287b0d25f96cb9e7fb7c6b4f",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 9.22555
+    },
+    "r2_stock_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 286796,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 301748224,
+      "receipt_sha256": "a338e7b7e5a83097fa259cdaf714357cdc474b330817edecaffe7a160904b91d",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 12.63298
+    },
+    "r2_stock_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 278464,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 1827177,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+        "size_bytes": 7708716
+      },
+      "memory_peak_bytes": 293412864,
+      "receipt_sha256": "ef894c5f1b6cd79eb92210e48a3bc2cd8714f674e4a5d96f7ec49857c2ac51b9",
+      "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 12.63365
+    }
+  },
+  "status": "R91_G2A3_SIFT100K_ONECPU_8BUILD_V1_ALL_EIGHT_NATIVE_BUILDS_PASS_PENDING_EQUIVALENCE_INTERPRETATION"
+}

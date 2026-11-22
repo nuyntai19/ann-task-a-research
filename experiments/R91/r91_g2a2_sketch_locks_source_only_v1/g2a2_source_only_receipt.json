@@ -1,0 +1,132 @@
+{
+  "alternatives": {
+    "sketch_locks": {
+      "fast": {
+        "diff_sha256": {
+          "graph.h": "0fbddb85d83e6b3b75067760b34764a9a4e85c0ecd568f93834af41ef41176f6",
+          "hash.h": "fffd0c2f77ac06a47ef8f8f228c114d592d229f2b71f063227a2a998052be38a",
+          "pipnn.h": "eb98bc94d565210641c490381071b507cd4a13d2cfe455e0ea93fdcc7fdaa23d"
+        },
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+        }
+      },
+      "stock": {
+        "diff_sha256": {
+          "graph.h": "94474e99a403c587221c0fd53dd075e8e3b3cac30ce192301b6a4f8647277ab4",
+          "hash.h": "daa778e15060dc7ef52ea2b6a003fc01b433c5d56ccc39ba85f6b517bc1ed0c6",
+          "pipnn.h": "f9074cde11077e44e309941d94081f763d9b3e5a14c5f2002a808176bc8cba78"
+        },
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+        }
+      }
+    },
+    "sketch_only": {
+      "fast": {
+        "diff_sha256": {
+          "graph.h": "f557eb9c11b4cd461a9550e27956f6baa79ab1cff570aa709c571683867d9a1b",
+          "hash.h": "e51c8a335da800d685973ffdd78f4cefdef66ebffd4e06769576df44d714c353",
+          "pipnn.h": "d280b80bbe00151c476feab40cf4c377f204a34a8767043c5c812d0d35d22a94"
+        },
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "100c3a76adfaaa51f625d011a298fc1dbb655869053ed059815a126a9105e61b"
+        }
+      },
+      "stock": {
+        "diff_sha256": {
+          "graph.h": "78aae0b8014e00fc0e2ac01e8f784d80dbedda9ea671af84140d1242762c28f2",
+          "hash.h": "fbdf15f68d2f258abc48741fd998f6bc8aa49de10d07d910c311e7fe6e2851cd",
+          "pipnn.h": "71e2f78d1f9e5371bfb1b3017053dcb6800d33e689cbdd0b07d18ac9e4e4fac2"
+        },
+        "patched_header_sha256": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "100c3a76adfaaa51f625d011a298fc1dbb655869053ed059815a126a9105e61b"
+        }
+      }
+    }
+  },
+  "base_g2a1_graph_sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962",
+  "created_utc": "2026-11-21T17:08:22.231160+00:00",
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "no_cpp_compilation": true,
+  "no_historical_source_edit": true,
+  "safety_boundaries": [
+    "Only G2A1 patched LSHGraph base used; do not patch R90 original destructor",
+    "SketchHash object remains alive and LSHGraph H reference remains valid; only backing shared_ptr data reset",
+    "Release happens after cluster rounds and before output graph allocation and prune",
+    "LSHGraph mutexes deleted only in sketch_locks alternative, then set to null for G2A1 destructor",
+    "Generic/HashSetGraph/TwoTier codepath excludes the early release via if constexpr",
+    "No guarantee without native C++ compilation and graph Search/Recall regression tests",
+    "G2A3 blockwise reclamation not implemented or tested"
+  ],
+  "source_pins": {
+    "fast": {
+      "graph.h": {
+        "git_blob_sha1": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+        "sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/utils/graph.h"
+      },
+      "hash.h": {
+        "git_blob_sha1": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+        "sha256": "eca6131674ca2d5d11724ed72ccc7beb44ffde096ee5cec8209a79a8cb6fc481",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/utils/hash.h"
+      },
+      "neighbors.h": {
+        "git_blob_sha1": "877e087da7cf362d547d75f1393dfb3737d4e303",
+        "sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/PipNN/neighbors.h"
+      },
+      "pipnn.h": {
+        "git_blob_sha1": "f357626cbf9ece485e913934f928f2c26d8db919",
+        "sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off/algorithms/PipNN/pipnn.h"
+      }
+    },
+    "stock": {
+      "graph.h": {
+        "git_blob_sha1": "a499d389fa0fe4f3bb1cfa983aaac59423537830",
+        "sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/utils/graph.h"
+      },
+      "hash.h": {
+        "git_blob_sha1": "3d4a2c2f06b7d3eef3a637d8022a2e3ac14c6391",
+        "sha256": "eca6131674ca2d5d11724ed72ccc7beb44ffde096ee5cec8209a79a8cb6fc481",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/utils/hash.h"
+      },
+      "neighbors.h": {
+        "git_blob_sha1": "877e087da7cf362d547d75f1393dfb3737d4e303",
+        "sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/PipNN/neighbors.h"
+      },
+      "pipnn.h": {
+        "git_blob_sha1": "f357626cbf9ece485e913934f928f2c26d8db919",
+        "sha256": "77a9b97e593e82037b6f801fb23b5f5bbeab5a5e0c8e112b6386f55488ca9f7d",
+        "source_path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off/algorithms/PipNN/pipnn.h"
+      }
+    }
+  },
+  "source_receipts": {
+    "g2a1_msturing1m_pilot_summary": {
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_msturing1m_4cpu_memphase_2rep_v1/pilot_summary.json",
+      "sha256": "f0fabe9c77ddfefc13e7e5022a7e776904ebdcabf5e17c9ea2679dcb41e43ace"
+    },
+    "g2a1_source_only_receipt": {
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_source_patch_only_v1/source_patch_receipt.json",
+      "sha256": "e902e28f695892be6818e3dcb2bcbe9d2e41d41816f78a91f3a1f18eb7d71721"
+    },
+    "g2a2_g2a3_lastuse_audit": {
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_g2a3_lastuse_readonly_v1/lastuse_source_audit.json",
+      "sha256": "dbc374e75a5c7a62828f70917873650d5d6aa75d4b99a8edfd4487043879d531"
+    }
+  },
+  "status": "R91_G2A2_SOURCE_ONLY_ALTERNATIVES_READY_UNCOMPILED_UNBUILT"
+}

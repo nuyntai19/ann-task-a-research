@@ -1,0 +1,113 @@
+{
+  "arms": [
+    "stock",
+    "fast"
+  ],
+  "flags": {
+    "Fast_R71_USE_H17": "ON",
+    "R70_USE_TIER": "OFF",
+    "R86_USE_COUNTERS": "OFF",
+    "Stock_R71_USE_H17": "OFF"
+  },
+  "inputs": {
+    "disk_free_bytes": 36247760896,
+    "g2a1_compile_sha256": "e41a0fe8cd390c6a31f2b60530f61614da408a589afe12c3dc67c16d14a0d9f5",
+    "gcc13_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+    "highway_file_sha256": {
+      "sorting_networks-inl.h": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b",
+      "traits-inl.h": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+    },
+    "highway_git_head": "6bc2d47793bae9c521fb4150936669647700765d",
+    "mem_available_bytes": 28622860288,
+    "original_scans": {
+      "fast": {
+        "bytes": 27681340,
+        "files": 1681,
+        "links": {
+          "data_tools/utils": "../algorithms/utils",
+          "rangeSearch/utils": "../algorithms/utils"
+        }
+      },
+      "stock": {
+        "bytes": 27681087,
+        "files": 1681,
+        "links": {
+          "data_tools/utils": "../algorithms/utils",
+          "rangeSearch/utils": "../algorithms/utils"
+        }
+      }
+    },
+    "receipt_sha256": "df734d1b9a2825acc9b7c440aedbab9d5651acf2e871f531b35e38d2c5e74bc1",
+    "source_diff_sha256": {
+      "sketch_locks": {
+        "fast": {
+          "graph.h": "0fbddb85d83e6b3b75067760b34764a9a4e85c0ecd568f93834af41ef41176f6",
+          "hash.h": "fffd0c2f77ac06a47ef8f8f228c114d592d229f2b71f063227a2a998052be38a",
+          "pipnn.h": "eb98bc94d565210641c490381071b507cd4a13d2cfe455e0ea93fdcc7fdaa23d"
+        },
+        "stock": {
+          "graph.h": "94474e99a403c587221c0fd53dd075e8e3b3cac30ce192301b6a4f8647277ab4",
+          "hash.h": "daa778e15060dc7ef52ea2b6a003fc01b433c5d56ccc39ba85f6b517bc1ed0c6",
+          "pipnn.h": "f9074cde11077e44e309941d94081f763d9b3e5a14c5f2002a808176bc8cba78"
+        }
+      },
+      "sketch_only": {
+        "fast": {
+          "graph.h": "f557eb9c11b4cd461a9550e27956f6baa79ab1cff570aa709c571683867d9a1b",
+          "hash.h": "e51c8a335da800d685973ffdd78f4cefdef66ebffd4e06769576df44d714c353",
+          "pipnn.h": "d280b80bbe00151c476feab40cf4c377f204a34a8767043c5c812d0d35d22a94"
+        },
+        "stock": {
+          "graph.h": "78aae0b8014e00fc0e2ac01e8f784d80dbedda9ea671af84140d1242762c28f2",
+          "hash.h": "fbdf15f68d2f258abc48741fd998f6bc8aa49de10d07d910c311e7fe6e2851cd",
+          "pipnn.h": "71e2f78d1f9e5371bfb1b3017053dcb6800d33e689cbdd0b07d18ac9e4e4fac2"
+        }
+      }
+    },
+    "source_header_sha256": {
+      "sketch_locks": {
+        "fast": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+        },
+        "stock": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+        }
+      },
+      "sketch_only": {
+        "fast": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "100c3a76adfaaa51f625d011a298fc1dbb655869053ed059815a126a9105e61b"
+        },
+        "stock": {
+          "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+          "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+          "pipnn.h": "100c3a76adfaaa51f625d011a298fc1dbb655869053ed059815a126a9105e61b"
+        }
+      }
+    }
+  },
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "no_historical_edits": true,
+  "scope_required": {
+    "cpu": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "max_bytes": 25769803776,
+    "swap_bytes": 0
+  },
+  "status": "R91_G2A2_COMPILE_ONLY_V1_PREFLIGHT_PASS__COMPILER_UNRUN",
+  "timestamp_utc": "2026-11-21T17:18:20.692834+00:00",
+  "variants": [
+    "sketch_only",
+    "sketch_locks"
+  ]
+}

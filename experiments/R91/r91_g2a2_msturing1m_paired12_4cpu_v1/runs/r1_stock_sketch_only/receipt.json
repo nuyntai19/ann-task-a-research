@@ -1,0 +1,149 @@
+{
+  "builder_exit_code": 0,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_stock_sketch_only/native.time",
+    "taskset",
+    "-c",
+    "0,2,4,6",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_only/stock/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "-base_path",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "-graph_outfile",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a2_msturing1m_paired12_4cpu_v1/runs/r1_stock_sketch_only/graph.bin",
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "dataset_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "elf_sha256": "a4da22c1ae0018eb48ff2b24a3b0a01ea793ae56e4c48f84922657d49443880e",
+  "error": null,
+  "gnu_time": {
+    "exit_status": 0,
+    "major_faults": 0,
+    "max_rss_kib": 2564592,
+    "swaps": 0
+  },
+  "graph": {
+    "arcs": 52842399,
+    "bad_id_rows": 0,
+    "degree_cap": 64,
+    "duplicate_rows": 0,
+    "full_audit": true,
+    "max_degree": 64,
+    "nodes": 1000000,
+    "selfloop_rows": 0,
+    "sha256": "183dd204fdd3e053ab6d6c423b2353e080bc5b841b779e05e7abc27ae80905a6",
+    "size_bytes": 215369604
+  },
+  "logs_sha256": {
+    "graph.bin": "183dd204fdd3e053ab6d6c423b2353e080bc5b841b779e05e7abc27ae80905a6",
+    "memory_monitor.tsv": "6cd93d76425ee2adb663b549a37797cf07ec29f929819108f6e9ade992a93769",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "e71f581f8f973ec51cdfd0016c8647638d03f51d568d5210d788e4678f47bdae",
+    "native.time": "fb9761ab61deb0b384f3f0cca5891652c73d7bac991e17969c06716a4934c678"
+  },
+  "max_sampled_swap_bytes": 0,
+  "memory_events_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "memory_max_bytes": 25769803776,
+  "memory_peak_bytes": 2639835136,
+  "memory_profile": {
+    "at_max_anon": {
+      "anon_bytes": 2633547776,
+      "epoch": 1795283567.3970811,
+      "file_bytes": 24576,
+      "graph_file_bytes": 0,
+      "memory_current_bytes": 2639835136
+    },
+    "at_max_current": {
+      "anon_bytes": 2633547776,
+      "epoch": 1795283567.3970811,
+      "file_bytes": 24576,
+      "graph_file_bytes": 0,
+      "memory_current_bytes": 2639835136
+    },
+    "at_max_file": {
+      "anon_bytes": 12083200,
+      "epoch": 1795283572.9654748,
+      "file_bytes": 215400448,
+      "graph_file_bytes": 215369604,
+      "memory_current_bytes": 234262528
+    },
+    "first_graph_nonzero": {
+      "anon_bytes": 1518653440,
+      "epoch": 1795283572.8151145,
+      "file_bytes": 4026368,
+      "graph_file_bytes": 4000008,
+      "memory_current_bytes": 1527279616
+    },
+    "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+    "last_sample": {
+      "anon_bytes": 12083200,
+      "epoch": 1795283572.9654748,
+      "file_bytes": 215400448,
+      "graph_file_bytes": 215369604,
+      "memory_current_bytes": 234262528
+    },
+    "max_graph_file_bytes": 215369604,
+    "max_sampled_swap_bytes": 0,
+    "sampled_peak_anon_bytes": 2633547776,
+    "sampled_peak_current_bytes": 2639835136,
+    "sampled_peak_file_bytes": 215400448,
+    "samples": 281
+  },
+  "monitor_interval_seconds": 0.15,
+  "monitor_samples": 281,
+  "no_original_artifacts_modified": true,
+  "preflight_sha256": "877a21fa7cf575952044cd289edeaa15d69a6307b87347e2d5eee1bdfcbaab85",
+  "slot": "r1_stock_sketch_only",
+  "status": "R91_G2A2_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+  "swap_current_bytes": 0,
+  "swap_max_bytes": 0,
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "wall_external_seconds": 42.15952
+}

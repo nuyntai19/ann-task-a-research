@@ -1,0 +1,300 @@
+{
+  "disclaimer": "Static source signatures and exact integer page geometry are necessary, not proof of no concurrent readers, runtime memory savings, no THP splitting, or identical graph/Recall. No native ANN Build/Search or source patch.",
+  "g2a2_sketch_locks_source": {
+    "fast": {
+      "checks": {
+        "edge_append_reads_degree": true,
+        "edge_clear_zeros_degree": true,
+        "edge_update_sets_degree_before_write": true,
+        "export_graph_finalize_before_parallel": true,
+        "export_has_both_branches": true,
+        "export_main_loop_all_n": true,
+        "export_preprune_degree_snapshot": true,
+        "graph_alloc_aligned_rounded": true,
+        "graph_alloc_pretouch_all": true,
+        "graph_save_uses_degree_then_edges": true,
+        "lsh_alloc_aligned": true,
+        "lsh_alloc_not_rounded": true,
+        "lsh_row_first_degree": true,
+        "robust_prune_writes_only_Gp": true,
+        "search_call_after_build": true
+      },
+      "critical_cautions": [
+        "No class-scoped source anchor alone proves absent readers after a parallel barrier.",
+        "clear_neighbors currently locks output GraphI mutex, ensure one write per vertex and correct initialization of every vertex degree before graph_stats/save.",
+        "GraphI allocation full memset must be replaced with proven safe lazy degree-zeroing, not omitted without replacement.",
+        "MADV_DONTNEED on complete 2MiB portions may split transparent huge pages at kernel discretion; no THP split guarantee.",
+        "An observed destructor/madvise decrease in peak is not implied by arithmetic logical byte amounts.",
+        "aligned_alloc sizing rounding and error/NULL handling must be audited in eventual patch.",
+        "Only sequential block boundaries with completed parlay workers may reclaim previously read LSHGraph pages."
+      ],
+      "source_location_hints": {
+        "early_clear_neighbors": 144,
+        "final_prune_export": 532,
+        "lshgraph_aligned_alloc": 19,
+        "lshgraph_struct": 661,
+        "output_graph_pretouch": 201,
+        "robust_prune_write": 153
+      },
+      "source_sha256": {
+        "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+        "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+        "neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+        "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e",
+        "pipnn_utils.h": "72ca1451790234a76a9bfe5ecafd7bc555e6cd53673587b62a37a93f24caad28"
+      }
+    },
+    "stock": {
+      "checks": {
+        "edge_append_reads_degree": true,
+        "edge_clear_zeros_degree": true,
+        "edge_update_sets_degree_before_write": true,
+        "export_graph_finalize_before_parallel": true,
+        "export_has_both_branches": true,
+        "export_main_loop_all_n": true,
+        "export_preprune_degree_snapshot": true,
+        "graph_alloc_aligned_rounded": true,
+        "graph_alloc_pretouch_all": true,
+        "graph_save_uses_degree_then_edges": true,
+        "lsh_alloc_aligned": true,
+        "lsh_alloc_not_rounded": true,
+        "lsh_row_first_degree": true,
+        "robust_prune_writes_only_Gp": true,
+        "search_call_after_build": true
+      },
+      "critical_cautions": [
+        "No class-scoped source anchor alone proves absent readers after a parallel barrier.",
+        "clear_neighbors currently locks output GraphI mutex, ensure one write per vertex and correct initialization of every vertex degree before graph_stats/save.",
+        "GraphI allocation full memset must be replaced with proven safe lazy degree-zeroing, not omitted without replacement.",
+        "MADV_DONTNEED on complete 2MiB portions may split transparent huge pages at kernel discretion; no THP split guarantee.",
+        "An observed destructor/madvise decrease in peak is not implied by arithmetic logical byte amounts.",
+        "aligned_alloc sizing rounding and error/NULL handling must be audited in eventual patch.",
+        "Only sequential block boundaries with completed parlay workers may reclaim previously read LSHGraph pages."
+      ],
+      "source_location_hints": {
+        "early_clear_neighbors": 144,
+        "final_prune_export": 532,
+        "lshgraph_aligned_alloc": 19,
+        "lshgraph_struct": 661,
+        "output_graph_pretouch": 201,
+        "robust_prune_write": 153
+      },
+      "source_sha256": {
+        "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+        "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+        "neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+        "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e",
+        "pipnn_utils.h": "33b09c3cb85d70f0a11d86c481dc2a6e398b9e162fe1d42b2b1bd1314a0bd3db"
+      }
+    }
+  },
+  "lshcandidate_sizeofT_bytes": {
+    "assumed": 8,
+    "must_native_verify": true
+  },
+  "page_geometry_2mib": {
+    "100000": {
+      "alignment_bytes": 2097152,
+      "block_vertices": 65536,
+      "caution": "Arithmetic only; NOT measured RSS, THP behavior or safe-thread proof.",
+      "final_reclaimed_logical_bytes": 127926272,
+      "final_unreclaimed_tail_bytes": 873728,
+      "first_two_blocks": [
+        {
+          "reclaim_end_bytes": 83886080,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 0,
+          "unreclaimed_processed_tail_bytes": 524288,
+          "v_end": 65536,
+          "v_start": 0
+        },
+        {
+          "reclaim_end_bytes": 127926272,
+          "reclaim_new_bytes": 44040192,
+          "reclaim_start_bytes": 83886080,
+          "unreclaimed_processed_tail_bytes": 873728,
+          "v_end": 100000,
+          "v_start": 65536
+        }
+      ],
+      "graph_degree": 64,
+      "graph_index_bytes": 4,
+      "graph_logical_bytes": 26000000,
+      "last_two_blocks": [
+        {
+          "reclaim_end_bytes": 83886080,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 0,
+          "unreclaimed_processed_tail_bytes": 524288,
+          "v_end": 65536,
+          "v_start": 0
+        },
+        {
+          "reclaim_end_bytes": 127926272,
+          "reclaim_new_bytes": 44040192,
+          "reclaim_start_bytes": 83886080,
+          "unreclaimed_processed_tail_bytes": 873728,
+          "v_end": 100000,
+          "v_start": 65536
+        }
+      ],
+      "lshtable_row_bytes": 1288,
+      "n": 100000,
+      "num_blocks": 2,
+      "sizeof_T_ASSUMED_bytes": 8,
+      "table_aligned_allocation_bytes_proposed": 130023424,
+      "table_degree": 160,
+      "table_logical_bytes": 128800000
+    },
+    "1000000": {
+      "alignment_bytes": 2097152,
+      "block_vertices": 65536,
+      "caution": "Arithmetic only; NOT measured RSS, THP behavior or safe-thread proof.",
+      "final_reclaimed_logical_bytes": 1287651328,
+      "final_unreclaimed_tail_bytes": 348672,
+      "first_two_blocks": [
+        {
+          "reclaim_end_bytes": 83886080,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 0,
+          "unreclaimed_processed_tail_bytes": 524288,
+          "v_end": 65536,
+          "v_start": 0
+        },
+        {
+          "reclaim_end_bytes": 167772160,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 83886080,
+          "unreclaimed_processed_tail_bytes": 1048576,
+          "v_end": 131072,
+          "v_start": 65536
+        }
+      ],
+      "graph_degree": 64,
+      "graph_index_bytes": 4,
+      "graph_logical_bytes": 260000000,
+      "last_two_blocks": [
+        {
+          "reclaim_end_bytes": 1264582656,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 1180696576,
+          "unreclaimed_processed_tail_bytes": 1572864,
+          "v_end": 983040,
+          "v_start": 917504
+        },
+        {
+          "reclaim_end_bytes": 1287651328,
+          "reclaim_new_bytes": 23068672,
+          "reclaim_start_bytes": 1264582656,
+          "unreclaimed_processed_tail_bytes": 348672,
+          "v_end": 1000000,
+          "v_start": 983040
+        }
+      ],
+      "lshtable_row_bytes": 1288,
+      "n": 1000000,
+      "num_blocks": 16,
+      "sizeof_T_ASSUMED_bytes": 8,
+      "table_aligned_allocation_bytes_proposed": 1289748480,
+      "table_degree": 160,
+      "table_logical_bytes": 1288000000
+    },
+    "10000000": {
+      "alignment_bytes": 2097152,
+      "block_vertices": 65536,
+      "caution": "Arithmetic only; NOT measured RSS, THP behavior or safe-thread proof.",
+      "final_reclaimed_logical_bytes": 12878610432,
+      "final_unreclaimed_tail_bytes": 1389568,
+      "first_two_blocks": [
+        {
+          "reclaim_end_bytes": 83886080,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 0,
+          "unreclaimed_processed_tail_bytes": 524288,
+          "v_end": 65536,
+          "v_start": 0
+        },
+        {
+          "reclaim_end_bytes": 167772160,
+          "reclaim_new_bytes": 83886080,
+          "reclaim_start_bytes": 83886080,
+          "unreclaimed_processed_tail_bytes": 1048576,
+          "v_end": 131072,
+          "v_start": 65536
+        }
+      ],
+      "graph_degree": 64,
+      "graph_index_bytes": 4,
+      "graph_logical_bytes": 2600000000,
+      "last_two_blocks": [
+        {
+          "reclaim_end_bytes": 12830375936,
+          "reclaim_new_bytes": 85983232,
+          "reclaim_start_bytes": 12744392704,
+          "unreclaimed_processed_tail_bytes": 0,
+          "v_end": 9961472,
+          "v_start": 9895936
+        },
+        {
+          "reclaim_end_bytes": 12878610432,
+          "reclaim_new_bytes": 48234496,
+          "reclaim_start_bytes": 12830375936,
+          "unreclaimed_processed_tail_bytes": 1389568,
+          "v_end": 10000000,
+          "v_start": 9961472
+        }
+      ],
+      "lshtable_row_bytes": 1288,
+      "n": 10000000,
+      "num_blocks": 153,
+      "sizeof_T_ASSUMED_bytes": 8,
+      "table_aligned_allocation_bytes_proposed": 12880707584,
+      "table_degree": 160,
+      "table_logical_bytes": 12880000000
+    }
+  },
+  "proposed_invariant": "For each [start,end): all tasks reading those LSHGraph rows finish; G[i].clear_neighbors() before either update/append; only then can release [old_end,round_down(end*row_bytes,2MiB)); graph.save after all output rows done.",
+  "source_pins": {
+    "full_manifest.json": {
+      "bytes": 24093,
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_mst1m_100kq_fixedbeam_v1_1/full_manifest.json",
+      "sha256": "c9ba8bc6b885a688c111978d8f5203f571806905736ee13577c7ff5016250940"
+    },
+    "full_quality_summary.json": {
+      "bytes": 32049,
+      "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_mst1m_100kq_fixedbeam_v1_1/full_quality_summary.json",
+      "sha256": "0d14aa0c9a19b5f3947dee7b42d285e0133f3fceee9d0034928441606fd2bf40"
+    }
+  },
+  "status": "R91_G2A3_PRUNE_BLOCK_SOURCE_AUDIT_V1_2_PASS_SOURCE_ANCHORS_AND_PAGE_ARITHMETIC_ONLY_PATCH_NOT_PROVEN",
+  "stock_fast_source_equivalence": {
+    "common_source_names": [
+      "graph.h",
+      "hash.h",
+      "pipnn.h",
+      "neighbors.h"
+    ],
+    "common_source_sha256": {
+      "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+      "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+      "neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+      "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e"
+    },
+    "fast_only_cutoff_count": 4,
+    "fast_only_cutoff_lines_exact": [
+      "      float r90_second_cutoff = std::numeric_limits<float>::infinity();",
+      "        if (count == 2 && dist_ij > r90_second_cutoff) continue;",
+      "          r90_second_cutoff = static_cast<float>(second);",
+      "          r90_second_cutoff = static_cast<float>(second);"
+    ],
+    "method": "full header SHA256 per arm, exact four-line Fast v2 cutoff whitelist, scoped robustPrune byte-for-byte",
+    "pipnn_utils_sha256_per_arm": {
+      "fast": "72ca1451790234a76a9bfe5ecafd7bc555e6cd53673587b62a37a93f24caad28",
+      "stock": "33b09c3cb85d70f0a11d86c481dc2a6e398b9e162fe1d42b2b1bd1314a0bd3db"
+    },
+    "robustPrune_body_byte_identical": true,
+    "robustPrune_body_bytes": 2250,
+    "robustPrune_body_sha256": "f4d75070d88f67ad920715a327af08fc20c6cc5c2ed2eff3d9ec8e6bdbc548df",
+    "stock_fast_pipnn_utils_identical_except_cutoff": true
+  }
+}

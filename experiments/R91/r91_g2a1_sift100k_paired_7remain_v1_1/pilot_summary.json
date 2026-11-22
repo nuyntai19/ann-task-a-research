@@ -1,0 +1,401 @@
+{
+  "between_rep_shas": {
+    "fast_original_repeated_graph_SHA_equal": false,
+    "fast_patched_repeated_graph_SHA_equal": false,
+    "stock_original_repeated_graph_SHA_equal": false,
+    "stock_patched_repeated_graph_SHA_equal": false
+  },
+  "dataset_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "failed_slot": null,
+  "new_runs_executed": [
+    "r1_stock_patched",
+    "r1_fast_patched",
+    "r1_fast_original",
+    "r2_fast_original",
+    "r2_fast_patched",
+    "r2_stock_patched",
+    "r2_stock_original"
+  ],
+  "new_runs_succeeded": 7,
+  "note": "First slot is salvaged READ-ONLY from immutable v1 original HOLD receipt, not re-built. Recovered RSS 415848 KiB from existing native.time. All other seven builds are new separate scopes. Graph SHA mismatch is not automatically patch effect under nondeterministic parallel builds. 100K is not 10M.",
+  "preflight_sha256": "48dee7631535cf705dec7994221af42db5a432ccf8f9b9f983f7862a1007d574",
+  "run_request_sha256": "6360ac0b322518014dd836bdba660aa67a38f6b87fb593868e5811ff94da4fb4",
+  "salvaged_v1_first": {
+    "diagnostic_sha256": "a13dec6dbce3ecf3926849e320accfd49f27771252171eee09d1705639e0e582",
+    "salvaged": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 439828480,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 3.3127,
+      "graph": {
+        "arcs": 1827169,
+        "bytes": 7708684,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "6e1dc6beb69977741a7d8da945c2a389b77907299f930e6cb8966d18a15f23e0"
+      },
+      "original_receipt_sha256": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+      "original_receipt_status": "R91_G2A1_SIFT100K_PAIRED_V1_SLOT_HOLD",
+      "original_slot_path": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_sift100k_paired_2rep_v1/runs/r1_stock_original",
+      "receipt_sha256": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+      "rss_kib": 415848,
+      "salvage_diagnostic_sha256": "a13dec6dbce3ecf3926849e320accfd49f27771252171eee09d1705639e0e582",
+      "status": "SALVAGED_POSTBUILD_TIME_PARSER_HOLD_READONLY",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 415848,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "slot": "r1_stock_original",
+    "source_preflight_sha256": "b959c4da6e6a0d1749476df525a8fb4ab9f5c8155e059430b036aab03af5a298",
+    "source_receipt_sha256": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+    "source_request_sha256": "672b5d0c79e715bf6d9890b3c3f44ae3161b46f2577fe29dfb2fcfd85d1a3ea5",
+    "source_summary_sha256": "4a2bb8425ce906d3fd7570cf70e011c9df07f476d0c12e32764e94b4aba33cdb"
+  },
+  "slots": {
+    "r1_fast_original": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 440741888,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 2.5612,
+      "graph": {
+        "arcs": 1827177,
+        "bytes": 7708716,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "b54b27f3035127ccfa5f024cf128d503e27ebd7ae1f38dcdfcab2c2e1fdb7bfb"
+      },
+      "receipt_sha256": "29d78f22af207a31fd584a97cfaaf6ac515ea7c307de3dc968955ae40a061697",
+      "rss_kib": 415756,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 415756,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r1_fast_patched": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 432533504,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 2.5607,
+      "graph": {
+        "arcs": 1827161,
+        "bytes": 7708652,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "8fc67ede7b99d163728d7e7359cdca65b5d1aa1ca2ded00510aef3b460e04f89"
+      },
+      "receipt_sha256": "09ea1470dbce5e0697acc49b89f55f84429e1504856847cfe4924aa9cf64a6af",
+      "rss_kib": 414140,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 414140,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r1_stock_original": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 439828480,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 3.3127,
+      "graph": {
+        "arcs": 1827169,
+        "bytes": 7708684,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "6e1dc6beb69977741a7d8da945c2a389b77907299f930e6cb8966d18a15f23e0"
+      },
+      "original_receipt_sha256": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+      "original_receipt_status": "R91_G2A1_SIFT100K_PAIRED_V1_SLOT_HOLD",
+      "original_slot_path": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_sift100k_paired_2rep_v1/runs/r1_stock_original",
+      "receipt_sha256": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+      "rss_kib": 415848,
+      "salvage_diagnostic_sha256": "a13dec6dbce3ecf3926849e320accfd49f27771252171eee09d1705639e0e582",
+      "status": "SALVAGED_POSTBUILD_TIME_PARSER_HOLD_READONLY",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 415848,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r1_stock_patched": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 430641152,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 3.4643,
+      "graph": {
+        "arcs": 1827163,
+        "bytes": 7708660,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "772713bf1d93a13168c290c92dc20753ff595ac3ab8ce9461fdd3ed3b5a9fe02"
+      },
+      "receipt_sha256": "9d7d2290202deb8e6cc5cfec2d234a7943365edbae0f2d9b1949b373daf53c57",
+      "rss_kib": 411992,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 411992,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r2_fast_original": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 438734848,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 2.56,
+      "graph": {
+        "arcs": 1827168,
+        "bytes": 7708680,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "a9e61170b9972d031a9a99ea31613aac31489cbff7b60c39313c5de49cb7aec3"
+      },
+      "receipt_sha256": "ca60ea3814d88b3c1061d4225461841f670b3f10380fc38264fec31e4054d129",
+      "rss_kib": 413264,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 413264,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r2_fast_patched": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 434454528,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 2.4105,
+      "graph": {
+        "arcs": 1827167,
+        "bytes": 7708676,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "376de938d942583ea70f973dbd7ef13249955f5de5a6eb0d3863240a0a47b0ab"
+      },
+      "receipt_sha256": "38118a462b7e8f773505976728f8f9a9b30d91ff2358e2955577567a76628f2f",
+      "rss_kib": 413752,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 413752,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r2_stock_original": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 439619584,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 3.3132,
+      "graph": {
+        "arcs": 1827181,
+        "bytes": 7708732,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "08b87acf4a64ffa8d02e8549319b990e5dfeafe533cb65383fae74ad0e547e1a"
+      },
+      "receipt_sha256": "0f3d20a56122508f7e8ef44187ed1dd4680b2857146867d8f0bd622a7184401d",
+      "rss_kib": 414472,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 414472,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    },
+    "r2_stock_patched": {
+      "builder_exit_code": 0,
+      "cgroup_peak_bytes": 431960064,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 3.3138,
+      "graph": {
+        "arcs": 1827180,
+        "bytes": 7708728,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit": true,
+        "invalid_id_rows": 0,
+        "max_degree": 64,
+        "nodes": 100000,
+        "selfloop_rows": 0,
+        "sha256": "4e2a971f626e196544b8648efb706068aad47f2e5b1b2234de0d79175a8af6b0"
+      },
+      "receipt_sha256": "dee1faa7c82158e3d699207e19a14f8da6690f8b44fbd70d997847dfad31b069",
+      "rss_kib": 413272,
+      "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SLOT_NATIVE_BUILD_GRAPH_AUDIT_PASS",
+      "swap_bytes": 0,
+      "time_metrics": {
+        "major_page_faults": 0,
+        "max_rss_KiB": 413272,
+        "time_exit_status": 0,
+        "time_swaps": 0
+      }
+    }
+  },
+  "source_v1_immutable": true,
+  "status": "R91_G2A1_SIFT100K_PAIRED_RESUME_V1_1_SEVEN_PENDING_RUNS_COMPLETE__GRAPH_EQUIVALENCE_AWAITING_REVIEW",
+  "within_rep_comparisons": {
+    "fast_r1": {
+      "arcs_delta": -16,
+      "cgroup_peak_delta_bytes": -8208384,
+      "graph_sha_equal": false,
+      "original_graph_sha": "b54b27f3035127ccfa5f024cf128d503e27ebd7ae1f38dcdfcab2c2e1fdb7bfb",
+      "patched_graph_sha": "8fc67ede7b99d163728d7e7359cdca65b5d1aa1ca2ded00510aef3b460e04f89",
+      "rss_kib_delta": -1616
+    },
+    "fast_r2": {
+      "arcs_delta": -1,
+      "cgroup_peak_delta_bytes": -4280320,
+      "graph_sha_equal": false,
+      "original_graph_sha": "a9e61170b9972d031a9a99ea31613aac31489cbff7b60c39313c5de49cb7aec3",
+      "patched_graph_sha": "376de938d942583ea70f973dbd7ef13249955f5de5a6eb0d3863240a0a47b0ab",
+      "rss_kib_delta": 488
+    },
+    "stock_r1": {
+      "arcs_delta": -6,
+      "cgroup_peak_delta_bytes": -9187328,
+      "graph_sha_equal": false,
+      "original_graph_sha": "6e1dc6beb69977741a7d8da945c2a389b77907299f930e6cb8966d18a15f23e0",
+      "patched_graph_sha": "772713bf1d93a13168c290c92dc20753ff595ac3ab8ce9461fdd3ed3b5a9fe02",
+      "rss_kib_delta": -3856
+    },
+    "stock_r2": {
+      "arcs_delta": -1,
+      "cgroup_peak_delta_bytes": -7659520,
+      "graph_sha_equal": false,
+      "original_graph_sha": "08b87acf4a64ffa8d02e8549319b990e5dfeafe533cb65383fae74ad0e547e1a",
+      "patched_graph_sha": "4e2a971f626e196544b8648efb706068aad47f2e5b1b2234de0d79175a8af6b0",
+      "rss_kib_delta": -1200
+    }
+  }
+}

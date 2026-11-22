@@ -1,0 +1,39 @@
+{
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "no_original_artifacts_modified": true,
+  "preflight_sha256": "877a21fa7cf575952044cd289edeaa15d69a6307b87347e2d5eee1bdfcbaab85",
+  "slots": [
+    "r1_stock_g2a1",
+    "r1_stock_sketch_only",
+    "r1_stock_sketch_locks",
+    "r1_fast_g2a1",
+    "r1_fast_sketch_only",
+    "r1_fast_sketch_locks",
+    "r2_fast_sketch_locks",
+    "r2_fast_sketch_only",
+    "r2_fast_g2a1",
+    "r2_stock_sketch_locks",
+    "r2_stock_sketch_only",
+    "r2_stock_g2a1"
+  ],
+  "source_ref_pins": {
+    "g2a1_1m_pre": "958ebec86e7394ac47ff688776b36a0bbde7f30ceab048ab0fbd571f503415af",
+    "g2a1_1m_sum": "f0fabe9c77ddfefc13e7e5022a7e776904ebdcabf5e17c9ea2679dcb41e43ace",
+    "g2a2_100k_pre": "9c8e5f1d0a3d4c4011882564985de7a31c067cbf6e699203688ee59fbabd2d93",
+    "g2a2_100k_sum": "34d382e9f88e2e55ccd6eaff952db6febcb107c937630df6326fa541512cc97a"
+  },
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

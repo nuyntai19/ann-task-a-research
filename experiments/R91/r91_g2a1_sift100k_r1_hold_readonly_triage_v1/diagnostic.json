@@ -1,0 +1,178 @@
+{
+  "builder_exit_code": 0,
+  "event_delta": {
+    "high": 0,
+    "low": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_group_kill": 0,
+    "oom_kill": 0,
+    "sock_throttled": 0
+  },
+  "external_elapsed_seconds": 3.3127,
+  "graph": {
+    "arcs": 1827169,
+    "bytes": 7708684,
+    "degree_cap": 64,
+    "duplicate_rows": 0,
+    "exists": true,
+    "invalid_id_rows": 0,
+    "max_degree": 64,
+    "nodes": 100000,
+    "parse_ok": true,
+    "selfloop_rows": 0,
+    "sha256": "6e1dc6beb69977741a7d8da945c2a389b77907299f930e6cb8966d18a15f23e0"
+  },
+  "interpretation": "Build exit 0 if reached GNU time parse in original v1. This audit is read-only and graph validation does not retroactively repair original HOLD receipt. Preserve all v1 inputs. No remaining seven runs are authorized until diagnosis.",
+  "logs": {
+    "native.stderr": {
+      "bytes": 0,
+      "exists": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tail": ""
+    },
+    "native.stdout": {
+      "bytes": 1770,
+      "exists": true,
+      "sha256": "0b098669e1195645b7d7768bf0ebb3a26469abc3fcef64c43d5dda4ec64c2f39",
+      "tail": "Vary degree = 0\nData: detected 100000 points with dimension 128\nParlay time: SketchHash construction time: 0.0032\nSize of SketchHash (bytes): 4806144\nR70_RESERVOIR_VARIANT=STOCK_FLAT_C160\nR71_SELECTION_VARIANT=STOCK_HIGHWAY\nAllocate = 0\nSet MSTDeg to: 2 fanout: 1\nSizeof indexType = 4\nFanout scheme: 10 3 1 \nAllocating: 128800000 bytes of space for the candidates lists.\nSizeof T = 8\nCleared degree\nFANOUT = 1 FANOUT_PER_LEVEL = 0\nnumber of levels to fanout: 1\nfanout per level: 1\ntotal fanout: 1\ntotal fanout allowance: 1\nleader method: random\nParlay time: first level assign time: 0.0156\nParlay time: buckets time: 0.1608\nbuckets size (bytes): 12132536\nTotal buckets: 8367\nTotal points: 2999666\nComputed buckets!\nBuilding leaves:\nParlay time: build leaf time: 1.4087\nBuilt cluster 0 of 2\nLeaf count: 8367\n# of comparisons during clustering: 89859812\nFANOUT = 1 FANOUT_PER_LEVEL = 0\nnumber of levels to fanout: 1\nfanout per level: 1\ntotal fanout: 1\ntotal fanout allowance: 1\nleader method: random\nParlay time: first level assign time: 0.0146\nParlay time: buckets time: 0.1500\nbuckets size (bytes): 12131060\nTotal buckets: 8297\nTotal points: 2999577\nComputed buckets!\nBuilding leaves:\nParlay time: build leaf time: 1.3912\nBuilt cluster 1 of 2\nLeaf count: 16664\n# of comparisons during clustering: 177341343\nAllocating graph, prune_degree = 64\nAverage table size: 37\nParlay time: Final prune time: 0.1225\nAverage distance traversed: 37\nWriting graph to /home/tai/ann-task-a/experiments/R91/r91_g2a1_sift100k_paired_2rep_v1/runs/r1_stock_original/graph.bin\nWriting graph with 100000 points and max degree 64\nPiPNN graph built with 100000 points and parameters Trees = 2\nGraph has average degree 18.27 and maximum degree 64\nGraph built in 3.246 seconds\nParlay time: 3.2533\n"
+    }
+  },
+  "monitor": {
+    "bytes": 2065,
+    "columns": [
+      "epoch",
+      "current",
+      "peak",
+      "swap",
+      "anon",
+      "file",
+      "max",
+      "oom",
+      "oom_kill",
+      "host_memavail",
+      "disk_free"
+    ],
+    "exists": true,
+    "ranges": {
+      "anon": {
+        "max": 428437504,
+        "min": 9064448,
+        "samples": 23
+      },
+      "current": {
+        "max": 430403584,
+        "min": 10043392,
+        "samples": 23
+      },
+      "file": {
+        "max": 7729152,
+        "min": 8192,
+        "samples": 23
+      },
+      "peak": {
+        "max": 439828480,
+        "min": 26374144,
+        "samples": 23
+      },
+      "swap": {
+        "max": 0,
+        "min": 0,
+        "samples": 23
+      }
+    },
+    "rows": 23,
+    "sha256": "72616678bf01e32c40793c83b1be03388171c76db1e1960a8096d7521ad3cd8c"
+  },
+  "no_ann_build_or_search_run_by_this_audit": true,
+  "no_existing_file_modified": true,
+  "old_receipt_log_hash_checks": {
+    "graph.bin": {
+      "in_receipt": true,
+      "sha_match": true
+    },
+    "memory_monitor.tsv": {
+      "in_receipt": true,
+      "sha_match": true
+    },
+    "native.stderr": {
+      "in_receipt": true,
+      "sha_match": true
+    },
+    "native.stdout": {
+      "in_receipt": true,
+      "sha_match": true
+    },
+    "native.time": {
+      "in_receipt": true,
+      "sha_match": true
+    }
+  },
+  "original_pins": {
+    "pilot_summary": {
+      "equal": true,
+      "expected": "4a2bb8425ce906d3fd7570cf70e011c9df07f476d0c12e32764e94b4aba33cdb",
+      "got": "4a2bb8425ce906d3fd7570cf70e011c9df07f476d0c12e32764e94b4aba33cdb"
+    },
+    "preflight": {
+      "equal": true,
+      "expected": "b959c4da6e6a0d1749476df525a8fb4ab9f5c8155e059430b036aab03af5a298",
+      "got": "b959c4da6e6a0d1749476df525a8fb4ab9f5c8155e059430b036aab03af5a298"
+    },
+    "receipt": {
+      "equal": true,
+      "expected": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+      "got": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43"
+    }
+  },
+  "original_slot_error": "ValueError('GNU_TIME_FIELD_HOLD Maximum resident set size (kbytes)')",
+  "original_slot_status": "R91_G2A1_SIFT100K_PAIRED_V1_SLOT_HOLD",
+  "pilot_failed_slot": "r1_stock_original",
+  "pilot_summary_status": "R91_G2A1_SIFT100K_PAIRED_V1_HOLD_PRESERVE_RESULTS",
+  "preflight_status": "R91_G2A1_SIFT100K_PAIRED_V1_PREFLIGHT_PASS_NO_BUILD",
+  "receipt_time_metrics": null,
+  "reported_cgroup_peak_bytes": 439828480,
+  "sampled_max_swap_bytes": 0,
+  "status": "BUILDER_EXIT0_GRAPH_AUDIT_PASS_TIME_LABEL_INSPECTION_NEEDED",
+  "time": {
+    "exists": true,
+    "has_all_expected_labels": true,
+    "has_numeric_max_rss": true,
+    "labels": [
+      "Command being timed",
+      "User time (seconds)",
+      "System time (seconds)",
+      "Percent of CPU this job got",
+      "Elapsed (wall clock) time (h",
+      "Average shared text size (kbytes)",
+      "Average unshared data size (kbytes)",
+      "Average stack size (kbytes)",
+      "Average total size (kbytes)",
+      "Maximum resident set size (kbytes)",
+      "Average resident set size (kbytes)",
+      "Major (requiring I/O) page faults",
+      "Minor (reclaiming a frame) page faults",
+      "Voluntary context switches",
+      "Involuntary context switches",
+      "Swaps",
+      "File system inputs",
+      "File system outputs",
+      "Socket messages sent",
+      "Socket messages received",
+      "Signals delivered",
+      "Page size (bytes)",
+      "Exit status"
+    ],
+    "line_count": 23,
+    "raw_prefix_repr": "b'\\tCommand being timed: \"taskset -c 0,2,4,6 /home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN -base_path /home/tai/ann-task-a/data/sift100k.fbin -graph_outfile /home/tai/ann-task-a/experiments/R91/r91_g2a1_sift100k_paired_2rep_v1/runs/r1_stock_original/graph.bin -num_clusters 2 -cluster_size 1024 -table_size 160 -top_level_leaders 100 -fanout_scheme 10,3,1 -mst_deg 2 -prune 1 -prune_all 1 -prune_degree 64 -hash_bits 12 -alpha 1.1 -k 0\"\\n\\tUser time (seconds): 12.78\\n\\tSystem time (seconds): 0.12\\n\\tPercent of CPU this job got: 392%\\n\\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:03.28\\n\\tAverage shared text size (kbytes): 0\\n\\tAverage unshared data size (kbytes): 0\\n\\tAverage stack size (kbytes): 0\\n\\tAverage total size (kbytes): 0\\n\\tMaximum resident set size (kbytes): 415848\\n\\tAverage resident set size (kbytes): 0\\n\\tMajor (requiring I/O) page faults: 0\\n\\tMinor (reclaiming a frame) page faults: 69189\\n\\tVoluntary context switches: 2560\\n\\tInvoluntary context switches: 77\\n\\tSwaps: 0\\n\\tFile system inputs: 0\\n\\tFile system outputs: 15072\\n\\tSocket messages sent: 0\\n\\tSocket messages received: 0\\n\\tSignals delivered:'",
+    "sha256": "72866c36b7bcc46403d18bf223dd7380b66807ed5f655658ce26f573a4f7337b",
+    "size_bytes": 1244,
+    "values": {
+      "Elapsed (wall clock) time (h:mm:ss or m:ss)": "mm:ss or m:ss): 0:03.28",
+      "Exit status": "0",
+      "Major (requiring I/O) page faults": "0",
+      "Maximum resident set size (kbytes)": "415848",
+      "Swaps": "0"
+    }
+  }
+}

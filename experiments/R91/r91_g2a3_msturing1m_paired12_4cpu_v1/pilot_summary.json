@@ -1,0 +1,1106 @@
+{
+  "comparison": {
+    "all_12_graphs_valid": true,
+    "all_same_session_pairs_equal": false,
+    "conclusion": "TWELVE_G2A3_GRAPH_SHA_PAIRS_OBSERVED_NO_FOUR_CPU_EQUALITY_ASSUMED",
+    "repeat_sha_equal": {
+      "fast_g2a2": false,
+      "fast_lazy_only": false,
+      "fast_lazy_reclaim": false,
+      "stock_g2a2": false,
+      "stock_lazy_only": false,
+      "stock_lazy_reclaim": false
+    },
+    "same_session_pair_sha_equal": {
+      "fast_r1_lazy_only_vs_g2a2": false,
+      "fast_r1_lazy_reclaim_vs_g2a2": false,
+      "fast_r1_lazy_reclaim_vs_lazy_only": false,
+      "fast_r2_lazy_only_vs_g2a2": false,
+      "fast_r2_lazy_reclaim_vs_g2a2": false,
+      "fast_r2_lazy_reclaim_vs_lazy_only": false,
+      "stock_r1_lazy_only_vs_g2a2": false,
+      "stock_r1_lazy_reclaim_vs_g2a2": false,
+      "stock_r1_lazy_reclaim_vs_lazy_only": false,
+      "stock_r2_lazy_only_vs_g2a2": false,
+      "stock_r2_lazy_reclaim_vs_g2a2": false,
+      "stock_r2_lazy_reclaim_vs_lazy_only": false
+    },
+    "within_binary_all_reproducible": false
+  },
+  "failed_slot": null,
+  "memory_pairs": {
+    "fast_r1_lazy_only_vs_g2a2": {
+      "arc_delta": 49541,
+      "cgroup_peak_delta_bytes": 25776128,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": 22920,
+      "sampled_peak_anon_delta_bytes": 23523328,
+      "sampled_peak_file_delta_bytes": 192512,
+      "wall_delta_pct": -0.019479438567182594
+    },
+    "fast_r1_lazy_reclaim_vs_g2a2": {
+      "arc_delta": 41025,
+      "cgroup_peak_delta_bytes": -184885248,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -180568,
+      "sampled_peak_anon_delta_bytes": -184532992,
+      "sampled_peak_file_delta_bytes": 159744,
+      "wall_delta_pct": -0.005666745765009473
+    },
+    "fast_r1_lazy_reclaim_vs_lazy_only": {
+      "arc_delta": -8516,
+      "cgroup_peak_delta_bytes": -210661376,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -203488,
+      "sampled_peak_anon_delta_bytes": -208056320,
+      "sampled_peak_file_delta_bytes": -32768,
+      "wall_delta_pct": 0.01381538396141302
+    },
+    "fast_r2_lazy_only_vs_g2a2": {
+      "arc_delta": 10890,
+      "cgroup_peak_delta_bytes": 3821568,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": 1952,
+      "sampled_peak_anon_delta_bytes": -2072576,
+      "sampled_peak_file_delta_bytes": 53248,
+      "wall_delta_pct": 0.4513955906433553
+    },
+    "fast_r2_lazy_reclaim_vs_g2a2": {
+      "arc_delta": -3724,
+      "cgroup_peak_delta_bytes": -196227072,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -191624,
+      "sampled_peak_anon_delta_bytes": -195772416,
+      "sampled_peak_file_delta_bytes": -16384,
+      "wall_delta_pct": 0.43535585241425423
+    },
+    "fast_r2_lazy_reclaim_vs_lazy_only": {
+      "arc_delta": -14614,
+      "cgroup_peak_delta_bytes": -200048640,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -193576,
+      "sampled_peak_anon_delta_bytes": -193699840,
+      "sampled_peak_file_delta_bytes": -69632,
+      "wall_delta_pct": -0.01596766091180868
+    },
+    "stock_r1_lazy_only_vs_g2a2": {
+      "arc_delta": -5924,
+      "cgroup_peak_delta_bytes": 22982656,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": 20108,
+      "sampled_peak_anon_delta_bytes": 16420864,
+      "sampled_peak_file_delta_bytes": -16384,
+      "wall_delta_pct": -0.34394475706419625
+    },
+    "stock_r1_lazy_reclaim_vs_g2a2": {
+      "arc_delta": -880,
+      "cgroup_peak_delta_bytes": -218652672,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -213352,
+      "sampled_peak_anon_delta_bytes": -218386432,
+      "sampled_peak_file_delta_bytes": -4096,
+      "wall_delta_pct": -0.007397932171593347
+    },
+    "stock_r1_lazy_reclaim_vs_lazy_only": {
+      "arc_delta": 5044,
+      "cgroup_peak_delta_bytes": -241635328,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -233460,
+      "sampled_peak_anon_delta_bytes": -234807296,
+      "sampled_peak_file_delta_bytes": 12288,
+      "wall_delta_pct": 0.33770835507405117
+    },
+    "stock_r2_lazy_only_vs_g2a2": {
+      "arc_delta": -12955,
+      "cgroup_peak_delta_bytes": 5746688,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": 5628,
+      "sampled_peak_anon_delta_bytes": 5754880,
+      "sampled_peak_file_delta_bytes": -53248,
+      "wall_delta_pct": 0.0009453725902330845
+    },
+    "stock_r2_lazy_reclaim_vs_g2a2": {
+      "arc_delta": -19163,
+      "cgroup_peak_delta_bytes": -198889472,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -194000,
+      "sampled_peak_anon_delta_bytes": -198418432,
+      "sampled_peak_file_delta_bytes": -73728,
+      "wall_delta_pct": 0.029448356186123625
+    },
+    "stock_r2_lazy_reclaim_vs_lazy_only": {
+      "arc_delta": -6208,
+      "cgroup_peak_delta_bytes": -204636160,
+      "graph_sha_equal": false,
+      "maxrss_delta_kib": -199628,
+      "sampled_peak_anon_delta_bytes": -204173312,
+      "sampled_peak_file_delta_bytes": -20480,
+      "wall_delta_pct": 0.028502714139033714
+    }
+  },
+  "new_builds_succeeded": 12,
+  "note": "12 new 4CPU MS-Turing1M BUILD: same-session G2A2 SketchLocks baseline, G2A3 lazy_only, G2A3 lazy_reclaim, Stock/Fast, x2. Compare memory phases and graph SHA, but 4CPU byte identity is not expected. No search/Recall in this pilot. High-water anon/file timestamps and graph-file appearance are NOT exact internal stage instrumentation. No 10M extrapolation.",
+  "preflight_sha256": "7d7975c75860041dcb91baaf57c850ad0354205f456451c87320fba37d2b19e3",
+  "ref_sha256": {
+    "g2a2_1m_pre": "877a21fa7cf575952044cd289edeaa15d69a6307b87347e2d5eee1bdfcbaab85",
+    "g2a2_1m_sum": "b8792fc973f8a31b91dea2bf554dd77efd60713cbda36f495e08a3a60cf953fe",
+    "g2a2_full_quality": "0d14aa0c9a19b5f3947dee7b42d285e0133f3fceee9d0034928441606fd2bf40",
+    "g2a3_100k_pre": "7fc353696fdb4b5550c53416b1399a048ce0631a148835833d26a63cba7972e6",
+    "g2a3_100k_sum": "ac43d4b599acd882ab1a055727237ad362e0240d3704b96839c739245129543a",
+    "g2a3_comp_pre": "5b2d843df7d9320d15a6c65c96c4da56d03b4cf9b53512ee2a824896ac6d403c",
+    "g2a3_comp_result": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+    "g2a3_patch": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e"
+  },
+  "run_request_sha256": "bd16a5a455e43d0eb3b488a4700a93992bd439a556173564b6397cd6fdb93eb5",
+  "slots": {
+    "r1_fast_g2a2": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2552960,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52816354,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "b06e7dd0a4d4fc8b3d8d25f8e97b335ea28703107e3790e3a5f53361d3d54e65",
+        "size_bytes": 215265424
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2627588096,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2621435904,
+          "epoch": 1795345403.8464906,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2627588096
+        },
+        "at_max_current": {
+          "anon_bytes": 2621435904,
+          "epoch": 1795345403.8464906,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2627588096
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345409.567481,
+          "file_bytes": 215302144,
+          "graph_file_bytes": 215265424,
+          "memory_current_bytes": 234143744
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1423269888,
+          "epoch": 1795345409.2663765,
+          "file_bytes": 4030464,
+          "graph_file_bytes": 4000008,
+          "memory_current_bytes": 1431814144
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345409.567481,
+          "file_bytes": 215302144,
+          "graph_file_bytes": 215265424,
+          "memory_current_bytes": 234143744
+        },
+        "max_graph_file_bytes": 215265424,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2621435904,
+        "sampled_peak_current_bytes": 2627588096,
+        "sampled_peak_file_bytes": 215302144,
+        "samples": 226
+      },
+      "monitor_samples": 226,
+      "receipt_sha256": "0c5e742630270bff17bc39e6dd06acb2f52d5d7c1587430e185660e594aa88f8",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 33.88188
+    },
+    "r1_fast_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2575880,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52865895,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "1486ab757048f088f4a9418607fdb9883c44e1ddb541ad632987d45958ce9207",
+        "size_bytes": 215463588
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2653364224,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2644959232,
+          "epoch": 1795345445.6640747,
+          "file_bytes": 24576,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2651267072
+        },
+        "at_max_current": {
+          "anon_bytes": 2644959232,
+          "epoch": 1795345445.6640747,
+          "file_bytes": 24576,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2651267072
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345445.9651697,
+          "file_bytes": 215494656,
+          "graph_file_bytes": 215463588,
+          "memory_current_bytes": 234782720
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1915301888,
+          "epoch": 1795345445.814635,
+          "file_bytes": 215490560,
+          "graph_file_bytes": 215463588,
+          "memory_current_bytes": 2141347840
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345445.9651697,
+          "file_bytes": 215494656,
+          "graph_file_bytes": 215463588,
+          "memory_current_bytes": 234782720
+        },
+        "max_graph_file_bytes": 215463588,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2644959232,
+        "sampled_peak_current_bytes": 2651267072,
+        "sampled_peak_file_bytes": 215494656,
+        "samples": 226
+      },
+      "monitor_samples": 226,
+      "receipt_sha256": "7e5859793e0fba37fb59de165f70a0a2057bbe2a6a3b683994cbe298be78115c",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 33.87528
+    },
+    "r1_fast_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2372392,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52857379,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "5e044f1d5fcf0b78d152c9f34e9a69bcc73c1d6e3b631db42f3be1325900217e",
+        "size_bytes": 215429524
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2442702848,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2436902912,
+          "epoch": 1795345475.5960813,
+          "file_bytes": 16384,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2442702848
+        },
+        "at_max_current": {
+          "anon_bytes": 2436382720,
+          "epoch": 1795345467.3157609,
+          "file_bytes": 16384,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2442702848
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345482.3711805,
+          "file_bytes": 215461888,
+          "graph_file_bytes": 215429524,
+          "memory_current_bytes": 234684416
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1916182528,
+          "epoch": 1795345482.220184,
+          "file_bytes": 203448320,
+          "graph_file_bytes": 203423744,
+          "memory_current_bytes": 2132381696
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345482.3711805,
+          "file_bytes": 215461888,
+          "graph_file_bytes": 215429524,
+          "memory_current_bytes": 234684416
+        },
+        "max_graph_file_bytes": 215429524,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2436902912,
+        "sampled_peak_current_bytes": 2442702848,
+        "sampled_peak_file_bytes": 215461888,
+        "samples": 226
+      },
+      "monitor_samples": 226,
+      "receipt_sha256": "10e43df5f9223a22c85574454f3a9c9a4073b04bed9f948bfcdc70fa92b04e0c",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 33.87996
+    },
+    "r1_stock_g2a2": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2565160,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52850937,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "064ef429053ad3dcdc7cf6d6be26e9dc391e31a48ba744196191fb1f7395843e",
+        "size_bytes": 215403756
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2640306176,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2634129408,
+          "epoch": 1795345277.850779,
+          "file_bytes": 24576,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2640306176
+        },
+        "at_max_current": {
+          "anon_bytes": 2634129408,
+          "epoch": 1795345277.850779,
+          "file_bytes": 24576,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2640306176
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345283.5709507,
+          "file_bytes": 215433216,
+          "graph_file_bytes": 215403756,
+          "memory_current_bytes": 234401792
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1905623040,
+          "epoch": 1795345283.4199464,
+          "file_bytes": 215429120,
+          "graph_file_bytes": 215403756,
+          "memory_current_bytes": 2131603456
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345283.5709507,
+          "file_bytes": 215433216,
+          "graph_file_bytes": 215403756,
+          "memory_current_bytes": 234401792
+        },
+        "max_graph_file_bytes": 215403756,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2634129408,
+        "sampled_peak_current_bytes": 2640306176,
+        "sampled_peak_file_bytes": 215433216,
+        "samples": 282
+      },
+      "monitor_samples": 282,
+      "receipt_sha256": "63b90d43769febc6a0868eeb8765a8ed7ddf83a7b14e3485efda7f833fdac255",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 42.30912
+    },
+    "r1_stock_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2585268,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52845013,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "7423e659131b828da4161c6d045f2498e3f937c6a8286ae2ac85d3ccd84596e7",
+        "size_bytes": 215380060
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2663288832,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2650550272,
+          "epoch": 1795345327.8271148,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2656997376
+        },
+        "at_max_current": {
+          "anon_bytes": 2650550272,
+          "epoch": 1795345327.8271148,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2656997376
+        },
+        "at_max_file": {
+          "anon_bytes": 12263424,
+          "epoch": 1795345328.2783136,
+          "file_bytes": 215416832,
+          "graph_file_bytes": 215380060,
+          "memory_current_bytes": 234377216
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1365528576,
+          "epoch": 1795345327.9774394,
+          "file_bytes": 4030464,
+          "graph_file_bytes": 4000008,
+          "memory_current_bytes": 1373753344
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12263424,
+          "epoch": 1795345328.2783136,
+          "file_bytes": 215416832,
+          "graph_file_bytes": 215380060,
+          "memory_current_bytes": 234377216
+        },
+        "max_graph_file_bytes": 215380060,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2650550272,
+        "sampled_peak_current_bytes": 2656997376,
+        "sampled_peak_file_bytes": 215416832,
+        "samples": 281
+      },
+      "monitor_samples": 281,
+      "receipt_sha256": "88173e1e500c87d4810ee1f80996730bb82c119d517ce79f110b5e8638dcc802",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 42.1636
+    },
+    "r1_stock_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2351808,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52850057,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "2866beae2cc0c18562735fa6b770c287899f7d1c7226e143b6ecb44400228812",
+        "size_bytes": 215400236
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2421653504,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2415742976,
+          "epoch": 1795345355.0514553,
+          "file_bytes": 16384,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2421653504
+        },
+        "at_max_current": {
+          "anon_bytes": 2415374336,
+          "epoch": 1795345353.9974978,
+          "file_bytes": 16384,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2421653504
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345373.1173937,
+          "file_bytes": 215429120,
+          "graph_file_bytes": 215400236,
+          "memory_current_bytes": 234651648
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1597779968,
+          "epoch": 1795345372.9667828,
+          "file_bytes": 4026368,
+          "graph_file_bytes": 4000008,
+          "memory_current_bytes": 1606189056
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345373.1173937,
+          "file_bytes": 215429120,
+          "graph_file_bytes": 215400236,
+          "memory_current_bytes": 234651648
+        },
+        "max_graph_file_bytes": 215400236,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2415742976,
+        "sampled_peak_current_bytes": 2421653504,
+        "sampled_peak_file_bytes": 215429120,
+        "samples": 282
+      },
+      "monitor_samples": 282,
+      "receipt_sha256": "5a70af5f8456f5ac186a281add4a009eeca0b42ebee4436e1d018b1175737014",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 42.30599
+    },
+    "r2_fast_g2a2": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2559728,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52876090,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "2a78c5b7b476a9cc3fbc084197a0285cf303da9f3e99d7c5be3ff462bb44603c",
+        "size_bytes": 215504368
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2634780672,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2628280320,
+          "epoch": 1795345585.7544405,
+          "file_bytes": 20480,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2634780672
+        },
+        "at_max_current": {
+          "anon_bytes": 2628280320,
+          "epoch": 1795345585.7544405,
+          "file_bytes": 20480,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2634780672
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345591.4747753,
+          "file_bytes": 215531520,
+          "graph_file_bytes": 215504368,
+          "memory_current_bytes": 234758144
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1832185856,
+          "epoch": 1795345591.3238366,
+          "file_bytes": 4022272,
+          "graph_file_bytes": 4000008,
+          "memory_current_bytes": 1841651712
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345591.4747753,
+          "file_bytes": 215531520,
+          "graph_file_bytes": 215504368,
+          "memory_current_bytes": 234758144
+        },
+        "max_graph_file_bytes": 215504368,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2628280320,
+        "sampled_peak_current_bytes": 2634780672,
+        "sampled_peak_file_bytes": 215531520,
+        "samples": 225
+      },
+      "monitor_samples": 225,
+      "receipt_sha256": "7d0c8ce13cc66b20507d257eed80babf3684833404ff18750e58c548d6260a8c",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 33.72873
+    },
+    "r2_fast_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2561680,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52886980,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "e9ff2ffaad053900329d8af52f474dc1853ae0ca464865de114a37f7bf866d25",
+        "size_bytes": 215547928
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2638602240,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2626207744,
+          "epoch": 1795345554.9135234,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2632310784
+        },
+        "at_max_current": {
+          "anon_bytes": 2626207744,
+          "epoch": 1795345554.9135234,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2632310784
+        },
+        "at_max_file": {
+          "anon_bytes": 12271616,
+          "epoch": 1795345555.2151432,
+          "file_bytes": 215584768,
+          "graph_file_bytes": 215547928,
+          "memory_current_bytes": 234471424
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1562275840,
+          "epoch": 1795345555.0647974,
+          "file_bytes": 4030464,
+          "graph_file_bytes": 4000008,
+          "memory_current_bytes": 1570582528
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12271616,
+          "epoch": 1795345555.2151432,
+          "file_bytes": 215584768,
+          "graph_file_bytes": 215547928,
+          "memory_current_bytes": 234471424
+        },
+        "max_graph_file_bytes": 215547928,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2626207744,
+        "sampled_peak_current_bytes": 2632310784,
+        "sampled_peak_file_bytes": 215584768,
+        "samples": 226
+      },
+      "monitor_samples": 226,
+      "receipt_sha256": "420fb207e763661e68ee1fed38e371da5293008ba9bf16cbadc9f3c5583d33b9",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 33.88098
+    },
+    "r2_fast_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2368104,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52872366,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "e7963c0c2aa5fcf5222ec779949317bec38c204fb9843620eab5c078bbd3ce25",
+        "size_bytes": 215489472
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2438553600,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2432507904,
+          "epoch": 1795345504.6450899,
+          "file_bytes": 16384,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2438553600
+        },
+        "at_max_current": {
+          "anon_bytes": 2432278528,
+          "epoch": 1795345503.591126,
+          "file_bytes": 16384,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2438553600
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345518.7974856,
+          "file_bytes": 215515136,
+          "graph_file_bytes": 215489472,
+          "memory_current_bytes": 234696704
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1910472704,
+          "epoch": 1795345518.6467128,
+          "file_bytes": 215511040,
+          "graph_file_bytes": 215489472,
+          "memory_current_bytes": 2136743936
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345518.7974856,
+          "file_bytes": 215515136,
+          "graph_file_bytes": 215489472,
+          "memory_current_bytes": 234696704
+        },
+        "max_graph_file_bytes": 215489472,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2432507904,
+        "sampled_peak_current_bytes": 2438553600,
+        "sampled_peak_file_bytes": 215515136,
+        "samples": 226
+      },
+      "monitor_samples": 226,
+      "receipt_sha256": "d298a0a97717e1f2641abf5fd5bf14ff4848353573c9f491fd24fbdfe90e54ee",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 33.87557
+    },
+    "r2_stock_g2a2": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2553988,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52868029,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "f9988e147eca088134b00579727c5ed6a50672e3b1c0af8c59fb98cfd015dc70",
+        "size_bytes": 215472124
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2628882432,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2622693376,
+          "epoch": 1795345720.315775,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2628882432
+        },
+        "at_max_current": {
+          "anon_bytes": 2622693376,
+          "epoch": 1795345720.315775,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2628882432
+        },
+        "at_max_file": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345726.035289,
+          "file_bytes": 215506944,
+          "graph_file_bytes": 215472124,
+          "memory_current_bytes": 234459136
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1426452480,
+          "epoch": 1795345725.7340996,
+          "file_bytes": 4030464,
+          "graph_file_bytes": 4000008,
+          "memory_current_bytes": 1434943488
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12267520,
+          "epoch": 1795345726.035289,
+          "file_bytes": 215506944,
+          "graph_file_bytes": 215472124,
+          "memory_current_bytes": 234459136
+        },
+        "max_graph_file_bytes": 215472124,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2622693376,
+        "sampled_peak_current_bytes": 2628882432,
+        "sampled_peak_file_bytes": 215506944,
+        "samples": 282
+      },
+      "monitor_samples": 282,
+      "receipt_sha256": "af3720322e25f2a24bad505960f350663ae363b55aebeb0a8893f2e59ed6b81e",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 42.31136
+    },
+    "r2_stock_lazy_only": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2559616,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52855074,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "52b5339af3e48c772f4cbbcb2efeab985eb7ff31582ecc2ed19fc938dc12ae0e",
+        "size_bytes": 215420304
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2634629120,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2628448256,
+          "epoch": 1795345680.9030926,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2634629120
+        },
+        "at_max_current": {
+          "anon_bytes": 2628448256,
+          "epoch": 1795345680.9030926,
+          "file_bytes": 28672,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2634629120
+        },
+        "at_max_file": {
+          "anon_bytes": 12271616,
+          "epoch": 1795345681.2043436,
+          "file_bytes": 215453696,
+          "graph_file_bytes": 215420304,
+          "memory_current_bytes": 234508288
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1898127360,
+          "epoch": 1795345681.0534875,
+          "file_bytes": 213938176,
+          "graph_file_bytes": 213909504,
+          "memory_current_bytes": 2122612736
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12271616,
+          "epoch": 1795345681.2043436,
+          "file_bytes": 215453696,
+          "graph_file_bytes": 215420304,
+          "memory_current_bytes": 234508288
+        },
+        "max_graph_file_bytes": 215420304,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2628448256,
+        "sampled_peak_current_bytes": 2634629120,
+        "sampled_peak_file_bytes": 215453696,
+        "samples": 282
+      },
+      "monitor_samples": 282,
+      "receipt_sha256": "eb5519bf0c9e15fe7360b3f8bf6d37e13f72b7b85a46ce8983b6886975efe608",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 42.31176
+    },
+    "r2_stock_lazy_reclaim": {
+      "builder_exit_code": 0,
+      "gnu_time": {
+        "exit_status": 0,
+        "major_faults": 0,
+        "max_rss_kib": 2359988,
+        "swaps": 0
+      },
+      "graph": {
+        "arcs": 52848866,
+        "bad_id_rows": 0,
+        "degree_cap": 64,
+        "duplicate_rows": 0,
+        "full_audit": true,
+        "max_degree": 64,
+        "nodes": 1000000,
+        "selfloop_rows": 0,
+        "sha256": "142efec7bf976ba129a2eb327e3315b39af61ec1bb7b4b6c004eaa849314c22a",
+        "size_bytes": 215395472
+      },
+      "memory_events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "memory_peak_bytes": 2429992960,
+      "memory_profile": {
+        "at_max_anon": {
+          "anon_bytes": 2424274944,
+          "epoch": 1795345619.9277449,
+          "file_bytes": 20480,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2429992960
+        },
+        "at_max_current": {
+          "anon_bytes": 2423746560,
+          "epoch": 1795345618.2704828,
+          "file_bytes": 20480,
+          "graph_file_bytes": 0,
+          "memory_current_bytes": 2429992960
+        },
+        "at_max_file": {
+          "anon_bytes": 12271616,
+          "epoch": 1795345636.3391745,
+          "file_bytes": 215433216,
+          "graph_file_bytes": 215395472,
+          "memory_current_bytes": 234319872
+        },
+        "first_graph_nonzero": {
+          "anon_bytes": 1902297088,
+          "epoch": 1795345636.1885467,
+          "file_bytes": 215429120,
+          "graph_file_bytes": 215395472,
+          "memory_current_bytes": 2128584704
+        },
+        "first_graph_note": "Heuristic proxy for graph-file creation, not guaranteed phase G.save boundary; anon/file maxima may occur at distinct moments.",
+        "last_sample": {
+          "anon_bytes": 12271616,
+          "epoch": 1795345636.3391745,
+          "file_bytes": 215433216,
+          "graph_file_bytes": 215395472,
+          "memory_current_bytes": 234319872
+        },
+        "max_graph_file_bytes": 215395472,
+        "max_sampled_swap_bytes": 0,
+        "sampled_peak_anon_bytes": 2424274944,
+        "sampled_peak_current_bytes": 2429992960,
+        "sampled_peak_file_bytes": 215433216,
+        "samples": 282
+      },
+      "monitor_samples": 282,
+      "receipt_sha256": "2d0a1f39622b69ff098843b2b0c6fa7a6930f42fc96c80867a9b67e2f1c8c9e9",
+      "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_SLOT_NATIVE_BUILD_GRAPH_PASS",
+      "wall_external_seconds": 42.32382
+    }
+  },
+  "status": "R91_G2A3_MST1M_PAIRED12_4CPU_V1_ALL_TWELVE_NATIVE_BUILDS_PASS_PENDING_QUALITY_REVIEW"
+}

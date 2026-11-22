@@ -1,0 +1,121 @@
+{
+  "arms": {
+    "fast": {
+      "cmake_build": {
+        "sha256": "f9cf02cdcbaedf3fbd80d0d0351f2de739ba7c7a5a44783b842b03640d773936",
+        "wall_seconds": 86.241
+      },
+      "cmake_configure": {
+        "sha256": "80c83ea6040852d372d21779c114967639c3493a77cf89bb02ed9acc862500c5",
+        "wall_seconds": 11.554
+      },
+      "elf_sha256": "8c852abf26f5448601028fd417868389bc3d2d3d00721b649541c4aafc21f67f",
+      "executable": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_compile_only_v1_1/fast_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "h17_flag": "ON",
+      "original_graph_h_sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+      "patched_source_sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962",
+      "source_tree_scan": {
+        "bytes": 27681340,
+        "files": 1681,
+        "verified_symlinks": {
+          "data_tools/utils": "../algorithms/utils",
+          "rangeSearch/utils": "../algorithms/utils"
+        }
+      },
+      "status": "COMPILE_PASS_NO_ANN_BUILD"
+    },
+    "stock": {
+      "cmake_build": {
+        "sha256": "7c0296b6cd4a7076140e7bbcde64ffdfdaeb75aabd9bd93a4ffe6b0ead92eb6b",
+        "wall_seconds": 86.026
+      },
+      "cmake_configure": {
+        "sha256": "69614133b9e3b97e594db2ec43507dd9d087215387ae8201f020718eb54f3b97",
+        "wall_seconds": 11.591
+      },
+      "elf_sha256": "21103e6c63ba5c7cad8c253f3a5d0e6e1dea15cacad8eed80125c95b6d93c75b",
+      "executable": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_compile_only_v1_1/stock_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "h17_flag": "OFF",
+      "original_graph_h_sha256": "4f25e523b2d3b98e0465f313717fe9aa0cf2a30f720c6a29b04ca1b49620fc7d",
+      "patched_source_sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962",
+      "source_tree_scan": {
+        "bytes": 27681087,
+        "files": 1681,
+        "verified_symlinks": {
+          "data_tools/utils": "../algorithms/utils",
+          "rangeSearch/utils": "../algorithms/utils"
+        }
+      },
+      "status": "COMPILE_PASS_NO_ANN_BUILD"
+    }
+  },
+  "input": {
+    "compiler_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+    "dependency_paths": {
+      "ABSEIL-CPP": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/abseil-cpp-src",
+      "EIGEN": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/eigen-src",
+      "GOOGLEBENCHMARK": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/googlebenchmark-src",
+      "HIGHWAY": "/home/tai/ann-task-a/experiments/H85/r85_0_matched_baseline/build_stock/_deps/highway-src",
+      "PARLAYLIB": "/home/tai/ann-task-a/experiments/R86/r86_v1_2_builds/stock_off/_deps/parlaylib-src"
+    },
+    "disk_free_bytes": 38999142400,
+    "fast_original_source_root": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/fast_off",
+    "g2a0_report_sha256": "96e994c28bc031dc1a4ff16580c795c578e1dbe55a0c92ed6d4b0c45405f2f2d",
+    "g2a1_patch_receipt_sha256": "e902e28f695892be6818e3dcb2bcbe9d2e41d41816f78a91f3a1f18eb7d71721",
+    "highway_file_sha256": {
+      "sorting_networks-inl.h": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b",
+      "traits-inl.h": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+    },
+    "highway_head": "6bc2d47793bae9c521fb4150936669647700765d",
+    "mem_available_bytes": 28790636544,
+    "patched_graph_h_sha256": "45148836b7eb086269b99a0129a7bc3109ee94f377eb1e5797e71b3b03711962",
+    "source_scans": {
+      "fast": {
+        "bytes": 27681340,
+        "files": 1681,
+        "verified_symlinks": {
+          "data_tools/utils": "../algorithms/utils",
+          "rangeSearch/utils": "../algorithms/utils"
+        }
+      },
+      "stock": {
+        "bytes": 27681087,
+        "files": 1681,
+        "verified_symlinks": {
+          "data_tools/utils": "../algorithms/utils",
+          "rangeSearch/utils": "../algorithms/utils"
+        }
+      }
+    },
+    "stock_original_source_root": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/source/stock_off"
+  },
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "no_original_source_edit": true,
+  "pre_scan": {
+    "fast": {
+      "bytes": 27681340,
+      "files": 1681,
+      "verified_symlinks": {
+        "data_tools/utils": "../algorithms/utils",
+        "rangeSearch/utils": "../algorithms/utils"
+      }
+    },
+    "stock": {
+      "bytes": 27681087,
+      "files": 1681,
+      "verified_symlinks": {
+        "data_tools/utils": "../algorithms/utils",
+        "rangeSearch/utils": "../algorithms/utils"
+      }
+    }
+  },
+  "preflight_sha256": "5cb1cdf5ba79ce30ad3c66537b4855aa13cb620391bbc7defa911a9c20f1da42",
+  "scope": {
+    "cgroup_path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rba22ea83cdf54bb9aceb5abdf710b210.scope",
+    "memory_max": "25769803776",
+    "memory_swap_max": "0"
+  },
+  "status": "R91_G2A1_STOCK_FAST_NATIVE_COMPILE_PASS__NO_ANN_BUILD_NO_SEARCH",
+  "timestamp_utc": "2026-11-21T14:52:34.727265+00:00"
+}

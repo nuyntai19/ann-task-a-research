@@ -1,0 +1,31 @@
+{
+  "between_rep_shas": {},
+  "dataset_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "failed_slot": "r1_stock_original",
+  "interpretation": "Graph SHA equality is an OBSERVATION, not presumed; if SHA differs inspect within-original two-rep variability before inferring algorithm drift. Peak may occur before destructor, 100K is not 10M.",
+  "no_original_modification": true,
+  "preflight_sha256": "b959c4da6e6a0d1749476df525a8fb4ab9f5c8155e059430b036aab03af5a298",
+  "run_request_sha256": "672b5d0c79e715bf6d9890b3c3f44ae3161b46f2577fe29dfb2fcfd85d1a3ea5",
+  "slots": {
+    "r1_stock_original": {
+      "cgroup_peak_bytes": 439828480,
+      "events_delta": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0,
+        "sock_throttled": 0
+      },
+      "external_seconds": 3.3127,
+      "graph": null,
+      "receipt_sha256": "1742bf0f479a73ad51d05bbd00e625a6d16a42c666f1f6c2222dd820b81ddc43",
+      "rss_kib": null,
+      "status": "R91_G2A1_SIFT100K_PAIRED_V1_SLOT_HOLD",
+      "swap_bytes": 0
+    }
+  },
+  "status": "R91_G2A1_SIFT100K_PAIRED_V1_HOLD_PRESERVE_RESULTS",
+  "within_rep_comparisons": {}
+}

@@ -1,0 +1,33 @@
+{
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "no_original_artifacts_modified": true,
+  "preflight_sha256": "958ebec86e7394ac47ff688776b36a0bbde7f30ceab048ab0fbd571f503415af",
+  "slots": [
+    "r1_stock_original",
+    "r1_stock_patched",
+    "r1_fast_patched",
+    "r1_fast_original",
+    "r2_fast_original",
+    "r2_fast_patched",
+    "r2_stock_patched",
+    "r2_stock_original"
+  ],
+  "source_ref_pins": {
+    "onecpu_pre": "05b732c888810ddb3fcb7e45a20bb73f7b17a676da6c0412573157834483176b",
+    "onecpu_sum": "e6a24ae2e822bf5392457dc4cf82230081d8b49c6627e772d48f95b63040eea2"
+  },
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

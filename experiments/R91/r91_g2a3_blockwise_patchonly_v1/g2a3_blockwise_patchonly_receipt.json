@@ -1,0 +1,86 @@
+{
+  "alignment_bytes": 2097152,
+  "ann_build": false,
+  "ann_search": false,
+  "baseline_source_sha256": {
+    "fast": {
+      "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+      "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+      "neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+      "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e",
+      "pipnn_utils.h": "72ca1451790234a76a9bfe5ecafd7bc555e6cd53673587b62a37a93f24caad28"
+    },
+    "stock": {
+      "graph.h": "73e177bc37fb198b4b6b3e291f13291a617eae68355df0472ca65805bc8cd20d",
+      "hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+      "neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+      "pipnn.h": "509027d35c5ffbac6191ffd17a8a308978e57be3a8be5f6f6e31efb079cf643e",
+      "pipnn_utils.h": "33b09c3cb85d70f0a11d86c481dc2a6e398b9e162fe1d42b2b1bd1314a0bd3db"
+    }
+  },
+  "block_vertices": 65536,
+  "cautions": [
+    "NOT a native C++ syntax/safety proof",
+    "Not evidence of 10M RAM gain",
+    "Only flat LSHGraph path uses lazy G allocation and blockwise prune",
+    "Native graph equality/quality, build timing, kernel THP/page reclaim behavior must be tested",
+    "Never free individual rows of contiguous aligned_alloc"
+  ],
+  "cpp_compiled": false,
+  "created_utc": "2026-11-22T09:33:47.448215+00:00",
+  "historical_source_modified": false,
+  "native_audit_sha256": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+  "source_changes": [
+    "GraphI allocate_graph optional defer eager zero, defaults preserve all other codepaths",
+    "Output G[i] degree zeroed with clear_neighbors before robustPrune or append_neighbor for each block",
+    "LSHGraph aligned_alloc byte count rounded to 2MiB and overflow/null checked",
+    "Optional 2MiB aligned monotonic MADV_DONTNEED of completely consumed LSHGraph table prefix after block join"
+  ],
+  "status": "R91_G2A3_BLOCKWISE_PATCHONLY_V1_SOURCE_ONLY_TWO_ABLATIONS_READY_UNCOMPILED_UNBUILT",
+  "variants": {
+    "lazy_only": {
+      "fast": {
+        "diff_sha256": {
+          "graph.h": "3077c1e6683e10e1a07c3175f4f058e921f2cd245124a2bbb735c427a21f4526",
+          "pipnn.h": "7c81fe3545bd39fe5eab449da10434b363a7d96ac8aadb9cc9cd6840decfd9ed"
+        },
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "616c78ad78d21884d5db3a7f32bea7901b04d1cfa2ad9f8105b93b268f950929"
+        }
+      },
+      "stock": {
+        "diff_sha256": {
+          "graph.h": "8d9ecbb119a77fd80b38b116e48fc8fd5a4d0e5ce5952cf4a9cfd85339ce99a8",
+          "pipnn.h": "5ad144a75c84c33513dac74610d7a414a6f79e8f384565481fb5907118e5002d"
+        },
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "616c78ad78d21884d5db3a7f32bea7901b04d1cfa2ad9f8105b93b268f950929"
+        }
+      }
+    },
+    "lazy_reclaim": {
+      "fast": {
+        "diff_sha256": {
+          "graph.h": "a1a6c33e83678b0b45224ef2c9cb32728240e25e5406c86531d18d4cb46e7848",
+          "pipnn.h": "4f941ddd104eefd8cca461427f84328e20c956a82728b605e40e253fa7a139ce"
+        },
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c"
+        }
+      },
+      "stock": {
+        "diff_sha256": {
+          "graph.h": "d322042b927ea3033089df215b925b0866a34ea53a74401e2664eb6e3e39127c",
+          "pipnn.h": "67c82784670da9765c5150be749b943a098d2b14f6f549a89d1fc07f16aef728"
+        },
+        "patched_header_sha256": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c"
+        }
+      }
+    }
+  }
+}

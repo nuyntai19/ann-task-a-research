@@ -1,0 +1,139 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "0,2,4,6",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "-base_path",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "-graph_outfile",
+    "/home/tai/ann-task-a/experiments/R91/r91_g2a3_mst10m_fast_pilot_v1/fast/graph.bin",
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "data": {
+    "base": {
+      "bytes": 4000000008,
+      "bytes_per_neighbor_or_dimension": 4,
+      "d": 100,
+      "n": 10000000,
+      "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin"
+    },
+    "gt": {
+      "bytes": 80000008,
+      "bytes_per_neighbor_or_dimension": 8,
+      "d": 100,
+      "n": 100000,
+      "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin"
+    },
+    "query": {
+      "bytes": 40000008,
+      "bytes_per_neighbor_or_dimension": 4,
+      "d": 100,
+      "n": 100000,
+      "path": "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin"
+    }
+  },
+  "env": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "graph_destination": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_mst10m_fast_pilot_v1/fast/graph.bin",
+  "new_10m_builds_run": 0,
+  "old_history_readonly": true,
+  "planned_stages": [
+    "preflight",
+    "fast_build",
+    "read_only_full_graph_audit"
+  ],
+  "provenance": {
+    "note": "Old 10M G1 fast/stock graph hashes only validated at preflight; no 10M G2A3 result until native pilot.",
+    "old_fast_build_status": "NATIVE_1_OF_1_10M_BUILD_AND_FULL_GRAPH_STRUCTURE_PASS_NO_SWAP",
+    "old_fast_cgroup_peak_bytes": null,
+    "old_fast_max_events": 345,
+    "old_fast_max_rss_kib": 23836432,
+    "old_stock_cgroup_peak_bytes": 25769680896,
+    "old_stock_max_events": 333,
+    "old_stock_max_rss_kib": 23783148,
+    "pins": {
+      "data_10m_base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "data_10m_gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "data_10m_queries": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+      "elf_fast_lazy_reclaim": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+      "g2a3_1m_build": "ad9ef6e52da30ff35eaf5d1cc9ff1dcbc6d5b78aadd76c9cc13da7f4ed006d2f",
+      "g2a3_1m_manifest": "da127568cc61f8148518d5d82654ed289cb465b970028fbb8696251708246994",
+      "g2a3_1m_quality": "4f906de4623ac4668912066fa195b6ac5fdeca43d6e1f93ebcc153391f2ae48c",
+      "g2a3_audit_source": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+      "g2a3_compiler": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b",
+      "g2a3_patch_source": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e",
+      "historical_fast_g1_graph": "4055dedc2ccb3b6406fed45ed28de2ec57c46fe2b085b5046ae13cd943702429",
+      "historical_fast_g1_summary": "bd46f8327e634e05ebdf3975c602d3c069df749be8dc3a6e140f286a606e3835",
+      "historical_stock_g1_graph": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+      "historical_stock_g1_summary": "4c64741bde0847465fa237d412d69cf00958a6c2de214d5e82f50d5ef13ceda6"
+    }
+  },
+  "resources": {
+    "baseline_comparison_caveat": "Historical 10M baseline is cross-session; not a causal same-session benchmark.",
+    "cpus": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "disk_free_bytes": 27346231296,
+    "disk_free_gate_bytes": 12884901888,
+    "host_MemAvailable_bytes": 29099864064,
+    "memory_max_bytes": 25769803776,
+    "monitor_halt_disk_free_bytes": 8589934592,
+    "monitor_halt_memavailable_bytes": 2147483648,
+    "physical_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "swap_max_bytes": 0
+  },
+  "script_sha256": "cfffd1db0e65c9a7a928e1ac47c59a110c91a42b1383f5a4cfb3bd82869b94cf",
+  "status": "R91_G2A3_MST10M_FAST_LAZY_RECLAIM_NATIVE_V1_PREFLIGHT_PASS_NO_ANN_BUILD",
+  "timestamp_utc": "2026-11-22T12:55:45.816850+00:00"
+}

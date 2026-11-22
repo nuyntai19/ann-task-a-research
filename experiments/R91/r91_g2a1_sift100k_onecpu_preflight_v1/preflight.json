@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-11-21T16:22:36.919965+00:00",
+  "inputs": {
+    "cpu_set": [
+      0
+    ],
+    "dataset_dim": 128,
+    "dataset_file": "/home/tai/ann-task-a/data/sift100k.fbin",
+    "dataset_n": 100000,
+    "dataset_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+    "disk_free_bytes": 37978148864,
+    "elfs": {
+      "fast_original": {
+        "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/fast_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "fcfb16d0ca2b498f94db8383dfc311c2e7ba88cb3036281accd5f30c6d876793"
+      },
+      "fast_patched": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_compile_only_v1_1/fast_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "8c852abf26f5448601028fd417868389bc3d2d3d00721b649541c4aafc21f67f"
+      },
+      "stock_original": {
+        "path": "/home/tai/ann-task-a/experiments/R90/r90_p0a_v13_historical_highway_6bc2_controlled_v1/build/stock_off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "13bef65c01d4638959b16b74fc2b8b6130b433ebc09fff8f436c8b1503e688c9"
+      },
+      "stock_patched": {
+        "path": "/home/tai/ann-task-a/experiments/R91/r91_g2a1_compile_only_v1_1/stock_build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+        "sha256": "21103e6c63ba5c7cad8c253f3a5d0e6e1dea15cacad8eed80125c95b6d93c75b"
+      }
+    },
+    "flags": [
+      "-num_clusters",
+      "2",
+      "-cluster_size",
+      "1024",
+      "-table_size",
+      "160",
+      "-top_level_leaders",
+      "100",
+      "-fanout_scheme",
+      "10,3,1",
+      "-mst_deg",
+      "2",
+      "-prune",
+      "1",
+      "-prune_all",
+      "1",
+      "-prune_degree",
+      "64",
+      "-hash_bits",
+      "12",
+      "-alpha",
+      "1.1",
+      "-k",
+      "0"
+    ],
+    "memory_max_bytes": 25769803776,
+    "ram_available_bytes": 28778172416,
+    "slots": [
+      "r1_stock_original",
+      "r1_stock_patched",
+      "r1_fast_patched",
+      "r1_fast_original",
+      "r2_fast_original",
+      "r2_fast_patched",
+      "r2_stock_patched",
+      "r2_stock_original"
+    ],
+    "source_provenance": {
+      "prior_graphs": {
+        "r1_fast_original": "b54b27f3035127ccfa5f024cf128d503e27ebd7ae1f38dcdfcab2c2e1fdb7bfb",
+        "r1_fast_patched": "8fc67ede7b99d163728d7e7359cdca65b5d1aa1ca2ded00510aef3b460e04f89",
+        "r1_stock_original": "6e1dc6beb69977741a7d8da945c2a389b77907299f930e6cb8966d18a15f23e0",
+        "r1_stock_patched": "772713bf1d93a13168c290c92dc20753ff595ac3ab8ce9461fdd3ed3b5a9fe02",
+        "r2_fast_original": "a9e61170b9972d031a9a99ea31613aac31489cbff7b60c39313c5de49cb7aec3",
+        "r2_fast_patched": "376de938d942583ea70f973dbd7ef13249955f5de5a6eb0d3863240a0a47b0ab",
+        "r2_stock_original": "08b87acf4a64ffa8d02e8549319b990e5dfeafe533cb65383fae74ad0e547e1a",
+        "r2_stock_patched": "4e2a971f626e196544b8648efb706068aad47f2e5b1b2234de0d79175a8af6b0"
+      },
+      "prior_sha256": {
+        "edge": "e24062fd8afdc050af30eeb5ddcbb367980a5af97f394e2b982a3bbdc8c09773",
+        "old_pre": "48dee7631535cf705dec7994221af42db5a432ccf8f9b9f983f7862a1007d574",
+        "old_sum": "12eb45e9a71ae138c23b3c293032df0a559f560e8899a702e64933aa197fce60"
+      }
+    },
+    "swap_max_bytes": 0,
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "LC_ALL": "C",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PARLAY_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "no_existing_outputs_modified": true,
+  "source_ref_pins": {
+    "edge": "e24062fd8afdc050af30eeb5ddcbb367980a5af97f394e2b982a3bbdc8c09773",
+    "old_pre": "48dee7631535cf705dec7994221af42db5a432ccf8f9b9f983f7862a1007d574",
+    "old_sum": "12eb45e9a71ae138c23b3c293032df0a559f560e8899a702e64933aa197fce60"
+  },
+  "status": "R91_G2A1_SIFT100K_ONECPU_8BUILD_V1_PREFLIGHT_PASS_ONECPU_EIGHT_NEW_BUILDS"
+}

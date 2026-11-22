@@ -1,0 +1,207 @@
+{
+  "preflight_sha256": "f53e6ee23dd907df5f1dc5ff38968ce3a72bad684848d104ab6ad151150f4fc7",
+  "searches": [
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a3_msturing1m_paired12_4cpu_v1/runs/r1_stock_g2a2/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 261.12202627199986,
+      "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph_sha256": "064ef429053ad3dcdc7cf6d6be26e9dc391e31a48ba744196191fb1f7395843e",
+      "rows": {
+        "384": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 370.0,
+          "mean_latency_us_proxy": 815.293602236332,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1226.55200195,
+          "raw_avg_cmps_untrusted": 16730.0,
+          "recall_at10": 0.99102801
+        },
+        "896": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 741.0,
+          "mean_latency_us_proxy": 1782.9220573384603,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 560.87701416,
+          "raw_avg_cmps_untrusted": 4294955367.0,
+          "recall_at10": 0.99815798
+        }
+      },
+      "slot": "r1_stock_g2a2",
+      "source_receipt_sha256": "63b90d43769febc6a0868eeb8765a8ed7ddf83a7b14e3485efda7f833fdac255",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7db4faa1a107360a66aa061ed818b18f8b185eca01f4ce5edd3277fe55ad0509",
+      "threads_search": 1,
+      "time_sha256": "97519b1955841dc12078cfdad532c4cc82173eb9951a1954180b21ae0bbf79c3"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a3_msturing1m_paired12_4cpu_v1/runs/r1_stock_lazy_reclaim/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.3037233239993,
+      "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph_sha256": "2866beae2cc0c18562735fa6b770c287899f7d1c7226e143b6ecb44400228812",
+      "rows": {
+        "384": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 370.0,
+          "mean_latency_us_proxy": 814.4994422718328,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.7479248,
+          "raw_avg_cmps_untrusted": 16726.0,
+          "recall_at10": 0.99106997
+        },
+        "896": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 740.0,
+          "mean_latency_us_proxy": 1775.6657066629107,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 563.16906738,
+          "raw_avg_cmps_untrusted": 4294955364.0,
+          "recall_at10": 0.998169
+        }
+      },
+      "slot": "r1_stock_lazy_reclaim",
+      "source_receipt_sha256": "5a70af5f8456f5ac186a281add4a009eeca0b42ebee4436e1d018b1175737014",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7aa7160d44de6fcde05663e4873a3b886ae6dad96f75e4743613455cd7828228",
+      "threads_search": 1,
+      "time_sha256": "d313398c4a0dc1b40552224c3b116012c6037fb889365cdcd5c3cde91c5236d7"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a3_msturing1m_paired12_4cpu_v1/runs/r1_fast_g2a2/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 261.7428738079998,
+      "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph_sha256": "b06e7dd0a4d4fc8b3d8d25f8e97b335ea28703107e3790e3a5f53361d3d54e65",
+      "rows": {
+        "384": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 370.0,
+          "mean_latency_us_proxy": 814.2296167251616,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1228.15478516,
+          "raw_avg_cmps_untrusted": 16726.0,
+          "recall_at10": 0.991063
+        },
+        "896": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 741.0,
+          "mean_latency_us_proxy": 1790.33146702961,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 558.55578613,
+          "raw_avg_cmps_untrusted": 4294955362.0,
+          "recall_at10": 0.99815202
+        }
+      },
+      "slot": "r1_fast_g2a2",
+      "source_receipt_sha256": "0c5e742630270bff17bc39e6dd06acb2f52d5d7c1587430e185660e594aa88f8",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1c2f42fbf1fd5f270e94502d03762ba77cdc99b8ea9e33a854121c86517b5eb0",
+      "threads_search": 1,
+      "time_sha256": "3b63928f06bfeac349d00621446627f15d50559688889d010bb1aa3bc377179c"
+    },
+    {
+      "beams": [
+        384,
+        896
+      ],
+      "command": [
+        "taskset",
+        "-c",
+        "0",
+        "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+        "/home/tai/ann-task-a/experiments/R91/r91_g2a3_msturing1m_paired12_4cpu_v1/runs/r1_fast_lazy_reclaim/graph.bin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+        "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+        "384,896"
+      ],
+      "cpu_search": 0,
+      "elapsed_external_s": 260.4417790380012,
+      "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+      "graph_sha256": "5e044f1d5fcf0b78d152c9f34e9a69bcc73c1d6e3b631db42f3be1325900217e",
+      "rows": {
+        "384": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 370.0,
+          "mean_latency_us_proxy": 814.7785228665608,
+          "meets_099": true,
+          "meets_0998": false,
+          "qps": 1227.32739258,
+          "raw_avg_cmps_untrusted": 16727.0,
+          "recall_at10": 0.991041
+        },
+        "896": {
+          "avg_cmps_status": "UNTRUSTED_32BIT_HIGHBEAM",
+          "avg_visited": 740.0,
+          "mean_latency_us_proxy": 1776.5167130779853,
+          "meets_099": true,
+          "meets_0998": true,
+          "qps": 562.89929199,
+          "raw_avg_cmps_untrusted": 4294955365.0,
+          "recall_at10": 0.99817902
+        }
+      },
+      "slot": "r1_fast_lazy_reclaim",
+      "source_receipt_sha256": "10e43df5f9223a22c85574454f3a9c9a4073b04bed9f948bfcdc70fa92b04e0c",
+      "status": "NATIVE_100K_QUERY_TWO_BEAM_SEARCH_PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5866e9c63a5627a34afe675e5d8659935f759750620b1ae35857cbc80a52539e",
+      "threads_search": 1,
+      "time_sha256": "81b7f28ed6cfb6d7f77fac8df9f4b3d690e7293abc27135eef87c93f477092ca"
+    }
+  ],
+  "source_summary_sha256": "ad9ef6e52da30ff35eaf5d1cc9ff1dcbc6d5b78aadd76c9cc13da7f4ed006d2f",
+  "status": "R91_G2A3_MST1M_100KQ_FIXEDBEAM_8SEARCH_V1_PILOT_FOUR_DONE"
+}

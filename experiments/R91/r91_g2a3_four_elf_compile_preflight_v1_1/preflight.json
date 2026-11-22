@@ -1,0 +1,112 @@
+{
+  "arms": [
+    "stock",
+    "fast"
+  ],
+  "created_utc": "2026-11-22T09:41:49.686326+00:00",
+  "inputs": {
+    "audit_sha256": "af110605e418f13d9a90bac9e6da8e4163ac6950b6df9a00bc2cdf7833501132",
+    "disk_free_bytes": 31929589760,
+    "g2a2_compile_sha256": "fe5b6bda3e66cc52c6e390c518cfd437da05409154a26ef267f2ee0bc452ef18",
+    "g2a2_quality_sha256": "0d14aa0c9a19b5f3947dee7b42d285e0133f3fceee9d0034928441606fd2bf40",
+    "gcc_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+    "highway_file_sha": {
+      "sorting_networks-inl.h": "ccfa81cecbfe05410941093b9d019f849832d81d170568c71ceedfbc64ae552b",
+      "traits-inl.h": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7"
+    },
+    "highway_git_head": "6bc2d47793bae9c521fb4150936669647700765d",
+    "mem_available_bytes": 29645692928,
+    "patch": {
+      "fast": {
+        "lazy_only": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "616c78ad78d21884d5db3a7f32bea7901b04d1cfa2ad9f8105b93b268f950929"
+        },
+        "lazy_reclaim": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c"
+        }
+      },
+      "stock": {
+        "lazy_only": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "616c78ad78d21884d5db3a7f32bea7901b04d1cfa2ad9f8105b93b268f950929"
+        },
+        "lazy_reclaim": {
+          "graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+          "pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c"
+        }
+      }
+    },
+    "receipt_sha256": "08eb4f4de4d665a72fe305014b4b26ef387746336969d33df0a622fdd8fec37e",
+    "snapshot": {
+      "fast": {
+        "allowed_diff_files": [
+          "algorithms/PipNN/pipnn.h",
+          "algorithms/utils/hash.h",
+          "algorithms/utils/graph.h"
+        ],
+        "base_tree": {
+          "bytes": 27682699,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          },
+          "n_files": 1681,
+          "tree_sha256": "fe18456af7f61c76d7cb549bcc596b45ce259427ac3c73f673670698a4b0f9ef"
+        },
+        "historic_tree": {
+          "bytes": 27681340,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          },
+          "n_files": 1681,
+          "tree_sha256": "c32ab0da20dd35aeb3ea68f53937e8ec1d2615a64772adb12d760cc573d65e09"
+        }
+      },
+      "stock": {
+        "allowed_diff_files": [
+          "algorithms/PipNN/pipnn.h",
+          "algorithms/utils/hash.h",
+          "algorithms/utils/graph.h"
+        ],
+        "base_tree": {
+          "bytes": 27682446,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          },
+          "n_files": 1681,
+          "tree_sha256": "e7b89c3a50c4b5eaa501a49c50eaf77cd98bd010cedda4bb85b9c5dea7bbf72e"
+        },
+        "historic_tree": {
+          "bytes": 27681087,
+          "links": {
+            "data_tools/utils": "../algorithms/utils",
+            "rangeSearch/utils": "../algorithms/utils"
+          },
+          "n_files": 1681,
+          "tree_sha256": "ef8ef39cb46581325dffdabaa734cc2759207e9e657cb0f95c16e07f1c9f4b02"
+        }
+      }
+    }
+  },
+  "no_ann_build": true,
+  "no_ann_search": true,
+  "scope_required": {
+    "cpu": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "ram_cap_bytes": 25769803776,
+    "swap_bytes": 0
+  },
+  "status": "R91_G2A3_FOUR_ELF_COMPILE_ONLY_V1_1_PREFLIGHT_PASS__NO_CPP_COMPILE",
+  "variants": [
+    "lazy_only",
+    "lazy_reclaim"
+  ]
+}
