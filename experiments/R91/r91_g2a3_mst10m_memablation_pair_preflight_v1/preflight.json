@@ -1,0 +1,70 @@
+{
+  "base": "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+  "base_sha256": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+  "base_stat_size": 4000000008,
+  "cgroup_memory_max_bytes": 25769803776,
+  "cgroup_swap_max_bytes": 0,
+  "cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "disk_free_at_preflight_bytes": 25052270592,
+  "elf_paths": {
+    "g2a2": "/home/tai/ann-task-a/experiments/R91/r91_g2a2_compile_only_v1/sketch_locks/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "g2a3": "/home/tai/ann-task-a/experiments/R91/r91_g2a3_four_elf_compile_only_v1_1/lazy_reclaim/fast/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN"
+  },
+  "elf_sha256": {
+    "g2a2": "bb31c04045bc078c8446582259c2dda2f7a247b3f9a968e30f57c64b0026f332",
+    "g2a3": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3"
+  },
+  "flags": [
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "host_memavailable_bytes": 29245243392,
+  "no_build": true,
+  "no_source_modification": true,
+  "old_artifacts_read_only": true,
+  "order1": [
+    "r1_g2a2",
+    "r1_g2a3"
+  ],
+  "order2": [
+    "r2_g2a3",
+    "r2_g2a2"
+  ],
+  "policy": "No immediate kill on memory.events.max; mark capped. Abort on OOM/swap/critical host RAM/disk/critical sustained PSI.",
+  "runner_sha256": "cb40752d928f2eb7e0c54d8dc2c563ad9875e1e410b8e67311ebe959cae3b6a3",
+  "source_anchors_sha256": {
+    "g2a3_10m_full_forensic": "c2bbc815d205d358dc5983c1b8b5b7903365f6692f4154e9dcc4f62a749cd576",
+    "g2a3_10m_original_hold": "4fc9740e5acd182885f74c52fe83e1e0575fa48cf36584d70d025544bdebe6a3",
+    "one_m_protocol": "7d7975c75860041dcb91baaf57c850ad0354205f456451c87320fba37d2b19e3",
+    "source_compiler": "7b9f8ee076b7bc09db18495b17fe70ee8c89d3640d9285e6db131202cfbcc19b"
+  },
+  "status": "R91_G2A3_10M_MEMABLATION_PAIR_V1_PREFLIGHT_PASS_NO_BUILD",
+  "timestamp_utc": "2026-11-22T15:06:59.272049+00:00"
+}

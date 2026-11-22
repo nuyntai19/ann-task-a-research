@@ -1,0 +1,64 @@
+{
+  "any_cgroup_capped": false,
+  "claim_limit": "Only paired n=1 or n=2 per arm, 4CPU graph variability; one or more cgroup max events means cgroup peak censored and natural RAM difference not estimable.",
+  "count": 2,
+  "no_old_source_or_graph_modified": true,
+  "no_search_performed": true,
+  "pairwise": [
+    {
+      "capped_either": false,
+      "delta_cgroup_peak_mib_g2a3_minus_g2a2": -1482.31640625,
+      "delta_rss_mib_g2a3_minus_g2a2": -1626.703125,
+      "delta_wall_s_g2a3_minus_g2a2": -0.8049148179998156,
+      "pair": "1_"
+    }
+  ],
+  "preflight_sha256": "46843af990ccfe6013f5a910acdd3662ec9e9c1fe4955b4d5f644bbc2054a8ae",
+  "resource_unncensored_for_ram_comparison": true,
+  "results": {
+    "r1_g2a2": {
+      "build_elapsed_s": 369.3332610030011,
+      "cgroup_capped": false,
+      "cgroup_max_events": 0,
+      "cgroup_peak_bytes": 23939633152,
+      "graph": {
+        "arcs": 540818650,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit_all_vertices": true,
+        "graph_sha256": "5c9674acc1c2d83316cb5c4e3e982593a31ab66e2774004b13165b6c764ea634",
+        "invalid_neighbor_ids": 0,
+        "nodes": 10000000,
+        "selfloop_rows": 0,
+        "size_bytes": 2203274608
+      },
+      "graph_audit_sha256": "10de66edc561c23a7e186f3d6fefed25e9a7f957c73c446e62f97e5b619984de",
+      "major_page_faults": 8,
+      "receipt_sha256": "4b76a177423c41d1ad0d7ecf284f609c1fdde0da93ed710c3e2422670c7a2b52",
+      "rss_kib": 23320684
+    },
+    "r1_g2a3": {
+      "build_elapsed_s": 368.5283461850013,
+      "cgroup_capped": false,
+      "cgroup_max_events": 0,
+      "cgroup_peak_bytes": 22385311744,
+      "graph": {
+        "arcs": 540965314,
+        "degree_cap": 64,
+        "duplicate_neighbor_rows": 0,
+        "full_audit_all_vertices": true,
+        "graph_sha256": "6c1041b6584cc4d65a4112362ace767374bd39032d86e227aca10c40657d97c7",
+        "invalid_neighbor_ids": 0,
+        "nodes": 10000000,
+        "selfloop_rows": 0,
+        "size_bytes": 2203861264
+      },
+      "graph_audit_sha256": "e0e3241c6e09ca24d3dcbf4c004c275b7f034419a9985e3aa3acf0ab225bfe59",
+      "major_page_faults": 15,
+      "receipt_sha256": "673cf9f78e1a47ab216ab7aa0104c2bce72e381b6dbb699f9e82c8fef23e5a52",
+      "rss_kib": 21654940
+    }
+  },
+  "runner_sha256": "cb40752d928f2eb7e0c54d8dc2c563ad9875e1e410b8e67311ebe959cae3b6a3",
+  "status": "R91_G2A3_10M_MEMABLATION_PAIR_V1_R1_AUDIT_PASS_UNCAPPED"
+}
