@@ -1,0 +1,1280 @@
+{
+  "all_four_graphs_byte_identical": true,
+  "frozen_sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+  "frozen_source_untouched": true,
+  "geomean_on_over_off": 0.9950353839856227,
+  "graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+  "instrument_overhead_percent": -0.49646160143772544,
+  "measured_on_profiles": [
+    {
+      "depth_work": [
+        {
+          "M_sum": 100,
+          "N_sum": 100000,
+          "W_A": 1000000,
+          "W_P": 10000000,
+          "depth": 0,
+          "fanout10_calls": 1,
+          "fanout1_calls": 0,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 49
+        },
+        {
+          "M_sum": 4948,
+          "N_sum": 1000000,
+          "W_A": 3000000,
+          "W_P": 70344788,
+          "depth": 1,
+          "fanout10_calls": 0,
+          "fanout1_calls": 0,
+          "fanout3_calls": 100,
+          "fanout_other_calls": 0,
+          "tiles": 537
+        },
+        {
+          "M_sum": 5762,
+          "N_sum": 1232156,
+          "W_A": 1232156,
+          "W_P": 9474331,
+          "depth": 2,
+          "fanout10_calls": 0,
+          "fanout1_calls": 820,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 919
+        },
+        {
+          "M_sum": 36,
+          "N_sum": 7890,
+          "W_A": 7890,
+          "W_P": 40693,
+          "depth": 3,
+          "fanout10_calls": 0,
+          "fanout1_calls": 7,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 7
+        }
+      ],
+      "note": "parent-scope CPU excludes child parallel work; scope wall across threads can overlap; do not force 100pct closure",
+      "phases": [
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002063,
+          "thread_cpu_s": 0.002063
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 2.01e-05,
+          "thread_cpu_s": 2.007e-05
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.002878,
+          "thread_cpu_s": 0.002872
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.01915,
+          "thread_cpu_s": 0.01914
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.002037,
+          "thread_cpu_s": 0.002034
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.02845,
+          "thread_cpu_s": 0.02845
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.003528,
+          "thread_cpu_s": 0.003528
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.0004087,
+          "thread_cpu_s": 0.0004085
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0002012,
+          "thread_cpu_s": 0.0002011
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002877,
+          "thread_cpu_s": 0.002876
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0005393,
+          "thread_cpu_s": 0.0005377
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.0341,
+          "thread_cpu_s": 0.03401
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.1401,
+          "thread_cpu_s": 0.1401
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.01589,
+          "thread_cpu_s": 0.01587
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.1939,
+          "thread_cpu_s": 0.1939
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.005621,
+          "thread_cpu_s": 0.005618
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.001445,
+          "thread_cpu_s": 0.001442
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001723,
+          "thread_cpu_s": 0.0001717
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002987,
+          "thread_cpu_s": 0.00299
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0004795,
+          "thread_cpu_s": 0.0004762
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.02955,
+          "thread_cpu_s": 0.02949
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.03848,
+          "thread_cpu_s": 0.03846
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.008119,
+          "thread_cpu_s": 0.008097
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.05438,
+          "thread_cpu_s": 0.05436
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.00398,
+          "thread_cpu_s": 0.003973
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.003434,
+          "thread_cpu_s": 0.003423
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001943,
+          "thread_cpu_s": 0.0001977
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 2.015e-05,
+          "thread_cpu_s": 2.015e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 2.53e-06,
+          "thread_cpu_s": 2.505e-06
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.0001037,
+          "thread_cpu_s": 0.0001035
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.000218,
+          "thread_cpu_s": 0.0002178
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 4.728e-05,
+          "thread_cpu_s": 4.713e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.0002953,
+          "thread_cpu_s": 0.0002952
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 2.267e-05,
+          "thread_cpu_s": 2.262e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "merge_buckets",
+          "sum_wall_s": 2.252e-05,
+          "thread_cpu_s": 2.242e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "split_and_flatten",
+          "sum_wall_s": 1.415e-06,
+          "thread_cpu_s": 1.468e-06
+        }
+      ],
+      "sampled_cpu_coverage_lower_bound": 0.9917,
+      "schema": 1,
+      "sum_exclusive_thread_cpu_s": 0.5954,
+      "wall_buckets_s": 0.6003,
+      "workers_env": 1
+    },
+    {
+      "depth_work": [
+        {
+          "M_sum": 100,
+          "N_sum": 100000,
+          "W_A": 1000000,
+          "W_P": 10000000,
+          "depth": 0,
+          "fanout10_calls": 1,
+          "fanout1_calls": 0,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 49
+        },
+        {
+          "M_sum": 4949,
+          "N_sum": 1000000,
+          "W_A": 3000000,
+          "W_P": 68122872,
+          "depth": 1,
+          "fanout10_calls": 0,
+          "fanout1_calls": 0,
+          "fanout3_calls": 100,
+          "fanout_other_calls": 0,
+          "tiles": 545
+        },
+        {
+          "M_sum": 5706,
+          "N_sum": 1217499,
+          "W_A": 1217499,
+          "W_P": 9326369,
+          "depth": 2,
+          "fanout10_calls": 0,
+          "fanout1_calls": 814,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 907
+        },
+        {
+          "M_sum": 27,
+          "N_sum": 5915,
+          "W_A": 5915,
+          "W_P": 32290,
+          "depth": 3,
+          "fanout10_calls": 0,
+          "fanout1_calls": 5,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 5
+        }
+      ],
+      "note": "parent-scope CPU excludes child parallel work; scope wall across threads can overlap; do not force 100pct closure",
+      "phases": [
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.0006621,
+          "thread_cpu_s": 0.0006509
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 8.482e-06,
+          "thread_cpu_s": 8.452e-06
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.00257,
+          "thread_cpu_s": 0.002565
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.01885,
+          "thread_cpu_s": 0.01885
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.00201,
+          "thread_cpu_s": 0.002006
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.02849,
+          "thread_cpu_s": 0.02849
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.001922,
+          "thread_cpu_s": 0.001922
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.0001522,
+          "thread_cpu_s": 0.000152
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.000188,
+          "thread_cpu_s": 0.000188
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002649,
+          "thread_cpu_s": 0.002648
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0003257,
+          "thread_cpu_s": 0.0003242
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.03375,
+          "thread_cpu_s": 0.03367
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.1344,
+          "thread_cpu_s": 0.1343
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.01514,
+          "thread_cpu_s": 0.01512
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.1893,
+          "thread_cpu_s": 0.1892
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.004284,
+          "thread_cpu_s": 0.004282
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.001419,
+          "thread_cpu_s": 0.001416
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001688,
+          "thread_cpu_s": 0.0001686
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002918,
+          "thread_cpu_s": 0.00292
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0004694,
+          "thread_cpu_s": 0.0004664
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.02909,
+          "thread_cpu_s": 0.02901
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.03768,
+          "thread_cpu_s": 0.03764
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.007806,
+          "thread_cpu_s": 0.007785
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.05366,
+          "thread_cpu_s": 0.05363
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.003068,
+          "thread_cpu_s": 0.003062
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.003469,
+          "thread_cpu_s": 0.003457
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001882,
+          "thread_cpu_s": 0.000192
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 1.476e-05,
+          "thread_cpu_s": 1.48e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 2.104e-06,
+          "thread_cpu_s": 2.086e-06
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 8.35e-05,
+          "thread_cpu_s": 8.333e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.0001719,
+          "thread_cpu_s": 0.0001718
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 3.903e-05,
+          "thread_cpu_s": 3.891e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.0002223,
+          "thread_cpu_s": 0.0002223
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 1.648e-05,
+          "thread_cpu_s": 1.647e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "merge_buckets",
+          "sum_wall_s": 2.701e-05,
+          "thread_cpu_s": 2.693e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "split_and_flatten",
+          "sum_wall_s": 9.6e-07,
+          "thread_cpu_s": 9.93e-07
+        }
+      ],
+      "sampled_cpu_coverage_lower_bound": 0.9926,
+      "schema": 1,
+      "sum_exclusive_thread_cpu_s": 0.5747,
+      "wall_buckets_s": 0.579,
+      "workers_env": 1
+    },
+    {
+      "depth_work": [
+        {
+          "M_sum": 100,
+          "N_sum": 100000,
+          "W_A": 1000000,
+          "W_P": 10000000,
+          "depth": 0,
+          "fanout10_calls": 1,
+          "fanout1_calls": 0,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 49
+        },
+        {
+          "M_sum": 4948,
+          "N_sum": 1000000,
+          "W_A": 3000000,
+          "W_P": 70344788,
+          "depth": 1,
+          "fanout10_calls": 0,
+          "fanout1_calls": 0,
+          "fanout3_calls": 100,
+          "fanout_other_calls": 0,
+          "tiles": 537
+        },
+        {
+          "M_sum": 5762,
+          "N_sum": 1232156,
+          "W_A": 1232156,
+          "W_P": 9474331,
+          "depth": 2,
+          "fanout10_calls": 0,
+          "fanout1_calls": 820,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 919
+        },
+        {
+          "M_sum": 36,
+          "N_sum": 7890,
+          "W_A": 7890,
+          "W_P": 40693,
+          "depth": 3,
+          "fanout10_calls": 0,
+          "fanout1_calls": 7,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 7
+        }
+      ],
+      "note": "parent-scope CPU excludes child parallel work; scope wall across threads can overlap; do not force 100pct closure",
+      "phases": [
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.001977,
+          "thread_cpu_s": 0.001977
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 2.037e-05,
+          "thread_cpu_s": 2.03e-05
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.002908,
+          "thread_cpu_s": 0.002903
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.01922,
+          "thread_cpu_s": 0.01922
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.002055,
+          "thread_cpu_s": 0.002052
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.02851,
+          "thread_cpu_s": 0.02851
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.003461,
+          "thread_cpu_s": 0.003461
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.0004337,
+          "thread_cpu_s": 0.0004335
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0002029,
+          "thread_cpu_s": 0.0002029
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002927,
+          "thread_cpu_s": 0.002925
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0005499,
+          "thread_cpu_s": 0.0005482
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.03375,
+          "thread_cpu_s": 0.03365
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.1392,
+          "thread_cpu_s": 0.1391
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.01578,
+          "thread_cpu_s": 0.01573
+        },
+        {
+          "calls": 537,
+          "depth": 1,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.1915,
+          "thread_cpu_s": 0.1914
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.005482,
+          "thread_cpu_s": 0.005479
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.001415,
+          "thread_cpu_s": 0.001412
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001645,
+          "thread_cpu_s": 0.0001641
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002928,
+          "thread_cpu_s": 0.00293
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0004456,
+          "thread_cpu_s": 0.0004424
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.02934,
+          "thread_cpu_s": 0.02928
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.03872,
+          "thread_cpu_s": 0.03865
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.008198,
+          "thread_cpu_s": 0.008176
+        },
+        {
+          "calls": 919,
+          "depth": 2,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.05548,
+          "thread_cpu_s": 0.05546
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.003968,
+          "thread_cpu_s": 0.003961
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.003461,
+          "thread_cpu_s": 0.00345
+        },
+        {
+          "calls": 820,
+          "depth": 2,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.000192,
+          "thread_cpu_s": 0.000196
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 2.026e-05,
+          "thread_cpu_s": 2.029e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 2.552e-06,
+          "thread_cpu_s": 2.527e-06
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 9.977e-05,
+          "thread_cpu_s": 9.95e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.0002155,
+          "thread_cpu_s": 0.0002153
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 4.753e-05,
+          "thread_cpu_s": 4.739e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.000291,
+          "thread_cpu_s": 0.0002909
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 2.314e-05,
+          "thread_cpu_s": 2.313e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "merge_buckets",
+          "sum_wall_s": 2.197e-05,
+          "thread_cpu_s": 2.188e-05
+        },
+        {
+          "calls": 7,
+          "depth": 3,
+          "name": "split_and_flatten",
+          "sum_wall_s": 1.437e-06,
+          "thread_cpu_s": 1.517e-06
+        }
+      ],
+      "sampled_cpu_coverage_lower_bound": 0.9915,
+      "schema": 1,
+      "sum_exclusive_thread_cpu_s": 0.5925,
+      "wall_buckets_s": 0.5975,
+      "workers_env": 1
+    },
+    {
+      "depth_work": [
+        {
+          "M_sum": 100,
+          "N_sum": 100000,
+          "W_A": 1000000,
+          "W_P": 10000000,
+          "depth": 0,
+          "fanout10_calls": 1,
+          "fanout1_calls": 0,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 49
+        },
+        {
+          "M_sum": 4949,
+          "N_sum": 1000000,
+          "W_A": 3000000,
+          "W_P": 68122872,
+          "depth": 1,
+          "fanout10_calls": 0,
+          "fanout1_calls": 0,
+          "fanout3_calls": 100,
+          "fanout_other_calls": 0,
+          "tiles": 545
+        },
+        {
+          "M_sum": 5706,
+          "N_sum": 1217499,
+          "W_A": 1217499,
+          "W_P": 9326369,
+          "depth": 2,
+          "fanout10_calls": 0,
+          "fanout1_calls": 814,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 907
+        },
+        {
+          "M_sum": 27,
+          "N_sum": 5915,
+          "W_A": 5915,
+          "W_P": 32290,
+          "depth": 3,
+          "fanout10_calls": 0,
+          "fanout1_calls": 5,
+          "fanout3_calls": 0,
+          "fanout_other_calls": 0,
+          "tiles": 5
+        }
+      ],
+      "note": "parent-scope CPU excludes child parallel work; scope wall across threads can overlap; do not force 100pct closure",
+      "phases": [
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.0006768,
+          "thread_cpu_s": 0.000677
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 8.52e-06,
+          "thread_cpu_s": 8.489e-06
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.00263,
+          "thread_cpu_s": 0.002619
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.01892,
+          "thread_cpu_s": 0.01892
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.002024,
+          "thread_cpu_s": 0.002019
+        },
+        {
+          "calls": 49,
+          "depth": 0,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.02844,
+          "thread_cpu_s": 0.02843
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.001918,
+          "thread_cpu_s": 0.001918
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.0001457,
+          "thread_cpu_s": 0.0001455
+        },
+        {
+          "calls": 1,
+          "depth": 0,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0002185,
+          "thread_cpu_s": 0.0002185
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002702,
+          "thread_cpu_s": 0.002701
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0003684,
+          "thread_cpu_s": 0.0003665
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.0346,
+          "thread_cpu_s": 0.03451
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.1352,
+          "thread_cpu_s": 0.1352
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.01545,
+          "thread_cpu_s": 0.01543
+        },
+        {
+          "calls": 545,
+          "depth": 1,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.1903,
+          "thread_cpu_s": 0.1902
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.004351,
+          "thread_cpu_s": 0.004348
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.001445,
+          "thread_cpu_s": 0.001442
+        },
+        {
+          "calls": 100,
+          "depth": 1,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001677,
+          "thread_cpu_s": 0.000168
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 0.002907,
+          "thread_cpu_s": 0.00291
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 0.0004549,
+          "thread_cpu_s": 0.0004522
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 0.02933,
+          "thread_cpu_s": 0.02927
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.03804,
+          "thread_cpu_s": 0.038
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 0.007918,
+          "thread_cpu_s": 0.007895
+        },
+        {
+          "calls": 907,
+          "depth": 2,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.05481,
+          "thread_cpu_s": 0.05479
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 0.003129,
+          "thread_cpu_s": 0.003122
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "merge_buckets",
+          "sum_wall_s": 0.003503,
+          "thread_cpu_s": 0.003492
+        },
+        {
+          "calls": 814,
+          "depth": 2,
+          "name": "split_and_flatten",
+          "sum_wall_s": 0.0001871,
+          "thread_cpu_s": 0.0001904
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "sample_and_flat_alloc",
+          "sum_wall_s": 1.469e-05,
+          "thread_cpu_s": 1.471e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_leader_pack",
+          "sum_wall_s": 2.079e-06,
+          "thread_cpu_s": 2.073e-06
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_tile_gather",
+          "sum_wall_s": 8.988e-05,
+          "thread_cpu_s": 8.974e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_gemm",
+          "sum_wall_s": 0.0001733,
+          "thread_cpu_s": 0.0001732
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_dist_finish",
+          "sum_wall_s": 3.86e-05,
+          "thread_cpu_s": 3.848e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "assign_select_vqsort",
+          "sum_wall_s": 0.0002247,
+          "thread_cpu_s": 0.0002246
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "group_by_index_filter",
+          "sum_wall_s": 1.686e-05,
+          "thread_cpu_s": 1.682e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "merge_buckets",
+          "sum_wall_s": 2.676e-05,
+          "thread_cpu_s": 2.668e-05
+        },
+        {
+          "calls": 5,
+          "depth": 3,
+          "name": "split_and_flatten",
+          "sum_wall_s": 1.074e-06,
+          "thread_cpu_s": 1.082e-06
+        }
+      ],
+      "sampled_cpu_coverage_lower_bound": 0.9926,
+      "schema": 1,
+      "sum_exclusive_thread_cpu_s": 0.58,
+      "wall_buckets_s": 0.5843,
+      "workers_env": 1
+    }
+  ],
+  "pairs": {
+    "1": {
+      "off_s": 9.04,
+      "on_s": 9.01,
+      "overhead_ratio": -0.0033185840707964376
+    },
+    "2": {
+      "off_s": 9.08,
+      "on_s": 9.02,
+      "overhead_ratio": -0.0066079295154185536
+    }
+  },
+  "qualifier": "SIFT100K pinned 1CPU only. Four equal graph SHA is a semantic parity check, NOT 10M performance.",
+  "r91_step1_no_ms_turing_1m_or_10m_build": true,
+  "raw_receipt_sha256": {
+    "off_r1": "52687a9f05ce28fa84402e491c28e374ba3eb193072a675de64f14d8c89a5a78",
+    "off_r2": "a40037edf5f6932490c45b27430c99e9a25940fe74ca237e272d19d49ad4439c",
+    "on_r1": "ba6cb75ccf16eea8ca61927dd323b94d50bfc8d8ef15690a191d84f9944fa6eb",
+    "on_r2": "b7b5d30574d08f0d84b30916a31085b21c65ae038e3bc653b515196cf9a266bb"
+  },
+  "source_and_dependencies_sha_pinned": true,
+  "status": "R91_G3_STAGE1_STEP1_V1_AUDIT_PASS_SIFT100K_4BUILD_EXACT_GRAPH_PARITY"
+}

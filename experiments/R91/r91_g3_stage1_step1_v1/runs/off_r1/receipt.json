@@ -1,0 +1,41 @@
+{
+  "baseline_reference_graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+  "compiled_elf_sha256": "01ac9d3cc8eab1371badf19bf3a214800fb7473f2700a84ea71f8a6a1981d0e2",
+  "error": null,
+  "events_max": 0,
+  "exitcode": 0,
+  "file_sha256": {
+    "graph.bin": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "66dac2bf02fbf02c4f5acb345a166510ff88c94d520419a7044541489072c4d8",
+    "native.time": "79c123a42cf7af226256a44313aa891d1bc7d05c570f8bdce66895d920632639",
+    "resource_trace.tsv": "4aa99741e8a9992a22bfd7b9ee32db7691e39e1da3dd02938ce03304e728be9b"
+  },
+  "gnu_time": {
+    "elapsed_wall_s": 9.04,
+    "exit_status": 0,
+    "major_faults": 1,
+    "max_rss_kib": 278320,
+    "swaps": 0
+  },
+  "graph": {
+    "all_neighbors_valid": true,
+    "arcs": 1827177,
+    "bad_duplicate": 0,
+    "bad_self": 0,
+    "graph_sha256": "4998cb93784da92728f2f6bd02aee6d3006d44c2b80f7b8b5be2a7f85f27d3e1",
+    "max_degree": 64,
+    "n": 100000,
+    "size_bytes": 7708716
+  },
+  "memory_peak_bytes": 294789120,
+  "off_or_on": "off",
+  "oom_events": 0,
+  "preflight_sha256": "df30c56c2c77db7296bf9dff89ccfef46838d0ea7cb3c670b6142f07f8cfe5cb",
+  "profiles": [],
+  "scope_path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-r4a4922a927b74067b8d2b4e6815cab8c.scope",
+  "slot": "off_r1",
+  "status": "R91_G3_STAGE1_STEP1_V1_SLOT_PASS",
+  "swap_max_bytes": 0,
+  "wall_elapsed_s": 9.05609994200131
+}

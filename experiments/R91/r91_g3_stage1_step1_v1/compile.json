@@ -1,0 +1,46 @@
+{
+  "arm": {
+    "off": {
+      "build_stderr_sha256": "d56aab04089817c2069f97130c985226360d3925494110243af806c450eb65e9",
+      "build_stdout_sha256": "0835e0af705a18074a05acc59e448b04e320e387d160e0883240a8f668b2e14f",
+      "configure_stderr_sha256": "fc7e83156ec5996e75973ab721a42213a25d78adb346a962f3a1f8eeeebaca92",
+      "configure_stdout_sha256": "a3b3e1b700019d322996764fd7d6d0c52fe31e05168447f1e1cecc8c75d45205",
+      "elf_path": "/home/tai/ann-task-a/experiments/R91/r91_g3_stage1_step1_v1/build/off/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "elf_sha256": "01ac9d3cc8eab1371badf19bf3a214800fb7473f2700a84ea71f8a6a1981d0e2"
+    },
+    "on": {
+      "build_stderr_sha256": "d56aab04089817c2069f97130c985226360d3925494110243af806c450eb65e9",
+      "build_stdout_sha256": "2fcdc0cbeb1717eecf33475a7d6b8be272cb9608fd326cbe916ab0126cdd1292",
+      "configure_stderr_sha256": "fc7e83156ec5996e75973ab721a42213a25d78adb346a962f3a1f8eeeebaca92",
+      "configure_stdout_sha256": "25babd080de5163d6c3be8e72e050360a8af02fb3101871cb5124511f82c264f",
+      "elf_path": "/home/tai/ann-task-a/experiments/R91/r91_g3_stage1_step1_v1/build/on/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+      "elf_sha256": "6936df5a7e31e2afbc2974b9c3ecdc9d4388e93e6924f6a3fd73c76911c9ccf4"
+    }
+  },
+  "dep_commits": {
+    "ABSEIL-CPP": {
+      "head": "bc257a88f7c1939f24e0379f14a3589e926c950c",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/abseil-cpp-src"
+    },
+    "EIGEN": {
+      "head": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src"
+    },
+    "GOOGLEBENCHMARK": {
+      "head": "1fa8ea1c0d5f580748c2217efcad301729a8285c",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/googlebenchmark-src"
+    },
+    "HIGHWAY": {
+      "head": "6bc2d47793bae9c521fb4150936669647700765d",
+      "path": "/home/tai/ann-task-a/vendor_pinned/highway-6bc2d477"
+    },
+    "PARLAYLIB": {
+      "head": "51017699dcc421f80479cdb238d3092233ad0d26",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/parlaylib-src"
+    }
+  },
+  "frozen_elf_unchanged": true,
+  "preflight_sha256": "df30c56c2c77db7296bf9dff89ccfef46838d0ea7cb3c670b6142f07f8cfe5cb",
+  "prepared_source_sha256": "b65897705ddb15fffdb74ec270c35bb937b288cd3bda9a91a80695905282a81e",
+  "status": "R91_G3_STAGE1_STEP1_V1_COMPILE_BOTH_PASS_NO_ANN_BUILD"
+}

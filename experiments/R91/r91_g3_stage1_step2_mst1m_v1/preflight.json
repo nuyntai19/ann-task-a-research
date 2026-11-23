@@ -1,0 +1,75 @@
+{
+  "baseline_elf_sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+  "cgroup_mem_cap_bytes": 8589934592,
+  "cgroup_swap_max_bytes": 0,
+  "compiled_elf_sha256": {
+    "off": "01ac9d3cc8eab1371badf19bf3a214800fb7473f2700a84ea71f8a6a1981d0e2",
+    "on": "6936df5a7e31e2afbc2974b9c3ecdc9d4388e93e6924f6a3fd73c76911c9ccf4"
+  },
+  "cpu_set": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "dataset_path": "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+  "dataset_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "dataset_shape": [
+    1000000,
+    100
+  ],
+  "flags": [
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "free_disk_bytes": 275927642112,
+  "frozen_source_untouched": true,
+  "host_memavailable_bytes": 29562187776,
+  "no_recompile": true,
+  "package_sha256": {
+    "R91_G3_STEP2_AUDIT_v1_Ubuntu.sh": "6e7efbd285d2fb73628a124bec5d351f020aff43bffa485fdfa52d472af9e688",
+    "R91_G3_STEP2_PILOT_v1_Ubuntu.sh": "4fbc1204cc25eb9e16cc492b6ba82512c00d6c45a5d687c24bcf17f5d518591a",
+    "R91_G3_STEP2_PREFLIGHT_v1_Ubuntu.sh": "34f86f7d234977b06a3c198771d7e052c9b00c5b57376666a1c66faee5c196b0",
+    "README_R91_G3_STAGE1_STEP2_MST1M_v1.txt": "eab6000357defa00d1ebad7ac59d97ce7333e90d30b61cff926f25d0cec1d15a",
+    "r91_g3_stage1_step2_mst1m_v1.py": "81abb7a2d189c081139b350310df94e158fee5b2399a081a474b3878e0327cfd"
+  },
+  "previous_step1_sha256": {
+    "compile.json": "bebd85dcd8e24979ac641f46f52f38d3a61c7bbff31b22dbd8c299583a25ecfb",
+    "pilot_summary.json": "6d7a4006cf73068e30a992161d9064b2f46dd27a2af065614505c79456bf32bf",
+    "preflight.json": "df30c56c2c77db7296bf9dff89ccfef46838d0ea7cb3c670b6142f07f8cfe5cb"
+  },
+  "protocol": "SIFT100K exact graph SHA parity must NOT be required under 4-CPU nondeterministic graph construction; audit full topology + compare work counter, not hash equality",
+  "status": "R91_G3_STAGE1_STEP2_MST1M_V1_PREFLIGHT_PASS_NO_BUILD",
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PARLAY_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "utc": "2026-11-23T05:40:56.460302+00:00"
+}
