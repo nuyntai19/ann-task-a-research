@@ -1,0 +1,65 @@
+{
+  "ablation": "depth 2 only; inherited G5 fixed policy, fanout (10,3,1), all other build flags unchanged",
+  "cap_values": [
+    512,
+    128,
+    64,
+    32
+  ],
+  "g5_locked": {
+    "g5_elf_sha256": "f41d13841729b513d9eda1ccc48ceeb2e8161117a824ab54b5a15a746608d5ad",
+    "g5_json_sha256": {
+      "compile.json": "5ba1084ad2ff2f595456c7213755e1b1ca060b1ae9c2ce27990b856cec8ee852",
+      "one_m_build_audit.json": "de1f2f9565ab5451074cc0e2dea0f46b5d65da24b5cdb783f3bb1a4d37e3b0f5",
+      "preflight.json": "0ff0831082ea283c5b1171ba83929c3c2d0a1d51e51dc812d77acf4e6c2251db",
+      "prepare.json": "ce87f241216507f54ef1535ea4944de06db7f3b23a8b9bbda8b03c60fa95c2a5",
+      "sift_audit.json": "a7e4e7559a050894648d868cdd918e29ba0436dc1448c2323952fb9b0aa95852"
+    },
+    "g5_source_sha256": {
+      "neighbors.h": "5590d603a32012284f6bd6c7601f3bc086da9e7c2ca593373f3c4038d37edd28",
+      "pipnn.h": "3d9c7298f17438ae2e5937570b98ab4454cc2876f1282a78f7a46823e344e97f",
+      "pipnn_utils.h": "e8b5bcb485d274ec039549787f5e687938f2f1d798e0d81a226b5634d5e5d53e",
+      "r91_g5_policy.hpp": "dca448a5b0d32d1cef71815945f72ac28f3de31de7934ecf16cbb21510fd8804"
+    },
+    "host": {
+      "compiler": "g++-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "disk_free_bytes": 268210950144,
+      "memavailable_bytes": 29209944064
+    }
+  },
+  "package_sha256": {
+    "R91_G6_AUDIT_C32_v1_Ubuntu.sh": "1c42757f9fbf86887a1ca8518fa163a77640c00aac3161f273265e039fb9b5b2",
+    "R91_G6_AUDIT_MST1M_v1_Ubuntu.sh": "d577a4c273807ad6fba3959dbc4e0f08327ee96c57c8cf118f82e590274d4a5b",
+    "R91_G6_AUDIT_SIFT_v1_Ubuntu.sh": "e5568e72f608350b2ed44a9cfafd91324520d25ac731811730e6476be402e65a",
+    "R91_G6_COMPILE_v1_Ubuntu.sh": "19c047c7c6b3783cd4383969bc68f819c75bd8818e0077010107ac8582c79a47",
+    "R91_G6_PILOT_C32_v1_Ubuntu.sh": "9dd519758a348a90ae1e227ed8bd47e13e3f75a2790605c1cecf0e99a7291c76",
+    "R91_G6_PILOT_MST1M_v1_Ubuntu.sh": "ea31c41c14a1f429544d1507f61f19b1fbe04ee34660314c912fcc0fba6c30d5",
+    "R91_G6_PILOT_SIFT_v1_Ubuntu.sh": "4ff004f4f6b2def0a33da57256584753b96fc98f8e87110e60cd4f789897c9a8",
+    "R91_G6_PREFLIGHT_v1_Ubuntu.sh": "d7bcfd378c48683f2cacb8b34bb60703089c28f2deeffb923c4be63137583520",
+    "R91_G6_PREPARE_v1_Ubuntu.sh": "6699e2f06ef982f49c576c64ea4fbe5b8e34b3f7572186e6be0c59ef66103747",
+    "R91_G6_SEARCH_AUDIT_v1_Ubuntu.sh": "37720c2a5e2e8adee447a5b461bba563da2fadbe20188551b33e896cc488f4e0",
+    "R91_G6_SEARCH_PILOT_v1_Ubuntu.sh": "8d26caaff80bc1b3809f150d452d68071dc5c5672f61331e464e1d7e58a640bc",
+    "README_R91_G6_v1.txt": "fb492a3083246dd5be934a7813d86bf004166cceaae8415348d46e7ad40fe771",
+    "r91_g6_cap.hpp": "e273093a3a977e828394caf2eacd9608f3b72c949824f0028c663a8a7dfb5bfa",
+    "r91_g6_leader_cap_v1.py": "6be02a966ac0d94a6547229fd7c999ec36b123d1cfb8e6207f81af5e28435fc6",
+    "r91_g6_patch.py": "1b7c2c784a63f137aa9fd5d1ccff3da545fed26d35b127447eb456e03ed6f410",
+    "test_g6_header.cpp": "af828d70d878e7369d27e2160355d2896661add861821a6a57acac646d91277c",
+    "test_g6_parser.py": "bdafc14b6607785b19f2308347ace8783f9348e9230915e2135c51dfca87d8fa",
+    "test_g6_patch.py": "b11f4b91432816337d4fb13dd7a430135e1322185cbcde087ea35c7da034a14f"
+  },
+  "protocol": {
+    "1M_CPU": "0,2,4,6",
+    "C32": "manual_after_audit",
+    "SIFT_CPU": "0",
+    "Search": "100K query 384/896 only after build audit; not matched quality",
+    "initial_arms": [
+      "mst1m_c512",
+      "mst1m_c128",
+      "mst1m_c64"
+    ],
+    "max_memory_bytes": 8589934592,
+    "max_swap_bytes": 0
+  },
+  "status": "R91_G6_D2_LEADER_CAP_V1_PREFLIGHT_PASS_NO_BUILD",
+  "time_utc": "2026-11-23T09:33:36.786768+00:00"
+}

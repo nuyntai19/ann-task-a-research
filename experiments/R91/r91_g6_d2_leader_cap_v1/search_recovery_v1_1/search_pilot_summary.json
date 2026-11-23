@@ -1,0 +1,90 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": {
+    "mst1m_c128": "3c42601552062753e18442976548bf91d1f9b12f28d04bf742559a34e3525e38",
+    "mst1m_c512": "ffcfeea6707cae4607e0e333ecde4d61e54a2b825786c0bb63df1a7ec5539a95",
+    "mst1m_c64": "7c9fe3f28cb1b804ab4a9e1d2f85a8fa7bbd605d07088e841311d92548bd3e64"
+  },
+  "notes": [
+    "Each graph scanned on CPU0 single thread at fixed beams384/896; not matched Recall.",
+    "One stochastic 4CPU graph per arm; no confidence interval.",
+    "Ignore legacy R86v4 avg_cmps at high beams due integer overflow.",
+    "Original G6 v1 failed search/locks untouched, no new BUILD or graph modifications."
+  ],
+  "parent_one_m_build_audit_sha256": "e383e2828650fe398a3af7aba2ba80a0787f236628f0111684409b715d0762c0",
+  "per_arm": {
+    "mst1m_c128": {
+      "build_receipt_sha256": "886792a7e0b12f1be70adda7d77bdb2aae6e14d01ae9974656811014792604e9",
+      "cgroup_peak_bytes": 1045037056,
+      "graph_sha256": "3c42601552062753e18442976548bf91d1f9b12f28d04bf742559a34e3525e38",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.3090157584417,
+          "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+          "qps": 1228.03503418,
+          "recall_at10": 0.99099201
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1778.882823804247,
+          "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+          "qps": 562.15057373,
+          "recall_at10": 0.99812597
+        }
+      },
+      "search_receipt_sha256": "02b042076e1802ecedde49cc9d7500c98be41a82d7ba676d3170ff79decac78a"
+    },
+    "mst1m_c512": {
+      "build_receipt_sha256": "bb8a484eba40514eb94eeaf996ae528aece03936e31e001011222b857d3a5b96",
+      "cgroup_peak_bytes": 1045671936,
+      "graph_sha256": "ffcfeea6707cae4607e0e333ecde4d61e54a2b825786c0bb63df1a7ec5539a95",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.3629285145446,
+          "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+          "qps": 1227.95373535,
+          "recall_at10": 0.99106801
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1775.7236339367762,
+          "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+          "qps": 563.1506958,
+          "recall_at10": 0.99816698
+        }
+      },
+      "search_receipt_sha256": "5e376ce20acf6c13b249da6bddf187283344c58b67234dc6e11a614ab5528397"
+    },
+    "mst1m_c64": {
+      "build_receipt_sha256": "87e1397c69c663afdc2eb2bccfeee8399fe03b75a8c307b05a3fef5e1482594c",
+      "cgroup_peak_bytes": 1045962752,
+      "graph_sha256": "7c9fe3f28cb1b804ab4a9e1d2f85a8fa7bbd605d07088e841311d92548bd3e64",
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.6577129923795,
+          "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+          "qps": 1227.50939941,
+          "recall_at10": 0.991108
+        },
+        "896": {
+          "avg_visited": 740.0,
+          "latency_us_proxy": 1781.3329053994069,
+          "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+          "qps": 561.37738037,
+          "recall_at10": 0.99815202
+        }
+      },
+      "search_receipt_sha256": "ef33243e03646539cef555dba4ae7ab69903f0e1696083f5e180e9111cde76a2"
+    }
+  },
+  "preflight_sha256": "e40ee4bb1aec76343f2c0e6b2b07d7104c6b84454cff25b33e0dc07f5bf49790",
+  "status": "R91_G6_SEARCH_RECOVERY_V1_1_THREE_GRAPH_100KQ_2BEAM_SEARCH_AUDIT_PASS",
+  "timestamp_utc": "2026-11-23T10:09:57.819586+00:00"
+}

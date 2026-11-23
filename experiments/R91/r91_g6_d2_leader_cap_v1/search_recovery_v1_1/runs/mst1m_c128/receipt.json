@@ -1,0 +1,48 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "cgroup_peak_bytes": 1045037056,
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "ae5ca40ced251f523df4cda464784dd301a04cad6bbe519a3907b6d7e69c0417",
+    "native.time": "2f8e1f6bc709d59a382a7c6d957af3602f16d47da8697dbe18469b572eab00d5",
+    "resource_trace.tsv": "f7e48ade88f66bf7b96b1c71a3e5ee8758862acae040955d949928725b477433"
+  },
+  "graph_sha256": "3c42601552062753e18442976548bf91d1f9b12f28d04bf742559a34e3525e38",
+  "issue": null,
+  "native_time": {
+    "exit_status": 0,
+    "major_faults": 0,
+    "max_rss_kib": 990592,
+    "swaps": 0,
+    "wall_s": 260.6
+  },
+  "resource_events": {
+    "max_events_delta": 0,
+    "oom_delta": 0,
+    "oom_kill_delta": 0,
+    "swap_current": 0
+  },
+  "returncode": 0,
+  "rows": {
+    "384": {
+      "avg_visited": 370.0,
+      "latency_us_proxy": 814.3090157584417,
+      "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+      "qps": 1228.03503418,
+      "recall_at10": 0.99099201
+    },
+    "896": {
+      "avg_visited": 741.0,
+      "latency_us_proxy": 1778.882823804247,
+      "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+      "qps": 562.15057373,
+      "recall_at10": 0.99812597
+    }
+  },
+  "slot": "mst1m_c128",
+  "status": "R91_G6_SEARCH_RECOVERY_V1_1_SEARCH_SLOT_PASS"
+}

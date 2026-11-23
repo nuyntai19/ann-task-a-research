@@ -1,0 +1,48 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "cgroup_peak_bytes": 1049563136,
+  "error": null,
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "382ea776fa3e48a7e713664749896b19a3b4f3198d66aaab35db8a82d5f188e4",
+    "native.time": "8092609c21718f18bda47a1b2c553edba2422a14e50235adb58d7851e1c5dd81",
+    "resource_trace.tsv": "36127507c1fe6badf89d7d6e0a6ca0feb36df198bb3aa8c2e50f9ae880dbbacf"
+  },
+  "graph_sha256": "cb3ad9b7e21164d14459c26e0394f3e2468b0352ef5bc8b07c4cead564a8005f",
+  "native_time": {
+    "exit_status": 0,
+    "major_faults": 0,
+    "max_rss_kib": 990856,
+    "swaps": 0,
+    "wall_s": 260.41
+  },
+  "resource_events": {
+    "max_events_delta": 0,
+    "oom_delta": 0,
+    "oom_kill_delta": 0,
+    "swap_current": 0
+  },
+  "returncode": 0,
+  "rows": {
+    "384": {
+      "avg_visited": 370.0,
+      "latency_us_proxy": 814.1989458182272,
+      "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+      "qps": 1228.2010498,
+      "recall_at10": 0.99107301
+    },
+    "896": {
+      "avg_visited": 740.0,
+      "latency_us_proxy": 1777.1528046659098,
+      "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+      "qps": 562.69781494,
+      "recall_at10": 0.998146
+    }
+  },
+  "slot": "mst1m_c32",
+  "status": "R91_G6_C32_SEARCH_V1_SEARCH_SLOT_PASS"
+}

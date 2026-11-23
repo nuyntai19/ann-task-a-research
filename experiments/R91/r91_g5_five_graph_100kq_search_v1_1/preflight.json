@@ -1,0 +1,79 @@
+{
+  "cpu_search": 0,
+  "data_sha256": {
+    "base": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "gt": "fa5acf5ab262b42355296e99f920e6aa863f48820ca6f70fa37ca7966634c344",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+  },
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "evaluator_source_sha256": "6aa0e38a3b0a536ccbcd3bfe0ca690257ab963215b5135d642cbb60d259c3f89",
+  "g5_json_sha256": {
+    "compile": "5ba1084ad2ff2f595456c7213755e1b1ca060b1ae9c2ce27990b856cec8ee852",
+    "one_m_build_audit": "de1f2f9565ab5451074cc0e2dea0f46b5d65da24b5cdb783f3bb1a4d37e3b0f5",
+    "preflight": "0ff0831082ea283c5b1171ba83929c3c2d0a1d51e51dc812d77acf4e6c2251db",
+    "sift_audit": "a7e4e7559a050894648d868cdd918e29ba0436dc1448c2323952fb9b0aa95852"
+  },
+  "graph_sha256": {
+    "adaptive105": "34ffeb1cf43135ea70b8bde4c3737f559b5ee9612594ee4cc6dce7ce9dd60665",
+    "adaptive108": "3f3715de2818f8ed55a98a9e8e1f06daa67eb4e3f0276a7d492a41aa94e55e0f",
+    "fixed": "98cfa11b5988e186a2c0a0133b82c824a8d3be15bb0066a49656874dd4b27157",
+    "umix34": "3e3e3531e2d7a3588f782509910fe39a06a791b918893bffbf93bcc0512d05a2",
+    "umix67": "3ab2f596b19560aae0c891ca48a99cfd8bdbba581e26a07695269a295ba88bf1"
+  },
+  "grid_beams": [
+    320,
+    352,
+    368,
+    384,
+    800,
+    848,
+    880,
+    896
+  ],
+  "host": {
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "disk_free_bytes": 268214947840,
+    "host_memavailable_bytes": 29351346176
+  },
+  "memory_max_bytes": 8589934592,
+  "memory_swap_max_bytes": 0,
+  "notes": [
+    "No new BUILD/compile/graph modification.",
+    "R86 evaluator high-beam avg_cmps has known int32 overflow; never use.",
+    "One search per graph per grid; no statistical QPS confidence intervals.",
+    "Crossings are at tested beams/quality floor, not exact matched Recall."
+  ],
+  "pilot_beams": [
+    384,
+    896
+  ],
+  "quality_floors": [
+    0.99,
+    0.998
+  ],
+  "queries": 100000,
+  "search_threads": 1,
+  "status": "R91_G5_SEARCH_V1_1_PREFLIGHT_PASS_NO_SEARCH",
+  "timestamp_utc": "2026-11-23T08:35:13.883693+00:00"
+}

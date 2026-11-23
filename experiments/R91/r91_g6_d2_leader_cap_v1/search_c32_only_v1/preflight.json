@@ -1,0 +1,33 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "c32_build_audit_sha256": "5ce65a16936f23433654581740e320fcf4a95c32ef648877fc20b42b5550c531",
+  "c32_receipt_sha256": "5e3e682d284ac3699feabb1a96728690b02c4c2ae888a8c9b7c28b52e45da602",
+  "cpu_search": 0,
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": "cb3ad9b7e21164d14459c26e0394f3e2468b0352ef5bc8b07c4cead564a8005f",
+  "memory_max_bytes": 8589934592,
+  "memory_swap_max_bytes": 0,
+  "note": "Only C32 graph native Search. No BUILD, compilation, source/graph edits or modification to prior Search. Search result not exact matched Recall.",
+  "original_g6_json_sha256": {
+    "compile.json": "6ad63a892ab2657fd3cb918cd064d76974a4cdd9384aad3492584c805f4ba5d2",
+    "one_m_build_audit.json": "e383e2828650fe398a3af7aba2ba80a0787f236628f0111684409b715d0762c0",
+    "preflight.json": "d1c5255ef0b07af1c7e2d13494997d6e02bc0dc0c199377b7598cc531812e112",
+    "sift_audit.json": "7762636031b13c3046a20a01a536e01ce6a074bea7f18f159118fb366bd7feaf"
+  },
+  "package_sha256": {
+    "R91_G6_C32_SEARCH_AUDIT_v1_Ubuntu.sh": "14fce20b9e7365515718e6d91c00dec50d5c94dfb5a1bad82a36d62b4f1359ab",
+    "R91_G6_C32_SEARCH_PILOT_v1_Ubuntu.sh": "22318069be6cfd346aca2677f6199ca91d0cbd2f754a32c13435ba4046065ad4",
+    "R91_G6_C32_SEARCH_PREFLIGHT_v1_Ubuntu.sh": "90caf08d873f9f99cb7a7abfbcefdf5f16fc690e37428c8bec525a23e17ea1ac",
+    "README_R91_G6_C32_SEARCH_v1.txt": "621091f369df167ce9adee27b0b71b6e9807e47d43ef6d5c764e8aa3e9df2c97",
+    "r91_g6_c32_search_only_v1.py": "e4dbed23ddd3f33b07e71a37d13be9f8da7452a642bb7a82c7c214949233ab71",
+    "test_g6_c32_search_v1.py": "1912218b176fb6794436949f69b66cdbefc5a0d01dd3120453932fe4f85e642e"
+  },
+  "prior_three_search_sha256": "8e8acdc84bf11fddb86bc58bb3dd81d6b4a5c6ec15ff682e4766584b5252efc6",
+  "query_count": 100000,
+  "status": "R91_G6_C32_SEARCH_V1_PREFLIGHT_PASS_NO_SEARCH",
+  "threads": 1,
+  "timestamp_utc": "2026-11-23T11:35:58.123751+00:00"
+}

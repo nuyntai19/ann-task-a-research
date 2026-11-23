@@ -1,0 +1,37 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "bundle_members_sha256": {
+    "R91_G6_SEARCH_RECOVERY_AUDIT_v1_1_Ubuntu.sh": "aaf687c716b1853154619a93745c133b2cb702fb10a4add4e15fd68e9a5e5802",
+    "R91_G6_SEARCH_RECOVERY_PILOT_v1_1_Ubuntu.sh": "d3d9526aef138b17e1b65c094a28fa19a26999f4e205e80d31d47ccc67fc4a99",
+    "R91_G6_SEARCH_RECOVERY_PREFLIGHT_v1_1_Ubuntu.sh": "f8b2795b05bc2dbfc500ec07fe86413ee561457146d5f18f97cd2cfad188c691",
+    "README_R91_G6_SEARCH_RECOVERY_v1_1.txt": "e869b8c219f11022f3a5bb06d8811c4e642365f8a2f3892bba360a31c95181ba",
+    "r91_g6_search_recovery_v1_1.py": "7874fd9e07ac7aa6087161796dacf2d4770dcd9afd8dbbe8ce7ebd91fb71f5c9",
+    "test_g6_search_recovery_v1_1.py": "361edc51b29618ef8b2d4f03bcbc4a650743a9200129a208b2bfbd3c4c91c09b"
+  },
+  "cpu": 0,
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "evaluator_source_sha256": "6aa0e38a3b0a536ccbcd3bfe0ca690257ab963215b5135d642cbb60d259c3f89",
+  "graph_sha256": {
+    "mst1m_c128": "3c42601552062753e18442976548bf91d1f9b12f28d04bf742559a34e3525e38",
+    "mst1m_c512": "ffcfeea6707cae4607e0e333ecde4d61e54a2b825786c0bb63df1a7ec5539a95",
+    "mst1m_c64": "7c9fe3f28cb1b804ab4a9e1d2f85a8fa7bbd605d07088e841311d92548bd3e64"
+  },
+  "memory_max_bytes": 8589934592,
+  "note": "Search-only recovery. No source patching, compiler, BUILD, graph modifications, old G6 Search changes. Does not infer matched Recall.",
+  "original_failed_search_preserved": true,
+  "original_g6_json_sha256": {
+    "compile.json": "6ad63a892ab2657fd3cb918cd064d76974a4cdd9384aad3492584c805f4ba5d2",
+    "one_m_build_audit.json": "e383e2828650fe398a3af7aba2ba80a0787f236628f0111684409b715d0762c0",
+    "preflight.json": "d1c5255ef0b07af1c7e2d13494997d6e02bc0dc0c199377b7598cc531812e112",
+    "sift_audit.json": "7762636031b13c3046a20a01a536e01ce6a074bea7f18f159118fb366bd7feaf"
+  },
+  "original_g6_script_sha256": "6be02a966ac0d94a6547229fd7c999ec36b123d1cfb8e6207f81af5e28435fc6",
+  "search_output": "/home/tai/ann-task-a/experiments/R91/r91_g6_d2_leader_cap_v1/search_recovery_v1_1",
+  "status": "R91_G6_SEARCH_RECOVERY_V1_1_PREFLIGHT_PASS_NO_SEARCH",
+  "swap_max_bytes": 0,
+  "threads": 1,
+  "timestamp_utc": "2026-11-23T09:56:25.397862+00:00"
+}

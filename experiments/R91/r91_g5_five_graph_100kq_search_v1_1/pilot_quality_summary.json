@@ -1,0 +1,209 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "data_sha256": {
+    "base": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+    "gt": "fa5acf5ab262b42355296e99f920e6aa863f48820ca6f70fa37ca7966634c344",
+    "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+  },
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "fixed_beam_comparisons": {
+    "384": {
+      "adaptive105": {
+        "qps_ratio_vs_fixed": 1.2772391662789468,
+        "recall_delta_vs_fixed": -0.030795989999999995
+      },
+      "adaptive108": {
+        "qps_ratio_vs_fixed": 1.097841023999117,
+        "recall_delta_vs_fixed": -0.010670010000000008
+      },
+      "fixed": {
+        "qps_ratio_vs_fixed": 1.0,
+        "recall_delta_vs_fixed": 0.0
+      },
+      "umix34": {
+        "qps_ratio_vs_fixed": 1.2262619659155851,
+        "recall_delta_vs_fixed": -0.016522999999999954
+      },
+      "umix67": {
+        "qps_ratio_vs_fixed": 1.066351363456661,
+        "recall_delta_vs_fixed": -0.0038260199999999855
+      }
+    },
+    "896": {
+      "adaptive105": {
+        "qps_ratio_vs_fixed": 1.2828318056058912,
+        "recall_delta_vs_fixed": -0.012997029999999965
+      },
+      "adaptive108": {
+        "qps_ratio_vs_fixed": 1.098008122046671,
+        "recall_delta_vs_fixed": -0.0038680499999999007
+      },
+      "fixed": {
+        "qps_ratio_vs_fixed": 1.0,
+        "recall_delta_vs_fixed": 0.0
+      },
+      "umix34": {
+        "qps_ratio_vs_fixed": 1.2209807746127412,
+        "recall_delta_vs_fixed": -0.005218029999999985
+      },
+      "umix67": {
+        "qps_ratio_vs_fixed": 1.0596076793129925,
+        "recall_delta_vs_fixed": -0.0009689899999999474
+      }
+    }
+  },
+  "floor_099": {},
+  "floor_0998": {},
+  "graph_sha256": {
+    "adaptive105": "34ffeb1cf43135ea70b8bde4c3737f559b5ee9612594ee4cc6dce7ce9dd60665",
+    "adaptive108": "3f3715de2818f8ed55a98a9e8e1f06daa67eb4e3f0276a7d492a41aa94e55e0f",
+    "fixed": "98cfa11b5988e186a2c0a0133b82c824a8d3be15bb0066a49656874dd4b27157",
+    "umix34": "3e3e3531e2d7a3588f782509910fe39a06a791b918893bffbf93bcc0512d05a2",
+    "umix67": "3ab2f596b19560aae0c891ca48a99cfd8bdbba581e26a07695269a295ba88bf1"
+  },
+  "notes": [
+    "One graph per arm, no matched CI or exact target latency.",
+    "Do not use legacy avg_cmps from R86 v4 at high beam: signed 32-bit overflow.",
+    "Pilot is fixed beam screen. Grid crossings are tested-grid quality floor not exact matched Recall."
+  ],
+  "per_arm": {
+    "adaptive105": {
+      "build_receipt_sha256": "d66e423799ad1690a41a01cb25e6387313ef8d715c9a6076b7710dc508c603a6",
+      "cgroup_peak_bytes": 949313536,
+      "graph_sha256": "34ffeb1cf43135ea70b8bde4c3737f559b5ee9612594ee4cc6dce7ce9dd60665",
+      "max_rss_kib": 918840,
+      "rows": {
+        "384": {
+          "avg_visited": 381.0,
+          "latency_us_proxy": 637.6284704214029,
+          "legacy_avg_cmps_raw_UNTRUSTED": 12361.0,
+          "legacy_avg_cmps_status": "RAW_UNVERIFIED",
+          "qps": 1568.31140137,
+          "recall_at10": 0.96023202
+        },
+        "896": {
+          "avg_visited": 749.0,
+          "latency_us_proxy": 1385.8718384859403,
+          "legacy_avg_cmps_raw_UNTRUSTED": 4294947312.0,
+          "legacy_avg_cmps_status": "INVALID_V4_OVERFLOW_AT_HIGHBEAM",
+          "qps": 721.56744385,
+          "recall_at10": 0.98516399
+        }
+      },
+      "search_receipt_sha256": "54cde3c80953428fdaf5ace505528574af0c34d3be95c96b7875c3393dd7bfb1",
+      "search_wall_s_diagnostic": 203.91472384400004
+    },
+    "adaptive108": {
+      "build_receipt_sha256": "085be33ef4e79c1f60e391c8cd2c35dc7746a1fc971d9e04e67cd1f08aefb567",
+      "cgroup_peak_bytes": 991256576,
+      "graph_sha256": "3f3715de2818f8ed55a98a9e8e1f06daa67eb4e3f0276a7d492a41aa94e55e0f",
+      "max_rss_kib": 958996,
+      "rows": {
+        "384": {
+          "avg_visited": 376.0,
+          "latency_us_proxy": 741.8233042431904,
+          "legacy_avg_cmps_raw_UNTRUSTED": 14874.0,
+          "legacy_avg_cmps_status": "RAW_UNVERIFIED",
+          "qps": 1348.02990723,
+          "recall_at10": 0.980358
+        },
+        "896": {
+          "avg_visited": 747.0,
+          "latency_us_proxy": 1619.1505665635752,
+          "legacy_avg_cmps_raw_UNTRUSTED": 4294951990.0,
+          "legacy_avg_cmps_status": "INVALID_V4_OVERFLOW_AT_HIGHBEAM",
+          "qps": 617.60778809,
+          "recall_at10": 0.99429297
+        }
+      },
+      "search_receipt_sha256": "ac6cd9657b850ad61f893e185f1bda052326b383777f0a402d1fff0ec58af97c",
+      "search_wall_s_diagnostic": 237.54597774099966
+    },
+    "fixed": {
+      "build_receipt_sha256": "16653c728a5e9890c807f43e010dcb57ccf6b554e42d757ded3534b7e0b3240b",
+      "cgroup_peak_bytes": 1023438848,
+      "graph_sha256": "98cfa11b5988e186a2c0a0133b82c824a8d3be15bb0066a49656874dd4b27157",
+      "max_rss_kib": 990808,
+      "rows": {
+        "384": {
+          "avg_visited": 370.0,
+          "latency_us_proxy": 814.4040559567527,
+          "legacy_avg_cmps_raw_UNTRUSTED": 16726.0,
+          "legacy_avg_cmps_status": "RAW_UNVERIFIED",
+          "qps": 1227.89172363,
+          "recall_at10": 0.99102801
+        },
+        "896": {
+          "avg_visited": 741.0,
+          "latency_us_proxy": 1777.8404729032748,
+          "legacy_avg_cmps_raw_UNTRUSTED": 4294955366.0,
+          "legacy_avg_cmps_status": "INVALID_V4_OVERFLOW_AT_HIGHBEAM",
+          "qps": 562.48016357,
+          "recall_at10": 0.99816102
+        }
+      },
+      "search_receipt_sha256": "1d4c4693a16a7115e0716c7d043d7206063039f37f263c20bc54e13f357d68b3",
+      "search_wall_s_diagnostic": 260.6680813469993
+    },
+    "umix34": {
+      "build_receipt_sha256": "83001c6fd95b28cd67a800a6efbfcf6b8832623ca7f49d9be9fbff4769045c8b",
+      "cgroup_peak_bytes": 953892864,
+      "graph_sha256": "3e3e3531e2d7a3588f782509910fe39a06a791b918893bffbf93bcc0512d05a2",
+      "max_rss_kib": 922492,
+      "rows": {
+        "384": {
+          "avg_visited": 380.0,
+          "latency_us_proxy": 664.1354609320205,
+          "legacy_avg_cmps_raw_UNTRUSTED": 13023.0,
+          "legacy_avg_cmps_status": "RAW_UNVERIFIED",
+          "qps": 1505.71691895,
+          "recall_at10": 0.97450501
+        },
+        "896": {
+          "avg_visited": 747.0,
+          "latency_us_proxy": 1456.0757301581205,
+          "legacy_avg_cmps_raw_UNTRUSTED": 4294948819.0,
+          "legacy_avg_cmps_status": "INVALID_V4_OVERFLOW_AT_HIGHBEAM",
+          "qps": 686.77746582,
+          "recall_at10": 0.99294299
+        }
+      },
+      "search_receipt_sha256": "12471c61092392b772dccc28a26fae95d87eb872d1b2f3c9c7afa3f98e717a24",
+      "search_wall_s_diagnostic": 213.3622254359998
+    },
+    "umix67": {
+      "build_receipt_sha256": "f57572739e5077b8806216b48e8b0f5ce0ec82576ada621dc530b82896695fde",
+      "cgroup_peak_bytes": 995524608,
+      "graph_sha256": "3ab2f596b19560aae0c891ca48a99cfd8bdbba581e26a07695269a295ba88bf1",
+      "max_rss_kib": 962676,
+      "rows": {
+        "384": {
+          "avg_visited": 373.0,
+          "latency_us_proxy": 763.7295584419741,
+          "legacy_avg_cmps_raw_UNTRUSTED": 15494.0,
+          "legacy_avg_cmps_status": "RAW_UNVERIFIED",
+          "qps": 1309.36401367,
+          "recall_at10": 0.98720199
+        },
+        "896": {
+          "avg_visited": 744.0,
+          "latency_us_proxy": 1677.8289810583065,
+          "legacy_avg_cmps_raw_UNTRUSTED": 4294953350.0,
+          "legacy_avg_cmps_status": "INVALID_V4_OVERFLOW_AT_HIGHBEAM",
+          "qps": 596.00830078,
+          "recall_at10": 0.99719203
+        }
+      },
+      "search_receipt_sha256": "911f4fcea700e93ef7d0e0cb5d1ff6d9b0883d933460af6751f2126540cc2fac",
+      "search_wall_s_diagnostic": 245.61511286600035
+    }
+  },
+  "phase": "pilot",
+  "query_count": 100000,
+  "status": "R91_G5_SEARCH_V1_1_AUDIT_PILOT_PASS_5GRAPH_100KQ_2BEAM_SEARCH_ONLY",
+  "status_quality": "NOT_PROVEN_ADAPTIVE_BETTER",
+  "timestamp_utc": "2026-11-23T08:54:44.451072+00:00"
+}

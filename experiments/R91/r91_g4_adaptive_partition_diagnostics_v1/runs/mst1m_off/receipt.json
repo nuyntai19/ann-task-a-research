@@ -1,0 +1,49 @@
+{
+  "arm": "off",
+  "cgroup_peak_bytes": 2426626048,
+  "compiled_elf_sha256": "01ac9d3cc8eab1371badf19bf3a214800fb7473f2700a84ea71f8a6a1981d0e2",
+  "dataset_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "error": null,
+  "file_sha256": {
+    "graph.bin": "dbfcdb1822abc0c36e53da446cb6c14dcd431df7ed864ccf1af00ae089681832",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "b5a618fd757c8b1b1defbc520b68412163cd0d82a75540cccc50f7874f1a6e98",
+    "native.time": "571c8791ecf4dd817069b3006138bc260f99ad6c6d172a82dc972cc9c0c8914d",
+    "resource_trace.tsv": "d9abc1da8ba552dee641749618b1e998b6b831fea1a7d78ac9e2b8fbcb41247b"
+  },
+  "g3_profiles": [],
+  "g4_diagnostics": [],
+  "gnu_time": {
+    "exit_status": 0,
+    "major_faults": 0,
+    "max_rss_kib": 2358976,
+    "swaps": 0,
+    "wall_s": 33.69
+  },
+  "graph": {
+    "arcs": 52877086,
+    "bad_duplicate": 0,
+    "bad_neighbor_id": 0,
+    "bad_self": 0,
+    "full_audit": true,
+    "max_degree": 64,
+    "nodes": 1000000,
+    "sha256": "dbfcdb1822abc0c36e53da446cb6c14dcd431df7ed864ccf1af00ae089681832",
+    "size_bytes": 215508352
+  },
+  "native_comparisons": [
+    5104928517,
+    10204781605
+  ],
+  "native_returncode": 0,
+  "preflight_sha256": "ac47b951322e648498f0827e16d6b7d048ac0c6daa0f1ef11eee2045fafbe7b9",
+  "resource_events": {
+    "max_events_delta": 0,
+    "oom_delta": 0,
+    "oom_kill_delta": 0,
+    "swap_current": 0
+  },
+  "scope_path": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-r390099b9691c4e9499c6eb4c65b04140.scope",
+  "slot": "mst1m_off",
+  "status": "R91_G4_ADAPTIVE_DIAG_V1_SLOT_PASS"
+}

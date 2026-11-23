@@ -1,0 +1,61 @@
+{
+  "beams": [
+    384,
+    896
+  ],
+  "c32_build_audit_sha256": "5ce65a16936f23433654581740e320fcf4a95c32ef648877fc20b42b5550c531",
+  "comparisons": {
+    "384": {
+      "c32_qps": 1228.2010498,
+      "c32_recall": 0.99107301,
+      "c512_qps": 1227.95373535,
+      "c512_recall": 0.99106801,
+      "c64_qps": 1227.50939941,
+      "c64_recall": 0.991108,
+      "meets_quality_floor": true,
+      "qps_pct_delta_c32_vs_c512": 0.020140371976595794,
+      "recall_delta_c32_vs_c512": 5.000000000032756e-06
+    },
+    "896": {
+      "c32_qps": 562.69781494,
+      "c32_recall": 0.998146,
+      "c512_qps": 563.1506958,
+      "c512_recall": 0.99816698,
+      "c64_qps": 561.37738037,
+      "c64_recall": 0.99815202,
+      "meets_quality_floor": true,
+      "qps_pct_delta_c32_vs_c512": -0.08041912464596956,
+      "recall_delta_c32_vs_c512": -2.0980000000059285e-05
+    }
+  },
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_sha256": "cb3ad9b7e21164d14459c26e0394f3e2468b0352ef5bc8b07c4cead564a8005f",
+  "notes": [
+    "Native read-only C32 graph Search on CPU0 with 1 thread, fixed beams 384/896.",
+    "Cross-graph QPS differences are not matched Recall and not a statistical equivalence claim.",
+    "R86v4 highbeam avg_cmps overflow: ignore.",
+    "C32 may alter leaf/fallback despite fixed fanout; BUILD quality must be checked first."
+  ],
+  "parent_three_graph_search_summary_sha256": "8e8acdc84bf11fddb86bc58bb3dd81d6b4a5c6ec15ff682e4766584b5252efc6",
+  "preflight_sha256": "3d6977e021948637ca46cf6691721d55f83bab21452dff139285c8e3c29ab5d8",
+  "query_count": 100000,
+  "rows": {
+    "384": {
+      "avg_visited": 370.0,
+      "latency_us_proxy": 814.1989458182272,
+      "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+      "qps": 1228.2010498,
+      "recall_at10": 0.99107301
+    },
+    "896": {
+      "avg_visited": 740.0,
+      "latency_us_proxy": 1777.1528046659098,
+      "legacy_avg_cmps_status": "IGNORE_R86_V4_INT32_OVERFLOW",
+      "qps": 562.69781494,
+      "recall_at10": 0.998146
+    }
+  },
+  "search_receipt_sha256": "63f749828ae96e7d8a05bfc1db06fb37a6651dba458b7e71f5495b63f3a6861d",
+  "status": "R91_G6_C32_SEARCH_V1_C32_100KQ_2BEAM_SEARCH_AUDIT_PASS",
+  "timestamp_utc": "2026-11-23T11:40:28.650407+00:00"
+}

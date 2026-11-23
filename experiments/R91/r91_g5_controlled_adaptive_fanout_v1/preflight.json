@@ -1,0 +1,79 @@
+{
+  "arms": {
+    "adaptive105": {
+      "hi_bps": 0,
+      "low": 3,
+      "policy": "adaptive_margin",
+      "tau": 1.05
+    },
+    "adaptive108": {
+      "hi_bps": 0,
+      "low": 6,
+      "policy": "adaptive_margin",
+      "tau": 1.08
+    },
+    "fixed": {
+      "hi_bps": 0,
+      "low": 3,
+      "policy": "fixed",
+      "tau": 1.05
+    },
+    "umix34": {
+      "hi_bps": 9424,
+      "low": 3,
+      "policy": "uniform_mix",
+      "tau": 1.05
+    },
+    "umix67": {
+      "hi_bps": 4310,
+      "low": 6,
+      "policy": "uniform_mix",
+      "tau": 1.08
+    }
+  },
+  "baseline_g4_elf_sha256": "a0361ae6ca6b0123968288731b77c67ed1dc7935224d5c8f08739e16fdfcda38",
+  "cgroup_memory_max_bytes": 8589934592,
+  "cpu_sets": {
+    "MS_TURING_1M": "0,2,4,6",
+    "SIFT": "0"
+  },
+  "frozen_elf_sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+  "g4_original_json_sha256": {
+    "compile.json": "2439c149cb9943e2bb679e192b79aaa67cdc24ecd3af4fc2e37c3cf5dbaa28ad",
+    "full_diagnostic_summary.json": "eb45a9a89aa754e5fa2627e760b88321462ecc14c85f08406ebb9604c0f81889",
+    "preflight.json": "ac47b951322e648498f0827e16d6b7d048ac0c6daa0f1ef11eee2045fafbe7b9",
+    "sift100k_audit.json": "eb01ee35c365e37c91c7570aad6b5cec0f06c282fbaebd719fadca4fe722aef2"
+  },
+  "g4_source_pins": {
+    "g4_source_neighbors_sha256": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "g4_source_pipnn_sha256": "beae00cbc39e04470f67589393105ebce91bde96d447ec4e38b048b06b819f73",
+    "g4_source_utils_sha256": "5edf6a85415104ada99728c9e3c27d1770711650ef36cb0c4bc60427aa3464d8"
+  },
+  "host": {
+    "compiler": "g++-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "disk_free_bytes": 269750325248,
+    "memavailable_bytes": 29373231104
+  },
+  "memory_swap_max_bytes": 0,
+  "method_note": "One factor depth0 fanout only. G4 nearzero uses full fanout. Strict actual_W_A measurement; no quality claim.",
+  "mst_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "package_sha256": {
+    "R91_G5_AUDIT_MST1M_v1_Ubuntu.sh": "d44cb8f69f497eb04a66b9736bd60adf2da1bee2aebac2fa8802c4e462548073",
+    "R91_G5_AUDIT_SIFT_v1_Ubuntu.sh": "a938c8a6df5c998c6eb15f23c93f58e3357c6ad47399dfbe8de94d1e7a6b8318",
+    "R91_G5_COMPILE_v1_Ubuntu.sh": "99a80fe8ab8a7016019f66657c3820dc7253b28c6f06f7f9747cf67d00fef7fe",
+    "R91_G5_PILOT_MST1M_v1_Ubuntu.sh": "9fdc77d92b6e56ef37f456e0741372997c2fe188d0afc055ea58b5793830ded8",
+    "R91_G5_PILOT_SIFT_v1_Ubuntu.sh": "1d23033ae6dbb7fb36322e5d12b92e020a85f2fda84bea7562a078f61483a007",
+    "R91_G5_PREFLIGHT_v1_Ubuntu.sh": "e53bf549eab4410c6b8665927e4211e7fe9a4c1008a564fc83dd49053238d366",
+    "R91_G5_PREPARE_v1_Ubuntu.sh": "8d3e2c2386def95dbe30aea0ac6ed9e7090b7835ee3d62c97a402aadbdd451b7",
+    "README_R91_G5_v1.txt": "25c63e4f04ba0a1146a7d1705bac481cf4bbb5c6d59e7b94cb5bab0d8ce52c6c",
+    "r91_g5_controlled_ablation_v1.py": "9bb7eaab7d5e5a0f5bf8795bd76d245b20b6059cfebefaf19e82f677bcc533bc",
+    "r91_g5_patch.py": "b6c91c13b731552b1fdaa734de2f053a993de4240616c78f53bfd6d8cf38435d",
+    "r91_g5_policy.hpp": "dca448a5b0d32d1cef71815945f72ac28f3de31de7934ecf16cbb21510fd8804",
+    "test_g5_patcher.py": "3f6080a21bec6cdc19a127d74754f126b0b1de5de47c7a94637c9c6c02f8b92a",
+    "test_policy.cpp": "c3c44993d39d7df4085ed94996ef4205232940020cb813b1c1b0d8ce0f8d99d5",
+    "test_policy_guard.cpp": "78cf65be3e2230402ed774270bcf2d7f802b50427bf99ab68ec47dec3a151d4a"
+  },
+  "sift_sha256": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "status": "R91_G5_CTRL_ADAPT_FANOUT_V1_PREFLIGHT_PASS_NO_BUILD",
+  "timestamp_utc": "2026-11-23T07:37:11.450728+00:00"
+}

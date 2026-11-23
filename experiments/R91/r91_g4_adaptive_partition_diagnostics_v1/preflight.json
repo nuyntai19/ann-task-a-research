@@ -1,0 +1,106 @@
+{
+  "cgroup_bytes": 8589934592,
+  "cgroup_swap_max_bytes": 0,
+  "cpu_sets": {
+    "mst1m_g4_on": "0,2,4,6",
+    "mst1m_off": "0,2,4,6",
+    "sift100k_g4_on": "0"
+  },
+  "deps": {
+    "ABSEIL-CPP": {
+      "head": "bc257a88f7c1939f24e0379f14a3589e926c950c",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/abseil-cpp-src"
+    },
+    "EIGEN": {
+      "head": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/eigen-src"
+    },
+    "GOOGLEBENCHMARK": {
+      "head": "1fa8ea1c0d5f580748c2217efcad301729a8285c",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/googlebenchmark-src"
+    },
+    "HIGHWAY": {
+      "head": "6bc2d47793bae9c521fb4150936669647700765d",
+      "path": "/home/tai/ann-task-a/vendor_pinned/highway-6bc2d477"
+    },
+    "PARLAYLIB": {
+      "head": "51017699dcc421f80479cdb238d3092233ad0d26",
+      "path": "/home/tai/ann-task-a/src/PiPNN/build/_deps/parlaylib-src"
+    }
+  },
+  "flags": [
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0"
+  ],
+  "frozen_elf_sha256": "9c06a21922c53f89afcffa65a5ca3e1ccf6b54c871f53592c06370a4806010e3",
+  "g3_compile_elf_sha": {
+    "off": "01ac9d3cc8eab1371badf19bf3a214800fb7473f2700a84ea71f8a6a1981d0e2",
+    "on": "6936df5a7e31e2afbc2974b9c3ecdc9d4388e93e6924f6a3fd73c76911c9ccf4"
+  },
+  "g3_step1_sha256": {
+    "compile.json": "bebd85dcd8e24979ac641f46f52f38d3a61c7bbff31b22dbd8c299583a25ecfb",
+    "pilot_summary.json": "6d7a4006cf73068e30a992161d9064b2f46dd27a2af065614505c79456bf32bf",
+    "preflight.json": "df30c56c2c77db7296bf9dff89ccfef46838d0ea7cb3c670b6142f07f8cfe5cb"
+  },
+  "host": {
+    "compiler": "g++-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "disk_free_bytes": 270656380928,
+    "memavailable_bytes": 29151682560
+  },
+  "mst1m_sha": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "package_sha256": {
+    "R91_G4_AUDIT_FULL_v1_Ubuntu.sh": "ba5e26490e0dd53584891861643902ae185095b9eef066913417f7101bda1f5d",
+    "R91_G4_AUDIT_SIFT_v1_Ubuntu.sh": "93f2b9bcb4d8d6e85d319a8da089a21b6ab806bdf77463c74518b2137a2cb479",
+    "R91_G4_COMPILE_v1_Ubuntu.sh": "b08801c6c64c2a9dd931c010c3ff4f435113d5964cd1f22559654cded590a65c",
+    "R91_G4_PILOT_MST1M_v1_Ubuntu.sh": "968008503fef8ceba8d888ff65448388faf413225fcfdad13bcc1fd9f361235e",
+    "R91_G4_PILOT_SIFT_v1_Ubuntu.sh": "b5e663144826bb94280fe1477f95022a34cc4b81fcf483d3b35b7518b7d639cf",
+    "R91_G4_PREFLIGHT_v1_Ubuntu.sh": "680c51e4aa7adc5137a25fb09896887c70c5c3053041e088edd533fcaff6c4c7",
+    "R91_G4_PREPARE_v1_Ubuntu.sh": "7b4999cd78a6ab46abf5b592a17ef87140ac37bf20bdc9f036a829584c587127",
+    "README_R91_G4_ADAPTIVE_DIAGNOSTIC_v1.txt": "d836eb29f2f33ecac03a45d7146d26325509cb17d8d06a35fc4717507a1ee715",
+    "r91_g3_patch.py": "398129c809165aeac3fec2d29a341077bd7b9ec871d934680d24fac53b9794fb",
+    "r91_g3_profile.hpp": "a7a681d22cce00aca298c3f22a60cf6e4f61fe85f9da49b33b04f45d8b29b9f9",
+    "r91_g3_stage1_step1_v1.py": "12820ca14f5e700f10559d0fa5378e6522b138ff3e5640fb435fbdb1d69bb9e7",
+    "r91_g3_stage1_step2_mst1m_v1.py": "81abb7a2d189c081139b350310df94e158fee5b2399a081a474b3878e0327cfd",
+    "r91_g4_adaptive_diag_v1.py": "92bdc5f3a3a542ddfd1699cba312ab0cf656e1d66485517ead9264c560012475",
+    "r91_g4_diag.hpp": "6a937a46877cbb52650cd30d3c2ee5fb94a72faa5d20458037b642b02a3bb6e2",
+    "r91_g4_patch.py": "9e8a3ef95a36918e8c39226ca32e332b3ba6eff53ecce185a8e9cbf59598360f",
+    "test_g4_patcher.py": "08228b2e9365a588a03b53c7c79ceb40e41fee707df87ce0846a5db8747c44a7",
+    "test_header.cpp": "188e9be2238dc989acaa16980839814ce0d3a4a1ab316fd82ae1001b55481350",
+    "test_r91_g4_smoke.sh": "53c113c27ce81dac4b05232bd21f0b5bac2a0decea158ecf4ee0e4dd8bc6071f"
+  },
+  "purpose": "Read-only bucket + selected-topK margin diagnostic, no change to actual graph fanout",
+  "sift_sha": "e50ff1bc34bcc6d1c97dd001023c09a666971cde64605cc06671ed8a8ff1ed12",
+  "source_sha256": {
+    "CMakeLists.txt": "198badc698ebd5a87fe10e854dca124ac94825535931f20265b86c5d6643c2f9",
+    "algorithms/PipNN/CMakeLists.txt": "19d5eb89771343c90ee21c98b8ed3628cfab1a1daf2d5549d37123bfa10d2a95",
+    "algorithms/PipNN/neighbors.h": "29293c2a6210db7c666db1f4589ecbfc0c8864ac57f07b743fa33797931bc1ef",
+    "algorithms/PipNN/pipnn.h": "552259116bcd6269f0f1949bbbc7c9cacf0ecb63a6a138ccac76fe3d21876d2c",
+    "algorithms/PipNN/pipnn_utils.h": "72ca1451790234a76a9bfe5ecafd7bc555e6cd53673587b62a37a93f24caad28",
+    "algorithms/utils/graph.h": "09e02327c713bfc3a670a737a42cc07e8ec115bb07eca256655776f61cfd6591",
+    "algorithms/utils/hash.h": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d"
+  },
+  "status": "R91_G4_ADAPTIVE_DIAG_V1_PREFLIGHT_PASS_NO_BUILD",
+  "utc": "2026-11-23T06:58:55.787689+00:00"
+}

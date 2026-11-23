@@ -1,0 +1,61 @@
+{
+  "arm": "adaptive108",
+  "base_sha256": "44e83e1dd4c65999b75873101adc5ac06ca900d259a2befd05c2c3aa28ff4042",
+  "beams": [
+    384,
+    896
+  ],
+  "cgroup_peak_bytes": 991256576,
+  "command": [
+    "/home/tai/ann-task-a/experiments/R86/msturing_1m_eval/r86_msturing1m_graph_recall_v4_highbeam",
+    "/home/tai/ann-task-a/experiments/R91/r91_g5_controlled_adaptive_fanout_v1_1/runs/mst1m_adaptive108/graph.bin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/base.1M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_1M_v1/groundtruth.public.100K.ibin",
+    "384,896"
+  ],
+  "cpu": 0,
+  "evaluator_sha256": "bb6576ad3e1e0cc770535aa06355c664993ca70bd1170d6dd4d202ab5767e144",
+  "graph_file": "/home/tai/ann-task-a/experiments/R91/r91_g5_controlled_adaptive_fanout_v1_1/runs/mst1m_adaptive108/graph.bin",
+  "graph_sha256": "3f3715de2818f8ed55a98a9e8e1f06daa67eb4e3f0276a7d492a41aa94e55e0f",
+  "gt_sha256": "fa5acf5ab262b42355296e99f920e6aa863f48820ca6f70fa37ca7966634c344",
+  "issue": null,
+  "max_events_delta": 0,
+  "native.stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "native.stdout_sha256": "1c8261fc6bed0fe7e7dbe8568f12e9356331367b16f2e3626674b2d9bc31742d",
+  "native.time_sha256": "5a332a26b0cdb229831bfca07240bdb68f05aeb5c97c6a153ce87ab751c2ab50",
+  "native_time": {
+    "exit_code": 0,
+    "major_faults": 0,
+    "max_rss_kib": 958996,
+    "swaps": 0
+  },
+  "oom_delta": 0,
+  "oom_kill_delta": 0,
+  "phase": "pilot",
+  "query_sha256": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+  "resource_trace.tsv_sha256": "df500e6721f40812831aab3f2ab09a8c36efb669372a082f56cc1fc9e5304f2d",
+  "returncode": 0,
+  "rows": {
+    "384": {
+      "avg_visited": 376.0,
+      "latency_us_proxy": 741.8233042431904,
+      "legacy_avg_cmps_raw_UNTRUSTED": 14874.0,
+      "legacy_avg_cmps_status": "RAW_UNVERIFIED",
+      "qps": 1348.02990723,
+      "recall_at10": 0.980358
+    },
+    "896": {
+      "avg_visited": 747.0,
+      "latency_us_proxy": 1619.1505665635752,
+      "legacy_avg_cmps_raw_UNTRUSTED": 4294951990.0,
+      "legacy_avg_cmps_status": "INVALID_V4_OVERFLOW_AT_HIGHBEAM",
+      "qps": 617.60778809,
+      "recall_at10": 0.99429297
+    }
+  },
+  "status": "R91_G5_SEARCH_V1_1_SLOT_PASS",
+  "swap_max_bytes": 0,
+  "threads": 1,
+  "wall_s_diagnostic": 237.54597774099966
+}
