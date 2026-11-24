@@ -1,0 +1,49 @@
+{
+  "archival_note": "Mirror-only provenance record for historical v1 compile HOLD; host files untouched; *.stderr/*.stdout excluded from Git by .gitignore.",
+  "host_dir": "/home/tai/ann-task-a/experiments/R91/r91_stock_final_c64_10m_latency_counter64_v1",
+  "status": "PREFLIGHT_COMPILE_HOLD_HISTORICAL",
+  "not_created_on_host": [
+    "diagnostic_eval",
+    "preflight.json",
+    "runs",
+    "summary.json"
+  ],
+  "host_files_sha256": {
+    "compile.stderr": {
+      "bytes": 406,
+      "sha256": "ccd6a2dcad44721d076151f0bc7b1dd494ad05cdcd56793927a5519298f9cfdc",
+      "archived_in_mirror": false
+    },
+    "compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_in_mirror": false
+    },
+    "compile.argv.json": {
+      "bytes": 6943,
+      "sha256": "6a337d1fbf2fd1858223f501375f74e3ec702239fac3fb09aebbb44ac0ec0df4",
+      "archived_in_mirror": true
+    },
+    "diagnostic_eval.cc": {
+      "bytes": 3320,
+      "sha256": "b4b5d6ccde954000b9bd4c8bd8482a7823dea738e33f0f0f4afedd5defcc1c9b",
+      "archived_in_mirror": true
+    },
+    "utils/beamSearch.h": {
+      "bytes": 29259,
+      "sha256": "3e67bdf251eaab7cefea88bc52fe28000ba8b8a4292aed1bd37e75b9a029850c",
+      "archived_in_mirror": true
+    },
+    "utils/check_nn_recall.h": {
+      "bytes": 13615,
+      "sha256": "ccd1b76b73c483d7bbc8b77d00f2dd1376558d60327a922f7be1effd299f5de3",
+      "archived_in_mirror": true
+    },
+    "utils/stats.h": {
+      "bytes": 8034,
+      "sha256": "e9e0312893553d399329027387301fdd3f724bb99d5288c47d5dade8f5dd374a",
+      "archived_in_mirror": true
+    }
+  },
+  "compile_stderr_verbatim": "In file included from /home/tai/ann-task-a/experiments/R91/r91_stock_final_c64_10m_latency_counter64_v1/diagnostic_eval.cc:13:\n/home/tai/ann-task-a/experiments/H70/pipnn-clean-443a328/algorithms/utils/euclidian_point.h:29:10: fatal error: parlay/parallel.h: Không có tập tin hoặc thư mục như vậy\n   29 | #include \"parlay/parallel.h\"\n      |          ^~~~~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+}
