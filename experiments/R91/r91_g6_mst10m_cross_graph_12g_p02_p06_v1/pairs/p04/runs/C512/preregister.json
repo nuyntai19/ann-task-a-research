@@ -1,0 +1,25 @@
+{
+  "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+  "arm": "C512",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g6_mst10m_cross_graph_12g_p02_p06_v1/pairs/p04/runs/C512/native.time",
+    "/usr/bin/taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2",
+    "/home/tai/ann-task-a/experiments/R91/r91_g6_mst10m_repeat_build_6pairs_v1/pairs/p04/arms/C512/graph.bin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+    "544,576,1728,1792"
+  ],
+  "graph_sha256": "c6734320ae230db8e64775a3313d0ff4c4113012e8bb6498927bc4d416877c2e",
+  "pair": "p04",
+  "preflight_sha256": "510cf70ca6e2b7c93ee8c31e5288ad7ce6aa00a0c737e07218f5c4fb1d2b4172",
+  "scope": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-re99e4bf3b9044e15b67a534366ba3b2b.scope",
+  "script_sha256": "911b6bd192bfc64df2d2ee133da3379c61c7b5cf52c803e3766e702187510d23",
+  "timestamp": 1795508148.5079627
+}

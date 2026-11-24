@@ -1,0 +1,81 @@
+{
+  "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+  "arm": "C512",
+  "beams": [
+    544,
+    576,
+    1728,
+    1792
+  ],
+  "error": null,
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "d0b10e71e9127f80699137cde55d7fdb3142480c4521a6f45f7555113d9d942d",
+    "native.time": "4d01eadb3658718f237ea007f45b8c101ff907164c64fd2157d114ca22097f6f",
+    "preregister.json": "f172313360be517784cc5567b418b297f8a386d7afa87da8fd6ec56be86b4dba"
+  },
+  "gnu_time": {
+    "exit_status": "0",
+    "file_system_inputs": 25368,
+    "file_system_outputs": 16,
+    "major_faults": 0,
+    "max_rss_kib": 7605972,
+    "swaps": 0
+  },
+  "graph_sha256": "014dd9ef46f5f1b40ea6b29f7cca311112c6b5123e1ec85bc7819b8673893381",
+  "metrics": [
+    {
+      "avg_visited": 463.0,
+      "beam": 544,
+      "inverse_qps_us_not_p95": 1215.6365104341753,
+      "qps": 822.61431885,
+      "recall_at10": 0.99055499
+    },
+    {
+      "avg_visited": 480.0,
+      "beam": 576,
+      "inverse_qps_us_not_p95": 1270.7153396735353,
+      "qps": 786.95831299,
+      "recall_at10": 0.991157
+    },
+    {
+      "avg_visited": 979.0,
+      "beam": 1728,
+      "inverse_qps_us_not_p95": 3061.3386966596227,
+      "qps": 326.65447998,
+      "recall_at10": 0.99804997
+    },
+    {
+      "avg_visited": 999.0,
+      "beam": 1792,
+      "inverse_qps_us_not_p95": 3132.2222585072773,
+      "qps": 319.262146,
+      "recall_at10": 0.99812597
+    }
+  ],
+  "pair": "p06",
+  "preflight_sha256": "510cf70ca6e2b7c93ee8c31e5288ad7ce6aa00a0c737e07218f5c4fb1d2b4172",
+  "resource": {
+    "cg_peak_bytes": 8850579456,
+    "elapsed_s": 874.3941011429997,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "max_seconds": 10800,
+    "min_available_kib": 21340452,
+    "min_disk_gib": 215.1132926940918,
+    "sampled_peak_swap": 0,
+    "samples": 875,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "script_sha256": "911b6bd192bfc64df2d2ee133da3379c61c7b5cf52c803e3766e702187510d23",
+  "status": "SEARCH_SLOT_PASS"
+}
