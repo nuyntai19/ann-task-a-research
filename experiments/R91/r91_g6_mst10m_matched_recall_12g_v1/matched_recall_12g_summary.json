@@ -1,0 +1,2549 @@
+{
+  "aggregate_build_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+  "beams": [
+    512,
+    544,
+    1664,
+    1728,
+    1792
+  ],
+  "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+  "limits": [
+    "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+    "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+    "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+  ],
+  "n_beam_points": 60,
+  "n_graphs": 12,
+  "order": [
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ]
+  ],
+  "pair_summary_sha256": {
+    "p01": "4fd8a8b6e74c03c44f3c94a36f6695c0e8073d19466447080510f8694ae3bd35",
+    "p02": "413663c9b959af76ad79036b2adcef45aab0a60d9aff4a0aec2f127f25808761",
+    "p03": "4694af967f8b1985c7bbfc3aeacc2b7160d1a9d967fa7f25ce1a6254bff263c6",
+    "p04": "0024b1cb9aa30f85c0ef50761965d4eafd96228e4c3140a82750b2a0e0f418d0",
+    "p05": "46e4d82cd944ac5abef23f9ce9597ccb53d8c8b8501745c5e03545604d4f8f89",
+    "p06": "76ec94e31c7dab6790cd949a5702e78f66b93b6a7634b206e2cb2ee83676cbee"
+  },
+  "pairs": {
+    "p01": {
+      "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+      "anchor_comparison_prior_screen": [
+        {
+          "arm": "C512",
+          "beam": 544,
+          "qps_ratio": 1.0034980990032882,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1728,
+          "qps_ratio": 1.0005550115241149,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1792,
+          "qps_ratio": 1.0011727691146586,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 544,
+          "qps_ratio": 1.0045165310206914,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1728,
+          "qps_ratio": 0.999700031613288,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1792,
+          "qps_ratio": 1.0023613949498116,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        }
+      ],
+      "beams": [
+        512,
+        544,
+        1664,
+        1728,
+        1792
+      ],
+      "comparisons": [
+        {
+          "C512": {
+            "estimated_beam": 524.7575216586529,
+            "estimated_qps": 854.9702317297515,
+            "fraction": 0.39867255183290157,
+            "log_qps_sensitivity": 854.3316962839647,
+            "lower": {
+              "avg_visited": 439.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1134.1377469224797,
+              "qps": 881.72711182,
+              "recall_at10": 0.989636
+            },
+            "measured": [
+              {
+                "avg_visited": 439.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1134.1377469224797,
+                "qps": 881.72711182,
+                "recall_at10": 0.989636
+              },
+              {
+                "avg_visited": 463.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1227.5780074682232,
+                "qps": 814.61218262,
+                "recall_at10": 0.99054903
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1227.5780074682232,
+              "qps": 814.61218262,
+              "recall_at10": 0.99054903
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "C64": {
+            "estimated_beam": 531.1607653845759,
+            "estimated_qps": 856.6350005053155,
+            "fraction": 0.5987739182679964,
+            "log_qps_sensitivity": 856.0137920266262,
+            "lower": {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1115.2180777505794,
+              "qps": 896.68560791,
+              "recall_at10": 0.98941201
+            },
+            "measured": [
+              {
+                "avg_visited": 433.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1115.2180777505794,
+                "qps": 896.68560791,
+                "recall_at10": 0.98941201
+              },
+              {
+                "avg_visited": 458.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1205.1126964958335,
+                "qps": 829.7979126,
+                "recall_at10": 0.990394
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1205.1126964958335,
+              "qps": 829.7979126,
+              "recall_at10": 0.990394
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "delta_qps_pct": 0.1947165776983617,
+          "log_qps_ratio_sensitivity": 1.0019689024180867,
+          "ratio_C64_over_C512": 1.0019471657769836,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.99
+        },
+        {
+          "C512": {
+            "estimated_beam": 1730.1404444444618,
+            "estimated_qps": 325.2236370303924,
+            "fraction": 0.03344444444471487,
+            "log_qps_sensitivity": 325.2207961856411,
+            "lower": {
+              "avg_visited": 979.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3072.4357097905695,
+              "qps": 325.47467041,
+              "recall_at10": 0.99799699
+            },
+            "measured": [
+              {
+                "avg_visited": 959.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 3004.405844539983,
+                "qps": 332.84451294,
+                "recall_at10": 0.99789298
+              },
+              {
+                "avg_visited": 979.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3072.4357097905695,
+                "qps": 325.47467041,
+                "recall_at10": 0.99799699
+              },
+              {
+                "avg_visited": 999.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3144.9637486972765,
+                "qps": 317.96868896,
+                "recall_at10": 0.99808699
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 999.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3144.9637486972765,
+              "qps": 317.96868896,
+              "recall_at10": 0.99808699
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "C64": {
+            "estimated_beam": 1708.0252820225858,
+            "estimated_qps": 331.55243605534986,
+            "fraction": 0.6878950316029032,
+            "log_qps_sensitivity": 331.5374552578629,
+            "lower": {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2974.034378184027,
+              "qps": 336.24359131,
+              "recall_at10": 0.99791402
+            },
+            "measured": [
+              {
+                "avg_visited": 951.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2974.034378184027,
+                "qps": 336.24359131,
+                "recall_at10": 0.99791402
+              },
+              {
+                "avg_visited": 971.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3035.6014313170745,
+                "qps": 329.42401123,
+                "recall_at10": 0.99803901
+              },
+              {
+                "avg_visited": 991.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3099.1167876962522,
+                "qps": 322.6725769,
+                "recall_at10": 0.99813598
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3035.6014313170745,
+              "qps": 329.42401123,
+              "recall_at10": 0.99803901
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "delta_qps_pct": 1.94598371838699,
+          "log_qps_ratio_sensitivity": 1.019422678827144,
+          "ratio_C64_over_C512": 1.01945983718387,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.998
+        }
+      ],
+      "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+      "limits": [
+        "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+        "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+        "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+      ],
+      "order": [
+        "C512",
+        "C64"
+      ],
+      "pair": "p01",
+      "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+      "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+      "slots": [
+        {
+          "arm": "C512",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 1600312,
+            "file_system_outputs": 16,
+            "major_faults": 1,
+            "max_rss_kib": 7606292,
+            "swaps": 0
+          },
+          "graph_sha256": "614b2fe5e05b168abdd327cb1dbcd731a70ab142deb85e652c9153053fd905ae",
+          "metrics": [
+            {
+              "avg_visited": 439.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1134.1377469224797,
+              "qps": 881.72711182,
+              "recall_at10": 0.989636
+            },
+            {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1227.5780074682232,
+              "qps": 814.61218262,
+              "recall_at10": 0.99054903
+            },
+            {
+              "avg_visited": 959.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 3004.405844539983,
+              "qps": 332.84451294,
+              "recall_at10": 0.99789298
+            },
+            {
+              "avg_visited": 979.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3072.4357097905695,
+              "qps": 325.47467041,
+              "recall_at10": 0.99799699
+            },
+            {
+              "avg_visited": 999.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3144.9637486972765,
+              "qps": 317.96868896,
+              "recall_at10": 0.99808699
+            }
+          ],
+          "receipt_sha256": "bd0081f82d15c2e56ec01efe972f47bef582b096d60cf5301197a2f72abf8942",
+          "resource": {
+            "cg_peak_bytes": 9964855296,
+            "elapsed_s": 1165.5648442340025,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21092168,
+            "min_disk_gib": 215.11102676391602,
+            "sampled_peak_swap": 0,
+            "samples": 1166,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        },
+        {
+          "arm": "C64",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 170808,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606260,
+            "swaps": 0
+          },
+          "graph_sha256": "45b561197a7c1c1dccb2d2ffc72ca7e89e812ea86225f6263d1d8c2dd673d482",
+          "metrics": [
+            {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1115.2180777505794,
+              "qps": 896.68560791,
+              "recall_at10": 0.98941201
+            },
+            {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1205.1126964958335,
+              "qps": 829.7979126,
+              "recall_at10": 0.990394
+            },
+            {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2974.034378184027,
+              "qps": 336.24359131,
+              "recall_at10": 0.99791402
+            },
+            {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3035.6014313170745,
+              "qps": 329.42401123,
+              "recall_at10": 0.99803901
+            },
+            {
+              "avg_visited": 991.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3099.1167876962522,
+              "qps": 322.6725769,
+              "recall_at10": 0.99813598
+            }
+          ],
+          "receipt_sha256": "03d758dcf7ea2d61eb1b2ae11f071661de655b7b60675858d0c9ed253bc267de",
+          "resource": {
+            "cg_peak_bytes": 9554923520,
+            "elapsed_s": 1149.5501732580015,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21013308,
+            "min_disk_gib": 215.1106834411621,
+            "sampled_peak_swap": 0,
+            "samples": 1150,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        }
+      ],
+      "status": "TWO_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS"
+    },
+    "p02": {
+      "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+      "anchor_comparison_prior_screen": [
+        {
+          "arm": "C512",
+          "beam": 544,
+          "qps_ratio": 1.0027716080700895,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1728,
+          "qps_ratio": 1.0102833750005074,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1792,
+          "qps_ratio": 1.0174280139481493,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 544,
+          "qps_ratio": 1.0221511360414604,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1728,
+          "qps_ratio": 1.012557377027258,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1792,
+          "qps_ratio": 1.0128149913040496,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        }
+      ],
+      "beams": [
+        512,
+        544,
+        1664,
+        1728,
+        1792
+      ],
+      "comparisons": [
+        {
+          "C512": {
+            "estimated_beam": 523.1629952221897,
+            "estimated_qps": 862.7627517103175,
+            "fraction": 0.34884360069342707,
+            "log_qps_sensitivity": 862.1718641659113,
+            "lower": {
+              "avg_visited": 440.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1128.7348091178285,
+              "qps": 885.94769287,
+              "recall_at10": 0.98966998
+            },
+            "measured": [
+              {
+                "avg_visited": 440.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1128.7348091178285,
+                "qps": 885.94769287,
+                "recall_at10": 0.98966998
+              },
+              {
+                "avg_visited": 463.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1220.277975207975,
+                "qps": 819.4854126,
+                "recall_at10": 0.99061602
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1220.277975207975,
+              "qps": 819.4854126,
+              "recall_at10": 0.99061602
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "C64": {
+            "estimated_beam": 529.793379599372,
+            "estimated_qps": 861.3725820035573,
+            "fraction": 0.5560431124803744,
+            "log_qps_sensitivity": 860.7139419354484,
+            "lower": {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1112.1314096164933,
+              "qps": 899.17431641,
+              "recall_at10": 0.98946398
+            },
+            "measured": [
+              {
+                "avg_visited": 433.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1112.1314096164933,
+                "qps": 899.17431641,
+                "recall_at10": 0.98946398
+              },
+              {
+                "avg_visited": 457.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1203.0931183404687,
+                "qps": 831.19085693,
+                "recall_at10": 0.99042797
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1203.0931183404687,
+              "qps": 831.19085693,
+              "recall_at10": 0.99042797
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "delta_qps_pct": -0.16113000984387948,
+          "log_qps_ratio_sensitivity": 0.9983090120530976,
+          "ratio_C64_over_C512": 0.9983886999015612,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.99
+        },
+        {
+          "C512": {
+            "estimated_beam": 1703.428571428563,
+            "estimated_qps": 332.01074437017917,
+            "fraction": 0.6160714285712958,
+            "log_qps_sensitivity": 332.003886227639,
+            "lower": {
+              "avg_visited": 960.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2987.6008365414273,
+              "qps": 334.71673584,
+              "recall_at10": 0.997931
+            },
+            "measured": [
+              {
+                "avg_visited": 960.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2987.6008365414273,
+                "qps": 334.71673584,
+                "recall_at10": 0.997931
+              },
+              {
+                "avg_visited": 980.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3027.3270590037296,
+                "qps": 330.32440186,
+                "recall_at10": 0.998043
+              },
+              {
+                "avg_visited": 1000.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3079.102527273932,
+                "qps": 324.7699585,
+                "recall_at10": 0.99814099
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 980.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3027.3270590037296,
+              "qps": 330.32440186,
+              "recall_at10": 0.998043
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "C64": {
+            "estimated_beam": 1741.4722660772675,
+            "estimated_qps": 329.3620046229224,
+            "fraction": 0.21050415745730594,
+            "log_qps_sensitivity": 329.347765442024,
+            "lower": {
+              "avg_visited": 969.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3021.7280765856162,
+              "qps": 330.9364624,
+              "recall_at10": 0.99798
+            },
+            "measured": [
+              {
+                "avg_visited": 949.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2956.0200899105384,
+                "qps": 338.29269409,
+                "recall_at10": 0.99787199
+              },
+              {
+                "avg_visited": 969.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3021.7280765856162,
+                "qps": 330.9364624,
+                "recall_at10": 0.99798
+              },
+              {
+                "avg_visited": 989.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3091.601040457097,
+                "qps": 323.45700073,
+                "recall_at10": 0.99807501
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 989.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3091.601040457097,
+              "qps": 323.45700073,
+              "recall_at10": 0.99807501
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "delta_qps_pct": -0.7977873584426809,
+          "log_qps_ratio_sensitivity": 0.9919997298351086,
+          "ratio_C64_over_C512": 0.9920221264155732,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.998
+        }
+      ],
+      "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+      "limits": [
+        "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+        "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+        "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+      ],
+      "order": [
+        "C64",
+        "C512"
+      ],
+      "pair": "p02",
+      "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+      "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+      "slots": [
+        {
+          "arm": "C512",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 0,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606340,
+            "swaps": 0
+          },
+          "graph_sha256": "a3861e1f9efcce1acaa5b946067fb6b2b0f803807ea91a1ba69fb83f9c1222b9",
+          "metrics": [
+            {
+              "avg_visited": 440.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1128.7348091178285,
+              "qps": 885.94769287,
+              "recall_at10": 0.98966998
+            },
+            {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1220.277975207975,
+              "qps": 819.4854126,
+              "recall_at10": 0.99061602
+            },
+            {
+              "avg_visited": 960.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2987.6008365414273,
+              "qps": 334.71673584,
+              "recall_at10": 0.997931
+            },
+            {
+              "avg_visited": 980.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3027.3270590037296,
+              "qps": 330.32440186,
+              "recall_at10": 0.998043
+            },
+            {
+              "avg_visited": 1000.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3079.102527273932,
+              "qps": 324.7699585,
+              "recall_at10": 0.99814099
+            }
+          ],
+          "receipt_sha256": "6b370d7f3c679ed4e406e4242d81af2f4582ceea8e4fd883f69a8ae2fbbd446e",
+          "resource": {
+            "cg_peak_bytes": 9892823040,
+            "elapsed_s": 1150.5646355079953,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21017616,
+            "min_disk_gib": 215.11051177978516,
+            "sampled_peak_swap": 0,
+            "samples": 1151,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        },
+        {
+          "arm": "C64",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 0,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606324,
+            "swaps": 0
+          },
+          "graph_sha256": "c5b9d12a4b6b18b3d1ab182af3b14bd99dabf78f88b14a71ba21594dc132ea5c",
+          "metrics": [
+            {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1112.1314096164933,
+              "qps": 899.17431641,
+              "recall_at10": 0.98946398
+            },
+            {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1203.0931183404687,
+              "qps": 831.19085693,
+              "recall_at10": 0.99042797
+            },
+            {
+              "avg_visited": 949.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2956.0200899105384,
+              "qps": 338.29269409,
+              "recall_at10": 0.99787199
+            },
+            {
+              "avg_visited": 969.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3021.7280765856162,
+              "qps": 330.9364624,
+              "recall_at10": 0.99798
+            },
+            {
+              "avg_visited": 989.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3091.601040457097,
+              "qps": 323.45700073,
+              "recall_at10": 0.99807501
+            }
+          ],
+          "receipt_sha256": "76493f0b745284b6dddd6070b70891e1de98d327b0e32e9c11bd7a9d814c67eb",
+          "resource": {
+            "cg_peak_bytes": 8818913280,
+            "elapsed_s": 1144.5440086849994,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21082884,
+            "min_disk_gib": 215.11059951782227,
+            "sampled_peak_swap": 0,
+            "samples": 1145,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        }
+      ],
+      "status": "TWO_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS"
+    },
+    "p03": {
+      "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+      "anchor_comparison_prior_screen": [
+        {
+          "arm": "C512",
+          "beam": 544,
+          "qps_ratio": 1.0183908774861625,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1728,
+          "qps_ratio": 1.0158878597902332,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1792,
+          "qps_ratio": 1.0159945308099323,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 544,
+          "qps_ratio": 1.0159308779552096,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1728,
+          "qps_ratio": 1.0176695592971778,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1792,
+          "qps_ratio": 1.0233910156144737,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        }
+      ],
+      "beams": [
+        512,
+        544,
+        1664,
+        1728,
+        1792
+      ],
+      "comparisons": [
+        {
+          "C512": {
+            "estimated_beam": 525.6691202243246,
+            "estimated_qps": 884.2637863019163,
+            "fraction": 0.4271600070101434,
+            "log_qps_sensitivity": 883.6672121053736,
+            "lower": {
+              "avg_visited": 434.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1096.2424456916713,
+              "qps": 912.20697021,
+              "recall_at10": 0.98961002
+            },
+            "measured": [
+              {
+                "avg_visited": 434.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1096.2424456916713,
+                "qps": 912.20697021,
+                "recall_at10": 0.98961002
+              },
+              {
+                "avg_visited": 458.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1180.9292610171278,
+                "qps": 846.79077148,
+                "recall_at10": 0.99052298
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1180.9292610171278,
+              "qps": 846.79077148,
+              "recall_at10": 0.99052298
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "C64": {
+            "estimated_beam": 529.4225741934176,
+            "estimated_qps": 873.0969489937038,
+            "fraction": 0.5444554435442995,
+            "log_qps_sensitivity": 872.3687413453848,
+            "lower": {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1096.289390963669,
+              "qps": 912.16790771,
+              "recall_at10": 0.989461
+            },
+            "measured": [
+              {
+                "avg_visited": 433.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1096.289390963669,
+                "qps": 912.16790771,
+                "recall_at10": 0.989461
+              },
+              {
+                "avg_visited": 458.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1189.9005448244113,
+                "qps": 840.40637207,
+                "recall_at10": 0.99045098
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1189.9005448244113,
+              "qps": 840.40637207,
+              "recall_at10": 0.99045098
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "delta_qps_pct": -1.262840057593373,
+          "log_qps_ratio_sensitivity": 0.9872141111436401,
+          "ratio_C64_over_C512": 0.9873715994240663,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.99
+        },
+        {
+          "C512": {
+            "estimated_beam": 1697.8829067372785,
+            "estimated_qps": 339.36253398782844,
+            "fraction": 0.5294204177699758,
+            "log_qps_sensitivity": 339.338196588462,
+            "lower": {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2909.722502810804,
+              "qps": 343.67538452,
+              "recall_at10": 0.99792802
+            },
+            "measured": [
+              {
+                "avg_visited": 951.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2909.722502810804,
+                "qps": 343.67538452,
+                "recall_at10": 0.99792802
+              },
+              {
+                "avg_visited": 971.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 2980.3681165449793,
+                "qps": 335.52902222,
+                "recall_at10": 0.99806398
+              },
+              {
+                "avg_visited": 991.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3047.5626427491675,
+                "qps": 328.131073,
+                "recall_at10": 0.99813998
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2980.3681165449793,
+              "qps": 335.52902222,
+              "recall_at10": 0.99806398
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "C64": {
+            "estimated_beam": 1716.7736047736187,
+            "estimated_qps": 336.14191238265823,
+            "fraction": 0.8245875745877915,
+            "log_qps_sensitivity": 336.13222279828807,
+            "lower": {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2926.5478292116622,
+              "qps": 341.69952393,
+              "recall_at10": 0.99790603
+            },
+            "measured": [
+              {
+                "avg_visited": 951.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2926.5478292116622,
+                "qps": 341.69952393,
+                "recall_at10": 0.99790603
+              },
+              {
+                "avg_visited": 971.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 2985.434164395321,
+                "qps": 334.95965576,
+                "recall_at10": 0.99801999
+              },
+              {
+                "avg_visited": 991.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3052.5106732506238,
+                "qps": 327.59918213,
+                "recall_at10": 0.99810201
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2985.434164395321,
+              "qps": 334.95965576,
+              "recall_at10": 0.99801999
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "delta_qps_pct": -0.9490209680264039,
+          "log_qps_ratio_sensitivity": 0.9905522755103753,
+          "ratio_C64_over_C512": 0.990509790319736,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.998
+        }
+      ],
+      "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+      "limits": [
+        "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+        "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+        "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+      ],
+      "order": [
+        "C64",
+        "C512"
+      ],
+      "pair": "p03",
+      "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+      "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+      "slots": [
+        {
+          "arm": "C512",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 30600,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7605840,
+            "swaps": 0
+          },
+          "graph_sha256": "31ee3940e938410d190335b432897a6c5335f97e4842294e4d798892050f08c2",
+          "metrics": [
+            {
+              "avg_visited": 434.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1096.2424456916713,
+              "qps": 912.20697021,
+              "recall_at10": 0.98961002
+            },
+            {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1180.9292610171278,
+              "qps": 846.79077148,
+              "recall_at10": 0.99052298
+            },
+            {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2909.722502810804,
+              "qps": 343.67538452,
+              "recall_at10": 0.99792802
+            },
+            {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2980.3681165449793,
+              "qps": 335.52902222,
+              "recall_at10": 0.99806398
+            },
+            {
+              "avg_visited": 991.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3047.5626427491675,
+              "qps": 328.131073,
+              "recall_at10": 0.99813998
+            }
+          ],
+          "receipt_sha256": "f14d8e602b22005d44c473a0047a0e2c6e7ee913ce42d203bcda1e6310ee8463",
+          "resource": {
+            "cg_peak_bytes": 9910411264,
+            "elapsed_s": 1127.5579777509993,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21255824,
+            "min_disk_gib": 215.09545135498047,
+            "sampled_peak_swap": 0,
+            "samples": 1128,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        },
+        {
+          "arm": "C64",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 8,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606332,
+            "swaps": 0
+          },
+          "graph_sha256": "d889f2c8b3373aa9e553f5a9609f687ff34d5cd0a4db9e64c8d10485079eb46d",
+          "metrics": [
+            {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1096.289390963669,
+              "qps": 912.16790771,
+              "recall_at10": 0.989461
+            },
+            {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1189.9005448244113,
+              "qps": 840.40637207,
+              "recall_at10": 0.99045098
+            },
+            {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2926.5478292116622,
+              "qps": 341.69952393,
+              "recall_at10": 0.99790603
+            },
+            {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2985.434164395321,
+              "qps": 334.95965576,
+              "recall_at10": 0.99801999
+            },
+            {
+              "avg_visited": 991.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3052.5106732506238,
+              "qps": 327.59918213,
+              "recall_at10": 0.99810201
+            }
+          ],
+          "receipt_sha256": "fd8711fa6a9c3828aa6f97a90a7db8d818706270fa3da19a7f3e17553499eb55",
+          "resource": {
+            "cg_peak_bytes": 9838800896,
+            "elapsed_s": 1131.5962071359972,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21268936,
+            "min_disk_gib": 215.10868453979492,
+            "sampled_peak_swap": 0,
+            "samples": 1132,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        }
+      ],
+      "status": "TWO_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS"
+    },
+    "p04": {
+      "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+      "anchor_comparison_prior_screen": [
+        {
+          "arm": "C512",
+          "beam": 544,
+          "qps_ratio": 1.0228878836590272,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1728,
+          "qps_ratio": 1.018944182323099,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1792,
+          "qps_ratio": 1.014479416737102,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 544,
+          "qps_ratio": 1.018205724793899,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1728,
+          "qps_ratio": 1.0161704176805262,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1792,
+          "qps_ratio": 1.0177542231918442,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        }
+      ],
+      "beams": [
+        512,
+        544,
+        1664,
+        1728,
+        1792
+      ],
+      "comparisons": [
+        {
+          "C512": {
+            "estimated_beam": 526.3346259030973,
+            "estimated_qps": 883.3873536849371,
+            "fraction": 0.44795705947179154,
+            "log_qps_sensitivity": 882.6996038167343,
+            "lower": {
+              "avg_visited": 434.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1093.2600756557858,
+              "qps": 914.69543457,
+              "recall_at10": 0.98956102
+            },
+            "measured": [
+              {
+                "avg_visited": 434.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1093.2600756557858,
+                "qps": 914.69543457,
+                "recall_at10": 0.98956102
+              },
+              {
+                "avg_visited": 457.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1183.7056387703722,
+                "qps": 844.80462646,
+                "recall_at10": 0.99054098
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1183.7056387703722,
+              "qps": 844.80462646,
+              "recall_at10": 0.99054098
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "C64": {
+            "estimated_beam": 529.3119268874933,
+            "estimated_qps": 880.6377619494367,
+            "fraction": 0.5409977152341666,
+            "log_qps_sensitivity": 879.9224236788208,
+            "lower": {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1087.842700490887,
+              "qps": 919.25054932,
+              "recall_at10": 0.98947197
+            },
+            "measured": [
+              {
+                "avg_visited": 433.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1087.842700490887,
+                "qps": 919.25054932,
+                "recall_at10": 0.98947197
+              },
+              {
+                "avg_visited": 457.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1179.4159947219332,
+                "qps": 847.8772583,
+                "recall_at10": 0.990448
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1179.4159947219332,
+              "qps": 847.8772583,
+              "recall_at10": 0.990448
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "delta_qps_pct": -0.3112555012284024,
+          "log_qps_ratio_sensitivity": 0.9968537652833362,
+          "ratio_C64_over_C512": 0.996887444987716,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.99
+        },
+        {
+          "C512": {
+            "estimated_beam": 1705.4444717646024,
+            "estimated_qps": 338.1760100105565,
+            "fraction": 0.6475698713219143,
+            "log_qps_sensitivity": 338.1559011019305,
+            "lower": {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2913.8699248184666,
+              "qps": 343.18621826,
+              "recall_at10": 0.99792099
+            },
+            "measured": [
+              {
+                "avg_visited": 951.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2913.8699248184666,
+                "qps": 343.18621826,
+                "recall_at10": 0.99792099
+              },
+              {
+                "avg_visited": 971.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 2981.076604564559,
+                "qps": 335.44927979,
+                "recall_at10": 0.998043
+              },
+              {
+                "avg_visited": 990.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3051.4501046551127,
+                "qps": 327.71304321,
+                "recall_at10": 0.99814701
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2981.076604564559,
+              "qps": 335.44927979,
+              "recall_at10": 0.998043
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "C64": {
+            "estimated_beam": 1719.3187688124897,
+            "estimated_qps": 337.3821302520692,
+            "fraction": 0.864355762695151,
+            "log_qps_sensitivity": 337.37122059707514,
+            "lower": {
+              "avg_visited": 949.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2904.695185152839,
+              "qps": 344.27020264,
+              "recall_at10": 0.99791098
+            },
+            "measured": [
+              {
+                "avg_visited": 949.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2904.695185152839,
+                "qps": 344.27020264,
+                "recall_at10": 0.99791098
+              },
+              {
+                "avg_visited": 970.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 2973.525118188764,
+                "qps": 336.30117798,
+                "recall_at10": 0.99801397
+              },
+              {
+                "avg_visited": 989.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3041.38212105846,
+                "qps": 328.79788208,
+                "recall_at10": 0.99811399
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 970.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2973.525118188764,
+              "qps": 336.30117798,
+              "recall_at10": 0.99801397
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "delta_qps_pct": -0.23475342277015088,
+          "log_qps_ratio_sensitivity": 0.9976795303518337,
+          "ratio_C64_over_C512": 0.9976524657722985,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.998
+        }
+      ],
+      "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+      "limits": [
+        "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+        "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+        "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+      ],
+      "order": [
+        "C512",
+        "C64"
+      ],
+      "pair": "p04",
+      "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+      "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+      "slots": [
+        {
+          "arm": "C512",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 691208,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606300,
+            "swaps": 0
+          },
+          "graph_sha256": "c6734320ae230db8e64775a3313d0ff4c4113012e8bb6498927bc4d416877c2e",
+          "metrics": [
+            {
+              "avg_visited": 434.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1093.2600756557858,
+              "qps": 914.69543457,
+              "recall_at10": 0.98956102
+            },
+            {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1183.7056387703722,
+              "qps": 844.80462646,
+              "recall_at10": 0.99054098
+            },
+            {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2913.8699248184666,
+              "qps": 343.18621826,
+              "recall_at10": 0.99792099
+            },
+            {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2981.076604564559,
+              "qps": 335.44927979,
+              "recall_at10": 0.998043
+            },
+            {
+              "avg_visited": 990.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3051.4501046551127,
+              "qps": 327.71304321,
+              "recall_at10": 0.99814701
+            }
+          ],
+          "receipt_sha256": "b21e71a80e93db8d3edf50f318c8bdfc6b26f9d8291a8b623d2c356628893f32",
+          "resource": {
+            "cg_peak_bytes": 9742798848,
+            "elapsed_s": 1128.5412608689949,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21284188,
+            "min_disk_gib": 215.1091423034668,
+            "sampled_peak_swap": 0,
+            "samples": 1129,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        },
+        {
+          "arm": "C64",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 16,
+            "file_system_outputs": 16,
+            "major_faults": 1,
+            "max_rss_kib": 7606124,
+            "swaps": 0
+          },
+          "graph_sha256": "13dfdfc596f694a0d1dd5f204234894e607c293034bc9adda2673b957cbabe4a",
+          "metrics": [
+            {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1087.842700490887,
+              "qps": 919.25054932,
+              "recall_at10": 0.98947197
+            },
+            {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1179.4159947219332,
+              "qps": 847.8772583,
+              "recall_at10": 0.990448
+            },
+            {
+              "avg_visited": 949.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2904.695185152839,
+              "qps": 344.27020264,
+              "recall_at10": 0.99791098
+            },
+            {
+              "avg_visited": 970.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2973.525118188764,
+              "qps": 336.30117798,
+              "recall_at10": 0.99801397
+            },
+            {
+              "avg_visited": 989.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3041.38212105846,
+              "qps": 328.79788208,
+              "recall_at10": 0.99811399
+            }
+          ],
+          "receipt_sha256": "42b76f488fbeaeaee45923701a0642454aaba4ad75a693614f7d048b047e45be",
+          "resource": {
+            "cg_peak_bytes": 9846870016,
+            "elapsed_s": 1125.5456404300057,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21437820,
+            "min_disk_gib": 215.10893630981445,
+            "sampled_peak_swap": 0,
+            "samples": 1126,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        }
+      ],
+      "status": "TWO_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS"
+    },
+    "p05": {
+      "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+      "anchor_comparison_prior_screen": [
+        {
+          "arm": "C512",
+          "beam": 544,
+          "qps_ratio": 1.0082135476217777,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1728,
+          "qps_ratio": 1.0094822719930083,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1792,
+          "qps_ratio": 1.0117619868461325,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 544,
+          "qps_ratio": 1.0125300978536265,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1728,
+          "qps_ratio": 1.0167158533823075,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1792,
+          "qps_ratio": 1.0162178070918655,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        }
+      ],
+      "beams": [
+        512,
+        544,
+        1664,
+        1728,
+        1792
+      ],
+      "comparisons": [
+        {
+          "C512": {
+            "estimated_beam": 521.6100537834822,
+            "estimated_qps": 881.7246828245206,
+            "fraction": 0.30031418073381627,
+            "log_qps_sensitivity": 880.9949741313831,
+            "lower": {
+              "avg_visited": 439.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1105.0403436817603,
+              "qps": 904.94433594,
+              "recall_at10": 0.98971802
+            },
+            "measured": [
+              {
+                "avg_visited": 439.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1105.0403436817603,
+                "qps": 904.94433594,
+                "recall_at10": 0.98971802
+              },
+              {
+                "avg_visited": 463.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1208.2745567993936,
+                "qps": 827.62646484,
+                "recall_at10": 0.99065697
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1208.2745567993936,
+              "qps": 827.62646484,
+              "recall_at10": 0.99065697
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "C64": {
+            "estimated_beam": 530.119398155638,
+            "estimated_qps": 868.8342268907475,
+            "fraction": 0.5662311923636887,
+            "log_qps_sensitivity": 868.2602970162744,
+            "lower": {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1104.9401832400551,
+              "qps": 905.02636719,
+              "recall_at10": 0.98944002
+            },
+            "measured": [
+              {
+                "avg_visited": 433.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1104.9401832400551,
+                "qps": 905.02636719,
+                "recall_at10": 0.98944002
+              },
+              {
+                "avg_visited": 457.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1188.9068834232364,
+                "qps": 841.10876465,
+                "recall_at10": 0.99042898
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1188.9068834232364,
+              "qps": 841.10876465,
+              "recall_at10": 0.99042898
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "delta_qps_pct": -1.4619592923813651,
+          "log_qps_ratio_sensitivity": 0.9855451194512609,
+          "ratio_C64_over_C512": 0.9853804070761863,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.99
+        },
+        {
+          "C512": {
+            "estimated_beam": 1689.800290369412,
+            "estimated_qps": 334.2986769945268,
+            "fraction": 0.4031295370220644,
+            "log_qps_sensitivity": 334.28186593999146,
+            "lower": {
+              "avg_visited": 959.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2966.916544526785,
+              "qps": 337.05026245,
+              "recall_at10": 0.99795002
+            },
+            "measured": [
+              {
+                "avg_visited": 959.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2966.916544526785,
+                "qps": 337.05026245,
+                "recall_at10": 0.99795002
+              },
+              {
+                "avg_visited": 979.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3028.241064898343,
+                "qps": 330.22470093,
+                "recall_at10": 0.998074
+              },
+              {
+                "avg_visited": 999.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3094.350591033083,
+                "qps": 323.16958618,
+                "recall_at10": 0.99815798
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 979.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3028.241064898343,
+              "qps": 330.22470093,
+              "recall_at10": 0.998074
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "C64": {
+            "estimated_beam": 1713.5900041649152,
+            "estimated_qps": 337.398242204409,
+            "fraction": 0.7748438150767982,
+            "log_qps_sensitivity": 337.3876315023626,
+            "lower": {
+              "avg_visited": 950.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2920.736516205206,
+              "qps": 342.37939453,
+              "recall_at10": 0.99790698
+            },
+            "measured": [
+              {
+                "avg_visited": 950.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2920.736516205206,
+                "qps": 342.37939453,
+                "recall_at10": 0.99790698
+              },
+              {
+                "avg_visited": 970.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 2976.6262891836996,
+                "qps": 335.95080566,
+                "recall_at10": 0.99802703
+              },
+              {
+                "avg_visited": 990.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3047.566327438271,
+                "qps": 328.13067627,
+                "recall_at10": 0.99812198
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 970.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2976.6262891836996,
+              "qps": 335.95080566,
+              "recall_at10": 0.99802703
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "delta_qps_pct": 0.9271844081910396,
+          "log_qps_ratio_sensitivity": 1.0092908586400215,
+          "ratio_C64_over_C512": 1.0092718440819104,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.998
+        }
+      ],
+      "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+      "limits": [
+        "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+        "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+        "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+      ],
+      "order": [
+        "C512",
+        "C64"
+      ],
+      "pair": "p05",
+      "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+      "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+      "slots": [
+        {
+          "arm": "C512",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 0,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606148,
+            "swaps": 0
+          },
+          "graph_sha256": "778ec652baf1665a9d606e440aaa202117d236e53069161605af47d5762ecf0b",
+          "metrics": [
+            {
+              "avg_visited": 439.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1105.0403436817603,
+              "qps": 904.94433594,
+              "recall_at10": 0.98971802
+            },
+            {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1208.2745567993936,
+              "qps": 827.62646484,
+              "recall_at10": 0.99065697
+            },
+            {
+              "avg_visited": 959.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2966.916544526785,
+              "qps": 337.05026245,
+              "recall_at10": 0.99795002
+            },
+            {
+              "avg_visited": 979.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3028.241064898343,
+              "qps": 330.22470093,
+              "recall_at10": 0.998074
+            },
+            {
+              "avg_visited": 999.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3094.350591033083,
+              "qps": 323.16958618,
+              "recall_at10": 0.99815798
+            }
+          ],
+          "receipt_sha256": "507b845ecba15f5def5213c10fa32746d2162ea459b40bde70e1260b434ed901",
+          "resource": {
+            "cg_peak_bytes": 9867374592,
+            "elapsed_s": 1146.6196620010014,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21391992,
+            "min_disk_gib": 215.11240005493164,
+            "sampled_peak_swap": 0,
+            "samples": 1147,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        },
+        {
+          "arm": "C64",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 0,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606468,
+            "swaps": 0
+          },
+          "graph_sha256": "682f0639f7aa298ecc92ae7a9ecea3c0bec4282a1449768279e2b20dcdce9821",
+          "metrics": [
+            {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1104.9401832400551,
+              "qps": 905.02636719,
+              "recall_at10": 0.98944002
+            },
+            {
+              "avg_visited": 457.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1188.9068834232364,
+              "qps": 841.10876465,
+              "recall_at10": 0.99042898
+            },
+            {
+              "avg_visited": 950.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2920.736516205206,
+              "qps": 342.37939453,
+              "recall_at10": 0.99790698
+            },
+            {
+              "avg_visited": 970.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 2976.6262891836996,
+              "qps": 335.95080566,
+              "recall_at10": 0.99802703
+            },
+            {
+              "avg_visited": 990.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3047.566327438271,
+              "qps": 328.13067627,
+              "recall_at10": 0.99812198
+            }
+          ],
+          "receipt_sha256": "e077e1928b14578aedbd15d1e8ce845fb33270e78ff7672b110e4d036aa15f5d",
+          "resource": {
+            "cg_peak_bytes": 8411430912,
+            "elapsed_s": 1130.5585409329942,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21256020,
+            "min_disk_gib": 215.11505889892578,
+            "sampled_peak_swap": 0,
+            "samples": 1131,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        }
+      ],
+      "status": "TWO_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS"
+    },
+    "p06": {
+      "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+      "anchor_comparison_prior_screen": [
+        {
+          "arm": "C512",
+          "beam": 544,
+          "qps_ratio": 1.0208976849370095,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1728,
+          "qps_ratio": 1.0194382114716098,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C512",
+          "beam": 1792,
+          "qps_ratio": 1.0201093868798339,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 544,
+          "qps_ratio": 1.020021829149781,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1728,
+          "qps_ratio": 1.0042148471112187,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        },
+        {
+          "arm": "C64",
+          "beam": 1792,
+          "qps_ratio": 1.0071593157356167,
+          "recall_delta": 0.0,
+          "visited_delta": 0.0
+        }
+      ],
+      "beams": [
+        512,
+        544,
+        1664,
+        1728,
+        1792
+      ],
+      "comparisons": [
+        {
+          "C512": {
+            "estimated_beam": 525.5573901575325,
+            "estimated_qps": 878.8057521257028,
+            "fraction": 0.423668442422891,
+            "log_qps_sensitivity": 878.1643129504005,
+            "lower": {
+              "avg_visited": 439.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1101.9579460219486,
+              "qps": 907.47564697,
+              "recall_at10": 0.98959202
+            },
+            "measured": [
+              {
+                "avg_visited": 439.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1101.9579460219486,
+                "qps": 907.47564697,
+                "recall_at10": 0.98959202
+              },
+              {
+                "avg_visited": 463.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1190.7525390354679,
+                "qps": 839.80505371,
+                "recall_at10": 0.99055499
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1190.7525390354679,
+              "qps": 839.80505371,
+              "recall_at10": 0.99055499
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "C64": {
+            "estimated_beam": 530.2353469526249,
+            "estimated_qps": 876.2377373701611,
+            "fraction": 0.5698545922695278,
+            "log_qps_sensitivity": 875.5447114862026,
+            "lower": {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1091.116920396708,
+              "qps": 916.49206543,
+              "recall_at10": 0.989429
+            },
+            "measured": [
+              {
+                "avg_visited": 433.0,
+                "beam": 512,
+                "inverse_qps_us_not_p95": 1091.116920396708,
+                "qps": 916.49206543,
+                "recall_at10": 0.989429
+              },
+              {
+                "avg_visited": 458.0,
+                "beam": 544,
+                "inverse_qps_us_not_p95": 1182.2393362172331,
+                "qps": 845.85241699,
+                "recall_at10": 0.99043101
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.99,
+            "upper": {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1182.2393362172331,
+              "qps": 845.85241699,
+              "recall_at10": 0.99043101
+            },
+            "window": [
+              512,
+              544
+            ]
+          },
+          "delta_qps_pct": -0.29221642545352866,
+          "log_qps_ratio_sensitivity": 0.9970169575037766,
+          "ratio_C64_over_C512": 0.9970778357454647,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.99
+        },
+        {
+          "C512": {
+            "estimated_beam": 1698.3881481481742,
+            "estimated_qps": 336.64174601918756,
+            "fraction": 0.5373148148152207,
+            "log_qps_sensitivity": 336.6189475136916,
+            "lower": {
+              "avg_visited": 959.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2933.7026007327713,
+              "qps": 340.86618042,
+              "recall_at10": 0.99794197
+            },
+            "measured": [
+              {
+                "avg_visited": 959.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2933.7026007327713,
+                "qps": 340.86618042,
+                "recall_at10": 0.99794197
+              },
+              {
+                "avg_visited": 979.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3002.9664007202823,
+                "qps": 333.00405884,
+                "recall_at10": 0.99804997
+              },
+              {
+                "avg_visited": 999.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3070.476851593019,
+                "qps": 325.68231201,
+                "recall_at10": 0.99812597
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 979.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3002.9664007202823,
+              "qps": 333.00405884,
+              "recall_at10": 0.99804997
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "C64": {
+            "estimated_beam": 1725.43421795596,
+            "estimated_qps": 332.50232335360766,
+            "fraction": 0.959909655561877,
+            "log_qps_sensitivity": 332.49669884160465,
+            "lower": {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2923.532338638814,
+              "qps": 342.05197144,
+              "recall_at10": 0.997881
+            },
+            "measured": [
+              {
+                "avg_visited": 951.0,
+                "beam": 1664,
+                "inverse_qps_us_not_p95": 2923.532338638814,
+                "qps": 342.05197144,
+                "recall_at10": 0.997881
+              },
+              {
+                "avg_visited": 971.0,
+                "beam": 1728,
+                "inverse_qps_us_not_p95": 3011.10962346203,
+                "qps": 332.10348511,
+                "recall_at10": 0.99800497
+              },
+              {
+                "avg_visited": 991.0,
+                "beam": 1792,
+                "inverse_qps_us_not_p95": 3076.4709775856795,
+                "qps": 325.04776001,
+                "recall_at10": 0.998092
+              }
+            ],
+            "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+            "target": 0.998,
+            "upper": {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3011.10962346203,
+              "qps": 332.10348511,
+              "recall_at10": 0.99800497
+            },
+            "window": [
+              1664,
+              1728,
+              1792
+            ]
+          },
+          "delta_qps_pct": -1.2296225036047548,
+          "log_qps_ratio_sensitivity": 0.9877539612593577,
+          "ratio_C64_over_C512": 0.9877037749639525,
+          "status": "PAIR_ESTIMATED_AT_TARGET",
+          "target": 0.998
+        }
+      ],
+      "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+      "limits": [
+        "Linear interpolation of measured QPS versus Recall within adjacent sampled beams only; not exact native matched Recall",
+        "One invocation per graph; descriptive QPS, fixed seed555, shared 100K queries",
+        "No extrapolation; missing brackets retained; no p95/p99 or formal noninferiority"
+      ],
+      "order": [
+        "C64",
+        "C512"
+      ],
+      "pair": "p06",
+      "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+      "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+      "slots": [
+        {
+          "arm": "C512",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 0,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606072,
+            "swaps": 0
+          },
+          "graph_sha256": "014dd9ef46f5f1b40ea6b29f7cca311112c6b5123e1ec85bc7819b8673893381",
+          "metrics": [
+            {
+              "avg_visited": 439.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1101.9579460219486,
+              "qps": 907.47564697,
+              "recall_at10": 0.98959202
+            },
+            {
+              "avg_visited": 463.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1190.7525390354679,
+              "qps": 839.80505371,
+              "recall_at10": 0.99055499
+            },
+            {
+              "avg_visited": 959.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2933.7026007327713,
+              "qps": 340.86618042,
+              "recall_at10": 0.99794197
+            },
+            {
+              "avg_visited": 979.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3002.9664007202823,
+              "qps": 333.00405884,
+              "recall_at10": 0.99804997
+            },
+            {
+              "avg_visited": 999.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3070.476851593019,
+              "qps": 325.68231201,
+              "recall_at10": 0.99812597
+            }
+          ],
+          "receipt_sha256": "bd04cc454685f7e366320b7c0d386afa894ab142dd640b72b01863f1cf7f7b87",
+          "resource": {
+            "cg_peak_bytes": 8853041152,
+            "elapsed_s": 1136.5539567609958,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21331752,
+            "min_disk_gib": 215.1143569946289,
+            "sampled_peak_swap": 0,
+            "samples": 1137,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        },
+        {
+          "arm": "C64",
+          "gnu_time": {
+            "exit_status": "0",
+            "file_system_inputs": 0,
+            "file_system_outputs": 16,
+            "major_faults": 0,
+            "max_rss_kib": 7606340,
+            "swaps": 0
+          },
+          "graph_sha256": "28cce0db41ce3b88d21dd5de52d07bafbc8d75e86769f13b59e49243c8780865",
+          "metrics": [
+            {
+              "avg_visited": 433.0,
+              "beam": 512,
+              "inverse_qps_us_not_p95": 1091.116920396708,
+              "qps": 916.49206543,
+              "recall_at10": 0.989429
+            },
+            {
+              "avg_visited": 458.0,
+              "beam": 544,
+              "inverse_qps_us_not_p95": 1182.2393362172331,
+              "qps": 845.85241699,
+              "recall_at10": 0.99043101
+            },
+            {
+              "avg_visited": 951.0,
+              "beam": 1664,
+              "inverse_qps_us_not_p95": 2923.532338638814,
+              "qps": 342.05197144,
+              "recall_at10": 0.997881
+            },
+            {
+              "avg_visited": 971.0,
+              "beam": 1728,
+              "inverse_qps_us_not_p95": 3011.10962346203,
+              "qps": 332.10348511,
+              "recall_at10": 0.99800497
+            },
+            {
+              "avg_visited": 991.0,
+              "beam": 1792,
+              "inverse_qps_us_not_p95": 3076.4709775856795,
+              "qps": 325.04776001,
+              "recall_at10": 0.998092
+            }
+          ],
+          "receipt_sha256": "68d4cf6352d6caf296ec49380fc05f2c0f0924ffe43f0ab905759d571af7d42a",
+          "resource": {
+            "cg_peak_bytes": 7852908544,
+            "elapsed_s": 1134.5448316099937,
+            "events_delta": {
+              "high": 0,
+              "low": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_group_kill": 0,
+              "oom_kill": 0,
+              "sock_throttled": 0
+            },
+            "exit_code": 0,
+            "max_seconds": 10800,
+            "min_available_kib": 21336636,
+            "min_disk_gib": 215.11388397216797,
+            "sampled_peak_swap": 0,
+            "samples": 1135,
+            "status": "COMPLETED",
+            "swap_after": 0
+          }
+        }
+      ],
+      "status": "TWO_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS"
+    }
+  },
+  "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+  "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+  "status": "TWELVE_GRAPH_FIVE_BEAM_NATIVE_AUDIT_PASS",
+  "target_stats": [
+    {
+      "C64_faster_resolved": 1,
+      "full_six_pair_geomean_ratio": 0.9944906479232268,
+      "geomean_ratio_resolved": 0.9944906479232268,
+      "n_pairs": 6,
+      "n_resolved": 6,
+      "target": 0.99,
+      "unresolved_pairs": []
+    },
+    {
+      "C64_faster_resolved": 2,
+      "full_six_pair_geomean_ratio": 0.9993725138113001,
+      "geomean_ratio_resolved": 0.9993725138113001,
+      "n_pairs": 6,
+      "n_resolved": 6,
+      "target": 0.998,
+      "unresolved_pairs": []
+    }
+  ]
+}

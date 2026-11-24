@@ -1,0 +1,90 @@
+{
+  "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+  "arm": "C64",
+  "beams": [
+    512,
+    544,
+    1664,
+    1728,
+    1792
+  ],
+  "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+  "error": null,
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "c525b1a9efd7976709139c7bb4587f1ebc678d788e2820af5c27d26eed8d3959",
+    "native.time": "55ec79f369694469a599a3bba9c8bc923b7b1a118314f850509d6fe3112bbfc6",
+    "preregister.json": "9ac8d1072173544192006401d0a54df8690a78ab4bae4700cae07650cd45e364"
+  },
+  "gnu_time": {
+    "exit_status": "0",
+    "file_system_inputs": 170808,
+    "file_system_outputs": 16,
+    "major_faults": 0,
+    "max_rss_kib": 7606260,
+    "swaps": 0
+  },
+  "graph_sha256": "45b561197a7c1c1dccb2d2ffc72ca7e89e812ea86225f6263d1d8c2dd673d482",
+  "metrics": [
+    {
+      "avg_visited": 433.0,
+      "beam": 512,
+      "inverse_qps_us_not_p95": 1115.2180777505794,
+      "qps": 896.68560791,
+      "recall_at10": 0.98941201
+    },
+    {
+      "avg_visited": 458.0,
+      "beam": 544,
+      "inverse_qps_us_not_p95": 1205.1126964958335,
+      "qps": 829.7979126,
+      "recall_at10": 0.990394
+    },
+    {
+      "avg_visited": 951.0,
+      "beam": 1664,
+      "inverse_qps_us_not_p95": 2974.034378184027,
+      "qps": 336.24359131,
+      "recall_at10": 0.99791402
+    },
+    {
+      "avg_visited": 971.0,
+      "beam": 1728,
+      "inverse_qps_us_not_p95": 3035.6014313170745,
+      "qps": 329.42401123,
+      "recall_at10": 0.99803901
+    },
+    {
+      "avg_visited": 991.0,
+      "beam": 1792,
+      "inverse_qps_us_not_p95": 3099.1167876962522,
+      "qps": 322.6725769,
+      "recall_at10": 0.99813598
+    }
+  ],
+  "pair": "p01",
+  "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+  "resource": {
+    "cg_peak_bytes": 9554923520,
+    "elapsed_s": 1149.5501732580015,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "max_seconds": 10800,
+    "min_available_kib": 21013308,
+    "min_disk_gib": 215.1106834411621,
+    "sampled_peak_swap": 0,
+    "samples": 1150,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+  "status": "SEARCH_SLOT_PASS"
+}

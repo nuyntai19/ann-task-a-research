@@ -1,0 +1,90 @@
+{
+  "aggregate_sha256": "f7c5a1612f6495a326f913cc952dac9ea022194db21286d7bf388f45b280e152",
+  "arm": "C512",
+  "beams": [
+    512,
+    544,
+    1664,
+    1728,
+    1792
+  ],
+  "cross_graph_sha256": "e8710595c6e04dd7e302a43dbccb6cdcdec6e22bfff41740ce08c0202678d676",
+  "error": null,
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "033bc3dd3b44679fe9a9cc4dd9d8a603910f6ab08f66f53cce74e69660bb9fe5",
+    "native.time": "78c6c255bfda4b0528b9661e2d62834d57c033a76c153f0459f4d9dfb38a3104",
+    "preregister.json": "d9699c3cdd1f2b79ad77ef8b009a2e406910c2816a4be9b0e9ea6d9059133eb3"
+  },
+  "gnu_time": {
+    "exit_status": "0",
+    "file_system_inputs": 0,
+    "file_system_outputs": 16,
+    "major_faults": 0,
+    "max_rss_kib": 7606340,
+    "swaps": 0
+  },
+  "graph_sha256": "a3861e1f9efcce1acaa5b946067fb6b2b0f803807ea91a1ba69fb83f9c1222b9",
+  "metrics": [
+    {
+      "avg_visited": 440.0,
+      "beam": 512,
+      "inverse_qps_us_not_p95": 1128.7348091178285,
+      "qps": 885.94769287,
+      "recall_at10": 0.98966998
+    },
+    {
+      "avg_visited": 463.0,
+      "beam": 544,
+      "inverse_qps_us_not_p95": 1220.277975207975,
+      "qps": 819.4854126,
+      "recall_at10": 0.99061602
+    },
+    {
+      "avg_visited": 960.0,
+      "beam": 1664,
+      "inverse_qps_us_not_p95": 2987.6008365414273,
+      "qps": 334.71673584,
+      "recall_at10": 0.997931
+    },
+    {
+      "avg_visited": 980.0,
+      "beam": 1728,
+      "inverse_qps_us_not_p95": 3027.3270590037296,
+      "qps": 330.32440186,
+      "recall_at10": 0.998043
+    },
+    {
+      "avg_visited": 1000.0,
+      "beam": 1792,
+      "inverse_qps_us_not_p95": 3079.102527273932,
+      "qps": 324.7699585,
+      "recall_at10": 0.99814099
+    }
+  ],
+  "pair": "p02",
+  "preflight_sha256": "163d737a929f9f5ecf21b12f03bcfaa3e2ab1e8d50a7213e55d999dbdfef97e4",
+  "resource": {
+    "cg_peak_bytes": 9892823040,
+    "elapsed_s": 1150.5646355079953,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "max_seconds": 10800,
+    "min_available_kib": 21017616,
+    "min_disk_gib": 215.11051177978516,
+    "sampled_peak_swap": 0,
+    "samples": 1151,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+  "status": "SEARCH_SLOT_PASS"
+}
