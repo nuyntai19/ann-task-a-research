@@ -1,0 +1,290 @@
+{
+  "arm": "C512",
+  "cap": 512,
+  "error": null,
+  "files_sha256": {
+    "graph.bin": "778ec652baf1665a9d606e440aaa202117d236e53069161605af47d5762ecf0b",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "33c95b89500c6d6e59833d87f18d548fa8cd228ab3e775f6ae7ced5321d6d314",
+    "native.time": "c80aa0c70c07d6708ef90d1e84d1adaa2d767a66ba098b0e839c6616493fbe25"
+  },
+  "graph": {
+    "arcs": 540642321,
+    "bad_duplicate_rows": 0,
+    "bad_id": 0,
+    "bad_self": 0,
+    "bytes": 2202569292,
+    "full_all_vertices_audit": true,
+    "max_degree": 64,
+    "nodes": 10000000,
+    "sha256": "778ec652baf1665a9d606e440aaa202117d236e53069161605af47d5762ecf0b"
+  },
+  "native_time": {
+    "exit_status": "0",
+    "file_system_inputs": 424,
+    "file_system_outputs": 4302008,
+    "major_faults": 2,
+    "max_rss_kib": 21704840,
+    "minor_faults": 2709744,
+    "swaps": 0,
+    "wall_s": 379.31
+  },
+  "order": [
+    "C512",
+    "C64"
+  ],
+  "pair_id": "p05",
+  "parsed": {
+    "depth2_original_wp": 52146043480,
+    "depth2_wp": 52146043480,
+    "fallback_maxdepth_points": 3325197,
+    "fallback_shrink_points": 1233469,
+    "native_comparisons": [
+      77609361757,
+      156998418988
+    ],
+    "passes": [
+      {
+        "cap": {
+          "cap": 512,
+          "depth2_affected_calls": 0,
+          "depth2_affected_n": 0,
+          "depth2_calls": 48402,
+          "depth2_n": 298003065,
+          "depth2_wp_actual": 25215371028,
+          "depth2_wp_original": 25215371028,
+          "fallback_max_depth_calls": 3155,
+          "fallback_max_depth_points": 1589371,
+          "fallback_small_shrinkage_calls": 475,
+          "fallback_small_shrinkage_points": 575804,
+          "leaf_count": 1267470,
+          "leaf_empty_count": 0,
+          "leaf_executed_size_gt1": 1267470,
+          "leaf_max": 1024,
+          "leaf_p50": 193,
+          "leaf_p90": 405,
+          "schema": 1,
+          "total_leaf_points": 300000000
+        },
+        "depth": {
+          "0": {
+            "M_sum": 100,
+            "N_sum": 10000000,
+            "W_A": 100000000,
+            "W_P": 1000000000,
+            "depth": 0,
+            "fanout10_calls": 1,
+            "fanout1_calls": 0,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4883
+          },
+          "1": {
+            "M_sum": 51200,
+            "N_sum": 100000000,
+            "W_A": 300000000,
+            "W_P": 51200000000,
+            "depth": 1,
+            "fanout10_calls": 0,
+            "fanout1_calls": 0,
+            "fanout3_calls": 100,
+            "fanout_other_calls": 0,
+            "tiles": 48882
+          },
+          "2": {
+            "M_sum": 1440981,
+            "N_sum": 298003065,
+            "W_A": 298003065,
+            "W_P": 25215371028,
+            "depth": 2,
+            "fanout10_calls": 0,
+            "fanout1_calls": 48402,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 169105
+          },
+          "3": {
+            "M_sum": 69183,
+            "N_sum": 14667510,
+            "W_A": 14667510,
+            "W_P": 179080521,
+            "depth": 3,
+            "fanout10_calls": 0,
+            "fanout1_calls": 8575,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 10664
+          },
+          "4": {
+            "M_sum": 8946,
+            "N_sum": 1911666,
+            "W_A": 1911666,
+            "W_P": 14910208,
+            "depth": 4,
+            "fanout10_calls": 0,
+            "fanout1_calls": 1299,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 1449
+          }
+        },
+        "pass": 1,
+        "wp_total": 77609361757
+      },
+      {
+        "cap": {
+          "cap": 512,
+          "depth2_affected_calls": 0,
+          "depth2_affected_n": 0,
+          "depth2_calls": 47873,
+          "depth2_n": 297579277,
+          "depth2_wp_actual": 26930672452,
+          "depth2_wp_original": 26930672452,
+          "fallback_max_depth_calls": 3501,
+          "fallback_max_depth_points": 1735826,
+          "fallback_small_shrinkage_calls": 539,
+          "fallback_small_shrinkage_points": 657665,
+          "leaf_count": 1267294,
+          "leaf_empty_count": 0,
+          "leaf_executed_size_gt1": 1267294,
+          "leaf_max": 1024,
+          "leaf_p50": 193,
+          "leaf_p90": 406,
+          "schema": 1,
+          "total_leaf_points": 300000000
+        },
+        "depth": {
+          "0": {
+            "M_sum": 100,
+            "N_sum": 10000000,
+            "W_A": 100000000,
+            "W_P": 1000000000,
+            "depth": 0,
+            "fanout10_calls": 1,
+            "fanout1_calls": 0,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4883
+          },
+          "1": {
+            "M_sum": 51200,
+            "N_sum": 100000000,
+            "W_A": 300000000,
+            "W_P": 51200000000,
+            "depth": 1,
+            "fanout10_calls": 0,
+            "fanout1_calls": 0,
+            "fanout3_calls": 100,
+            "fanout_other_calls": 0,
+            "tiles": 48877
+          },
+          "2": {
+            "M_sum": 1434260,
+            "N_sum": 297579277,
+            "W_A": 297579277,
+            "W_P": 26930672452,
+            "depth": 2,
+            "fanout10_calls": 0,
+            "fanout1_calls": 47873,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 168416
+          },
+          "3": {
+            "M_sum": 74401,
+            "N_sum": 15722628,
+            "W_A": 15722628,
+            "W_P": 241581050,
+            "depth": 3,
+            "fanout10_calls": 0,
+            "fanout1_calls": 8867,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 11292
+          },
+          "4": {
+            "M_sum": 9806,
+            "N_sum": 2096672,
+            "W_A": 2096672,
+            "W_P": 16803729,
+            "depth": 4,
+            "fanout10_calls": 0,
+            "fanout1_calls": 1413,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 1591
+          }
+        },
+        "pass": 2,
+        "wp_total": 79389057231
+      }
+    ],
+    "stage_times": {
+      "buckets_per_pass_s": [
+        74.4872,
+        75.9785
+      ],
+      "buckets_total_s": 150.4657,
+      "final_prune_per_pass_s": [
+        64.816
+      ],
+      "final_prune_total_s": 64.816,
+      "leaf_per_pass_s": [
+        75.6743,
+        83.7249
+      ],
+      "leaf_total_s": 159.3992
+    },
+    "total_leaf_memberships": 600000000,
+    "total_wp": 156998418988
+  },
+  "preflight_sha256": "2d20ea7bb341067d162d7dbba1cf29fb8bc9606f4e7246e768a1c5629ea5ead2",
+  "resource": {
+    "cg_peak_bytes": 22276612096,
+    "elapsed_s": 380.2185582950042,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "min_available_kib": 7537404,
+    "min_disk_free_gib": 221.29966735839844,
+    "sample_count": 381,
+    "sampled_peak_current": 22178844672,
+    "sampled_peak_swap": 0,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "source_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "source_seed_audit": {
+    "SketchHash_identifier_seen": true,
+    "conclusion": "Static source markers present, fixed-seed Stage1 counters must also match original reference by arm; no multi-seed sampling claim",
+    "hash64_seed_markers": [
+      456
+    ],
+    "hash_header_sha256": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+    "seed_555_markers": [
+      530
+    ],
+    "source_sha256": "306b89d7b980d4a8637aa2d1a8c41357ddb34483492c2aa497eaa80acda27050",
+    "source_snippets": [
+      {
+        "file": "pipnn.h",
+        "line": 530,
+        "text": "size_t SEED = 555;"
+      },
+      {
+        "file": "pipnn.h",
+        "line": 456,
+        "text": "SEED = parlay::hash64(SEED);"
+      }
+    ]
+  },
+  "stage1_baseline_match": "STAGE1_COUNTERS_MATCH_V13_REFERENCE",
+  "status": "BUILD_GRAPH_WORK_RESOURCE_AUDIT_PASS"
+}

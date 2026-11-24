@@ -1,0 +1,67 @@
+{
+  "arm": "C512",
+  "beams": [
+    576,
+    1792
+  ],
+  "build_receipt_sha256": "b520f072d7c782a5efcb3ca5f3573d4bf9eddf1270861b06cafb1cdc37272082",
+  "error": null,
+  "eval_binary_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "996ff9f5d5031699700c348ff336edf3ac91536d431a2139f0eb2ab7c5918861",
+    "native.time": "e53c5319ed6129ecad6df6fc8076f304323a5f0c955aa2b96899fa02a7c00c9a"
+  },
+  "graph_sha256": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+  "metrics": [
+    {
+      "avg_cmps_legacy_int32_untrusted": null,
+      "avg_visited": 480.0,
+      "beam": 576,
+      "inverse_qps_us_not_latency_p95": 1244.734342214156,
+      "qps": 803.38427734,
+      "recall_at10": 0.99114603
+    },
+    {
+      "avg_cmps_legacy_int32_untrusted": null,
+      "avg_visited": 999.0,
+      "beam": 1792,
+      "inverse_qps_us_not_latency_p95": 3074.8171090458472,
+      "qps": 325.22259521,
+      "recall_at10": 0.99810398
+    }
+  ],
+  "quality_floor_pass": true,
+  "resource": {
+    "cg_peak_bytes": 7812673536,
+    "elapsed_s": 437.24877312600074,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "min_available_kib": 20230124,
+    "min_disk_free_gib": 239.98408126831055,
+    "sample_count": 438,
+    "sampled_peak_current": 7675736064,
+    "sampled_peak_swap": 0,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "status": "SEARCH_AUDITABLE_NATIVE_PASS",
+  "time": {
+    "exit_status": "0",
+    "file_system_inputs": 0,
+    "file_system_outputs": 16,
+    "major_faults": 0,
+    "max_rss_kib": 7606280,
+    "minor_faults": 1650941,
+    "swaps": 0,
+    "wall_s": 436.27
+  }
+}

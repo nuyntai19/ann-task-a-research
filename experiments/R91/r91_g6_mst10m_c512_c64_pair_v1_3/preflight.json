@@ -1,0 +1,62 @@
+{
+  "created_epoch": 1795441961.1371317,
+  "g4_preflight_sha256": "016ba2332096039211359dff692871667a82668768122d65773f46fa072c1679",
+  "g4_summary_sha256": "bdbb8371fce39f44609a0eca967fed46fb4790c228f4fc0f960cc01bd170aca9",
+  "inputs": {
+    "dataset": {
+      "base": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+      "gt": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+      "query": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+    },
+    "g6_elf": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+    "groundtruth": {
+      "id_count": 10000000,
+      "id_max": 9999998,
+      "id_min": 0
+    },
+    "pinned_g4": {
+      "g4_baseline_full_wp": 156998418988,
+      "g4_cgroup_peak_bytes": 22320349184,
+      "g4_depth2_calls": 96275,
+      "g4_depth2_cap512_calls": 174,
+      "g4_depth2_wp": 52146043480,
+      "g4_depth_wp": {
+        "0": 2000000000,
+        "1": 102400000000,
+        "2": 52146043480,
+        "3": 420661571,
+        "4": 31713937
+      },
+      "g4_full_summary_sha256": "bdbb8371fce39f44609a0eca967fed46fb4790c228f4fc0f960cc01bd170aca9",
+      "g4_graph_sha256": "6f190a26e91bdd402d6b0b341778bd822fac8b1ff58b88824135fa583b9c364e",
+      "g4_preflight_sha256": "016ba2332096039211359dff692871667a82668768122d65773f46fa072c1679",
+      "g4_receipt_sha256": "d49027aed33529caa95a315a186253ded49d2cb205b6021e00167880510aea36"
+    }
+  },
+  "notes": [
+    "One BUILD per arm; no statistical runtime claim",
+    "G4 pin is from original Ubuntu file, not GitHub"
+  ],
+  "protocol": {
+    "beams": [
+      576,
+      1792
+    ],
+    "cap_options": [
+      512,
+      64
+    ],
+    "cpu_build": "0,2,4,6",
+    "cpu_search": "0",
+    "d": 100,
+    "degree_cap": 64,
+    "fanout": "10,3,1",
+    "max_mem_bytes": 25769803776,
+    "n": 10000000,
+    "queries": 100000,
+    "swap_bytes": 0,
+    "table_size": 160
+  },
+  "script_sha256": "0e62c69dcf73f499d4c99e3181c526c0d908150ff6e77ca4d1fde4144801cab7",
+  "status": "PREFLIGHT_PASS_NO_BUILD"
+}

@@ -1,0 +1,93 @@
+{
+  "eligible_pairs": [
+    "p02",
+    "p03",
+    "p04",
+    "p05",
+    "p06"
+  ],
+  "g6_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "order": [
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ]
+  ],
+  "p01_graph_sha256": {
+    "C512": "614b2fe5e05b168abdd327cb1dbcd731a70ab142deb85e652c9153053fd905ae",
+    "C64": "45b561197a7c1c1dccb2d2ffc72ca7e89e812ea86225f6263d1d8c2dd673d482"
+  },
+  "p01_pair_audit_sha256": "5844ca60f5ffa3ab01a6d03b23047ddff0982f60d7a8ccd2793416e029fa575c",
+  "p01_preflight_sha256": "1999377c94cd71a5f1bc2cb5a11c6589645985cb033ef1b264b45d10ab1b0c93",
+  "p01_receipt_sha256": {
+    "C512": "80bc90efdbb41d47d7165e17e684808ddb8adc44c22e8cad66b148724f5590bf",
+    "C64": "b668a9966bdb6c62ca1a653aae349cedd51250ed32882c0aee1a94a3400f3888"
+  },
+  "resource": {
+    "abort_if_disk_below_gib": 38,
+    "cpu_build": "0,2,4,6",
+    "disk_before_first_gib": 55,
+    "disk_before_second_gib": 48,
+    "disk_preflight_min_gib": 75,
+    "host_memavailable_min_kib": 23068672,
+    "memory_bytes": 25769803776,
+    "swap_max_bytes": 0,
+    "threads": 4
+  },
+  "scientific_limits": [
+    "Only fixed seed 555; 6 BUILD timing pairs are not six independent cluster seeds",
+    "Stage2 graph differences cannot uniquely be attributed to thread scheduling",
+    "This preflight starts no native BUILD; each pair requires explicit run and separate audit",
+    "Conditional sign test does not establish statistical speedup under correlated system noise",
+    "No Search is run on new graphs"
+  ],
+  "scope": "FIXED_STAGE1_SEED555_REPEATED_PAIRED_BUILDS_NOT_MULTISEED",
+  "script_sha256": "b3c1fbb8e22344ec296b672ca8e36a57fefc980be6356ae05dbdf66db1204d62",
+  "source_seed_audit": {
+    "SketchHash_identifier_seen": true,
+    "conclusion": "Static source markers present, fixed-seed Stage1 counters must also match original reference by arm; no multi-seed sampling claim",
+    "hash64_seed_markers": [
+      456
+    ],
+    "hash_header_sha256": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+    "seed_555_markers": [
+      530
+    ],
+    "source_sha256": "306b89d7b980d4a8637aa2d1a8c41357ddb34483492c2aa497eaa80acda27050",
+    "source_snippets": [
+      {
+        "file": "pipnn.h",
+        "line": 530,
+        "text": "size_t SEED = 555;"
+      },
+      {
+        "file": "pipnn.h",
+        "line": 456,
+        "text": "SEED = parlay::hash64(SEED);"
+      }
+    ]
+  },
+  "status": "P02_P06_PREFLIGHT_PASS_NO_NEW_BUILD",
+  "vendor_p01_sha256": "0b363339c5d02e6cf23701074f06d9f0dc83b7a5516550d9a27d1f1951baa216",
+  "vendor_v13_sha256": "0e62c69dcf73f499d4c99e3181c526c0d908150ff6e77ca4d1fde4144801cab7"
+}

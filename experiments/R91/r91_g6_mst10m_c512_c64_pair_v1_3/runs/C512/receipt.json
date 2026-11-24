@@ -1,0 +1,260 @@
+{
+  "arm": "C512",
+  "cap": 512,
+  "error": null,
+  "files_sha256": {
+    "graph.bin": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "019e9b33a471706d9ff701771c7e842a2609c9d97c2188fc2ff89b7501a5dd26",
+    "native.time": "32755638e83c544ae0f82bc434886c545e51230f40a0d8e920cbe82a772f8610"
+  },
+  "graph": {
+    "arcs": 540881883,
+    "bad_duplicate_rows": 0,
+    "bad_id": 0,
+    "bad_self": 0,
+    "bytes": 2203527540,
+    "full_all_vertices_audit": true,
+    "max_degree": 64,
+    "nodes": 10000000,
+    "sha256": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443"
+  },
+  "parsed": {
+    "depth2_original_wp": 52146043480,
+    "depth2_wp": 52146043480,
+    "fallback_maxdepth_points": 3325197,
+    "fallback_shrink_points": 1233469,
+    "native_comparisons": [
+      77609361757,
+      156998418988
+    ],
+    "passes": [
+      {
+        "cap": {
+          "cap": 512,
+          "depth2_affected_calls": 0,
+          "depth2_affected_n": 0,
+          "depth2_calls": 48402,
+          "depth2_n": 298003065,
+          "depth2_wp_actual": 25215371028,
+          "depth2_wp_original": 25215371028,
+          "fallback_max_depth_calls": 3155,
+          "fallback_max_depth_points": 1589371,
+          "fallback_small_shrinkage_calls": 475,
+          "fallback_small_shrinkage_points": 575804,
+          "leaf_count": 1267470,
+          "leaf_empty_count": 0,
+          "leaf_executed_size_gt1": 1267470,
+          "leaf_max": 1024,
+          "leaf_p50": 193,
+          "leaf_p90": 405,
+          "schema": 1,
+          "total_leaf_points": 300000000
+        },
+        "depth": {
+          "0": {
+            "M_sum": 100,
+            "N_sum": 10000000,
+            "W_A": 100000000,
+            "W_P": 1000000000,
+            "depth": 0,
+            "fanout10_calls": 1,
+            "fanout1_calls": 0,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4883
+          },
+          "1": {
+            "M_sum": 51200,
+            "N_sum": 100000000,
+            "W_A": 300000000,
+            "W_P": 51200000000,
+            "depth": 1,
+            "fanout10_calls": 0,
+            "fanout1_calls": 0,
+            "fanout3_calls": 100,
+            "fanout_other_calls": 0,
+            "tiles": 48882
+          },
+          "2": {
+            "M_sum": 1440981,
+            "N_sum": 298003065,
+            "W_A": 298003065,
+            "W_P": 25215371028,
+            "depth": 2,
+            "fanout10_calls": 0,
+            "fanout1_calls": 48402,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 169105
+          },
+          "3": {
+            "M_sum": 69183,
+            "N_sum": 14667510,
+            "W_A": 14667510,
+            "W_P": 179080521,
+            "depth": 3,
+            "fanout10_calls": 0,
+            "fanout1_calls": 8575,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 10664
+          },
+          "4": {
+            "M_sum": 8946,
+            "N_sum": 1911666,
+            "W_A": 1911666,
+            "W_P": 14910208,
+            "depth": 4,
+            "fanout10_calls": 0,
+            "fanout1_calls": 1299,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 1449
+          }
+        },
+        "pass": 1,
+        "wp_total": 77609361757
+      },
+      {
+        "cap": {
+          "cap": 512,
+          "depth2_affected_calls": 0,
+          "depth2_affected_n": 0,
+          "depth2_calls": 47873,
+          "depth2_n": 297579277,
+          "depth2_wp_actual": 26930672452,
+          "depth2_wp_original": 26930672452,
+          "fallback_max_depth_calls": 3501,
+          "fallback_max_depth_points": 1735826,
+          "fallback_small_shrinkage_calls": 539,
+          "fallback_small_shrinkage_points": 657665,
+          "leaf_count": 1267294,
+          "leaf_empty_count": 0,
+          "leaf_executed_size_gt1": 1267294,
+          "leaf_max": 1024,
+          "leaf_p50": 193,
+          "leaf_p90": 406,
+          "schema": 1,
+          "total_leaf_points": 300000000
+        },
+        "depth": {
+          "0": {
+            "M_sum": 100,
+            "N_sum": 10000000,
+            "W_A": 100000000,
+            "W_P": 1000000000,
+            "depth": 0,
+            "fanout10_calls": 1,
+            "fanout1_calls": 0,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4883
+          },
+          "1": {
+            "M_sum": 51200,
+            "N_sum": 100000000,
+            "W_A": 300000000,
+            "W_P": 51200000000,
+            "depth": 1,
+            "fanout10_calls": 0,
+            "fanout1_calls": 0,
+            "fanout3_calls": 100,
+            "fanout_other_calls": 0,
+            "tiles": 48877
+          },
+          "2": {
+            "M_sum": 1434260,
+            "N_sum": 297579277,
+            "W_A": 297579277,
+            "W_P": 26930672452,
+            "depth": 2,
+            "fanout10_calls": 0,
+            "fanout1_calls": 47873,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 168416
+          },
+          "3": {
+            "M_sum": 74401,
+            "N_sum": 15722628,
+            "W_A": 15722628,
+            "W_P": 241581050,
+            "depth": 3,
+            "fanout10_calls": 0,
+            "fanout1_calls": 8867,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 11292
+          },
+          "4": {
+            "M_sum": 9806,
+            "N_sum": 2096672,
+            "W_A": 2096672,
+            "W_P": 16803729,
+            "depth": 4,
+            "fanout10_calls": 0,
+            "fanout1_calls": 1413,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 1591
+          }
+        },
+        "pass": 2,
+        "wp_total": 79389057231
+      }
+    ],
+    "stage_times": {
+      "buckets_per_pass_s": [
+        73.2188,
+        74.2729
+      ],
+      "buckets_total_s": 147.4917,
+      "final_prune_per_pass_s": [
+        63.777
+      ],
+      "final_prune_total_s": 63.777,
+      "leaf_per_pass_s": [
+        75.3798,
+        81.6055
+      ],
+      "leaf_total_s": 156.9853
+    },
+    "total_leaf_memberships": 600000000,
+    "total_wp": 156998418988
+  },
+  "preflight_sha256": "0e968c761d749f3098956b1d1226923b67d67c050a5fc10b95b40f44e076a14e",
+  "resource": {
+    "cg_peak_bytes": 22308368384,
+    "elapsed_s": 373.2004107009998,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "min_available_kib": 6071720,
+    "min_disk_free_gib": 242.10424423217773,
+    "sample_count": 374,
+    "sampled_peak_current": 22213447680,
+    "sampled_peak_swap": 0,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "source_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "status": "BUILD_GRAPH_WORK_AUDIT_PASS",
+  "time": {
+    "exit_status": "0",
+    "file_system_inputs": 256,
+    "file_system_outputs": 4303880,
+    "major_faults": 0,
+    "max_rss_kib": 21732364,
+    "minor_faults": 2534470,
+    "swaps": 0,
+    "wall_s": 372.33
+  }
+}

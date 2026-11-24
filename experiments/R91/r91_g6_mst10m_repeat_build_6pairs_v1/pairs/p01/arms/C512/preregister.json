@@ -1,0 +1,89 @@
+{
+  "arm": "C512",
+  "cap": 512,
+  "cgroup_start": {
+    "root": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rf9291769751d4f82a852f59507ad807a.scope",
+    "vals": {
+      "memory.current": "9629696",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "memory.max": "25769803776",
+      "memory.peak": "9629696",
+      "memory.swap.current": "0",
+      "memory.swap.max": "0"
+    }
+  },
+  "claim_scope": "fixed-seed repeated build timing and scheduling variation ONLY",
+  "cmd": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_g6_mst10m_repeat_build_6pairs_v1/pairs/p01/arms/C512/native.time",
+    "taskset",
+    "-c",
+    "0,2,4,6",
+    "/home/tai/ann-task-a/experiments/R91/r91_g6_d2_leader_cap_v1/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN",
+    "-base_path",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "-graph_outfile",
+    "/home/tai/ann-task-a/experiments/R91/r91_g6_mst10m_repeat_build_6pairs_v1/pairs/p01/arms/C512/graph.bin",
+    "-num_clusters",
+    "2",
+    "-cluster_size",
+    "1024",
+    "-table_size",
+    "160",
+    "-top_level_leaders",
+    "100",
+    "-fanout_scheme",
+    "10,3,1",
+    "-mst_deg",
+    "2",
+    "-prune",
+    "1",
+    "-prune_all",
+    "1",
+    "-prune_degree",
+    "64",
+    "-hash_bits",
+    "12",
+    "-alpha",
+    "1.1",
+    "-k",
+    "0",
+    "-r91_g6_d2_cap",
+    "512"
+  ],
+  "fixed_order": [
+    "C512",
+    "C64"
+  ],
+  "original_parent_build_sha256": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+  "pilot_id": "p01",
+  "pilot_preflight_sha256": "1999377c94cd71a5f1bc2cb5a11c6589645985cb033ef1b264b45d10ab1b0c93",
+  "script_sha256": "0b363339c5d02e6cf23701074f06d9f0dc83b7a5516550d9a27d1f1951baa216",
+  "source_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "source_seed_audit": {
+    "SketchHash_identifier_seen": true,
+    "conclusion": "Static source markers present, fixed-seed Stage1 counters must also match original reference by arm; no multi-seed sampling claim",
+    "hash64_seed_markers": [
+      456
+    ],
+    "hash_header_sha256": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+    "seed_555_markers": [
+      530
+    ],
+    "source_sha256": "306b89d7b980d4a8637aa2d1a8c41357ddb34483492c2aa497eaa80acda27050",
+    "source_snippets": [
+      {
+        "file": "pipnn.h",
+        "line": 530,
+        "text": "size_t SEED = 555;"
+      },
+      {
+        "file": "pipnn.h",
+        "line": 456,
+        "text": "SEED = parlay::hash64(SEED);"
+      }
+    ]
+  }
+}

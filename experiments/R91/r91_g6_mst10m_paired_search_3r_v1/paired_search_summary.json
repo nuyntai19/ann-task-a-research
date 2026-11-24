@@ -1,0 +1,264 @@
+{
+  "beams": [
+    576,
+    1792
+  ],
+  "graph_sha256": {
+    "C512": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+    "C64": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d"
+  },
+  "limitations": [
+    "Three paired rounds only, one frozen graph per arm; exploratory descriptive timing, no significance/noninferiority claim",
+    "Fixed beams with same recall floors, not exact matched Recall",
+    "QPS is throughput; inverse QPS is not p95/p99 latency",
+    "Major page faults are recorded but nonfatal when swap and cgroup limits pass",
+    "No BUILD, no source or graph mutation"
+  ],
+  "order": [
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C512",
+      "C64"
+    ]
+  ],
+  "parent_build_sha256": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+  "parent_preflight_sha256": "0e968c761d749f3098956b1d1226923b67d67c050a5fc10b95b40f44e076a14e",
+  "parent_search_sha256": "9604f05dc7ca220ce06dbd8f891048328a801441701da5dbfe50c4e1c67a834d",
+  "preflight_sha256": "0d04fca67e6ff6364b6ddafb9a593502c86af2e6ecf648e59cb9b775c1022105",
+  "results_by_beam": {
+    "1792": {
+      "geomean_paired_ratio": 1.0093950848435276,
+      "maximum_delta_percent": 1.1554572754186365,
+      "median_delta_percent": 1.0250559094107548,
+      "median_paired_ratio": 1.0102505590941075,
+      "minimum_delta_percent": 0.6387281950816837,
+      "pairs": [
+        {
+          "delta_percent": 1.0250559094107548,
+          "order": [
+            "C512",
+            "C64"
+          ],
+          "qps_C512": 324.78756714,
+          "qps_C64": 328.11682129,
+          "ratio_C64_over_C512": 1.0102505590941075,
+          "round": 1
+        },
+        {
+          "delta_percent": 1.1554572754186365,
+          "order": [
+            "C64",
+            "C512"
+          ],
+          "qps_C512": 324.59701538,
+          "qps_C64": 328.34759521,
+          "ratio_C64_over_C512": 1.0115545727541864,
+          "round": 2
+        },
+        {
+          "delta_percent": 0.6387281950816837,
+          "order": [
+            "C512",
+            "C64"
+          ],
+          "qps_C512": 324.97134399,
+          "qps_C64": 327.04702759,
+          "ratio_C64_over_C512": 1.0063872819508168,
+          "round": 3
+        }
+      ],
+      "rounds": 3
+    },
+    "576": {
+      "geomean_paired_ratio": 1.0118259822907132,
+      "maximum_delta_percent": 1.3259147769594026,
+      "median_delta_percent": 1.1894035348395615,
+      "median_paired_ratio": 1.0118940353483956,
+      "minimum_delta_percent": 1.0326891665350724,
+      "pairs": [
+        {
+          "delta_percent": 1.1894035348395615,
+          "order": [
+            "C512",
+            "C64"
+          ],
+          "qps_C512": 802.44006348,
+          "qps_C64": 811.98431396,
+          "ratio_C64_over_C512": 1.0118940353483956,
+          "round": 1
+        },
+        {
+          "delta_percent": 1.3259147769594026,
+          "order": [
+            "C64",
+            "C512"
+          ],
+          "qps_C512": 801.30133057,
+          "qps_C64": 811.92590332,
+          "ratio_C64_over_C512": 1.013259147769594,
+          "round": 2
+        },
+        {
+          "delta_percent": 1.0326891665350724,
+          "order": [
+            "C512",
+            "C64"
+          ],
+          "qps_C512": 802.91003418,
+          "qps_C64": 811.20159912,
+          "ratio_C64_over_C512": 1.0103268916653507,
+          "round": 3
+        }
+      ],
+      "rounds": 3
+    }
+  },
+  "slots": [
+    {
+      "arm": "C512",
+      "cgroup_peak_bytes": 7810899968,
+      "metrics": [
+        {
+          "avg_visited": 480.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1246.1989941818551,
+          "qps": 802.44006348,
+          "recall_at10": 0.99114603
+        },
+        {
+          "avg_visited": 999.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3078.935591056504,
+          "qps": 324.78756714,
+          "recall_at10": 0.99810398
+        }
+      ],
+      "receipt_sha256": "c00cbfab54e90e967af568f87772fd4ffac9d2ad838dea9e1fb44d5a8d07ef01",
+      "round": 1,
+      "slot": "r1_c512"
+    },
+    {
+      "arm": "C64",
+      "cgroup_peak_bytes": 7811125248,
+      "metrics": [
+        {
+          "avg_visited": 474.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1231.5508844291073,
+          "qps": 811.98431396,
+          "recall_at10": 0.99111903
+        },
+        {
+          "avg_visited": 989.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3047.6950132226484,
+          "qps": 328.11682129,
+          "recall_at10": 0.998106
+        }
+      ],
+      "receipt_sha256": "1e42692731d7c9bd830f8d4699426315b203f2a7c1e4139b9abcadc4e0df6ca4",
+      "round": 1,
+      "slot": "r1_c64"
+    },
+    {
+      "arm": "C64",
+      "cgroup_peak_bytes": 7811104768,
+      "metrics": [
+        {
+          "avg_visited": 474.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1231.639483247125,
+          "qps": 811.92590332,
+          "recall_at10": 0.99111903
+        },
+        {
+          "avg_visited": 989.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3045.5529889306295,
+          "qps": 328.34759521,
+          "recall_at10": 0.998106
+        }
+      ],
+      "receipt_sha256": "50b041d09c6538793c5508b14d21f1f7ab9f34c7f31c546117e50ee443fe14a2",
+      "round": 2,
+      "slot": "r2_c64"
+    },
+    {
+      "arm": "C512",
+      "cgroup_peak_bytes": 7810904064,
+      "metrics": [
+        {
+          "avg_visited": 480.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1247.969973154365,
+          "qps": 801.30133057,
+          "recall_at10": 0.99114603
+        },
+        {
+          "avg_visited": 999.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3080.7430525179584,
+          "qps": 324.59701538,
+          "recall_at10": 0.99810398
+        }
+      ],
+      "receipt_sha256": "f490a34f6999fc42a519047d3ab2bd49ad3e5224ddd32c39ba206fc0577870e8",
+      "round": 2,
+      "slot": "r2_c512"
+    },
+    {
+      "arm": "C512",
+      "cgroup_peak_bytes": 7811014656,
+      "metrics": [
+        {
+          "avg_visited": 480.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1245.4695512944797,
+          "qps": 802.91003418,
+          "recall_at10": 0.99114603
+        },
+        {
+          "avg_visited": 999.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3077.1944003492567,
+          "qps": 324.97134399,
+          "recall_at10": 0.99810398
+        }
+      ],
+      "receipt_sha256": "6ee63452432d37151af7afed91013f24c4745f40708b65503e212c8c24ac9777",
+      "round": 3,
+      "slot": "r3_c512"
+    },
+    {
+      "arm": "C64",
+      "cgroup_peak_bytes": 7811436544,
+      "metrics": [
+        {
+          "avg_visited": 474.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1232.7391872560538,
+          "qps": 811.20159912,
+          "recall_at10": 0.99111903
+        },
+        {
+          "avg_visited": 989.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3057.664236758153,
+          "qps": 327.04702759,
+          "recall_at10": 0.998106
+        }
+      ],
+      "receipt_sha256": "2f8a69e374d276997cdc04f03e4dff2381f783364fab2c8abee813622f930c9e",
+      "round": 3,
+      "slot": "r3_c64"
+    }
+  ],
+  "status": "THREE_ROUND_PAIRED_FIXED_BEAM_SEARCH_AUDIT_PASS"
+}

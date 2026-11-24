@@ -1,0 +1,98 @@
+{
+  "build_pair_sha": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+  "delta": {
+    "1792": {
+      "avg_visited": {
+        "C512": 999.0,
+        "C64": 989.0,
+        "difference": -10.0,
+        "relative_percent": -1.0010010010010006
+      },
+      "qps": {
+        "C512": 325.22259521,
+        "C64": 328.01229858,
+        "difference": 2.789703369999984,
+        "relative_percent": 0.8577827651238712
+      },
+      "recall_at10": {
+        "C512": 0.99810398,
+        "C64": 0.998106,
+        "difference": 2.0200000000469842e-06,
+        "relative_percent": 0.00020238372360203982
+      }
+    },
+    "576": {
+      "avg_visited": {
+        "C512": 480.0,
+        "C64": 474.0,
+        "difference": -6.0,
+        "relative_percent": -1.2499999999999956
+      },
+      "qps": {
+        "C512": 803.38427734,
+        "C64": 812.94604492,
+        "difference": 9.561767579999923,
+        "relative_percent": 1.1901860479095916
+      },
+      "recall_at10": {
+        "C512": 0.99114603,
+        "C64": 0.99111903,
+        "difference": -2.6999999999999247e-05,
+        "relative_percent": -0.002724119270292036
+      }
+    }
+  },
+  "limitations": [
+    "Fixed beam is not matched Recall; cannot claim matched QPS advantage",
+    "One independent graph and one Search trial per arm; no noninferiority claim",
+    "Legacy evaluator avg_cmps has int32 overflow risk at high beam; ignored"
+  ],
+  "quality_floor_per_arm": {
+    "C512": true,
+    "C64": true
+  },
+  "results": {
+    "C512": [
+      {
+        "avg_cmps_legacy_int32_untrusted": null,
+        "avg_visited": 480.0,
+        "beam": 576,
+        "inverse_qps_us_not_latency_p95": 1244.734342214156,
+        "qps": 803.38427734,
+        "recall_at10": 0.99114603
+      },
+      {
+        "avg_cmps_legacy_int32_untrusted": null,
+        "avg_visited": 999.0,
+        "beam": 1792,
+        "inverse_qps_us_not_latency_p95": 3074.8171090458472,
+        "qps": 325.22259521,
+        "recall_at10": 0.99810398
+      }
+    ],
+    "C64": [
+      {
+        "avg_cmps_legacy_int32_untrusted": null,
+        "avg_visited": 474.0,
+        "beam": 576,
+        "inverse_qps_us_not_latency_p95": 1230.093935813917,
+        "qps": 812.94604492,
+        "recall_at10": 0.99111903
+      },
+      {
+        "avg_cmps_legacy_int32_untrusted": null,
+        "avg_visited": 989.0,
+        "beam": 1792,
+        "inverse_qps_us_not_latency_p95": 3048.666176021771,
+        "qps": 328.01229858,
+        "recall_at10": 0.998106
+      }
+    ]
+  },
+  "search_valid_for_both": true,
+  "source_receipts": {
+    "C512": "9ea0862279df3b9cf3641d2b0f12e6a7e56e0e5cb25e5da2fe0a5ebc984106a7",
+    "C64": "874eaafa5ea6d746de7f9131745cbd0b64477601ae52f8c1129a330a7f393ec1"
+  },
+  "status": "TWO_10M_NATIVE_FIXED_BEAM_SEARCH_AUDIT_PASS"
+}

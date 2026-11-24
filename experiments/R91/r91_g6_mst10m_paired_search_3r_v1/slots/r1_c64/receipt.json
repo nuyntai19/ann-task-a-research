@@ -1,0 +1,60 @@
+{
+  "arm": "C64",
+  "error": null,
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "a8c27c66557644ecae1241ed7aace33aa5177bfefaa0e516b91f1e845d98ff36",
+    "native.time": "6147c086704de13cbaa17d659a391deed297ae060142c611638e6504b81a5d8a"
+  },
+  "gnu_time": {
+    "exit_status": "0",
+    "file_system_inputs": 0,
+    "file_system_outputs": 16,
+    "major_faults": 0,
+    "max_rss_kib": 7606308,
+    "swaps": 0
+  },
+  "graph_sha256": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d",
+  "metrics": [
+    {
+      "avg_visited": 474.0,
+      "beam": 576,
+      "inverse_qps_us_not_p95": 1231.5508844291073,
+      "qps": 811.98431396,
+      "recall_at10": 0.99111903
+    },
+    {
+      "avg_visited": 989.0,
+      "beam": 1792,
+      "inverse_qps_us_not_p95": 3047.6950132226484,
+      "qps": 328.11682129,
+      "recall_at10": 0.998106
+    }
+  ],
+  "parent_build_sha256": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+  "parent_search_sha256": "9604f05dc7ca220ce06dbd8f891048328a801441701da5dbfe50c4e1c67a834d",
+  "resource": {
+    "cg_peak_bytes": 7811125248,
+    "elapsed_s": 432.204542366002,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "max_seconds": 7200,
+    "min_available_kib": 21344132,
+    "min_disk_gib": 240.04248428344727,
+    "sampled_peak_swap": 0,
+    "samples": 433,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "round": 1,
+  "slot": "r1_c64",
+  "status": "SEARCH_SLOT_PASS"
+}

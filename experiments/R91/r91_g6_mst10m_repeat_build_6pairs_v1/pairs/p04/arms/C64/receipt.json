@@ -1,0 +1,290 @@
+{
+  "arm": "C64",
+  "cap": 64,
+  "error": null,
+  "files_sha256": {
+    "graph.bin": "13dfdfc596f694a0d1dd5f204234894e607c293034bc9adda2673b957cbabe4a",
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "ce4d398b7bd2f057116996e629fd1f7617ffc52352b8831c99b526dc863d7fba",
+    "native.time": "fbe9817bcd2414fe7ed21a9772103df0c88fd422acad5534d8fbd8a377e70682"
+  },
+  "graph": {
+    "arcs": 540775978,
+    "bad_duplicate_rows": 0,
+    "bad_id": 0,
+    "bad_self": 0,
+    "bytes": 2203103920,
+    "full_all_vertices_audit": true,
+    "max_degree": 64,
+    "nodes": 10000000,
+    "sha256": "13dfdfc596f694a0d1dd5f204234894e607c293034bc9adda2673b957cbabe4a"
+  },
+  "native_time": {
+    "exit_status": "0",
+    "file_system_inputs": 560,
+    "file_system_outputs": 4303056,
+    "major_faults": 4,
+    "max_rss_kib": 21673364,
+    "minor_faults": 3111092,
+    "swaps": 0,
+    "wall_s": 368.52
+  },
+  "order": [
+    "C512",
+    "C64"
+  ],
+  "pair_id": "p04",
+  "parsed": {
+    "depth2_original_wp": 52146043480,
+    "depth2_wp": 24296938546,
+    "fallback_maxdepth_points": 9983846,
+    "fallback_shrink_points": 239002,
+    "native_comparisons": [
+      66009802070,
+      132495866066
+    ],
+    "passes": [
+      {
+        "cap": {
+          "cap": 64,
+          "depth2_affected_calls": 3260,
+          "depth2_affected_n": 86406823,
+          "depth2_calls": 48402,
+          "depth2_n": 298003065,
+          "depth2_wp_actual": 12089038738,
+          "depth2_wp_original": 25215371028,
+          "fallback_max_depth_calls": 10379,
+          "fallback_max_depth_points": 4957259,
+          "fallback_small_shrinkage_calls": 104,
+          "fallback_small_shrinkage_points": 118404,
+          "leaf_count": 1201300,
+          "leaf_empty_count": 0,
+          "leaf_executed_size_gt1": 1201300,
+          "leaf_max": 1024,
+          "leaf_p50": 202,
+          "leaf_p90": 435,
+          "schema": 1,
+          "total_leaf_points": 300000000
+        },
+        "depth": {
+          "0": {
+            "M_sum": 100,
+            "N_sum": 10000000,
+            "W_A": 100000000,
+            "W_P": 1000000000,
+            "depth": 0,
+            "fanout10_calls": 1,
+            "fanout1_calls": 0,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4883
+          },
+          "1": {
+            "M_sum": 51200,
+            "N_sum": 100000000,
+            "W_A": 300000000,
+            "W_P": 51200000000,
+            "depth": 1,
+            "fanout10_calls": 0,
+            "fanout1_calls": 0,
+            "fanout3_calls": 100,
+            "fanout_other_calls": 0,
+            "tiles": 48882
+          },
+          "2": {
+            "M_sum": 1244085,
+            "N_sum": 298003065,
+            "W_A": 298003065,
+            "W_P": 12089038738,
+            "depth": 2,
+            "fanout10_calls": 0,
+            "fanout1_calls": 48402,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 169105
+          },
+          "3": {
+            "M_sum": 164056,
+            "N_sum": 34105093,
+            "W_A": 34105093,
+            "W_P": 1667209512,
+            "depth": 3,
+            "fanout10_calls": 0,
+            "fanout1_calls": 12595,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 22015
+          },
+          "4": {
+            "M_sum": 27807,
+            "N_sum": 5923343,
+            "W_A": 5923343,
+            "W_P": 53553820,
+            "depth": 4,
+            "fanout10_calls": 0,
+            "fanout1_calls": 3667,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4376
+          }
+        },
+        "pass": 1,
+        "wp_total": 66009802070
+      },
+      {
+        "cap": {
+          "cap": 64,
+          "depth2_affected_calls": 3209,
+          "depth2_affected_n": 90442846,
+          "depth2_calls": 47873,
+          "depth2_n": 297579277,
+          "depth2_wp_actual": 12207899808,
+          "depth2_wp_original": 26930672452,
+          "fallback_max_depth_calls": 10776,
+          "fallback_max_depth_points": 5026587,
+          "fallback_small_shrinkage_calls": 99,
+          "fallback_small_shrinkage_points": 120598,
+          "leaf_count": 1193033,
+          "leaf_empty_count": 0,
+          "leaf_executed_size_gt1": 1193033,
+          "leaf_max": 1024,
+          "leaf_p50": 203,
+          "leaf_p90": 441,
+          "schema": 1,
+          "total_leaf_points": 300000000
+        },
+        "depth": {
+          "0": {
+            "M_sum": 100,
+            "N_sum": 10000000,
+            "W_A": 100000000,
+            "W_P": 1000000000,
+            "depth": 0,
+            "fanout10_calls": 1,
+            "fanout1_calls": 0,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4883
+          },
+          "1": {
+            "M_sum": 51200,
+            "N_sum": 100000000,
+            "W_A": 300000000,
+            "W_P": 51200000000,
+            "depth": 1,
+            "fanout10_calls": 0,
+            "fanout1_calls": 0,
+            "fanout3_calls": 100,
+            "fanout_other_calls": 0,
+            "tiles": 48877
+          },
+          "2": {
+            "M_sum": 1218909,
+            "N_sum": 297579277,
+            "W_A": 297579277,
+            "W_P": 12207899808,
+            "depth": 2,
+            "fanout10_calls": 0,
+            "fanout1_calls": 47873,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 168416
+          },
+          "3": {
+            "M_sum": 178662,
+            "N_sum": 37464172,
+            "W_A": 37464172,
+            "W_P": 2021692962,
+            "depth": 3,
+            "fanout10_calls": 0,
+            "fanout1_calls": 14098,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 24227
+          },
+          "4": {
+            "M_sum": 28195,
+            "N_sum": 5999585,
+            "W_A": 5999585,
+            "W_P": 56471226,
+            "depth": 4,
+            "fanout10_calls": 0,
+            "fanout1_calls": 3658,
+            "fanout3_calls": 0,
+            "fanout_other_calls": 0,
+            "tiles": 4411
+          }
+        },
+        "pass": 2,
+        "wp_total": 66486063996
+      }
+    ],
+    "stage_times": {
+      "buckets_per_pass_s": [
+        66.038,
+        66.0431
+      ],
+      "buckets_total_s": 132.0811,
+      "final_prune_per_pass_s": [
+        64.8429
+      ],
+      "final_prune_total_s": 64.8429,
+      "leaf_per_pass_s": [
+        79.472,
+        87.3966
+      ],
+      "leaf_total_s": 166.86860000000001
+    },
+    "total_leaf_memberships": 600000000,
+    "total_wp": 132495866066
+  },
+  "preflight_sha256": "2d20ea7bb341067d162d7dbba1cf29fb8bc9606f4e7246e768a1c5629ea5ead2",
+  "resource": {
+    "cg_peak_bytes": 22408167424,
+    "elapsed_s": 369.18964989000233,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "min_available_kib": 7536400,
+    "min_disk_free_gib": 223.3510627746582,
+    "sample_count": 370,
+    "sampled_peak_current": 22352789504,
+    "sampled_peak_swap": 0,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "source_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "source_seed_audit": {
+    "SketchHash_identifier_seen": true,
+    "conclusion": "Static source markers present, fixed-seed Stage1 counters must also match original reference by arm; no multi-seed sampling claim",
+    "hash64_seed_markers": [
+      456
+    ],
+    "hash_header_sha256": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+    "seed_555_markers": [
+      530
+    ],
+    "source_sha256": "306b89d7b980d4a8637aa2d1a8c41357ddb34483492c2aa497eaa80acda27050",
+    "source_snippets": [
+      {
+        "file": "pipnn.h",
+        "line": 530,
+        "text": "size_t SEED = 555;"
+      },
+      {
+        "file": "pipnn.h",
+        "line": 456,
+        "text": "SEED = parlay::hash64(SEED);"
+      }
+    ]
+  },
+  "stage1_baseline_match": "STAGE1_COUNTERS_MATCH_V13_REFERENCE",
+  "status": "BUILD_GRAPH_WORK_RESOURCE_AUDIT_PASS"
+}

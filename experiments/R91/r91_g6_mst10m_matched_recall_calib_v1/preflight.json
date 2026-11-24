@@ -1,0 +1,44 @@
+{
+  "arms": [
+    "C512",
+    "C64"
+  ],
+  "beams": [
+    512,
+    544,
+    560,
+    576,
+    608,
+    1664,
+    1728,
+    1760,
+    1792,
+    1856
+  ],
+  "claims_limit": "10-beam fixed-grid measured Search. Interpolated QPS at same target Recall is an estimate, not native exactly matched Recall. One frozen graph/arm; no p95/p99 or significance claim.",
+  "cpu_search": "0",
+  "data_sha256": {
+    "base.10M.fbin": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "groundtruth.public.100K.ibin": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+    "query.public.100K.fbin": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644"
+  },
+  "evaluator_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "memory_max_bytes": 25769803776,
+  "n_queries": 100000,
+  "paired_preflight_sha256": "0d04fca67e6ff6364b6ddafb9a593502c86af2e6ecf648e59cb9b775c1022105",
+  "paired_summary_sha256": "0a28e7c5ef6d84a1953735a809ab5ae75d8e39532ad357e8efb7b7f09ed51091",
+  "parent_build_sha256": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+  "parent_preflight_sha256": "0e968c761d749f3098956b1d1226923b67d67c050a5fc10b95b40f44e076a14e",
+  "parent_search_sha256": "9604f05dc7ca220ce06dbd8f891048328a801441701da5dbfe50c4e1c67a834d",
+  "script_sha256": "29ae3db642f757bcc53e4a0ac9890469bbf4a121e9016a24d9e858df0533de7e",
+  "source_graph_sha256": {
+    "C512": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+    "C64": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d"
+  },
+  "status": "PREFLIGHT_PASS_NO_NATIVE_CALIBRATION",
+  "swap_max_bytes": 0,
+  "targets": [
+    0.99,
+    0.998
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "baseline_work": {
+    "C512": {
+      "depth2_affected_calls": 0,
+      "depth2_wp": 52146043480,
+      "fallback_maxdepth_points": 3325197,
+      "fallback_shrink_points": 1233469,
+      "leaf_count": 2534764,
+      "total_wp": 156998418988,
+      "wp_ge2": 52598418988
+    },
+    "C64": {
+      "depth2_affected_calls": 6469,
+      "depth2_wp": 24296938546,
+      "fallback_maxdepth_points": 9983846,
+      "fallback_shrink_points": 239002,
+      "leaf_count": 2394333,
+      "total_wp": 132495866066,
+      "wp_ge2": 28095866066
+    }
+  },
+  "calibration_sha256": {
+    "matched_recall_calibration_summary.json": "92a5f9d0b4637e00b8d6c1672308a49e08dc4c83c6133641fd581aaaa60162c8",
+    "preflight.json": "abd26a5df6200d64b9e78f63a64bb168fe9453af738d7229d9db973708880a91"
+  },
+  "created_epoch": 1795458939.4062614,
+  "original_g6_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "parent_graph_sha256": {
+    "C512": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+    "C64": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d"
+  },
+  "parent_sha256": {
+    "build_pair_audit.json": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+    "preflight.json": "0e968c761d749f3098956b1d1226923b67d67c050a5fc10b95b40f44e076a14e",
+    "runs/C512/receipt.json": "b520f072d7c782a5efcb3ca5f3573d4bf9eddf1270861b06cafb1cdc37272082",
+    "runs/C64/receipt.json": "b10c89d2075046b91b8d738cd9c245e9a3ba74e920c6281e676c2db0916475e6",
+    "search_pair_audit.json": "9604f05dc7ca220ce06dbd8f891048328a801441701da5dbfe50c4e1c67a834d"
+  },
+  "pilot_arm_order": [
+    "C512",
+    "C64"
+  ],
+  "pilot_only_pair_id": "p01",
+  "preregistered_schedule": [
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C64",
+      "C512"
+    ],
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C512",
+      "C64"
+    ],
+    [
+      "C64",
+      "C512"
+    ]
+  ],
+  "protocol": {
+    "cgroup_memory_max": 25769803776,
+    "cgroup_swap_max": 0,
+    "cpu": "0,2,4,6",
+    "d": 100,
+    "depth2_cap": [
+      512,
+      64
+    ],
+    "disk_before_second_gib": 48,
+    "disk_monitor_abort_below_gib": 38,
+    "disk_preflight_min_gib": 55,
+    "flags": [
+      "-num_clusters",
+      "2",
+      "-cluster_size",
+      "1024",
+      "-table_size",
+      "160",
+      "-top_level_leaders",
+      "100",
+      "-fanout_scheme",
+      "10,3,1",
+      "-mst_deg",
+      "2",
+      "-prune",
+      "1",
+      "-prune_all",
+      "1",
+      "-prune_degree",
+      "64",
+      "-hash_bits",
+      "12",
+      "-alpha",
+      "1.1",
+      "-k",
+      "0"
+    ],
+    "n": 10000000,
+    "threads": 4
+  },
+  "scientific_limits": [
+    "Fixed Stage-1 seed 555: repeated timing and thread scheduling variation, NOT independent leader-seed graphs",
+    "Observed graph differences do not alone identify their cause; parallel scheduling is a hypothesis",
+    "One pilot pair cannot establish robust wall-time significance",
+    "Six all-same-sign results, under independent fair sign null, one-sided p=1/64; dependencies and host drift must be assessed",
+    "No Search in this pilot, no cross-graph Recall measured yet"
+  ],
+  "scope": "REPEATED_BUILD_WITH_SAME_SOURCE_SEED_555_NOT_MULTISEED_EXPERIMENT",
+  "script_sha256": "0b363339c5d02e6cf23701074f06d9f0dc83b7a5516550d9a27d1f1951baa216",
+  "source_seed_audit": {
+    "SketchHash_identifier_seen": true,
+    "conclusion": "Static source markers present, fixed-seed Stage1 counters must also match original reference by arm; no multi-seed sampling claim",
+    "hash64_seed_markers": [
+      456
+    ],
+    "hash_header_sha256": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+    "seed_555_markers": [
+      530
+    ],
+    "source_sha256": "306b89d7b980d4a8637aa2d1a8c41357ddb34483492c2aa497eaa80acda27050",
+    "source_snippets": [
+      {
+        "file": "pipnn.h",
+        "line": 530,
+        "text": "size_t SEED = 555;"
+      },
+      {
+        "file": "pipnn.h",
+        "line": 456,
+        "text": "SEED = parlay::hash64(SEED);"
+      }
+    ]
+  },
+  "status": "PREFLIGHT_PASS_NO_BUILD",
+  "vendor_sha256": "0e62c69dcf73f499d4c99e3181c526c0d908150ff6e77ca4d1fde4144801cab7"
+}

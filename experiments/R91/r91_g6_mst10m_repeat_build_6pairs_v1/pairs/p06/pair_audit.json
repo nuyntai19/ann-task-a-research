@@ -1,0 +1,184 @@
+{
+  "C512": {
+    "arm": "C512",
+    "cap": 512,
+    "cgroup_events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "cgroup_peak_bytes": 25157177344,
+    "depth2_wp": 52146043480,
+    "depth_ge2_wp": 52598418988,
+    "fallback_maxdepth_points": 3325197,
+    "fallback_shrink_points": 1233469,
+    "graph_arcs": 540692720,
+    "graph_full_all_vertices_audit": true,
+    "graph_sha256": "014dd9ef46f5f1b40ea6b29f7cca311112c6b5123e1ec85bc7819b8673893381",
+    "leaf_count": 2534764,
+    "major_faults": 5,
+    "max_rss_kib": 21677308,
+    "stage1_baseline_match": "STAGE1_COUNTERS_MATCH_V13_REFERENCE",
+    "stage_times": {
+      "buckets_per_pass_s": [
+        75.0389,
+        76.6079
+      ],
+      "buckets_total_s": 151.64679999999998,
+      "final_prune_per_pass_s": [
+        64.9655
+      ],
+      "final_prune_total_s": 64.9655,
+      "leaf_per_pass_s": [
+        76.2663,
+        84.0782
+      ],
+      "leaf_total_s": 160.34449999999998
+    },
+    "swap_after": 0,
+    "total_wp": 156998418988,
+    "wall_s": 381.63
+  },
+  "C64": {
+    "arm": "C64",
+    "cap": 64,
+    "cgroup_events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "cgroup_peak_bytes": 22345138176,
+    "depth2_wp": 24296938546,
+    "depth_ge2_wp": 28095866066,
+    "fallback_maxdepth_points": 9983846,
+    "fallback_shrink_points": 239002,
+    "graph_arcs": 541030931,
+    "graph_full_all_vertices_audit": true,
+    "graph_sha256": "28cce0db41ce3b88d21dd5de52d07bafbc8d75e86769f13b59e49243c8780865",
+    "leaf_count": 2394333,
+    "major_faults": 2,
+    "max_rss_kib": 21771684,
+    "stage1_baseline_match": "STAGE1_COUNTERS_MATCH_V13_REFERENCE",
+    "stage_times": {
+      "buckets_per_pass_s": [
+        65.3851,
+        66.4004
+      ],
+      "buckets_total_s": 131.7855,
+      "final_prune_per_pass_s": [
+        65.0035
+      ],
+      "final_prune_total_s": 65.0035,
+      "leaf_per_pass_s": [
+        79.6087,
+        87.0102
+      ],
+      "leaf_total_s": 166.6189
+    },
+    "swap_after": 0,
+    "total_wp": 132495866066,
+    "wall_s": 368.03
+  },
+  "C64_minus_C512": {
+    "cgroup_peak_bytes": {
+      "absolute": -2812039168,
+      "relative_percent": -11.177880290575093
+    },
+    "depth2_wp": {
+      "absolute": -27849104934,
+      "relative_percent": -53.4059788154037
+    },
+    "depth_ge2_wp": {
+      "absolute": -24502552922,
+      "relative_percent": -46.584200425473064
+    },
+    "fallback_maxdepth_points": {
+      "absolute": 6658649,
+      "relative_percent": 200.24825596799224
+    },
+    "graph_arcs": {
+      "absolute": 338211,
+      "relative_percent": 0.06255142477227249
+    },
+    "max_rss_kib": {
+      "absolute": 94376,
+      "relative_percent": 0.43536771263295027
+    },
+    "total_wp": {
+      "absolute": -24502552922,
+      "relative_percent": -15.606878769825594
+    },
+    "wall_s": {
+      "absolute": -13.600000000000023,
+      "relative_percent": -3.5636611377512284
+    }
+  },
+  "limitations": [
+    "Fixed Stage1 seed=555; not randomized leader seeds",
+    "Same hardware / separate native scopes / sequential fixed-order pair",
+    "No Search quality on the new graph pair",
+    "Graph SHA variations cannot be uniquely attributed to scheduling alone"
+  ],
+  "order": [
+    "C64",
+    "C512"
+  ],
+  "p01_audit_sha256": "5844ca60f5ffa3ab01a6d03b23047ddff0982f60d7a8ccd2793416e029fa575c",
+  "pair_id": "p06",
+  "preflight_sha256": "2d20ea7bb341067d162d7dbba1cf29fb8bc9606f4e7246e768a1c5629ea5ead2",
+  "source_elf_sha256": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+  "source_receipt_sha256": {
+    "C512": "e2f3971ff9bf89ecc19df9f2217e74e6f65ad234ce2b168e6ec7f1fb399a7058",
+    "C64": "ddd2dce976dd1ceb10f35886f96e6a8f5f4771da954a3ccd836ea85877cfb2fb"
+  },
+  "source_seed_audit": {
+    "SketchHash_identifier_seen": true,
+    "conclusion": "Static source markers present, fixed-seed Stage1 counters must also match original reference by arm; no multi-seed sampling claim",
+    "hash64_seed_markers": [
+      456
+    ],
+    "hash_header_sha256": "b0640b1c708c77e662b3c2646678ffacf6ef83b8e61f7de7f45f2b18c5eca01d",
+    "seed_555_markers": [
+      530
+    ],
+    "source_sha256": "306b89d7b980d4a8637aa2d1a8c41357ddb34483492c2aa497eaa80acda27050",
+    "source_snippets": [
+      {
+        "file": "pipnn.h",
+        "line": 530,
+        "text": "size_t SEED = 555;"
+      },
+      {
+        "file": "pipnn.h",
+        "line": 456,
+        "text": "SEED = parlay::hash64(SEED);"
+      }
+    ]
+  },
+  "stage_time_s": {
+    "buckets": {
+      "C512": 151.64679999999998,
+      "C64": 131.7855,
+      "delta_s": -19.86129999999997
+    },
+    "final_prune": {
+      "C512": 64.9655,
+      "C64": 65.0035,
+      "delta_s": 0.0379999999999967
+    },
+    "leaf": {
+      "C512": 160.34449999999998,
+      "C64": 166.6189,
+      "delta_s": 6.274400000000014
+    }
+  },
+  "status": "PAIRED_BUILD_FULL_AUDIT_PASS"
+}

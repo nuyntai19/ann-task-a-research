@@ -1,0 +1,273 @@
+{
+  "beams": [
+    512,
+    544,
+    560,
+    576,
+    608,
+    1664,
+    1728,
+    1760,
+    1792,
+    1856
+  ],
+  "estimated_same_recall_comparison": {
+    "0.99": {
+      "estimated_delta_percent": 0.5819484641097272,
+      "estimated_qps_C512": 875.3839778095582,
+      "estimated_qps_C64": 880.4782614234836,
+      "estimated_ratio_C64_over_C512": 1.0058194846410973,
+      "status": "ESTIMATED_AT_SAME_TARGET_RECALL_NOT_NATIVE_MATCH",
+      "target_recall": 0.99
+    },
+    "0.998": {
+      "estimated_delta_percent": 1.0304808872213966,
+      "estimated_qps_C512": 332.85437149347337,
+      "estimated_qps_C64": 336.2843721739945,
+      "estimated_ratio_C64_over_C512": 1.010304808872214,
+      "status": "ESTIMATED_AT_SAME_TARGET_RECALL_NOT_NATIVE_MATCH",
+      "target_recall": 0.998
+    }
+  },
+  "graph_sha256": {
+    "C512": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+    "C64": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d"
+  },
+  "interpolated_by_arm": {
+    "C512": {
+      "0.99": {
+        "estimated_beam": 525.8444962884399,
+        "estimated_qps": 875.3839778095582,
+        "fraction": 0.4326405090137463,
+        "lower_measured_beam": 512,
+        "lower_measured_qps": 905.21929932,
+        "lower_measured_recall": 0.98959202,
+        "recall_monotone_non_decreasing": true,
+        "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+        "target_recall": 0.99,
+        "upper_measured_beam": 544,
+        "upper_measured_qps": 836.25830078,
+        "upper_measured_recall": 0.99053502
+      },
+      "0.998": {
+        "estimated_beam": 1724.8176088044054,
+        "estimated_qps": 332.85437149347337,
+        "fraction": 0.9502751375688341,
+        "lower_measured_beam": 1664,
+        "lower_measured_qps": 340.41748047,
+        "lower_measured_recall": 0.99790502,
+        "recall_monotone_non_decreasing": true,
+        "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+        "target_recall": 0.998,
+        "upper_measured_beam": 1728,
+        "upper_measured_qps": 332.45861816,
+        "upper_measured_recall": 0.99800497
+      }
+    },
+    "C64": {
+      "0.99": {
+        "estimated_beam": 529.2112685202217,
+        "estimated_qps": 880.4782614234836,
+        "fraction": 0.5378521412569282,
+        "lower_measured_beam": 512,
+        "lower_measured_qps": 920.14630127,
+        "lower_measured_recall": 0.98950303,
+        "recall_monotone_non_decreasing": true,
+        "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+        "target_recall": 0.99,
+        "upper_measured_beam": 544,
+        "upper_measured_qps": 846.39361572,
+        "upper_measured_recall": 0.99042702
+      },
+      "0.998": {
+        "estimated_beam": 1719.5108397486736,
+        "estimated_qps": 336.2843721739945,
+        "fraction": 0.8673568710730253,
+        "lower_measured_beam": 1664,
+        "lower_measured_qps": 343.70489502,
+        "lower_measured_recall": 0.99790198,
+        "recall_monotone_non_decreasing": true,
+        "status": "LINEAR_INTERPOLATION_ESTIMATE_ONLY",
+        "target_recall": 0.998,
+        "upper_measured_beam": 1728,
+        "upper_measured_qps": 335.14956665,
+        "upper_measured_recall": 0.99801499
+      }
+    }
+  },
+  "limitations": [
+    "Measured fixed-beam Recall/QPS is native; interpolated QPS is model estimate, not measured at precisely matched Recall",
+    "Fixed source graphs one per arm and one Search calibration process per arm; no statistical matched-Recall speedup claim",
+    "True crossing may occur between measured beams; not proof global minimum beam",
+    "Legacy high-beam avg_cmps int32 untrusted and omitted; QPS inverse is not p95/p99 query latency",
+    "No BUILD, compile, graph mutation, or source modification"
+  ],
+  "paired_summary_sha256": "0a28e7c5ef6d84a1953735a809ab5ae75d8e39532ad357e8efb7b7f09ed51091",
+  "parent_build_sha256": "e4816122d38bded111b158c227a6d28ef2d1d28130e38cefc83f45e4e41beb3b",
+  "parent_preflight_sha256": "0e968c761d749f3098956b1d1226923b67d67c050a5fc10b95b40f44e076a14e",
+  "parent_search_sha256": "9604f05dc7ca220ce06dbd8f891048328a801441701da5dbfe50c4e1c67a834d",
+  "preflight_sha256": "abd26a5df6200d64b9e78f63a64bb168fe9453af738d7229d9db973708880a91",
+  "slots": [
+    {
+      "arm": "C512",
+      "cgroup_peak_bytes": 7811538944,
+      "metrics": [
+        {
+          "avg_visited": 439.0,
+          "beam": 512,
+          "inverse_qps_us_not_p95": 1104.7046839933696,
+          "qps": 905.21929932,
+          "recall_at10": 0.98959202
+        },
+        {
+          "avg_visited": 463.0,
+          "beam": 544,
+          "inverse_qps_us_not_p95": 1195.8027789586947,
+          "qps": 836.25830078,
+          "recall_at10": 0.99053502
+        },
+        {
+          "avg_visited": 472.0,
+          "beam": 560,
+          "inverse_qps_us_not_p95": 1224.9817624739703,
+          "qps": 816.33868408,
+          "recall_at10": 0.99083298
+        },
+        {
+          "avg_visited": 480.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1243.3059614737529,
+          "qps": 804.30725098,
+          "recall_at10": 0.99114603
+        },
+        {
+          "avg_visited": 497.0,
+          "beam": 608,
+          "inverse_qps_us_not_p95": 1292.12630249936,
+          "qps": 773.91815186,
+          "recall_at10": 0.99174899
+        },
+        {
+          "avg_visited": 959.0,
+          "beam": 1664,
+          "inverse_qps_us_not_p95": 2937.5694768063686,
+          "qps": 340.41748047,
+          "recall_at10": 0.99790502
+        },
+        {
+          "avg_visited": 979.0,
+          "beam": 1728,
+          "inverse_qps_us_not_p95": 3007.8931493324594,
+          "qps": 332.45861816,
+          "recall_at10": 0.99800497
+        },
+        {
+          "avg_visited": 989.0,
+          "beam": 1760,
+          "inverse_qps_us_not_p95": 3043.9935470781384,
+          "qps": 328.51580811,
+          "recall_at10": 0.99806303
+        },
+        {
+          "avg_visited": 999.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3077.1449864172896,
+          "qps": 324.9765625,
+          "recall_at10": 0.99810398
+        },
+        {
+          "avg_visited": 1019.0,
+          "beam": 1856,
+          "inverse_qps_us_not_p95": 3149.784317482581,
+          "qps": 317.48205566,
+          "recall_at10": 0.99819303
+        }
+      ],
+      "receipt_sha256": "9c5f4a277601c459204c8fdba4ddd31f2a5a6c978a5633a8bad1749fb1c258bb",
+      "resource_status": "COMPLETED"
+    },
+    {
+      "arm": "C64",
+      "cgroup_peak_bytes": 7811182592,
+      "metrics": [
+        {
+          "avg_visited": 433.0,
+          "beam": 512,
+          "inverse_qps_us_not_p95": 1086.7836980051811,
+          "qps": 920.14630127,
+          "recall_at10": 0.98950303
+        },
+        {
+          "avg_visited": 457.0,
+          "beam": 544,
+          "inverse_qps_us_not_p95": 1181.4833919196471,
+          "qps": 846.39361572,
+          "recall_at10": 0.99042702
+        },
+        {
+          "avg_visited": 465.0,
+          "beam": 560,
+          "inverse_qps_us_not_p95": 1206.0561331398317,
+          "qps": 829.14880371,
+          "recall_at10": 0.99076098
+        },
+        {
+          "avg_visited": 474.0,
+          "beam": 576,
+          "inverse_qps_us_not_p95": 1229.0090851765149,
+          "qps": 813.66363525,
+          "recall_at10": 0.99111903
+        },
+        {
+          "avg_visited": 490.0,
+          "beam": 608,
+          "inverse_qps_us_not_p95": 1283.1701319660378,
+          "qps": 779.31988525,
+          "recall_at10": 0.99170703
+        },
+        {
+          "avg_visited": 949.0,
+          "beam": 1664,
+          "inverse_qps_us_not_p95": 2909.4726740560695,
+          "qps": 343.70489502,
+          "recall_at10": 0.99790198
+        },
+        {
+          "avg_visited": 969.0,
+          "beam": 1728,
+          "inverse_qps_us_not_p95": 2983.7424824848717,
+          "qps": 335.14956665,
+          "recall_at10": 0.99801499
+        },
+        {
+          "avg_visited": 979.0,
+          "beam": 1760,
+          "inverse_qps_us_not_p95": 3012.0971993203398,
+          "qps": 331.99459839,
+          "recall_at10": 0.99806201
+        },
+        {
+          "avg_visited": 989.0,
+          "beam": 1792,
+          "inverse_qps_us_not_p95": 3045.6747106038097,
+          "qps": 328.33447266,
+          "recall_at10": 0.998106
+        },
+        {
+          "avg_visited": 1009.0,
+          "beam": 1856,
+          "inverse_qps_us_not_p95": 3119.349582092851,
+          "qps": 320.57965088,
+          "recall_at10": 0.99819201
+        }
+      ],
+      "receipt_sha256": "50e7106340e7ec856d1e917f5d018b38b827f5854bdc80fffb7fc01a64b6b110",
+      "resource_status": "COMPLETED"
+    }
+  ],
+  "status": "TEN_BEAM_BOTH_GRAPHS_NATIVE_CALIBRATION_AUDIT_PASS",
+  "targets": [
+    0.99,
+    0.998
+  ]
+}

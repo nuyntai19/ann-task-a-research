@@ -1,0 +1,253 @@
+{
+  "C512": {
+    "arcs": 540881883,
+    "arm": "C512",
+    "cgroup_peak_bytes": 22308368384,
+    "depth": {
+      "0": {
+        "calls": 2,
+        "n": 20000000,
+        "wa": 200000000,
+        "wp": 2000000000
+      },
+      "1": {
+        "calls": 200,
+        "n": 200000000,
+        "wa": 600000000,
+        "wp": 102400000000
+      },
+      "2": {
+        "calls": 96275,
+        "n": 595582342,
+        "wa": 595582342,
+        "wp": 52146043480
+      },
+      "3": {
+        "calls": 17442,
+        "n": 30390138,
+        "wa": 30390138,
+        "wp": 420661571
+      },
+      "4": {
+        "calls": 2712,
+        "n": 4008338,
+        "wa": 4008338,
+        "wp": 31713937
+      }
+    },
+    "depth2_affected_calls": 0,
+    "depth2_affected_n": 0,
+    "depth2_calls": 96275,
+    "depth2_original_wp": 52146043480,
+    "depth2_wp": 52146043480,
+    "fallback_maxdepth_points": 3325197,
+    "fallback_shrink_points": 1233469,
+    "file_system_inputs": 256,
+    "file_system_outputs": 4303880,
+    "graph_sha": "5924279e3065953f407003fd7217476f04b214295c4f3801db510628c9e6c443",
+    "leaf_count": 2534764,
+    "leaf_max_by_pass": [
+      1024,
+      1024
+    ],
+    "leaf_memberships": 600000000,
+    "leaf_p50_by_pass": [
+      193,
+      193
+    ],
+    "leaf_p90_by_pass": [
+      405,
+      406
+    ],
+    "major_faults_reported_nonfatal": 0,
+    "max_rss_kib": 21732364,
+    "minor_faults": 2534470,
+    "stage_times": {
+      "buckets_per_pass_s": [
+        73.2188,
+        74.2729
+      ],
+      "buckets_total_s": 147.4917,
+      "final_prune_per_pass_s": [
+        63.777
+      ],
+      "final_prune_total_s": 63.777,
+      "leaf_per_pass_s": [
+        75.3798,
+        81.6055
+      ],
+      "leaf_total_s": 156.9853
+    },
+    "total_wp": 156998418988,
+    "wall_s": 372.33,
+    "wp_ge2": 52598418988
+  },
+  "C64": {
+    "arcs": 541002463,
+    "arm": "C64",
+    "cgroup_peak_bytes": 22217687040,
+    "depth": {
+      "0": {
+        "calls": 2,
+        "n": 20000000,
+        "wa": 200000000,
+        "wp": 2000000000
+      },
+      "1": {
+        "calls": 200,
+        "n": 200000000,
+        "wa": 600000000,
+        "wp": 102400000000
+      },
+      "2": {
+        "calls": 96275,
+        "n": 595582342,
+        "wa": 595582342,
+        "wp": 24296938546
+      },
+      "3": {
+        "calls": 26693,
+        "n": 71569265,
+        "wa": 71569265,
+        "wp": 3688902474
+      },
+      "4": {
+        "calls": 7325,
+        "n": 11922928,
+        "wa": 11922928,
+        "wp": 110025046
+      }
+    },
+    "depth2_affected_calls": 6469,
+    "depth2_affected_n": 176849669,
+    "depth2_calls": 96275,
+    "depth2_original_wp": 52146043480,
+    "depth2_wp": 24296938546,
+    "fallback_maxdepth_points": 9983846,
+    "fallback_shrink_points": 239002,
+    "file_system_inputs": 64,
+    "file_system_outputs": 4304824,
+    "graph_sha": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d",
+    "leaf_count": 2394333,
+    "leaf_max_by_pass": [
+      1024,
+      1024
+    ],
+    "leaf_memberships": 600000000,
+    "leaf_p50_by_pass": [
+      202,
+      203
+    ],
+    "leaf_p90_by_pass": [
+      435,
+      441
+    ],
+    "major_faults_reported_nonfatal": 1,
+    "max_rss_kib": 21643604,
+    "minor_faults": 2513274,
+    "stage_times": {
+      "buckets_per_pass_s": [
+        64.1673,
+        64.4837
+      ],
+      "buckets_total_s": 128.651,
+      "final_prune_per_pass_s": [
+        63.9307
+      ],
+      "final_prune_total_s": 63.9307,
+      "leaf_per_pass_s": [
+        76.6441,
+        84.5873
+      ],
+      "leaf_total_s": 161.2314
+    },
+    "total_wp": 132495866066,
+    "wall_s": 357.93,
+    "wp_ge2": 28095866066
+  },
+  "C64_minus_C512": {
+    "arcs": {
+      "absolute": 120580,
+      "relative_to_C512_percent": 0.022293222196911877
+    },
+    "cgroup_peak_bytes": {
+      "absolute": -90681344,
+      "relative_to_C512_percent": -0.4064902571047635
+    },
+    "depth2_affected_calls": {
+      "absolute": 6469,
+      "relative_to_C512_percent": null
+    },
+    "depth2_affected_n": {
+      "absolute": 176849669,
+      "relative_to_C512_percent": null
+    },
+    "depth2_calls": {
+      "absolute": 0,
+      "relative_to_C512_percent": 0.0
+    },
+    "depth2_wp": {
+      "absolute": -27849104934,
+      "relative_to_C512_percent": -53.4059788154037
+    },
+    "fallback_maxdepth_points": {
+      "absolute": 6658649,
+      "relative_to_C512_percent": 200.24825596799224
+    },
+    "fallback_shrink_points": {
+      "absolute": -994467,
+      "relative_to_C512_percent": -80.62359086446436
+    },
+    "leaf_count": {
+      "absolute": -140431,
+      "relative_to_C512_percent": -5.540200192207245
+    },
+    "leaf_memberships": {
+      "absolute": 0,
+      "relative_to_C512_percent": 0.0
+    },
+    "max_rss_kib": {
+      "absolute": -88760,
+      "relative_to_C512_percent": -0.4084231241479275
+    },
+    "total_wp": {
+      "absolute": -24502552922,
+      "relative_to_C512_percent": -15.606878769825594
+    },
+    "wall_s": {
+      "absolute": -14.399999999999977,
+      "relative_to_C512_percent": -3.8675368624607187
+    },
+    "wp_ge2": {
+      "absolute": -24502552922,
+      "relative_to_C512_percent": -46.584200425473064
+    }
+  },
+  "experiment_scope": "one native 4CPU build per arm; not a repeated randomized paired study",
+  "limits": [
+    "Structural graph audit != Recall quality",
+    "one build per arm; no statistical build speedup claim",
+    "depth2 work saving != net saving due to deeper depth and leaf costs",
+    "major_faults (ru_majflt) and file_system_inputs recorded, nonfatal alone; zero swap/cgroup events remain mandatory",
+    "each independent v1.2 build is new; historical v1.1 C512 HOLD artifact never reclassified or modified"
+  ],
+  "protocol": {
+    "data_sha": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "fanout": "10,3,1",
+    "g4_receipt_sha": "d49027aed33529caa95a315a186253ded49d2cb205b6021e00167880510aea36",
+    "g4_summary_sha": "bdbb8371fce39f44609a0eca967fed46fb4790c228f4fc0f960cc01bd170aca9",
+    "leader_cap_only_depth2": [
+      512,
+      64
+    ],
+    "memory_max_bytes": 25769803776,
+    "source_sha": "53be9510ead14aff25ec5adffc07d959c78d575f7ffcc9306435360ce9342690",
+    "swap_max": 0,
+    "table_size": 160
+  },
+  "source_receipts": {
+    "C512": "b520f072d7c782a5efcb3ca5f3573d4bf9eddf1270861b06cafb1cdc37272082",
+    "C64": "b10c89d2075046b91b8d738cd9c245e9a3ba74e920c6281e676c2db0916475e6"
+  },
+  "status": "TWO_10M_NATIVE_BUILDS_FULL_GRAPH_WORK_RESOURCE_AUDIT_PASS_SEARCH_NOT_RUN"
+}
