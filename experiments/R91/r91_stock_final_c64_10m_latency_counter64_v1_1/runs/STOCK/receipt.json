@@ -1,0 +1,137 @@
+{
+  "arm": "STOCK",
+  "beams": [
+    544,
+    1728
+  ],
+  "clean_summary_sha256": "1c69fd1abcbf8720961eeefb5cbc25539a23d8d81d9405b04bbf97ca0a49eecd",
+  "error": null,
+  "evaluator_sha256": "244239d74a8d9c2ee10b7fdc619312c9c34490def9e48fbadc88b222a57fa9bc",
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "2bb5aaffb2e5389670b0cec3ff76bd2e9ca10dfa1499a6a0dbebad387b27c2d5",
+    "native.time": "3691b6b5abaa65546f500e93a84b2100d47dfaf689668368e5ff32cbccf2ce16",
+    "preregister.json": "a27569a048dc6ab83e93de1fc984b89ee7f7da1effb657805066a73281d9f27c"
+  },
+  "gnu_time": {
+    "exit_status": "0",
+    "file_system_inputs": 521848,
+    "file_system_outputs": 16912,
+    "major_faults": 5,
+    "max_rss_kib": 7604728,
+    "swaps": 0
+  },
+  "graph_sha256": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+  "metrics": [
+    {
+      "avg_visited_legacy": 463.0,
+      "beam": 544,
+      "diagnostic_qps_not_clean": 837.35455322,
+      "latency_ns": {
+        "max": 2912731,
+        "mean": 1194179.29345,
+        "min": 129439,
+        "p50": 1333422,
+        "p95": 1726598,
+        "p99": 1929977,
+        "total": 119417929345
+      },
+      "n_queries": 100000,
+      "recall_at10": 0.99058998,
+      "search_cmps_including_top10_recompute": {
+        "max": 45140,
+        "mean": 21502.28316,
+        "min": 1523,
+        "p50": 23806,
+        "p95": 34021,
+        "p99": 36141,
+        "total": 2150228316
+      },
+      "traversal_cmps": {
+        "max": 45130,
+        "mean": 21492.28316,
+        "min": 1513,
+        "p50": 23796,
+        "p95": 34011,
+        "p99": 36131,
+        "total": 2149228316
+      },
+      "visited": {
+        "max": 900,
+        "mean": 463.42332,
+        "min": 64,
+        "p50": 566,
+        "p95": 630,
+        "p99": 663,
+        "total": 46342332
+      }
+    },
+    {
+      "avg_visited_legacy": 979.0,
+      "beam": 1728,
+      "diagnostic_qps_not_clean": 332.29510498,
+      "latency_ns": {
+        "max": 9352144,
+        "mean": 3009212.15652,
+        "min": 262126,
+        "p50": 2331942,
+        "p95": 6082013,
+        "p99": 6917250,
+        "total": 300921215652
+      },
+      "n_queries": 100000,
+      "recall_at10": 0.99801898,
+      "search_cmps_including_top10_recompute": {
+        "max": 111643,
+        "mean": 44064.45419,
+        "min": 2217,
+        "p50": 28868,
+        "p95": 97293,
+        "p99": 102399,
+        "total": 4406445419
+      },
+      "traversal_cmps": {
+        "max": 111633,
+        "mean": 44054.45419,
+        "min": 2207,
+        "p50": 28858,
+        "p95": 97283,
+        "p99": 102389,
+        "total": 4405445419
+      },
+      "visited": {
+        "max": 2331,
+        "mean": 979.41759,
+        "min": 69,
+        "p50": 653,
+        "p95": 1940,
+        "p99": 1990,
+        "total": 97941759
+      }
+    }
+  ],
+  "preflight_sha256": "f9341c9b618c2d7f7b42ab6d176cc46cd0e7da80547e29968345d0a1fcc6b1e7",
+  "resource": {
+    "cg_peak_bytes": 8078974976,
+    "elapsed_s": 425.19997891299136,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "max_seconds": 10800,
+    "min_available_kib": 21644016,
+    "min_disk_gib": 215.08459091186523,
+    "sampled_peak_swap": 0,
+    "samples": 426,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "status": "DIAGNOSTIC_SLOT_PASS",
+  "topology_summary_sha256": "d044a031d815315747c4a4cf739ab44b6bbe9f3911943cfb747f98bf5cdcf1ef"
+}

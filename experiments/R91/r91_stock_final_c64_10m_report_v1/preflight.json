@@ -1,0 +1,45 @@
+{
+  "beams": [
+    512,
+    544,
+    1664,
+    1728,
+    1792
+  ],
+  "cpu": "0",
+  "data_sha256": {
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin": "e7756f6b54a07e8af171c7644ce2e1be6d7053ee2a2c30c4b02f99e85984b700",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin": "77b558bd3b77e4cc1149384996b953b040e412477eb0df9889718fc13e17aff2",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin": "48d087a17bec15a5ec9ea526fe9bd14ac31bbbb5cd200817b341adbb77695644",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1b_v2_native_eval_mst10m_exactguard_v1_1/r91_mst10m_recall_exactguard_v2": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9"
+  },
+  "graph_paths": {
+    "FINAL_C64": "/home/tai/ann-task-a/experiments/R91/r91_g6_mst10m_c512_c64_pair_v1_3/runs/C64/graph.bin",
+    "STOCK": "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph"
+  },
+  "graph_sha256": {
+    "FINAL_C64": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d",
+    "STOCK": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe"
+  },
+  "gt_k": 100,
+  "limits": [
+    "One frozen graph per arm, one clean Search invocation per arm; Stock first; timing descriptive",
+    "Matched-Recall QPS is interpolation, not exact measured QPS; no extrapolation",
+    "Historical BUILD wall 437.77 vs 357.93 s separate campaigns, not paired causal comparison",
+    "No tail latency or Counter64 from clean evaluator"
+  ],
+  "manifest_sha256": "824578cfb1d60ecac7e2cb6eff1236f5ad12658fb66b690364ba40deb5498d6f",
+  "memory_max_bytes": 25769803776,
+  "mr_aggregate_sha256": "6434c8f06c442cbeabc6f38415a3e84b3f5bc0818cabd1346d59bff03a7dc074",
+  "mr_script_sha256": "1870654c8c0523a6df370d09e4d369f1048872534e7ea4e75bcde657aa064682",
+  "n_queries": 100000,
+  "no_build": true,
+  "order": [
+    "STOCK",
+    "FINAL_C64"
+  ],
+  "script_sha256": "02c7138ba81985b235baca8ff8e0d05a9001b189477ee54d34382cfaa549cd61",
+  "status": "PREFLIGHT_PASS_NO_SEARCH",
+  "swap_max_bytes": 0,
+  "vendor_sha256": "29ae3db642f757bcc53e4a0ac9890469bbf4a121e9016a24d9e858df0533de7e"
+}

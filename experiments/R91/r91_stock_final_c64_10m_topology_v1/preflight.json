@@ -1,0 +1,30 @@
+{
+  "analyzer_sha256": "fb96f7f3a7403439816f21832ef86e88f234546304c58de551abcef83d34bb48",
+  "arcs": {
+    "FINAL_C64": 541002463,
+    "STOCK": 540816693
+  },
+  "clean_preflight_sha256": "7c8ae670b6fc0d13d3277ce65ae009f3774e6a26111e35c38ea3c636dc936055",
+  "clean_summary_sha256": "1c69fd1abcbf8720961eeefb5cbc25539a23d8d81d9405b04bbf97ca0a49eecd",
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "cpu": "0",
+  "fixture_sha256": "b080364d0c48889d2ae9fe7bdb6b296a1d7975c559c82621b38f17656f0cffcc",
+  "graph_sha256": {
+    "FINAL_C64": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d",
+    "STOCK": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe"
+  },
+  "manifest_sha256": "44fa02fb4bdb00ae2b957d812d22499331110d701f8819ce8317d4193f84f7a0",
+  "memory_max_bytes": 25769803776,
+  "no_ann_build": true,
+  "no_search": true,
+  "nodes": 10000000,
+  "order": [
+    "STOCK",
+    "FINAL_C64"
+  ],
+  "script_sha256": "5cbeee53623d04d0d3c27ac0c5af5800ed72c6f85d4197f01fb2d7ffa5d5450e",
+  "source_sha256": "069c9495e1eabf337888065c5a6d0c0a3fa09fa9dc8290553f9b52d29ae153be",
+  "status": "PREFLIGHT_PASS_NO_TOPOLOGY_10M",
+  "swap_max_bytes": 0,
+  "vendor_sha256": "29ae3db642f757bcc53e4a0ac9890469bbf4a121e9016a24d9e858df0533de7e"
+}

@@ -1,0 +1,22 @@
+{
+  "analyzer_sha256": "fb96f7f3a7403439816f21832ef86e88f234546304c58de551abcef83d34bb48",
+  "arm": "FINAL_C64",
+  "clean_summary_sha256": "1c69fd1abcbf8720961eeefb5cbc25539a23d8d81d9405b04bbf97ca0a49eecd",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_stock_final_c64_10m_topology_v1/runs/FINAL_C64/native.time",
+    "/usr/bin/taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R91/r91_stock_final_c64_10m_topology_v1/topology",
+    "/home/tai/ann-task-a/experiments/R91/r91_g6_mst10m_c512_c64_pair_v1_3/runs/C64/graph.bin",
+    "10000000",
+    "541002463"
+  ],
+  "graph_sha256": "4c54e712c1ba859201a33a8754534c9e3f855664c63db1075a4cf7803dea6e8d",
+  "preflight_sha256": "2212e0862b43302fda180cc0a38b18116c774c788c31b26e291dc198c9b1e10f",
+  "scope": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-r4e3f8470742341f18c25f6c92f6909f2.scope",
+  "timestamp": 1795535360.7493281
+}

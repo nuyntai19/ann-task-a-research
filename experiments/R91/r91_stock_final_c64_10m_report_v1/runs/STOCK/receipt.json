@@ -1,0 +1,88 @@
+{
+  "arm": "STOCK",
+  "beams": [
+    512,
+    544,
+    1664,
+    1728,
+    1792
+  ],
+  "error": null,
+  "evaluator_sha256": "394c6564750722001897254939ba4895e0d7ae6a6dbab44748c30937ea0413c9",
+  "files_sha256": {
+    "native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native.stdout": "7737f3dc266681c288fa53b042855a73877be224416ac199965851f69e583264",
+    "native.time": "bd1f0c7e979df14af51fcc8264530203adb446e2a3b962347e2062c263e40b5f",
+    "preregister.json": "a48f1c45ea2480acfca458a3968eb48f1eeb3eadf5076fbc4bab8dd380d6fe24"
+  },
+  "gnu_time": {
+    "exit_status": "0",
+    "file_system_inputs": 2575584,
+    "file_system_outputs": 16,
+    "major_faults": 1,
+    "max_rss_kib": 7606268,
+    "swaps": 0
+  },
+  "graph_sha256": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+  "metrics": [
+    {
+      "avg_visited": 440.0,
+      "beam": 512,
+      "inverse_qps_us_not_p95": 1110.7069944278026,
+      "qps": 900.32745361,
+      "recall_at10": 0.98966199
+    },
+    {
+      "avg_visited": 463.0,
+      "beam": 544,
+      "inverse_qps_us_not_p95": 1206.6051320636157,
+      "qps": 828.77154541,
+      "recall_at10": 0.99058998
+    },
+    {
+      "avg_visited": 959.0,
+      "beam": 1664,
+      "inverse_qps_us_not_p95": 2964.409356258553,
+      "qps": 337.33532715,
+      "recall_at10": 0.99791503
+    },
+    {
+      "avg_visited": 979.0,
+      "beam": 1728,
+      "inverse_qps_us_not_p95": 3017.601045878313,
+      "qps": 331.3890686,
+      "recall_at10": 0.99801898
+    },
+    {
+      "avg_visited": 999.0,
+      "beam": 1792,
+      "inverse_qps_us_not_p95": 3088.4947819460003,
+      "qps": 323.78231812,
+      "recall_at10": 0.99811602
+    }
+  ],
+  "preflight_sha256": "7c8ae670b6fc0d13d3277ce65ae009f3774e6a26111e35c38ea3c636dc936055",
+  "resource": {
+    "cg_peak_bytes": 9922764800,
+    "elapsed_s": 1145.5636684459896,
+    "events_delta": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "exit_code": 0,
+    "max_seconds": 10800,
+    "min_available_kib": 21129864,
+    "min_disk_gib": 215.1100082397461,
+    "sampled_peak_swap": 0,
+    "samples": 1146,
+    "status": "COMPLETED",
+    "swap_after": 0
+  },
+  "script_sha256": "02c7138ba81985b235baca8ff8e0d05a9001b189477ee54d34382cfaa549cd61",
+  "status": "SEARCH_SLOT_PASS"
+}

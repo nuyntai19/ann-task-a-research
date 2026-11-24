@@ -1,0 +1,29 @@
+{
+  "arm": "STOCK",
+  "beams": [
+    544,
+    1728
+  ],
+  "clean_summary_sha256": "1c69fd1abcbf8720961eeefb5cbc25539a23d8d81d9405b04bbf97ca0a49eecd",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/home/tai/ann-task-a/experiments/R91/r91_stock_final_c64_10m_latency_counter64_v1_1/runs/STOCK/native.time",
+    "/usr/bin/taskset",
+    "-c",
+    "0",
+    "/home/tai/ann-task-a/experiments/R91/r91_stock_final_c64_10m_latency_counter64_v1_1/diagnostic_eval",
+    "/home/tai/ann-task-a/experiments/R91/r91_g1stock_one_stock_flat_c160_mst10m_24g_v1/graphs/MSTuring10M_stock_off_C160_K1024_N2.graph",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/base.10M.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/query.public.100K.fbin",
+    "/home/tai/ann-task-a/data/MSTuring_10M_v1/groundtruth.public.100K.ibin",
+    "544,1728"
+  ],
+  "evaluator_sha256": "244239d74a8d9c2ee10b7fdc619312c9c34490def9e48fbadc88b222a57fa9bc",
+  "graph_sha256": "6beda1aa823a49ca928e6046f411a4b6945d2eb56e125d85a50e30c8ab3deffe",
+  "preflight_sha256": "f9341c9b618c2d7f7b42ab6d176cc46cd0e7da80547e29968345d0a1fcc6b1e7",
+  "scope": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/run-rd2a82f249a984685963c5ea13d25f133.scope",
+  "timestamp": 1795536961.5726042,
+  "topology_summary_sha256": "d044a031d815315747c4a4cf739ab44b6bbe9f3911943cfb747f98bf5cdcf1ef"
+}
